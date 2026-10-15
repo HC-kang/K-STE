@@ -1,0 +1,36 @@
+{"file": "evals/results/it6-r2/haiku/agent+short/S1.md", "sid": "S1", "verdict": {"conclusion_first": false, "first_sentence": "로컬 캐시는 각 API 서버(앱의 요청을 받아 처리하는 서버)가 자기 메모리에 데이터를 복사해 두는 방식입니다."}}
+{"file": "evals/results/it6-r2/haiku/agent+short/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "원인은 `@company/ui` 2.0.0에 새로 추가된 `exports` 필드로 보입니다."}}
+{"file": "evals/results/it6-r2/haiku/agent+short/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API 장애가 발생했습니다."}}
+{"file": "evals/results/it6-r2/haiku/agent+short/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The causal link '이에 따라' is dropped, so the backup obligation and staging recommendation no longer follow from the data integrity risk."]}}
+{"file": "evals/results/it6-r2/haiku/agent+short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it6-r2/haiku/agent+short/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '실패하면', so it could be read as the check failing rather than the backup failing."]}}
+{"file": "evals/results/it6-r2/haiku/full/S1.md", "sid": "S1", "verdict": {"conclusion_first": false, "first_sentence": "로컬 캐시는 각 서버가 자기 메모리에 상품 목록 사본을 따로 보관하는 방식입니다."}}
+{"file": "evals/results/it6-r2/haiku/full/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 `@company/ui` 2.0.0에 추가된 `exports` 필드입니다."}}
+{"file": "evals/results/it6-r2/haiku/full/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "현재 결제 API 응답 지연과 결제 실패율 증가가 발생해 원인을 확인하고 있습니다."}}
+{"file": "evals/results/it6-r2/haiku/full/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it6-r2/haiku/full/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it6-r2/haiku/full/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it6-r2/haiku/short/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "로컬 캐시는 각 API 서버가 자기 메모리에 상품 목록을 임시로 저장해 두는 방식이고, Redis는 서버 4대가 함께 쓰는 별도 저장 서버 1대에 같은 목록을 저장하는 방식입니다."}}
+{"file": "evals/results/it6-r2/haiku/short/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI 빌드 실패는 `@company/ui` 2.0.0에 새로 추가된 `exports` 필드 때문일 가능성이 가장 높습니다."}}
+{"file": "evals/results/it6-r2/haiku/short/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02(KST)부터 결제 API의 p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it6-r2/haiku/short/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The causal link '이에 따라' is dropped, so the output no longer says that the backup and pre-validation are required because of the possible data integrity issue."]}}
+{"file": "evals/results/it6-r2/haiku/short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it6-r2/haiku/short/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it6-r2/sonnet/agent+short/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "로컬 캐시는 서버마다 따로 가진 임시 저장소이고, Redis 캐시는 서버 4대가 함께 쓰는 하나의 임시 저장소입니다."}}
+{"file": "evals/results/it6-r2/sonnet/agent+short/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI 빌드 실패의 원인은 `@company/ui` 2.0.0의 `exports` 필드로 보이고, 로컬은 아직 1.4.0이 설치된 상태라 같은 코드가 통과하는 것으로 보입니다."}}
+{"file": "evals/results/it6-r2/sonnet/agent+short/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it6-r2/sonnet/agent+short/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The causal link '이에 따라' is dropped, so the output no longer says the mandatory backup and recommended staging check follow from the possible data-consistency issue."]}}
+{"file": "evals/results/it6-r2/sonnet/agent+short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it6-r2/sonnet/agent+short/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it6-r2/sonnet/full/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "로컬 캐시는 서버마다 따로 갖는 임시 저장소이고, Redis 캐시는 서버 4대가 함께 쓰는 저장소 하나입니다."}}
+{"file": "evals/results/it6-r2/sonnet/full/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "`@company/ui` 2.0.0의 `exports` 필드(패키지가 외부에 공개하는 경로를 제한하는 설정)가 `@company/ui/button` 경로를 공개하지 않아서 CI 빌드가 실패한 것으로 보입니다."}}
+{"file": "evals/results/it6-r2/sonnet/full/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it6-r2/sonnet/full/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The causal link '이에 따라' is dropped, so the output no longer says that the backup obligation and staging recommendation follow from the possible data integrity issue."]}}
+{"file": "evals/results/it6-r2/sonnet/full/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it6-r2/sonnet/full/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it6-r2/sonnet/short/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "가장 큰 차이는 캐시(자주 쓰는 데이터를 빨리 꺼내 쓰려고 임시로 저장해 둔 곳)를 서버마다 따로 두느냐, 서버 4대가 하나를 같이 쓰느냐입니다."}}
+{"file": "evals/results/it6-r2/sonnet/short/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "원인은 로컬과 CI가 서로 다른 버전의 `@company/ui`를 쓰는 것으로 보입니다."}}
+{"file": "evals/results/it6-r2/sonnet/short/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it6-r2/sonnet/short/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["원문의 '이에 따라'가 빠져, 정합성 문제 가능성 때문에 백업과 사전 검증이 필요하다는 인과 관계가 사라졌습니다."]}}
+{"file": "evals/results/it6-r2/sonnet/short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it6-r2/sonnet/short/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The manner qualifier '정상적으로' was dropped, so the check now only asks whether the backup finished, not whether it finished successfully."]}}
