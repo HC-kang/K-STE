@@ -19,3 +19,22 @@
 
 - SimpleEnglish 감사: 규칙 53개 스킬이 8줄 프롬프트에 독자 체감 지표에서 졌다. 핵심 규칙은 짧게 둔다.
 - 린터 점수는 독자 체감과 다르다. 의미 보존은 블라인드 판정으로 잰다.
+
+## 2026-10-15 마무리: v1 배포와 로컬 적용
+
+- 배포: `HC-kang/K-STE` main. `npx skills add HC-kang/K-STE`로 설치된다(빈 프로젝트에서 확인).
+- 로컬 적용: 스킬을 `~/.claude/skills/k-ste`에 설치했다. `~/.claude/CLAUDE.md`의 글쓰기 절을 짧은판으로 바꿨다. 원본 백업은 `~/.claude/CLAUDE.md.bak-2026-10-15`다.
+- 규칙을 바꾸면 세 곳을 함께 고친다: `skills/k-ste/SKILL.md`, `prompts/system-prompt.md`의 짧은판·전체판, `~/.claude/CLAUDE.md`.
+- 최종 수치(README 평가 절): 결함은 실행 1회당 94.5-101.0건에서 2.0-5.0건. 재작성 뜻 보존은 base 0/12, short 11/18, full 15/18, agent+short 16/18.
+
+## 실수와 원인
+
+- 규칙 예문에 평가 시나리오 단어를 넣어 1-4차 평가를 오염시켰다. 예문을 쓸 때마다 `evals/scenarios/S*.txt`와 겹치는 단어를 grep으로 확인한다.
+- 오염을 지우면서 "정상적으로" 같은 정도·방식 한정어 범주까지 지웠다. 예문을 바꿀 때는 단어만 바꾸고 범주는 남긴다.
+- 계수기는 여러 번 오탐했다(코드 블록 안 메시지, `**경고:**`, "아니다", "필요", "증가"). 새 지표에는 자체 시험부터 쓴다.
+- 서브에이전트는 사용자 `CLAUDE.md`를 상속한다. 평가는 `claude -p --setting-sources "" --strict-mcp-config`로 격리한다.
+
+## 남은 일
+
+- S7("최대한 짧게")에서 두 번째 문장의 주어 탈락이 남았다. 짧은판만 쓰는 환경의 재작성 뜻 보존이 가장 약하다.
+- Codex, Cursor에는 설치하지 않았다. 필요하면 `npx skills add HC-kang/K-STE -a codex -g`로 설치한다.
