@@ -16,11 +16,14 @@ MEANING = """You audit a Korean rewrite for meaning preservation. Compare meanin
 
 A meaning change is any of these:
 1. A fact, cause, number, actor, or next action appears that the original does not contain.
-2. A fact, condition, exception, or scope marker (for example 일부, 만, 까지, 반드시, 가능하다면) is missing.
+2. A fact, condition, exception, scope marker, or qualifier of degree or manner (for example 모두, 만, 까지, 최대, 되도록, 완전히) is missing.
 3. Certainty changed: a possibility is stated as fact, or a fact as a possibility.
 4. Obligation strength changed: must, recommended, and allowed are swapped.
 5. A phrase that the original allows to be read two ways is silently resolved to one reading.
    If the output keeps the original wording for that phrase or explicitly flags it for confirmation, it is not a change.
+6. A subject or object that the original states is dropped, so the reader can no longer tell what the statement is about
+   (for example "디스크가 가득 차면 로그를 지운다" shortened to "가득 차면 지운다").
+7. A causal link is added or removed (for example "after X" becomes "because of X", or "therefore" disappears).
 
 USER REQUEST (contains the original text):
 <<<
@@ -57,7 +60,7 @@ CHECKS = {"S5": MEANING, "S6": MEANING, "S7": MEANING, "S1": CONCLUSION, "S2": C
 def judge(path, model):
     sid = path.stem
     prompt = CHECKS[sid].format(prompt=(SCENARIOS / f"{sid}.txt").read_text(), output=path.read_text())
-    cmd = ["claude", "-p", prompt, "--model", model, "--setting-sources", "",
+    cmd = ["claude", "-p", prompt, "--model", model, "--setting-sources", "", "--strict-mcp-config",
            "--system-prompt", "You are a strict evaluator.", "--tools", ""]
     raw = subprocess.run(cmd, capture_output=True, text=True).stdout.strip()
     try:
@@ -78,8 +81,12 @@ def main():
                    if p.stem in CHECKS and (conds is None or p.parent.name in conds))
     with ThreadPoolExecutor(6) as pool:
         rows = list(pool.map(lambda p: judge(p, model), files))
-    with open(root / "judge.jsonl", "a", encoding="utf-8") as f:
-        for r in rows:
+    # Re-judging a file replaces its old verdict instead of appending a duplicate.
+    path = root / "judge.jsonl"
+    judged = {r["file"] for r in rows}
+    old = [json.loads(l) for l in path.read_text(encoding="utf-8").splitlines()] if path.exists() else []
+    with open(path, "w", encoding="utf-8") as f:
+        for r in [o for o in old if o["file"] not in judged] + rows:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
     for r in rows:
         v = r["verdict"]

@@ -24,6 +24,10 @@ for line in sys.stdin:
                 reads.append(c["input"].get("file_path", "").split("/k-ste/")[-1])
     elif event.get("type") == "result":
         result = event.get("result", "")
+if not result:
+    # An empty file would score as zero defects, so leave no file at all.
+    print(f"{sid}\tNO RESULT", file=sys.stderr)
+    sys.exit(1)
 with open(f"{out}/{sid}.md", "w", encoding="utf-8") as f:
     f.write(result)
 print(f"{sid}\tskill={skills}\treads={reads}")

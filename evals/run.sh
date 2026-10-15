@@ -4,6 +4,7 @@
 # Output: evals/results/$RUN/<model>/<condition>/<SID>.md
 set -euo pipefail
 cd "$(dirname "$0")/.."
+[ $# -ge 2 ] || { echo "usage: RUN=<name> bash evals/run.sh <base|short|full> <model> [SID...]" >&2; exit 2; }
 
 cond=$1 model=$2
 shift 2
@@ -24,7 +25,8 @@ out=evals/results/${RUN:-$(date +%F)}/$model/$cond
 mkdir -p "$out"
 export sys model out
 printf '%s\n' "${ids[@]}" | xargs -P 6 -I{} bash -c '
-  claude -p "$(cat evals/scenarios/{}.txt)" --model "$model" --setting-sources "" \
-    --system-prompt "$sys" --tools "" > "$out/{}.md" 2> "$out/{}.err" || echo "FAIL {} (see $out/{}.err)"
-  [ -s "$out/{}.err" ] || rm -f "$out/{}.err"'
+  sid=$1
+  claude -p "$(cat "evals/scenarios/$sid.txt")" --model "$model" --setting-sources "" --strict-mcp-config \
+    --system-prompt "$sys" --tools "" > "$out/$sid.md" 2> "$out/$sid.err" || echo "FAIL $sid (see $out/$sid.err)"
+  [ -s "$out/$sid.err" ] || rm -f "$out/$sid.err"' _ {}
 echo "done: $out"

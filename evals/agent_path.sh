@@ -25,7 +25,8 @@ mkdir -p "$out"
 for sid in "${ids[@]}"; do
   (
     (cd "$proj" && claude -p "$(cat "$repo/evals/scenarios/$sid.txt")" --model "$model" \
-      --setting-sources project --allowedTools "Skill Read" --output-format stream-json --verbose) |
+      --setting-sources project --strict-mcp-config --tools "Skill,Read" --allowedTools "Skill Read" \
+      --output-format stream-json --verbose) |
     python3 "$repo/evals/trace.py" "$sid" "$out"
   ) &
 done
