@@ -9,7 +9,8 @@ import re
 import sys
 from pathlib import Path
 
-FENCE = re.compile(r"```.*?(```|\Z)", re.S)
+FENCE = re.compile(r"```([\w-]*)\n(.*?)(```|\Z)", re.S)
+HANGUL = re.compile(r"[가-힣]")
 INLINE = re.compile(r"`[^`\n]*`")
 HEADER = re.compile(r"^\s*#{1,6}\s")
 LIST = re.compile(r"^\s*([-*+]|\d+[.)])\s+")
@@ -23,6 +24,7 @@ PATTERNS = {
     "bold": re.compile(r"\*\*[^*\n]+\*\*"),
     "emdash": re.compile(r"—|\s–\s"),
     "emoji": re.compile("[\U0001F300-\U0001FAFF☀-➿]"),
+    "slack_emoji": re.compile(r":[a-z][a-z0-9_+-]*:"),
     "tilde_range": re.compile(r"\d\s*~\s*\d"),
     "double_passive": re.compile(r"(되어|보여|불려|쓰여|잊혀)[지집져진질짐졌]"),
     "jinhaeng": re.compile(r"(진행|실시|수행)(하|했|합|할|해|됩|되|된|중)"),
@@ -30,14 +32,26 @@ PATTERNS = {
 }
 CLOSER = re.compile(r"(필요|원)하시면|말씀해 ?주|궁금한 (점|사항)|도움이 되(었|셨|길)|더 필요하(시면|신)|언제든(지)? |좋은 질문|물론입니다")
 NARRATION = re.compile(r"(살펴|알아|정리해|설명해|확인해) ?(보겠|드리겠)습니다")
+PREAMBLE = re.compile(r"(바꾼|다듬은|줄인|정리한|고친|작성한|보낼|제안|초안).{0,20}(입니다|같습니다)$|다음과 같습니다$")
+LABEL = re.compile(r"^[^:]{1,20}:\s")
 NOMINAL = re.compile(r"(함|됨|음|임|바람)$")
 FORMAL = re.compile(r"(니다|니까|시오|세요|어요|아요|해요|에요|예요|죠|까요)$")
 PLAIN = re.compile(r"(다|라|냐|자)$")
 
-# Defect total excludes headers for document scenarios (headers are legal there).
+# Documents use 한다체 and may have headers. Replies use 합니다체. S8 (marketing) is out of scope.
 DOC_SCENARIOS = {"S3", "S4"}
-DEFECT_KEYS = ["bold", "emdash", "header", "hr", "emoji", "tilde_range", "closer", "narration",
-               "nominal", "double_passive", "jinhaeng", "not_but", "style_mixed"]
+NO_REGISTER = {"S8"}
+DEFECT_KEYS = ["bold", "emdash", "header", "hr", "emoji", "tilde_range", "preamble", "closer", "narration",
+               "nominal", "fragment", "double_passive", "jinhaeng", "not_but", "style_mixed"]
+
+
+def strip_code(m):
+    # A fence around Korean prose (no language or text/markdown) is a message to paste, not code: score it.
+    lang, body = m.group(1).lower(), m.group(2)
+    chars = len(re.sub(r"\s", "", body)) or 1
+    if lang in ("", "text", "markdown", "md", "plaintext") and len(HANGUL.findall(body)) / chars > 0.2:
+        return body
+    return ""
 
 
 def sentences(line):
@@ -45,10 +59,12 @@ def sentences(line):
 
 
 def score(text):
-    text = INLINE.sub("CODE", FENCE.sub("", text))
+    text = INLINE.sub("CODE", FENCE.sub(strip_code, text))
     r = {k: len(p.findall(text)) for k, p in PATTERNS.items()}
-    r.update(header=0, hr=0, closer=0, narration=0, nominal=0, max_eojeol=0)
+    r["emoji"] += r.pop("slack_emoji")
+    r.update(header=0, hr=0, closer=0, narration=0, nominal=0, fragment=0, preamble=0, max_eojeol=0)
     formal = plain = 0
+    first = True
     for line in text.splitlines():
         if HEADER.match(line):
             r["header"] += 1
@@ -60,6 +76,14 @@ def score(text):
             continue
         is_list = bool(LIST.match(line))
         line = QUOTE.sub("", LIST.sub("", line))
+        if first:
+            r["preamble"] = int(bool(PREAMBLE.search(TRAIL.sub("", line))))
+            first = False
+        # A list item that states something in 3+ eojeol must be a full sentence; "label: value" is exempt.
+        end_line = TRAIL.sub("", line)
+        if (is_list and len(line.split()) >= 3 and not LABEL.match(line)
+                and not (FORMAL.search(end_line) or PLAIN.search(end_line))):
+            r["fragment"] += 1
         for s in sentences(line):
             end = TRAIL.sub("", s)
             r["closer"] += bool(CLOSER.search(s))
@@ -72,15 +96,23 @@ def score(text):
             elif PLAIN.search(end):
                 plain += 1
     r["style_mixed"] = min(formal, plain)
+    r["formal"], r["plain"] = formal, plain
     return r
 
 
+def register_miss(r, scenario):
+    if scenario in NO_REGISTER or not (r["formal"] or r["plain"]):
+        return 0
+    return int(r["formal"] > r["plain"]) if scenario in DOC_SCENARIOS else int(r["plain"] > r["formal"])
+
+
 def defects(r, scenario=""):
-    return sum(r[k] for k in DEFECT_KEYS if not (k == "header" and scenario in DOC_SCENARIOS))
+    r["register"] = register_miss(r, scenario)
+    return r["register"] + sum(r[k] for k in DEFECT_KEYS if not (k == "header" and scenario in DOC_SCENARIOS))
 
 
 def report(dirs, verbose=False):
-    cols = DEFECT_KEYS + ["defects", "max_eojeol", "chars"]
+    cols = DEFECT_KEYS + ["register", "defects", "max_eojeol", "chars"]
     print("| dir | " + " | ".join(cols) + " |")
     print("|---" * (len(cols) + 1) + "|")
     for d in dirs:
@@ -102,6 +134,8 @@ def self_test():
         ("**굵게** 썼습니다.", "bold", 1),
         ("```\n**x**\n```\n본문입니다.", "bold", 0),
         ("`**x**` 입니다.", "bold", 0),
+        ("```\n**장애 공유** 결제 API가 느립니다.\n```", "bold", 1),
+        ("```python\n# **설명** 한국어 주석입니다\n```", "bold", 0),
         ("3~5개를 씁니다.", "tilde_range", 1),
         ("약 ~10%입니다.", "tilde_range", 0),
         ("```\n3~5\n```", "tilde_range", 0),
@@ -124,6 +158,15 @@ def self_test():
         ("## 원인\n본문입니다.", "header", 1),
         ("캐시가 아니라 DB입니다.", "not_but", 1),
         ("완료했습니다 🎉", "emoji", 1),
+        (":rotating_light: 장애입니다.", "emoji", 1),
+        ("14:02:30에 시작했습니다.", "emoji", 0),
+        ("- 응답 시간이 300ms에서 2.1초로 증가", "fragment", 1),
+        ("- 응답 시간이 2.1초로 늘었습니다.", "fragment", 0),
+        ("- 김민수(백엔드)", "fragment", 0),
+        ("- 배포 도구: ArgoCD 3.1 버전", "fragment", 0),
+        ("쉽게 바꾼 글입니다.\n\n본문입니다.", "preamble", 1),
+        ("이 글의 문제점은 다음과 같습니다.\n\n- 항목", "preamble", 1),
+        ("배포는 마이그레이션 단계에서 실패했습니다.", "preamble", 0),
         ("하나 둘 셋 넷 다섯입니다.", "max_eojeol", 5),
     ]
     failed = 0
@@ -132,7 +175,14 @@ def self_test():
         if got != want:
             failed += 1
             print(f"FAIL {key}: want {want}, got {got} :: {text!r}")
-    print(f"{len(cases) - failed}/{len(cases)} passed")
+    for text, sid, want in [("배포했습니다. 끝났습니다.", "S3", 1), ("배포했다. 끝났다.", "S3", 0),
+                            ("배포했다. 끝났다.", "S1", 1), ("문구입니다.", "S8", 0)]:
+        r = score(text)
+        defects(r, sid)
+        if r["register"] != want:
+            failed += 1
+            print(f"FAIL register {sid}: want {want}, got {r['register']} :: {text!r}")
+    print(f"{len(cases) + 4 - failed}/{len(cases) + 4} passed")
     return failed == 0
 
 
