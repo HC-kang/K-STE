@@ -130,7 +130,8 @@ def defects(r, scenario=""):
     if scenario in OUT_OF_SCOPE:
         return 0
     # A document may open with one title line; a reply may not (K1).
-    skip = QUOTES_ORIGINAL.get(scenario, set()) | ({"title"} if scenario in DOC_SCENARIOS else set())
+    # The short-header rule (K10) covers replies only; documents follow their genre's headers.
+    skip = QUOTES_ORIGINAL.get(scenario, set()) | ({"title", "header"} if scenario in DOC_SCENARIOS else set())
     return r["register"] + sum(r[k] for k in DEFECT_KEYS if k not in skip)
 
 
