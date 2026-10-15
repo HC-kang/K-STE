@@ -1,0 +1,18 @@
+{"file": "evals/results/it7-r3/haiku/agent+short/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["Splitting the sentence limits '이에 따라' to the backup duty, so the staging-verification recommendation is no longer clearly framed as a consequence of the data-integrity risk.", "The staging-verification sentence drops the actor '운영팀', which the original's single sentence applies to both clauses, so it is no longer clear who should perform the verification."]}}
+{"file": "evals/results/it7-r3/haiku/agent+short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it7-r3/haiku/agent+short/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it7-r3/haiku/full/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it7-r3/haiku/full/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it7-r3/haiku/full/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it7-r3/haiku/short/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it7-r3/haiku/short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it7-r3/haiku/short/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it7-r3/sonnet/agent+short/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["In the original, '이에 따라' plausibly covers both the backup obligation and the staging-validation recommendation, but the output attaches '그래서' only to the backup sentence, so the recommendation loses its explicit causal link to the data-integrity risk."]}}
+{"file": "evals/results/it7-r3/sonnet/agent+short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it7-r3/sonnet/agent+short/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우', so '실패하면' can now be read as the check failing rather than the backup failing."]}}
+{"file": "evals/results/it7-r3/sonnet/full/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it7-r3/sonnet/full/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it7-r3/sonnet/full/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["'실패했으면' drops the stated subject '백업이', so it could mean either the backup failed or the check failed."]}}
+{"file": "evals/results/it7-r3/sonnet/short/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it7-r3/sonnet/short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it7-r3/sonnet/short/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

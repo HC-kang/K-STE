@@ -38,7 +38,7 @@ NARRATION = re.compile(r"(살펴|알아|정리해|설명해|확인해) ?(보겠|
 PREAMBLE = re.compile(r"(바꾼|다듬은|줄인|정리한|고친|작성한) (글|문장|버전|내용|공지|답변|메시지)|보낼 (답변|메시지)|초안입니다|다음과 같습니다")
 LABEL = re.compile(r"^[^:]{1,20}:\s")
 NOMINAL = re.compile(r"(함|됨|음|임|바람)$")
-FORMAL = re.compile(r"(니다|니까|시오)$")        # 합니다체
+FORMAL = re.compile(r"((?<!아)니다|니까|시오)$")  # 합니다체; "아니다" is 한다체
 HAEYO = re.compile(r"[어아해에예세네군래대지게돼봐줘워와나까려]요$|죠$")  # 해요체; not nouns like 필요, 중요
 PLAIN = re.compile(r"(다|라|냐|자)$")            # 한다체 (checked after the two above)
 
@@ -187,6 +187,8 @@ def self_test():
         ("작업이 진행됐습니다.", "jinhaeng", 1),
         ("배포를 했습니다. 서버는 정상이다.", "style_mixed", 1),
         ("배포를 했습니다. 서버는 정상입니다.", "style_mixed", 0),
+        ("목표가 아니다. 표준이 아니다.", "plain", 2),
+        ("목표가 아닙니다.", "formal", 1),
         ("배포를 했습니다. 서버는 정상이에요.", "style_mixed", 1),
         ('확인 필요: "관리자와 담당자". 범위가 정해지지 않았습니다.', "style_mixed", 0),
         ("궁금한 점이 있으면 말씀해 주세요.", "closer", 1),
