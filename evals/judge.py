@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Blind judge with an isolated `claude -p` session. The judge never sees the condition name.
 
-Usage: python3 evals/judge.py RESULTS_ROOT [--model opus]
+Usage: python3 evals/judge.py RESULTS_ROOT [--model opus] [--cond short,full]
 Judges every <model>/<condition>/<SID>.md under RESULTS_ROOT and writes RESULTS_ROOT/judge.jsonl.
 """
 import json
@@ -73,10 +73,12 @@ def main():
         sys.exit(__doc__)
     root = Path(args[0])
     model = args[args.index("--model") + 1] if "--model" in args else "opus"
-    files = sorted(p for p in root.glob("*/*/*.md") if p.stem in CHECKS)
+    conds = args[args.index("--cond") + 1].split(",") if "--cond" in args else None
+    files = sorted(p for p in root.glob("*/*/*.md")
+                   if p.stem in CHECKS and (conds is None or p.parent.name in conds))
     with ThreadPoolExecutor(6) as pool:
         rows = list(pool.map(lambda p: judge(p, model), files))
-    with open(root / "judge.jsonl", "w", encoding="utf-8") as f:
+    with open(root / "judge.jsonl", "a", encoding="utf-8") as f:
         for r in rows:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
     for r in rows:

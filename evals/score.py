@@ -38,9 +38,12 @@ NOMINAL = re.compile(r"(함|됨|음|임|바람)$")
 FORMAL = re.compile(r"(니다|니까|시오|세요|어요|아요|해요|에요|예요|죠|까요)$")
 PLAIN = re.compile(r"(다|라|냐|자)$")
 
-# Documents use 한다체 and may have headers. Replies use 합니다체. S8 (marketing) is out of scope.
+# Documents use 한다체 and may have headers. Replies use 합니다체.
+# S8 (marketing) is out of scope. S9 (check mode) quotes the original, so its quoted wording is not a defect.
 DOC_SCENARIOS = {"S3", "S4"}
 NO_REGISTER = {"S8"}
+OUT_OF_SCOPE = {"S8"}
+QUOTES_ORIGINAL = {"S9": {"double_passive", "jinhaeng", "nominal", "not_but"}}
 DEFECT_KEYS = ["bold", "emdash", "header", "hr", "emoji", "tilde_range", "preamble", "closer", "narration",
                "nominal", "fragment", "double_passive", "jinhaeng", "not_but", "style_mixed"]
 
@@ -108,7 +111,10 @@ def register_miss(r, scenario):
 
 def defects(r, scenario=""):
     r["register"] = register_miss(r, scenario)
-    return r["register"] + sum(r[k] for k in DEFECT_KEYS if not (k == "header" and scenario in DOC_SCENARIOS))
+    if scenario in OUT_OF_SCOPE:
+        return 0
+    skip = QUOTES_ORIGINAL.get(scenario, set()) | ({"header"} if scenario in DOC_SCENARIOS else set())
+    return r["register"] + sum(r[k] for k in DEFECT_KEYS if k not in skip)
 
 
 def report(dirs, verbose=False):
@@ -182,7 +188,12 @@ def self_test():
         if r["register"] != want:
             failed += 1
             print(f"FAIL register {sid}: want {want}, got {r['register']} :: {text!r}")
-    print(f"{len(cases) + 4 - failed}/{len(cases) + 4} passed")
+    for text, sid, want in [("**굵게** 썼다.", "S8", 0), ("보여지며 → 보이며 입니다.", "S9", 0),
+                            ("보여지며 → 보이며 입니다.", "S1", 1)]:
+        if defects(score(text), sid) != want:
+            failed += 1
+            print(f"FAIL defects {sid}: want {want} :: {text!r}")
+    print(f"{len(cases) + 7 - failed}/{len(cases) + 7} passed")
     return failed == 0
 
 

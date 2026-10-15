@@ -10,3 +10,30 @@
 {"file": "evals/results/r1/sonnet/base/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The original's '용량 문제로 인해' could mean the order table is large or that backup storage is short; the rewrite's '용량이 커서' quietly picks the first reading and states that the table itself is large."]}}
 {"file": "evals/results/r1/sonnet/base/S6.md", "sid": "S6", "verdict": {"meaning_changed": true, "issues": ["The concise version changes the obligation '알려야 합니다' (must notify) into the softer request '알려 주세요' (please notify), weakening it from mandatory to requested."]}}
 {"file": "evals/results/r1/sonnet/base/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The output drops '정상적으로 완료되었는지', so the required check is no longer specifically about whether the backup finished successfully.", "Omitting the subject '백업이' leaves '실패 시' open to meaning a failed check rather than a failed backup, which the original states explicitly."]}}
+{"file": "evals/results/r1/haiku/full/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "로컬 캐시는 각 서버가 자기 메모리에 상품 목록을 따로 보관하는 방식이고, Redis는 캐시를 서버 밖의 공용 저장소 한 곳에 모아 두고 4대 서버가 함께 쓰는 방식입니다."}}
+{"file": "evals/results/r1/haiku/full/S10.md", "sid": "S10", "verdict": {"conclusion_first": false, "first_sentence": "# @company/ui 2.0.0 업그레이드 후 CI 빌드 실패 원인 분석"}}
+{"file": "evals/results/r1/haiku/full/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "결제 API 응답 지연과 결제 실패율 증가가 발생했고, 원인을 조사하고 있습니다."}}
+{"file": "evals/results/r1/haiku/full/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/r1/haiku/full/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/r1/haiku/full/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/r1/haiku/short/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "Redis는 4대 서버가 함께 쓰는 캐시 서버 1대이므로, 도입하면 서버마다 다른 상품 정보를 보는 문제가 없어집니다."}}
+{"file": "evals/results/r1/haiku/short/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI 빌드 실패의 원인으로 가장 유력한 것은 `@company/ui` 2.0.0에 추가된 `exports` 필드(패키지가 외부에 공개하는 import 경로를 정한 설정)이다."}}
+{"file": "evals/results/r1/haiku/short/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API 응답 지연과 결제 실패율 증가가 발생했고, 원인은 아직 확인하지 못했습니다."}}
+{"file": "evals/results/r1/haiku/short/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/r1/haiku/short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/r1/haiku/short/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/r1/sonnet/agent/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The scope '이번 마이그레이션 작업과 관련하여' is dropped, so the data-consistency risk is no longer tied to this specific migration."]}}
+{"file": "evals/results/r1/sonnet/agent/S6.md", "sid": "S6", "verdict": {"meaning_changed": true, "issues": ["원문은 무엇이 초기화되는지(서버 자체, 메모리, 캐시 데이터 등) 밝히지 않는데, 출력은 확인 요청 없이 '메모리가 초기화됩니다'로 하나의 해석을 확정했습니다."]}}
+{"file": "evals/results/r1/sonnet/agent/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The output drops '정상적으로 완료되었는지', so it no longer says the check is whether the backup completed successfully. '백업을 확인' alone could mean only checking that a backup exists."]}}
+{"file": "evals/results/r1/sonnet/full/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "로컬 캐시는 서버마다 따로 갖는 임시 저장소이고, Redis 캐시는 서버 4대가 함께 쓰는 임시 저장소입니다."}}
+{"file": "evals/results/r1/sonnet/full/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "원인은 로컬 `node_modules`가 아직 `@company/ui` 1.4.0이고, CI만 2.0.0을 설치해서 `exports` 필드의 제약을 처음 받은 것으로 추정합니다."}}
+{"file": "evals/results/r1/sonnet/full/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "결제 API 장애가 10월 14일 14:02 KST부터 계속되고 있으며, 원인은 아직 모릅니다."}}
+{"file": "evals/results/r1/sonnet/full/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/r1/sonnet/full/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/r1/sonnet/full/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/r1/sonnet/short/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "Redis를 도입하면 서버 4대가 같은 캐시를 읽어서, 서버마다 상품 목록이 다르게 보이는 문제가 없어집니다."}}
+{"file": "evals/results/r1/sonnet/short/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "로컬 빌드가 성공하는 이유는 로컬이 아직 `@company/ui` 1.4.0을 쓰기 때문이고, CI 실패의 원인은 2.0.0의 `exports` 필드가 `@company/ui/button` 경로를 열어 두지 않은 것으로 추정합니다."}}
+{"file": "evals/results/r1/sonnet/short/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "결제 API 응답 지연과 결제 실패율 증가가 10월 14일 14:02 KST부터 이어지고 있고, 원인은 아직 모릅니다."}}
+{"file": "evals/results/r1/sonnet/short/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/r1/sonnet/short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/r1/sonnet/short/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
