@@ -13,6 +13,7 @@ FENCE = re.compile(r"```([\w-]*)\n(.*?)(```|\Z)", re.S)
 HANGUL = re.compile(r"[가-힣]")
 INLINE = re.compile(r"`[^`\n]*`")
 HEADER = re.compile(r"^\s*#{1,6}\s")
+TITLE = re.compile(r"^\s*#\s")
 LIST = re.compile(r"^\s*([-*+]|\d+[.)])\s+")
 TABLE = re.compile(r"^\s*\|")
 QUOTE = re.compile(r"^\s*>\s?")
@@ -21,7 +22,8 @@ SENT_SPLIT = re.compile(r"(?<=[.?!])\s+")
 TRAIL = re.compile(r"[\s.?!:\"'”’)\]]+$")
 
 PATTERNS = {
-    "bold": re.compile(r"\*\*[^*\n]+\*\*"),
+    # Bold is legal for warnings only (K10).
+    "bold": re.compile(r"\*\*(?!\s*(경고|주의|위험|WARNING|CAUTION))[^*\n]+\*\*"),
     "emdash": re.compile(r"—|\s–\s"),
     "emoji": re.compile("[\U0001F300-\U0001FAFF☀-➿]"),
     "slack_emoji": re.compile(r":[a-z][a-z0-9_+-]*:"),
@@ -44,7 +46,7 @@ DOC_SCENARIOS = {"S3", "S4"}
 NO_REGISTER = {"S8"}
 OUT_OF_SCOPE = {"S8"}
 QUOTES_ORIGINAL = {"S9": {"double_passive", "jinhaeng", "nominal", "not_but"}}
-DEFECT_KEYS = ["bold", "emdash", "header", "hr", "emoji", "tilde_range", "preamble", "closer", "narration",
+DEFECT_KEYS = ["bold", "emdash", "title", "header", "hr", "emoji", "tilde_range", "preamble", "closer", "narration",
                "nominal", "fragment", "double_passive", "jinhaeng", "not_but", "style_mixed"]
 
 
@@ -54,7 +56,7 @@ def strip_code(m):
     chars = len(re.sub(r"\s", "", body)) or 1
     if lang in ("", "text", "markdown", "md", "plaintext") and len(HANGUL.findall(body)) / chars > 0.2:
         return body
-    return ""
+    return "\nCODEBLOCK.\n"  # keeps a section with only a command from looking empty
 
 
 def sentences(line):
@@ -65,13 +67,24 @@ def score(text):
     text = INLINE.sub("CODE", FENCE.sub(strip_code, text))
     r = {k: len(p.findall(text)) for k, p in PATTERNS.items()}
     r["emoji"] += r.pop("slack_emoji")
-    r.update(header=0, hr=0, closer=0, narration=0, nominal=0, fragment=0, preamble=0, max_eojeol=0)
+    r.update(title=0, header=0, hr=0, closer=0, narration=0, nominal=0, fragment=0, preamble=0, max_eojeol=0)
     formal = plain = 0
     first = True
-    for line in text.splitlines():
+    section = None  # sentence count under the current header; None before the first header
+    lines = text.splitlines()
+    while lines and not lines[0].strip():
+        lines.pop(0)
+    if lines and TITLE.match(lines[0]):
+        r["title"] = 1
+        lines.pop(0)
+    for line in lines:
         if HEADER.match(line):
-            r["header"] += 1
+            # K10: a header over a section of fewer than three sentences is a defect.
+            r["header"] += section is not None and section < 3
+            section = 0
             continue
+        if TABLE.match(line) and section is not None and not re.match(r"^\s*\|[-:| ]+\|\s*$", line):
+            section += 1
         if HR.match(line):
             r["hr"] += 1
             continue
@@ -87,6 +100,8 @@ def score(text):
         if (is_list and len(line.split()) >= 3 and not LABEL.match(line)
                 and not (FORMAL.search(end_line) or PLAIN.search(end_line))):
             r["fragment"] += 1
+        if section is not None:
+            section += len(sentences(line))
         for s in sentences(line):
             end = TRAIL.sub("", s)
             r["closer"] += bool(CLOSER.search(s))
@@ -98,6 +113,7 @@ def score(text):
                 formal += 1
             elif PLAIN.search(end):
                 plain += 1
+    r["header"] += section is not None and section < 3
     r["style_mixed"] = min(formal, plain)
     r["formal"], r["plain"] = formal, plain
     return r
@@ -113,7 +129,8 @@ def defects(r, scenario=""):
     r["register"] = register_miss(r, scenario)
     if scenario in OUT_OF_SCOPE:
         return 0
-    skip = QUOTES_ORIGINAL.get(scenario, set()) | ({"header"} if scenario in DOC_SCENARIOS else set())
+    # A document may open with one title line; a reply may not (K1).
+    skip = QUOTES_ORIGINAL.get(scenario, set()) | ({"title"} if scenario in DOC_SCENARIOS else set())
     return r["register"] + sum(r[k] for k in DEFECT_KEYS if k not in skip)
 
 
@@ -161,7 +178,13 @@ def self_test():
         ("- 항목\n- 항목", "hr", 0),
         ("문제는 A — B입니다.", "emdash", 1),
         ("범위는 2020–2024입니다.", "emdash", 0),
-        ("## 원인\n본문입니다.", "header", 1),
+        ("본문입니다.\n## 원인\n본문입니다.", "header", 1),
+        ("# 제목\n본문입니다.", "title", 1),
+        ("# 제목\n본문입니다.", "header", 0),
+        ("## 원인\n하나입니다. 둘입니다. 셋입니다.\n## 조치\n하나입니다.", "header", 1),
+        ("## 원인\n- 하나입니다.\n- 둘입니다.\n- 셋입니다.", "header", 0),
+        ("**경고:** 되돌릴 수 없습니다.", "bold", 0),
+        ("**주의** 운영 DB입니다.", "bold", 0),
         ("캐시가 아니라 DB입니다.", "not_but", 1),
         ("완료했습니다 🎉", "emoji", 1),
         (":rotating_light: 장애입니다.", "emoji", 1),

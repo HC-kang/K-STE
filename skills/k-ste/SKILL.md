@@ -1,6 +1,6 @@
 ---
 name: k-ste
-description: Use when writing or rewriting Korean text that a colleague will read or act on, such as answers, Slack messages, status updates, incident reports, PR descriptions, commit messages, runbooks, meeting notes, error messages, or prompts for another agent. Also use when the user asks to make Korean text easier to read or to check it, for example "쉽게 바꿔줘", "다듬어줘", "고쳐줘", "줄여줘", "짧게", "읽기 쉽게", "검사해줘", "어디가 문제야", "번역투", "AI 말투", "K-STE", "STE". Not for marketing copy or creative writing.
+description: Use when writing or rewriting Korean text that a colleague will read or act on, such as answers, Slack messages, status updates, incident reports, PR descriptions, commit messages, runbooks, meeting notes, error messages, or prompts for another agent. Also use when the user asks to make Korean text easier to read or to check it, for example "쉽게 바꿔줘", "다듬어줘", "고쳐줘", "줄여줘", "짧게", "읽기 쉽게", "검사해줘", "문제를 찾아줘", "어디가 문제야", "번역투", "AI 말투", "K-STE", "STE". Not for marketing copy or creative writing.
 ---
 
 # K-STE: 한국어 업무 글쓰기
@@ -12,7 +12,8 @@ description: Use when writing or rewriting Korean text that a colleague will rea
 다른 규칙과 부딪히면 이 규칙을 따른다.
 
 - 주어진 사실에 없는 사실, 원인, 수치, 명령, 절차를 더하지 않는다. 필요한 정보가 없으면 "확인하지 않았다"고 쓰거나 사용자에게 묻는다.
-- 조건, 예외, 범위 표지를 빼지 않는다. 예: 일부, 만, 까지, 정상적으로, 가능하다면, 최근 30일.
+- 조건, 예외, 범위 표지를 빼지 않는다. 예: 이번, 일부, 만, 까지, 정상적으로, 가능하다면, 최근 30일.
+- 인과 관계를 바꾸지 않는다. "배포 이후 오류가 늘었다"를 "배포 때문에 오류가 늘었다"로 바꾸면 원인이 생긴다.
 - 확신 정도를 바꾸지 않는다. "생길 수 있다"를 "생긴다"로 쓰지 않는다. 반대로도 바꾸지 않는다.
 - 의무 강도를 바꾸지 않는다. "해야 한다", "권장한다", "해도 된다", "해 주세요"는 서로 다른 강도다. "반드시"를 더하거나 빼지 않는다.
 - 두 가지로 읽히는 표현은 하나로 고르지 않는다. 그 문장은 나누지 않고, 주어나 목적어를 더하지 않고, 어순을 바꾸지 않는다. 원래 표현을 그대로 두고 `확인 필요:`에 적는다. 흔한 유형은 다음과 같다.
@@ -24,7 +25,7 @@ description: Use when writing or rewriting Korean text that a colleague will rea
 
 ## 출력의 모양
 
-글이 대화창이나 메신저에서 바로 읽히면 답변이다. 파일, 저장소, 위키, 이슈 트래커, PR에 올라가면 문서다. 분석이나 정리를 요청받아도 대화창에 답하면 답변이다.
+사용자가 문서 장르(README, 설계 문서, 런북, 절차서, PR 설명, 장애 보고서, 회의록)를 지정하거나 파일에 쓰라고 하면 문서다. 그 밖의 대화창 응답은 답변이다. "분석해서 정리해줘"처럼 장르를 지정하지 않은 요청은 답변이다.
 
 답변(채팅, Slack, 메신저, 리뷰 코멘트, 이메일)은 다음 순서로 쓴다. 문체는 합니다체이고, 지시는 "~하십시오"로 쓴다.
 
@@ -59,8 +60,8 @@ description: Use when writing or rewriting Korean text that a colleague will rea
 | K7 | 조건을 동작 앞에 쓴다. 지시문에는 대상과 행동을 쓴다. | "디스크 사용률이 80%를 넘으면 로그 보관 기간을 7일로 줄이십시오." |
 | K8 | 전문용어는 그대로 쓴다. 사용자가 독자에 비개발자가 있다고 했으면, 비개발자가 모를 용어와 약어를 처음 나올 때 괄호 안에 한 구절로 풀이한다. 재작성에서는 이 조건이 없으면 풀이를 더하지 않는다. 풀이가 정확한지 확신이 없으면 풀이하지 않는다. | "레플리카(원본 DB를 복사해서 읽기 요청만 처리하는 서버)" |
 | K9 | 정보가 없는 말을 쓰지 않는다. 인사, 서두, 맺음 제안("필요하시면", "원하시면"), 자기 서술("살펴보겠습니다"), 근거 없는 평가어, "A가 아니라 B" 대구, "핵심은 ~입니다"가 대상이다. "진행하다", "실시하다", "수행하다"는 "하다"로 쓴다. | "서버 점검을 실시할 예정입니다" → "서버를 점검할 예정입니다." |
-| K10 | 서식은 기본이 줄글이다. 세 개 이상의 병렬 단계나 조건은 목록으로, 같은 기준의 비교는 표로 쓴다. 볼드는 경고에만 쓴다. 이모지, 이모지 코드(`:emoji:`), 엠대시, `---` 구분선을 쓰지 않는다. 두 문장짜리 섹션에 헤더를 붙이지 않는다. 숫자 범위는 `3-5개`로 쓴다. 붙여 넣을 메시지를 코드 블록으로 감싸지 않는다. | "**현상**" 같은 볼드 제목 대신 첫 문장에 현상을 쓴다. |
-| K11 | 한 글 안에서 문체를 섞지 않는다. 재작성은 원문의 문체를 유지한다. 수치에는 단위, 기준, 시점을 쓴다. | "10월 1일부터 월간 활성 사용자가 12,000명에서 15,400명으로 늘었습니다." |
+| K10 | 서식은 기본이 줄글이다. 세 개 이상의 병렬 단계나 조건은 목록으로, 같은 기준의 비교는 표로 쓴다. 볼드는 경고에만 쓴다. 섹션 제목이 필요하면 볼드 줄 대신 헤더를 쓴다. 이모지, 이모지 코드(`:emoji:`), 엠대시, `---` 구분선을 쓰지 않는다. 두 문장짜리 섹션에 헤더를 붙이지 않는다. 숫자 범위는 `3-5개`로 쓴다. 붙여 넣을 메시지를 코드 블록으로 감싸지 않는다. | "**현상**" 같은 볼드 제목 대신 첫 문장에 현상을 쓴다. |
+| K11 | 한 글 안에서 문체를 섞지 않는다. 목록, 표, `확인 필요:` 줄도 본문과 같은 문체로 쓴다. 재작성은 원문의 문체를 유지한다. 수치에는 단위, 기준, 시점을 쓴다. | "10월 1일부터 월간 활성 사용자가 12,000명에서 15,400명으로 늘었습니다." |
 
 ## 범위
 
@@ -75,6 +76,7 @@ description: Use when writing or rewriting Korean text that a colleague will rea
 | "안내문이니 '제출해야 합니다'를 '제출해 주세요'로 부드럽게 바꾸자." | 의무가 요청으로 약해진다. K0 위반이다. |
 | "중요한 내용이니 '반드시'를 더하자." | 원문에 없는 의무다. K0 위반이다. |
 | "최대한 짧게 해 달라고 했으니 조사와 주어를 빼자." | 짧게 쓰려면 군말과 중복을 지운다. 조사, 주어, 조건은 남긴다(K3). "확인하고, 실패하면"은 무엇이 실패하는지 흐린다. "백업이 실패하면"으로 쓴다. |
+| "짧게 하려면 '중단해야 합니다'를 '중단합니다'로 줄이자." | 의무가 사실 서술로 바뀐다(K0). 의무 표현은 남긴다. |
 | "쉽게 바꾸려면 용어 풀이를 붙이자." | 원문 독자가 이미 아는 용어에 풀이를 더하면 글만 길어진다. 틀린 풀이는 뜻을 바꾼다(K8). |
 | "독자를 위해 대안 버전과 수정 설명도 주자." | 요청하지 않은 출력이다. 고친 글 하나만 낸다. |
 | "읽기 좋게 항목 이름을 볼드로 강조하자." | 볼드는 경고에만 쓴다(K10). 항목은 목록이나 표로 구분한다. |
