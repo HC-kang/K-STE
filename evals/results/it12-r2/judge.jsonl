@@ -1,0 +1,44 @@
+{"file": "evals/results/it12-r2/haiku/agent+short/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "Redis를 도입하면 서버 4대가 같은 캐시를 함께 쓰므로, 서버마다 상품 목록이 달라지는 문제는 없어집니다."}}
+{"file": "evals/results/it12-r2/haiku/agent+short/S10.md", "sid": "S10", "verdict": {"conclusion_first": false, "first_sentence": "# CI 빌드 실패 원인 분석: `@company/ui` 2.0.0 업그레이드"}}
+{"file": "evals/results/it12-r2/haiku/agent+short/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/haiku/agent+short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/haiku/agent+short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/haiku/agent+short/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/haiku/agent+short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/haiku/agent+short/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API의 p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it12-r2/haiku/agent+short/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it12-r2/haiku/agent+short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it12-r2/haiku/agent+short/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it12-r2/haiku/short/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "Redis를 도입하면 4대 서버가 같은 상품 목록을 보게 되므로, 서버마다 내용이 달라지는 문제는 없어집니다."}}
+{"file": "evals/results/it12-r2/haiku/short/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "결론부터 말하면, 가장 유력한 원인은 `@company/ui` 2.0.0에 추가된 `exports` 필드다."}}
+{"file": "evals/results/it12-r2/haiku/short/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/haiku/short/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"운영 배포 전까지는 운영 환경에 이 버그가 남아 있습니다\" states a fact that is not in the list; the notes say only that the production deploy has not happened yet and that 37 orders had wrong amounts."]}}
+{"file": "evals/results/it12-r2/haiku/short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/haiku/short/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/haiku/short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/haiku/short/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API의 p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it12-r2/haiku/short/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it12-r2/haiku/short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it12-r2/haiku/short/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' could also be read as the check failing, not the backup failing."]}}
+{"file": "evals/results/it12-r2/sonnet/agent+short/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "로컬 캐시는 서버 4대가 각자 따로 저장하는 방식이고, Redis 캐시는 4대가 한 곳에 같이 저장하는 방식입니다."}}
+{"file": "evals/results/it12-r2/sonnet/agent+short/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 `@company/ui` 2.0.0에 추가된 `exports` 필드(패키지가 외부에 공개하는 경로 목록)로 보입니다."}}
+{"file": "evals/results/it12-r2/sonnet/agent+short/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/agent+short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/agent+short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/agent+short/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/agent+short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/agent+short/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it12-r2/sonnet/agent+short/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/agent+short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/agent+short/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/short/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "로컬 캐시는 서버마다 따로 갖고 있는 임시 저장소이고, Redis 캐시는 서버 4대가 함께 쓰는 임시 저장소입니다."}}
+{"file": "evals/results/it12-r2/sonnet/short/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 로컬이 아직 `@company/ui` 1.4.0을 쓰고, CI만 2.0.0을 설치해서 `@company/ui/button` 경로가 막힌 것입니다."}}
+{"file": "evals/results/it12-r2/sonnet/short/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/short/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/short/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it12-r2/sonnet/short/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it12-r2/sonnet/short/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

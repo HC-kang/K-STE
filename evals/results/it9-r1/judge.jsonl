@@ -1,0 +1,48 @@
+{"file": "evals/results/it9-r1/haiku/agent+short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/haiku/agent+short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/haiku/agent+short/S15.md", "sid": "S15", "verdict": {"pass": false, "issues": ["Task 1 says \"설정 파일 auth.yaml의 session_timeout 값을 바꾼다\" but leaves out that auth.yaml is the 인증 서버 설정 파일, so this fact from the list is missing and the reader cannot tell whether the file belongs to 인증 서버 or 결제 서버."]}}
+{"file": "evals/results/it9-r1/haiku/base/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"10/20(월) 10:00\" adds a weekday the notes do not give, and 2026-10-20 is a Tuesday, not a Monday.", "\"운영 배포 전까지는 같은 버그로 주문이 계속 발생할 수 있습니다\" states a risk claim the notes do not contain.", "\"37건 보정 방법은 배포 후 별도로 정리해서 공유드리겠습니다\" adds a plan the notes do not contain."]}}
+{"file": "evals/results/it9-r1/haiku/base/S13.md", "sid": "S13", "verdict": {"pass": false, "issues": ["\"재테스트에서는 800 RPS 구간의 p99, 오류율, DB CPU 사용률을 중점적으로 확인합니다\" adds a retest focus plan that the list does not contain.", "\"800 RPS | ... | ❌ 기준 미달\" applies the target to 800 RPS, but the list defines that target only at 500 RPS, so this criterion is not in the list."]}}
+{"file": "evals/results/it9-r1/haiku/base/S15.md", "sid": "S15", "verdict": {"pass": false, "issues": ["The year in \"2026년 10월 17일 14:00\" and in the due dates \"2026년 10월 21일\", \"2026년 10월 22일\", and \"2026년 10월 23일\" is not in the fact list, which gives only \"10월 17일\", \"10월 21일\", \"10월 22일\", and \"10월 23일\"."]}}
+{"file": "evals/results/it9-r1/haiku/full/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/haiku/full/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/haiku/full/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/haiku/short/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"운영 배포 전까지 같은 오류가 계속 발생할 수 있습니다\" adds a prediction that is not in the fact list."]}}
+{"file": "evals/results/it9-r1/haiku/short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/haiku/short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/agent+short/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"스테이징 배포와 QA 테스트를 마쳤습니다\" uses \"마쳤습니다\" (a synonym of 완료) for the QA test, and that sentence does not state the result (14개 전부 통과) or that the tests ran on staging."]}}
+{"file": "evals/results/it9-r1/sonnet/agent+short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/agent+short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/base/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"운영 배포 전까지는 같은 오류가 계속 발생할 수 있습니다\" adds a claim that is not in the facts; the note outside the message says it was inferred, but it still appears in the Slack text."]}}
+{"file": "evals/results/it9-r1/sonnet/base/S13.md", "sid": "S13", "verdict": {"pass": false, "issues": ["\"초당 800건에서는 기준을 크게 넘었고\" uses 크게, but neither that sentence nor an adjacent sentence gives the 1.9초 or 2.3% figures.", "\"응답 시간과 오류율이 크게 나빠졌습니다\" uses 크게, but neither that sentence nor an adjacent sentence gives the 800-rps p99 or error-rate numbers.", "\"같은 시점에\" says the CPU peak and the degradation happened at the same time, which the facts do not state.", "\"같은 조건으로 다시 테스트합니다\" adds test conditions that the facts do not specify.", "\"초당 800건에서 p99, 오류율, DB CPU가 어떻게 달라지는지 비교합니다\" and \"다음 테스트에서 확인합니다\" add plan details that the list does not contain."]}}
+{"file": "evals/results/it9-r1/sonnet/base/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/full/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/full/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/full/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/short/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"스테이징 검증까지 끝났습니다\" is a vague completion statement like the \"QA 확인 완료\" example: the sentence does not say that the 15:10 staging deploy succeeded or that QA passed all 14 test cases."]}}
+{"file": "evals/results/it9-r1/sonnet/short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/haiku/agent+short/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/haiku/agent+short/S14.md", "sid": "S14", "verdict": {"pass": false, "issues": ["The output never asks the writer to confirm which document \"해당 문서\" means; there is no \"확인 필요\" line or equivalent question."]}}
+{"file": "evals/results/it9-r1/haiku/base/S11.md", "sid": "S11", "verdict": {"pass": false, "issues": ["The definition table adds a start date for the 90-day rule that the facts do not contain: \"교체 주기 기산일 | 해당 API 키가 발급된 날짜\".", "The definition table adds a scope for the incident-response exception that the facts do not contain: \"장애 대응 중 | 서비스 장애의 원인 분석, 복구, 또는 영향 완화 작업이 진행 중인 상태\".", "The recommendation is narrowed to production keys only, which the facts do not state: \"운영 환경 API 키 교체는 평일 업무 시간(10:00–18:00)에 하는 것을 권장한다\"."]}}
+{"file": "evals/results/it9-r1/haiku/base/S14.md", "sid": "S14", "verdict": {"pass": false, "issues": ["The rewrite adds \"세부 원인, 조치 내용, 재발 방지 계획\" as the document's contents, which the original does not state.", "The rewrite changes \"어제\" to \"2026년 10월 16일\", a specific date that the original does not contain.", "The rewrite replaces \"해당 문서\" with the placeholder \"[문서명]\"."]}}
+{"file": "evals/results/it9-r1/haiku/full/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/haiku/full/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/haiku/short/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/haiku/short/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/agent+short/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/agent+short/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/base/S11.md", "sid": "S11", "verdict": {"pass": false, "issues": ["The summary table marks the recommendation \"평일 업무 시간(10:00-18:00)에 키를 교체한다.\" as \"해당 없음\" for 개발 환경, which limits it to production; the list states no such scope."]}}
+{"file": "evals/results/it9-r1/sonnet/base/S14.md", "sid": "S14", "verdict": {"pass": false, "issues": ["Meaning change: \"관련 내용\" became \"오류 원인과 조치 내용\", which says the document contains the cause, and the original does not say that.", "Meaning change: \"어제\" became the specific date \"10월 16일(금)\", which the original does not contain.", "The output does not ask the writer to confirm which document \"해당 문서\" means; the \"확인이 필요한 사항\" lines cover only the time range and the date.", "The rewrite replaces \"해당 문서\" with the placeholder \"[문서명](링크)\"."]}}
+{"file": "evals/results/it9-r1/sonnet/full/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/full/S14.md", "sid": "S14", "verdict": {"pass": false, "issues": ["The output keeps \"해당 문서\" but has no \"확인 필요\" line or question asking the writer which document it means."]}}
+{"file": "evals/results/it9-r1/sonnet/short/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/short/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/haiku/agent+short/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/haiku/base/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["\"관련 팀원은 참석 부탁드립니다\" adds a request and attendees that the memo does not contain."]}}
+{"file": "evals/results/it9-r1/haiku/full/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/haiku/short/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/agent+short/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/base/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["\"해결하려면 버튼 글자색 또는 배경색 변경이 필요해 보입니다\" adds a fix that the memo does not contain.", "\"디자인팀 확인 부탁드립니다\" adds a request and assigns an actor (디자인팀) that the memo does not contain."]}}
+{"file": "evals/results/it9-r1/sonnet/full/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it9-r1/sonnet/short/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}

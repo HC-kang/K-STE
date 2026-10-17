@@ -1,0 +1,72 @@
+{"file": "evals/results/it13-r3/haiku/agent+short/S1.md", "sid": "S1", "verdict": {"conclusion_first": false, "first_sentence": "로컬 캐시는 서버마다 상품 목록을 자기 메모리(서버가 작업할 때 쓰는 임시 공간)에 따로 복사해 두는 방식입니다."}}
+{"file": "evals/results/it13-r3/haiku/agent+short/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "**가장 가능성이 높은 원인은 `@company/ui` 2.0.0에서 추가된 `exports` 필드가 `button` 하위 경로를 노출하지 않거나 다른 경로로 바꾼 것입니다.**"}}
+{"file": "evals/results/it13-r3/haiku/agent+short/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/agent+short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/agent+short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/agent+short/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/agent+short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/agent+short/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["\"웹 페이지의 접근성 문제를 자동으로 찾는 도구\" adds a description of axe that the memo does not contain.", "\"개발팀은 2안으로 프론트엔드 화면을 개발하고 있으며\" names the development team as the actor, but the memo does not say who is developing the screens."]}}
+{"file": "evals/results/it13-r3/haiku/agent+short/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "결제 API 응답 지연과 결제 실패율 증가가 발생해 원인을 확인하고 있습니다."}}
+{"file": "evals/results/it13-r3/haiku/agent+short/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/agent+short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/agent+short/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/full/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "Redis를 쓰면 4대 서버가 같은 캐시 내용을 보게 되므로, 가격을 바꿨을 때 서버마다 다른 가격이 나가는 문제를 줄일 수 있습니다."}}
+{"file": "evals/results/it13-r3/haiku/full/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 가능성이 높은 원인은 `@company/ui` 2.0.0에서 추가된 `exports` 필드(패키지 바깥에 공개하는 경로 목록)입니다."}}
+{"file": "evals/results/it13-r3/haiku/full/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/full/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/full/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/full/S14.md", "sid": "S14", "verdict": {"pass": false, "issues": ["The second confirmation line offers candidate readings that the original does not name, including a candidate action (\"완전히 복구되었다는 뜻인지, 임시 조치로 로그인이 가능해졌다는 뜻인지\")."]}}
+{"file": "evals/results/it13-r3/haiku/full/S15.md", "sid": "S15", "verdict": {"pass": false, "issues": ["\"결제 서버 설정이 10월 23일에 바뀌지 않았는지 점검한다\" attaches 10월 23일 to the setting change instead of the check, which states a fact the list does not contain (the list says 김하늘 checks on 10월 23일)."]}}
+{"file": "evals/results/it13-r3/haiku/full/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["\"2026년 10월 22일은 목요일입니다\" adds a year and weekday the memo does not contain; the weekday is correct for 2026, but this check note belongs to the author, not the shared team message."]}}
+{"file": "evals/results/it13-r3/haiku/full/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "결제 API 응답 지연과 결제 실패율 증가가 발생했습니다."}}
+{"file": "evals/results/it13-r3/haiku/full/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/full/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/full/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '실패하면', so the sentence can also be read as the check failing, not the backup failing."]}}
+{"file": "evals/results/it13-r3/haiku/short/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "로컬 캐시는 각 서버가 자기 메모리에 상품 목록 사본을 두는 방식이고, Redis(서버 4대가 함께 쓰는 공용 저장소)는 별도 서버 1대에 사본을 두는 방식입니다."}}
+{"file": "evals/results/it13-r3/haiku/short/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 `@company/ui` 2.0.0의 `exports` 필드(패키지가 외부에 공개할 진입 경로를 정한 설정)에 `button` 경로가 없어서, `@company/ui/button` 같은 하위 경로 import(패키지 안의 특정 파일을 경로로 직접 가져오는 방식)가 막힌 것으로 보입니다."}}
+{"file": "evals/results/it13-r3/haiku/short/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/short/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/short/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/haiku/short/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "결제 API에서 장애가 발생했고, 원인은 아직 확인되지 않았습니다."}}
+{"file": "evals/results/it13-r3/haiku/short/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The causal link '이에 따라' is removed, so the output no longer says the backup and verification steps follow from the possible data integrity issue."]}}
+{"file": "evals/results/it13-r3/haiku/short/S6.md", "sid": "S6", "verdict": {"meaning_changed": true, "issues": ["The original '메모리를 많이 사용하며, 배포 후 재시작하면 초기화됩니다' can mean either the servers or their memory is initialized, and the output's added subject '두 서버는' silently picks the servers."]}}
+{"file": "evals/results/it13-r3/haiku/short/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/agent+short/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "로컬 캐시는 서버마다 따로 갖는 임시 저장소이고, Redis 캐시는 서버 4대가 함께 쓰는 임시 저장소입니다."}}
+{"file": "evals/results/it13-r3/sonnet/agent+short/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "로컬 빌드가 성공하는 이유는 로컬 `node_modules`에 `@company/ui` 1.4.0이 남아 있기 때문으로 보입니다."}}
+{"file": "evals/results/it13-r3/sonnet/agent+short/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/agent+short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/agent+short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/agent+short/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/agent+short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/agent+short/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/agent+short/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it13-r3/sonnet/agent+short/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/agent+short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/agent+short/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/full/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "로컬 캐시는 서버마다 따로 가지는 임시 저장소이고, Redis 캐시는 서버 4대가 함께 쓰는 하나의 임시 저장소입니다."}}
+{"file": "evals/results/it13-r3/sonnet/full/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "원인은 로컬 빌드가 `@company/ui` 2.0.0을 쓰지 않기 때문일 가능성이 가장 높습니다."}}
+{"file": "evals/results/it13-r3/sonnet/full/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/full/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/full/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/full/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/full/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/full/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["The note \"올해 10/22는 목요일입니다\" adds a weekday fact the memo does not contain. The fact is correct, since 2026-10-22 is a Thursday, but it is still outside the memo.", "\"요일이 수요일이라 날짜가 10/21일 수 있습니다\" adds a date, 10/21, that the memo does not contain."]}}
+{"file": "evals/results/it13-r3/sonnet/full/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it13-r3/sonnet/full/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/full/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/full/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' is dropped from '백업이 실패한 경우', so '실패하면' could refer to the backup or to the check (확인) failing."]}}
+{"file": "evals/results/it13-r3/sonnet/short/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "Redis를 도입하면 API 서버 4대가 같은 캐시(자주 쓰는 데이터를 빠르게 꺼내려고 임시로 저장해 두는 곳)를 함께 쓰므로, 서버마다 상품 정보가 다르게 보이는 문제가 없어집니다."}}
+{"file": "evals/results/it13-r3/sonnet/short/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "로컬 `node_modules`에 아직 `@company/ui` 1.4.0이 남아 있고 CI는 2.0.0을 설치해서 결과가 갈린 것으로 보입니다."}}
+{"file": "evals/results/it13-r3/sonnet/short/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/short/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/short/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/short/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it13-r3/sonnet/short/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/short/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it13-r3/sonnet/short/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

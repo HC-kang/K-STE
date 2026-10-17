@@ -44,7 +44,7 @@ PLAIN = re.compile(r"(다|라|냐|자)$")            # 한다체 (checked after 
 
 # Documents use 한다체 and follow their genre's headers. Replies use 합니다체.
 # S8 (marketing) is out of scope. S9 (check mode) quotes the original, so its quoted wording is not a defect.
-DOC_SCENARIOS = {"S3", "S4"}
+DOC_SCENARIOS = {"S3", "S4", "S11", "S15"}
 OUT_OF_SCOPE = {"S8"}
 QUOTES_ORIGINAL = {"S9": {"double_passive", "jinhaeng", "nominal", "not_but"}}
 DEFECT_KEYS = ["bold", "emdash", "title", "header", "hr", "emoji", "tilde_range", "preamble", "closer", "narration",
