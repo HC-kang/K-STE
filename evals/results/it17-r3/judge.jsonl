@@ -1,0 +1,18 @@
+{"file": "evals/results/it17-r3/haiku/agent+short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/haiku/full/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/haiku/short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/sonnet/agent+short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/sonnet/full/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/sonnet/short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/haiku/agent+short/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/haiku/agent+short/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/haiku/full/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/haiku/full/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/haiku/short/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/haiku/short/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/sonnet/agent+short/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The summary span \"10월 22일부터 10월 30일까지\" ends on the password-change deadline, but nothing labels it as a deadline (마감, 기한)."]}}
+{"file": "evals/results/it17-r3/sonnet/agent+short/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/sonnet/full/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The summary span \"10월 22일부터 30일까지\" ends on the password deadline (10월 30일) and starts on the survey deadline (10월 22일), and neither endpoint is labeled as a deadline (마감/기한)."]}}
+{"file": "evals/results/it17-r3/sonnet/full/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/sonnet/short/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r3/sonnet/short/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}

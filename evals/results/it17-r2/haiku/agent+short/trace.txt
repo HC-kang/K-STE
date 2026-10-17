@@ -1,0 +1,3 @@
+S17	skill=['k-ste']	reads=['references/genres.md']
+S18	skill=[]	reads=[]
+S19	skill=[]	reads=[]

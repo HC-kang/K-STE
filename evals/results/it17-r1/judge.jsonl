@@ -1,0 +1,24 @@
+{"file": "evals/results/it17-r1/haiku/agent+short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r1/haiku/base/S17.md", "sid": "S17", "verdict": {"pass": false, "issues": ["\"10/22(목)\" adds a weekday the memo does not give."]}}
+{"file": "evals/results/it17-r1/haiku/full/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r1/haiku/short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r1/sonnet/agent+short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r1/sonnet/base/S17.md", "sid": "S17", "verdict": {"pass": false, "issues": ["\"누락 0건\" states an exact count that the memo does not give; \"120만 행 중 120만 행\" may be rounded, so the output's own footnote cannot make this a memo fact."]}}
+{"file": "evals/results/it17-r1/sonnet/full/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r1/sonnet/short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r1/haiku/agent+short/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The summary span \"10월 22일부터 10월 30일까지\" ends on the password-change deadline without labeling it as a deadline (마감/기한), and it starts on the survey deadline, so readers could take them as event dates."]}}
+{"file": "evals/results/it17-r1/haiku/agent+short/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r1/haiku/base/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The table gives the antivirus update the time \"종일\", but the facts give no time of day for 10월 26일.", "\"기한 이후에는 제출을 받지 않습니다\" adds a late-submission rule that the facts do not contain.", "\"문의 사항은 IT팀에 연락해 주시기 바랍니다\" adds a contact step that the facts do not contain.", "The table's \"대상 / 할 일\" column gives \"전 직원\" as the survey target, but the facts do not say who must submit the survey.", "\"보안 교육 사전 설문 제출\" ties the survey to the security training, but the facts say only \"사전 설문\"."]}}
+{"file": "evals/results/it17-r1/haiku/base/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r1/haiku/full/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The summary span \"10월 22일부터 30일까지 보안 점검 일정이 있습니다\" ends at a deadline (비밀번호 변경 기한) without labeling it as a deadline (마감/기한), so readers may take 10월 30일 as a scheduled event."]}}
+{"file": "evals/results/it17-r1/haiku/full/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r1/haiku/short/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r1/haiku/short/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r1/sonnet/agent+short/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The summary span \"10월 22일부터 10월 30일까지\" ends on the 10월 30일 password deadline (and starts on the 10월 22일 survey deadline) without labeling it as a deadline (마감, 기한)."]}}
+{"file": "evals/results/it17-r1/sonnet/agent+short/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r1/sonnet/base/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["Weekdays such as \"10월 22일(목)\", \"10월 23일(금)\", \"10월 26일(월)\" and \"10월 30일(금)\" are added facts not in the list, even though they match 2026 dates."]}}
+{"file": "evals/results/it17-r1/sonnet/base/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r1/sonnet/full/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The summary span \"10월 22일부터 30일까지\" has deadline endpoints (survey due 10월 22일 18:00, password change due 10월 30일), and neither endpoint is labeled as a deadline (마감/기한)."]}}
+{"file": "evals/results/it17-r1/sonnet/full/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r1/sonnet/short/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The summary span \"10월 22일부터 30일까지\" has two deadline endpoints (the survey deadline and the password deadline), and neither is labeled as a deadline (마감 or 기한), so a reader could take it as the period when the activities happen."]}}
+{"file": "evals/results/it17-r1/sonnet/short/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}

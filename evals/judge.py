@@ -147,8 +147,52 @@ A failure is any of these:
    A short general definition of a technical term in parentheses is not a failure.
 """ + TAIL
 
+COMPLETION = """You audit a Korean status message written from a work memo. Check only how finished work is reported.
+
+A failure is any of these:
+1. A completion word (완료, 마쳤다, 끝냈다, 끝났다, 마무리했다, 다 했다) reports a step whose result the memo gives,
+   and neither that sentence nor the sentence right after it states the result.
+   For example "고객 테이블 이관을 마쳤습니다" without "120만 행 중 120만 행",
+   or "검증도 완료했습니다" without "쿼리 3개 모두 일치".
+2. An evaluative word replaces a stated fact (for example "문제없이 이관했습니다" instead of saying the service did not stop).
+3. A fact, cause, number, or plan appears that the memo does not contain.
+""" + TAIL
+
+DATES = """You audit a Korean announcement written from a list of facts. Check only how dates and times are presented.
+
+The facts contain two kinds of dates.
+- Scheduled: the event happens at that time (security training on 10월 23일 14:00; IT updates every laptop on 10월 26일).
+- Deadline: the action must be done by that time (survey by 10월 22일 18:00; each employee changes the password by 10월 30일).
+
+A failure is any of these:
+1. A deadline is presented so a reader could take it as the time the action happens, or a scheduled date as a deadline.
+   For example "10월 22일 18:00에 설문을 제출합니다", "10월 26일까지 백신 업데이트",
+   or a single date column (날짜, 일시, 기한) that mixes both kinds without marking which is which in each row,
+   or a "~부터 ~까지" span in a summary whose endpoint is a deadline and is not labeled as one (마감, 기한, 제출 기한).
+   A span whose deadline endpoints are labeled (for example "피드백 마감까지") is fine.
+2. The actor or the obligation changes (for example employees are told to update the antivirus themselves,
+   or the password change becomes optional).
+3. A fact, place, time, or step appears that the list does not contain.
+""" + TAIL
+
+DATES2 = """You audit a Korean email written from a list of facts. Check only how dates and times are presented.
+
+The facts contain two kinds of dates.
+- Scheduled: the event happens at that time (kickoff meeting on 11월 3일 10:00; internal demo on 11월 13일).
+- Deadline: the action must be done by that time (design drafts by 11월 6일; demo feedback is collected until 11월 18일 18:00).
+
+A failure is any of these:
+1. A deadline is presented so a reader could take it as the time the action happens, or a scheduled date as a deadline.
+   For example "11월 6일에 시안을 제출합니다", "11월 13일까지 시연",
+   or a single date column that mixes both kinds without marking which is which in each row,
+   or a "~부터 ~까지" span in a summary whose endpoint is a deadline and is not labeled as one (마감, 기한, 제출 기한).
+   A span whose deadline endpoints are labeled (for example "피드백 마감까지") is fine.
+2. The actor or the obligation changes.
+3. A fact, place, time, or step appears that the list does not contain.
+""" + TAIL
+
 CHECKS = {"S5": MEANING, "S6": MEANING, "S7": MEANING, "S1": CONCLUSION, "S2": CONCLUSION, "S10": CONCLUSION,
-          "S11": NORMATIVE, "S12": VAGUE, "S13": JUDGMENT, "S14": FLAG, "S15": REFERENCE, "S16": HELDOUT}
+          "S11": NORMATIVE, "S12": VAGUE, "S13": JUDGMENT, "S14": FLAG, "S15": REFERENCE, "S16": HELDOUT, "S17": COMPLETION, "S18": DATES, "S19": DATES2}
 
 
 def judge(path, model):

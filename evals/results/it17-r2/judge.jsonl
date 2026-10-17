@@ -1,0 +1,24 @@
+{"file": "evals/results/it17-r2/haiku/agent+short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/haiku/base/S17.md", "sid": "S17", "verdict": {"pass": false, "issues": ["\"10/22(목)\" adds a weekday (목) that the memo does not contain."]}}
+{"file": "evals/results/it17-r2/haiku/full/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/haiku/short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/sonnet/agent+short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/sonnet/base/S17.md", "sid": "S17", "verdict": {"pass": false, "issues": ["The title \"고객 테이블 이관 완료 보고\" uses a completion word, and neither the title nor the next sentence (\"…이관 결과 공유드립니다.\") states the result \"120만 행 중 120만 행\".", "\"(누락 0건)\" adds a number that the memo does not contain, even though the 120만 of 120만 figure implies it."]}}
+{"file": "evals/results/it17-r2/sonnet/full/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/sonnet/short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/haiku/agent+short/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/haiku/agent+short/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/haiku/base/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The weekdays \"(수)\", \"(목)\", \"(일)\", \"(수)\" are not in the facts, and they are also wrong for 2026: 10월 22일 is Thursday, 23일 Friday, 26일 Monday, and 30일 Friday.", "The time \"종일\" for the 10월 26일 antivirus update is not in the facts.", "The step \"문의 사항은 IT팀으로 연락 바랍니다\" is not in the facts.", "\"보안 교육 사전 설문\" ties the survey to the security training, but the facts say only \"사전 설문\"."]}}
+{"file": "evals/results/it17-r2/haiku/base/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/haiku/full/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/haiku/full/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/haiku/short/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The summary span \"10월 22일부터 10월 30일까지 보안 관련 일정이 있습니다\" uses two deadlines (survey on 10월 22일, password on 10월 30일) as its endpoints but labels neither as 마감 or 기한, so it reads as a period of scheduled events."]}}
+{"file": "evals/results/it17-r2/haiku/short/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/sonnet/agent+short/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The summary span \"10월 22일부터 10월 30일까지\" uses deadline dates as its endpoints (survey due 10월 22일, password change due 10월 30일) and does not label them as deadlines (마감/기한)."]}}
+{"file": "evals/results/it17-r2/sonnet/agent+short/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/sonnet/base/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The weekdays \"(목)\", \"(금)\", \"(월)\" are added; the fact list gives no weekdays or year.", "\"보안 교육 사전 설문 제출\" ties the survey to the security training, but the list says only \"사전 설문\".", "The 대상 \"전 직원\" for the survey row is not in the list, which does not say who must submit the survey."]}}
+{"file": "evals/results/it17-r2/sonnet/base/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/sonnet/full/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The summary span \"10월 22일부터 30일까지\" ends on the password-change deadline (and starts on the survey deadline) but does not label either endpoint as a 마감 or 기한."]}}
+{"file": "evals/results/it17-r2/sonnet/full/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/sonnet/short/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it17-r2/sonnet/short/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}

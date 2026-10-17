@@ -1,0 +1,3 @@
+S17	skill=[]	reads=[]
+S18	skill=['k-ste']	reads=[]
+S19	skill=['k-ste']	reads=[]
