@@ -1,0 +1,7 @@
+{
+ "id": "K02",
+ "source": "kubernetes/website content/ko/docs/tasks/run-application/access-api-from-pod.md",
+ "license": "CC BY 4.0",
+ "heading": "REST API에 직접 접근",
+ "text": "파드에서 실행되는 동안, 쿠버네티스 apiserver는 `default` 네임스페이스에서 `kubernetes`라는\n서비스를 통해 접근할 수 있다. 따라서, 파드는 `kubernetes.default.svc`\n호스트 이름을 사용하여 API 서버를 쿼리할 수 있다. 공식 클라이언트 라이브러리는\n이를 자동으로 수행한다.\n\nAPI 서버를 인증하는 권장 방법은 \n서비스 어카운트 자격 증명을 사용하는 것이다. \n기본적으로, 파드는 서비스 어카운트와 연결되어 있으며, \n해당 서비스 어카운트에 대한 자격 증명(토큰)은 \n해당 파드에 있는 각 컨테이너의 파일시스템 트리의 \n`/var/run/secrets/kubernetes.io/serviceaccount/token` 에 있다.\n\n사용 가능한 경우, 인증서 번들은 각 컨테이너의\n파일시스템 트리의 `/var/run/secrets/kubernetes.io/serviceaccount/ca.crt` 에 배치되며,\nAPI 서버의 제공 인증서를 확인하는 데 사용해야 한다.\n\n마지막으로, 네임스페이스가 지정된 API 작업에 사용되는 기본 네임스페이스는 각 컨테이너의\n`/var/run/secrets/kubernetes.io/serviceaccount/namespace` 에 있는 파일에 배치된다."
+}

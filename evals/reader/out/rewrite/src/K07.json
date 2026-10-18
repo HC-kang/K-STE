@@ -1,0 +1,7 @@
+{
+ "id": "K07",
+ "source": "kubernetes/website content/ko/docs/tasks/network/reconfigure-default-service-ip-ranges.md",
+ "license": "CC BY 4.0",
+ "heading": "쿠버네티스 기본 서비스 CIDR 재구성",
+ "text": "이 문서는 쿠버네티스 클러스터 내 서비스 IP 주소 범위를 관리하는 \n방법을 설명하며, 이는 클러스터가 서비스에 대해 지원하는 IP 패밀리에도\n영향을 준다.\n\n서비스 ClusterIPs에 사용 가능한 IP 패밀리는 kube-apiserver의 `--service-cluster-ip-range` \n플래그에 의해 결정된다. 서비스 IP 주소 할당에 대해 더 잘 이해하려면\n가상 IP 및 서비스 프록시 문서를 참고한다.\n\n쿠버네티스 1.33부터, 클러스터에 대해 설정된 서비스 IP 패밀리는\n`kubernetes`라는 이름의 `ServiceCIDR` 오브젝트로 반영된다. `kubernetes` `ServiceCIDR` \n오브젝트는 최초로 실행된 kube-apiserver 인스턴스가 자신에게 설정된 `--service-cluster-ip-range` 플래그를\n기반으로 생성한다. 일관된 클러스터 동작을 보장하기 위해, 모든 kube-apiserver 인스턴스는 동일한 `--service-cluster-ip-range` 값으로 설정되어야 하며, 이는 기본 쿠버네티스 ServiceCIDR 오브젝트와 일치해야 한다."
+}

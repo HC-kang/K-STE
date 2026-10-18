@@ -1,1 +1,9 @@
 __pycache__/
+
+# reader eval: blog passages are not ours to redistribute
+evals/reader/out/rewrite/src-local/
+evals/reader/out/rewrite/items/B*
+evals/reader/out/rewrite/texts/*/B*
+# reader eval logs can echo prompts that quote blog passages
+evals/reader/out/*.stdout
+evals/reader/out/*.stderr
