@@ -1,0 +1,7 @@
+{
+ "id": "P066",
+ "source": "kubernetes/website content/ko/docs/concepts/extend-kubernetes/api-extension/apiserver-aggregation.md",
+ "license": "CC BY 4.0",
+ "heading": "애그리게이션 레이어",
+ "text": "애그리게이션 레이어는 kube-apiserver 프로세스 안에서 구동된다. 확장 리소스가 등록되기 전까지, \n애그리게이션 레이어는 아무 일도 하지 않는다. API를 등록하기 위해서, 사용자는 쿠버네티스 API 내에서 URL 경로를 \n\"요구하는(claim)\" APIService 오브젝트를 추가해야 한다. 이때, 애그리게이션 레이어는 \n해당 API 경로(예: /apis/myextensions.mycompany.io/v1/...)로 전송되는 모든 것을 등록된 APIService로 프록시하게 된다.\n\nAPIService를 구현하는 가장 일반적인 방법은 클러스터 내에 실행되고 있는 파드에서 *extension API server* 를 실행하는 것이다. \nextension API server를 사용해서 클러스터의 리소스를 관리하는 경우 \nextension API server(\"extension-apiserver\" 라고도 한다)는 일반적으로 하나 이상의 \n컨트롤러와 쌍을 이룬다. \napiserver-builder 라이브러리는 extension API server와 연관된 컨틀로러에 대한 스켈레톤을 제공한다."
+}

@@ -1,0 +1,7 @@
+{
+ "id": "P074",
+ "source": "kubernetes/website content/ko/docs/concepts/configuration/secret.md",
+ "license": "CC BY 4.0",
+ "heading": "시크릿 이름 및 데이터에 대한 제약 사항 {#restriction-names-data}",
+ "text": "시크릿 오브젝트의 이름은 유효한\nDNS 서브도메인 이름이어야 한다.\n\n사용자는 시크릿을 위한 파일을 구성할 때 `data` 및 (또는) `stringData` 필드를\n명시할 수 있다. 해당 `data` 와 `stringData` 필드는 선택적으로 명시할 수 있다.\n`data` 필드의 모든 키(key)에 해당하는 값(value)은 base64로 인코딩된 문자열이어야 한다.\n만약 사용자에게 base64로의 문자열 변환이 적합하지 않다면,\n임의의 문자열을 값으로 받는 `stringData` 필드를 대신 사용할 수 있다.\n\n`data` 및 `stringData`의 키는 영숫자 문자,\n`-`, `_`, 또는 `.` 으로 구성되어야 한다. `stringData` 필드의 모든 키-값 쌍은 의도적으로\n`data` 필드로 합쳐진다. 만약 키가 `data` 와 `stringData` 필드 모두에 정의되어\n있으면, `stringData` 필드에 지정된 값이\n우선적으로 사용된다."
+}

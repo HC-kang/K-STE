@@ -1,0 +1,69 @@
+{
+ "id": "P031",
+ "source": "kubernetes/website content/ko/docs/concepts/architecture/garbage-collection.md",
+ "license": "CC BY 4.0",
+ "heading": "포그라운드 캐스케이딩 삭제 {#foreground-deletion}",
+ "text": "포그라운드 캐스케이딩 삭제에서는 삭제하려는 소유자 오브젝트가 먼저\n*삭제 중* 상태가 된다. 이 상태에서는 소유자 오브젝트에게 다음과 같은 일이\n일어난다:\n\n  * 쿠버네티스 API 서버가 오브젝트의 `metadata.deletionTimestamp` 필드를\n    오브젝트가 삭제 표시된 시간으로 설정한다.\n  * 쿠버네티스 API 서버가 `metadata.finalizers` 필드를 `foregroundDeletion`로\n    설정한다. \n  * 오브젝트는 삭제 과정이 완료되기 전까지 \n    쿠버네티스 API를 통해 조회할 수 있다.\n\n소유자 오브젝트가 삭제 중 상태가 된 이후, 컨트롤러는 종속 오브젝트들을 삭제한다.\n모든 종속 오브젝트들이 삭제되고나면, 컨트롤러가 소유자 오브젝트를 삭제한다.\n이 시점에서 오브젝트는 더 이상 \n쿠버네티스 API를 통해 조회할 수 없다.\n\n포그라운드 캐스케이딩 삭제 중에 소유자 오브젝트의 삭제를 막는\n종속 오브젝트는`ownerReference.blockOwnerDeletion=true`필드를 가진 오브젝트다.\n더 자세한 내용은 Use foreground cascading deletion를\n참고한다.",
+ "questions": [
+  {
+   "q": "포그라운드 캐스케이딩 삭제에서 소유자 오브젝트가 먼저 들어가는 상태는 무엇인가?",
+   "A": "API 조회 불가 상태",
+   "B": "종속 오브젝트 생성 상태",
+   "C": "삭제 중 상태",
+   "D": "삭제 완료 상태",
+   "answer": "C",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "API 서버가 소유자 오브젝트의 metadata.deletionTimestamp에 설정하는 값은 무엇인가?",
+   "A": "컨트롤러가 마지막 종속 오브젝트를 조회한 시간",
+   "B": "모든 종속 오브젝트의 삭제가 완료된 시간",
+   "C": "소유자 오브젝트가 생성된 시간",
+   "D": "소유자 오브젝트가 삭제 표시된 시간",
+   "answer": "D",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "소유자 오브젝트가 삭제 중 상태가 되면 API 서버는 metadata.finalizers를 무엇으로 설정하는가?",
+   "A": "ownerReference",
+   "B": "deletionTimestamp",
+   "C": "foregroundDeletion",
+   "D": "blockOwnerDeletion",
+   "answer": "C",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "삭제 중인 소유자 오브젝트를 쿠버네티스 API로 조회할 수 있는 기간은 언제까지인가?",
+   "A": "소유자 오브젝트의 삭제 과정이 완료되기 전까지",
+   "B": "삭제 표시되기 직전까지",
+   "C": "첫 종속 오브젝트의 삭제가 시작되기 전까지",
+   "D": "metadata.finalizers가 설정되기 전까지",
+   "answer": "A",
+   "facts": [],
+   "type": "when"
+  },
+  {
+   "q": "글에 설명된 컨트롤러의 삭제 순서는 무엇인가?",
+   "A": "종속 오브젝트들을 삭제한 다음 소유자 오브젝트를 삭제 중 상태로 바꾸고 종속 오브젝트들을 재생성한다.",
+   "B": "소유자 오브젝트를 API에서 조회할 수 없게 한 다음 종속 오브젝트들을 삭제한다.",
+   "C": "소유자 오브젝트가 삭제 중 상태가 되면 종속 오브젝트들을 삭제하고, 모두 삭제된 후 소유자를 삭제한다.",
+   "D": "소유자 오브젝트를 삭제한 다음 종속 오브젝트들을 삭제한다.",
+   "answer": "C",
+   "facts": [],
+   "type": "when"
+  },
+  {
+   "q": "포그라운드 캐스케이딩 삭제 중 소유자의 삭제를 막는 종속 오브젝트의 조건은 무엇인가?",
+   "A": "쿠버네티스 API로 조회할 수 없는 경우",
+   "B": "ownerReference.blockOwnerDeletion=true 필드를 가진 경우",
+   "C": "metadata.deletionTimestamp가 없는 경우",
+   "D": "metadata.finalizers가 foregroundDeletion인 경우",
+   "answer": "B",
+   "facts": [],
+   "type": "condition"
+  }
+ ]
+}

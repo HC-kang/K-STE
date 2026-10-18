@@ -1,0 +1,69 @@
+{
+ "id": "P038",
+ "source": "kubernetes/website content/ko/docs/concepts/security/controlling-access.md",
+ "license": "CC BY 4.0",
+ "heading": "전송 보안",
+ "text": "기본적으로 쿠버네티스 API 서버는 로컬 호스트가 아닌 첫 번째 네트워크 인터페이스의 6443 포트에서 수신 대기하며,\nTLS로 보호된다. 일반적인 프로덕션 쿠버네티스 클러스터에서\nAPI는 443 포트에서 서비스된다. 포트는 `--secure-port` 플래그로,\n수신 대기 IP 주소는 `--bind-address` 플래그로 변경할 수 있다.\n\nAPI 서버는 인증서를 제시한다. 이 인증서는 사설 인증 기관(CA)을 사용하여\n서명되거나, 공인 CA와 연결된 공개키 인프라스트럭처에 기반한다.\n인증서와 그에 해당하는 개인키는\n`--tls-cert-file`과 `--tls-private-key-file` 플래그를 사용하여 설정할 수 있다.\n\n클러스터에서 사설 인증 기관을 사용하는 경우, 해당 CA 인증서의 사본을\n클라이언트의 `~/.kube/config`에 구성해야 한다. 그래야\n연결을 신뢰하고 누군가 중간에서 연결을 가로채지 않았음을 확신할 수 있다.\n\n클라이언트는 이 단계에서 TLS 클라이언트 인증서를 제시할 수 있다.",
+ "questions": [
+  {
+   "q": "쿠버네티스 API 서버는 기본적으로 어디에서 수신 대기하는가?",
+   "A": "로컬 호스트의 443 포트",
+   "B": "로컬 호스트의 6443 포트",
+   "C": "로컬 호스트가 아닌 첫 번째 네트워크 인터페이스의 6443 포트",
+   "D": "로컬 호스트가 아닌 첫 번째 네트워크 인터페이스의 443 포트",
+   "answer": "C",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "일반적인 프로덕션 쿠버네티스 클러스터에서 API가 서비스되는 포트는 무엇인가?",
+   "A": "6443",
+   "B": "443",
+   "C": "43",
+   "D": "644",
+   "answer": "B",
+   "facts": [],
+   "type": "number"
+  },
+  {
+   "q": "포트와 수신 대기 IP 주소를 변경하는 플래그를 올바르게 짝지은 것은 무엇인가?",
+   "A": "포트: --bind-address, IP 주소: --secure-port",
+   "B": "포트: --secure-port, IP 주소: --bind-address",
+   "C": "포트: --tls-private-key-file, IP 주소: --tls-cert-file",
+   "D": "포트: --tls-cert-file, IP 주소: --tls-private-key-file",
+   "answer": "B",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "API 서버의 인증서와 해당 개인키를 설정하는 플래그는 각각 무엇인가?",
+   "A": "인증서: --secure-port, 개인키: --bind-address",
+   "B": "인증서: --bind-address, 개인키: --secure-port",
+   "C": "인증서: --tls-private-key-file, 개인키: --tls-cert-file",
+   "D": "인증서: --tls-cert-file, 개인키: --tls-private-key-file",
+   "answer": "D",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "클러스터가 사설 CA를 사용하는 경우 클라이언트에서 해야 하는 설정은 무엇인가?",
+   "A": "API 서버 개인키를 --bind-address에 지정한다.",
+   "B": "클라이언트의 인증서를 반드시 공인 CA 인증서로 교체한다.",
+   "C": "CA 인증서 사본을 ~/.kube/config에 구성한다.",
+   "D": "API 서버의 포트를 반드시 6443으로 변경한다.",
+   "answer": "C",
+   "facts": [],
+   "type": "obligation"
+  },
+  {
+   "q": "사설 CA 인증서 사본을 클라이언트에 구성하는 이유는 무엇인가?",
+   "A": "클라이언트가 서버의 개인키를 대신 보관하도록 하기 위해",
+   "B": "API 서버가 첫 번째 네트워크 인터페이스를 선택하도록 하기 위해",
+   "C": "프로덕션 API의 포트를 자동으로 443으로 바꾸기 위해",
+   "D": "연결을 신뢰하고 중간에서 연결을 가로채지 않았음을 확신하기 위해",
+   "answer": "D",
+   "facts": [],
+   "type": "cause"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "id": "P142",
+ "source": "kubernetes/website content/ko/docs/concepts/architecture/cgroups.md",
+ "license": "CC BY 4.0",
+ "heading": "cgroup v2로 마이그레이션 {#migrating-cgroupv2}",
+ "text": "cgroup v2로 마이그레이션하려면, 요구 사항을 충족하는지 확인한 다음, cgroup v2를\n기본적으로 활성화하는 커널 버전으로 업그레이드한다.\n\nkubelet은 OS가 cgroup v2에서 실행 중임을 자동으로 감지하며\n추가 구성 없이 그에 맞춰 작동한다.\n\n사용자들이 노드나 컨테이너 내부에서\ncgroup 파일 시스템에 직접 접근하지 않는 한,\ncgroup v2로 전환할 때 사용자 경험에서 뚜렷한 차이는 없을 것이다.\n\ncgroup v2는 cgroup v1과 다른 API를 사용하므로, cgroup 파일 시스템에\n직접 접근하는 애플리케이션이 있다면, cgroup v2를\n지원하는 새로운 버전으로 업데이트해야 한다. 예를 들어,\n\n* 일부 서드파티 모니터링 및 보안 에이전트는 cgroup 파일 시스템에 의존할 수 있다.\n 이러한 에이전트들을 cgroup v2를 지원하는 버전으로 업데이트 한다.\n* cAdvisor를\n 파드 및 컨테이너 모니터링을 위한 독립형 DaemonSet으로 실행하는 경우, v0.43.0 이상으로 업데이트 한다.\n* 자바 애플리케이션을 배포하는 경우, cgroup v2를 완전히 지원하는 버전을 선호한다.\n    * OpenJDK / HotSpot: jdk8u372, 11.0.16, 15 이상\n    * IBM Semeru Runtimes: 8.0.382.0, 11.0.20.0, 17.0.8.0 이상\n    * IBM Java: 8.0.8.6 이상\n* uber-go/automaxprocs 패키지를 사용하는 경우, 사용하는\n  버전이 v1.5.1 이상인지 확인한다."
+}

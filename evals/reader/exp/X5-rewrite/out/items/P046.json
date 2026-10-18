@@ -1,0 +1,69 @@
+{
+ "id": "P046",
+ "source": "kubernetes/website content/ko/docs/concepts/workloads/pods/pod-qos.md",
+ "license": "CC BY 4.0",
+ "heading": "서비스 품질 클래스",
+ "text": "쿠버네티스는 실행하는 파드를 분류하고 각 파드를 특정\n_서비스 품질(QoS) 클래스_에 할당한다. 쿠버네티스는 이 분류를 사용하여 서로 다른\n파드가 처리되는 방식에 영향을 미친다. 쿠버네티스는 해당 파드에 있는\n컨테이너의 \n리소스 요청과\n해당 요청이 리소스 한도(limit)와 어떻게 관련되는지에 따라 이 분류를 수행한다. \n이를 서비스 품질(QoS)\n클래스라고 한다. 쿠버네티스는 구성 요소인 컨테이너의 리소스 요청과\n한도를 기반으로 모든 파드에 QoS 클래스를 할당한다. QoS 클래스는 쿠버네티스가\n노드 압박을\n받는 노드에서 어떤 파드를 축출할지 결정하는 데 사용된다. 가능한\nQoS 클래스는 `Guaranteed`, `Burstable`, 그리고 `BestEffort`이다. \n노드에 리소스가 부족하면 쿠버네티스는 먼저 해당 노드에서 실행 중인 `BestEffort`\n파드를 축출하고, 그 다음에는 `Burstable`, 마지막으로 `Guaranteed` 파드를 축출한다. \n이러한 축출이 리소스 압박으로 인한 경우, 리소스 요청을 초과하는 파드만 축출 후보가 된다.",
+ "questions": [
+  {
+   "q": "쿠버네티스가 파드의 QoS 클래스를 할당하는 기준은 무엇인가?",
+   "A": "서비스의 개수와 노드의 실행 시간",
+   "B": "노드의 파드 수와 파드 생성 순서",
+   "C": "컨테이너의 리소스 요청과 한도",
+   "D": "파드의 축출 이력과 서비스 이름",
+   "answer": "C",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "노드에 리소스가 부족할 때 QoS 클래스에 따른 파드 축출 순서는 무엇인가?",
+   "A": "Guaranteed → Burstable → BestEffort",
+   "B": "Burstable → BestEffort → Guaranteed",
+   "C": "BestEffort → Guaranteed → Burstable",
+   "D": "BestEffort → Burstable → Guaranteed",
+   "answer": "D",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "리소스 압박으로 인한 축출에서 후보가 되는 파드의 조건은 무엇인가?",
+   "A": "리소스 한도가 설정되지 않아야 한다.",
+   "B": "노드에서 가장 먼저 생성되어야 한다.",
+   "C": "Guaranteed 클래스여야 한다.",
+   "D": "리소스 요청을 초과해야 한다.",
+   "answer": "D",
+   "facts": [],
+   "type": "condition"
+  },
+  {
+   "q": "글에서 제시한 QoS 클래스는 모두 몇 가지인가?",
+   "A": "두 가지",
+   "B": "네 가지",
+   "C": "세 가지",
+   "D": "다섯 가지",
+   "answer": "C",
+   "facts": [],
+   "type": "number"
+  },
+  {
+   "q": "쿠버네티스가 QoS 클래스를 할당하는 대상의 범위는 무엇인가?",
+   "A": "모든 파드",
+   "B": "리소스 요청을 초과한 파드만",
+   "C": "축출 대상으로 선택된 파드만",
+   "D": "리소스가 부족한 노드의 파드만",
+   "answer": "A",
+   "facts": [],
+   "type": "scope"
+  },
+  {
+   "q": "BestEffort 파드가 자신의 리소스 요청을 초과하지 않은 경우, 리소스 압박으로 인한 축출 후보가 되는가?",
+   "A": "BestEffort이므로 무조건 첫 번째 후보가 된다.",
+   "B": "리소스 요청을 초과하지 않았으므로 후보가 되지 않는다.",
+   "C": "Burstable 파드가 없을 때만 후보가 된다.",
+   "D": "Guaranteed 파드보다 나중에 후보가 된다.",
+   "answer": "B",
+   "facts": [],
+   "type": "condition"
+  }
+ ]
+}

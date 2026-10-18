@@ -1,0 +1,229 @@
+{
+ "summary": {
+  "base": {
+   "mt": {
+    "acc": 0.9892857142857143,
+    "misread": 0.0,
+    "abstain": 0.010714285714285714,
+    "n": 280
+   },
+   "original": {
+    "acc": 0.9928571428571429,
+    "misread": 0.0,
+    "abstain": 0.007142857142857143,
+    "n": 280
+   },
+   "lost": 2,
+   "gained": 1,
+   "lost_by_type": {
+    "contact": 1,
+    "when": 1
+   },
+   "lost_to_E": 2,
+   "ko_chars_mean": 1198,
+   "en_chars_mean": 2549
+  },
+  "clarity": {
+   "mt": {
+    "acc": 0.9857142857142858,
+    "misread": 0.0,
+    "abstain": 0.014285714285714285,
+    "n": 280
+   },
+   "original": {
+    "acc": 0.9964285714285714,
+    "misread": 0.0,
+    "abstain": 0.0035714285714285713,
+    "n": 280
+   },
+   "lost": 4,
+   "gained": 1,
+   "lost_by_type": {
+    "deadline": 1,
+    "contact": 1,
+    "obligation": 1,
+    "when": 1
+   },
+   "lost_to_E": 4,
+   "ko_chars_mean": 1247,
+   "en_chars_mean": 2668
+  },
+  "short": {
+   "mt": {
+    "acc": 0.9964285714285714,
+    "misread": 0.0,
+    "abstain": 0.0035714285714285713,
+    "n": 280
+   },
+   "original": {
+    "acc": 0.9964285714285714,
+    "misread": 0.0,
+    "abstain": 0.0035714285714285713,
+    "n": 280
+   },
+   "lost": 1,
+   "gained": 1,
+   "lost_by_type": {
+    "when": 1
+   },
+   "lost_to_E": 1,
+   "ko_chars_mean": 975,
+   "en_chars_mean": 2203
+  },
+  "full": {
+   "mt": {
+    "acc": 0.9892857142857143,
+    "misread": 0.0,
+    "abstain": 0.010714285714285714,
+    "n": 280
+   },
+   "original": {
+    "acc": 0.9964285714285714,
+    "misread": 0.0,
+    "abstain": 0.0035714285714285713,
+    "n": 280
+   },
+   "lost": 2,
+   "gained": 0,
+   "lost_by_type": {
+    "who": 1,
+    "deadline": 1
+   },
+   "lost_to_E": 2,
+   "ko_chars_mean": 868,
+   "en_chars_mean": 1968
+  }
+ },
+ "tests": {
+  "mt acc full-base": {
+   "items": 40,
+   "diff": 0.0,
+   "ci95": [
+    -0.0179,
+    0.0143
+   ]
+  },
+  "mt misread full-base": {
+   "items": 40,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "loss full-base": {
+   "items": 40,
+   "diff": 0.0036,
+   "ci95": [
+    -0.0143,
+    0.025
+   ]
+  },
+  "mt acc short-base": {
+   "items": 40,
+   "diff": 0.0071,
+   "ci95": [
+    0.0,
+    0.0179
+   ]
+  },
+  "mt misread short-base": {
+   "items": 40,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "loss short-base": {
+   "items": 40,
+   "diff": -0.0036,
+   "ci95": [
+    -0.0179,
+    0.0071
+   ]
+  },
+  "mt acc clarity-base": {
+   "items": 40,
+   "diff": -0.0036,
+   "ci95": [
+    -0.0179,
+    0.0071
+   ]
+  },
+  "mt misread clarity-base": {
+   "items": 40,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "loss clarity-base": {
+   "items": 40,
+   "diff": 0.0071,
+   "ci95": [
+    -0.0071,
+    0.0214
+   ]
+  },
+  "mt acc full-clarity": {
+   "items": 40,
+   "diff": 0.0036,
+   "ci95": [
+    -0.0214,
+    0.025
+   ]
+  },
+  "mt misread full-clarity": {
+   "items": 40,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "loss full-clarity": {
+   "items": 40,
+   "diff": -0.0036,
+   "ci95": [
+    -0.025,
+    0.0214
+   ]
+  },
+  "loss base": {
+   "items": 40,
+   "diff": 0.0036,
+   "ci95": [
+    -0.0071,
+    0.0143
+   ]
+  },
+  "loss clarity": {
+   "items": 40,
+   "diff": 0.0107,
+   "ci95": [
+    -0.0071,
+    0.0321
+   ]
+  },
+  "loss short": {
+   "items": 40,
+   "diff": 0.0,
+   "ci95": [
+    -0.0107,
+    0.0107
+   ]
+  },
+  "loss full": {
+   "items": 40,
+   "diff": 0.0071,
+   "ci95": [
+    0.0,
+    0.0214
+   ]
+  }
+ },
+ "ceiling_broken": false,
+ "translation_flags": []
+}

@@ -1,0 +1,7 @@
+{
+ "id": "P112",
+ "source": "kubernetes/website content/ko/docs/concepts/scheduling-eviction/node-pressure-eviction.md",
+ "license": "CC BY 4.0",
+ "heading": "소프트 축출 임계값 {#soft-eviction-thresholds}",
+ "text": "소프트 축출 임계값은 관리자가 설정하는 유예 시간(필수)과 함께 정의된다. \nkubelet은 유예 시간이 초과될 때까지 파드를 제거하지 않는다. \n유예 시간이 지정되지 않으면 kubelet 시작 시 \n오류가 반환된다.\n\nkubelet이 축출 과정에서 사용할 수 있도록, \n'소프트 축출 임계값'과 '최대 허용 파드 종료 유예 시간' 둘 다를 설정할 수 있다. \n'최대 허용 파드 종료 유예 시간'이 설정되어 있는 상태에서 '소프트 축출 임계값'에 도달하면, \nkubelet은 두 유예 시간 중 작은 쪽을 적용한다. \n'최대 허용 파드 종료 유예 시간'을 설정하지 않으면, \nkubelet은 축출된 파드를 유예 시간 없이 즉시 종료한다.\n\n소프트 축출 임계값을 설정할 때 다음과 같은 플래그를 사용할 수 있다.\n\n* `eviction-soft`: 축출 임계값(예: `memory.available<1.5Gi`)의 집합이며, \n  지정된 유예 시간동안 이 축출 임계값 조건이 충족되면 파드 축출이 트리거된다.\n* `eviction-soft-grace-period`: 축출 유예 시간의 집합이며, \n  소프트 축출 임계값 조건이 이 유예 시간동안 충족되면 파드 축출이 트리거된다.\n* `eviction-max-pod-grace-period`: '최대 허용 파드 종료 유예 시간(단위: 초)'이며, \n  소프트 축출 임계값 조건이 충족되어 파드를 종료할 때 사용한다."
+}

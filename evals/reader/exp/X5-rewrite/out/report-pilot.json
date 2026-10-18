@@ -1,0 +1,145 @@
+{
+ "passages": 10,
+ "questions": 60,
+ "summary": {
+  "original": {
+   "acc": 1.0,
+   "misread": 0.0,
+   "abstain": 0.0,
+   "n": 60,
+   "chars_mean": 607,
+   "texts_with_flag": 0
+  },
+  "base": {
+   "acc": 1.0,
+   "misread": 0.0,
+   "abstain": 0.0,
+   "n": 60,
+   "chars_mean": 829,
+   "texts_with_flag": 0
+  },
+  "clarity": {
+   "acc": 0.9667,
+   "misread": 0.0,
+   "abstain": 0.0333,
+   "n": 60,
+   "chars_mean": 941,
+   "texts_with_flag": 2
+  },
+  "short": {
+   "acc": 1.0,
+   "misread": 0.0,
+   "abstain": 0.0,
+   "n": 60,
+   "chars_mean": 633,
+   "texts_with_flag": 3
+  },
+  "full": {
+   "acc": 1.0,
+   "misread": 0.0,
+   "abstain": 0.0,
+   "n": 60,
+   "chars_mean": 608,
+   "texts_with_flag": 0
+  }
+ },
+ "tests": {
+  "acc base-original": {
+   "passages": 10,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "sd": 0.0,
+   "noninferior_3pp": true
+  },
+  "acc clarity-original": {
+   "passages": 10,
+   "diff": -0.0333,
+   "ci95": [
+    -0.0833,
+    0.0
+   ],
+   "sd": 0.0703,
+   "noninferior_3pp": false
+  },
+  "acc short-original": {
+   "passages": 10,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "sd": 0.0,
+   "noninferior_3pp": true
+  },
+  "acc full-original": {
+   "passages": 10,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "sd": 0.0,
+   "noninferior_3pp": true
+  },
+  "acc full-base": {
+   "passages": 10,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "sd": 0.0
+  },
+  "acc short-base": {
+   "passages": 10,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "sd": 0.0
+  }
+ },
+ "ceiling_broken": false,
+ "original_below_100": false,
+ "causes_codex": {
+  "base": {
+   "silent_change": 0,
+   "flag_E": 0,
+   "other": 0,
+   "None": 0
+  },
+  "clarity": {
+   "silent_change": 0,
+   "flag_E": 1,
+   "other": 1,
+   "None": 0
+  },
+  "short": {
+   "silent_change": 0,
+   "flag_E": 0,
+   "other": 0,
+   "None": 0
+  },
+  "full": {
+   "silent_change": 0,
+   "flag_E": 0,
+   "other": 0,
+   "None": 0
+  }
+ },
+ "orig_also_wrong": {
+  "base": 0,
+  "clarity": 0,
+  "short": 0,
+  "full": 0
+ },
+ "cause_agreement_codex_grok": {
+  "cases": 2,
+  "agreement": 0.5,
+  "kappa": 0.333
+ }
+}

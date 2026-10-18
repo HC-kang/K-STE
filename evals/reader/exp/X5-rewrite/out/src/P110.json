@@ -1,0 +1,7 @@
+{
+ "id": "P110",
+ "source": "kubernetes/website content/ko/docs/tasks/debug/debug-cluster/audit.md",
+ "license": "CC BY 4.0",
+ "heading": "로그 항목 자르기 {#truncate}",
+ "text": "로그 및 웹훅 백엔드는 모두 로깅되는 이벤트의 크기 제한을 지원한다. \n예를 들어 로그 백엔드에 사용할 수 있는 플래그 목록은 다음과 같다.\n\n- `audit-log-truncate-enabled` 는 이벤트 및 자르기 배치가 활성화 되었는지 여부를 나타낸다.\n- `audit-log-truncate-max-batch-size` 는 기본 백엔드로 전송되는 배치의 바이트 단위의 최대 크기이다.\n- `audit-log-truncate-max-event-size` 는 기본 백엔드로 전송된 감사 이벤트의 바이트 단위의 최대 크기이다.\n\n기본적으로 `webhook` 과 `log` 모두에서 자르기 기능이 비활성화되어 있으므로 이 기능을 활성화 하기 위해\n클러스터 관리자는 `audit-log-truncate-enabled` 또는 `audit-webhook-truncate-enabled` 를 설정해야 한다."
+}

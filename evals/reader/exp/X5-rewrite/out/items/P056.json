@@ -1,0 +1,69 @@
+{
+ "id": "P056",
+ "source": "kubernetes/website content/ko/docs/tasks/administer-cluster/kubelet-credential-provider.md",
+ "license": "CC BY 4.0",
+ "heading": "이미지 매칭 구성",
+ "text": "kubelet은 각 자격 증명 공급자에 대한 `matchImages` 필드를 사용해 파드가 사용하고 있는 특정 이미지에 대해 플러그인을 호출할지 결정한다.\nGlobs는 도메인에서 사용할 수 있지만 포트나 경로에서는 사용할 수 없다.\nGlob은 `*.k8s.io`이나 `k8s.*.io` 같은 서브도메인과 `k8s.*`와 같은 최상위 도메인으로 지원된다.\n또한, `app*.k8s.io`와 같은 부분 서브도메인을 매칭하는 것도 지원된다.\n각 Glob은 단일 하위 도메인 세그먼트만 일치할 수 있으므로 `*.io`는 `*.k8s.io`과 일치하지 않는다.\n\n아래와 같은 경우 이미지 이름과 `matchImage` 항목 사이에 매치가 존재한다.\n\n* 둘 다 동일한 수의 도메인 파트를 포함하고 있으며 각 파트가 매치한다.\n* 매치 이미지의 URL 경로는 대상 이미지 URL 경로의 접두사여야 한다.\n* imageMatch에 포트가 포함되어 있으면 해당 포트는 이미지에서도 매치해야 한다.\n\n`matchImages` 패턴의 예시 값은 아래와 같다.\n\n* `123456789.dkr.ecr.us-east-1.amazonaws.com`\n* `*.azurecr.io`\n* `gcr.io`\n* `*.*.registry.io`\n* `foo.registry.io:8080/path`",
+ "questions": [
+  {
+   "q": "kubelet이 특정 이미지에 대해 자격 증명 공급자 플러그인을 호출할지 결정할 때 사용하는 필드는 무엇인가?",
+   "A": "imageMatch의 포트만",
+   "B": "도메인의 최상위 파트만",
+   "C": "대상 이미지의 URL 경로만",
+   "D": "matchImages",
+   "answer": "D",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "글에서 Glob을 사용할 수 있다고 설명한 범위는?",
+   "A": "도메인과 포트",
+   "B": "도메인",
+   "C": "도메인과 경로",
+   "D": "포트와 경로",
+   "answer": "B",
+   "facts": [],
+   "type": "scope"
+  },
+  {
+   "q": "`*.io`가 `*.k8s.io`와 일치하지 않는 이유는 무엇인가?",
+   "A": "최상위 도메인에는 Glob을 사용할 수 없기 때문이다.",
+   "B": "포트가 없는 패턴은 매칭할 수 없기 때문이다.",
+   "C": "부분 서브도메인 매칭만 지원하기 때문이다.",
+   "D": "각 Glob은 단일 하위 도메인 세그먼트만 일치시킬 수 있기 때문이다.",
+   "answer": "D",
+   "facts": [],
+   "type": "cause"
+  },
+  {
+   "q": "도메인과 포트 조건을 충족했을 때, 경로에 관한 매칭 조건은 무엇인가?",
+   "A": "패턴 경로에 반드시 Glob이 있어야 한다.",
+   "B": "두 경로의 길이가 반드시 같아야 한다.",
+   "C": "대상 이미지 경로가 패턴 경로의 접두사여야 한다.",
+   "D": "패턴의 URL 경로가 대상 이미지 URL 경로의 접두사여야 한다.",
+   "answer": "D",
+   "facts": [],
+   "type": "condition"
+  },
+  {
+   "q": "`foo.registry.io:8080/path`와 매칭되는 대상 이미지 이름은 무엇인가?",
+   "A": "foo.registry.io:8080/other/app",
+   "B": "foo.registry.io:8080/path/app",
+   "C": "foo.registry.io:9090/path/app",
+   "D": "bar.foo.registry.io:8080/path/app",
+   "answer": "B",
+   "facts": [],
+   "type": "condition"
+  },
+  {
+   "q": "다른 조건을 모두 충족한다고 할 때, `*.*.registry.io`의 도메인 조건에 맞는 것은 무엇인가?",
+   "A": "a.b.registry.io",
+   "B": "registry.io",
+   "C": "a.b.c.registry.io",
+   "D": "a.registry.io",
+   "answer": "A",
+   "facts": [],
+   "type": "condition"
+  }
+ ]
+}

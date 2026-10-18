@@ -1,0 +1,7 @@
+{
+ "id": "P037",
+ "source": "kubernetes/website content/ko/docs/concepts/storage/storage-capacity.md",
+ "license": "CC BY 4.0",
+ "heading": "스케줄링",
+ "text": "다음과 같은 경우 쿠버네티스 스케줄러에서 스토리지 용량 정보를 사용한다.\n- 파드가 아직 생성되지 않은 볼륨을 사용하고,\n- 해당 볼륨은 CSI 드라이버를 참조하고\n  `WaitForFirstConsumer`\n  볼륨 바인딩 모드를 사용하는\n  스토리지클래스(StorageClass)를 사용하고,\n- 드라이버의 `CSIDriver` 오브젝트에 `StorageCapacity` 속성이\n  true로 설정되어 있다.\n\n이 경우 스케줄러는 파드에 제공할\n충분한 스토리지가 있는 노드만 고려한다.\n이 검사는 아주 간단한데,\n볼륨의 크기를 노드를 포함하는 토폴로지를 가진 `CSIStorageCapacity` 오브젝트에\n나열된 용량과 비교한다.\n\n볼륨 바인딩 모드가 `Immediate` 인 볼륨의 경우에는 스토리지 드라이버는\n볼륨을 사용하는 파드와 관계없이 볼륨을 생성할 위치를 정한다.\n볼륨을 생성한 후에, 스케줄러는\n볼륨을 사용할 수 있는 노드에 파드를 스케줄링한다.\n\nCSI 임시 볼륨의 경우에는\n볼륨 유형이 로컬 볼륨이고\n큰 자원이 필요하지 않은 특정 CSI 드라이버에서만 사용된다는 가정하에,\n항상 스토리지 용량을 고려하지 않고\n스케줄링한다."
+}

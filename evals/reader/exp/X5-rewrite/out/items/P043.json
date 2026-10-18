@@ -1,0 +1,69 @@
+{
+ "id": "P043",
+ "source": "kubernetes/website content/ko/docs/concepts/workloads/controllers/daemonset.md",
+ "license": "CC BY 4.0",
+ "heading": "파드 셀렉터",
+ "text": "`.spec.selector` 필드는 파드 셀렉터이다. 이것은\n잡의 `.spec.selector` 와 같은 동작을 한다.\n\n`.spec.template`의 레이블과 매치되는 \n파드 셀렉터를 명시해야 한다.\n또한, 한 번 데몬셋이 만들어지면 \n`.spec.selector` 는 바꿀 수 없다. 파드 셀렉터를 변형하면 \n의도치 않게 파드가 고아가 될 수 있으며, 이는 사용자에게 혼란을 주는 것으로 밝혀졌다.\n\n`.spec.selector` 는 다음 2개의 필드로 구성된 오브젝트이다.\n\n* `matchLabels` - 레플리케이션컨트롤러의 \n`.spec.selector` 와 동일하게 작동한다.\n* `matchExpressions` - 키, 값 목록 그리고 키 및 값에 관련된 연산자를\n  명시해서 보다 정교한 셀렉터를 만들 수 있다.\n\n2개의 필드가 명시되면 두 필드를 모두 만족하는 것(ANDed)이 결과가 된다.\n\n`.spec.selector` 는 `.spec.template.metadata.labels` 와 일치해야 한다. \n이 둘이 서로 일치하지 않는 구성은 API에 의해 거부된다.",
+ "questions": [
+  {
+   "q": "데몬셋의 `.spec.selector` 필드는 무엇이며, 무엇과 같은 동작을 하는가?",
+   "A": "파드 레이블이며 레플리케이션컨트롤러의 템플릿과 같은 동작을 한다.",
+   "B": "연산자 목록이며 잡의 레이블과 같은 동작을 한다.",
+   "C": "노드 셀렉터이며 잡의 템플릿과 같은 동작을 한다.",
+   "D": "파드 셀렉터이며 잡의 `.spec.selector`와 같은 동작을 한다.",
+   "answer": "D",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "데몬셋의 `.spec.selector`를 변경할 수 없는 시점은 언제부터인가?",
+   "A": "API가 구성을 거부한 이후에만",
+   "B": "matchExpressions를 추가한 이후에만",
+   "C": "matchLabels와 matchExpressions를 함께 명시한 이후에만",
+   "D": "데몬셋이 만들어진 이후",
+   "answer": "D",
+   "facts": [],
+   "type": "when"
+  },
+  {
+   "q": "글에서 파드 셀렉터의 변경을 허용하지 않는 이유로 설명한 것은 무엇인가?",
+   "A": "잡의 파드 셀렉터까지 동시에 변경되기 때문이다.",
+   "B": "파드가 의도치 않게 고아가 되어 사용자에게 혼란을 줄 수 있기 때문이다.",
+   "C": "두 필드의 결합 방식이 AND에서 OR로 바뀌기 때문이다.",
+   "D": "모든 파드에 같은 키와 값 목록이 강제로 추가되기 때문이다.",
+   "answer": "B",
+   "facts": [],
+   "type": "cause"
+  },
+  {
+   "q": "키, 값 목록, 관련 연산자를 명시하여 정교한 셀렉터를 만드는 필드는 무엇인가?",
+   "A": "`matchExpressions`",
+   "B": "`.spec.template`",
+   "C": "`matchLabels`",
+   "D": "`metadata.labels`",
+   "answer": "A",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "matchLabels와 matchExpressions를 모두 명시하면 어떤 대상이 선택되는가?",
+   "A": "두 필드 중 하나만 만족하는 대상",
+   "B": "matchLabels만 만족하는 대상",
+   "C": "matchExpressions만 만족하는 대상",
+   "D": "두 필드를 모두 만족하는 대상",
+   "answer": "D",
+   "facts": [],
+   "type": "condition"
+  },
+  {
+   "q": "어떤 구성은 API에 의해 거부되는가?",
+   "A": "matchExpressions에 연산자를 명시한 구성",
+   "B": "matchLabels와 matchExpressions를 함께 명시한 구성",
+   "C": "템플릿 레이블에 맞는 파드 셀렉터를 명시한 구성",
+   "D": "`.spec.selector`와 `.spec.template.metadata.labels`가 일치하지 않는 구성",
+   "answer": "D",
+   "facts": [],
+   "type": "condition"
+  }
+ ]
+}

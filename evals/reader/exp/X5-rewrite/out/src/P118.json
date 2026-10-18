@@ -1,0 +1,7 @@
+{
+ "id": "P118",
+ "source": "kubernetes/website content/ko/docs/concepts/scheduling-eviction/topology-spread-constraints.md",
+ "license": "CC BY 4.0",
+ "heading": "파드어피니티(PodAffinity) 및 파드안티어피니티(PodAntiAffinity)와의 비교 {#comparison-with-podaffinity-podantiaffinity}",
+ "text": "쿠버네티스에서, 파드간 어피니티 및 안티 어피니티는 \n파드가 다른 파드에 서로 어떤 연관 관계를 지니며 스케줄링되는지를 제어하며, \n이는 파드들이 서로 더 밀집되도록 하거나 흩어지도록 하는 것을 의미한다.\n\n`podAffinity`\n: 파드를 끌어당긴다. 조건이 충족되는 토폴로지 도메인에는\n  원하는 수의 파드를 얼마든지 채울 수 있다.\n\n`podAntiAffinity`\n: 파드를 밀어낸다. \n  이를 `requiredDuringSchedulingIgnoredDuringExecution` 모드로 설정하면 \n  각 토폴로지 도메인에는 하나의 파드만 스케줄링될 수 있다. \n  반면 `preferredDuringSchedulingIgnoredDuringExecution`로 설정하면 제약 조건이 강제성을 잃게 된다.\n\n더 세밀한 제어를 위해, \n토폴로지 분배 제약 조건을 지정하여 다양한 토폴로지 도메인에 파드를 분배할 수 있고, \n이를 통해 고 가용성 또는 비용 절감을 달성할 수 있다. \n이는 또한 워크로드의 롤링 업데이트와 레플리카의 원활한 스케일링 아웃에 도움이 될 수 있다.\n\n더 자세한 내용은\n파드 토폴로지 분배 제약 조건에 대한 개선 제안의 \n동기(motivation) 섹션을 참고한다."
+}

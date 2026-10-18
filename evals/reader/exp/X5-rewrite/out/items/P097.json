@@ -1,0 +1,69 @@
+{
+ "id": "P097",
+ "source": "kubernetes/website content/ko/docs/concepts/architecture/control-plane-node-communication.md",
+ "license": "CC BY 4.0",
+ "heading": "API 서버에서 kubelet으로의 통신",
+ "text": "API 서버에서 kubelet으로의 연결은 다음의 용도로 사용된다.\n\n* 파드에 대한 로그를 가져온다.\n* 실행 중인 파드에 (보통의 경우 kubectl을 통해) 연결한다.\n* kubelet의 포트-포워딩 기능을 제공한다.\n\n위와 같은 연결은 kubelet의 HTTPS 엔드포인트에서 종료된다. 기본적으로, API 서버는 kubelet의 \n제공(serving) 인증서를 확인하지 않는다. 이는 연결이 중간자 공격(man-in-the-middle)에 시달리게 하며,\n신뢰할 수 없는 네트워크 및/또는 공용 네트워크에서 실행하기에 **안전하지 않다** .\n\n이 연결을 확인하려면, `--kubelet-certificate-authority` 플래그를 사용하여\nAPI 서버에 kubelet의 제공(serving) 인증서를 확인하는데 사용할 루트 인증서 번들을 제공한다.\n\n이것이 가능하지 않은 경우, 신뢰할 수 없는 네트워크 또는 공용 네트워크를 통한 연결을 피하기 위해\n필요한 경우, API 서버와 kubelet 간 SSH 터널링을\n사용한다.\n\n\n마지막으로, kubelet API를 보호하려면 \nKubelet 인증 및/또는 인가를 활성화해야 한다.",
+ "questions": [
+  {
+   "q": "API 서버에서 kubelet으로의 연결 용도로 명시된 것은?",
+   "A": "루트 인증서 번들을 생성하는 것",
+   "B": "파드에 대한 로그를 가져오는 것",
+   "C": "SSH 터널링을 기본 활성화하는 것",
+   "D": "kubelet의 제공 인증서를 자동 갱신하는 것",
+   "answer": "B",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "API 서버에서 kubelet으로 향하는 연결은 어디에서 종료되는가?",
+   "A": "kubelet의 HTTPS 엔드포인트",
+   "B": "kubectl의 SSH 엔드포인트",
+   "C": "API 서버의 인증서 저장소",
+   "D": "파드의 HTTP 엔드포인트",
+   "answer": "A",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "기본 상태의 연결이 중간자 공격에 취약한 이유로 제시된 것은?",
+   "A": "API 서버가 kubelet의 제공 인증서를 확인하지 않기 때문이다.",
+   "B": "API 서버가 파드 로그를 가져오기 때문이다.",
+   "C": "kubelet이 HTTPS 엔드포인트를 제공하지 않기 때문이다.",
+   "D": "kubectl이 실행 중인 파드에 연결할 수 없기 때문이다.",
+   "answer": "A",
+   "facts": [],
+   "type": "cause"
+  },
+  {
+   "q": "kubelet의 제공 인증서를 확인하도록 설정하려면 어떻게 해야 하는가?",
+   "A": "kubelet의 HTTPS 엔드포인트를 공용 네트워크에 둔다.",
+   "B": "포트-포워딩 기능으로 루트 인증서를 생성한다.",
+   "C": "kubectl을 통해 실행 중인 파드에 연결한다.",
+   "D": "--kubelet-certificate-authority 플래그로 루트 인증서 번들을 제공한다.",
+   "answer": "D",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "인증서 확인 설정이 불가능하고 신뢰할 수 없는 네트워크를 통한 연결을 피해야 할 때 제시된 대안은?",
+   "A": "kubelet의 포트-포워딩을 비활성화한다.",
+   "B": "파드 로그를 kubectl로만 가져온다.",
+   "C": "API 서버와 kubelet 간 SSH 터널링을 사용한다.",
+   "D": "API 서버의 인증서 확인을 기본값으로 유지한다.",
+   "answer": "C",
+   "facts": [],
+   "type": "condition"
+  },
+  {
+   "q": "글의 마지막에서 kubelet API를 보호하기 위해 활성화해야 한다고 한 것은?",
+   "A": "kubelet 포트-포워딩",
+   "B": "Kubelet 인증 및/또는 인가",
+   "C": "공용 네트워크 연결",
+   "D": "파드 로그 수집",
+   "answer": "B",
+   "facts": [],
+   "type": "obligation"
+  }
+ ]
+}

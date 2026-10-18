@@ -1,0 +1,7 @@
+{
+ "id": "P113",
+ "source": "kubernetes/website content/ko/docs/concepts/storage/ephemeral-volumes.md",
+ "license": "CC BY 4.0",
+ "heading": "CSI 드라이버 제한 사항",
+ "text": "CSI 임시 볼륨은 사용자로 하여금 `volumeAttributes`를 \n파드 스펙의 일부로서 CSI 드라이버에 직접 제공할 수 있도록 한다. \n보통은 관리자만 사용할 수 있는 `volumeAttributes`를 허용하는 CSI 드라이버는 \n내장(inline) 임시 볼륨 내에서 사용하는 것이 적합하지 않다. \n예를 들어, 일반적으로 스토리지클래스 내에 정의되어 있는 파라미터들은 \n내장 임시 볼륨 사용을 통해 사용자에게 노출되어서는 안 된다.\n\n클러스터 관리자가 이처럼 파드 스펙 내장 임시 볼륨 사용이 가능한 CSI 드라이버를 제한하려면 \n다음을 수행할 수 있다.\n\n- CSIDriver 스펙의 `volumeLifecycleModes`에서 `Ephemeral`을 제거하여, \n  해당 드라이버가 내장 임시 볼륨으로 사용되는 것을 막는다.\n- 어드미션 웹훅을 사용하여 \n  드라이버를 활용하는 방법을 제한한다."
+}

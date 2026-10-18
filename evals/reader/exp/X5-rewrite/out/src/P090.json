@@ -1,0 +1,7 @@
+{
+ "id": "P090",
+ "source": "kubernetes/website content/ko/docs/concepts/services-networking/endpoint-slices.md",
+ "license": "CC BY 4.0",
+ "heading": "관리",
+ "text": "대부분의 경우, 컨트롤 플레인(특히, 엔드포인트슬라이스\n컨트롤러)는\n엔드포인트슬라이스 오브젝트를 생성하고 관리한다. 다른 엔티티나 컨트롤러가 추가\n엔드포인트슬라이스 집합을 관리하게 할 수 있는 서비스 메시 구현과 같이\n엔드포인트슬라이스에 대한 다양한 유스케이스가 있다.\n\n여러 엔티티가 서로 간섭하지 않고 엔드포인트슬라이스를\n관리할 수 있도록 쿠버네티스는 엔드포인트슬라이스를 관리하는\n엔티티를 나타내는 `endpointslice.kubernetes.io/managed-by`\n레이블을\n정의한다.\n엔드포인트슬라이스 컨트롤러는 관리하는 모든 엔드포인트슬라이스에 레이블의 값으로\n`endpointslice-controller.k8s.io`를 설정한다. 엔드포인트슬라이스를\n관리하는 다른 엔티티도 이 레이블에 고유한 값을 설정해야 한다."
+}

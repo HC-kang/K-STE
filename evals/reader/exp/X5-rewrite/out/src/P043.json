@@ -1,0 +1,7 @@
+{
+ "id": "P043",
+ "source": "kubernetes/website content/ko/docs/concepts/workloads/controllers/daemonset.md",
+ "license": "CC BY 4.0",
+ "heading": "파드 셀렉터",
+ "text": "`.spec.selector` 필드는 파드 셀렉터이다. 이것은\n잡의 `.spec.selector` 와 같은 동작을 한다.\n\n`.spec.template`의 레이블과 매치되는 \n파드 셀렉터를 명시해야 한다.\n또한, 한 번 데몬셋이 만들어지면 \n`.spec.selector` 는 바꿀 수 없다. 파드 셀렉터를 변형하면 \n의도치 않게 파드가 고아가 될 수 있으며, 이는 사용자에게 혼란을 주는 것으로 밝혀졌다.\n\n`.spec.selector` 는 다음 2개의 필드로 구성된 오브젝트이다.\n\n* `matchLabels` - 레플리케이션컨트롤러의 \n`.spec.selector` 와 동일하게 작동한다.\n* `matchExpressions` - 키, 값 목록 그리고 키 및 값에 관련된 연산자를\n  명시해서 보다 정교한 셀렉터를 만들 수 있다.\n\n2개의 필드가 명시되면 두 필드를 모두 만족하는 것(ANDed)이 결과가 된다.\n\n`.spec.selector` 는 `.spec.template.metadata.labels` 와 일치해야 한다. \n이 둘이 서로 일치하지 않는 구성은 API에 의해 거부된다."
+}

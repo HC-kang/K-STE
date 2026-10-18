@@ -1,0 +1,7 @@
+{
+ "id": "P119",
+ "source": "kubernetes/website content/ko/docs/tasks/debug/debug-cluster/resource-metrics-pipeline.md",
+ "license": "CC BY 4.0",
+ "heading": "metrics-server {#metrics-server}",
+ "text": "metrics-server는 kubelet으로부터 리소스 메트릭을 수집하고, \n이를 HPA(Horizontal Pod Autoscaler) 및 VPA(Vertical Pod Autoscaler)가 활용할 수 있도록 쿠버네티스 API 서버 내에서 메트릭 API(Metrics API)를 통해 노출한다. \n`kubectl top` 명령을 사용하여 이 메트릭을 확인해볼 수도 있다.\n\nmetrics-server는 쿠버네티스 API를 사용하여 클러스터의 노드와 파드를 추적한다. \nmetrics-server는 각 노드에 HTTP를 통해 질의하여 메트릭을 수집한다. \nmetrics-server는 또한 파드 메타데이터의 내부적 뷰를 작성하고, 파드 헬스(health)에 대한 캐시를 유지한다. \n이렇게 캐시된 파드 헬스 정보는 metrics-server가 제공하는 확장 API(extension API)를 통해 이용할 수 있다.\n\nHPA 질의에 대한 예시에서, 예를 들어 HPA 질의에 대한 경우, \nmetrics-server는 디플로이먼트의 어떤 파드가 레이블 셀렉터 조건을 만족하는지 판별해야 한다.\n\nmetrics-server는 각 노드로부터 메트릭을 수집하기 위해 kubelet API를 호출한다. \n사용 중인 metrics-server 버전에 따라, 다음의 엔드포인트를 사용한다.\n\n* v0.6.0 이상: 메트릭 리소스 엔드포인트 `/metrics/resource`\n* 이전 버전: 요약 API 엔드포인트 `/stats/summary`"
+}

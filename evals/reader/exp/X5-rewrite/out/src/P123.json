@@ -1,0 +1,7 @@
+{
+ "id": "P123",
+ "source": "kubernetes/website content/ko/docs/concepts/workloads/pods/user-namespaces.md",
+ "license": "CC BY 4.0",
+ "heading": "사용자 네임스페이스를 지원하도록 노드 설정하기",
+ "text": "호스트의 파일 및 프로세스에서 0 ~ 65535 범위의\nUID/GID를 사용하는 것이 좋다.\n\nkubelet은 파드에 그것보다 더 높은 UID/GID를 할당한다.\n따라서 가능한 많은 격리를 보장하려면 호스트의 파일 및 호스트의 프로세스에 사용되는\nUID/GID가 0-65535 범위여야 한다.\n\n이 권장 사항은 파드가 호스트의 임의의 파일을\n잠재적으로 읽을 수 있는 [CVE-2021-25741][CVE-2021-25741]과\n같은 CVE의 영향을 완화하기 위해 중요하다.\n파드와 호스트의 UID/GID가 겹치지 않으면 파드가 수행할 수 있는 작업이 제한된다.\n즉, 파드 UID/GID가 호스트의 파일 소유자/그룹과 일치하지 않게 된다.\n\n[CVE-2021-25741]: https://github.com/kubernetes/kubernetes/issues/104980"
+}

@@ -1,0 +1,607 @@
+{
+ "items": 40,
+ "summary": {
+  "base": {
+   "acc": 0.9607,
+   "misread": 0.0357,
+   "abstain": 0.0036,
+   "n": 280,
+   "chars_mean": 1198,
+   "mc_acc_phase1": 0.9929,
+   "over_30_chars": 0,
+   "graded_by": {
+    "auto": 39,
+    "codex": 241
+   }
+  },
+  "clarity": {
+   "acc": 0.9571,
+   "misread": 0.0429,
+   "abstain": 0.0,
+   "n": 280,
+   "chars_mean": 1247,
+   "mc_acc_phase1": 0.9964,
+   "over_30_chars": 0,
+   "graded_by": {
+    "auto": 40,
+    "codex": 240
+   }
+  },
+  "short": {
+   "acc": 0.9464,
+   "misread": 0.05,
+   "abstain": 0.0036,
+   "n": 280,
+   "chars_mean": 975,
+   "mc_acc_phase1": 0.9964,
+   "over_30_chars": 0,
+   "graded_by": {
+    "auto": 41,
+    "codex": 239
+   }
+  },
+  "full": {
+   "acc": 0.975,
+   "misread": 0.025,
+   "abstain": 0.0,
+   "n": 280,
+   "chars_mean": 868,
+   "mc_acc_phase1": 0.9964,
+   "over_30_chars": 0,
+   "graded_by": {
+    "auto": 39,
+    "codex": 241
+   }
+  }
+ },
+ "tests": {
+  "acc full-base": {
+   "items": 40,
+   "diff": 0.0143,
+   "ci95": [
+    -0.0036,
+    0.0321
+   ],
+   "ci_excludes_0": false
+  },
+  "misread full-base": {
+   "items": 40,
+   "diff": -0.0107,
+   "ci95": [
+    -0.0286,
+    0.0071
+   ],
+   "ci_excludes_0": false
+  },
+  "abstain full-base": {
+   "items": 40,
+   "diff": -0.0036,
+   "ci95": [
+    -0.0107,
+    0.0
+   ],
+   "ci_excludes_0": false
+  },
+  "acc short-base": {
+   "items": 40,
+   "diff": -0.0143,
+   "ci95": [
+    -0.0393,
+    0.0107
+   ],
+   "ci_excludes_0": false
+  },
+  "misread short-base": {
+   "items": 40,
+   "diff": 0.0143,
+   "ci95": [
+    -0.0107,
+    0.0357
+   ],
+   "ci_excludes_0": false
+  },
+  "abstain short-base": {
+   "items": 40,
+   "diff": 0.0,
+   "ci95": [
+    -0.0107,
+    0.0107
+   ],
+   "ci_excludes_0": false
+  },
+  "acc clarity-base": {
+   "items": 40,
+   "diff": -0.0036,
+   "ci95": [
+    -0.0321,
+    0.025
+   ],
+   "ci_excludes_0": false
+  },
+  "misread clarity-base": {
+   "items": 40,
+   "diff": 0.0071,
+   "ci95": [
+    -0.0179,
+    0.0321
+   ],
+   "ci_excludes_0": false
+  },
+  "abstain clarity-base": {
+   "items": 40,
+   "diff": -0.0036,
+   "ci95": [
+    -0.0107,
+    0.0
+   ],
+   "ci_excludes_0": false
+  },
+  "acc full-clarity": {
+   "items": 40,
+   "diff": 0.0179,
+   "ci95": [
+    -0.0036,
+    0.0393
+   ],
+   "ci_excludes_0": false
+  },
+  "misread full-clarity": {
+   "items": 40,
+   "diff": -0.0179,
+   "ci95": [
+    -0.0393,
+    0.0036
+   ],
+   "ci_excludes_0": false
+  },
+  "abstain full-clarity": {
+   "items": 40,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "ci_excludes_0": false
+  }
+ },
+ "ceiling_broken": true,
+ "sensitivity": {
+  "dropped_questions": [
+   "F19-Q1",
+   "F23-Q5",
+   "F34-Q1"
+  ],
+  "summary": {
+   "base": {
+    "acc": 0.9711,
+    "misread": 0.0253,
+    "abstain": 0.0036,
+    "n": 277
+   },
+   "clarity": {
+    "acc": 0.9675,
+    "misread": 0.0325,
+    "abstain": 0.0,
+    "n": 277
+   },
+   "short": {
+    "acc": 0.9567,
+    "misread": 0.0397,
+    "abstain": 0.0036,
+    "n": 277
+   },
+   "full": {
+    "acc": 0.9856,
+    "misread": 0.0144,
+    "abstain": 0.0,
+    "n": 277
+   }
+  },
+  "tests": {
+   "acc full-base": {
+    "items": 40,
+    "diff": 0.0143,
+    "ci95": [
+     -0.0036,
+     0.0321
+    ],
+    "ci_excludes_0": false
+   },
+   "misread full-base": {
+    "items": 40,
+    "diff": -0.0107,
+    "ci95": [
+     -0.0286,
+     0.0071
+    ],
+    "ci_excludes_0": false
+   },
+   "abstain full-base": {
+    "items": 40,
+    "diff": -0.0036,
+    "ci95": [
+     -0.0107,
+     0.0
+    ],
+    "ci_excludes_0": false
+   },
+   "acc short-base": {
+    "items": 40,
+    "diff": -0.0149,
+    "ci95": [
+     -0.0405,
+     0.0107
+    ],
+    "ci_excludes_0": false
+   },
+   "misread short-base": {
+    "items": 40,
+    "diff": 0.0149,
+    "ci95": [
+     -0.0095,
+     0.0387
+    ],
+    "ci_excludes_0": false
+   },
+   "abstain short-base": {
+    "items": 40,
+    "diff": 0.0,
+    "ci95": [
+     -0.0107,
+     0.0107
+    ],
+    "ci_excludes_0": false
+   },
+   "acc clarity-base": {
+    "items": 40,
+    "diff": -0.0036,
+    "ci95": [
+     -0.0321,
+     0.025
+    ],
+    "ci_excludes_0": false
+   },
+   "misread clarity-base": {
+    "items": 40,
+    "diff": 0.0071,
+    "ci95": [
+     -0.0179,
+     0.0321
+    ],
+    "ci_excludes_0": false
+   },
+   "abstain clarity-base": {
+    "items": 40,
+    "diff": -0.0036,
+    "ci95": [
+     -0.0107,
+     0.0
+    ],
+    "ci_excludes_0": false
+   },
+   "acc full-clarity": {
+    "items": 40,
+    "diff": 0.0179,
+    "ci95": [
+     -0.0036,
+     0.0393
+    ],
+    "ci_excludes_0": false
+   },
+   "misread full-clarity": {
+    "items": 40,
+    "diff": -0.0179,
+    "ci95": [
+     -0.0393,
+     0.0036
+    ],
+    "ci_excludes_0": false
+   },
+   "abstain full-clarity": {
+    "items": 40,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "ci_excludes_0": false
+   }
+  }
+ },
+ "by_type": {
+  "cause": {
+   "base": {
+    "맞음": 10,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "clarity": {
+    "맞음": 10,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "short": {
+    "맞음": 10,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "full": {
+    "맞음": 10,
+    "틀림": 0,
+    "알 수 없음": 0
+   }
+  },
+  "condition": {
+   "base": {
+    "맞음": 46,
+    "틀림": 2,
+    "알 수 없음": 0
+   },
+   "clarity": {
+    "맞음": 44,
+    "틀림": 4,
+    "알 수 없음": 0
+   },
+   "short": {
+    "맞음": 44,
+    "틀림": 4,
+    "알 수 없음": 0
+   },
+   "full": {
+    "맞음": 46,
+    "틀림": 2,
+    "알 수 없음": 0
+   }
+  },
+  "contact": {
+   "base": {
+    "맞음": 25,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "clarity": {
+    "맞음": 25,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "short": {
+    "맞음": 25,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "full": {
+    "맞음": 25,
+    "틀림": 0,
+    "알 수 없음": 0
+   }
+  },
+  "deadline": {
+   "base": {
+    "맞음": 45,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "clarity": {
+    "맞음": 45,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "short": {
+    "맞음": 45,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "full": {
+    "맞음": 45,
+    "틀림": 0,
+    "알 수 없음": 0
+   }
+  },
+  "number": {
+   "base": {
+    "맞음": 26,
+    "틀림": 0,
+    "알 수 없음": 1
+   },
+   "clarity": {
+    "맞음": 26,
+    "틀림": 1,
+    "알 수 없음": 0
+   },
+   "short": {
+    "맞음": 26,
+    "틀림": 1,
+    "알 수 없음": 0
+   },
+   "full": {
+    "맞음": 26,
+    "틀림": 1,
+    "알 수 없음": 0
+   }
+  },
+  "obligation": {
+   "base": {
+    "맞음": 46,
+    "틀림": 5,
+    "알 수 없음": 0
+   },
+   "clarity": {
+    "맞음": 48,
+    "틀림": 3,
+    "알 수 없음": 0
+   },
+   "short": {
+    "맞음": 43,
+    "틀림": 7,
+    "알 수 없음": 1
+   },
+   "full": {
+    "맞음": 49,
+    "틀림": 2,
+    "알 수 없음": 0
+   }
+  },
+  "other": {
+   "base": {
+    "맞음": 2,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "clarity": {
+    "맞음": 2,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "short": {
+    "맞음": 2,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "full": {
+    "맞음": 2,
+    "틀림": 0,
+    "알 수 없음": 0
+   }
+  },
+  "scope": {
+   "base": {
+    "맞음": 19,
+    "틀림": 3,
+    "알 수 없음": 0
+   },
+   "clarity": {
+    "맞음": 20,
+    "틀림": 2,
+    "알 수 없음": 0
+   },
+   "short": {
+    "맞음": 21,
+    "틀림": 1,
+    "알 수 없음": 0
+   },
+   "full": {
+    "맞음": 20,
+    "틀림": 2,
+    "알 수 없음": 0
+   }
+  },
+  "what": {
+   "base": {
+    "맞음": 14,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "clarity": {
+    "맞음": 14,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "short": {
+    "맞음": 14,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "full": {
+    "맞음": 14,
+    "틀림": 0,
+    "알 수 없음": 0
+   }
+  },
+  "when": {
+   "base": {
+    "맞음": 13,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "clarity": {
+    "맞음": 12,
+    "틀림": 1,
+    "알 수 없음": 0
+   },
+   "short": {
+    "맞음": 12,
+    "틀림": 1,
+    "알 수 없음": 0
+   },
+   "full": {
+    "맞음": 13,
+    "틀림": 0,
+    "알 수 없음": 0
+   }
+  },
+  "who": {
+   "base": {
+    "맞음": 23,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "clarity": {
+    "맞음": 22,
+    "틀림": 1,
+    "알 수 없음": 0
+   },
+   "short": {
+    "맞음": 23,
+    "틀림": 0,
+    "알 수 없음": 0
+   },
+   "full": {
+    "맞음": 23,
+    "틀림": 0,
+    "알 수 없음": 0
+   }
+  }
+ },
+ "wrong_kinds": {
+  "base": {
+   "value_conflict": 1,
+   "other": 9
+  },
+  "clarity": {
+   "value_conflict": 3,
+   "other": 9
+  },
+  "short": {
+   "value_conflict": 1,
+   "other": 13
+  },
+  "full": {
+   "value_conflict": 0,
+   "other": 7
+  }
+ },
+ "agreement": {
+  "codex": {
+   "n": 191,
+   "agree": 0.9372,
+   "kappa": 0.5377,
+   "confusion": {
+    "맞음->맞음": 171,
+    "맞음->틀림": 7,
+    "맞음->알 수 없음": 0,
+    "틀림->맞음": 5,
+    "틀림->틀림": 8,
+    "틀림->알 수 없음": 0,
+    "알 수 없음->맞음": 0,
+    "알 수 없음->틀림": 0,
+    "알 수 없음->알 수 없음": 0
+   }
+  },
+  "auto": {
+   "n": 33,
+   "agree": 1.0,
+   "kappa": 1.0,
+   "confusion": {
+    "맞음->맞음": 32,
+    "맞음->틀림": 0,
+    "맞음->알 수 없음": 0,
+    "틀림->맞음": 0,
+    "틀림->틀림": 0,
+    "틀림->알 수 없음": 0,
+    "알 수 없음->맞음": 0,
+    "알 수 없음->틀림": 0,
+    "알 수 없음->알 수 없음": 1
+   }
+  }
+ }
+}

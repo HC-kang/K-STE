@@ -1,0 +1,7 @@
+{
+ "id": "P007",
+ "source": "kubernetes/website content/ko/docs/tasks/debug/debug-cluster/local-debugging.md",
+ "license": "CC BY 4.0",
+ "heading": "기존 서비스 개발 또는 디버깅",
+ "text": "쿠버네티스에서 애플리케이션을 개발할 때 일반적으로 단일 서비스를 프로그래밍하거나 디버그한다. 서비스를 테스트 및 디버깅하기 위해 다른 서비스에 접근이 필요할 수 있다. 지속적 배포(continuous deployment) 파이프라인을 사용하는 것도 한 가지 옵션이지만, 가장 빠른 배포 파이프라인이라도 프로그래밍 또는 디버그 주기에 지연이 발생할 수 있다.\n \n`telepresence intercept $SERVICE_NAME --port $LOCAL_PORT:$REMOTE_PORT` 명령을 사용하여 원격 서비스 트래픽을 다시 라우팅하기 위한 \"인터셉트(intercept)\"를 생성한다.\n \n아래의 각 항목에 대한 설명을 참고한다.\n\n- `$SERVICE_NAME`은 로컬 서비스의 이름이다.\n- `$LOCAL_PORT`는 서비스가 로컬 워크스테이션에서 실행 중인 포트이다.\n- `$REMOTE_PORT`는 서비스가 클러스터에서 수신하는 포트이다.\n\n이 명령을 실행하면 원격 쿠버네티스 클러스터의 서비스 대신 로컬 서비스에 원격 트래픽을 보내도록 텔레프레즌스에 지시한다. 서비스 소스 코드를 로컬에서 편집하고 저장하여 원격 애플리케이션에 접근할 때 해당 변경 사항이 즉시 적용되는지 확인한다. 디버거 또는 기타 로컬 개발 도구를 사용하여 로컬 서비스를 실행할 수도 있다."
+}

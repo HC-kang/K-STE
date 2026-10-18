@@ -1,0 +1,69 @@
+{
+ "id": "P017",
+ "source": "kubernetes/website content/ko/docs/concepts/scheduling-eviction/node-pressure-eviction.md",
+ "license": "CC BY 4.0",
+ "heading": "축출 임계값",
+ "text": "kubelet이 축출 결정을 내릴 때 사용하는 축출 임계값을 \n사용자가 임의로 설정할 수 있다.\n\n축출 임계값은 `[eviction-signal][operator][quantity]` 형태를 갖는다.\n\n* `eviction-signal`에는 사용할 축출 신호를 적는다.\n* `operator`에는 관계연산자를 \n  적는다(예: `<` - 미만)\n* `quantity`에는 `1Gi`와 같이 축출 임계값 수치를 적는다. \n  `quantity`에 들어가는 값은 쿠버네티스가 사용하는 수치 표현 방식과 맞아야 한다. \n  숫자값 또는 백분율(`%`)을 사용할 수 있다.\n\n예를 들어, 노드에 총 `10Gi`의 메모리가 있고 \n`1Gi` 아래로 내려갔을 때 축출이 시작되도록 만들고 싶으면, 축출 임계값을 \n`memory.available<10%` 또는 `memory.available<1Gi` 형태로 정할 수 있다. 둘을 동시에 사용할 수는 없다.\n\n소프트 축출 임계값과 하드 축출 임계값을 설정할 수 있다.",
+ "questions": [
+  {
+   "q": "사용자가 설정한 축출 임계값을 축출 결정에 사용하는 주체는 누구인가?",
+   "A": "노드의 총 메모리 용량을 정하는 스토리지 드라이버",
+   "B": "사용자 대신 임계값을 정하는 컨테이너",
+   "C": "메모리를 사용하는 파드 자체",
+   "D": "kubelet",
+   "answer": "D",
+   "facts": [],
+   "type": "who"
+  },
+  {
+   "q": "축출 임계값을 구성하는 요소의 올바른 순서는 무엇인가?",
+   "A": "[eviction-signal][operator][quantity]",
+   "B": "[operator][quantity][eviction-signal]",
+   "C": "[quantity][eviction-signal][operator]",
+   "D": "[eviction-signal][quantity][operator]",
+   "answer": "A",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "축출 임계값의 quantity에 사용할 수 있는 값에 대한 설명으로 맞는 것은 무엇인가?",
+   "A": "백분율만 사용할 수 있다.",
+   "B": "쿠버네티스 수치 표현 방식에 맞는 숫자값 또는 백분율을 사용할 수 있다.",
+   "C": "단위가 없는 정수만 사용할 수 있다.",
+   "D": "축출 신호의 이름을 적어야 한다.",
+   "answer": "B",
+   "facts": [],
+   "type": "condition"
+  },
+  {
+   "q": "총 메모리가 10Gi인 노드에서 가용 메모리가 1Gi 미만일 때 축출을 시작하려면 어떤 백분율 표현을 사용할 수 있는가?",
+   "A": "memory.available<1%",
+   "B": "memory.available>10%",
+   "C": "memory.available<10%",
+   "D": "memory.available<90%",
+   "answer": "C",
+   "facts": [],
+   "type": "number"
+  },
+  {
+   "q": "글의 예에서 memory.available<10%와 memory.available<1Gi를 설정할 때의 제한은 무엇인가?",
+   "A": "백분율 표현은 소프트 임계값에만 사용할 수 있다.",
+   "B": "수치 표현은 하드 임계값에만 사용할 수 있다.",
+   "C": "두 표현을 반드시 함께 사용해야 한다.",
+   "D": "두 표현을 동시에 사용할 수 없다.",
+   "answer": "D",
+   "facts": [],
+   "type": "condition"
+  },
+  {
+   "q": "글에서 설정할 수 있다고 설명한 축출 임계값의 두 종류는 무엇인가?",
+   "A": "노드 임계값과 컨테이너 임계값",
+   "B": "숫자 임계값과 연산자 임계값",
+   "C": "소프트 축출 임계값과 하드 축출 임계값",
+   "D": "메모리 임계값과 CPU 임계값",
+   "answer": "C",
+   "facts": [],
+   "type": "what"
+  }
+ ]
+}

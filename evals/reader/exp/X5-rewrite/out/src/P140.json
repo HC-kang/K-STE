@@ -1,0 +1,7 @@
+{
+ "id": "P140",
+ "source": "kubernetes/website content/ko/docs/concepts/workloads/pods/_index.md",
+ "license": "CC BY 4.0",
+ "heading": "파드 갱신 및 교체",
+ "text": "이전 섹션에서 언급한 바와 같이, 워크로드 리소스의 파드\n템플릿이 바뀌면, 컨트롤러는 기존의 파드를 갱신하거나 패치하는 대신\n갱신된 템플릿을 기반으로 신규 파드를 생성한다.\n\n쿠버네티스는 사용자가 파드를 직접 관리하는 것을 막지는 않는다.\n동작 중인 파드의 필드를 갱신하는 것도 가능하다.\n그러나,\n`patch` 및\n`replace`와 같은\n파드 갱신 작업에는 다음과 같은 제약이 있다.\n\n- 파드에 대한 대부분의 메타데이터는 불변(immutable)이다. 예를 들면, 사용자는\n  `namespace`, `name`, `uid`, 또는 `creationTimestamp` 필드를 변경할 수 없다.\n\n- `metadata.deletionTimestamp`가 설정된 경우,\n  `metadata.finalizers` 리스트에 새로운 항목이 추가될 수 없다.\n- 파드 갱신은 `spec.containers[*].image`,\n  `spec.initContainers[*].image`, `spec.activeDeadlineSeconds`, `spec.terminationGracePeriodSeconds`,\n  `spec.tolerations` 또는 `spec.schedulingGates` 이외의 필드는 변경할 수 없다. `spec.tolerations`에는 새로운 항목만 추가할 수 있다.\n- `spec.activeDeadlineSeconds` 필드를 갱신할 때는 다음의 두 가지 형태만\n  허용한다.\n\n  1. 지정되지 않은 필드를 양수로 설정;\n  1. 필드의 양수를 음수가 아닌 더 작은 숫자로\n     갱신."
+}

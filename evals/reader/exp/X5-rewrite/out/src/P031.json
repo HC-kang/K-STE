@@ -1,0 +1,7 @@
+{
+ "id": "P031",
+ "source": "kubernetes/website content/ko/docs/concepts/architecture/garbage-collection.md",
+ "license": "CC BY 4.0",
+ "heading": "포그라운드 캐스케이딩 삭제 {#foreground-deletion}",
+ "text": "포그라운드 캐스케이딩 삭제에서는 삭제하려는 소유자 오브젝트가 먼저\n*삭제 중* 상태가 된다. 이 상태에서는 소유자 오브젝트에게 다음과 같은 일이\n일어난다:\n\n  * 쿠버네티스 API 서버가 오브젝트의 `metadata.deletionTimestamp` 필드를\n    오브젝트가 삭제 표시된 시간으로 설정한다.\n  * 쿠버네티스 API 서버가 `metadata.finalizers` 필드를 `foregroundDeletion`로\n    설정한다. \n  * 오브젝트는 삭제 과정이 완료되기 전까지 \n    쿠버네티스 API를 통해 조회할 수 있다.\n\n소유자 오브젝트가 삭제 중 상태가 된 이후, 컨트롤러는 종속 오브젝트들을 삭제한다.\n모든 종속 오브젝트들이 삭제되고나면, 컨트롤러가 소유자 오브젝트를 삭제한다.\n이 시점에서 오브젝트는 더 이상 \n쿠버네티스 API를 통해 조회할 수 없다.\n\n포그라운드 캐스케이딩 삭제 중에 소유자 오브젝트의 삭제를 막는\n종속 오브젝트는`ownerReference.blockOwnerDeletion=true`필드를 가진 오브젝트다.\n더 자세한 내용은 Use foreground cascading deletion를\n참고한다."
+}

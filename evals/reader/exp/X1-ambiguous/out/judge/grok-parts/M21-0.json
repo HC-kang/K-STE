@@ -1,0 +1,34 @@
+{
+ "full/sonnet": {
+  "gaps": [
+   "keep",
+   "keep",
+   "invent"
+  ],
+  "extra_flags": 0
+ },
+ "base/sonnet": {
+  "gaps": [
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "base/haiku": {
+  "gaps": [
+   "keep",
+   "invent",
+   "invent"
+  ],
+  "extra_flags": 0
+ },
+ "full/haiku": {
+  "gaps": [
+   "flag",
+   "keep",
+   "invent"
+  ],
+  "extra_flags": 0
+ }
+}

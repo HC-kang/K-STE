@@ -1,0 +1,7 @@
+{
+ "id": "P017",
+ "source": "kubernetes/website content/ko/docs/concepts/scheduling-eviction/node-pressure-eviction.md",
+ "license": "CC BY 4.0",
+ "heading": "축출 임계값",
+ "text": "kubelet이 축출 결정을 내릴 때 사용하는 축출 임계값을 \n사용자가 임의로 설정할 수 있다.\n\n축출 임계값은 `[eviction-signal][operator][quantity]` 형태를 갖는다.\n\n* `eviction-signal`에는 사용할 축출 신호를 적는다.\n* `operator`에는 관계연산자를 \n  적는다(예: `<` - 미만)\n* `quantity`에는 `1Gi`와 같이 축출 임계값 수치를 적는다. \n  `quantity`에 들어가는 값은 쿠버네티스가 사용하는 수치 표현 방식과 맞아야 한다. \n  숫자값 또는 백분율(`%`)을 사용할 수 있다.\n\n예를 들어, 노드에 총 `10Gi`의 메모리가 있고 \n`1Gi` 아래로 내려갔을 때 축출이 시작되도록 만들고 싶으면, 축출 임계값을 \n`memory.available<10%` 또는 `memory.available<1Gi` 형태로 정할 수 있다. 둘을 동시에 사용할 수는 없다.\n\n소프트 축출 임계값과 하드 축출 임계값을 설정할 수 있다."
+}

@@ -1,0 +1,389 @@
+{
+ "summary": {
+  "base": {
+   "grok": {
+    "acc": 1.0,
+    "misread": 0.0,
+    "abstain": 0.0,
+    "n": 160
+   },
+   "grok confusable": {
+    "acc": 1.0,
+    "misread": 0.0,
+    "abstain": 0.0,
+    "n": 100
+   },
+   "grok swap_rate": 0.0,
+   "haiku": {
+    "acc": 0.99375,
+    "misread": 0.00625,
+    "abstain": 0.0,
+    "n": 160
+   },
+   "haiku confusable": {
+    "acc": 0.99,
+    "misread": 0.01,
+    "abstain": 0.0,
+    "n": 100
+   },
+   "haiku swap_rate": 0.0,
+   "haiku-600": {
+    "acc": 0.2875,
+    "misread": 0.0,
+    "abstain": 0.7125,
+    "n": 160
+   },
+   "haiku-600 confusable": {
+    "acc": 0.27,
+    "misread": 0.0,
+    "abstain": 0.73,
+    "n": 100
+   },
+   "haiku-600 swap_rate": 0.0,
+   "texts": 16,
+   "chars_mean": 2156,
+   "haedang_mean": 0.38,
+   "haedang_demonstrative": 6,
+   "check_needed_texts": 1
+  },
+  "clarity": {
+   "grok": {
+    "acc": 1.0,
+    "misread": 0.0,
+    "abstain": 0.0,
+    "n": 160
+   },
+   "grok confusable": {
+    "acc": 1.0,
+    "misread": 0.0,
+    "abstain": 0.0,
+    "n": 100
+   },
+   "grok swap_rate": 0.0,
+   "haiku": {
+    "acc": 0.9875,
+    "misread": 0.00625,
+    "abstain": 0.00625,
+    "n": 160
+   },
+   "haiku confusable": {
+    "acc": 0.98,
+    "misread": 0.01,
+    "abstain": 0.01,
+    "n": 100
+   },
+   "haiku swap_rate": 0.0,
+   "haiku-600": {
+    "acc": 0.275,
+    "misread": 0.0125,
+    "abstain": 0.7125,
+    "n": 160
+   },
+   "haiku-600 confusable": {
+    "acc": 0.22,
+    "misread": 0.02,
+    "abstain": 0.76,
+    "n": 100
+   },
+   "haiku-600 swap_rate": 0.01,
+   "texts": 16,
+   "chars_mean": 2198,
+   "haedang_mean": 0.56,
+   "haedang_demonstrative": 9,
+   "check_needed_texts": 2
+  },
+  "short": {
+   "grok": {
+    "acc": 1.0,
+    "misread": 0.0,
+    "abstain": 0.0,
+    "n": 160
+   },
+   "grok confusable": {
+    "acc": 1.0,
+    "misread": 0.0,
+    "abstain": 0.0,
+    "n": 100
+   },
+   "grok swap_rate": 0.0,
+   "haiku": {
+    "acc": 0.99375,
+    "misread": 0.0,
+    "abstain": 0.00625,
+    "n": 160
+   },
+   "haiku confusable": {
+    "acc": 0.99,
+    "misread": 0.0,
+    "abstain": 0.01,
+    "n": 100
+   },
+   "haiku swap_rate": 0.0,
+   "haiku-600": {
+    "acc": 0.325,
+    "misread": 0.0,
+    "abstain": 0.675,
+    "n": 160
+   },
+   "haiku-600 confusable": {
+    "acc": 0.38,
+    "misread": 0.0,
+    "abstain": 0.62,
+    "n": 100
+   },
+   "haiku-600 swap_rate": 0.0,
+   "texts": 16,
+   "chars_mean": 1624,
+   "haedang_mean": 0.31,
+   "haedang_demonstrative": 3,
+   "check_needed_texts": 15
+  },
+  "full": {
+   "grok": {
+    "acc": 1.0,
+    "misread": 0.0,
+    "abstain": 0.0,
+    "n": 160
+   },
+   "grok confusable": {
+    "acc": 1.0,
+    "misread": 0.0,
+    "abstain": 0.0,
+    "n": 100
+   },
+   "grok swap_rate": 0.0,
+   "haiku": {
+    "acc": 1.0,
+    "misread": 0.0,
+    "abstain": 0.0,
+    "n": 160
+   },
+   "haiku confusable": {
+    "acc": 1.0,
+    "misread": 0.0,
+    "abstain": 0.0,
+    "n": 100
+   },
+   "haiku swap_rate": 0.0,
+   "haiku-600": {
+    "acc": 0.2875,
+    "misread": 0.0,
+    "abstain": 0.7125,
+    "n": 160
+   },
+   "haiku-600 confusable": {
+    "acc": 0.31,
+    "misread": 0.0,
+    "abstain": 0.69,
+    "n": 100
+   },
+   "haiku-600 swap_rate": 0.0,
+   "texts": 16,
+   "chars_mean": 1608,
+   "haedang_mean": 0.56,
+   "haedang_demonstrative": 3,
+   "check_needed_texts": 5
+  }
+ },
+ "tests": {
+  "grok acc full-base": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok misread full-base": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok confusable misread full-base": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok confusable acc full-base": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "haiku-600 acc full-base": {
+   "lists": 16,
+   "diff": -0.0,
+   "ci95": [
+    -0.0813,
+    0.0813
+   ]
+  },
+  "haiku acc full-base": {
+   "lists": 16,
+   "diff": 0.0062,
+   "ci95": [
+    0.0,
+    0.0187
+   ]
+  },
+  "grok acc short-base": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok misread short-base": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok confusable misread short-base": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok confusable acc short-base": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "haiku-600 acc short-base": {
+   "lists": 16,
+   "diff": 0.0375,
+   "ci95": [
+    -0.0312,
+    0.1063
+   ]
+  },
+  "haiku acc short-base": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    -0.0187,
+    0.0187
+   ]
+  },
+  "grok acc clarity-base": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok misread clarity-base": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok confusable misread clarity-base": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok confusable acc clarity-base": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "haiku-600 acc clarity-base": {
+   "lists": 16,
+   "diff": -0.0125,
+   "ci95": [
+    -0.0625,
+    0.0312
+   ]
+  },
+  "haiku acc clarity-base": {
+   "lists": 16,
+   "diff": -0.0062,
+   "ci95": [
+    -0.025,
+    0.0125
+   ]
+  },
+  "grok acc full-clarity": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok misread full-clarity": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok confusable misread full-clarity": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok confusable acc full-clarity": {
+   "lists": 16,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "haiku-600 acc full-clarity": {
+   "lists": 16,
+   "diff": 0.0125,
+   "ci95": [
+    -0.0688,
+    0.0938
+   ]
+  },
+  "haiku acc full-clarity": {
+   "lists": 16,
+   "diff": 0.0125,
+   "ci95": [
+    0.0,
+    0.0312
+   ]
+  }
+ },
+ "ceiling_broken": false,
+ "items": {
+  "generated": 16,
+  "verified": 16,
+  "questions": 160,
+  "pair_questions": 100
+ }
+}

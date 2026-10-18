@@ -1,0 +1,69 @@
+{
+ "id": "P016",
+ "source": "kubernetes/website content/ko/docs/tasks/administer-cluster/kubeadm/kubeadm-certs.md",
+ "license": "CC BY 4.0",
+ "heading": "사용자 정의 인증서 사용 {#custom-certificates}",
+ "text": "기본적으로, kubeadm은 클러스터를 실행하는 데 필요한 모든 인증서를 생성한다.\n사용자는 자체 인증서를 제공하여 이 동작을 무시할 수 있다.\n\n이렇게 하려면, `--cert-dir` 플래그 또는 kubeadm `ClusterConfiguration` 의\n`certificatesDir` 필드에 지정된 디렉터리에 배치해야 한다.\n기본적으로  `/etc/kubernetes/pki` 이다.\n\n`kubeadm init` 을 실행하기 전에 지정된 인증서와 개인 키(private key) 쌍이 존재하면,\nkubeadm은 이를 덮어 쓰지 않는다. 이는 예를 들어, 기존 CA를\n`/etc/kubernetes/pki/ca.crt` 와 `/etc/kubernetes/pki/ca.key` 에\n복사할 수 있고, kubeadm은 이 CA를 사용하여 나머지 인증서에 서명한다는 걸 의미한다.",
+ "questions": [
+  {
+   "q": "별도의 인증서를 제공하지 않으면 kubeadm은 어떻게 동작하는가?",
+   "A": "클러스터 실행에 필요한 모든 인증서를 생성한다.",
+   "B": "인증서 생성을 사용자에게 맡긴다.",
+   "C": "개인 키 없이 인증서만 생성한다.",
+   "D": "기존 CA 인증서만 생성한다.",
+   "answer": "A",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "사용자가 자체 인증서를 제공하려면 어디에 배치해야 하는가?",
+   "A": "ClusterConfiguration 파일이 있는 디렉터리",
+   "B": "kubeadm 실행 파일과 같은 디렉터리",
+   "C": "kubeadm init을 실행한 현재 디렉터리",
+   "D": "--cert-dir 또는 certificatesDir로 지정한 디렉터리",
+   "answer": "D",
+   "facts": [],
+   "type": "condition"
+  },
+  {
+   "q": "인증서 디렉터리를 따로 지정하지 않았을 때 사용하는 기본 경로는 무엇인가?",
+   "A": "/etc/kubernetes/pki/ca.key",
+   "B": "/etc/kubernetes/pki",
+   "C": "/etc/kubernetes/pki/ca.crt",
+   "D": "/etc/kubernetes",
+   "answer": "B",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "kubeadm이 지정된 인증서와 개인 키 쌍을 덮어쓰지 않는 조건은 무엇인가?",
+   "A": "개인 키를 제외하고 CA 인증서만 제공한다.",
+   "B": "kubeadm init 실행 전에 인증서와 개인 키 쌍이 존재한다.",
+   "C": "기본 디렉터리 대신 다른 디렉터리를 사용한다.",
+   "D": "kubeadm init 실행 후 인증서만 복사한다.",
+   "answer": "B",
+   "facts": [],
+   "type": "condition"
+  },
+  {
+   "q": "글의 예처럼 기존 CA를 제공하면 kubeadm은 나머지 인증서를 어떻게 처리하는가?",
+   "A": "제공된 CA를 새 CA로 덮어쓴 후 서명한다.",
+   "B": "제공된 CA를 사용하여 나머지 인증서에 서명한다.",
+   "C": "나머지 인증서에도 사용자가 직접 서명하도록 한다.",
+   "D": "나머지 인증서를 생성하지 않는다.",
+   "answer": "B",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "기존 CA를 사용하는 예에서 인증서와 개인 키를 각각 복사하는 경로의 올바른 짝은 무엇인가?",
+   "A": "인증서: /etc/kubernetes/pki/ca.key, 개인 키: /etc/kubernetes/pki/ca.crt",
+   "B": "인증서: /etc/kubernetes/pki/ca.crt, 개인 키: /etc/kubernetes/pki/ca.key",
+   "C": "인증서: /etc/kubernetes/pki/ca.crt, 개인 키: /etc/kubernetes/ca.key",
+   "D": "인증서: /etc/kubernetes/ca.crt, 개인 키: /etc/kubernetes/ca.key",
+   "answer": "B",
+   "facts": [],
+   "type": "what"
+  }
+ ]
+}

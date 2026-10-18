@@ -26,7 +26,8 @@ EMPTY = Path(tempfile.mkdtemp(prefix="kste-reader-"))  # cwd for model CLIs, so 
 CODEX_HOME = Path(os.environ.get("KSTE_CODEX_HOME", Path.home() / ".cache/k-ste-eval/codex-home"))
 GROK_MODEL = os.environ.get("KSTE_GROK_MODEL", "grok-4.7")
 CODEX_MODEL = os.environ.get("KSTE_CODEX_MODEL", "gpt-6-astra")
-LIMITS = {"claude": threading.Semaphore(6), "codex": threading.Semaphore(4), "grok": threading.Semaphore(4)}
+LIMITS = {k: threading.Semaphore(int(os.environ.get(f"KSTE_LIMIT_{k.upper()}", n)))
+          for k, n in (("claude", 6), ("codex", 4), ("grok", 4))}
 
 GENRES = ["전사 공지", "장애 공유(사내 메신저)", "회의록", "운영 절차(런북)", "PR 설명",
           "고객 안내 메일", "사내 규정 변경 안내", "일정 조율 메일"]
@@ -66,7 +67,8 @@ def _codex_home():
     CODEX_HOME.mkdir(parents=True, exist_ok=True)
     auth = CODEX_HOME / "auth.json"
     # the shell's active account (Orca sets CODEX_HOME per account); symlink, so no copy of the credential
-    src = Path(os.environ.get("CODEX_HOME", Path.home() / ".codex")) / "auth.json"
+    src = Path(os.environ.get("KSTE_CODEX_AUTH") or
+               Path(os.environ.get("CODEX_HOME", Path.home() / ".codex")) / "auth.json")
     if auth.is_symlink() and auth.resolve() != src.resolve():
         auth.unlink()
     if not auth.exists():

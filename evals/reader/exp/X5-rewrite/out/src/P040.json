@@ -1,0 +1,7 @@
+{
+ "id": "P040",
+ "source": "kubernetes/website content/ko/docs/concepts/workloads/controllers/cron-jobs.md",
+ "license": "CC BY 4.0",
+ "heading": "지연된 잡 시작에 대한 데드라인 {#starting-deadline}",
+ "text": "`.spec.startingDeadlineSeconds` 필드는 선택 사항이다.\n이 필드는 어떤 이유로든 잡이 예정된 시간을 놓친 경우,\n잡을 시작하기 위한 데드라인(초 단위 정수)을 정의한다.\n\n데드라인을 놓치면 크론잡은 해당 잡 인스턴스를 건너뛴다(이후 실행은 여전히 예약된다).\n예를 들어, 하루에 두 번 실행되는 백업 잡이 있다면, 최대 8시간까지 늦게 시작하는 것은 허용할 수 있지만,\n그 이후에는 허용하지 않을 수 있다. 그보다 늦은 백업은 유용하지 않으므로 다음 예정된\n실행을 기다리는 것이 나을 수 있기 때문이다.\n\n설정된 데드라인을 놓친 잡에 대해, 쿠버네티스는 이를 실패한 잡으로 처리한다.\n크론잡에 `startingDeadlineSeconds`를 지정하지 않으면, 잡 발생에 데드라인이 없다.\n\n`.spec.startingDeadlineSeconds` 필드가 설정되면 (null이 아닌 경우) 크론잡\n컨트롤러는 잡이 생성될 것으로 예상되는 시간과 현재 시간 사이의\n차이를 측정한다. 차이가 해당 한도보다 크면, 해당 실행을 건너뛴다.\n\n예를 들어, `200`으로 설정되면 실제 일정 이후 최대 200초까지\n잡 생성을 허용한다."
+}

@@ -1,0 +1,7 @@
+{
+ "id": "P129",
+ "source": "kubernetes/website content/ko/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale.md",
+ "license": "CC BY 4.0",
+ "heading": "메트릭 API를 위한 지원",
+ "text": "기본적으로 HorizontalPodAutoscaler 컨트롤러는 일련의 API에서 메트릭을 검색한다. 이러한\nAPI에 접속하려면 클러스터 관리자는 다음을 확인해야 한다.\n\n- API 애그리게이션 레이어 활성화\n\n- 해당 API 등록:\n\n  - 리소스 메트릭의 경우, 이것은 일반적으로\n    metrics-server가 제공하는 `metrics.k8s.io` API이다.\n    클러스터 애드온으로 실행할 수 있다.\n\n  - 사용자 정의 메트릭의 경우, 이것은 `custom.metrics.k8s.io` API이다.\n    메트릭 솔루션 공급 업체에서 제공하는 \"어댑터\" API 서버에서 제공한다.\n    사용 가능한 쿠버네티스 메트릭 어댑터가 있는지 확인하려면 사용하고자 하는 메트릭 파이프라인을 확인한다.\n\n  - 외부 메트릭의 경우, 이것은 `external.metrics.k8s.io` API이다.\n    위에 제공된 사용자 정의 메트릭 어댑터에서 제공될 수 있다.\n\n이런 다양한 메트릭 경로와 각각의 다른 점에 대한 상세 내용은 관련 디자인 제안서인\nHPA V2,\ncustom.metrics.k8s.io,\nexternal.metrics.k8s.io를 참조한다.\n\n어떻게 사용하는지에 대한 예시는\n커스텀 메트릭을 사용하는 작업 과정과\n외부 메트릭을 사용하는 작업 과정을 참조한다."
+}

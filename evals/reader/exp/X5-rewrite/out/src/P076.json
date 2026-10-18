@@ -1,0 +1,7 @@
+{
+ "id": "P076",
+ "source": "kubernetes/website content/ko/docs/tasks/debug/debug-cluster/audit.md",
+ "license": "CC BY 4.0",
+ "heading": "파라미터 튜닝",
+ "text": "파라미터는 API 서버의 로드를 수용할 수 있도록 설정해야 한다.\n\n예를 들어 kube-apiserver가 초당 100건의 요청을 수신하고 각 요청이 \n`ResponseStarted` 와 `ResponseComplete` 단계에서만 감사되는 경우 초당 생성되는 ≅200건의 감사 이벤트를 고려해야 한다.\n일괄적으로 최대 100개의 이벤트가 있다고 가정할 때 \n초당 최소 2개의 쿼리 조절 수준을 설정해야 한다.\n백엔드가 이벤트를 쓰는 데 최대 5초가 걸릴 수 있다고 가정하면 버퍼크기를 최대 5초의 이벤트를 보유하도록 설정해야 한다.\n즉, 10개의 배치 또는 100개의 이벤트이다.\n\n그러나 대부분의 경우 기본 매개 변수만 있으면 충분하며 수동으로 설정할 필요가 없다.\nkube-apiserver에서 노출된 다음과 같은 프로메테우스 메트릭과 로그에서\n감사 하위 시스템의 상태를 모니터링할 수 있다.\n\n- `apiserver_audit_event_total` 의 메트릭에는 내보낸 감사 이벤트의 총 수가 포함된다.\n- `apiserver_audit_error_total` 의 메트릭에는 내보내기 중 오류로 인해 삭제된 총 이벤트\n  수가 포함된다."
+}

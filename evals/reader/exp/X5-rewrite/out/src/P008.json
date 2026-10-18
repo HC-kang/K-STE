@@ -1,0 +1,7 @@
+{
+ "id": "P008",
+ "source": "kubernetes/website content/ko/docs/concepts/services-networking/dns-pod-service.md",
+ "license": "CC BY 4.0",
+ "heading": "SRV 레코드",
+ "text": "일반 또는 헤드리스 서비스에 속한 이름이 지정된 포트에 대해 SRV 레코드가\n생성된다.\n\n- 이름이 지정된 각 포트에 대해 SRV 레코드는\n  `_port-name._port-protocol.my-svc.my-namespace.svc.cluster-domain.example` 형식이다.\n- 일반 서비스의 경우, 이 레코드는 포트 번호와 다음 도메인 이름으로 해석된다.\n  `my-svc.my-namespace.svc.cluster-domain.example`.\n- 헤드리스 서비스의 경우, 이 레코드는 여러 응답으로 해석되며, 서비스를 지원하는 각 파드마다\n  하나의 응답이 반환된다. 각 응답에는 포트 번호와\n  `hostname.my-svc.my-namespace.svc.cluster-domain.example` 형식의 파드 도메인 이름이 포함된다."
+}

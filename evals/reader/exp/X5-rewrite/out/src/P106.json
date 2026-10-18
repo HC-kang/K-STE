@@ -1,0 +1,7 @@
+{
+ "id": "P106",
+ "source": "kubernetes/website content/ko/docs/concepts/services-networking/ingress.md",
+ "license": "CC BY 4.0",
+ "heading": "인그레스 규칙",
+ "text": "각 HTTP 규칙에는 다음의 정보가 포함된다.\n\n* 선택적 호스트. 이 예시에서는, 호스트가 지정되지 않기에 지정된 IP 주소를 통해 모든 인바운드\n  HTTP 트래픽에 규칙이 적용 된다. 만약 호스트가 제공되면(예,\n  foo.bar.com), 규칙이 해당 호스트에 적용된다.\n* 경로 목록 (예, `/testpath`)에는 각각 `service.name` 과\n  `service.port.name` 또는 `service.port.number` 가 정의되어 있는 관련\n  백엔드를 가지고 있다. 로드 밸런서가 트래픽을 참조된 서비스로\n  보내기 전에 호스트와 경로가 모두 수신 요청의 내용과\n  일치해야 한다.\n* 백엔드는 서비스 문서\n  또는 사용자 정의 리소스 백엔드에 설명된 바와 같이\n  서비스와 포트 이름의 조합이다. 규칙의 호스트와 경로가 일치하는 인그레스에 대한\n  HTTP(와 HTTPS) 요청은 백엔드 목록으로 전송된다.\n\n`defaultBackend` 는 종종 사양의 경로와 일치하지 않는 서비스에 대한 모든 요청을 처리하도록 인그레스\n컨트롤러에 구성되는 경우가 많다."
+}

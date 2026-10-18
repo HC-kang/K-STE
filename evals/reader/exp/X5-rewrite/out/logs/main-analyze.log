@@ -1,0 +1,145 @@
+{
+ "passages": 100,
+ "questions": 599,
+ "summary": {
+  "original": {
+   "acc": 1.0,
+   "misread": 0.0,
+   "abstain": 0.0,
+   "n": 599,
+   "chars_mean": 569,
+   "texts_with_flag": 1
+  },
+  "base": {
+   "acc": 0.9883,
+   "misread": 0.0,
+   "abstain": 0.0117,
+   "n": 599,
+   "chars_mean": 794,
+   "texts_with_flag": 1
+  },
+  "clarity": {
+   "acc": 0.9866,
+   "misread": 0.0,
+   "abstain": 0.0134,
+   "n": 599,
+   "chars_mean": 918,
+   "texts_with_flag": 5
+  },
+  "short": {
+   "acc": 0.9866,
+   "misread": 0.0,
+   "abstain": 0.0134,
+   "n": 599,
+   "chars_mean": 618,
+   "texts_with_flag": 44
+  },
+  "full": {
+   "acc": 0.995,
+   "misread": 0.0,
+   "abstain": 0.005,
+   "n": 599,
+   "chars_mean": 579,
+   "texts_with_flag": 13
+  }
+ },
+ "tests": {
+  "acc base-original": {
+   "passages": 100,
+   "diff": -0.0117,
+   "ci95": [
+    -0.02,
+    -0.0033
+   ],
+   "sd": 0.0427,
+   "noninferior_3pp": true
+  },
+  "acc clarity-original": {
+   "passages": 100,
+   "diff": -0.0133,
+   "ci95": [
+    -0.0233,
+    -0.005
+   ],
+   "sd": 0.0454,
+   "noninferior_3pp": true
+  },
+  "acc short-original": {
+   "passages": 100,
+   "diff": -0.0133,
+   "ci95": [
+    -0.0233,
+    -0.005
+   ],
+   "sd": 0.0454,
+   "noninferior_3pp": true
+  },
+  "acc full-original": {
+   "passages": 100,
+   "diff": -0.005,
+   "ci95": [
+    -0.0117,
+    0.0
+   ],
+   "sd": 0.0286,
+   "noninferior_3pp": true
+  },
+  "acc full-base": {
+   "passages": 100,
+   "diff": 0.0067,
+   "ci95": [
+    -0.0033,
+    0.0167
+   ],
+   "sd": 0.0525
+  },
+  "acc short-base": {
+   "passages": 100,
+   "diff": -0.0017,
+   "ci95": [
+    -0.015,
+    0.0117
+   ],
+   "sd": 0.0649
+  }
+ },
+ "ceiling_broken": false,
+ "original_below_100": false,
+ "causes_codex": {
+  "base": {
+   "silent_change": 2,
+   "flag_E": 0,
+   "other": 5,
+   "None": 0
+  },
+  "clarity": {
+   "silent_change": 1,
+   "flag_E": 2,
+   "other": 5,
+   "None": 0
+  },
+  "short": {
+   "silent_change": 0,
+   "flag_E": 8,
+   "other": 0,
+   "None": 0
+  },
+  "full": {
+   "silent_change": 0,
+   "flag_E": 3,
+   "other": 0,
+   "None": 0
+  }
+ },
+ "orig_also_wrong": {
+  "base": 0,
+  "clarity": 0,
+  "short": 0,
+  "full": 0
+ },
+ "cause_agreement_codex_grok": {
+  "cases": 26,
+  "agreement": 0.731,
+  "kappa": 0.589
+ }
+}

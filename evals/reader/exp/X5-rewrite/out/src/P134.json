@@ -1,0 +1,7 @@
+{
+ "id": "P134",
+ "source": "kubernetes/website content/ko/docs/concepts/workloads/controllers/cron-jobs.md",
+ "license": "CC BY 4.0",
+ "heading": "동시성 정책",
+ "text": "`.spec.concurrencyPolicy` 필드도 선택 사항이다.\n이 필드는 이 크론잡에 의해 생성된 잡의 동시 실행을 어떻게 처리할지 지정한다.\n명세는 다음 동시성 정책 중 하나만 지정할 수 있다.\n\n* `Allow` (기본값): 크론잡이 동시에 실행되는 잡을 허용한다\n* `Forbid`: 크론잡이 동시 실행을 허용하지 않는다. 새 잡을 실행할 시간이 되었는데\n  이전 잡 실행이 아직 완료되지 않은 경우, 크론잡은 새 잡 실행을 건너뛴다. 또한 이전 잡 실행이\n  완료될 때 `.spec.startingDeadlineSeconds`가 여전히 고려되며 새 잡 실행이\n  발생할 수 있다는 점에 유의한다.\n* `Replace`: 새 잡을 실행할 시간이 되었는데 이전 잡 실행이 아직 완료되지 않은 경우, 크론잡은\n  현재 실행 중인 잡을 새 잡 실행으로 대체한다.\n\n동시성 정책은 동일한 크론잡에 의해 생성된 잡에만 적용된다는 점에 유의한다.\n여러 크론잡이 있는 경우, 각각의 잡은 항상 동시에 실행되는 것이 허용된다."
+}

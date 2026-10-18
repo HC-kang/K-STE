@@ -1,0 +1,7 @@
+{
+ "id": "P105",
+ "source": "kubernetes/website content/ko/docs/tasks/administer-cluster/access-cluster-api.md",
+ "license": "CC BY 4.0",
+ "heading": "REST API에 직접 접근",
+ "text": "kubectl은 API 서버 찾기와 인증을 처리한다. `curl` 이나 `wget` 과 같은 http 클라이언트 또는 브라우저를 사용하여 REST API에\n직접 접근하려는 경우, API 서버를 찾고 인증할 수 있는 여러 가지 방법이 있다.\n\n 1. 프록시 모드에서 kubectl을 실행한다(권장). 이 방법은 저장된 API 서버 위치를 사용하고 자체 서명된 인증서를 사용하여 API 서버의 ID를 확인하므로 권장한다. 이 방법을 사용하면 중간자(man-in-the-middle, MITM) 공격이 불가능하다.\n 1. 또는, 위치와 자격 증명을 http 클라이언트에 직접 제공할 수 있다. 이 방법은 프록시를 혼란스럽게 하는 클라이언트 코드와 동작한다. 중간자 공격으로부터 보호하려면, 브라우저로 루트 인증서를 가져와야 한다.\n\n Go 또는 Python 클라이언트 라이브러리를 사용하면 프록시 모드에서 kubectl에 접근할 수 있다."
+}

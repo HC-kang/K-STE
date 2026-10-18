@@ -1,0 +1,69 @@
+{
+ "id": "P023",
+ "source": "kubernetes/website content/ko/docs/concepts/storage/dynamic-provisioning.md",
+ "license": "CC BY 4.0",
+ "heading": "기본 동작",
+ "text": "스토리지클래스를 지정하지 않은 경우 모든 클레임이 동적으로\n프로비저닝되도록 클러스터에서 동적 프로비저닝을 활성화할 수 있다. 클러스터 관리자는\n이 방법으로 활성화할 수 있다.\n\n- 하나의 스토리지클래스 오브젝트를 *기본(default)* 으로 표시한다.\n- API 서버에서 `DefaultStorageClass` 어드미션 컨트롤러를\n  사용하도록 설정한다.\n\n관리자는 `storageclass.kubernetes.io/is-default-class` 어노테이션을\n추가하여 특정 스토리지클래스를 기본으로 표시할 수 있다.\n기본 스토리지클래스가 클러스터에 존재하고 사용자가\n`storageClassName`을 지정하지 않은 퍼시스턴트볼륨클레임을\n생성하면, `DefaultStorageClass` 어드미션 컨트롤러가 기본\n스토리지클래스를 가리키는 `storageClassName` 필드를 자동으로 추가한다.\n\n클러스터 내 두 개 이상의 스토리지클래스에 `storageclass.kubernetes.io/is-default-class`\n어노테이션을 true로 설정한 다음, `storageClassName`이 설정되지 않은\n퍼시스턴트볼륨클레임을 생성하면, 쿠버네티스는 가장 최근에 생성된\n기본 스토리지클래스를 사용한다는 점에 유의한다.",
+ "questions": [
+  {
+   "q": "스토리지클래스를 지정하지 않은 클레임의 동적 프로비저닝을 활성화하기 위해 필요한 설정 조합은?",
+   "A": "기본 스토리지클래스를 표시하고 API 서버에서 DefaultStorageClass 어드미션 컨트롤러를 사용한다.",
+   "B": "모든 클레임에 어노테이션을 추가하고 API 서버를 중지한다.",
+   "C": "스토리지클래스 두 개를 만들고 모든 클레임에 storageClassName을 직접 입력한다.",
+   "D": "기본 스토리지클래스를 제거하고 DefaultStorageClass 어드미션 컨트롤러를 사용한다.",
+   "answer": "A",
+   "facts": [],
+   "type": "condition"
+  },
+  {
+   "q": "특정 스토리지클래스를 기본으로 표시하는 데 사용하는 것은?",
+   "A": "클레임에 추가한 DefaultStorageClass 어노테이션",
+   "B": "스토리지클래스의 storageclass.kubernetes.io/is-default-class 어노테이션",
+   "C": "API 서버의 storageClassName 필드",
+   "D": "퍼시스턴트볼륨클레임의 생성 시각",
+   "answer": "B",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "기본 스토리지클래스가 존재할 때 storageClassName이 자동으로 추가되는 클레임은?",
+   "A": "사용자가 다른 스토리지클래스를 명시한 퍼시스턴트볼륨클레임",
+   "B": "사용자가 storageClassName을 지정하지 않고 생성한 퍼시스턴트볼륨클레임",
+   "C": "가장 오래된 스토리지클래스를 명시한 모든 클레임",
+   "D": "기본 어노테이션이 붙은 스토리지클래스 오브젝트",
+   "answer": "B",
+   "facts": [],
+   "type": "condition"
+  },
+  {
+   "q": "퍼시스턴트볼륨클레임에 기본 스토리지클래스를 가리키는 필드를 자동으로 추가하는 주체는?",
+   "A": "사용자가 선택한 스토리지클래스 오브젝트",
+   "B": "DefaultStorageClass 어드미션 컨트롤러",
+   "C": "가장 최근에 생성된 퍼시스턴트볼륨클레임",
+   "D": "기본 어노테이션을 직접 추가하는 사용자",
+   "answer": "B",
+   "facts": [],
+   "type": "who"
+  },
+  {
+   "q": "어드미션 컨트롤러가 자동으로 추가하는 storageClassName 필드는 무엇을 가리키는가?",
+   "A": "기본 스토리지클래스",
+   "B": "API 서버 자체",
+   "C": "클러스터 관리자 계정",
+   "D": "가장 최근에 생성된 클레임",
+   "answer": "A",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "기본 어노테이션이 true인 스토리지클래스가 여러 개이고 새 클레임에 storageClassName이 없다면 무엇을 사용하는가?",
+   "A": "기본 여부와 관계없이 가장 최근에 생성된 스토리지클래스",
+   "B": "가장 먼저 생성된 기본 스토리지클래스",
+   "C": "이름이 사전순으로 가장 앞선 기본 스토리지클래스",
+   "D": "가장 최근에 생성된 기본 스토리지클래스",
+   "answer": "D",
+   "facts": [],
+   "type": "condition"
+  }
+ ]
+}

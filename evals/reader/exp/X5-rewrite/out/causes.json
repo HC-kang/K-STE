@@ -1,0 +1,262 @@
+[
+ {
+  "id": "00c18fc6",
+  "cond": "clarity",
+  "pid": "P050",
+  "q": 2,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "flag_E",
+  "grok": "other"
+ },
+ {
+  "id": "0a03efab",
+  "cond": "full",
+  "pid": "P056",
+  "q": 4,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "flag_E",
+  "grok": "flag_E"
+ },
+ {
+  "id": "12086a20",
+  "cond": "base",
+  "pid": "P013",
+  "q": 1,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "other",
+  "grok": "other"
+ },
+ {
+  "id": "12945922",
+  "cond": "short",
+  "pid": "P056",
+  "q": 4,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "flag_E",
+  "grok": "flag_E"
+ },
+ {
+  "id": "1bb29feb",
+  "cond": "base",
+  "pid": "P033",
+  "q": 5,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "silent_change",
+  "grok": "silent_change"
+ },
+ {
+  "id": "1bfab5c2",
+  "cond": "clarity",
+  "pid": "P097",
+  "q": 4,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "other",
+  "grok": "other"
+ },
+ {
+  "id": "26f50220",
+  "cond": "base",
+  "pid": "P062",
+  "q": 3,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "other",
+  "grok": "silent_change"
+ },
+ {
+  "id": "55999e59",
+  "cond": "short",
+  "pid": "P037",
+  "q": 0,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "flag_E",
+  "grok": "flag_E"
+ },
+ {
+  "id": "59234ada",
+  "cond": "clarity",
+  "pid": "P081",
+  "q": 2,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "silent_change",
+  "grok": "silent_change"
+ },
+ {
+  "id": "646b2e66",
+  "cond": "base",
+  "pid": "P077",
+  "q": 2,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "silent_change",
+  "grok": "silent_change"
+ },
+ {
+  "id": "67c031e1",
+  "cond": "clarity",
+  "pid": "P004",
+  "q": 2,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "other",
+  "grok": "silent_change"
+ },
+ {
+  "id": "7b92214e",
+  "cond": "base",
+  "pid": "P068",
+  "q": 2,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "other",
+  "grok": "other"
+ },
+ {
+  "id": "7ecb64a4",
+  "cond": "short",
+  "pid": "P081",
+  "q": 1,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "flag_E",
+  "grok": "flag_E"
+ },
+ {
+  "id": "8581d1ec",
+  "cond": "short",
+  "pid": "P074",
+  "q": 4,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "flag_E",
+  "grok": "flag_E"
+ },
+ {
+  "id": "94859780",
+  "cond": "short",
+  "pid": "P011",
+  "q": 2,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "flag_E",
+  "grok": "flag_E"
+ },
+ {
+  "id": "98a73f30",
+  "cond": "clarity",
+  "pid": "P045",
+  "q": 5,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "other",
+  "grok": "other"
+ },
+ {
+  "id": "a3fdf03c",
+  "cond": "base",
+  "pid": "P067",
+  "q": 1,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "other",
+  "grok": "silent_change"
+ },
+ {
+  "id": "ae0ea04c",
+  "cond": "clarity",
+  "pid": "P007",
+  "q": 2,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "flag_E",
+  "grok": "flag_E"
+ },
+ {
+  "id": "afb73c32",
+  "cond": "short",
+  "pid": "P057",
+  "q": 1,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "flag_E",
+  "grok": "flag_E"
+ },
+ {
+  "id": "b811cb2c",
+  "cond": "full",
+  "pid": "P094",
+  "q": 0,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "flag_E",
+  "grok": "flag_E"
+ },
+ {
+  "id": "bda630e8",
+  "cond": "base",
+  "pid": "P065",
+  "q": 2,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "other",
+  "grok": "silent_change"
+ },
+ {
+  "id": "d17e07a7",
+  "cond": "full",
+  "pid": "P081",
+  "q": 1,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "flag_E",
+  "grok": "flag_E"
+ },
+ {
+  "id": "d8d73417",
+  "cond": "clarity",
+  "pid": "P062",
+  "q": 3,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "other",
+  "grok": "silent_change"
+ },
+ {
+  "id": "ddb129f9",
+  "cond": "short",
+  "pid": "P029",
+  "q": 1,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "flag_E",
+  "grok": "flag_E"
+ },
+ {
+  "id": "ec676617",
+  "cond": "short",
+  "pid": "P091",
+  "q": 5,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "flag_E",
+  "grok": "flag_E"
+ },
+ {
+  "id": "fc22dab2",
+  "cond": "clarity",
+  "pid": "P065",
+  "q": 2,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "other",
+  "grok": "silent_change"
+ }
+]

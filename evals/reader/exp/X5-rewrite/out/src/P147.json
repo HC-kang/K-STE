@@ -1,0 +1,7 @@
+{
+ "id": "P147",
+ "source": "kubernetes/website content/ko/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade.md",
+ "license": "CC BY 4.0",
+ "heading": "작동 원리",
+ "text": "`kubeadm upgrade apply` 는 다음을 수행한다.\n\n- 클러스터가 업그레이드 가능한 상태인지 확인한다.\n  - API 서버에 접근할 수 있다\n  - 모든 노드가 `Ready` 상태에 있다\n  - 컨트롤 플레인이 정상적으로 동작한다\n- 버전 차이(skew) 정책을 적용한다.\n- 컨트롤 플레인 이미지가 사용 가능한지 또는 머신으로 가져올 수 있는지 확인한다.\n- 컴포넌트 구성에 버전 업그레이드가 필요한 경우 대체 구성을 생성하거나 사용자가 제공한 것으로 덮어 쓰기한다.\n- 컨트롤 플레인 컴포넌트 또는 롤백 중 하나라도 나타나지 않으면 업그레이드한다.\n- 새로운 `CoreDNS` 와 `kube-proxy` 매니페스트를 적용하고 필요한 모든 RBAC 규칙이 생성되도록 한다.\n- API 서버의 새 인증서와 키 파일을 작성하고 180일 후에 만료될 경우 이전 파일을 백업한다.\n\n`kubeadm upgrade node` 는 추가 컨트롤 플레인 노드에서 다음을 수행한다.\n\n- 클러스터에서 kubeadm `ClusterConfiguration` 을 가져온다.\n- 선택적으로 kube-apiserver 인증서를 백업한다.\n- 컨트롤 플레인 컴포넌트에 대한 정적 파드 매니페스트를 업그레이드한다.\n- 이 노드의 kubelet 구성을 업그레이드한다.\n\n`kubeadm upgrade node` 는 워커 노드에서 다음을 수행한다.\n\n- 클러스터에서 kubeadm `ClusterConfiguration` 을 가져온다.\n- 이 노드의 kubelet 구성을 업그레이드한다."
+}

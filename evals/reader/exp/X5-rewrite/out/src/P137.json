@@ -1,0 +1,7 @@
+{
+ "id": "P137",
+ "source": "kubernetes/website content/ko/docs/concepts/architecture/cloud-controller.md",
+ "license": "CC BY 4.0",
+ "heading": "{{% heading \"whatsnext\" %}}",
+ "text": "클라우드 컨트롤러 매니저 관리에는\n클라우드 컨트롤러 매니저의 실행과 관리에 대한 지침이 있다.\n\n클라우드 컨트롤러 매니저를 사용하기 위해 HA 컨트롤 플레인을 업그레이드하려면, 클라우드 컨트롤러 매니저를 사용하기 위해 복제된 컨트롤 플레인 마이그레이션 하기를 참고한다.\n\n자체 클라우드 컨트롤러 매니저를 구현하거나 기존 프로젝트를 확장하는 방법을 알고 싶은가?\n\n클라우드 컨트롤러 매니저는 Go 인터페이스를 사용함으로써, 어떠한 클라우드에 대한 구현체(implementation)라도 플러그인 될 수 있도록 한다. 구체적으로는, kubernetes/cloud-provider의 `cloud.go`에 정의된 `CloudProvider` 인터페이스를 사용한다.\n\n이 문서(노드, 라우트와 서비스)에서 강조된 공유 컨트롤러의 구현과 공유 cloudprovider 인터페이스와 함께 일부 스캐폴딩(scaffolding)은 쿠버네티스 핵심의 일부이다. 클라우드 공급자 전용 구현은 쿠버네티스의 핵심 바깥에 있으며 `CloudProvider` 인터페이스를 구현한다.\n\n플러그인 개발에 대한 자세한 내용은 클라우드 컨트롤러 매니저 개발하기를 참조한다."
+}

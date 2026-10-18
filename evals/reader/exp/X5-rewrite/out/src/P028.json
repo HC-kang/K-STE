@@ -1,0 +1,7 @@
+{
+ "id": "P028",
+ "source": "kubernetes/website content/ko/docs/tasks/inject-data-application/downward-api-volume-expose-pod-information.md",
+ "license": "CC BY 4.0",
+ "heading": "{{% heading \"whatsnext\" %}}",
+ "text": "* `spec`을 읽어보자.\n  파드에 대한 API 정의다. 여기에는 컨테이너 (파드의 일부)의 정의가 포함되어 있다.\n* downward API를 사용하여 노출할 수 있는 이용 가능한 필드 목록을 읽어보자.\n\n레거시 API 레퍼런스에서 볼륨에 대해 읽어본다.\n* 컨테이너가 접근할 파드 내의 일반 볼륨을 정의하는 \n  `Volume` API 정의를 확인한다.\n* 다운워드 API 정보를 포함하는 볼륨을 정의하는 \n  `DownwardAPIVolumeSource` API 정의를 확인한다.\n* 다운워드 API 볼륨 내 파일을 채우기 위한 \n  오브젝트 또는 리소스 필드로의 레퍼런스를 포함하는 \n  `DownwardAPIVolumeFile` API 정의를 확인한다.\n* 컨테이너 리소스 및 이들의 출력 형식을 지정하는 \n  `ResourceFieldSelector` API 정의를 확인한다."
+}

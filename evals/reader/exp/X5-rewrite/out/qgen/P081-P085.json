@@ -1,0 +1,329 @@
+{
+ "passages": [
+  {
+   "id": "P081",
+   "questions": [
+    {
+     "q": "레이블을 이용해 조직 구조와 시스템 오브젝트를 매핑할 때 클라이언트가 할 필요가 없는 일은?",
+     "A": "매핑 정보를 저장하는 일",
+     "B": "레이블 키의 고유성을 지키는 일",
+     "C": "레이블에 사용할 규칙을 정하는 일",
+     "D": "오브젝트에 레이블을 붙이는 일",
+     "answer": "A",
+     "facts": [],
+     "type": "what"
+    },
+    {
+     "q": "글에서 크로스-커팅 작업이 깨트린다고 설명한 것은?",
+     "A": "사용자가 정한 레이블 명명 규칙",
+     "B": "인프라에 의해 결정된 엄격한 계층 구조의 캡슐화",
+     "C": "클라이언트에 저장된 매핑 정보의 고유성",
+     "D": "조직 구조와 시스템 오브젝트 사이의 모든 연결",
+     "answer": "B",
+     "facts": [],
+     "type": "what"
+    },
+    {
+     "q": "제시된 레이블 예시의 지위와 사용 방식에 대한 설명으로 맞는 것은?",
+     "A": "필수 레이블이므로 모든 오브젝트에 전부 붙여야 한다.",
+     "B": "권장 레이블이지만 키는 바꿀 수 없고 값만 바꿀 수 있다.",
+     "C": "권장 레이블이며 사용자가 자신의 규칙에 따라 자유롭게 개발할 수 있다.",
+     "D": "인프라가 정한 레이블이므로 사용자는 새 규칙을 만들 수 없다.",
+     "answer": "C",
+     "facts": [],
+     "type": "scope"
+    },
+    {
+     "q": "하나의 오브젝트에 레이블을 붙일 때 반드시 지켜야 하는 조건은?",
+     "A": "레이블 값이 모든 오브젝트에서 고유해야 한다.",
+     "B": "레이블은 하나의 차원만 나타내야 한다.",
+     "C": "레이블 값은 예시에 나온 값이어야 한다.",
+     "D": "그 오브젝트에 붙은 레이블 키가 고유해야 한다.",
+     "answer": "D",
+     "facts": [],
+     "type": "condition"
+    },
+    {
+     "q": "예시에서 customerA와 customerB를 구분하는 데 사용한 레이블 키는?",
+     "A": "environment",
+     "B": "partition",
+     "C": "release",
+     "D": "tier",
+     "answer": "B",
+     "facts": [],
+     "type": "what"
+    },
+    {
+     "q": "예시에서 track 레이블에 사용한 값의 쌍은?",
+     "A": "stable, canary",
+     "B": "frontend, backend",
+     "C": "daily, weekly",
+     "D": "dev, qa",
+     "answer": "C",
+     "facts": [],
+     "type": "what"
+    }
+   ]
+  },
+  {
+   "id": "P082",
+   "questions": [
+    {
+     "q": "목록에서 Ubuntu의 cgroup v2 사용 시작 버전과 권장 버전을 바르게 연결한 것은?",
+     "A": "21.10부터 사용, 22.04 이상 권장",
+     "B": "22.04부터 사용, 21.10 권장",
+     "C": "20.04부터 사용, 21.10 이상 권장",
+     "D": "21.10부터 사용, 21.10만 권장",
+     "answer": "A",
+     "facts": [],
+     "type": "number"
+    },
+    {
+     "q": "Container Optimized OS는 어느 버전부터 cgroup v2를 사용하는 것으로 제시되어 있는가?",
+     "A": "31",
+     "B": "M97",
+     "C": "9",
+     "D": "11 bullseye",
+     "answer": "B",
+     "facts": [],
+     "type": "number"
+    },
+    {
+     "q": "Arch Linux가 cgroup v2를 사용하는 것으로 제시된 시작 시점은?",
+     "A": "2021년 10월",
+     "B": "2022년 4월",
+     "C": "2021년 4월",
+     "D": "2022년 10월",
+     "answer": "C",
+     "facts": [],
+     "type": "when"
+    },
+    {
+     "q": "현재 배포판이 cgroup v2를 사용하는지 확인하기 위해 글이 안내한 방법은?",
+     "A": "배포판 종류와 관계없이 sudo update-grub만 실행한다.",
+     "B": "Ubuntu 22.04 이상으로 먼저 교체한 뒤 확인한다.",
+     "C": "GRUB_CMDLINE_LINUX에 배포판 버전을 기록한다.",
+     "D": "해당 배포판 문서를 참조하거나 리눅스 노드의 cgroup 버전 확인 지침을 따른다.",
+     "answer": "D",
+     "facts": [],
+     "type": "what"
+    },
+    {
+     "q": "GRUB을 사용하는 배포판에서 cgroup v2를 수동 활성화하는 절차로 맞는 것은?",
+     "A": "/etc/default/grub의 GRUB_CMDLINE_LINUX에 systemd.unified_cgroup_hierarchy=1을 추가한 뒤 sudo update-grub을 실행한다.",
+     "B": "sudo update-grub을 실행한 뒤 GRUB_CMDLINE_LINUX에서 systemd.unified_cgroup_hierarchy=1을 삭제한다.",
+     "C": "/etc/default/grub의 GRUB_CMDLINE_LINUX에 systemd.unified_cgroup_hierarchy=0을 추가한 뒤 sudo update-grub을 실행한다.",
+     "D": "/etc/default/grub의 GRUB_CMDLINE_LINUX를 sudo update-grub으로 바꾸고 파일 저장만 한다.",
+     "answer": "A",
+     "facts": [],
+     "type": "what"
+    },
+    {
+     "q": "글에서 권장하는 cgroup v2 사용 접근 방법은?",
+     "A": "모든 배포판에서 커널 부트 인자를 직접 수정하는 것",
+     "B": "cgroup v2를 기본적으로 활성화하는 배포판을 사용하는 것",
+     "C": "GRUB을 사용하는 배포판만 선택하는 것",
+     "D": "배포판을 바꾸지 않고 sudo update-grub을 주기적으로 실행하는 것",
+     "answer": "B",
+     "facts": [],
+     "type": "what"
+    }
+   ]
+  },
+  {
+   "id": "P083",
+   "questions": [
+    {
+     "q": "runAsUserName의 형식에 대한 설명으로 맞는 것은?",
+     "A": "DOMAIN만 입력하고 USER는 생략할 수 있다.",
+     "B": "DOMAIN과 USER를 반드시 함께 입력해야 한다.",
+     "C": "DOMAIN\\USER 형식이며 DOMAIN\\ 부분은 생략할 수 있다.",
+     "D": "DOMAIN/USER 형식이며 슬래시는 필수다.",
+     "answer": "C",
+     "facts": [],
+     "type": "condition"
+    },
+    {
+     "q": "윈도우 username의 대소문자 처리에 대해 글이 설명한 것은?",
+     "A": "대소문자를 구분하지 않는다.",
+     "B": "USER 부분에서만 대소문자를 구분한다.",
+     "C": "DOMAIN 부분에서만 대소문자를 구분한다.",
+     "D": "DOMAIN과 USER 모두 대소문자를 구분한다.",
+     "answer": "A",
+     "facts": [],
+     "type": "condition"
+    },
+    {
+     "q": "runAsUserName 필드 자체에 적용되는 제약은?",
+     "A": "비워 둘 수 있지만 제어 문자는 포함할 수 없다.",
+     "B": "비워 둘 수 없지만 제어 문자는 포함할 수 있다.",
+     "C": "비워 둘 수 있고 제어 문자도 포함할 수 있다.",
+     "D": "비워 둘 수 없으며 제어 문자도 포함할 수 없다.",
+     "answer": "D",
+     "facts": [],
+     "type": "condition"
+    },
+    {
+     "q": "DOMAIN을 NetBios 이름으로 지정할 때의 제약으로 맞는 것은?",
+     "A": "최대 20자이며 공백으로 시작할 수 없다.",
+     "B": "최대 15자이며 마침표로 시작할 수 없다.",
+     "C": "최대 255자이며 대시로 끝날 수 없다.",
+     "D": "최대 15자이며 영숫자로만 구성해야 한다.",
+     "answer": "B",
+     "facts": [],
+     "type": "condition"
+    },
+    {
+     "q": "DOMAIN을 DNS 이름으로 지정할 때 허용되는 조건은?",
+     "A": "최대 15자이며 마침표로 끝날 수 있다.",
+     "B": "최대 255자이며 대시로 시작할 수 있다.",
+     "C": "최대 255자이며 영숫자, 마침표, 대시만 쓰고 마침표나 대시로 시작하거나 끝나지 않아야 한다.",
+     "D": "최대 20자이며 영숫자와 공백만 사용할 수 있다.",
+     "answer": "C",
+     "facts": [],
+     "type": "condition"
+    },
+    {
+     "q": "USER 부분의 길이와 구성에 대한 제약으로 맞는 것은?",
+     "A": "최대 20자이며 마침표나 공백만으로 구성할 수 없다.",
+     "B": "최대 15자이며 마침표로 시작할 수 없다.",
+     "C": "최대 255자이며 대시로 끝날 수 없다.",
+     "D": "최대 20자이며 모든 공백 사용이 금지된다.",
+     "answer": "A",
+     "facts": [],
+     "type": "condition"
+    }
+   ]
+  },
+  {
+   "id": "P084",
+   "questions": [
+    {
+     "q": "파드 스펙의 hostname 필드를 설정하면 파드 내부에서 관찰되는 호스트네임은 무엇을 따르는가?",
+     "A": "항상 metadata.name의 값",
+     "B": "hostname 필드의 값",
+     "C": "네임스페이스 이름",
+     "D": "subdomain 필드의 값",
+     "answer": "B",
+     "facts": [],
+     "type": "condition"
+    },
+    {
+     "q": "hostname과 subdomain 필드의 설정 여부에 대한 설명으로 맞는 것은?",
+     "A": "두 필드 모두 필수다.",
+     "B": "hostname만 필수다.",
+     "C": "subdomain만 필수다.",
+     "D": "두 필드 모두 옵션이다.",
+     "answer": "D",
+     "facts": [],
+     "type": "obligation"
+    },
+    {
+     "q": "subdomain 필드는 무엇을 나타내는가?",
+     "A": "파드가 네임스페이스 내 특정 서브도메인에 속한다는 것",
+     "B": "파드의 metadata.name을 삭제해야 한다는 것",
+     "C": "파드가 속한 네임스페이스의 이름을 바꾼다는 것",
+     "D": "파드 내부 호스트네임을 항상 전체 FQDN으로 사용한다는 것",
+     "answer": "A",
+     "facts": [],
+     "type": "what"
+    },
+    {
+     "q": "my-namespace에서 hostname이 foo이고 subdomain이 bar인 파드의 호스트네임은?",
+     "A": "bar",
+     "B": "my-namespace",
+     "C": "foo",
+     "D": "foo.bar",
+     "answer": "C",
+     "facts": [],
+     "type": "what"
+    },
+    {
+     "q": "글의 예시에서 hostname이 foo, subdomain이 bar, 네임스페이스가 my-namespace일 때 FQDN은?",
+     "A": "bar.foo.my-namespace.svc.cluster-domain.example",
+     "B": "foo.bar.my-namespace.svc.cluster-domain.example",
+     "C": "foo.my-namespace.bar.svc.cluster-domain.example",
+     "D": "my-namespace.foo.bar.svc.cluster-domain.example",
+     "answer": "B",
+     "facts": [],
+     "type": "what"
+    },
+    {
+     "q": "글에서 클러스터 DNS 서버가 해당 필드를 기반으로 A 및/또는 AAAA 레코드를 생성한다고 명시한 조건은?",
+     "A": "hostname만 설정된 경우",
+     "B": "subdomain만 설정된 경우",
+     "C": "metadata.name과 네임스페이스 이름이 같은 경우",
+     "D": "hostname과 subdomain이 모두 설정된 경우",
+     "answer": "D",
+     "facts": [],
+     "type": "condition"
+    }
+   ]
+  },
+  {
+   "id": "P085",
+   "questions": [
+    {
+     "q": "파드가 스케줄링 제약조건을 통해 제한할 수 있는 것은?",
+     "A": "스케줄링될 수 있는 노드의 유형",
+     "B": "실행 후 실제 리소스 사용량의 측정 주기",
+     "C": "노드 오토스케일러의 실행 시간",
+     "D": "수평 워크로드 오토스케일링의 이름",
+     "answer": "A",
+     "facts": [],
+     "type": "scope"
+    },
+    {
+     "q": "노드 오토스케일러가 스케줄링 제약조건을 고려하는 목적은?",
+     "A": "실행 중인 파드의 실제 사용량을 직접 측정하기 위해",
+     "B": "모든 파드의 스토리지 볼륨 요구사항을 없애기 위해",
+     "C": "Pending 파드를 프로비저닝된 노드에 스케줄링할 수 있도록 하기 위해",
+     "D": "노드 어피니티를 리소스 사용량으로 대체하기 위해",
+     "answer": "C",
+     "facts": [],
+     "type": "cause"
+    },
+    {
+     "q": "글에서 가장 일반적인 스케줄링 제약조건으로 제시한 것은?",
+     "A": "파드 간 어피니티 지정",
+     "B": "파드 컨테이너의 리소스 요청 지정",
+     "C": "특정 스토리지 볼륨 요구사항 지정",
+     "D": "노드 어피니티 지정",
+     "answer": "B",
+     "facts": [],
+     "type": "what"
+    },
+    {
+     "q": "파드 컨테이너의 리소스 요청과 관련하여 오토스케일러가 보장하는 것은?",
+     "A": "실제 사용량이 항상 리소스 요청과 같다는 것",
+     "B": "실행 이후 리소스 사용량이 증가하지 않는다는 것",
+     "C": "모든 노드가 동일한 리소스 용량을 가진다는 것",
+     "D": "프로비저닝된 노드가 요청을 충족할 충분한 리소스를 가진다는 것",
+     "answer": "D",
+     "facts": [],
+     "type": "what"
+    },
+    {
+     "q": "노드 오토스케일러가 직접적으로 고려하지 않는다고 설명한 것은?",
+     "A": "파드가 실행된 이후의 실제 리소스 사용량",
+     "B": "파드 컨테이너에 지정된 리소스 요청",
+     "C": "파드의 노드 어피니티",
+     "D": "파드의 특정 스토리지 볼륨 요구사항",
+     "answer": "A",
+     "facts": [],
+     "type": "scope"
+    },
+    {
+     "q": "실제 워크로드의 리소스 사용량에 기반해 노드를 오토스케일링하려면 무엇을 결합할 수 있는가?",
+     "A": "노드 어피니티와 파드 간 어피니티",
+     "B": "스토리지 볼륨 요구사항과 노드 어피니티",
+     "C": "수평 워크로드 오토스케일링과 노드 오토스케일링",
+     "D": "파드 간 어피니티와 컨테이너 리소스 요청",
+     "answer": "C",
+     "facts": [],
+     "type": "what"
+    }
+   ]
+  }
+ ]
+}

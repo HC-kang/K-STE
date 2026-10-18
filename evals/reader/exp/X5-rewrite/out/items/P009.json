@@ -1,0 +1,69 @@
+{
+ "id": "P009",
+ "source": "kubernetes/website content/ko/docs/concepts/overview/working-with-objects/common-labels.md",
+ "license": "CC BY 4.0",
+ "heading": "애플리케이션과 애플리케이션 인스턴스",
+ "text": "애플리케이션은 동일한 쿠버네티스 클러스터에,\n심지어는 동일한 네임스페이스에도 한번 또는 그 이상 설치될 수 있다. 예를 들어, 하나의 쿠버네티스 클러스터에\nWordPress가 여러 번 설치되어 각각 서로 다른 웹사이트를 서비스할 수 있다.\n\n애플리케이션의 이름과 애플리케이션 인스턴스 이름은 별도로 기록된다.\n예를 들어 WordPress는 애플리케이션 이름으로 `app.kubernetes.io/name` 이라는 레이블에 `wordpress` 라는 값을 가지며,\n애플리케이션 인스턴스 이름으로는 `app.kubernetes.io/instance` 라는 레이블에\n`wordpress-abcxzy` 라는 값을 가진다. 이를 통해 애플리케이션과 애플리케이션 인스턴스를\n식별할 수 있다. 모든 애플리케이션 인스턴스는 고유한 이름을 가져야 한다.",
+ "questions": [
+  {
+   "q": "글에서 설명한 애플리케이션의 반복 설치 가능 범위는 무엇인가?",
+   "A": "같은 클러스터에서는 네임스페이스가 달라도 한 번만 설치할 수 있다.",
+   "B": "같은 클러스터의 같은 네임스페이스에도 한 번 이상 설치할 수 있다.",
+   "C": "서로 다른 클러스터에만 반복 설치할 수 있다.",
+   "D": "같은 클러스터에서는 반드시 서로 다른 네임스페이스에 설치해야 한다.",
+   "answer": "B",
+   "facts": [],
+   "type": "scope"
+  },
+  {
+   "q": "한 클러스터에 WordPress를 여러 번 설치하는 예에서 각각의 설치는 무엇을 서비스할 수 있는가?",
+   "A": "애플리케이션 이름 레이블만",
+   "B": "서로 다른 웹사이트",
+   "C": "쿠버네티스 클러스터 자체",
+   "D": "반드시 하나의 공통 웹사이트",
+   "answer": "B",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "예시에서 애플리케이션 이름을 기록한 레이블과 값의 조합은 무엇인가?",
+   "A": "app.kubernetes.io/instance = app.kubernetes.io/name",
+   "B": "app.kubernetes.io/name = wordpress-abcxzy",
+   "C": "app.kubernetes.io/name = wordpress",
+   "D": "app.kubernetes.io/instance = wordpress",
+   "answer": "C",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "예시에서 애플리케이션 인스턴스 이름을 기록한 레이블과 값의 조합은 무엇인가?",
+   "A": "app.kubernetes.io/name = wordpress",
+   "B": "app.kubernetes.io/instance = wordpress",
+   "C": "app.kubernetes.io/instance = wordpress-abcxzy",
+   "D": "app.kubernetes.io/name = wordpress-abcxzy",
+   "answer": "C",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "애플리케이션 이름과 애플리케이션 인스턴스 이름을 별도로 기록하여 식별할 수 있는 대상은 무엇인가?",
+   "A": "클러스터 이름과 레이블 생성 순서",
+   "B": "애플리케이션과 애플리케이션 인스턴스",
+   "C": "웹사이트와 클러스터의 설치 시각",
+   "D": "네임스페이스와 웹사이트 주소",
+   "answer": "B",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "모든 애플리케이션 인스턴스의 이름에 요구되는 조건은 무엇인가?",
+   "A": "반드시 wordpress라는 값을 가져야 한다.",
+   "B": "같은 네임스페이스에서는 이름을 공유해야 한다.",
+   "C": "고유한 이름을 가져야 한다.",
+   "D": "애플리케이션 이름과 같아야 한다.",
+   "answer": "C",
+   "facts": [],
+   "type": "obligation"
+  }
+ ]
+}

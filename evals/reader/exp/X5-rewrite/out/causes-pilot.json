@@ -1,0 +1,22 @@
+[
+ {
+  "id": "67c031e1",
+  "cond": "clarity",
+  "pid": "P004",
+  "q": 2,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "other",
+  "grok": "silent_change"
+ },
+ {
+  "id": "ae0ea04c",
+  "cond": "clarity",
+  "pid": "P007",
+  "q": 2,
+  "answer": "E",
+  "orig_wrong": false,
+  "codex": "flag_E",
+  "grok": "flag_E"
+ }
+]

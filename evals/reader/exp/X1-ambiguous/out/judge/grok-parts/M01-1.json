@@ -1,0 +1,34 @@
+{
+ "clarity/sonnet": {
+  "gaps": [
+   "keep",
+   "keep",
+   "invent"
+  ],
+  "extra_flags": 3
+ },
+ "full/haiku": {
+  "gaps": [
+   "invent",
+   "flag",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "clarity/haiku": {
+  "gaps": [
+   "keep",
+   "invent",
+   "invent"
+  ],
+  "extra_flags": 0
+ },
+ "base/haiku": {
+  "gaps": [
+   "invent",
+   "invent",
+   "keep"
+  ],
+  "extra_flags": 0
+ }
+}

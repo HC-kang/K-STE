@@ -1,0 +1,7 @@
+{
+ "id": "P111",
+ "source": "kubernetes/website content/ko/docs/concepts/scheduling-eviction/kube-scheduler.md",
+ "license": "CC BY 4.0",
+ "heading": "kube-scheduler에서 노드 선택 {#kube-scheduler-implementation}",
+ "text": "kube-scheduler는 2단계 작업에서 파드에 대한 노드를 선택한다.\n\n1. 필터링\n1. 스코어링(scoring)\n\n_필터링_ 단계는 파드를 스케줄링할 수 있는 노드 셋을\n찾는다. 예를 들어 PodFitsResources 필터는\n후보 노드가 파드의 특정 리소스 요청을 충족시키기에 충분한 가용 리소스가\n있는지 확인한다. 이 단계 다음에 노드 목록에는 적합한 노드들이\n포함된다. 둘 이상의 노드가 포함되는 경우가 종종 있을 것이다. 목록이 비어 있으면\n해당 파드는 (아직) 스케줄링될 수 없다.\n\n_스코어링_ 단계에서 스케줄러는 목록에 남아있는 노드의 순위를 지정하여\n가장 적합한 파드 배치를 선택한다. 스케줄러는 활성화된 스코어링 규칙을 기준으로,\n필터링을 통과한 각 노드에 점수를 지정한다.\n\n마지막으로 kube-scheduler는 파드를 순위가 가장 높은 노드에 할당한다.\n점수가 같은 노드가 두 개 이상인 경우 kube-scheduler는\n이들 중 하나를 임의로 선택한다.\n\n스케줄러의 필터링 및 스코어링 동작을 구성하는 데 지원되는 두 가지\n방법이 있다.\n\n1. 스케줄링 정책을 사용하면 필터링을 위한 _단정(Predicates)_ 및 스코어링을 위한 _우선순위(Priorities)_ 를 구성할 수 있다.\n1. 스케줄링 프로파일을 사용하면 `QueueSort`, `Filter`, `Score`, `Bind`, `Reserve`, `Permit` 등의 다른 스케줄링 단계를 구현하는 플러그인을 구성할 수 있다. 다른 프로파일을 실행하도록 kube-scheduler를 구성할 수도 있다."
+}

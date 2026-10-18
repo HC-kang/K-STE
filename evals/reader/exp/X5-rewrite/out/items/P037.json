@@ -1,0 +1,69 @@
+{
+ "id": "P037",
+ "source": "kubernetes/website content/ko/docs/concepts/storage/storage-capacity.md",
+ "license": "CC BY 4.0",
+ "heading": "스케줄링",
+ "text": "다음과 같은 경우 쿠버네티스 스케줄러에서 스토리지 용량 정보를 사용한다.\n- 파드가 아직 생성되지 않은 볼륨을 사용하고,\n- 해당 볼륨은 CSI 드라이버를 참조하고\n  `WaitForFirstConsumer`\n  볼륨 바인딩 모드를 사용하는\n  스토리지클래스(StorageClass)를 사용하고,\n- 드라이버의 `CSIDriver` 오브젝트에 `StorageCapacity` 속성이\n  true로 설정되어 있다.\n\n이 경우 스케줄러는 파드에 제공할\n충분한 스토리지가 있는 노드만 고려한다.\n이 검사는 아주 간단한데,\n볼륨의 크기를 노드를 포함하는 토폴로지를 가진 `CSIStorageCapacity` 오브젝트에\n나열된 용량과 비교한다.\n\n볼륨 바인딩 모드가 `Immediate` 인 볼륨의 경우에는 스토리지 드라이버는\n볼륨을 사용하는 파드와 관계없이 볼륨을 생성할 위치를 정한다.\n볼륨을 생성한 후에, 스케줄러는\n볼륨을 사용할 수 있는 노드에 파드를 스케줄링한다.\n\nCSI 임시 볼륨의 경우에는\n볼륨 유형이 로컬 볼륨이고\n큰 자원이 필요하지 않은 특정 CSI 드라이버에서만 사용된다는 가정하에,\n항상 스토리지 용량을 고려하지 않고\n스케줄링한다.",
+ "questions": [
+  {
+   "q": "스케줄러가 스토리지 용량 정보를 사용하는 조건을 모두 충족한 경우는 무엇인가?",
+   "A": "미생성 볼륨을 사용하고, CSI 드라이버를 참조하며, 바인딩 모드가 Immediate이다.",
+   "B": "미생성 볼륨이 WaitForFirstConsumer 스토리지클래스를 사용하고, 드라이버의 StorageCapacity가 false이다.",
+   "C": "미생성 볼륨이 CSI 드라이버를 참조하는 WaitForFirstConsumer 스토리지클래스를 사용하고, 드라이버의 StorageCapacity가 true이다.",
+   "D": "이미 생성된 볼륨을 사용하고, 바인딩 모드가 Immediate이며, StorageCapacity가 true이다.",
+   "answer": "C",
+   "facts": [],
+   "type": "condition"
+  },
+  {
+   "q": "스토리지 용량 정보를 사용하는 경우 스케줄러는 어떤 노드만 고려하는가?",
+   "A": "Immediate 모드 볼륨을 생성한 적이 없는 노드",
+   "B": "이미 CSI 임시 볼륨을 사용하는 노드",
+   "C": "파드에 제공할 충분한 스토리지가 있는 노드",
+   "D": "CSIDriver 오브젝트를 직접 저장하는 노드",
+   "answer": "C",
+   "facts": [],
+   "type": "scope"
+  },
+  {
+   "q": "스케줄러의 간단한 스토리지 용량 검사는 무엇을 비교하는가?",
+   "A": "볼륨 크기와 해당 노드를 포함하는 토폴로지의 CSIStorageCapacity 오브젝트에 나열된 용량",
+   "B": "볼륨 생성 시각과 파드 생성 시각",
+   "C": "노드 수와 스토리지클래스 수",
+   "D": "파드 수와 CSIDriver 오브젝트 수",
+   "answer": "A",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "Immediate 바인딩 모드에서는 누가 무엇을 기준으로 볼륨 생성 위치를 정하는가?",
+   "A": "CSIDriver 오브젝트가 임시 볼륨의 크기에 따라 정한다.",
+   "B": "스토리지 드라이버가 볼륨을 사용하는 파드와 관계없이 정한다.",
+   "C": "파드가 CSIStorageCapacity 오브젝트 수에 따라 정한다.",
+   "D": "스케줄러가 파드의 스케줄링을 마친 후 그 노드로 정한다.",
+   "answer": "B",
+   "facts": [],
+   "type": "who"
+  },
+  {
+   "q": "Immediate 바인딩 모드에서 볼륨이 생성된 후 스케줄러는 어떻게 동작하는가?",
+   "A": "파드가 생성될 때까지 볼륨의 위치 결정을 미룬다.",
+   "B": "볼륨을 사용할 수 있는 노드에 파드를 스케줄링한다.",
+   "C": "볼륨 바인딩 모드를 WaitForFirstConsumer로 변경한다.",
+   "D": "스토리지 용량과 관계없이 모든 노드에 파드를 배치한다.",
+   "answer": "B",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "CSI 임시 볼륨을 항상 스토리지 용량 고려 없이 스케줄링하는 데에는 어떤 가정이 있는가?",
+   "A": "볼륨이 미리 생성되어 있고 Immediate 모드를 사용한다.",
+   "B": "로컬 볼륨이며 큰 자원이 필요하지 않은 특정 CSI 드라이버에서만 사용된다.",
+   "C": "모든 CSI 드라이버가 대용량 원격 볼륨만 제공한다.",
+   "D": "모든 노드의 StorageCapacity 속성이 false이다.",
+   "answer": "B",
+   "facts": [],
+   "type": "condition"
+  }
+ ]
+}

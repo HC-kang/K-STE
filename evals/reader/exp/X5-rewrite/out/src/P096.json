@@ -1,0 +1,7 @@
+{
+ "id": "P096",
+ "source": "kubernetes/website content/ko/docs/concepts/windows/intro.md",
+ "license": "CC BY 4.0",
+ "heading": "호환성 및 제한 {#limitations}",
+ "text": "일부 노드 기능은 특정 컨테이너 런타임을 사용할 때에만 이용 가능하며, \n윈도우 노드에서 사용할 수 없는 기능도 있다. \n예시는 다음과 같다.\n\n* HugePages: 윈도우 컨테이너에서 지원되지 않음\n* 특권을 가진(Privileged) 컨테이너: 윈도우 컨테이너에서 지원되지 않음.\n  HostProcess 컨테이너가 비슷한 기능을 제공한다.\n* TerminationGracePeriod: containerD를 필요로 한다.\n\n공유 네임스페이스(shared namespaces)의 모든 기능이 지원되는 것은 아니다. \n자세한 내용은 API 호환성을 참조한다.\n\n윈도우 OS 버전 호환성에서 \n쿠버네티스와의 동작이 테스트된 윈도우 버전 상세사항을 확인한다.\n\nAPI 및 kubectl의 관점에서, 윈도우 컨테이너는 리눅스 기반 컨테이너와 거의 같은 방식으로 작동한다. \n그러나, 주요 기능에서 몇 가지 주목할 만한 차이점이 있으며, \n이 섹션에서 소개된다."
+}

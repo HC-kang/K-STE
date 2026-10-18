@@ -1,0 +1,7 @@
+{
+ "id": "P091",
+ "source": "kubernetes/website content/ko/docs/concepts/cluster-administration/system-logs.md",
+ "license": "CC BY 4.0",
+ "heading": "로그 위치",
+ "text": "시스템 컴포넌트에는 컨테이너에서 실행되는 것과 컨테이너에서 실행되지 않는 두 가지 유형이 있다.\n예를 들면 다음과 같다.\n\n* 쿠버네티스 스케줄러와 kube-proxy는 컨테이너에서 실행된다.\n* kubelet과 컨테이너 런타임은\n  컨테이너에서 실행되지 않는다.\n\nsystemd를 사용하는 시스템에서는, kubelet과 컨테이너 런타임은 journald에 기록한다.\n그 외 시스템에서는, `/var/log` 디렉터리의 `.log` 파일에 기록한다.\n컨테이너 내부의 시스템 컴포넌트들은 기본 로깅 메커니즘을 무시하고,\n항상 `/var/log` 디렉터리의 `.log` 파일에 기록한다.\n컨테이너 로그와 마찬가지로, `/var/log` 디렉터리의 시스템 컴포넌트 로그들은 로테이트해야 한다.\n`kube-up.sh` 스크립트로 생성된 쿠버네티스 클러스터에서는, `logrotate` 도구로 로그가 로테이트되도록 설정된다.\n`logrotate` 도구는 매일 또는 로그 크기가 100MB보다 커지면 로그를 로테이트한다."
+}

@@ -1,0 +1,7 @@
+{
+ "id": "P121",
+ "source": "kubernetes/website content/ko/docs/concepts/workloads/controllers/replicationcontroller.md",
+ "license": "CC BY 4.0",
+ "heading": "파드 셀렉터",
+ "text": "`.spec.selector` 필드는 레이블 셀렉터이다. 레플리케이션 컨트롤러는 셀렉터와 일치하는 레이블이 있는 모든 파드를 관리한다.\n직접 생성하거나 삭제된 파드와 다른 사람이나 프로세스가 생성하거나\n삭제한 파드를 구분하지 않는다. 이렇게 하면 실행중인 파드에 영향을 주지 않고\n레플리케이션 컨트롤러를 교체할 수 있다.\n\n지정된 경우 `.spec.template.metadata.labels` 은\n`.spec.selector` 와 동일해야 하며 그렇지 않으면 API에 의해 거부된다. `.spec.selector` 가 지정되지 않은 경우 기본값은\n`.spec.template.metadata.labels` 이다.\n\n또한 일반적으로 이 셀렉터와 레이블이 일치하는 파드를 직접\n다른 레플리케이션 컨트롤러 또는 잡과 같은 다른 컨트롤러로 작성해서는 안된다.\n그렇게 하면 레플리케이션 컨트롤러는 다른 파드를 생성했다고 생각한다.\n쿠버네티스는 이런 작업을 중단해 주지 않는다.\n\n중첩된 셀렉터들을 갖는 다수의 컨트롤러들을 종료하게 되면, 삭제된 것들은 스스로 관리를 해야 한다\n(아래를 참조)."
+}

@@ -1,0 +1,7 @@
+{
+ "id": "P026",
+ "source": "kubernetes/website content/ko/docs/concepts/workloads/pods/user-namespaces.md",
+ "license": "CC BY 4.0",
+ "heading": "개요",
+ "text": "사용자 네임스페이스는 컨테이너의 사용자를 \n호스트의 다른 사용자에게 매핑할 수 있는 리눅스 기능이다.\n또한 사용자 네임스페이스의 파드에 부여된 기능은 네임스페이스 내부에서만 유효하고 외부에서는 무효하다.\n\n파드는 `pod.spec.hostUsers` 필드를 `false`로 설정해\n사용자 네임스페이스를 사용하도록 선택할 수 있다.\n\nkubelet은 동일 노드에 있는 두 개의 스테이트리스 파드가 동일한 매핑을\n사용하지 않도록 보장하는 방식으로 파드가 매핑된 호스트 UID나 GID를 선택한다.\n\n`pod.spec`의 `runAsUser`, `runAsGroup`, `fsGroup` 등의 필드는 항상\n컨테이너 내의 사용자를 가리킨다.\n\n이 기능을 활성화한 경우 유효한 UID/GID의 범위는 0부터 65535까지이다.\n이는 파일 및 프로세스(`runAsUser`, `runAsGroup` 등)에 적용된다.\n\n이 범위를 벗어나는 UID/GID를 사용하는 파일은 오버플로 ID,\n주로 65534(`/proc/sys/kernel/overflowuid`와 `/proc/sys/kernel/overflowgid`에서 설정됨)에\n속하는 것으로 간주된다.\n그러나 65534 사용자/그룹으로 실행하더라도 이러한 파일을 수정할 수 없다.\n\n루트로 실행돼야 하지만 다른 호스트 네임스페이스나 리소스에 접근하지 않는\n대부분의 애플리케이션은 사용자 네임스페이스를 활성화한 경우\n변경할 필요 없이 계속 정상적으로 실행돼야 한다."
+}

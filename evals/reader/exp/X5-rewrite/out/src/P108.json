@@ -1,0 +1,7 @@
+{
+ "id": "P108",
+ "source": "kubernetes/website content/ko/docs/tasks/administer-cluster/kubeadm/kubeadm-certs.md",
+ "license": "CC BY 4.0",
+ "heading": "인증서 서명 요청(CSR) 생성",
+ "text": "`kubeadm certs renew --csr-only` 로 인증서 서명 요청을 만들 수 있다.\n\nCSR과 함께 제공되는 개인 키가 모두 출력된다.\n`--csr-dir` 로 사용할 디텍터리를 전달하여 지정된 위치로 CSR을 출력할 수 있다.\n`--csr-dir` 을 지정하지 않으면, 기본 인증서 디렉터리(`/etc/kubernetes/pki`)가 사용된다.\n\n`kubeadm certs renew --csr-only` 로 인증서를 갱신할 수 있다.\n`kubeadm init` 과 마찬가지로 출력 디렉터리를 `--csr-dir` 플래그로 지정할 수 있다.\n\nCSR에는 인증서 이름, 도메인 및 IP가 포함되지만, 용도를 지정하지는 않는다.\n인증서를 발행할 때 올바른 인증서 용도를\n지정하는 것은 CA의 책임이다.\n\n* `openssl` 의 경우\n  `openssl ca` 명령으로 수행한다.\n* `cfssl` 의 경우\n  설정 파일에 용도를 지정한다.\n\n선호하는 방법으로 인증서에 서명한 후, 인증서와 개인 키를 PKI 디렉터리(기본적으로 `/etc/kubernetes/pki`)에 복사해야 한다."
+}

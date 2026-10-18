@@ -1,0 +1,566 @@
+{
+ "qualified": [
+  "P001",
+  "P002",
+  "P003",
+  "P004",
+  "P005",
+  "P006",
+  "P007",
+  "P008",
+  "P009",
+  "P010",
+  "P011",
+  "P012",
+  "P013",
+  "P014",
+  "P015",
+  "P016",
+  "P017",
+  "P018",
+  "P019",
+  "P020",
+  "P021",
+  "P022",
+  "P023",
+  "P024",
+  "P025",
+  "P026",
+  "P027",
+  "P028",
+  "P029",
+  "P030",
+  "P031",
+  "P032",
+  "P033",
+  "P034",
+  "P035",
+  "P036",
+  "P037",
+  "P038",
+  "P039",
+  "P040",
+  "P041",
+  "P042",
+  "P043",
+  "P044",
+  "P045",
+  "P046",
+  "P047",
+  "P048",
+  "P049",
+  "P050",
+  "P051",
+  "P052",
+  "P053",
+  "P054",
+  "P055",
+  "P056",
+  "P057",
+  "P058",
+  "P059",
+  "P060",
+  "P061",
+  "P062",
+  "P063",
+  "P064",
+  "P065",
+  "P066",
+  "P067",
+  "P068",
+  "P069",
+  "P070",
+  "P071",
+  "P072",
+  "P073",
+  "P074",
+  "P075",
+  "P076",
+  "P077",
+  "P078",
+  "P079",
+  "P080",
+  "P081",
+  "P082",
+  "P083",
+  "P084",
+  "P085",
+  "P086",
+  "P087",
+  "P088",
+  "P089",
+  "P090",
+  "P091",
+  "P092",
+  "P093",
+  "P094",
+  "P095",
+  "P096",
+  "P097",
+  "P098",
+  "P099",
+  "P100"
+ ],
+ "per_passage": {
+  "P001": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P002": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P003": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P004": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P005": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P006": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P007": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P008": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P009": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P010": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P011": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P012": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P013": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P014": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P015": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P016": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P017": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P018": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P019": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P020": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P021": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P022": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P023": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P024": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P025": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P026": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P027": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P028": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P029": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P030": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P031": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P032": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P033": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P034": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P035": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P036": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P037": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P038": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P039": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P040": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P041": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P042": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P043": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P044": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P045": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P046": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P047": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P048": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P049": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P050": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P051": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P052": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P053": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P054": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P055": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P056": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P057": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P058": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P059": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P060": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P061": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P062": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P063": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P064": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P065": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P066": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P067": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P068": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P069": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P070": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P071": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P072": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P073": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P074": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P075": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P076": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P077": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P078": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P079": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P080": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P081": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P082": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P083": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P084": {
+   "generated": 6,
+   "kept": 5
+  },
+  "P085": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P086": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P087": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P088": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P089": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P090": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P091": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P092": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P093": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P094": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P095": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P096": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P097": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P098": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P099": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P100": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P101": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P102": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P103": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P104": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P105": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P106": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P107": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P108": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P109": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P110": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P111": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P112": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P113": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P114": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P115": {
+   "generated": 6,
+   "kept": 6
+  }
+ }
+}

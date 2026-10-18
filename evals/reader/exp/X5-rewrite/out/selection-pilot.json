@@ -1,0 +1,56 @@
+{
+ "qualified": [
+  "P001",
+  "P002",
+  "P003",
+  "P004",
+  "P005",
+  "P006",
+  "P007",
+  "P008",
+  "P009",
+  "P010"
+ ],
+ "per_passage": {
+  "P001": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P002": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P003": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P004": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P005": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P006": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P007": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P008": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P009": {
+   "generated": 6,
+   "kept": 6
+  },
+  "P010": {
+   "generated": 6,
+   "kept": 6
+  }
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "id": "P033",
+ "source": "kubernetes/website content/ko/docs/concepts/policy/_index.md",
+ "license": "CC BY 4.0",
+ "heading": "ValidatingAdmissionPolicy를 사용하여 정책 적용하기",
+ "text": "유효성 검사 어드미션 정책(validating admission policy)을 사용하면 공통 표현식 언어(Common Expression Language, CEL)를 이용해 구성 가능한 유효성 검사를 API 서버에서 실행할 수 있다. 예를 들어, `ValidatingAdmissionPolicy`를 사용하여 `latest` 이미지 태그의 사용을 금지할 수 있다.\n\n`ValidatingAdmissionPolicy`는 API 요청을 대상으로 동작하며, 규정을 준수하지 않는 구성을 차단하거나 감사(audit)하고, 해당 구성에 대해 사용자에게 경고하는 데 사용할 수 있다.\n\n`ValidatingAdmissionPolicy` API에 대한 세부 정보와 예시는 별도 섹션에 문서화되어 있다.\n* 유효성 검사 어드미션 정책",
+ "questions": [
+  {
+   "q": "유효성 검사 어드미션 정책에서 구성 가능한 유효성 검사를 표현하는 데 사용하는 언어는 무엇인가?",
+   "A": "SQL",
+   "B": "셸 스크립트",
+   "C": "공통 표현식 언어(CEL)",
+   "D": "자바스크립트",
+   "answer": "C",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "유효성 검사 어드미션 정책의 검사는 어디에서 실행되는가?",
+   "A": "API 서버",
+   "B": "별도 문서 서버",
+   "C": "사용자의 로컬 터미널",
+   "D": "사용자의 이미지 저장소",
+   "answer": "A",
+   "facts": [],
+   "type": "scope"
+  },
+  {
+   "q": "글에서 ValidatingAdmissionPolicy의 사용 예로 든 것은 무엇인가?",
+   "A": "latest 이미지 태그의 사용 강제",
+   "B": "이미지 태그가 없는 요청의 자동 수정",
+   "C": "latest 이미지 태그의 사용 금지",
+   "D": "모든 이미지 태그의 자동 갱신",
+   "answer": "C",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "ValidatingAdmissionPolicy가 동작 대상으로 삼는 것은 무엇인가?",
+   "A": "이미지 저장소의 변경 이력",
+   "B": "API 요청",
+   "C": "문서의 예시 코드",
+   "D": "사용자의 경고 확인 기록",
+   "answer": "B",
+   "facts": [],
+   "type": "scope"
+  },
+  {
+   "q": "규정을 준수하지 않는 구성에 대해 글에서 제시한 정책의 활용 방식은 무엇인가?",
+   "A": "자동 수정, 이미지 교체, 재배포",
+   "B": "문서 생성, 구성 복제, 서버 재시작",
+   "C": "차단, 감사, 사용자 경고",
+   "D": "저장소 삭제, 태그 갱신, 사용자 차단",
+   "answer": "C",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "ValidatingAdmissionPolicy API의 세부 정보와 예시는 어디에 문서화되어 있는가?",
+   "A": "latest 이미지 태그 목록",
+   "B": "별도의 ‘유효성 검사 어드미션 정책’ 섹션",
+   "C": "API 요청의 경고 메시지 안",
+   "D": "CEL 언어의 이름을 설명한 문장 안",
+   "answer": "B",
+   "facts": [],
+   "type": "scope"
+  }
+ ]
+}

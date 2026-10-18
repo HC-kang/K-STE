@@ -1,0 +1,7 @@
+{
+ "id": "P127",
+ "source": "kubernetes/website content/ko/docs/concepts/configuration/configmap.md",
+ "license": "CC BY 4.0",
+ "heading": "컨피그맵 오브젝트",
+ "text": "컨피그맵은 다른 오브젝트가 사용할 구성을 저장할 수 있는\nAPI 오브젝트이다.\n`spec` 이 있는 대부분의 쿠버네티스 오브젝트와 달리, 컨피그맵에는 `data` 및 `binaryData`\n필드가 있다. 이러한 필드는 키-값 쌍을 값으로 허용한다. `data` 필드와\n`binaryData` 는 모두 선택 사항이다. `data` 필드는\nUTF-8 문자열을 포함하도록 설계되었으며 `binaryData` 필드는 바이너리\n데이터를 base64로 인코딩된 문자열로 포함하도록 설계되었다.\n\n컨피그맵의 이름은 유효한\nDNS 서브도메인 이름이어야 한다.\n\n`data` 또는 `binaryData` 필드 아래의 각 키는\n영숫자 문자, `-`, `_` 또는 `.` 으로 구성되어야 한다. `data` 에 저장된 키는\n`binaryData` 필드의 키와 겹치지 않아야 한다.\n\nv1.19부터 컨피그맵 정의에 `immutable` 필드를 추가하여\n변경할 수 없는 컨피그맵을 만들 수 있다."
+}

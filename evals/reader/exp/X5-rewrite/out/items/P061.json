@@ -1,0 +1,69 @@
+{
+ "id": "P061",
+ "source": "kubernetes/website content/ko/docs/concepts/cluster-administration/networking.md",
+ "license": "CC BY 4.0",
+ "heading": "클러스터 네트워킹 유형 {#cluster-network-ipfamilies}",
+ "text": "쿠버네티스 클러스터는 설정된 IP 패밀리에 따라 다음과 같이 분류할 수 있다.\n\n- IPv4만 사용: 네트워크 플러그인, kube-apiserver, kubelet/cloud-controller-manager는 IPv4 주소만 할당하도록 설정되어 있다.\n- IPv6만 사용: 네트워크 플러그인, kube-apiserver, kubelet/cloud-controller-manager는 IPv6 주소만 할당하도록 설정되어 있다.\n- IPv4/IPv6 또는 IPv6/IPv4 이중 스택:\n  - 네트워크 플러그인은 IPv4 및 IPv6 주소를 할당하도록 설정되어 있다.\n  - kube-apiserver는 IPv4 및 IPv6 주소를 할당하도록 설정되어 있다.\n  - kubelet 또는 cloud-controller-manager는 IPv4 및 IPv6 주소를 할당하도록 설정되어 있다.\n  - 모든 컴포넌트는 동일한 기본 IP 패밀리를 사용하도록 설정되어야 한다.\n\n쿠버네티스 클러스터는 파드, 서비스, 노드 오브젝트에 나타난 IP 패밀리만 고려하며,\n해당 오브젝트가 가지고 있는 기존 IP와는 무관하다. 예를 들어, 서버나 파드는\n자신의 인터페이스에 여러 IP 주소가 할당되어 있을 수 있지만, 쿠버네티스 네트워크 모델을\n구현하고 클러스터 유형을 정의할 때 고려되는 것은 `node.status.addresses` 또는 `pod.status.ips`에 있는 IP 주소뿐이다.",
+ "questions": [
+  {
+   "q": "이중 스택 클러스터에서 모든 컴포넌트가 공통으로 맞추어야 하는 설정은 무엇인가?",
+   "A": "동일한 IPv6 주소",
+   "B": "동일한 인터페이스 개수",
+   "C": "동일한 IPv4 주소",
+   "D": "동일한 기본 IP 패밀리",
+   "answer": "D",
+   "facts": [],
+   "type": "condition"
+  },
+  {
+   "q": "IPv6만 사용하는 클러스터의 주소 할당 설정으로 맞는 것은 무엇인가?",
+   "A": "네트워크 플러그인, kube-apiserver, kubelet/cloud-controller-manager가 IPv6 주소만 할당한다.",
+   "B": "kubelet/cloud-controller-manager만 IPv4 주소를 할당한다.",
+   "C": "kube-apiserver는 IPv4와 IPv6 주소를 모두 할당한다.",
+   "D": "네트워크 플러그인만 IPv6 주소를 할당한다.",
+   "answer": "A",
+   "facts": [],
+   "type": "what"
+  },
+  {
+   "q": "클러스터 유형을 정의할 때 고려하는 노드와 파드의 IP 주소는 어디에 있는 주소인가?",
+   "A": "노드와 파드가 이전에 사용한 주소 목록",
+   "B": "node.status.addresses 또는 pod.status.ips",
+   "C": "서버의 모든 네트워크 인터페이스",
+   "D": "파드 인터페이스에 할당된 모든 주소",
+   "answer": "B",
+   "facts": [],
+   "type": "scope"
+  },
+  {
+   "q": "쿠버네티스가 IP 패밀리를 고려하는 오브젝트의 묶음으로 맞는 것은 무엇인가?",
+   "A": "서비스, kube-apiserver, 서버 인터페이스",
+   "B": "파드, 서비스, 노드",
+   "C": "파드, 네트워크 플러그인, kubelet",
+   "D": "노드, cloud-controller-manager, 네트워크 플러그인",
+   "answer": "B",
+   "facts": [],
+   "type": "scope"
+  },
+  {
+   "q": "서버 인터페이스에 IPv4와 IPv6 주소가 모두 있다는 사실만으로 이중 스택 클러스터라고 판단할 수 없는 이유는 무엇인가?",
+   "A": "서버의 IPv6 주소는 클러스터 유형을 정의할 때 항상 제외되기 때문이다.",
+   "B": "클러스터 유형은 kube-apiserver의 기존 IP만으로 결정되기 때문이다.",
+   "C": "클러스터 유형을 정의할 때는 지정된 오브젝트 필드에 나타난 IP 주소만 고려하기 때문이다.",
+   "D": "서버 인터페이스에는 기본 IP 패밀리가 없기 때문이다.",
+   "answer": "C",
+   "facts": [],
+   "type": "cause"
+  },
+  {
+   "q": "이중 스택 클러스터에서 kubelet 또는 cloud-controller-manager는 어떤 주소를 할당하도록 설정되어야 하는가?",
+   "A": "IPv4 및 IPv6 주소",
+   "B": "기본 IP 패밀리에 해당하는 주소만",
+   "C": "네트워크 플러그인이 사용하지 않는 IP 패밀리의 주소만",
+   "D": "IPv6 주소만",
+   "answer": "A",
+   "facts": [],
+   "type": "obligation"
+  }
+ ]
+}

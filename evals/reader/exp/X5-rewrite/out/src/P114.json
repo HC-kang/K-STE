@@ -1,0 +1,7 @@
+{
+ "id": "P114",
+ "source": "kubernetes/website content/ko/docs/concepts/workloads/controllers/statefulset.md",
+ "license": "CC BY 4.0",
+ "heading": "Parallel 파드 관리",
+ "text": "`Parallel` 파드 관리는 스테이트풀셋 컨트롤러에게 모든 파드를\n병렬로 실행 또는 종료하게 하고, 다른 파드의 실행이나\n종료에 앞서 파드가 Running 및 Ready 상태가 되거나 완전히 종료되기를\n기다리지 않는다.\n\n스케일링 작업에서는, 이것이 모든 파드가 동시에 생성되거나 종료되는 것을 의미한다.\n\n`.spec.updateStrategy.rollingUpdate.maxUnavailable`가 1보다 큰\n롤링 업데이트에서는 스테이트풀셋 컨트롤러가 최대 `maxUnavailable`개의 파드를 동시에 종료하고 생성한다(이를 버스팅(bursting)이라고도 한다).\n이 방식은 업데이트 속도를 높일 수 있지만 파드가 순서와 다르게 준비될 수 있으므로, 엄격한 순서가 필요한 애플리케이션에는 적합하지 않을 수 있다."
+}

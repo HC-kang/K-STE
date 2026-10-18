@@ -1,0 +1,28 @@
+{
+ "phase2_grok": {
+  "base": {
+   "passages": 20,
+   "mean": -0.0167,
+   "sd": 0.0513
+  },
+  "clarity": {
+   "passages": 20,
+   "mean": -0.0167,
+   "sd": 0.0513
+  },
+  "short": {
+   "passages": 20,
+   "mean": -0.0333,
+   "sd": 0.0872
+  },
+  "full": {
+   "passages": 20,
+   "mean": -0.0167,
+   "sd": 0.0513
+  }
+ },
+ "pooled_rewrite_error": 0.0208,
+ "orig_acc_phase2": 1.0,
+ "sd_diff_worst_with_orig": 0.1049,
+ "passages_needed": 96.0
+}
