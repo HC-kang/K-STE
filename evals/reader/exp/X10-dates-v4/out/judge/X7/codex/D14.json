@@ -1,0 +1,146 @@
+{
+ "full+u/sonnet": {
+  "gaps": [
+   "flag",
+   "flag",
+   "flag"
+  ],
+  "clear": [
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "short+k15u/haiku": {
+  "gaps": [
+   "flag",
+   "flag",
+   "flag"
+  ],
+  "clear": [
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "full-v4/haiku": {
+  "gaps": [
+   "flag",
+   "flag",
+   "flag"
+  ],
+  "clear": [
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "short-v4/sonnet": {
+  "gaps": [
+   "flag",
+   "flag",
+   "flag"
+  ],
+  "clear": [
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "full-v3/haiku": {
+  "gaps": [
+   "flag",
+   "flag",
+   "flag"
+  ],
+  "clear": [
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "full+u/haiku": {
+  "gaps": [
+   "flag",
+   "flag",
+   "flag"
+  ],
+  "clear": [
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "short-v3/haiku": {
+  "gaps": [
+   "invent",
+   "invent",
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "full-v4/sonnet": {
+  "gaps": [
+   "flag",
+   "flag",
+   "flag"
+  ],
+  "clear": [
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "short+k15u/sonnet": {
+  "gaps": [
+   "flag",
+   "flag",
+   "flag"
+  ],
+  "clear": [
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "full-v3/sonnet": {
+  "gaps": [
+   "invent",
+   "invent",
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "short-v3/sonnet": {
+  "gaps": [
+   "invent",
+   "invent",
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 1
+ },
+ "short-v4/haiku": {
+  "gaps": [
+   "flag",
+   "flag",
+   "flag"
+  ],
+  "clear": [
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ }
+}

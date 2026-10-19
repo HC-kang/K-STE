@@ -1,0 +1,122 @@
+{
+ "short-v3/haiku": {
+  "gaps": [
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "flip",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 1
+ },
+ "full-v4/sonnet": {
+  "gaps": [
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "base/sonnet": {
+  "gaps": [
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "base/haiku": {
+  "gaps": [
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "short-v4/haiku": {
+  "gaps": [
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "full-v4/haiku": {
+  "gaps": [
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "full-v3/haiku": {
+  "gaps": [
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 1
+ },
+ "short-v3/sonnet": {
+  "gaps": [
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "flip",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "full-v3/sonnet": {
+  "gaps": [
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "short-v4/sonnet": {
+  "gaps": [
+   "flag"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ }
+}

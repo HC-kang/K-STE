@@ -1,0 +1,12 @@
+{"file": "evals/results/it22-r6/haiku/agent+short-v3/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it22-r6/haiku/agent+short-v3/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it22-r6/haiku/agent+short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it22-r6/haiku/agent+short-v4.1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it22-r6/haiku/agent+short-v4.1/S6.md", "sid": "S6", "verdict": {"meaning_changed": true, "issues": ["The original leaves open whether the servers or their memory are reset on restart, and the output silently picks the servers by adding '이 두 서버는' without flagging it."]}}
+{"file": "evals/results/it22-r6/haiku/agent+short-v4.1/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The rewrite drops the subject '백업이' from '백업이 실패한 경우', so '실패하면' could mean either the backup failed or the check failed."]}}
+{"file": "evals/results/it22-r6/sonnet/agent+short-v3/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it22-r6/sonnet/agent+short-v3/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it22-r6/sonnet/agent+short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it22-r6/sonnet/agent+short-v4.1/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The original attaches the staging pre-verification recommendation to 운영팀 within the same sentence, but the output moves it into a separate subjectless sentence, so the reader can no longer tell who should perform the verification.", "In the original, '이에 따라' links the possible integrity issue as the cause of both the backup and the staging verification, but the output's '그래서' attaches only to the backup sentence, which drops the causal link for the verification recommendation."]}}
+{"file": "evals/results/it22-r6/sonnet/agent+short-v4.1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it22-r6/sonnet/agent+short-v4.1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

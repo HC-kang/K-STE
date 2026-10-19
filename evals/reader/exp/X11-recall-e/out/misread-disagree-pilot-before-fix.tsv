@@ -1,0 +1,12 @@
+reader	cond	writer	memo	q	kind	gold_letter	codex	haiku	mc	question	gold	response
+grok	base	sonnet	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증 반납일이다.
+grok	clarity	haiku	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증 반납일입니다.
+grok	clarity	sonnet	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증 반납일이다.
+grok	clarity	sonnet	M01	Q3	weak_obligation	D	오독	맞음	ab	수령 전 본인 사진 점검에 관해 메모가 밝힌 수준은 무엇인가?	점검하면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	수령 전 본인 사진 확인 요청이다. 카드 반영 문장은 작성자 보충이다.
+grok	full	haiku	M01	Q1	deadline_vs_date	E	맞음	오독	mis	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증을 반납해야 하는 날입니다.
+grok	short	haiku	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증을 반납하는 날입니다.
+grok	short	sonnet	M01	Q1	deadline_vs_date	E	맞음	오독	mis	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증을 반납해야 하는 날이다.
+haiku	base	haiku	M02	Q1	two_targets	E	오독	맞음	mis	점검 종료 후에도 외부 공유 링크를 사용할 수 없는 대상은 무엇인가?	메모는 이것을 정하지 않았다	자료함(설계자료함·계약자료함)의 외부 공유 링크
+haiku	base	sonnet	M02	Q1	two_targets	E	오독	맞음	mis	점검 종료 후에도 외부 공유 링크를 사용할 수 없는 대상은 무엇인가?	메모는 이것을 정하지 않았다	자료함(설계자료함·계약자료함)의 외부 공유 링크
+haiku	clarity	haiku	M02	Q1	two_targets	E	맞음	오독	mis	점검 종료 후에도 외부 공유 링크를 사용할 수 없는 대상은 무엇인가?	메모는 이것을 정하지 않았다	외부 공유 링크(외부 협력사 등에 전달한 링크)
+haiku	short	haiku	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증을 반납하는 날이다. 장소와 방법은 글에 없다.

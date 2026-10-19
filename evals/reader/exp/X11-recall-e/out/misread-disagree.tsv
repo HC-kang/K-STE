@@ -1,0 +1,97 @@
+reader	cond	writer	memo	q	kind	gold_letter	codex	haiku	mc	question	gold	response
+grok	base	haiku	M06	Q3	weak_obligation	D	오독	맞음	ab	로컬 파일 암호 설정에 관해 메모가 말한 수준은 무엇인가?	암호를 걸어 두면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	권장
+grok	base	haiku	M06	Q7	-	A	빠뜨림	오독	ab	장애 진행 상황을 게시할 사람, 시각, 채널의 연결이 맞는 것은 무엇인가?	오나겸, 11/20(금) 15:00, #강사-운영알림	교육운영팀, 11/20(금) 15:00, #강사-운영알림
+grok	base	haiku	M09	Q2	two_targets	E	오독	맞음	ok	고유담이 찾아오는 길을 추가해야 하는 문서는 무엇인가?	메모는 이것을 정하지 않았다	제출 안내 문서
+grok	base	haiku	M10	Q4	-	A	맞음	오독	ok	관제 담당자는 대기 건수를 어떤 간격으로 기록해야 하는가?	10분 간격	22:00~23:00, 10분 간격으로 총 7회
+grok	base	haiku	M11	Q3	weak_obligation	A	오독	맞음	ab	교대 전 라벨 사진을 남기는 일의 의무 강도는 메모에 어떻게 표현되어 있는가?	남기면 좋겠다고만 했고, 의무인지는 밝히지 않았다	권장한다
+grok	base	haiku	M17	Q4	-	A	맞음	오독	ok	이번 무상 필터 교체 대상은 누구인가?	바람숲 P4 모델 대여 고객만	사용 주기가 6개월에 도래한 바람숲 P4 대여 고객입니다. P2는 제외합니다.
+grok	base	haiku	M20	Q2	weak_obligation	D	오독	맞음	ok	결제 직후 영수증 사진을 올리는 행동의 의무 강도는 어떻게 표현되어 있는가?	결제 직후 올리면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	권장 사항으로 표현되어 있다
+grok	base	haiku	M24	Q7	-	D	오독	맞음	ok	같은 시간 이음룸으로 원격 참석할 수 있다고 명시된 대상은 누구인가?	지방 체류 강사	지방에 계셔서 현장 참석이 어려운 분
+grok	base	sonnet	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증 반납일이다.
+grok	base	sonnet	M02	Q1	two_targets	E	오독	맞음	mis	점검 종료 후에도 외부 공유 링크를 사용할 수 없는 대상은 무엇인가?	메모는 이것을 정하지 않았다	자료함(설계자료함·계약자료함)
+grok	base	sonnet	M06	Q3	weak_obligation	D	오독	맞음	ok	로컬 파일 암호 설정에 관해 메모가 말한 수준은 무엇인가?	암호를 걸어 두면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	해 주시면 좋겠다는 권고
+grok	base	sonnet	M09	Q2	two_targets	E	오독	맞음	ok	고유담이 찾아오는 길을 추가해야 하는 문서는 무엇인가?	메모는 이것을 정하지 않았다	안내 문서
+grok	base	sonnet	M12	Q3	weak_obligation	D	오독	맞음	ab	점검 시작 전 앱 사용 안내를 읽는 일의 의무 강도는 메모에 어떻게 표현되어 있는가?	읽으면 좋겠다고만 했고, 의무인지는 밝히지 않았다	숙지 권장
+grok	base	sonnet	M15	Q7	-	D	맞음	오독	ok	운영 환경 배포를 중단하는 조건은 무엇인가?	중복 합산이 1건 이상 발견된 경우	검증에서 중복 합산이 1건 이상 발견되면
+grok	clarity	haiku	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증 반납일입니다.
+grok	clarity	haiku	M06	Q3	weak_obligation	D	오독	맞음	ok	로컬 파일 암호 설정에 관해 메모가 말한 수준은 무엇인가?	암호를 걸어 두면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	권장
+grok	clarity	haiku	M09	Q2	two_targets	E	오독	맞음	ok	고유담이 찾아오는 길을 추가해야 하는 문서는 무엇인가?	메모는 이것을 정하지 않았다	연수 안내문
+grok	clarity	haiku	M20	Q2	weak_obligation	D	오독	맞음	ok	결제 직후 영수증 사진을 올리는 행동의 의무 강도는 어떻게 표현되어 있는가?	결제 직후 올리면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	권장합니다로 표현되어 있습니다.
+grok	clarity	haiku	M22	Q3	weak_obligation	D	오독	맞음	ok	참석자의 사전 시연 영상 시청에 관해 메모가 밝힌 수준은 무엇인가?	보고 오면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	미리 보면 리허설 진행에 도움이 된다
+grok	clarity	sonnet	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증 반납일이다.
+grok	clarity	sonnet	M11	Q3	weak_obligation	A	오독	맞음	ab	교대 전 라벨 사진을 남기는 일의 의무 강도는 메모에 어떻게 표현되어 있는가?	남기면 좋겠다고만 했고, 의무인지는 밝히지 않았다	권장
+grok	clarity	sonnet	M12	Q3	weak_obligation	D	오독	맞음	ab	점검 시작 전 앱 사용 안내를 읽는 일의 의무 강도는 메모에 어떻게 표현되어 있는가?	읽으면 좋겠다고만 했고, 의무인지는 밝히지 않았다	권장
+grok	clarity	sonnet	M14	Q3	weak_obligation	B	오독	맞음	mis	확대 화면 검토의 의무 강도는 어떻게 적혀 있는가?	살펴보면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	권장이며 필수 항목은 아닙니다.
+grok	clarity	sonnet	M20	Q2	weak_obligation	D	오독	맞음	ok	결제 직후 영수증 사진을 올리는 행동의 의무 강도는 어떻게 표현되어 있는가?	결제 직후 올리면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	「권장합니다」로 표현되어 있다.
+grok	clarity	sonnet	M21	Q2	weak_obligation	A	오독	맞음	ok	작업 시작 전 앱 알림 읽기는 어떤 강도로 요구되어 있는가?	읽으면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	권장(확인해 주시기 바랍니다)
+grok	full	haiku	M01	Q1	deadline_vs_date	E	맞음	오독	mis	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증을 반납해야 하는 날입니다.
+grok	full	haiku	M02	Q5	-	B	빠뜨림	오독	ok	점검 시작 전 전 직원에게 요구되는 행동은 무엇인가?	두 서비스에서 열어 둔 파일을 반드시 저장하고 종료한다.	열어 둔 파일 저장 후 종료, 개인 보관 파일 업로드
+grok	full	haiku	M06	Q3	weak_obligation	D	오독	맞음	ok	로컬 파일 암호 설정에 관해 메모가 말한 수준은 무엇인가?	암호를 걸어 두면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	권장
+grok	full	haiku	M11	Q3	weak_obligation	A	오독	맞음	ab	교대 전 라벨 사진을 남기는 일의 의무 강도는 메모에 어떻게 표현되어 있는가?	남기면 좋겠다고만 했고, 의무인지는 밝히지 않았다	권장한다
+grok	full	haiku	M12	Q3	weak_obligation	D	오독	맞음	ab	점검 시작 전 앱 사용 안내를 읽는 일의 의무 강도는 메모에 어떻게 표현되어 있는가?	읽으면 좋겠다고만 했고, 의무인지는 밝히지 않았다	권장한다
+grok	full	haiku	M20	Q2	weak_obligation	D	오독	맞음	ok	결제 직후 영수증 사진을 올리는 행동의 의무 강도는 어떻게 표현되어 있는가?	결제 직후 올리면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	결제 직후 등록하는 것을 권장합니다.
+grok	full	haiku	M21	Q2	weak_obligation	A	오독	맞음	ok	작업 시작 전 앱 알림 읽기는 어떤 강도로 요구되어 있는가?	읽으면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	권장합니다
+grok	full	sonnet	M06	Q3	weak_obligation	D	오독	맞음	ok	로컬 파일 암호 설정에 관해 메모가 말한 수준은 무엇인가?	암호를 걸어 두면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	암호를 걸어 두는 것을 권장한다
+grok	full	sonnet	M08	Q3	deadline_vs_date	E	맞음	오독	ok	시험 가동 결과표 제출과 11/27(금)의 관계는 무엇인가?	메모는 이것을 정하지 않았다	제출일은 11/27(금)이다. 당일인지 까지인지는 확인 필요.
+grok	full	sonnet	M11	Q3	weak_obligation	A	오독	맞음	ab	교대 전 라벨 사진을 남기는 일의 의무 강도는 메모에 어떻게 표현되어 있는가?	남기면 좋겠다고만 했고, 의무인지는 밝히지 않았다	권장한다
+grok	full	sonnet	M12	Q3	weak_obligation	D	오독	맞음	ab	점검 시작 전 앱 사용 안내를 읽는 일의 의무 강도는 메모에 어떻게 표현되어 있는가?	읽으면 좋겠다고만 했고, 의무인지는 밝히지 않았다	권장한다
+grok	full	sonnet	M17	Q4	-	A	맞음	오독	ok	이번 무상 필터 교체 대상은 누구인가?	바람숲 P4 모델 대여 고객만	필터 사용 주기 6개월이 된 바람숲 P4 대여 고객입니다.
+grok	full	sonnet	M20	Q2	weak_obligation	D	오독	맞음	ok	결제 직후 영수증 사진을 올리는 행동의 의무 강도는 어떻게 표현되어 있는가?	결제 직후 올리면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	권장합니다
+grok	full	sonnet	M21	Q2	weak_obligation	A	오독	맞음	ok	작업 시작 전 앱 알림 읽기는 어떤 강도로 요구되어 있는가?	읽으면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	권장합니다
+grok	short	haiku	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증을 반납하는 날입니다.
+grok	short	haiku	M06	Q3	weak_obligation	D	오독	맞음	ok	로컬 파일 암호 설정에 관해 메모가 말한 수준은 무엇인가?	암호를 걸어 두면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	암호를 걸어 두기를 권장합니다
+grok	short	haiku	M11	Q3	weak_obligation	A	오독	맞음	ab	교대 전 라벨 사진을 남기는 일의 의무 강도는 메모에 어떻게 표현되어 있는가?	남기면 좋겠다고만 했고, 의무인지는 밝히지 않았다	권장한다.
+grok	short	haiku	M12	Q3	weak_obligation	D	오독	맞음	ok	점검 시작 전 앱 사용 안내를 읽는 일의 의무 강도는 메모에 어떻게 표현되어 있는가?	읽으면 좋겠다고만 했고, 의무인지는 밝히지 않았다	권장한다
+grok	short	haiku	M20	Q2	weak_obligation	D	오독	맞음	ok	결제 직후 영수증 사진을 올리는 행동의 의무 강도는 어떻게 표현되어 있는가?	결제 직후 올리면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	권장한다
+grok	short	haiku	M21	Q2	weak_obligation	A	오독	맞음	ok	작업 시작 전 앱 알림 읽기는 어떤 강도로 요구되어 있는가?	읽으면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	읽기를 권장한다
+grok	short	haiku	M22	Q1	deadline_vs_date	E	맞음	오독	ok	시연 자료 공유와 11/11(수)의 관계는 무엇인가?	메모는 이것을 정하지 않았다	11/11(수) 시연 자료는 따로 공유한다
+grok	short	sonnet	M01	Q1	deadline_vs_date	E	맞음	오독	mis	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증을 반납해야 하는 날이다.
+grok	short	sonnet	M06	Q3	weak_obligation	D	오독	맞음	ok	로컬 파일 암호 설정에 관해 메모가 말한 수준은 무엇인가?	암호를 걸어 두면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	암호를 걸어 두기를 권장한다
+grok	short	sonnet	M11	Q3	weak_obligation	A	오독	맞음	ab	교대 전 라벨 사진을 남기는 일의 의무 강도는 메모에 어떻게 표현되어 있는가?	남기면 좋겠다고만 했고, 의무인지는 밝히지 않았다	권장한다
+grok	short	sonnet	M12	Q3	weak_obligation	D	오독	맞음	ok	점검 시작 전 앱 사용 안내를 읽는 일의 의무 강도는 메모에 어떻게 표현되어 있는가?	읽으면 좋겠다고만 했고, 의무인지는 밝히지 않았다	권장한다
+grok	short	sonnet	M20	Q2	weak_obligation	D	오독	맞음	ab	결제 직후 영수증 사진을 올리는 행동의 의무 강도는 어떻게 표현되어 있는가?	결제 직후 올리면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	권장한다
+grok	short	sonnet	M21	Q2	weak_obligation	A	오독	맞음	ok	작업 시작 전 앱 알림 읽기는 어떤 강도로 요구되어 있는가?	읽으면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	권장한다
+haiku	base	haiku	M03	Q2	weak_obligation	C	오독	맞음	ok	같은 근무조 동료와 희망 지점을 맞추는 행동에 관해 메모가 밝힌 수준은 무엇인가?	맞춰 보면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	응답 전 같은 근무조 동료와 희망 지점을 맞춰 보면 노선 조정에 도움이 됨(권장)
+haiku	base	haiku	M06	Q4	-	B	맞음	오독	ok	메모에 적힌 저장 장애의 원인과 현재 가능한 기능의 조합은 무엇인가?	저장 공간 할당량 초과, 기존 자료 조회 가능	저장 공간 할당량 초과; 기존 자료 조회만 가능
+haiku	base	haiku	M06	Q7	-	A	빠뜨림	오독	ab	장애 진행 상황을 게시할 사람, 시각, 채널의 연결이 맞는 것은 무엇인가?	오나겸, 11/20(금) 15:00, #강사-운영알림	교육운영팀, 15:00, #강사-운영알림 (연결 맞음)
+haiku	base	haiku	M10	Q4	-	A	맞음	오독	ok	관제 담당자는 대기 건수를 어떤 간격으로 기록해야 하는가?	10분 간격	10분 간격으로 총 7회(22:00~23:00) 기록
+haiku	base	haiku	M14	Q1	deadline_vs_date	E	오독	맞음	mis	검토 의견 취합과 11/20(금)의 관계는 무엇인가?	메모는 이것을 정하지 않았다	검토 의견 취합은 11/20(금)에 진행한다.
+haiku	base	haiku	M14	Q5	-	D	알 수 없음	오독	ok	윤세하가 필수로 검토할 키보드 이동 경로는 몇 개인가?	12개	글에 없다. 필수 검토 항목에 경로 수가 없고, 12개 경로는 담당자가 지정되지 않았다.
+haiku	base	haiku	M18	Q2	weak_obligation	D	오독	맞음	ok	포장 상자에 공방 이름을 크게 적는 행동은 어떻게 안내되어 있는가?	크게 적어 두면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	원활한 확인과 분류를 위해 포장 상자에 공방 이름을 크게 적도록 권장됨
+haiku	base	haiku	M20	Q1	vague_status	B	오독	알 수 없음	ok	업무 처리 상태에 관해 메모가 실제로 밝힌 내용은 무엇인가?	처리함이라고만 적혀 있고, 대상과 결과는 밝히지 않았다.	'처리함'은 어떤 항목인지 알 수 없어 본문에서 제외했다고 함
+haiku	base	haiku	M24	Q7	-	D	오독	맞음	ok	같은 시간 이음룸으로 원격 참석할 수 있다고 명시된 대상은 누구인가?	지방 체류 강사	지방에 계셔서 현장 참석이 어려운 강사
+haiku	base	sonnet	M05	Q6	-	C	맞음	오독	ok	전원 모듈 교체와 수기 기록지 배부 담당자의 연결이 맞는 것은 무엇인가?	교체 차유담, 배부 문해솔	아니다. 교체는 차유담 님, 기록지 배부는 문해솔 님이다
+haiku	base	sonnet	M14	Q1	deadline_vs_date	E	오독	맞음	mis	검토 의견 취합과 11/20(금)의 관계는 무엇인가?	메모는 이것을 정하지 않았다	검토 의견은 11/20(금)에 취합한다.
+haiku	base	sonnet	M15	Q7	-	D	맞음	오독	ok	운영 환경 배포를 중단하는 조건은 무엇인가?	중복 합산이 1건 이상 발견된 경우	검증에서 중복 합산이 1건 이상 발견될 때
+haiku	base	sonnet	M18	Q2	weak_obligation	D	오독	맞음	ok	포장 상자에 공방 이름을 크게 적는 행동은 어떻게 안내되어 있는가?	크게 적어 두면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	포장 상자에 공방 이름을 크게 적으면 확인이 한결 수월하다고 안내됨
+haiku	base	sonnet	M24	Q3	weak_obligation	D	빠뜨림	오독	ok	리딩 시작 15분 전 접속 또는 도착에 대해 메모가 밝힌 수준은 무엇인가?	15분 전에 접속하거나 도착하면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	시작 15분 전까지 접속하거나 도착해 달라는 요청
+haiku	clarity	haiku	M03	Q2	weak_obligation	C	오독	맞음	ok	같은 근무조 동료와 희망 지점을 맞추는 행동에 관해 메모가 밝힌 수준은 무엇인가?	맞춰 보면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	권장 수준: 미리 맞추면 노선 협의에 도움이 됨
+haiku	clarity	haiku	M04	Q3	weak_obligation	C	빠뜨림	오독	ab	장애 화면 캡처에 관해 메모가 말한 수준은 무엇인가?	캡처해 두면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	장애 화면이 보이면 캡처를 남겨 달라는 요청이다.
+haiku	clarity	haiku	M06	Q4	-	B	맞음	오독	ok	메모에 적힌 저장 장애의 원인과 현재 가능한 기능의 조합은 무엇인가?	저장 공간 할당량 초과, 기존 자료 조회 가능	저장 공간 할당량 초과로 저장 불가, 기존 자료 조회만 가능
+haiku	clarity	haiku	M11	Q3	weak_obligation	A	빠뜨림	오독	mis	교대 전 라벨 사진을 남기는 일의 의무 강도는 메모에 어떻게 표현되어 있는가?	남기면 좋겠다고만 했고, 의무인지는 밝히지 않았다	교대 전에 사진을 남긴다고만 적혀 있고, 반드시 같은 강도 표현은 없다.
+haiku	clarity	haiku	M13	Q6	-	D	맞음	오독	ok	주문QA팀의 비교 시험 요청 수는 얼마인가?	서버별 240건	서버별 240건씩, 두 서버 합계 480건이다.
+haiku	clarity	haiku	M14	Q1	deadline_vs_date	E	오독	맞음	mis	검토 의견 취합과 11/20(금)의 관계는 무엇인가?	메모는 이것을 정하지 않았다	11/20(금)에 검토 의견 취합이 이루어진다.
+haiku	clarity	haiku	M18	Q2	weak_obligation	D	오독	맞음	ok	포장 상자에 공방 이름을 크게 적는 행동은 어떻게 안내되어 있는가?	크게 적어 두면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	포장 상자에 공방 이름을 크게 표기하도록 안내(현장 작품 구분에 도움)
+haiku	clarity	haiku	M20	Q1	vague_status	B	오독	알 수 없음	ok	업무 처리 상태에 관해 메모가 실제로 밝힌 내용은 무엇인가?	처리함이라고만 적혀 있고, 대상과 결과는 밝히지 않았다.	'처리함'의 뜻이 불분명해 초안에서 뺐다고 밝힘
+haiku	clarity	haiku	M21	Q2	weak_obligation	A	빠뜨림	오독	ok	작업 시작 전 앱 알림 읽기는 어떤 강도로 요구되어 있는가?	읽으면 좋겠다고만 했고, 의무인지는 밝히지 않았다.	작업 시작 전 앱 알림을 확인해 주시기 바람(요청 수준)
+haiku	clarity	sonnet	M06	Q4	-	B	맞음	오독	ok	메모에 적힌 저장 장애의 원인과 현재 가능한 기능의 조합은 무엇인가?	저장 공간 할당량 초과, 기존 자료 조회 가능	저장 공간 할당량 초과; 기존 자료 조회만 가능
+haiku	clarity	sonnet	M07	Q2	no_actor	E	맞음	오독	ok	조회 결과를 모아 비교표를 업로드할 담당자는 누구인가?	메모는 이것을 정하지 않았다	글에 없다 (담당 미지정; 플랫폼팀으로 보이나 메모에 없음)
+haiku	clarity	sonnet	M10	Q4	-	A	맞음	오독	ok	관제 담당자는 대기 건수를 어떤 간격으로 기록해야 하는가?	10분 간격	10분 간격(22:00부터 10분마다 7회)
+haiku	clarity	sonnet	M14	Q2	vague_status	C	오독	맞음	ok	메모의 '반영 완료'로 확인할 수 있는 상태는 무엇인가?	반영 완료라고만 했고, 대상과 구체적인 결과는 밝히지 않았다.	수정 반영은 완료됐고, 병합은 아직 아니다(11/23 예정).
+haiku	full	haiku	M05	Q6	-	C	맞음	오독	ok	전원 모듈 교체와 수기 기록지 배부 담당자의 연결이 맞는 것은 무엇인가?	교체 차유담, 배부 문해솔	맞다. 차유담(설비팀)은 전원 모듈 교체, 문해솔(생산지원팀)은 수기 기록지 배부
+haiku	full	haiku	M06	Q4	-	B	맞음	오독	ok	메모에 적힌 저장 장애의 원인과 현재 가능한 기능의 조합은 무엇인가?	저장 공간 할당량 초과, 기존 자료 조회 가능	포털 저장 공간 할당량 초과; 기존 자료 조회만 가능
+haiku	full	haiku	M13	Q1	deadline_vs_date	E	맞음	오독	ok	리뷰 의견 등록과 11/12(목)의 관계는 무엇인가?	메모는 이것을 정하지 않았다	리뷰 의견 등록일은 11/12(목)이나, 기한인지 시작일인지는 글에 없다
+haiku	full	sonnet	M04	Q1	deadline_vs_date	E	맞음	오독	ok	누락 주문 목록 제출과 관련해 11/13(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	누락 주문 목록 제출 기한 날짜이나, 당일 제출인지 그때까지 제출인지는 글에 없다
+haiku	full	sonnet	M06	Q4	-	B	맞음	오독	ok	메모에 적힌 저장 장애의 원인과 현재 가능한 기능의 조합은 무엇인가?	저장 공간 할당량 초과, 기존 자료 조회 가능	저장 공간 할당량 초과; 기존 자료 조회만 가능
+haiku	full	sonnet	M11	Q3	weak_obligation	A	오독	맞음	ok	교대 전 라벨 사진을 남기는 일의 의무 강도는 메모에 어떻게 표현되어 있는가?	남기면 좋겠다고만 했고, 의무인지는 밝히지 않았다	권장한다
+haiku	full	sonnet	M16	Q2	no_actor	E	맞음	오독	mis	작업 시작 전 비상 연락망을 점검해야 하는 주체는 누구인가?	메모는 이것을 정하지 않았다	글에 없다 (고객사별 연락 담당은 고객지원팀)
+haiku	full	sonnet	M24	Q1	two_targets	E	오독	맞음	ok	강사들이 첫 2쪽 낭독을 준비해야 하는 대본은 무엇인가?	메모는 이것을 정하지 않았다	입문반·심화반 대본(첫 2쪽 범위는 확인 필요)
+haiku	short	haiku	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증을 반납하는 날이다. 장소와 방법은 글에 없다.
+haiku	short	haiku	M06	Q4	-	B	맞음	오독	ok	메모에 적힌 저장 장애의 원인과 현재 가능한 기능의 조합은 무엇인가?	저장 공간 할당량 초과, 기존 자료 조회 가능	저장 공간 할당량 초과 / 기존 자료 조회만 가능
+haiku	short	haiku	M14	Q1	deadline_vs_date	E	오독	맞음	mis	검토 의견 취합과 11/20(금)의 관계는 무엇인가?	메모는 이것을 정하지 않았다	검토 의견은 11/20(금)에 취합한다.
+haiku	short	haiku	M22	Q1	deadline_vs_date	E	맞음	오독	ok	시연 자료 공유와 11/11(수)의 관계는 무엇인가?	메모는 이것을 정하지 않았다	11/11(수) 시연 자료는 따로 공유되며, 누가 공유하는지는 확인 필요다.
+haiku	short	sonnet	M06	Q4	-	B	맞음	오독	ok	메모에 적힌 저장 장애의 원인과 현재 가능한 기능의 조합은 무엇인가?	저장 공간 할당량 초과, 기존 자료 조회 가능	저장 공간 할당량 초과 / 기존 자료 조회만 가능
+haiku	short	sonnet	M10	Q1	deadline_vs_date	E	맞음	오독	ok	점검표 제출과 관련해 11/13(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	점검표 제출 기한이다. 당일인지 까지인지는 확인 필요
+haiku	short	sonnet	M11	Q1	deadline_vs_date	E	오독	맞음	mis	검사 기록 제출과 관련해 11/23(월)은 어떤 의미인가?	메모는 이것을 정하지 않았다	검사 기록 제출일(기한)이다. 제출 주체와 제출처는 글에 없다.
+haiku	short	sonnet	M13	Q1	deadline_vs_date	E	맞음	오독	ok	리뷰 의견 등록과 11/12(목)의 관계는 무엇인가?	메모는 이것을 정하지 않았다	리뷰 의견은 11/12(목)에 등록하기로 했으나, 그날이 기한인지는 확인 필요하다.
+haiku	short	sonnet	M14	Q1	deadline_vs_date	E	오독	맞음	mis	검토 의견 취합과 11/20(금)의 관계는 무엇인가?	메모는 이것을 정하지 않았다	검토 의견 취합은 11/20(금)에 한다.

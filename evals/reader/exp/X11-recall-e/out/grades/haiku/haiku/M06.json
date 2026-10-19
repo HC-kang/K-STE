@@ -1,0 +1,431 @@
+{
+ "keys": [
+  "full/sonnet/0",
+  "clarity/sonnet/0",
+  "base/haiku/0",
+  "short/haiku/0",
+  "full/haiku/0",
+  "base/sonnet/0",
+  "clarity/haiku/0",
+  "short/sonnet/0",
+  "clarity/sonnet/1",
+  "full/haiku/1",
+  "full/sonnet/1",
+  "clarity/haiku/1",
+  "base/sonnet/1",
+  "short/haiku/1",
+  "base/haiku/1",
+  "short/sonnet/1",
+  "base/haiku/2",
+  "short/sonnet/2",
+  "base/sonnet/2",
+  "full/sonnet/2",
+  "clarity/sonnet/2",
+  "clarity/haiku/2",
+  "full/haiku/2",
+  "short/haiku/2",
+  "base/sonnet/3",
+  "full/sonnet/3",
+  "clarity/sonnet/3",
+  "short/sonnet/3",
+  "short/haiku/3",
+  "full/haiku/3",
+  "clarity/haiku/3",
+  "base/haiku/3",
+  "full/sonnet/4",
+  "short/sonnet/4",
+  "short/haiku/4",
+  "full/haiku/4",
+  "clarity/haiku/4",
+  "base/sonnet/4",
+  "base/haiku/4",
+  "clarity/sonnet/4",
+  "clarity/sonnet/5",
+  "short/haiku/5",
+  "full/sonnet/5",
+  "clarity/haiku/5",
+  "base/haiku/5",
+  "base/sonnet/5",
+  "short/sonnet/5",
+  "full/haiku/5",
+  "base/sonnet/6",
+  "clarity/haiku/6",
+  "full/sonnet/6",
+  "full/haiku/6",
+  "clarity/sonnet/6",
+  "base/haiku/6",
+  "short/haiku/6",
+  "short/sonnet/6"
+ ],
+ "raw": "```json\n{\"R1\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R2\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R3\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R4\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R5\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R6\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R7\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R8\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R9\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R10\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R11\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R12\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R13\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R14\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R15\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R16\": {\"category\": \"오독\", \"elements\": [\"어긋남\"]}, \"R17\": {\"category\": \"오독\", \"elements\": [\"있음\", \"어긋남\"]}, \"R18\": {\"category\": \"오독\", \"elements\": [\"있음\", \"어긋남\"]}, \"R19\": {\"category\": \"오독\", \"elements\": [\"있음\", \"어긋남\"]}, \"R20\": {\"category\": \"오독\", \"elements\": [\"있음\", \"어긋남\"]}, \"R21\": {\"category\": \"오독\", \"elements\": [\"있음\", \"어긋남\"]}, \"R22\": {\"category\": \"오독\", \"elements\": [\"있음\", \"어긋남\"]}, \"R23\": {\"category\": \"오독\", \"elements\": [\"있음\", \"어긋남\"]}, \"R24\": {\"category\": \"오독\", \"elements\": [\"있음\", \"어긋남\"]}, \"R25\": {\"category\": \"맞음\", \"elements\": [\"있음\", \"있음\"]}, \"R26\": {\"category\": \"오독\", \"elements\": [\"있음\", \"있음\"]}, \"R27\": {\"category\": \"오독\", \"elements\": [\"있음\", \"있음\"]}, \"R28\": {\"category\": \"오독\", \"elements\": [\"있음\", \"있음\"]}, \"R29\": {\"category\": \"오독\", \"elements\": [\"있음\", \"있음\"]}, \"R30\": {\"category\": \"오독\", \"elements\": [\"있음\", \"있음\"]}, \"R31\": {\"category\": \"오독\", \"elements\": [\"있음\", \"있음\"]}, \"R32\": {\"category\": \"오독\", \"elements\": [\"있음\", \"있음\"]}, \"R33\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R34\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R35\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R36\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R37\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R38\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R39\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R40\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R41\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R42\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R43\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R44\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R45\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R46\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R47\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R48\": {\"category\": \"맞음\", \"elements\": [\"있음\"]}, \"R49\": {\"category\": \"맞음\", \"elements\": [\"있음\", \"있음\", \"있음\"]}, \"R50\": {\"category\": \"맞음\", \"elements\": [\"있음\", \"있음\", \"있음\"]}, \"R51\": {\"category\": \"맞음\", \"elements\": [\"있음\", \"있음\", \"있음\"]}, \"R52\": {\"category\": \"맞음\", \"elements\": [\"있음\", \"있음\", \"있음\"]}, \"R53\": {\"category\": \"맞음\", \"elements\": [\"있음\", \"있음\", \"있음\"]}, \"R54\": {\"category\": \"오독\", \"elements\": [\"어긋남\", \"없음\", \"있음\"]}, \"R55\": {\"category\": \"맞음\", \"elements\": [\"있음\", \"있음\", \"있음\"]}, \"R56\": {\"category\": \"맞음\", \"elements\": [\"있음\", \"있음\", \"있음\"]}}\n```\n",
+ "grades": [
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "어긋남"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "어긋남"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음",
+    "있음"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "있음"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "있음"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "있음"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "있음"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "있음"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "있음"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "있음",
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음",
+    "있음",
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음",
+    "있음",
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음",
+    "있음",
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음",
+    "있음",
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음",
+    "있음",
+    "있음"
+   ]
+  },
+  {
+   "category": "오독",
+   "elements": [
+    "어긋남",
+    "없음",
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음",
+    "있음",
+    "있음"
+   ]
+  },
+  {
+   "category": "맞음",
+   "elements": [
+    "있음",
+    "있음",
+    "있음"
+   ]
+  }
+ ]
+}

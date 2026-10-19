@@ -1,0 +1,16 @@
+{"file": "evals/results/it23-r10/haiku/agent+short-cand/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it23-r10/haiku/agent+short-cand/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it23-r10/haiku/agent+short-cand/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it23-r10/haiku/agent+short-cand/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it23-r10/haiku/agent+short-v3/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it23-r10/haiku/agent+short-v3/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it23-r10/haiku/agent+short-v3/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it23-r10/haiku/agent+short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it23-r10/sonnet/agent+short-cand/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it23-r10/sonnet/agent+short-cand/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The output makes 운영팀 the one who recommends the staging check ('운영팀은 … 권장합니다'), but in the original 운영팀 is the one who should do it and the recommender is unstated.", "The original does not say clearly who should do the staging check, and the output silently assigns it to 운영팀."]}}
+{"file": "evals/results/it23-r10/sonnet/agent+short-cand/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it23-r10/sonnet/agent+short-cand/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it23-r10/sonnet/agent+short-v3/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it23-r10/sonnet/agent+short-v3/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it23-r10/sonnet/agent+short-v3/S6.md", "sid": "S6", "verdict": {"meaning_changed": true, "issues": ["The original leaves the subject of '초기화됩니다' open to two readings, the servers or the memory (data) they use; the output repeats '캐시 서버와 API 서버는', so it resolves the subject to the servers without flagging it."]}}
+{"file": "evals/results/it23-r10/sonnet/agent+short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

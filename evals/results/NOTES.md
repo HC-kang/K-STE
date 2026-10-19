@@ -337,3 +337,893 @@ base는 S11-S15에서 3/20, S16에서 0/4였다. 재작성 뜻 보존(S5-S7)은 
 회귀 지표는 S11-S15가 full 28 → 29, agent+short 24 → 26이다. 재작성 뜻 보존(S5-S7)은 full 15 → 15, agent+short 14 → 17이다. 첫 문장 결론은 두 조건 모두 18 → 17이다. 전체판과 스킬+짧은판의 실패는 전부터 있던 종류였다(S7 주어 탈락, S11 범위 추가, S12 예측 추가, S13 정도어, S16 행위자 추가). S15 실패 1건은 haiku가 출력 끝에 붙인 메타 메모("2024년"을 넣었다가 뺐다는 설명)였다.
 
 결론: K15는 S18에서 효과가 분명했다. 하지만 일반화를 잴 확인용 시나리오(S19)에는 개선 여지가 없었다. K13의 완료 동사 규칙은 근거가 약하다.
+
+## 2026-10-19 19차 (it19): v4 날짜 규칙
+
+### 판정 기준 (실행 전에 씀)
+
+v4는 X7 결과로 날짜 규칙을 넣은 후보다. v4는 커밋 전의 작업 트리 변경이고, v3는 98db878이다. 차이는 `evals/results/it19-prompt/v4.diff`에 저장한다. 짧은판 v4는 1,498자다. 짧은판 1번에 날짜의 "에"와 "날짜가 실행일인지 기한인지 모르는 문장"을 넣었고, 8번의 "섹션 제목은 헤더로 쓴다"와 12번의 "그 스킬을"을 지웠다. 전체판과 스킬의 K15, 점검 8번, `genres.md`의 회의록 할 일에는 "사실이 밝히지 않은 날짜는 한쪽으로 정하지 말고 묻는다"와 "사실이 '에'나 '까지'로 밝힌 날짜는 묻지 않는다"를 더했다.
+
+절차는 18차와 같다. 생성 모델은 haiku와 sonnet이고, 조건은 short, full, agent+short이고, 시나리오는 S1-S19다. 조건마다 모델별 3회 실행한다(`it19-r1`-`it19-r3`). 판정 모델은 opus(`judge.py` 기본값)다. 이 세션의 별칭은 claude-haiku-5-5, claude-sonnet-5-5, claude-opus-5-5로 풀렸다. 18차의 모델 ID는 기록이 없다.
+
+v4를 배포해도 된다면 다음 세 조건을 모두 만족해야 한다.
+
+1. 조건마다 S15, S18, S19, S11-S15 합계가 18차보다 1점 넘게 나빠지지 않는다(6회 기준). 최솟값은 다음과 같다.
+
+| 지표 | short (18차 / 최솟값) | full (18차 / 최솟값) | agent+short (18차 / 최솟값) |
+|---|---:|---:|---:|
+| S15 | 6/6 / 5 | 6/6 / 5 | 5/6 / 4 |
+| S18 | 3/6 / 2 | 6/6 / 5 | 6/6 / 5 |
+| S19 | 6/6 / 5 | 6/6 / 5 | 6/6 / 5 |
+| S11-S15 | 26/30 / 25 | 29/30 / 28 | 26/30 / 25 |
+
+2. S5-S7 뜻 보존과 첫 문장 결론(S1, S2, S10)이 v2-v3 차수(10-16차, 18차)의 범위 안에 있다. S5-S7의 범위는 short 9-15/18, full 12-15/18, agent+short 14-18/18이다. 첫 문장 결론의 범위는 short 18/18, full 17-18/18, agent+short 17-18/18이다.
+3. 실행 1회당 결함(S1-S10, `score.py`)이 같은 차수의 범위 안에 있다. 범위는 haiku, sonnet 순서로 short 3.0-10.7, 3.7-7.0이고, full 2.0-6.7, 2.0-9.3이고, agent+short 4.0-8.0, 0.3-7.7이다.
+
+범위는 각 차수의 `judge.jsonl`과 지금의 `score.py`로 다시 계산했다(full은 12차와 16차에 실행하지 않았다). 10차와 13차는 회귀가 있던 차수라서 범위가 넓다. 그래서 2번과 3번 조건은 큰 회귀만 잡는다.
+
+다음 두 지표는 배포 조건과 따로 보고한다.
+
+- 짧은판에서 지운 "섹션 제목은 헤더로 쓴다"의 영향: short와 agent+short의 header와 bold 결함 수를 18차와 비교한다. full은 이 문구를 바꾸지 않았으므로 대조군이다.
+- "확인 필요" 증가: 출력의 "확인 필요" 줄을 날짜를 묻는 줄과 그 밖의 줄로 나눠 18차와 비교한다. 시나리오의 날짜는 모두 "에", "까지", "기한은", "예정"으로 종류가 밝혀져 있다. 그래서 날짜의 종류를 묻는 "확인 필요"는 모두 불필요한 질문이다.
+
+### 결과
+
+생성 342개와 판정 270건은 오류 없이 끝났다. 생성 전후로 v4 파일의 해시(`it19-prompt/v4.sha256`)는 같았다. 재작성·검수 요청(S5, S6, S7, S9, S14)의 스킬 실행은 28/30이었다(18차 30/30). 스킬을 실행하지 않은 2회는 haiku S7(r1, r3)이다.
+
+| 지표 | short (18차 → 19차) | full (18차 → 19차) | agent+short (18차 → 19차) |
+|---|---:|---:|---:|
+| S11-S15 합계 | 26/30 → 25/30 | 29/30 → 30/30 | 26/30 → 28/30 |
+| S12 | 5/6 → 5/6 | 6/6 → 6/6 | 5/6 → 4/6 |
+| S13 | 6/6 → 5/6 | 6/6 → 6/6 | 5/6 → 6/6 |
+| S15 | 6/6 → 4/6 | 6/6 → 6/6 | 5/6 → 6/6 |
+| S16 | 3/6 → 5/6 | 6/6 → 5/6 | 5/6 → 6/6 |
+| S17 | 6/6 → 6/6 | 6/6 → 6/6 | 6/6 → 6/6 |
+| S18 | 3/6 → 4/6 | 6/6 → 5/6 | 6/6 → 5/6 |
+| S19 | 6/6 → 6/6 | 6/6 → 6/6 | 6/6 → 6/6 |
+| S18 기한을 끝점으로 묶은 기간 요약 (`span.py`) | 3/6 → 2/6 | 0/6 → 0/6 | 0/6 → 1/6 |
+| S5-S7 뜻 보존 | 15/18 → 12/18 | 15/18 → 17/18 | 17/18 → 17/18 |
+| 첫 문장 결론 | 18/18 → 18/18 | 17/18 → 17/18 | 17/18 → 18/18 |
+| 실행 1회당 결함, haiku | 4.7 → 5.7 | 2.0 → 4.7 | 5.7 → 1.0 |
+| 실행 1회당 결함, sonnet | 7.0 → 6.0 | 2.3 → 1.7 | 1.7 → 5.3 |
+
+### 판정
+
+1. 조건 1: short S15가 4/6이어서 최솟값 5에 못 미쳤다. 나머지 11개 값은 최솟값 이상이었다. short S11-S15는 25/30으로 최솟값과 같다.
+2. 조건 2: 여섯 값이 모두 범위 안이거나 범위보다 좋았다. full S5-S7(17/18)은 범위(12-15/18)보다 높다.
+3. 조건 3: 여섯 값이 모두 범위의 최댓값 이하였다. full sonnet 1.7과 agent+short haiku 1.0은 범위의 최솟값보다 적다. 결함이 적은 쪽이므로 회귀로 보지 않았다.
+
+그래서 v4는 배포 기준을 만족하지 않는다. 기준에 걸린 것은 short 조건이다. full과 agent+short는 세 조건을 모두 만족했다. 하지만 agent+short도 아래 민감도 확인에서는 조건 1에 못 미친다.
+
+### short S15 실패와 날짜 질문
+
+short S15 실패 2건(haiku r2, r3)의 판정 이유는 모두 "10월 23일에"가 실행일인지 기한인지 묻는 "확인 필요" 줄이었다. 사실은 "김하늘이 10월 23일에 ... 점검한다"여서 실행일을 "에"로 밝혔다. 같은 질문이 short haiku r1, agent+short haiku r1, r3의 S15에도 있었다. 하지만 판정기는 이 3건을 통과로 판정했다. 그래서 판정기는 같은 종류의 줄을 5건 중 2건만 실패로 봤다.
+
+S13의 "10월 22일에 한다"에도 같은 종류의 질문이 3건 있었다(short haiku r1, agent+short sonnet r1, agent+short haiku r2). 판정기는 S13에서 이 질문을 실패 이유로 쓰지 않았다. 18차에는 S13과 S15에 "확인 필요" 줄이 없었다. full에는 19차에도 이 질문이 없었다. 8건 중 7건은 haiku였다. 8건 중 7건은 스킬을 실행하지 않은 출력이어서 짧은판만 읽었다. 나머지 1건(agent+short sonnet r1 S13)은 스킬을 실행하고도 물었다.
+
+민감도 확인: 이 8건을 모두 실패로 세면 short는 S15 3/6, S11-S15 24/30이다. agent+short는 S13 4/6, S15 4/6, S11-S15 24/30이다. 이때 agent+short도 조건 1(S11-S15 최솟값 25)에 못 미친다. 이 계산은 사전 기준에 없던 확인이다.
+
+추론: 짧은판 v4에는 전체판 K15의 "사실이 '에'나 '까지'로 밝힌 날짜는 실행일인지 기한인지 묻지 않는다"가 없다. 짧은판은 "날짜가 실행일인지 기한인지 모르는 문장"을 묻게만 한다. 그래서 짧은판에 이 면제 문구가 없는 것이 원인으로 보인다. 이 추론은 면제 문구를 넣은 짧은판으로 다시 재야 확인된다. X7에서 "구분하지 않으면 묻는다"를 더한 조건이 밝힌 날짜까지 물은 실패와 같은 종류다.
+
+### "확인 필요" 줄
+
+| 조건 | 전체 줄 (18차 → 19차) | 밝힌 날짜의 종류를 물은 출력, S13과 S15 (18차 → 19차) | 90일의 기준일을 물은 출력, S11 (18차 → 19차) |
+|---|---:|---:|---:|
+| short | 58 → 64 | 0 → 4 | 0 → 3 |
+| full | 38 → 44 | 0 → 0 | 2 → 2 |
+| agent+short | 58 → 70 | 0 → 4 | 0 → 0 |
+
+S11의 기준일 질문("90일을 발급일부터 세는지, 마지막 교체일부터 세는지")은 날짜의 종류가 아니라 주기의 시작점을 묻는다. 판정기는 S11의 이 질문을 실패로 보지 않았다. 날짜가 아닌 곳의 증가 중 가장 큰 것은 haiku agent+short의 S4 런북이다. 빠진 정보를 적은 "확인 필요" 줄이 11줄(출력 3개에 7, 4, 0)에서 21줄(8, 7, 6)이 됐다. 이 줄에는 날짜가 없다. 이 증가의 원인이 날짜 규칙인지는 확인하지 않았다.
+
+### 헤더와 볼드
+
+`score.py`의 bold(S1-S10, S8 제외, 두 모델 합)는 short 5 → 17, full 5 → 7, agent+short 5 → 9였다. header는 short 0 → 1, full 0 → 0, agent+short 3 → 0이었다. bold 증가는 대부분 S10에서 나왔다. S10에서 볼드 줄을 섹션 제목처럼 쓴 출력(`**사실**`, `**추론**`)은 short 0/6 → 3/6(모두 sonnet), agent+short 1/6 → 2/6, full 0/6 → 1/6이었다. 이 문구가 짧은판에 있던 10-16차에 short S10의 같은 출력은 0-2/6이었다. 그래서 19차 short의 3/6은 그 범위보다 1건 많다. 하지만 한 차수 6회로는 문구를 지운 영향인지 흔들림인지 가르지 못한다. short의 bold 17은 10-16차 범위(1-24) 안이다.
+
+### 실행 명령
+
+```sh
+SIDS="S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 S12 S13 S14 S15 S16 S17 S18 S19"
+for r in 1 2 3; do for m in haiku sonnet; do
+  for c in short full; do RUN=it19-r$r bash evals/run.sh $c $m $SIDS; done
+  # agent_path.sh는 시나리오를 한꺼번에 띄운다. 그래서 동시 실행 6개 이하로 5개씩 나눠 실행했다.
+  for g in "S1 S2 S3 S4 S5" "S6 S7 S8 S9 S10" "S11 S12 S13 S14 S15" "S16 S17 S18 S19"; do
+    RUN=it19-r$r WITH_SHORT=1 bash evals/agent_path.sh $m $g; done
+done; done
+for r in 1 2 3; do python3 evals/judge.py evals/results/it19-r$r; done
+```
+
+### 다시 계산하는 명령
+
+`it19`를 `it18`로 바꾸면 18차 값이 나온다.
+
+```sh
+# 판정 통과 수: 조건, 시나리오, 묶음(S5-S7, concl=S1/S2/S10, S11-S15)
+cat evals/results/it19-r*/judge.jsonl | python3 -c '
+import sys, json, collections as C
+t, n = C.Counter(), C.Counter()
+G = {"S5-S7": "S5 S6 S7", "concl": "S1 S2 S10", "S11-S15": "S11 S12 S13 S14 S15"}
+for l in sys.stdin:
+    r = json.loads(l); v = r["verdict"]; c = r["file"].split("/")[-2]; s = r["sid"]
+    ok = not v["meaning_changed"] if "meaning_changed" in v else v.get("conclusion_first", v.get("pass"))
+    for k in [s] + [g for g in G if s in G[g].split()]:
+        t[c, k] += bool(ok); n[c, k] += 1
+for k in sorted(n): print(*k, f"{t[k]}/{n[k]}")'
+# 실행 1회당 결함(S1-S10). 20번째 필드가 defects다.
+for m in haiku sonnet; do for c in short full agent+short; do
+  python3 evals/score.py -v evals/results/it19-r*/$m/$c | awk -F'|' -v m=$m -v c="$c" '$2~/\/S([1-9]|10)\.md/{s+=$20} END{printf "%s %s %.1f\n", m, c, s/3}'
+done; done
+# bold와 header(S1-S10, S8 제외, 문서 시나리오 S3과 S4의 header 제외)
+for c in short full agent+short; do
+  python3 evals/score.py -v evals/results/it19-r*/{haiku,sonnet}/$c | awk -F'|' -v c="$c" '$2~/\/S([1-9]|10)\.md/ && $2!~/\/S8\.md/ {b+=$3; if ($2!~/\/S(3|4)\.md/) h+=$6} END{print c, "bold", b, "header", h}'
+done
+# S10에서 볼드 줄을 섹션 제목처럼 쓴 출력
+grep -lE '^\*\*[^*]+\*\*:?\s*$' evals/results/it19-r*/*/*/S10.md
+# 기간 요약, 스킬 실행
+python3 evals/span.py it19
+grep -hE "^S(5|6|7|9|14)	" evals/results/it19-r*/*/agent+short/trace.txt | grep -c k-ste
+# "확인 필요" 줄 수, 밝힌 날짜의 종류를 물은 출력, 90일 기준일을 물은 출력
+for c in short full agent+short; do echo "$c $(cat evals/results/it19-r*/*/$c/S*.md | grep -c '확인 필요')"; done
+grep -lE "확인 필요.*10월 2[23]일" evals/results/it19-r*/*/*/S1[35].md
+grep -lE "확인 필요.*(기준일|기준 시점|발급일)" evals/results/it19-r*/*/*/S11.md
+```
+
+### 측정 한계
+
+- 조건 1은 1점 차이로 갈린다. short S15의 실패 2건은 판정기가 같은 종류의 줄을 5건 중 2건만 실패로 본 결과다. 그래서 판정기의 일관성이 결론을 바꿀 수 있다. 민감도 확인에서는 short와 agent+short 모두 조건 1에 못 미쳤다.
+- 시나리오 S1-S19에는 종류를 밝히지 않은 날짜가 없다. 그래서 19차는 v4의 비용(밝힌 날짜를 묻는 질문)만 재고, 이득(흐린 날짜를 한쪽으로 정하지 않음)은 재지 못한다. 이득은 X7에서 쟀다.
+- 조건 2와 3의 범위는 회귀가 있던 10차와 13차를 포함해서 넓다. 그래서 두 조건은 큰 회귀만 잡는다.
+- 18차의 모델 ID는 기록이 없다. 19차는 claude-haiku-5-5, claude-sonnet-5-5, claude-opus-5-5로 실행했다.
+
+## 2026-10-19 20차 (it20): v4.1 짧은판
+
+### 판정 기준 (실행 전에 씀)
+
+v4.1은 19차 결과에 따라 짧은판만 고친 후보다. 짧은판 v4.1은 1,499자다(v4는 1,498자). v4에서 바뀐 것은 다음과 같다.
+
+- 1번에 "\"에\"나 \"까지\"로 밝힌 날짜는 묻지 않는다."를 더했다. 그리고 바꾸거나 빼지 않는 것의 목록에서 날짜의 "에"를 뺐다.
+- 8번에 "제목은 헤더로 쓴다"를 되살렸다.
+- 1,500자에 맞추려고 3번의 "PR 설명", 12번의 "설치돼", 13번의 "이 규칙을"을 지웠다. 7번의 "처음 나올 때"는 "처음에"로, 1번의 "정도·방식 한정어"는 "한정어"로 줄였다.
+
+전체판과 스킬은 v4와 같다. HEAD(98db878)에 `it19-prompt/v4.diff`를 적용한 파일과 작업 트리를 비교했고, 차이는 `prompts/system-prompt.md`의 짧은판 블록에만 있었다. 그래서 full은 다시 재지 않고 19차 값을 쓴다. HEAD 대비 차이는 `it20-prompt/v4.1.diff`에, 생성 전 해시는 `it20-prompt/before.sha256`에 저장했다. 생성 후 해시는 `it20-prompt/after.sha256`에 저장한다.
+
+절차는 19차와 같다. 조건은 short와 agent+short이고, 생성 모델은 haiku와 sonnet이고, 시나리오는 S1-S19다. 조건마다 모델별 3회 실행한다(`it20-r1`-`it20-r3`). 판정 모델은 opus(`judge.py` 기본값)다.
+
+v4.1을 배포해도 된다면 다음 세 조건을 모두 만족해야 한다. 기준은 19차와 같다.
+
+1. 조건마다 S15, S18, S19, S11-S15 합계가 18차보다 1점 넘게 나빠지지 않는다(6회 기준). 최솟값은 다음과 같다.
+
+| 지표 | short (18차 / 최솟값) | agent+short (18차 / 최솟값) |
+|---|---:|---:|
+| S15 | 6/6 / 5 | 5/6 / 4 |
+| S18 | 3/6 / 2 | 6/6 / 5 |
+| S19 | 6/6 / 5 | 6/6 / 5 |
+| S11-S15 | 26/30 / 25 | 26/30 / 25 |
+
+2. S5-S7 뜻 보존과 첫 문장 결론(S1, S2, S10)이 v2-v3 차수(10-16차, 18차)의 범위 안에 있다. S5-S7의 범위는 short 9-15/18, agent+short 14-18/18이다. 첫 문장 결론의 범위는 short 18/18, agent+short 17-18/18이다.
+3. 실행 1회당 결함(S1-S10, `score.py`)이 같은 차수의 범위 안에 있다. 범위는 haiku, sonnet 순서로 short 3.0-10.7, 3.7-7.0이고, agent+short 4.0-8.0, 0.3-7.7이다.
+
+19차처럼 범위보다 좋은 쪽(결함이 더 적음)의 값은 회귀로 보지 않는다. full은 19차에 세 조건을 모두 만족했다.
+
+다음 지표는 배포 조건과 따로 보고한다.
+
+- 민감도 확인: S13과 S15에서 밝힌 날짜의 종류를 물은 "확인 필요" 줄이 있는 출력을 판정기 결과와 상관없이 모두 실패로 센다. 그 값으로 조건 1을 다시 본다. 19차와 같은 방식이다. grep으로 찾은 줄은 모두 읽어서 날짜의 종류를 묻는 줄인지 가린다.
+- "확인 필요" 줄 수, 밝힌 날짜의 종류를 물은 출력 수(S13, S15), 90일의 기준일을 물은 출력 수(S11)를 18차, 19차와 나란히 쓴다.
+- S10에서 볼드 줄을 섹션 제목처럼 쓴 출력 수와 `score.py`의 bold, header 수를 18차, 19차와 나란히 쓴다. full의 19차 값은 대조군이다.
+- 기한을 끝점으로 묶은 기간 요약(`span.py`)과 재작성·검수 요청의 스킬 실행 수를 쓴다.
+
+### 결과
+
+생성 228개와 판정 180건은 오류 없이 끝났다. 생성 전후로 다섯 파일과 짧은판 블록의 해시(`it20-prompt/before.sha256`, `after.sha256`)는 같았다. 모델 별칭은 19차와 같은 claude-haiku-5-5, claude-sonnet-5-5, claude-opus-5-5로 풀렸다(`it20-prompt/models.txt`). 재작성·검수 요청(S5, S6, S7, S9, S14)의 스킬 실행은 30/30이었다(19차 28/30). full은 다시 재지 않았으므로 full 열은 19차 값이다.
+
+| 지표 | short (18차 → 19차 → 20차) | agent+short (18차 → 19차 → 20차) | full (19차) |
+|---|---:|---:|---:|
+| S11-S15 합계 | 26/30 → 25/30 → 23/30 | 26/30 → 28/30 → 27/30 | 30/30 |
+| S12 | 5/6 → 5/6 → 3/6 | 5/6 → 4/6 → 5/6 | 6/6 |
+| S13 | 6/6 → 5/6 → 5/6 | 5/6 → 6/6 → 6/6 | 6/6 |
+| S15 | 6/6 → 4/6 → 4/6 | 5/6 → 6/6 → 5/6 | 6/6 |
+| S16 | 3/6 → 5/6 → 6/6 | 5/6 → 6/6 → 5/6 | 5/6 |
+| S17 | 6/6 → 6/6 → 6/6 | 6/6 → 6/6 → 6/6 | 6/6 |
+| S18 | 3/6 → 4/6 → 6/6 | 6/6 → 5/6 → 5/6 | 5/6 |
+| S19 | 6/6 → 6/6 → 6/6 | 6/6 → 6/6 → 6/6 | 6/6 |
+| S18 기한을 끝점으로 묶은 기간 요약 (`span.py`) | 3/6 → 2/6 → 0/6 | 0/6 → 1/6 → 1/6 | 0/6 |
+| S5-S7 뜻 보존 | 15/18 → 12/18 → 14/18 | 17/18 → 17/18 → 13/18 | 17/18 |
+| 첫 문장 결론 | 18/18 → 18/18 → 18/18 | 17/18 → 18/18 → 18/18 | 17/18 |
+| 실행 1회당 결함, haiku | 4.7 → 5.7 → 1.3 | 5.7 → 1.0 → 5.3 | 4.7 |
+| 실행 1회당 결함, sonnet | 7.0 → 6.0 → 6.0 | 1.7 → 5.3 → 2.3 | 1.7 |
+
+### 판정
+
+1. 조건 1: short는 S15 4/6(최솟값 5)과 S11-S15 23/30(최솟값 25)이 최솟값에 못 미쳤다. short S18 6/6과 S19 6/6은 최솟값 이상이었다. agent+short의 네 값(S15 5/6, S18 5/6, S19 6/6, S11-S15 27/30)은 모두 최솟값 이상이었다. agent+short S18은 최솟값과 같다.
+2. 조건 2: agent+short S5-S7 13/18이 범위(14-18/18)보다 1점 낮았다. 나머지 세 값(short S5-S7 14/18, 두 조건의 첫 문장 결론 18/18)은 범위 안이었다.
+3. 조건 3: 네 값이 모두 범위의 최댓값 이하였다. short haiku 1.3은 범위의 최솟값(3.0)보다 적다. 결함이 적은 쪽이므로 회귀로 보지 않았다.
+
+그래서 v4.1은 배포 기준을 만족하지 않는다. short는 조건 1에, agent+short는 조건 2에 걸렸다.
+
+### 기준에 걸린 실패
+
+v4.1이 고치려던 두 실패는 줄었다. S13과 S15에서 밝힌 날짜의 종류를 물은 출력은 short와 agent+short 모두 4건에서 0건이 됐다. S10의 볼드 가짜 제목은 short 3/6에서 1/6이 됐다. 하지만 기준에 걸린 실패는 대부분 날짜 질문과 다른 종류였다.
+
+- short S15 실패 2건: haiku r2는 회의 이름("인증 개선 회의")을 뺐다. sonnet r2는 "10월 23일에 ... 점검한다"의 10월 23일을 표의 "기한" 열에 넣었다. 같은 표가 18차 short(sonnet r3)에도 있었고, 판정기는 그 출력을 통과로 봤다. 20차 agent+short(haiku r2)도 "기한" 열에 "10월 23일에"를 썼고, 판정기는 통과로 봤다. 그래서 판정기는 같은 종류의 표 3건 중 1건만 실패로 봤다. v4.1은 v4 짧은판 1번 목록의 날짜의 "에"를 뺐다. 이 표는 18차에 1건, 19차에 0건, 20차에 2건이었다. 건수가 적어서 "에"를 뺀 영향인지 가르지 못한다.
+- short S12 실패 3건: 모두 haiku이고, 사실에 없는 예측이나 인과("같은 오류가 계속 발생할 수 있습니다", "배포 전까지 계속 발생할 수 있는 것으로 보입니다", "버그가 남아 있습니다")를 더했다. 날짜와 관계없는 실패다. v2-v3 차수(10-16차, 18차)의 short S12는 2-6/6이었다.
+- short S11-S15 23/30은 S11 6, S12 3, S13 5, S14 5, S15 4의 합이다. S13 실패는 사실에 없는 검증 상태("원인인지는 아직 확인하지 않았습니다")를 더했다. S14 실패는 "해당 문서"를 "[문서명]"으로 바꿨다. v2-v3 차수의 short S11-S15는 24-27/30이었다. 그래서 20차 값은 그 범위보다 1점 낮다.
+- agent+short S5-S7 13/18: S7 실패 3건(sonnet r1, haiku r2, sonnet r3)이 모두 "백업이" 주어를 뺐다. S5 1건은 행위자를 바꿨고, S6 1건은 원문이 열어 둔 "초기화" 대상을 한쪽으로 정했다. 세 종류 모두 전부터 있던 종류다. agent+short S7 3/6은 v2-v3 차수의 범위(4-6/6)보다 1점 낮다. 재작성 요청에서 스킬은 매번 실행됐다. 짧은판 v4.1의 변경과 이 실패의 관계는 확인하지 않았다.
+
+### 민감도 확인
+
+19차와 같은 방식(S13, S15에서 밝힌 날짜의 종류를 물은 "확인 필요" 줄이 있는 출력을 모두 실패로 셈)으로 세어도 값은 바뀌지 않는다. 그런 출력이 0건이기 때문이다. 19차의 grep 외에 S13과 S15 출력 24개를 모두 확인했고, 24개 모두 "확인 필요" 줄이 없었다.
+
+추가 확인(사전 기준에 없음): 모든 시나리오에서 날짜의 종류를 묻는 "확인 필요" 줄을 찾았다. agent+short sonnet r1의 S12는 "10/20 10:00 예정"이 실행 시각인지 기한인지 물었다. "예정"은 날짜의 종류를 밝힌 표현이지만, v4.1의 면제 문구에는 "에"와 "까지"만 있다. 18차와 19차에는 S12에서 이런 질문이 없었다. agent+short sonnet r2의 S17은 "확인 필요:" 줄에 "\"에\"로 밝힌 날짜라 실행일로 썼습니다. 따로 확인할 것은 없습니다"라고 썼다. 이 줄은 규칙 문구가 출력에 새어 나온 메모다. 판정기는 두 출력을 통과로 봤다. 이 S12 질문과 위의 "기한" 열 표(agent+short haiku r2 S15)를 모두 실패로 세면 agent+short는 S12 4/6, S15 4/6, S11-S15 25/30이다. 이 값은 조건 1의 최솟값과 같다.
+
+### "확인 필요" 줄
+
+| 조건 | 전체 줄 (18차 → 19차 → 20차) | 밝힌 날짜의 종류를 물은 출력, S13과 S15 | 90일의 기준일을 물은 출력, S11 |
+|---|---:|---:|---:|
+| short | 58 → 64 → 43 | 0 → 4 → 0 | 0 → 3 → 1 |
+| agent+short | 58 → 70 → 54 | 0 → 4 → 0 | 0 → 0 → 1 |
+| full (18차 → 19차) | 38 → 44 | 0 → 0 | 2 → 2 |
+
+### 헤더와 볼드
+
+| 조건 | S10 볼드 가짜 제목 (18차 → 19차 → 20차) | bold | header |
+|---|---:|---:|---:|
+| short | 0/6 → 3/6 → 1/6 | 5 → 17 → 7 | 0 → 1 → 0 |
+| agent+short | 1/6 → 2/6 → 1/6 | 5 → 9 → 6 | 3 → 0 → 1 |
+| full (18차 → 19차, 대조군) | 0/6 → 1/6 | 5 → 7 | 0 → 0 |
+
+bold와 header는 `score.py` 값이다(S1-S10, S8 제외, 두 모델 합, header는 S3과 S4 제외). 20차의 S10 볼드 가짜 제목 2건은 모두 sonnet이다(short r1, agent+short r3). 10-16차 short의 같은 출력은 0-2/6이었다. 그래서 20차 short 1/6은 그 범위 안이다.
+
+### 실행 명령
+
+```sh
+for m in haiku sonnet opus; do
+  echo "$m $(claude -p "1" --model $m --setting-sources "" --strict-mcp-config --tools "" --output-format json | python3 -c 'import json,sys; print(*json.load(sys.stdin).get("modelUsage",{}))')"
+done > evals/results/it20-prompt/models.txt
+SIDS="S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 S12 S13 S14 S15 S16 S17 S18 S19"
+for r in 1 2 3; do for m in haiku sonnet; do
+  RUN=it20-r$r bash evals/run.sh short $m $SIDS
+  # 동시 실행 6개 이하로 5개씩 나눠 실행했다.
+  for g in "S1 S2 S3 S4 S5" "S6 S7 S8 S9 S10" "S11 S12 S13 S14 S15" "S16 S17 S18 S19"; do
+    RUN=it20-r$r WITH_SHORT=1 bash evals/agent_path.sh $m $g; done
+done; done
+for r in 1 2 3; do python3 evals/judge.py evals/results/it20-r$r; done
+```
+
+### 다시 계산하는 명령
+
+bash로 실행한다. full 값은 19차 절의 명령으로 계산한다.
+
+```sh
+# 판정 통과 수: 조건, 시나리오, 묶음(S5-S7, concl=S1/S2/S10, S11-S15)
+P='
+import sys, json, collections as C
+t, n = C.Counter(), C.Counter()
+G = {"S5-S7": "S5 S6 S7", "concl": "S1 S2 S10", "S11-S15": "S11 S12 S13 S14 S15"}
+for l in sys.stdin:
+    r = json.loads(l); v = r["verdict"]; c = r["file"].split("/")[-2]; s = r["sid"]
+    ok = not v["meaning_changed"] if "meaning_changed" in v else v.get("conclusion_first", v.get("pass"))
+    for k in [s] + [g for g in G if s in G[g].split()]:
+        t[c, k] += bool(ok); n[c, k] += 1
+for k in sorted(n): print(*k, f"{t[k]}/{n[k]}")'
+for it in 18 19 20; do echo "== it$it"; cat evals/results/it$it-r*/judge.jsonl | python3 -c "$P" | grep -v '^full'; done
+# v2-v3 차수(10-16차, 18차)의 범위
+for it in 10 11 12 13 14 15 16 18; do cat evals/results/it$it-r*/judge.jsonl | python3 -c "$P" | grep -E "^(short|agent\+short) (S7|S12|S15|S11-S15|S5-S7) " | sed "s/^/it$it /"; done
+# 실행 1회당 결함(S1-S10). 20번째 필드가 defects다.
+for it in it18 it19 it20; do for m in haiku sonnet; do for c in short agent+short; do
+  python3 evals/score.py -v evals/results/$it-r*/$m/$c | awk -F'|' -v t="$it $m $c" '$2~/\/S([1-9]|10)\.md/{s+=$20} END{printf "%s %.1f\n", t, s/3}'
+done; done; done
+# bold와 header
+for it in it18 it19 it20; do for c in short agent+short; do
+  python3 evals/score.py -v evals/results/$it-r*/{haiku,sonnet}/$c | awk -F'|' -v t="$it $c" '$2~/\/S([1-9]|10)\.md/ && $2!~/\/S8\.md/ {b+=$3; if ($2!~/\/S(3|4)\.md/) h+=$6} END{print t, "bold", b, "header", h}'
+done; done
+# S10에서 볼드 줄을 섹션 제목처럼 쓴 출력
+grep -lE '^\*\*[^*]+\*\*:?\s*$' evals/results/it{18,19,20}-r*/*/*/S10.md
+# 기간 요약, 스킬 실행
+python3 evals/span.py it20
+grep -hE "^S(5|6|7|9|14)	" evals/results/it20-r*/*/agent+short/trace.txt | grep -c k-ste
+# "확인 필요" 줄 수, 밝힌 날짜의 종류를 물은 출력(S13, S15), 90일 기준일을 물은 출력(S11)
+for it in it18 it19 it20; do for c in short agent+short; do echo "$it $c $(cat evals/results/$it-r*/*/$c/S*.md | grep -c '확인 필요')"; done; done
+grep -lE "확인 필요.*10월 2[23]일" evals/results/it{18,19,20}-r*/*/*/S1[35].md
+grep -c "확인 필요" evals/results/it20-r*/*/*/S1[35].md | grep -v ':0$'
+grep -lE "확인 필요.*(기준일|기준 시점|발급일)" evals/results/it{18,19,20}-r*/*/*/S11.md
+# 추가 확인: 모든 시나리오의 날짜 종류 질문, S15에서 10월 23일을 "기한" 열에 넣은 표
+grep -nE "확인 필요.*(실행일|기한|마감|까지인지|에 하는지|날짜)" evals/results/it20-r*/*/*/S*.md
+for f in evals/results/it{18,19,20}-r*/*/*/S15.md; do
+  if grep -q "^|.*기한" $f && grep -E "^\|.*김하늘.*10월 23일" $f | grep -qv 실행일; then echo $f; fi; done
+```
+
+### 측정 한계
+
+- 조건 1의 최솟값은 18차 값에서 1점을 뺀 값이다. 18차 short S15(6/6)는 v2-v3 차수 범위(3-6/6)의 최댓값이었다. 그래서 short S15의 최솟값 5는 v2-v3 짧은판도 10차, 13차, 16차에 못 넘었을 값이다. 같은 이유로 short S11-S15의 최솟값 25는 13차와 14차(24/30)도 못 넘었다.
+- 판정기는 같은 종류의 출력을 다르게 봤다. 10월 23일을 "기한" 열에 넣은 표 3건 중 1건만 실패였다. 19차에는 밝힌 날짜를 물은 줄 5건 중 2건만 실패였다. short S15는 1점 차이로 기준에 걸렸으므로 이 불일치가 결론을 바꿀 수 있다.
+- 20차는 v4.1의 날짜 질문 면제가 "예정"으로 밝힌 날짜에도 듣는지 재지 못한다. "예정" 날짜를 물은 출력은 S12의 1건뿐이다.
+- 19차와 마찬가지로 S1-S19에는 종류를 밝히지 않은 날짜가 없다. 그래서 20차도 v4.1의 비용만 재고, 흐린 날짜를 한쪽으로 정하지 않는 이득은 재지 못한다.
+
+## 2026-10-19 21차 (it21): 같은 날 v3 대조군
+
+### 판정 기준 (실행 전에 씀)
+
+이 기준은 코디네이터가 20차 결과를 본 뒤에 정했다. 기준 문장은 코디네이터의 지시를 그대로 옮겼다.
+
+> v4.x(short와 agent+short는 20차 v4.1, full은 19차 v4)를 같은 날 v3(21차)와 비교한다. 조건마다 다음을 모두 만족하면 "같은 날 v3보다 나쁘지 않다"로 판정한다. (1) S15, S18, S19는 각각 v3 값보다 1점(6회 기준) 넘게 낮지 않다. (2) S11-S15 합계는 v3보다 2점(30회 기준) 넘게 낮지 않다. (3) S5-S7 뜻 보존은 v3보다 2점(18회 기준) 넘게 낮지 않다. (4) 첫 문장 결론은 v3보다 1점 넘게 낮지 않다. (5) 실행 1회당 결함은 모델마다 v3보다 2.0건 넘게 많지 않다. (6) S13과 S15에서 밝힌 날짜의 종류를 물은 출력은 v3보다 1건 넘게 많지 않다.
+
+18차 기준으로 낸 원래 판정은 바꾸지 않는다. 19차 v4와 20차 v4.1은 18차 기준의 배포 조건을 만족하지 않았다. 21차 판정은 그 판정과 함께 적는다.
+
+배경: 20차에서 기준에 걸린 실패는 대부분 날짜 규칙과 다른 종류였다(short S12 haiku의 예측 추가 3건, agent+short S7의 "백업이" 주어 탈락 3건). 18차의 모델 ID는 기록이 없고, 19-20차는 claude-haiku-5-5, claude-sonnet-5-5, claude-opus-5-5로 실행했다. 그래서 차이가 v4.x 때문인지, 모델이나 실행 사이의 흔들림 때문인지 가르지 못한다. 21차는 v3(98db878)를 19-20차와 같은 날, 같은 조건에서 다시 잰다.
+
+비교할 v4.x 값은 다음과 같다. 아래 "다시 계산하는 명령"으로 다시 계산했고, 19차와 20차 절의 값과 같았다.
+
+| 지표 | short (20차 v4.1) | full (19차 v4) | agent+short (20차 v4.1) |
+|---|---:|---:|---:|
+| S15 | 4/6 | 6/6 | 5/6 |
+| S18 | 6/6 | 5/6 | 5/6 |
+| S19 | 6/6 | 6/6 | 6/6 |
+| S11-S15 합계 | 23/30 | 30/30 | 27/30 |
+| S5-S7 뜻 보존 | 14/18 | 17/18 | 13/18 |
+| 첫 문장 결론 | 18/18 | 17/18 | 18/18 |
+| 실행 1회당 결함, haiku | 1.3 | 4.7 | 5.3 |
+| 실행 1회당 결함, sonnet | 6.0 | 1.7 | 2.3 |
+| 밝힌 날짜의 종류를 물은 출력, S13과 S15 | 0 | 0 | 0 |
+
+v3 실행 방법: 작업 트리는 v4.1이고 다른 워커가 같은 폴더를 쓴다. 그래서 작업 트리를 바꾸지 않는다. `git archive 98db878 | tar -x -C <임시 폴더>`로 v3를 저장소 밖의 임시 폴더(`mktemp -d`)에 풀고, 그 폴더의 `evals/run.sh`와 `WITH_SHORT=1 evals/agent_path.sh`로 생성한다. 생성 결과는 `evals/results/it21-r1/`-`it21-r3/`로 복사하고, 저장소의 `evals/judge.py`로 판정한다. 저장소의 `evals/judge.py`, `score.py`, `span.py`, `trace.py`, `run.sh`, `agent_path.sh`, `evals/scenarios/`는 98db878과 같다(`git diff --stat 98db878 -- <파일>`의 출력이 없다). 생성 전후로 임시 폴더의 `prompts/system-prompt.md`와 스킬 파일 다섯 개의 해시를 98db878의 해시와 비교해서 `it21-prompt/`에 저장한다.
+
+절차는 19차와 같다. 조건은 short, full, agent+short이고, 생성 모델은 haiku와 sonnet이고, 시나리오는 S1-S19다. 조건마다 모델별 3회 실행한다(`it21-r1`-`it21-r3`). 판정 모델은 opus(`judge.py` 기본값)다. 동시에 실행하는 `claude -p`는 6개 이하다.
+
+다음 지표는 판정과 따로 보고한다. v3에서 S12의 예측 추가, S7의 주어 탈락, S15에서 "10월 23일"을 "기한" 열에 넣은 표, "확인 필요" 줄 수가 얼마나 나오는지 센다.
+
+### 결과
+
+생성 342개와 판정 270건은 오류 없이 끝났다(생성 13:27-13:43, 판정 13:43-13:48). 생성 전후로 임시 폴더의 다섯 파일 해시는 98db878의 해시와 같았다(`it21-prompt/98db878.sha256`, `before.sha256`, `after.sha256`). 모델 별칭은 19-20차와 같은 claude-haiku-5-5, claude-sonnet-5-5, claude-opus-5-5로 풀렸다(`it21-prompt/models.txt`, Claude Code 2.1.303). 재작성·검수 요청(S5, S6, S7, S9, S14)의 스킬 실행은 30/30이었다.
+
+18차와 21차는 v3이고, 19차는 v4이고, 20차는 v4.1 짧은판이다. full은 20차에 재지 않았다.
+
+| 지표 | short (18차 → 19차 → 20차 → 21차) | full (18차 → 19차 → 21차) | agent+short (18차 → 19차 → 20차 → 21차) |
+|---|---:|---:|---:|
+| S11-S15 합계 | 26/30 → 25/30 → 23/30 → 24/30 | 29/30 → 30/30 → 28/30 | 26/30 → 28/30 → 27/30 → 27/30 |
+| S12 | 5/6 → 5/6 → 3/6 → 5/6 | 6/6 → 6/6 → 4/6 | 5/6 → 4/6 → 5/6 → 4/6 |
+| S13 | 6/6 → 5/6 → 5/6 → 5/6 | 6/6 → 6/6 → 6/6 | 5/6 → 6/6 → 6/6 → 5/6 |
+| S15 | 6/6 → 4/6 → 4/6 → 4/6 | 6/6 → 6/6 → 6/6 | 5/6 → 6/6 → 5/6 → 6/6 |
+| S16 | 3/6 → 5/6 → 6/6 → 4/6 | 6/6 → 5/6 → 5/6 | 5/6 → 6/6 → 5/6 → 5/6 |
+| S17 | 6/6 → 6/6 → 6/6 → 6/6 | 6/6 → 6/6 → 6/6 | 6/6 → 6/6 → 6/6 → 6/6 |
+| S18 | 3/6 → 4/6 → 6/6 → 2/6 | 6/6 → 5/6 → 3/6 | 6/6 → 5/6 → 5/6 → 5/6 |
+| S19 | 6/6 → 6/6 → 6/6 → 6/6 | 6/6 → 6/6 → 6/6 | 6/6 → 6/6 → 6/6 → 6/6 |
+| S18 기한을 끝점으로 묶은 기간 요약 (`span.py`) | 3/6 → 2/6 → 0/6 → 2/6 | 0/6 → 0/6 → 0/6 | 0/6 → 1/6 → 1/6 → 0/6 |
+| S5-S7 뜻 보존 | 15/18 → 12/18 → 14/18 → 13/18 | 15/18 → 17/18 → 14/18 | 17/18 → 17/18 → 13/18 → 16/18 |
+| 첫 문장 결론 | 18/18 → 18/18 → 18/18 → 18/18 | 17/18 → 17/18 → 17/18 | 17/18 → 18/18 → 18/18 → 18/18 |
+| 실행 1회당 결함, haiku | 4.7 → 5.7 → 1.3 → 8.0 | 2.0 → 4.7 → 4.0 | 5.7 → 1.0 → 5.3 → 5.7 |
+| 실행 1회당 결함, sonnet | 7.0 → 6.0 → 6.0 → 4.7 | 2.3 → 1.7 → 2.7 | 1.7 → 5.3 → 2.3 → 2.0 |
+
+### 판정
+
+코디네이터 기준으로 v4.x와 같은 날 v3(21차)를 비교했다. 칸의 값은 "v4.x / v3"이다.
+
+| 기준 | short (20차 v4.1 / v3) | full (19차 v4 / v3) | agent+short (20차 v4.1 / v3) |
+|---|---:|---:|---:|
+| (1) S15, 1점 넘게 낮지 않다 | 4 / 4, 충족 | 6 / 6, 충족 | 5 / 6, 충족 |
+| (1) S18, 1점 넘게 낮지 않다 | 6 / 2, 충족 | 5 / 3, 충족 | 5 / 5, 충족 |
+| (1) S19, 1점 넘게 낮지 않다 | 6 / 6, 충족 | 6 / 6, 충족 | 6 / 6, 충족 |
+| (2) S11-S15, 2점 넘게 낮지 않다 | 23 / 24, 충족 | 30 / 28, 충족 | 27 / 27, 충족 |
+| (3) S5-S7, 2점 넘게 낮지 않다 | 14 / 13, 충족 | 17 / 14, 충족 | 13 / 16, 불충족 |
+| (4) 첫 문장 결론, 1점 넘게 낮지 않다 | 18 / 18, 충족 | 17 / 17, 충족 | 18 / 18, 충족 |
+| (5) 결함 haiku, 2.0건 넘게 많지 않다 | 1.3 / 8.0, 충족 | 4.7 / 4.0, 충족 | 5.3 / 5.7, 충족 |
+| (5) 결함 sonnet, 2.0건 넘게 많지 않다 | 6.0 / 4.7, 충족 | 1.7 / 2.7, 충족 | 2.3 / 2.0, 충족 |
+| (6) S13, S15의 밝힌 날짜 종류 질문, 1건 넘게 많지 않다 | 0 / 0, 충족 | 0 / 0, 충족 | 0 / 0, 충족 |
+
+1. short(v4.1)와 full(v4)은 여섯 기준을 모두 만족했다. 그래서 두 조건은 "같은 날 v3보다 나쁘지 않다"이다.
+2. agent+short(v4.1)는 기준 (3)에 걸렸다. S5-S7 13/18은 v3 16/18보다 3점 낮다. 나머지 다섯 기준은 만족했다. agent+short S15(5/6 대 6/6)는 기준 (1)의 한계인 1점 차이와 같다.
+
+18차 기준의 원래 판정은 바꾸지 않는다. 19차 v4는 short가 조건 1에 걸려서 배포 기준을 만족하지 않았다. 20차 v4.1은 short가 조건 1에, agent+short가 조건 2에 걸려서 배포 기준을 만족하지 않았다.
+
+추가 확인(사전 기준에 없음): 같은 날 v3에 18차 기준 조건 1을 적용하면 v3도 못 미친다. short S15는 4/6(최솟값 5), short S11-S15는 24/30(최솟값 25), full S18은 3/6(최솟값 5)이다. 18차 기준 조건 2와 3은 v3 세 조건 모두 범위 안이다.
+
+### agent+short 기준 (3) 실패
+
+S5-S7의 3점 차이는 모두 S7에서 나왔다. S5와 S6은 v4.1과 v3 모두 5/6이다. S7은 v4.1 3/6, v3 6/6이다. v4.1의 S7 실패 3건은 모두 "백업이" 주어 탈락이다. v3 21차 agent+short의 S7 출력 6개는 모두 "백업이 실패"를 남겼다. 18차 v3 agent+short에서는 같은 탈락이 글자 기준 2/6(판정기 실패 1)이었다. 그래서 agent+short S7의 탈락은 v3 두 차수에서 0/6과 2/6이고, v4.x 두 차수에서 1/6(19차)과 3/6(20차)이다. 6회씩 두 차수로는 이 차이가 v4.x 때문인지 가르지 못한다.
+
+### 실패 종류별 수
+
+20차에서 기준에 걸린 실패 종류가 v3에서도 나오는지 셌다.
+
+| 실패 종류 | short (18 → 19 → 20 → 21차) | full (18 → 19 → 21차) | agent+short (18 → 19 → 20 → 21차) |
+|---|---:|---:|---:|
+| S12 예측 문장 (`grep`) | 0 → 1 → 2 → 0 | 0 → 0 → 1 | 1 → 2 → 0 → 2 |
+| S7 "백업이" 탈락, 글자 기준 | 2 → 4 → 5 → 5 | 3 → 2 → 4 | 2 → 1 → 3 → 0 |
+| S7 "백업이" 탈락, 판정기 실패 | 2 → 3 → 3 → 2 | 3 → 1 → 3 | 1 → 1 → 3 → 0 |
+| S15 "10월 23일"을 "기한" 열에 넣은 표 | 1 → 0 → 1 → 3 | 0 → 0 → 0 | 0 → 0 → 1 → 0 |
+| "확인 필요" 줄 | 58 → 64 → 43 → 76 | 38 → 44 → 35 | 58 → 70 → 54 → 65 |
+| 밝힌 날짜의 종류를 물은 출력, S13과 S15 | 0 → 4 → 0 → 0 | 0 → 0 → 0 | 0 → 4 → 0 → 0 |
+| 90일의 기준일을 물은 출력, S11 | 0 → 3 → 1 → 1 | 2 → 2 → 0 | 0 → 0 → 1 → 0 |
+
+- S12 예측 문장은 "계속 발생할 수 있습니다", "더 생길 수 있는 것으로 보입니다" 같은 문장이다. 18-21차의 이런 출력 9건은 모두 haiku이고, 판정기는 9건 모두 실패로 봤다. v3 21차에는 3건(full 1, agent+short 2)이 있었다. 20차 short S12 실패 3건 중 2건이 이 문장이었고, 1건은 "버그가 남아 있습니다"였다. v3 21차 short S12 실패 1건(haiku r3)도 이 1건과 같은 종류다. 그 출력은 "37건 남아 있습니다"와 "아직 분석하지 않았습니다"를 더했다. v3 full S12의 나머지 실패 1건은 "10/20(내일)"을 더했다.
+- S7 글자 기준은 첫 줄에 "백업이 실패", "백업 실패", "백업에 실패"가 없는 출력이다. 판정기가 실패로 본 S7 출력은 모두 글자 기준 탈락이었다. 하지만 18-21차의 글자 기준 탈락 31건 중 판정기는 22건만 실패로 봤다. 21차 short는 5건 중 2건만 실패였다.
+- "기한" 열 표 21차 3건은 모두 short sonnet(r1, r2, r3)이다. 판정기는 3건 모두 통과로 봤다. 18-21차의 같은 표 6건 중 판정기가 실패로 본 것은 20차 short sonnet r2 1건뿐이다.
+- 21차 short의 "확인 필요" 76줄은 18-20차의 모든 short 값보다 많다. 19차의 증가(short 58 → 64, agent+short 58 → 70)는 같은 v3의 두 차수 사이 차이(short 58 → 76) 안에 있다. 21차 S13, S15의 "확인 필요" 줄 3개(short sonnet r1-r3의 S15)는 session_timeout의 값과 단위를 물었다. 21차에서 날짜를 묻는 다른 "확인 필요" 줄은 S9의 "금일", "추후"(원문에 날짜가 없음)를 물은 줄뿐이다.
+
+### full S18
+
+v3 full S18은 18차 6/6에서 21차 3/6이 됐다. 실패 3건은 모두 "사전 설문"을 "보안 교육 사전 설문"으로 묶었다. 시나리오는 설문이 어느 행사의 것인지 밝히지 않는다. 이렇게 묶은 출력은 18차 0/18, 19차 2/18(full, 판정기 실패 1), 20차 0/12, 21차 5/18(short 2, full 3, 모두 판정기 실패)이었다. 21차 full의 기한을 끝점으로 묶은 기간 요약(`span.py`)은 0/6이다. 그래서 21차 full S18 실패는 날짜 규칙이 다루는 종류가 아니다.
+
+### 헤더와 볼드
+
+| 조건 | S10 볼드 가짜 제목 | bold | header |
+|---|---:|---:|---:|
+| short (18 → 19 → 20 → 21차) | 0/6 → 3/6 → 1/6 → 0/6 | 5 → 17 → 7 → 13 | 0 → 1 → 0 → 0 |
+| full (18 → 19 → 21차) | 0/6 → 1/6 → 1/6 | 5 → 7 → 6 | 0 → 0 → 0 |
+| agent+short (18 → 19 → 20 → 21차) | 1/6 → 2/6 → 1/6 → 0/6 | 5 → 9 → 6 → 4 | 3 → 0 → 1 → 0 |
+
+### 측정 한계
+
+- 가장 큰 한계: 같은 v3도 18차와 21차 사이에 기준의 한계보다 크게 움직였다. full S18은 6/6에서 3/6, short S15는 6/6에서 4/6, short haiku 결함은 4.7에서 8.0이 됐다. 18차의 모델 ID는 기록이 없다. 그래서 이 차이가 모델 때문인지 실행 사이의 흔들림 때문인지 모른다. 기준의 한계(1-2점)는 이 움직임(2-3점)보다 작다. 그래서 agent+short의 기준 (3) 불충족(3점 차이, S7 한 시나리오)도 흔들림일 수 있다.
+- 판정기가 같은 종류의 출력을 다르게 봤다. S7 "백업이" 탈락은 31건 중 22건만 실패였고, "기한" 열 표는 6건 중 1건만 실패였다. 민감도 확인(사전 기준에 없음): S7을 글자 기준으로 다시 세면 S5-S7은 short v4.1 12 / v3 10, full v4 16 / v3 13, agent+short v4.1 13 / v3 16이다. 기준 (3)의 판정은 바뀌지 않는다.
+- 각 버전은 한 차수(조건마다 6회)씩만 같은 날 쟀다.
+- S1-S19에는 종류를 밝히지 않은 날짜가 없다. 그래서 21차도 날짜 규칙의 비용만 재고, 이득은 재지 못한다. 이득은 X7에서 쟀다.
+
+### 실행 명령
+
+bash로 실행했다. 모델 별칭은 20차와 같은 명령으로 `it21-prompt/models.txt`에 저장했다.
+
+```sh
+REPO=$(pwd)
+T=$(mktemp -d)   # 21차: /var/folders/bc/07p9yr855ysc6cscbpm86tz80000gn/T/tmp.KZMDAzzCKS
+git archive 98db878 | tar -x -C $T
+F="prompts/system-prompt.md skills/k-ste/SKILL.md skills/k-ste/references/genres.md skills/k-ste/references/rewrite.md skills/k-ste/references/word-swaps.md"
+for f in $F; do echo "$(git show 98db878:$f | shasum -a 256 | cut -d' ' -f1)  $f"; done > evals/results/it21-prompt/98db878.sha256
+(cd $T && shasum -a 256 $F) > evals/results/it21-prompt/before.sha256
+SIDS="S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 S12 S13 S14 S15 S16 S17 S18 S19"
+cd $T
+for r in 1 2 3; do for m in haiku sonnet; do
+  for c in short full; do RUN=it21-r$r bash evals/run.sh $c $m $SIDS; done
+  # 동시 실행 6개 이하로 5개씩 나눠 실행했다.
+  for g in "S1 S2 S3 S4 S5" "S6 S7 S8 S9 S10" "S11 S12 S13 S14 S15" "S16 S17 S18 S19"; do
+    RUN=it21-r$r WITH_SHORT=1 bash evals/agent_path.sh $m $g; done
+done; done
+shasum -a 256 $F > $REPO/evals/results/it21-prompt/after.sha256
+cd $REPO
+diff evals/results/it21-prompt/98db878.sha256 evals/results/it21-prompt/after.sha256
+cp -R $T/evals/results/it21-r1 $T/evals/results/it21-r2 $T/evals/results/it21-r3 evals/results/
+for r in 1 2 3; do python3 evals/judge.py evals/results/it21-r$r; done
+```
+
+### 다시 계산하는 명령
+
+bash로 실행한다.
+
+```sh
+# 판정 통과 수: 조건, 시나리오, 묶음(S5-S7, concl=S1/S2/S10, S11-S15)
+P='
+import sys, json, collections as C
+t, n = C.Counter(), C.Counter()
+G = {"S5-S7": "S5 S6 S7", "concl": "S1 S2 S10", "S11-S15": "S11 S12 S13 S14 S15"}
+for l in sys.stdin:
+    r = json.loads(l); v = r["verdict"]; c = r["file"].split("/")[-2]; s = r["sid"]
+    ok = not v["meaning_changed"] if "meaning_changed" in v else v.get("conclusion_first", v.get("pass"))
+    for k in [s] + [g for g in G if s in G[g].split()]:
+        t[c, k] += bool(ok); n[c, k] += 1
+for k in sorted(n): print(*k, f"{t[k]}/{n[k]}")'
+for it in 18 19 20 21; do echo "== it$it"; cat evals/results/it$it-r*/judge.jsonl | python3 -c "$P"; done
+# 실행 1회당 결함(S1-S10). 20번째 필드가 defects다.
+for it in it18 it19 it20 it21; do for m in haiku sonnet; do for c in short full agent+short; do
+  [ -d evals/results/$it-r1/$m/$c ] || continue
+  python3 evals/score.py -v evals/results/$it-r*/$m/$c | awk -F'|' -v t="$it $m $c" '$2~/\/S([1-9]|10)\.md/{s+=$20} END{printf "%s %.1f\n", t, s/3}'
+done; done; done
+# bold와 header(S1-S10, S8 제외, 두 모델 합, header는 S3과 S4 제외)
+for it in it18 it19 it20 it21; do for c in short full agent+short; do
+  [ -d evals/results/$it-r1/haiku/$c ] || continue
+  python3 evals/score.py -v evals/results/$it-r*/{haiku,sonnet}/$c | awk -F'|' -v t="$it $c" '$2~/\/S([1-9]|10)\.md/ && $2!~/\/S8\.md/ {b+=$3; if ($2!~/\/S(3|4)\.md/) h+=$6} END{print t, "bold", b, "header", h}'
+done; done
+# S10에서 볼드 줄을 섹션 제목처럼 쓴 출력
+grep -lE '^\*\*[^*]+\*\*:?\s*$' evals/results/it21-r*/*/*/S10.md
+# 기간 요약, 스킬 실행
+python3 evals/span.py it21
+grep -hE "^S(5|6|7|9|14)	" evals/results/it21-r*/*/agent+short/trace.txt | grep -c k-ste
+# "확인 필요" 줄 수, 밝힌 날짜의 종류를 물은 출력(S13, S15), 90일 기준일을 물은 출력(S11)
+for it in it18 it19 it20 it21; do for c in short full agent+short; do
+  [ -d evals/results/$it-r1/haiku/$c ] && echo "$it $c $(cat evals/results/$it-r*/*/$c/S*.md | grep -c '확인 필요')"; done; done
+grep -lE "확인 필요.*10월 2[23]일" evals/results/it21-r*/*/*/S1[35].md
+grep -c "확인 필요" evals/results/it21-r*/*/*/S1[35].md | grep -v ':0$'
+grep -lE "확인 필요.*(기준일|기준 시점|발급일)" evals/results/it{18,19,20,21}-r*/*/*/S11.md
+grep -nE "확인 필요.*(실행일|기한|마감|까지인지|에 하는지|날짜)" evals/results/it21-r*/*/*/S*.md
+# S15에서 10월 23일을 "기한" 열에 넣은 표
+for f in evals/results/it{18,19,20,21}-r*/*/*/S15.md; do
+  if grep -q "^|.*기한" $f && grep -E "^\|.*김하늘.*10월 23일" $f | grep -qv 실행일; then echo $f; fi; done
+# S12 예측 문장, S7과 S12의 판정기 실패 이유
+grep -lE "계속 (발생|생길|나올)|더 (생길|발생할|나올)|생길 수|발생할 수" evals/results/it{18,19,20,21}-r*/*/*/S12.md
+for it in 18 19 20 21; do cat evals/results/it$it-r*/judge.jsonl | python3 -c '
+import sys, json
+for l in sys.stdin:
+    r = json.loads(l); v = r["verdict"]
+    if r["sid"] in ("S7", "S12") and (v.get("meaning_changed") or v.get("pass") is False):
+        print(r["file"], *v["issues"], sep="\n  ")'; done
+# S7 "백업이" 탈락(글자 기준)과 판정기 실패, S18의 "보안 교육 사전 설문" 묶음
+python3 - <<'PY'
+import glob, json, re, collections as C
+v = {}
+for f in glob.glob("evals/results/it*-r*/judge.jsonl"):
+    for l in open(f):
+        r = json.loads(l); v[r["file"]] = r["verdict"]
+t = C.Counter()
+for it in ("it18", "it19", "it20", "it21"):
+    for c in ("short", "full", "agent+short"):
+        for f in sorted(glob.glob(f"evals/results/{it}-r*/*/{c}/S7.md")):
+            drop = not re.search(r"백업(이|에)? ?실패", open(f).read().strip().split("\n")[0])
+            t[it, c, "S7 drop"] += drop; t[it, c, "S7 judge fail"] += v[f]["meaning_changed"]
+        for f in sorted(glob.glob(f"evals/results/{it}-r*/*/{c}/S18.md")):
+            tie = bool(re.search(r"보안 교육[^\n.|]{0,6}사전 설문|교육 전 설문|교육 사전 설문", open(f).read()))
+            t[it, c, "S18 tie"] += tie; t[it, c, "S18 tie judge fail"] += tie and not v[f]["pass"]
+for k in sorted(t): print(*k, t[k])
+PY
+```
+
+## 2026-10-19 22차 (it22): agent+short S5-S7 반복 측정
+
+### 판정 기준 (실행 전에 씀)
+
+이 기준은 코디네이터가 22차 결과를 보기 전에 정했다. 하지만 21차 결과를 본 뒤에 정했다. 기준 문장은 코디네이터의 지시를 그대로 옮겼다.
+
+> v4.1의 agent+short를 v3보다 나쁘지 않다고 보려면 다음 두 조건을 모두 만족해야 한다. (a) S7 글자 기준 탈락 수가 v3보다 3건(20회 기준) 넘게 많지 않다. (b) S5-S7 판정 통과 수가 v3보다 6건(60회 기준, 10%p) 넘게 적지 않다.
+
+S7 글자 기준은 21차 절과 같다. 첫 줄에 "백업이 실패", "백업 실패", "백업에 실패"가 없는 출력을 탈락으로 센다. 코드는 21차 "다시 계산하는 명령"의 정규식(`백업(이|에)? ?실패`, 첫 줄에만 적용)을 그대로 쓴다. 18-22차를 합친 agent+short S7 탈락률과 버전 사이 차이의 95% 신뢰구간도 보고한다.
+
+배경: 21차에서 agent+short는 S5-S7 기준 하나에 걸렸다(v4.1 13/18, v3 16/18). 차이 3점은 모두 S7이다. agent+short S7의 "백업이" 탈락(글자 기준)은 v3가 18차 2/6, 21차 0/6이었고, v4.x가 19차 1/6, 20차 3/6이었다. 6회씩으로는 이 차이가 v4.1 때문인지 가르지 못한다.
+
+방법:
+
+- 조건은 agent+short만이다. 시나리오는 S5, S6, S7이다. 생성 모델은 haiku와 sonnet이다. 버전마다 모델별 10회 실행한다(`it22-r1`-`it22-r10`). 그래서 버전마다 S7은 20회, S5-S7은 60회다.
+- v3는 21차처럼 `git archive 98db878 | tar -x -C <mktemp -d 폴더>`로 저장소 밖에 풀어서 실행한다.
+- v4.1은 작업 트리의 파일이다. `agent_path.sh`는 두 버전의 출력을 모두 `<모델>/agent+short/`에 쓴다. 그래서 작업 트리의 `prompts/`, `skills/`, `evals/agent_path.sh`, `evals/trace.py`, `evals/scenarios/`를 다른 임시 폴더에 복사해서 실행한다. 작업 트리는 바꾸지 않는다. 실행 전후로 작업 트리와 두 임시 폴더의 다섯 파일 해시와 짧은판 블록 해시를 `it22-prompt/`에 저장한다. 작업 트리의 해시는 실행 전에 20차 v4.1의 해시(`it20-prompt/before.sha256`)와 같았다.
+- 결과 폴더는 `it22-rN/<모델>/agent+short-v3/`와 `it22-rN/<모델>/agent+short-v4.1/`이다.
+- 실행 순서: 회차와 모델마다 v3와 v4.1의 S5-S7을 함께 시작한다(`claude -p` 6개). 홀수 회차는 v3를, 짝수 회차는 v4.1을 먼저 시작한다. 모델 순서도 회차마다 바꾼다. 판정은 생성을 모두 마친 뒤 저장소의 `evals/judge.py`(opus)로 한다.
+
+### 결과
+
+생성 120개와 판정 120건은 오류 없이 끝났다(생성 13:57-14:03, 판정 14:04-14:07, `it22-prompt/order.log`). 생성 전후로 작업 트리와 두 임시 폴더의 다섯 파일 해시와 짧은판 블록 해시는 같았다. v3 임시 폴더의 다섯 파일 해시는 98db878의 해시와 같았다. v4.1 임시 폴더의 해시는 작업 트리의 해시와 같았다(`it22-prompt/*.sha256`). 모델 별칭은 19-21차와 같은 claude-haiku-5-5, claude-sonnet-5-5, claude-opus-5-5로 풀렸다(`it22-prompt/models.txt`, Claude Code 2.1.303).
+
+| 지표 | v3 | v4.1 |
+|---|---:|---:|
+| S5 판정 통과 | 18/20 | 18/20 |
+| S6 판정 통과 | 19/20 | 17/20 |
+| S7 판정 통과 | 18/20 | 12/20 |
+| S5-S7 판정 통과 | 55/60 | 47/60 |
+| S5-S7 판정 통과, haiku | 27/30 | 22/30 |
+| S5-S7 판정 통과, sonnet | 28/30 | 25/30 |
+| S7 "백업이" 탈락, 글자 기준 | 2/20 | 8/20 |
+| S7 탈락, haiku | 0/10 | 5/10 |
+| S7 탈락, sonnet | 2/10 | 3/10 |
+| S7 탈락 중 판정기 실패 | 2/2 | 8/8 |
+| 스킬 실행(S5-S7) | 60/60 | 57/60 |
+
+- 판정기가 실패로 본 S7 출력 10건(v3 2, v4.1 8)은 모두 글자 기준 탈락이었다. 글자 기준 탈락 10건도 모두 판정기 실패였다. 18-21차에는 글자 기준 탈락 31건 중 22건만 판정기 실패였다.
+- 탈락한 출력 10개의 첫 줄은 모두 "...백업이 정상적으로 완료됐는지(완료되었는지) 확인하고, 실패하면 배포를 중단해야 합니다." 형태다. 2개는 "실패하면" 대신 "실패했으면"(v3 sonnet r5)과 "실패한 경우"(v4.1 sonnet r5)를 썼다. 판정기는 이 조건이 확인의 실패로도 읽힌다고 봤다.
+- S5-S7 차이 8건은 S7 6건과 S6 2건이다. S6 실패 4건(v3 1, v4.1 3)은 모두 "두 서버는", "캐시 서버와 API 서버는"을 주어로 더해서 초기화 대상을 서버로 정했다. S5 실패 4건(v3 2, v4.1 2)은 "이에 따라"의 인과나 권고의 행위자를 바꾸거나 흐렸다.
+- 스킬을 실행하지 않은 출력 3개는 모두 v4.1 haiku S7이다(r1, r3, r9). 그중 r1과 r3이 탈락했다.
+
+### 판정
+
+| 기준 | v3 | v4.1 | 차이 | 한계 | 결과 |
+|---|---:|---:|---:|---:|---|
+| (a) S7 글자 기준 탈락 수 | 2 | 8 | 6건 많음 | 3건 | 불충족 |
+| (b) S5-S7 판정 통과 수 | 55 | 47 | 8건 적음 | 6건 | 불충족 |
+
+v4.1 agent+short는 두 조건을 모두 만족하지 않았다. 그래서 사전 기준으로는 "v4.1의 agent+short는 v3보다 나쁘지 않다"고 볼 수 없다. 21차의 기준 (3) 불충족과 방향이 같다.
+
+민감도 확인(사전 기준에 없음): 스킬을 실행하지 않은 v4.1 S7 3개를 빼도 탈락은 v4.1 6/17, v3 2/20이다. 그래서 스킬 미실행만으로는 S7 차이가 설명되지 않는다.
+
+### 18-22차를 합친 agent+short S7 탈락률
+
+출력 하나를 단위로 버전 안에서 복원 추출을 10,000회 했다(seed 0, 백분위 구간). 차수와 모델로 층을 나누지 않았다. 정확 검정은 양측 Fisher 검정이다.
+
+| 묶음 | 차수 | 탈락 | 탈락률 |
+|---|---|---:|---:|
+| v3 | 18, 21, 22 | 4/32 | 12.5% |
+| v4.x | 19(v4), 20(v4.1), 22(v4.1) | 12/32 | 37.5% |
+| v4.1 | 20, 22 | 11/26 | 42.3% |
+
+| 비교 | 차이 | 부트스트랩 95% 신뢰구간 | Fisher p |
+|---|---:|---:|---:|
+| v4.x - v3 (18-22차) | +25.0%p | +6.2%p에서 +43.8%p | 0.041 |
+| v4.1 - v3 (18-22차) | +29.8%p | +7.5%p에서 +51.4%p | 0.015 |
+| v4.1 - v3 (22차만, 8/20 대 2/20) | +30.0%p | | 0.065 |
+
+### 원인 후보 (추론, 확인하지 않음)
+
+v3와 v4.1의 짧은판 차이는 다음과 같다(`diff`로 비교). 1번은 "정도·방식 한정어"를 "한정어"로 줄였다. 1번은 "확인 필요:"로 묻는 조건에 "날짜가 실행일인지 기한인지"를 더했고, "'에'나 '까지'로 밝힌 날짜는 묻지 않는다" 문장을 더했다. 12번은 "설치돼 있으면 재작성과 검수에 그 스킬을 쓰고"를 "있으면 재작성과 검수에 쓰고"로 줄였다. 3번은 문서 예에서 "PR 설명"을 뺐다. 7번, 8번, 13번은 문구만 줄였다. 스킬은 날짜 문장만 바뀌었다(SKILL.md의 K15와 검사 목록 8번, genres.md의 회의록 할 일 문장). 22차는 이 중 어느 변경이 탈락을 늘렸는지 가르지 않았다. 12번 축약은 스킬 미실행 3건과 관계가 있을 수 있다. 하지만 미실행을 빼도 차이가 남는다.
+
+### 측정 한계
+
+- 가장 큰 한계: 22차만 보면 S7 차이(8/20 대 2/20)는 Fisher p=0.065이다. 합친 18-22차의 신뢰구간은 0을 포함하지 않는다. 하지만 이 묶음은 모델 ID 기록이 없는 18차와 v4인 19차를 포함하고, 차수 사이 흔들림을 모형에 넣지 않았다. 기준 (a)와 (b)는 건수 기준이라서 이 한계와 별개로 둘 다 불충족이다.
+- 차이는 한 시나리오(S7)와 주로 haiku(탈락 5/10 대 0/10)에서 나왔다. sonnet은 3/10 대 2/10이다. 다른 재작성 요청에서 같은 주어 탈락이 늘어나는지는 재지 않았다.
+- 22차는 한 날, Claude Code 2.1.303 한 버전으로 쟀다. 판정기는 opus 하나다. 기준은 21차를 본 뒤 정했다.
+
+### 실행 명령
+
+bash로 실행했다. 아래는 실제 스크립트에서 heartbeat 줄만 뺀 것이다.
+
+```sh
+REPO=$(pwd); P=$REPO/evals/results/it22-prompt; mkdir -p $P
+F="prompts/system-prompt.md skills/k-ste/SKILL.md skills/k-ste/references/genres.md skills/k-ste/references/rewrite.md skills/k-ste/references/word-swaps.md"
+hashes() { (cd $1 && shasum -a 256 $F && echo "$(awk '/<!-- short:start -->/{f=1;next}/<!-- short:end -->/{f=0}f' prompts/system-prompt.md | shasum -a 256 | cut -d' ' -f1)  short-block"); }
+T3=$(mktemp -d); T4=$(mktemp -d)   # 22차: v3 tmp.Nz5gN0kgNb, v4.1 tmp.5ArvkmdMMn (it22-prompt/dirs.txt)
+git archive 98db878 | tar -x -C $T3
+mkdir -p $T4/evals; cp -R prompts skills $T4/; cp -R evals/scenarios evals/agent_path.sh evals/trace.py $T4/evals/
+for f in $F; do echo "$(git show 98db878:$f | shasum -a 256 | cut -d' ' -f1)  $f"; done > $P/98db878.sha256
+hashes $REPO > $P/worktree-before.sha256; hashes $T3 > $P/v3-before.sha256; hashes $T4 > $P/v4.1-before.sha256
+for m in haiku sonnet opus; do
+  echo "$m $(claude -p "1" --model $m --setting-sources "" --strict-mcp-config --tools "" --output-format json | python3 -c 'import json,sys; print(*json.load(sys.stdin).get("modelUsage",{}))')"
+done > $P/models.txt; claude --version >> $P/models.txt
+gen() { local T=$T3; [ $1 = v4.1 ] && T=$T4; (cd $T && RUN=it22-r$3 WITH_SHORT=1 bash evals/agent_path.sh $2 S5 S6 S7 > /dev/null 2>> $P/gen.err); }
+for r in 1 2 3 4 5 6 7 8 9 10; do
+  if [ $((r % 2)) = 1 ]; then V="v3 v4.1"; M="haiku sonnet"; else V="v4.1 v3"; M="sonnet haiku"; fi
+  for m in $M; do
+    for v in $V; do echo "$(date +%T) start r$r $m $v" >> $P/order.log; gen $v $m $r & sleep 2; done
+    wait; echo "$(date +%T) end r$r $m" >> $P/order.log
+  done
+done
+hashes $REPO > $P/worktree-after.sha256; hashes $T3 > $P/v3-after.sha256; hashes $T4 > $P/v4.1-after.sha256
+for r in 1 2 3 4 5 6 7 8 9 10; do for m in haiku sonnet; do mkdir -p $REPO/evals/results/it22-r$r/$m
+  cp -R $T3/evals/results/it22-r$r/$m/agent+short $REPO/evals/results/it22-r$r/$m/agent+short-v3
+  cp -R $T4/evals/results/it22-r$r/$m/agent+short $REPO/evals/results/it22-r$r/$m/agent+short-v4.1
+done; done
+for r in 1 2 3 4 5 6 7 8 9 10; do python3 evals/judge.py evals/results/it22-r$r; done
+```
+
+### 다시 계산하는 명령
+
+bash로 실행한다.
+
+```sh
+cd evals/results/it22-prompt && for v in worktree v3 v4.1; do diff $v-before.sha256 $v-after.sha256 && echo "$v same"; done
+diff <(head -5 v3-before.sha256) 98db878.sha256 && diff worktree-before.sha256 ../it20-prompt/before.sha256 && cd ../../..
+for v in v3 v4.1; do echo "$v skill $(cat evals/results/it22-r*/*/agent+short-$v/trace.txt | grep -c k-ste)"; done
+grep -H "skill=\[\]" evals/results/it22-r*/*/agent+short-*/trace.txt
+python3 - <<'PY'
+import glob, json, math, random, re, collections as C
+drop = lambda f: not re.search(r"백업(이|에)? ?실패", open(f).read().strip().split("\n")[0])
+v = {}
+for f in glob.glob("evals/results/it*-r*/judge.jsonl"):
+    for l in open(f):
+        r = json.loads(l); v[r["file"]] = r["verdict"]
+t = C.Counter()
+for ver in ("v3", "v4.1"):
+    for f in sorted(glob.glob(f"evals/results/it22-r*/*/agent+short-{ver}/S[567].md")):
+        m, s = f.split("/")[-3], f.split("/")[-1][:-3]
+        ok = not v[f]["meaning_changed"]
+        for k in (s, "S5-S7"):
+            t[ver, k, "pass"] += ok; t[ver, k, "n"] += 1; t[ver, k, m, "pass"] += ok; t[ver, k, m, "n"] += 1
+        if s == "S7":
+            t[ver, "S7 drop"] += drop(f); t[ver, "S7 drop", m] += drop(f)
+            t[ver, "S7 drop judge fail"] += drop(f) and not ok
+            t[ver, "S7 judge fail no drop"] += (not drop(f)) and not ok
+for k in sorted(t): print(*k, t[k])
+G = {"v3": [("it18", "agent+short"), ("it21", "agent+short"), ("it22", "agent+short-v3")],
+     "v4.x": [("it19", "agent+short"), ("it20", "agent+short"), ("it22", "agent+short-v4.1")],
+     "v4.1": [("it20", "agent+short"), ("it22", "agent+short-v4.1")]}
+X = {g: [drop(f) for it, c in G[g] for f in sorted(glob.glob(f"evals/results/{it}-r*/*/{c}/S7.md"))] for g in G}
+def fisher(a, n1, b, n2):  # 양측 정확 검정, a/n1 대 b/n2
+    k, n = a + b, n1 + n2
+    p = lambda x: math.comb(n1, x) * math.comb(n2, k - x) / math.comb(n, k)
+    return sum(p(x) for x in range(max(0, k - n2), min(k, n1) + 1) if p(x) <= p(a) * (1 + 1e-9))
+assert round(fisher(1, 10, 9, 10), 4) == 0.0011 and round(fisher(3, 6, 0, 6), 4) == 0.1818
+random.seed(0)
+for a, b in (("v4.x", "v3"), ("v4.1", "v3")):
+    xa, xb = X[a], X[b]
+    d = sorted(sum(random.choices(xa, k=len(xa))) / len(xa) - sum(random.choices(xb, k=len(xb))) / len(xb) for _ in range(10000))
+    print(f"{a} {sum(xa)}/{len(xa)} vs {b} {sum(xb)}/{len(xb)} diff {sum(xa)/len(xa)-sum(xb)/len(xb):+.1%}"
+          f" boot95 [{d[249]:+.1%}, {d[9749]:+.1%}] fisher p={fisher(sum(xa), len(xa), sum(xb), len(xb)):.3f}")
+xa = [drop(f) for f in sorted(glob.glob("evals/results/it22-r*/*/agent+short-v4.1/S7.md"))]
+xb = [drop(f) for f in sorted(glob.glob("evals/results/it22-r*/*/agent+short-v3/S7.md"))]
+print(f"it22 v4.1 {sum(xa)}/{len(xa)} vs v3 {sum(xb)}/{len(xb)} fisher p={fisher(sum(xa), len(xa), sum(xb), len(xb)):.3f}")
+PY
+```
+
+## 2026-10-19 23차 (it23): 배포 후보(짧은판 v3 + 스킬 v4)의 agent+short
+
+### 판정 기준 (실행 전에 씀)
+
+이 기준은 코디네이터가 22차 결과를 본 뒤, 23차 결과를 보기 전에 정했다. 기준 문장은 코디네이터의 지시를 그대로 옮겼다.
+
+> 후보 구성을 v3보다 나쁘지 않다고 보려면 다음을 모두 만족해야 한다. (a) S7 글자 기준 탈락 수가 v3보다 3건(20회 기준) 넘게 많지 않다. (b) S5-S7 판정 통과 수가 v3보다 6건(60회 기준) 넘게 적지 않다. (c) S9와 S14의 판정 통과 수 합계가 v3보다 4건(40회 기준) 넘게 적지 않다. (d) 스킬 실행 수가 v3보다 2건(100회 기준) 넘게 적지 않다. S9에서 존재하지 않는 규칙 ID를 쓴 출력 수와, K15를 인용한 출력 수도 따로 센다.
+
+`evals/judge.py`는 S9를 판정하지 않는다(`CHECKS`에 S9가 없다). 그래서 S9의 통과 기준은 생성 전에 코디네이터가 정했다. 코디네이터의 답을 그대로 옮겼다.
+
+> S9 통과는 글자 기준이다(출력에 | 규칙 | 원문 | 고친 글 | 형태의 마크다운 표가 있고, 규칙 열에 K0-K15 밖의 ID가 없다. evals/scenarios.md의 S9 기준). 기준 (c)는 S9 글자 기준 통과 수와 S14 판정 통과 수의 합계로 보고, 한계는 처음 정한 대로 4건(40회 기준)이다.
+
+지표는 다음과 같이 센다. 코드는 아래 "다시 계산하는 명령"에 있다.
+
+- S7 글자 기준 탈락: 21-22차와 같다. 첫 줄에 `백업(이|에)? ?실패`가 없는 출력이다.
+- S5-S7 판정 통과: `judge.py`(opus)의 `meaning_changed`가 false인 출력이다.
+- S14 판정 통과: `judge.py`(opus)의 `pass`가 true인 출력이다.
+- S9 글자 기준 통과: 다음 두 조건을 모두 만족하는 출력이다. (1) 머리 행의 앞 세 칸이 `규칙`, `원문`, `고친 글`이고(칸의 공백과 `**`는 뺀다) 바로 다음 줄이 구분 행(`|---|`)인 마크다운 표가 있다. 넷째 칸 이후는 보지 않는다. (2) 그런 표의 모든 본문 행에서 첫 칸의 `K<숫자>`가 모두 K0-K15다.
+- S9 없는 ID 출력: 출력 전체(표 밖 포함)에 `K<숫자>`의 숫자가 15보다 큰 ID가 하나라도 있는 출력이다.
+- S9 K15 인용 출력: 출력 전체에 `K15`가 있는 출력이다.
+- 스킬 실행: `trace.txt` 줄의 `skill=[...]`에 `k-ste`가 있는 출력이다. 구성마다 100회(5개 시나리오, 2개 모델, 10회)다.
+
+배경: 22차에서 짧은판 v4.1은 agent+short S7의 "백업이" 주어 탈락을 늘렸다(v3 2/20, v4.1 8/20). 그래서 코디네이터는 짧은판을 v3로 두고, 전체판과 스킬(SKILL.md의 K15와 검사 목록 8번, genres.md의 회의록 할 일 문장)만 v4로 바꾸는 구성을 배포 후보로 정했다. 이 구성의 agent+short는 22차까지 재지 않았다. agent+short는 짧은판과 스킬을 함께 쓰는 유일한 조건이다.
+
+방법:
+
+- v3 구성은 `git archive 98db878 | tar -x -C <mktemp -d 폴더>`로 저장소 밖에 푼 그대로다.
+- 후보 구성은 98db878을 다른 `mktemp -d` 폴더에 같은 방식으로 풀고, `skills/k-ste`만 작업 트리의 것으로 바꾼다. `prompts/system-prompt.md`는 98db878 그대로다. 작업 트리의 스킬 파일 해시는 22차 v4.1 임시 폴더의 해시와 같다(`it23-prompt/worktree-before.sha256`과 `it22-prompt/worktree-before.sha256`의 출력이 같다).
+- 조건은 agent+short만이다. 시나리오는 스킬을 실행하는 S5, S6, S7, S9, S14다. 생성 모델은 haiku와 sonnet이다. 구성마다 모델별 10회 실행한다(`it23-r1`-`it23-r10`). 그래서 구성마다 출력은 100개다.
+- 결과 폴더는 `it23-rN/<모델>/agent+short-v3/`와 `it23-rN/<모델>/agent+short-cand/`다.
+- 실행 순서: (회차, 모델, 시나리오, 구성) 작업 200개를 `xargs -P 6`으로 실행한다. 그래서 동시에 실행하는 `claude -p`는 6개 이하다. 같은 회차, 모델, 시나리오의 두 구성은 이어진 작업이다. 홀수 회차는 v3를, 짝수 회차는 후보를 먼저 둔다. 모델 순서도 회차마다 바꾼다. 작업마다 `agent_path.sh`를 시나리오 하나로 실행한다.
+- 출력이 없는 작업(`NO RESULT`)은 같은 명령으로 다시 생성하고, 다시 생성한 수를 보고한다. 판정은 생성을 모두 마친 뒤 저장소의 `evals/judge.py`(opus)로 한다.
+- 실행 전후로 작업 트리와 두 임시 폴더의 다섯 파일 해시와 짧은판 블록 해시를 `it23-prompt/`에 저장한다. 실행 전 해시에서 v3 임시 폴더의 다섯 파일은 98db878과 같았다. 후보 임시 폴더의 스킬 파일 네 개는 작업 트리와 같았고, `prompts/system-prompt.md`와 짧은판 블록은 v3 임시 폴더와 같았다.
+
+### 결과
+
+생성 200개와 판정 160건은 오류 없이 끝났다(생성 14:15-14:24, 판정 14:25-14:29, `it23-prompt/order.log`). 출력이 없는 작업은 없었다. 그래서 다시 생성한 작업은 0개다(`it23-prompt/missing-final.txt`가 비어 있다). 생성 전후로 작업 트리와 두 임시 폴더의 다섯 파일 해시와 짧은판 블록 해시는 같았다(`it23-prompt/*-before.sha256`, `*-after.sha256`). 모델 별칭은 19-22차와 같은 claude-haiku-5-5, claude-sonnet-5-5, claude-opus-5-5로 풀렸다(`it23-prompt/models.txt`, Claude Code 2.1.303).
+
+| 지표 | v3 | 후보 |
+|---|---:|---:|
+| S5 판정 통과 | 19/20 | 18/20 |
+| S6 판정 통과 | 18/20 | 19/20 |
+| S7 판정 통과 | 19/20 | 17/20 |
+| S5-S7 판정 통과 | 56/60 | 54/60 |
+| S5-S7 판정 통과, haiku | 29/30 | 28/30 |
+| S5-S7 판정 통과, sonnet | 27/30 | 26/30 |
+| S7 "백업이" 탈락, 글자 기준 | 3/20 | 3/20 |
+| S7 탈락, haiku | 3/10 | 1/10 |
+| S7 탈락, sonnet | 0/10 | 2/10 |
+| S7 탈락 중 판정기 실패 | 1/3 | 3/3 |
+| S9 글자 기준 통과 | 20/20 | 20/20 |
+| S14 판정 통과 | 20/20 | 20/20 |
+| S9와 S14 통과 합계 | 40/40 | 40/40 |
+| S9 없는 ID 출력 | 0/20 | 0/20 |
+| S9 K15 인용 출력 | 9/20 | 9/20 |
+| 스킬 실행(S5, S6, S7, S9, S14) | 100/100 | 99/100 |
+
+- 판정기가 실패로 본 S7 출력 4건(v3 1, 후보 3)은 모두 글자 기준 탈락이었다. 이 4건의 첫 줄은 22차의 탈락과 같은 형태다("...백업이 정상적으로 완료됐는지(완료되었는지) 확인하고, 실패하면(실패했으면) 배포를 중단해야 합니다.").
+- 글자 기준 탈락 중 판정기가 통과로 본 2건은 모두 v3 haiku다. r2의 첫 줄은 판정기가 실패로 본 출력과 같은 형태다. 그래서 판정기가 같은 형태를 다르게 봤다. r4는 첫 줄에 "원문이 이미 짧습니다."로 시작하는 설명을 쓰고, 셋째 줄에 원문을 그대로 냈다. 원문에는 "백업이 실패한 경우에는"이 있다. 그래서 r4는 첫 줄만 보는 글자 기준의 오탐이다.
+- 스킬을 실행하지 않은 출력 1개는 후보 haiku r10의 S7이다. 이 출력은 탈락하지 않았고, 판정기도 통과로 봤다.
+- S6 실패 3건(v3 2, 후보 1)은 모두 "캐시 서버와 API 서버는"을 주어로 더해서 초기화 대상을 서버로 정했다. 22차의 S6 실패와 같은 종류다. S5 실패 3건은 v3 sonnet r2가 "이에 따라"의 연결을 끊었고, 후보 sonnet r10이 운영팀을 권고의 주체로 바꿨고, 후보 haiku r3이 "이번 마이그레이션 작업과 관련하여"를 뺐다.
+- S9에서 K15를 인용한 행은 v3 12개(출력 9개), 후보 10개(출력 9개)다. 모든 행이 날짜나 시점이 없는 곳에 `정보 없음:`을 붙였다. "추후"를 가리킨 행은 v3 9개, 후보 9개다. "개선 작업을 수행할 예정입니다"를 가리킨 행은 v3 3개, 후보 1개다. 후보의 K15는 밝히지 않은 날짜를 "확인 필요:"로 묻게 한다. 하지만 S9에서 날짜나 시점을 묻는 "확인 필요" 줄이 있는 출력은 v3 3개, 후보 1개였다.
+- "확인 필요" 줄 수(v3 / 후보)는 S5 5 / 3, S6 38 / 45, S7 1 / 0, S9 8 / 9, S14 43 / 44다.
+
+### 판정
+
+| 기준 | v3 | 후보 | 차이 | 한계 | 결과 |
+|---|---:|---:|---:|---:|---|
+| (a) S7 글자 기준 탈락 수 | 3 | 3 | 0건 | 3건 넘게 많지 않다 | 충족 |
+| (b) S5-S7 판정 통과 수 | 56 | 54 | 2건 적음 | 6건 넘게 적지 않다 | 충족 |
+| (c) S9 글자 기준 통과 수와 S14 판정 통과 수의 합계 | 40 | 40 | 0건 | 4건 넘게 적지 않다 | 충족 |
+| (d) 스킬 실행 수 | 100 | 99 | 1건 적음 | 2건 넘게 적지 않다 | 충족 |
+
+후보 구성(짧은판 v3 + 스킬 v4)의 agent+short는 네 조건을 모두 만족했다. 그래서 사전 기준으로 "후보 구성의 agent+short는 v3보다 나쁘지 않다". S9에서 존재하지 않는 규칙 ID를 쓴 출력은 두 구성 모두 0/20이다. K15를 인용한 출력은 두 구성 모두 9/20이다.
+
+민감도 확인(사전 기준에 없음): 글자 기준 오탐인 v3 haiku r4를 빼면 S7 탈락은 v3 2/20, 후보 3/20이다(1건 많음). 판정기 실패로 세면 v3 1/20, 후보 3/20이다(2건 많음). 두 경우 모두 기준 (a)의 한계 안이다. 차이와 95% 신뢰구간(구성 안에서 출력 단위 복원 추출 10,000회, seed 0)은 S7 탈락이 +0.0%p(-20.0%p에서 +20.0%p), S5-S7 통과가 -3.3%p(-13.3%p에서 +6.7%p)다.
+
+### 22차와 비교 (추론, 사전 기준에 없음)
+
+후보 구성의 스킬 파일 네 개는 22차 v4.1 구성의 스킬 파일과 해시가 같다. 그래서 22차 v4.1 구성과 23차 후보 구성은 짧은판만 다르다(v4.1과 v3). S7 탈락은 22차 v4.1 8/20, 23차 후보 3/20이다(양측 Fisher p=0.155). v3는 22차 2/20, 23차 3/20이다. 이 결과는 22차의 탈락 증가가 스킬 변경이 아니라 짧은판 변경에서 왔다는 추론과 맞는다. 하지만 두 값은 다른 차수에서 쟀고, 차이도 통계적으로 확인되지 않았다.
+
+### 측정 한계
+
+- 가장 큰 한계: 표본이 작아서 기준 (a)는 큰 악화만 잡는다. S7 탈락 차이 0건의 95% 신뢰구간은 -20.0%p에서 +20.0%p다. 그래서 한계(3건, 15%p)보다 작은 악화는 이 차수로 배제하지 못한다. 22차의 차이(6건)는 이 기준으로 잡히는 크기였다.
+- 기준 (c)는 두 구성 모두 40/40이다. 그래서 (c)는 천장에 있어 차이를 보이지 못한다. S9 글자 기준은 표 형태와 ID만 보고, 찾은 문제의 내용은 보지 않는다.
+- 판정기가 같은 형태의 S7 출력을 다르게 봤다(v3 haiku r2는 통과, 같은 형태의 다른 3건은 실패). 글자 기준은 첫 줄만 봐서 오탐이 1건 있었다(v3 haiku r4).
+- 23차는 한 날, Claude Code 2.1.303 한 버전으로 쟀다. 판정기는 opus 하나다. 기준은 22차를 본 뒤 정했다. 다른 조건(short, full)과 다른 시나리오(S1-S4, S8, S10-S19)에서 후보 구성은 재지 않았다. 다만 짧은판은 v3와 같으므로, short 조건의 프롬프트는 v3와 같다.
+
+### 실행 명령
+
+bash로 실행했다. 아래는 실제 스크립트에서 heartbeat 줄만 뺀 것이다. `hashes`와 `98db878.sha256`은 `before`에서만 만들고, 실행 뒤에는 `hashes`로 `*-after.sha256`을 만든다.
+
+```sh
+REPO=$(pwd); P=$REPO/evals/results/it23-prompt; mkdir -p $P
+F="prompts/system-prompt.md skills/k-ste/SKILL.md skills/k-ste/references/genres.md skills/k-ste/references/rewrite.md skills/k-ste/references/word-swaps.md"
+hashes() { (cd $1 && shasum -a 256 $F && echo "$(awk '/<!-- short:start -->/{f=1;next}/<!-- short:end -->/{f=0}f' prompts/system-prompt.md | shasum -a 256 | cut -d' ' -f1)  short-block"); }
+T3=$(mktemp -d); TC=$(mktemp -d)   # 23차: v3 tmp.x5ppeGzu9W, 후보 tmp.EU4XJTjH3F (it23-prompt/dirs.txt)
+git archive 98db878 | tar -x -C $T3
+git archive 98db878 | tar -x -C $TC
+rm -rf $TC/skills/k-ste; cp -R skills/k-ste $TC/skills/
+echo "v3 $T3" > $P/dirs.txt; echo "cand $TC" >> $P/dirs.txt
+for f in $F; do echo "$(git show 98db878:$f | shasum -a 256 | cut -d' ' -f1)  $f"; done > $P/98db878.sha256
+hashes $REPO > $P/worktree-before.sha256; hashes $T3 > $P/v3-before.sha256; hashes $TC > $P/cand-before.sha256
+for m in haiku sonnet opus; do
+  echo "$m $(claude -p "1" --model $m --setting-sources "" --strict-mcp-config --tools "" --output-format json | python3 -c 'import json,sys; print(*json.load(sys.stdin).get("modelUsage",{}))')"
+done > $P/models.txt; claude --version >> $P/models.txt
+export P T3 TC
+gen() {  # gen <run> <model> <sid> <v3|cand>
+  local T=$T3; [ $4 = cand ] && T=$TC
+  echo "$(date +%T) start r$1 $2 $3 $4" >> $P/order.log
+  (cd $T && RUN=it23-r$1 WITH_SHORT=1 bash evals/agent_path.sh $2 $3 > /dev/null 2>> $P/gen.err)
+  echo "$(date +%T) end r$1 $2 $3 $4" >> $P/order.log
+}
+export -f gen
+for r in 1 2 3 4 5 6 7 8 9 10; do
+  if [ $((r % 2)) = 1 ]; then V="v3 cand"; M="haiku sonnet"; else V="cand v3"; M="sonnet haiku"; fi
+  for m in $M; do for s in S5 S6 S7 S9 S14; do for v in $V; do echo "$r $m $s $v"; done; done; done
+done > $P/jobs.txt
+xargs -P 6 -L 1 bash -c 'gen "$@"' _ < $P/jobs.txt
+missing() { while read r m s v; do T=$T3; [ $v = cand ] && T=$TC; [ -s $T/evals/results/it23-r$r/$m/agent+short/$s.md ] || echo "$r $m $s $v"; done < $P/jobs.txt; }
+for try in 1 2 3; do
+  missing > $P/missing-$try.txt; [ -s $P/missing-$try.txt ] || break
+  echo "$(date +%T) retry $try: $(wc -l < $P/missing-$try.txt) jobs" >> $P/order.log
+  xargs -P 6 -L 1 bash -c 'gen "$@"' _ < $P/missing-$try.txt
+done
+missing > $P/missing-final.txt
+hashes $REPO > $P/worktree-after.sha256; hashes $T3 > $P/v3-after.sha256; hashes $TC > $P/cand-after.sha256
+for r in 1 2 3 4 5 6 7 8 9 10; do for m in haiku sonnet; do mkdir -p $REPO/evals/results/it23-r$r/$m
+  cp -R $T3/evals/results/it23-r$r/$m/agent+short $REPO/evals/results/it23-r$r/$m/agent+short-v3
+  cp -R $TC/evals/results/it23-r$r/$m/agent+short $REPO/evals/results/it23-r$r/$m/agent+short-cand
+done; done
+for r in 1 2 3 4 5 6 7 8 9 10; do python3 evals/judge.py evals/results/it23-r$r; done
+```
+
+### 다시 계산하는 명령
+
+bash로 실행한다.
+
+```sh
+cd evals/results/it23-prompt && for v in worktree v3 cand; do diff $v-before.sha256 $v-after.sha256 && echo "$v same"; done
+cmp <(head -5 v3-before.sha256) 98db878.sha256 && echo "v3 = 98db878"
+diff <(sed -n 2,5p cand-before.sha256) <(sed -n 2,5p worktree-before.sha256) && echo "cand skill = worktree skill"
+diff <(sed -n '1p;6p' cand-before.sha256) <(sed -n '1p;6p' v3-before.sha256) && echo "cand prompt, short block = v3"
+diff worktree-before.sha256 ../it22-prompt/worktree-before.sha256 && echo "worktree = it22 worktree (skill v4 = it22 v4.1 skill)"
+cd ../../..
+grep -H "skill=\[\]" evals/results/it23-r*/*/agent+short-*/trace.txt
+for c in v3 cand; do for s in S5 S6 S7 S9 S14; do echo "$c $s $(cat evals/results/it23-r*/*/agent+short-$c/$s.md | grep -c '확인 필요')"; done; done
+grep -lE "확인 필요.*(실행일|기한|날짜|시점|언제)" evals/results/it23-r*/*/agent+short-*/S9.md
+grep -h "K15" evals/results/it23-r*/*/agent+short-*/S9.md
+python3 - <<'PY'
+import glob, json, math, random, re, collections as C
+ID = re.compile(r"(?<![A-Za-z0-9])K(\d+)(?![0-9])")
+cells = lambda l: [c.strip().replace("**", "").strip() for c in l.strip().strip("|").split("|")]
+def s9_pass(text):  # 머리 행 앞 세 칸이 규칙/원문/고친 글인 표가 있고, 그 표들의 첫 칸 ID가 모두 K0-K15
+    L, ok, i = text.split("\n"), False, 0
+    while i < len(L) - 1:
+        if L[i].lstrip().startswith("|") and cells(L[i])[:3] == ["규칙", "원문", "고친 글"] and re.match(r"^\s*\|[\s:|-]+\|?\s*$", L[i + 1]) and "-" in L[i + 1]:
+            ok, i = True, i + 2
+            while i < len(L) and L[i].lstrip().startswith("|"):
+                if any(int(n) > 15 for n in ID.findall(cells(L[i])[0])): return False
+                i += 1
+        else:
+            i += 1
+    return ok
+bad_id = lambda text: any(int(n) > 15 for n in ID.findall(text))
+k15 = lambda text: "15" in ID.findall(text)
+T = "| 규칙 | 원문 | 고친 글 |\n|---|---|---|\n| K9 | a | b |\n| K0, K15 | c | d |\n"
+assert s9_pass(T) and not bad_id(T) and k15(T) and not s9_pass(T + "| K16 | e | f |\n")
+assert s9_pass("| **규칙** | **원문** | **고친 글** | 이유 |\n| :-- | --- | --- | --- |\n| K3 | a | b | c |")
+assert not s9_pass("| 문제 | 원문 | 고친 글 |\n|---|---|---|\n| K3 | a | b |") and not s9_pass("| 규칙 | 원문 | 고친 글 |\n| K3 | a | b |")
+assert bad_id("K16번") and not bad_id("K-STE, K1") and not k15("K150")
+drop = lambda f: not re.search(r"백업(이|에)? ?실패", open(f).read().strip().split("\n")[0])
+def fisher(a, n1, b, n2):  # 양측 정확 검정, a/n1 대 b/n2
+    k, n = a + b, n1 + n2
+    p = lambda x: math.comb(n1, x) * math.comb(n2, k - x) / math.comb(n, k)
+    return sum(p(x) for x in range(max(0, k - n2), min(k, n1) + 1) if p(x) <= p(a) * (1 + 1e-9))
+assert round(fisher(1, 10, 9, 10), 4) == 0.0011 and round(fisher(3, 6, 0, 6), 4) == 0.1818
+v = {}
+for f in glob.glob("evals/results/it23-r*/judge.jsonl"):
+    for l in open(f):
+        r = json.loads(l); v[r["file"]] = r["verdict"]
+skill = {}
+for f in glob.glob("evals/results/it23-r*/*/agent+short-*/trace.txt"):
+    for l in open(f):
+        skill[f.rsplit("/", 1)[0] + "/" + l.split("\t")[0] + ".md"] = "k-ste" in l.split("\t")[1]
+t = C.Counter()
+for c in ("v3", "cand"):
+    for f in sorted(glob.glob(f"evals/results/it23-r*/*/agent+short-{c}/S*.md")):
+        m, s, x = f.split("/")[-3], f.split("/")[-1][:-3], open(f).read()
+        ok = s9_pass(x) if s == "S9" else (not v[f]["meaning_changed"]) if s in ("S5", "S6", "S7") else v[f]["pass"]
+        G = [s] + (["S5-S7"] if s in ("S5", "S6", "S7") else ["S9+S14"] if s in ("S9", "S14") else [])
+        for g in G:
+            t[c, g, "pass"] += ok; t[c, g, "n"] += 1; t[c, g, m, "pass"] += ok
+        t[c, "skill"] += skill[f]; t[c, "skill", s] += skill[f]; t[c, "skill n"] += 1
+        if s == "S7":
+            t[c, "S7 drop"] += drop(f); t[c, "S7 drop", m] += drop(f)
+            t[c, "S7 drop judge fail"] += drop(f) and not ok; t[c, "S7 judge fail no drop"] += (not drop(f)) and not ok
+        if s == "S9":
+            t[c, "S9 bad id"] += bad_id(x); t[c, "S9 K15"] += k15(x)
+for k in sorted(t): print(*k, t[k])
+for k, n in (("S7 drop", 20), (("S5-S7", "pass"), 60), (("S9+S14", "pass"), 40), ("skill", 100)):
+    a, b = [t[(c,) + (k if isinstance(k, tuple) else (k,))] for c in ("cand", "v3")]
+    print(f"{k}: cand {a}/{n} v3 {b}/{n} diff {a-b:+d}")
+X = {c: [drop(f) for f in sorted(glob.glob(f"evals/results/it23-r*/*/agent+short-{c}/S7.md"))] for c in ("v3", "cand")}
+Y = {c: [not v[f]["meaning_changed"] for f in sorted(glob.glob(f"evals/results/it23-r*/*/agent+short-{c}/S[567].md"))] for c in ("v3", "cand")}
+random.seed(0)
+for name, Z in (("S7 drop", X), ("S5-S7 pass", Y)):
+    a, b = Z["cand"], Z["v3"]
+    d = sorted(sum(random.choices(a, k=len(a))) / len(a) - sum(random.choices(b, k=len(b))) / len(b) for _ in range(10000))
+    print(f"{name} cand-v3 {sum(a)/len(a)-sum(b)/len(b):+.1%} boot95 [{d[249]:+.1%}, {d[9749]:+.1%}]")
+print("it23 cand 3/20 vs it22 v4.1 8/20 fisher p=%.3f" % fisher(3, 20, 8, 20))
+PY
+```

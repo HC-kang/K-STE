@@ -1,0 +1,63 @@
+13:57:38 start r1 haiku v3
+13:57:40 start r1 haiku v4.1
+13:58:01 end r1 haiku
+13:58:01 start r1 sonnet v3
+13:58:03 start r1 sonnet v4.1
+13:58:16 end r1 sonnet
+13:58:16 start r2 sonnet v4.1
+13:58:18 start r2 sonnet v3
+13:58:31 end r2 sonnet
+13:58:31 start r2 haiku v4.1
+13:58:33 start r2 haiku v3
+13:58:53 end r2 haiku
+13:58:53 start r3 haiku v3
+13:58:55 start r3 haiku v4.1
+13:59:15 end r3 haiku
+13:59:15 start r3 sonnet v3
+13:59:17 start r3 sonnet v4.1
+13:59:30 end r3 sonnet
+13:59:30 start r4 sonnet v4.1
+13:59:32 start r4 sonnet v3
+13:59:45 end r4 sonnet
+13:59:45 start r4 haiku v4.1
+13:59:47 start r4 haiku v3
+14:00:09 end r4 haiku
+14:00:09 start r5 haiku v3
+14:00:11 start r5 haiku v4.1
+14:00:27 end r5 haiku
+14:00:27 start r5 sonnet v3
+14:00:29 start r5 sonnet v4.1
+14:00:40 end r5 sonnet
+14:00:40 start r6 sonnet v4.1
+14:00:42 start r6 sonnet v3
+14:00:53 end r6 sonnet
+14:00:53 start r6 haiku v4.1
+14:00:55 start r6 haiku v3
+14:01:18 end r6 haiku
+14:01:18 start r7 haiku v3
+14:01:20 start r7 haiku v4.1
+14:01:38 end r7 haiku
+14:01:38 start r7 sonnet v3
+14:01:40 start r7 sonnet v4.1
+14:01:54 end r7 sonnet
+14:01:54 start r8 sonnet v4.1
+14:01:56 start r8 sonnet v3
+14:02:10 end r8 sonnet
+14:02:10 start r8 haiku v4.1
+14:02:12 start r8 haiku v3
+14:02:31 end r8 haiku
+14:02:31 start r9 haiku v3
+14:02:33 start r9 haiku v4.1
+14:02:52 end r9 haiku
+14:02:52 start r9 sonnet v3
+14:02:54 start r9 sonnet v4.1
+14:03:06 end r9 sonnet
+14:03:06 start r10 sonnet v4.1
+14:03:08 start r10 sonnet v3
+14:03:21 end r10 sonnet
+14:03:21 start r10 haiku v4.1
+14:03:23 start r10 haiku v3
+14:03:43 end r10 haiku
+14:03:43 generated      120 files
+14:03:59 judge start
+14:06:59 judge end

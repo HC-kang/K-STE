@@ -1,0 +1,3470 @@
+short-v3 1494 ffe3fb4c9b6c2183313716848205c857e2d24a95668326f6a488bbfcc44f1818
+full-v3 5462 dbb1b6fbb548888ad6224aacd7c9edd012863907101f394cac49135a99af2fe4
+short-v4 1498 2a6a997ee7fca4490b0536fe1bbddf76663fe11912fc95a07d2441441a6cea96
+full-v4 5611 0f11300d1293890f63d6167dcdf1b787f46aa4bb0a04180dac4ac55dd0b3bc24
+{
+ "verdict": {
+  "short": {
+   "primary_upper_below_0": true,
+   "clear_noninferior_3pp": true,
+   "other_noninferior_3pp": true,
+   "x1_other_gap_upper_below_margin": true,
+   "x8_trap_upper_below_margin": true,
+   "adopt": true
+  },
+  "full": {
+   "primary_upper_below_0": true,
+   "clear_noninferior_3pp": true,
+   "other_noninferior_3pp": true,
+   "x1_other_gap_upper_below_margin": true,
+   "x8_trap_upper_below_margin": true,
+   "adopt": true
+  }
+ },
+ "main": {
+  "memos": 1,
+  "items_generated": 3,
+  "filter": {
+   "V01": {
+    "clear_kept": 4,
+    "clear_valid": 4,
+    "dropped_by": {
+     "grok": [
+      "V01-q0 gap"
+     ],
+     "haiku": [
+      "V01-q0 gap"
+     ]
+    },
+    "e_dup_stripped": 0,
+    "gap_kept": 0,
+    "gap_kept_haiku_not_e": 0,
+    "gap_valid": 1,
+    "generated": 9,
+    "kept": 8,
+    "other_kept": 4,
+    "other_valid": 4,
+    "problems": [],
+    "says_memo": 0,
+    "valid": 9
+   },
+   "V02": {
+    "clear_kept": 3,
+    "clear_valid": 4,
+    "dropped_by": {
+     "grok": [
+      "V02-q3 clear"
+     ],
+     "haiku": [
+      "V02-q0 gap",
+      "V02-q1 gap"
+     ]
+    },
+    "e_dup_stripped": 0,
+    "gap_kept": 2,
+    "gap_kept_haiku_not_e": 2,
+    "gap_valid": 2,
+    "generated": 10,
+    "kept": 9,
+    "other_kept": 4,
+    "other_valid": 4,
+    "problems": [],
+    "says_memo": 0,
+    "valid": 10
+   }
+  },
+  "kept_questions": {
+   "gap": 2,
+   "clear": 3,
+   "other": 4
+  },
+  "kept_gap_contexts": {
+   "step": 1,
+   "decision": 0,
+   "notice": 1,
+   "incident": 0,
+   "reschedule": 0
+  },
+  "kept_clear_markers": {
+   "에": 1,
+   "실시": 0,
+   "시작": 0,
+   "까지": 1,
+   "마감": 1
+  },
+  "ceiling_broken": true,
+  "summary": {
+   "base": {
+    "grok": {
+     "all": {
+      "acc": 0.8889,
+      "misread": 0.1111,
+      "abstain": 0.0,
+      "n": 18
+     },
+     "gap": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 6
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "gap_haiku_e": null
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.7778,
+      "misread": 0.2222,
+      "abstain": 0.0,
+      "n": 18
+     },
+     "gap": {
+      "acc": 0.0,
+      "misread": 1.0,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 6
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "gap_haiku_e": null
+    },
+    "grok_by_writer": {
+     "sonnet": {
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 2
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 3
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "gap_haiku_e": null
+     },
+     "haiku": {
+      "gap": {
+       "acc": 0.0,
+       "misread": 1.0,
+       "abstain": 0.0,
+       "n": 2
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 3
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "gap_haiku_e": null
+     }
+    },
+    "texts": 2,
+    "chars_mean": 1137,
+    "texts_with_kakunin": 0,
+    "kakunin_per_text": 0.0,
+    "header_lines_per_text": 2.5,
+    "bold_only_lines_per_text": 6.0,
+    "system_prompt_chars": 0
+   },
+   "short-v3": {
+    "grok": {
+     "all": {
+      "acc": 0.8333,
+      "misread": 0.1667,
+      "abstain": 0.0,
+      "n": 18
+     },
+     "gap": {
+      "acc": 0.25,
+      "misread": 0.75,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 6
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "gap_haiku_e": null
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.8333,
+      "misread": 0.1667,
+      "abstain": 0.0,
+      "n": 18
+     },
+     "gap": {
+      "acc": 0.25,
+      "misread": 0.75,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 6
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "gap_haiku_e": null
+    },
+    "grok_by_writer": {
+     "sonnet": {
+      "gap": {
+       "acc": 0.5,
+       "misread": 0.5,
+       "abstain": 0.0,
+       "n": 2
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 3
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "gap_haiku_e": null
+     },
+     "haiku": {
+      "gap": {
+       "acc": 0.0,
+       "misread": 1.0,
+       "abstain": 0.0,
+       "n": 2
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 3
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "gap_haiku_e": null
+     }
+    },
+    "texts": 2,
+    "chars_mean": 809,
+    "texts_with_kakunin": 1,
+    "kakunin_per_text": 0.5,
+    "header_lines_per_text": 4.5,
+    "bold_only_lines_per_text": 0.0,
+    "system_prompt_chars": 1494
+   },
+   "short-v4": {
+    "grok": {
+     "all": {
+      "acc": 0.8889,
+      "misread": 0.1111,
+      "abstain": 0.0,
+      "n": 18
+     },
+     "gap": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 6
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "gap_haiku_e": null
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.8889,
+      "misread": 0.1111,
+      "abstain": 0.0,
+      "n": 18
+     },
+     "gap": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 6
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "gap_haiku_e": null
+    },
+    "grok_by_writer": {
+     "sonnet": {
+      "gap": {
+       "acc": 0.5,
+       "misread": 0.5,
+       "abstain": 0.0,
+       "n": 2
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 3
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "gap_haiku_e": null
+     },
+     "haiku": {
+      "gap": {
+       "acc": 0.5,
+       "misread": 0.5,
+       "abstain": 0.0,
+       "n": 2
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 3
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "gap_haiku_e": null
+     }
+    },
+    "texts": 2,
+    "chars_mean": 803,
+    "texts_with_kakunin": 2,
+    "kakunin_per_text": 1.0,
+    "header_lines_per_text": 0.0,
+    "bold_only_lines_per_text": 0.0,
+    "system_prompt_chars": 1498
+   },
+   "full-v3": {
+    "grok": {
+     "all": {
+      "acc": 0.7778,
+      "misread": 0.2222,
+      "abstain": 0.0,
+      "n": 18
+     },
+     "gap": {
+      "acc": 0.0,
+      "misread": 1.0,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 6
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "gap_haiku_e": null
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.7778,
+      "misread": 0.2222,
+      "abstain": 0.0,
+      "n": 18
+     },
+     "gap": {
+      "acc": 0.0,
+      "misread": 1.0,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 6
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "gap_haiku_e": null
+    },
+    "grok_by_writer": {
+     "sonnet": {
+      "gap": {
+       "acc": 0.0,
+       "misread": 1.0,
+       "abstain": 0.0,
+       "n": 2
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 3
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "gap_haiku_e": null
+     },
+     "haiku": {
+      "gap": {
+       "acc": 0.0,
+       "misread": 1.0,
+       "abstain": 0.0,
+       "n": 2
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 3
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "gap_haiku_e": null
+     }
+    },
+    "texts": 2,
+    "chars_mean": 726,
+    "texts_with_kakunin": 1,
+    "kakunin_per_text": 0.5,
+    "header_lines_per_text": 0.0,
+    "bold_only_lines_per_text": 0.0,
+    "system_prompt_chars": 5462
+   },
+   "full-v4": {
+    "grok": {
+     "all": {
+      "acc": 0.9444,
+      "misread": 0.0556,
+      "abstain": 0.0,
+      "n": 18
+     },
+     "gap": {
+      "acc": 0.75,
+      "misread": 0.25,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 6
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "gap_haiku_e": null
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.9444,
+      "misread": 0.0556,
+      "abstain": 0.0,
+      "n": 18
+     },
+     "gap": {
+      "acc": 0.75,
+      "misread": 0.25,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 6
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "gap_haiku_e": null
+    },
+    "grok_by_writer": {
+     "sonnet": {
+      "gap": {
+       "acc": 0.5,
+       "misread": 0.5,
+       "abstain": 0.0,
+       "n": 2
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 3
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "gap_haiku_e": null
+     },
+     "haiku": {
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 2
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 3
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "gap_haiku_e": null
+     }
+    },
+    "texts": 2,
+    "chars_mean": 835,
+    "texts_with_kakunin": 2,
+    "kakunin_per_text": 1.5,
+    "header_lines_per_text": 1.5,
+    "bold_only_lines_per_text": 0.0,
+    "system_prompt_chars": 5611
+   }
+  },
+  "tests": {
+   "grok gap misread short-v4 - short-v3": {
+    "memos": 1,
+    "diff": -0.25,
+    "ci95": [
+     -0.25,
+     -0.25
+    ]
+   },
+   "grok clear acc short-v4 - short-v3": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other acc short-v4 - short-v3": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku gap misread short-v4 - short-v3": {
+    "memos": 1,
+    "diff": -0.25,
+    "ci95": [
+     -0.25,
+     -0.25
+    ]
+   },
+   "haiku clear acc short-v4 - short-v3": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku other acc short-v4 - short-v3": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "judged extra_flags per text short-v4 - short-v3": {
+    "memos": 1,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   },
+   "grok gap misread full-v4 - full-v3": {
+    "memos": 1,
+    "diff": -0.75,
+    "ci95": [
+     -0.75,
+     -0.75
+    ]
+   },
+   "grok clear acc full-v4 - full-v3": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other acc full-v4 - full-v3": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku gap misread full-v4 - full-v3": {
+    "memos": 1,
+    "diff": -0.75,
+    "ci95": [
+     -0.75,
+     -0.75
+    ]
+   },
+   "haiku clear acc full-v4 - full-v3": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku other acc full-v4 - full-v3": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "judged extra_flags per text full-v4 - full-v3": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok gap misread short-v3 - base": {
+    "memos": 1,
+    "diff": 0.25,
+    "ci95": [
+     0.25,
+     0.25
+    ]
+   },
+   "grok clear acc short-v3 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other acc short-v3 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku gap misread short-v3 - base": {
+    "memos": 1,
+    "diff": -0.25,
+    "ci95": [
+     -0.25,
+     -0.25
+    ]
+   },
+   "haiku clear acc short-v3 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku other acc short-v3 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "judged extra_flags per text short-v3 - base": {
+    "memos": 1,
+    "diff": 0.5,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   },
+   "grok gap misread short-v4 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok clear acc short-v4 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other acc short-v4 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku gap misread short-v4 - base": {
+    "memos": 1,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   },
+   "haiku clear acc short-v4 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku other acc short-v4 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "judged extra_flags per text short-v4 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok gap misread full-v3 - base": {
+    "memos": 1,
+    "diff": 0.5,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   },
+   "grok clear acc full-v3 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other acc full-v3 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku gap misread full-v3 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku clear acc full-v3 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku other acc full-v3 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "judged extra_flags per text full-v3 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok gap misread full-v4 - base": {
+    "memos": 1,
+    "diff": -0.25,
+    "ci95": [
+     -0.25,
+     -0.25
+    ]
+   },
+   "grok clear acc full-v4 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other acc full-v4 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku gap misread full-v4 - base": {
+    "memos": 1,
+    "diff": -0.75,
+    "ci95": [
+     -0.75,
+     -0.75
+    ]
+   },
+   "haiku clear acc full-v4 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku other acc full-v4 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "judged extra_flags per text full-v4 - base": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok gap misread short-v4 - full-v4": {
+    "memos": 1,
+    "diff": 0.25,
+    "ci95": [
+     0.25,
+     0.25
+    ]
+   },
+   "grok clear acc short-v4 - full-v4": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other acc short-v4 - full-v4": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku gap misread short-v4 - full-v4": {
+    "memos": 1,
+    "diff": 0.25,
+    "ci95": [
+     0.25,
+     0.25
+    ]
+   },
+   "haiku clear acc short-v4 - full-v4": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku other acc short-v4 - full-v4": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "judged extra_flags per text short-v4 - full-v4": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "gap_filter_sensitivity": {
+   "kept_gap_questions": 2,
+   "haiku_memo_e": 0,
+   "registered_rule_would_drop": 2,
+   "memos_left_under_registered_rule": 0,
+   "grok gap_haiku_e misread short-v4 - short-v3": null,
+   "haiku gap_haiku_e misread short-v4 - short-v3": null,
+   "grok gap_haiku_e misread full-v4 - full-v3": null,
+   "haiku gap_haiku_e misread full-v4 - full-v3": null
+  },
+  "judge_handling": {
+   "base": {
+    "texts": 2,
+    "gap_cells": 4,
+    "clear_cells": 8,
+    "gap_dist": {
+     "invent": 0.25,
+     "keep": 0.75,
+     "flag": 0.0,
+     "omit": 0.0
+    },
+    "clear_dist": {
+     "keep": 1.0,
+     "flip": 0.0,
+     "drop": 0.0,
+     "flag": 0.0,
+     "omit": 0.0
+    },
+    "texts_flagging_a_gap": 0,
+    "texts_flagging_a_clear_date": 0,
+    "extra_flags_total": 0,
+    "extra_flags_per_text": 0.0
+   },
+   "short-v3": {
+    "texts": 2,
+    "gap_cells": 4,
+    "clear_cells": 8,
+    "gap_dist": {
+     "invent": 0.75,
+     "keep": 0.0,
+     "flag": 0.25,
+     "omit": 0.0
+    },
+    "clear_dist": {
+     "keep": 1.0,
+     "flip": 0.0,
+     "drop": 0.0,
+     "flag": 0.0,
+     "omit": 0.0
+    },
+    "texts_flagging_a_gap": 1,
+    "texts_flagging_a_clear_date": 0,
+    "extra_flags_total": 1,
+    "extra_flags_per_text": 0.5
+   },
+   "short-v4": {
+    "texts": 2,
+    "gap_cells": 4,
+    "clear_cells": 8,
+    "gap_dist": {
+     "invent": 0.5,
+     "keep": 0.0,
+     "flag": 0.5,
+     "omit": 0.0
+    },
+    "clear_dist": {
+     "keep": 1.0,
+     "flip": 0.0,
+     "drop": 0.0,
+     "flag": 0.0,
+     "omit": 0.0
+    },
+    "texts_flagging_a_gap": 2,
+    "texts_flagging_a_clear_date": 0,
+    "extra_flags_total": 0,
+    "extra_flags_per_text": 0.0
+   },
+   "full-v3": {
+    "texts": 2,
+    "gap_cells": 4,
+    "clear_cells": 8,
+    "gap_dist": {
+     "invent": 0.75,
+     "keep": 0.0,
+     "flag": 0.25,
+     "omit": 0.0
+    },
+    "clear_dist": {
+     "keep": 1.0,
+     "flip": 0.0,
+     "drop": 0.0,
+     "flag": 0.0,
+     "omit": 0.0
+    },
+    "texts_flagging_a_gap": 1,
+    "texts_flagging_a_clear_date": 0,
+    "extra_flags_total": 0,
+    "extra_flags_per_text": 0.0
+   },
+   "full-v4": {
+    "texts": 2,
+    "gap_cells": 4,
+    "clear_cells": 8,
+    "gap_dist": {
+     "invent": 0.25,
+     "keep": 0.0,
+     "flag": 0.75,
+     "omit": 0.0
+    },
+    "clear_dist": {
+     "keep": 1.0,
+     "flip": 0.0,
+     "drop": 0.0,
+     "flag": 0.0,
+     "omit": 0.0
+    },
+    "texts_flagging_a_gap": 2,
+    "texts_flagging_a_clear_date": 0,
+    "extra_flags_total": 0,
+    "extra_flags_per_text": 0.0
+   }
+  },
+  "judge_agreement": {
+   "memos": [
+    "V02"
+   ],
+   "gap_cells": 20,
+   "gap_category": 1.0,
+   "gap_flag": 1.0,
+   "clear_cells": 40,
+   "clear_category": 0.975,
+   "clear_flag": 1.0,
+   "extra_flags_exact": 1.0,
+   "extra_flags_total": [
+    1,
+    1
+   ]
+  },
+  "exploratory": {
+   "grok_clear_acc_by_marker": {
+    "base": {
+     "에/까지": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "실시/시작/마감": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 2
+     }
+    },
+    "short-v3": {
+     "에/까지": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "실시/시작/마감": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 2
+     }
+    },
+    "short-v4": {
+     "에/까지": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "실시/시작/마감": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 2
+     }
+    },
+    "full-v3": {
+     "에/까지": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "실시/시작/마감": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 2
+     }
+    },
+    "full-v4": {
+     "에/까지": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "실시/시작/마감": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 2
+     }
+    }
+   },
+   "grok_gap_misread_by_context": {
+    "base": {
+     "step": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 2
+     },
+     "not_step": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 2
+     }
+    },
+    "short-v3": {
+     "step": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 2
+     },
+     "not_step": {
+      "acc": 0.0,
+      "misread": 1.0,
+      "abstain": 0.0,
+      "n": 2
+     }
+    },
+    "short-v4": {
+     "step": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 2
+     },
+     "not_step": {
+      "acc": 0.0,
+      "misread": 1.0,
+      "abstain": 0.0,
+      "n": 2
+     }
+    },
+    "full-v3": {
+     "step": {
+      "acc": 0.0,
+      "misread": 1.0,
+      "abstain": 0.0,
+      "n": 2
+     },
+     "not_step": {
+      "acc": 0.0,
+      "misread": 1.0,
+      "abstain": 0.0,
+      "n": 2
+     }
+    },
+    "full-v4": {
+     "step": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 2
+     },
+     "not_step": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 2
+     }
+    }
+   },
+   "grok_gap_by_judged_handling": {
+    "flag": {
+     "acc": 0.8571,
+     "misread": 0.1429,
+     "abstain": 0.0,
+     "n": 7
+    },
+    "invent": {
+     "acc": 0.0,
+     "misread": 1.0,
+     "abstain": 0.0,
+     "n": 10
+    },
+    "keep": {
+     "acc": 0.6667,
+     "misread": 0.3333,
+     "abstain": 0.0,
+     "n": 3
+    }
+   },
+   "grok_wrong_answers": {
+    "base": {
+     "clear": {
+      "E": 0,
+      "other_option": 0
+     },
+     "other": {
+      "E": 0,
+      "other_option": 0
+     }
+    },
+    "short-v3": {
+     "clear": {
+      "E": 0,
+      "other_option": 0
+     },
+     "other": {
+      "E": 0,
+      "other_option": 0
+     }
+    },
+    "short-v4": {
+     "clear": {
+      "E": 0,
+      "other_option": 0
+     },
+     "other": {
+      "E": 0,
+      "other_option": 0
+     }
+    },
+    "full-v3": {
+     "clear": {
+      "E": 0,
+      "other_option": 0
+     },
+     "other": {
+      "E": 0,
+      "other_option": 0
+     }
+    },
+    "full-v4": {
+     "clear": {
+      "E": 0,
+      "other_option": 0
+     },
+     "other": {
+      "E": 0,
+      "other_option": 0
+     }
+    }
+   }
+  }
+ },
+ "regression": {
+  "X7": {
+   "memos": 21,
+   "summary": {
+    "base": {
+     "grok": {
+      "all": {
+       "acc": 0.8129,
+       "misread": 0.1667,
+       "abstain": 0.0204,
+       "n": 294
+      },
+      "gap": {
+       "acc": 0.6111,
+       "misread": 0.3889,
+       "abstain": 0.0,
+       "n": 126
+      },
+      "clear": {
+       "acc": 0.9286,
+       "misread": 0.0,
+       "abstain": 0.0714,
+       "n": 84
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      }
+     },
+     "haiku": {
+      "all": {
+       "acc": 0.602,
+       "misread": 0.398,
+       "abstain": 0.0,
+       "n": 294
+      },
+      "gap": {
+       "acc": 0.0714,
+       "misread": 0.9286,
+       "abstain": 0.0,
+       "n": 126
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "gap": {
+        "acc": 0.5714,
+        "misread": 0.4286,
+        "abstain": 0.0,
+        "n": 63
+       },
+       "clear": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       },
+       "other": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       }
+      },
+      "haiku": {
+       "gap": {
+        "acc": 0.6508,
+        "misread": 0.3492,
+        "abstain": 0.0,
+        "n": 63
+       },
+       "clear": {
+        "acc": 0.8571,
+        "misread": 0.0,
+        "abstain": 0.1429,
+        "n": 42
+       },
+       "other": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       }
+      }
+     },
+     "texts": 42,
+     "chars_mean": 1104,
+     "texts_with_kakunin": 4,
+     "kakunin_per_text": 0.095,
+     "header_lines_per_text": 4.333,
+     "bold_only_lines_per_text": 3.167
+    },
+    "short-v3": {
+     "grok": {
+      "all": {
+       "acc": 0.6327,
+       "misread": 0.3639,
+       "abstain": 0.0034,
+       "n": 294
+      },
+      "gap": {
+       "acc": 0.1508,
+       "misread": 0.8492,
+       "abstain": 0.0,
+       "n": 126
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      },
+      "other": {
+       "acc": 0.9881,
+       "misread": 0.0,
+       "abstain": 0.0119,
+       "n": 84
+      }
+     },
+     "haiku": {
+      "all": {
+       "acc": 0.602,
+       "misread": 0.398,
+       "abstain": 0.0,
+       "n": 294
+      },
+      "gap": {
+       "acc": 0.0714,
+       "misread": 0.9286,
+       "abstain": 0.0,
+       "n": 126
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "gap": {
+        "acc": 0.1905,
+        "misread": 0.8095,
+        "abstain": 0.0,
+        "n": 63
+       },
+       "clear": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       },
+       "other": {
+        "acc": 0.9762,
+        "misread": 0.0,
+        "abstain": 0.0238,
+        "n": 42
+       }
+      },
+      "haiku": {
+       "gap": {
+        "acc": 0.1111,
+        "misread": 0.8889,
+        "abstain": 0.0,
+        "n": 63
+       },
+       "clear": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       },
+       "other": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       }
+      }
+     },
+     "texts": 42,
+     "chars_mean": 759,
+     "texts_with_kakunin": 20,
+     "kakunin_per_text": 0.619,
+     "header_lines_per_text": 2.857,
+     "bold_only_lines_per_text": 0.429
+    },
+    "short+k15": {
+     "grok": {
+      "all": {
+       "acc": 0.7517,
+       "misread": 0.2449,
+       "abstain": 0.0034,
+       "n": 294
+      },
+      "gap": {
+       "acc": 0.4286,
+       "misread": 0.5714,
+       "abstain": 0.0,
+       "n": 126
+      },
+      "clear": {
+       "acc": 0.9881,
+       "misread": 0.0,
+       "abstain": 0.0119,
+       "n": 84
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      }
+     },
+     "haiku": {
+      "all": {
+       "acc": 0.7381,
+       "misread": 0.2619,
+       "abstain": 0.0,
+       "n": 294
+      },
+      "gap": {
+       "acc": 0.3889,
+       "misread": 0.6111,
+       "abstain": 0.0,
+       "n": 126
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "gap": {
+        "acc": 0.3016,
+        "misread": 0.6984,
+        "abstain": 0.0,
+        "n": 63
+       },
+       "clear": {
+        "acc": 0.9762,
+        "misread": 0.0,
+        "abstain": 0.0238,
+        "n": 42
+       },
+       "other": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       }
+      },
+      "haiku": {
+       "gap": {
+        "acc": 0.5556,
+        "misread": 0.4444,
+        "abstain": 0.0,
+        "n": 63
+       },
+       "clear": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       },
+       "other": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       }
+      }
+     },
+     "texts": 42,
+     "chars_mean": 787,
+     "texts_with_kakunin": 28,
+     "kakunin_per_text": 1.286,
+     "header_lines_per_text": 2.81,
+     "bold_only_lines_per_text": 0.5
+    },
+    "short+k15u": {
+     "grok": {
+      "all": {
+       "acc": 0.9898,
+       "misread": 0.0,
+       "abstain": 0.0102,
+       "n": 294
+      },
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 126
+      },
+      "clear": {
+       "acc": 0.9762,
+       "misread": 0.0,
+       "abstain": 0.0238,
+       "n": 84
+      },
+      "other": {
+       "acc": 0.9881,
+       "misread": 0.0,
+       "abstain": 0.0119,
+       "n": 84
+      }
+     },
+     "haiku": {
+      "all": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 294
+      },
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 126
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "gap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 63
+       },
+       "clear": {
+        "acc": 0.9762,
+        "misread": 0.0,
+        "abstain": 0.0238,
+        "n": 42
+       },
+       "other": {
+        "acc": 0.9762,
+        "misread": 0.0,
+        "abstain": 0.0238,
+        "n": 42
+       }
+      },
+      "haiku": {
+       "gap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 63
+       },
+       "clear": {
+        "acc": 0.9762,
+        "misread": 0.0,
+        "abstain": 0.0238,
+        "n": 42
+       },
+       "other": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       }
+      }
+     },
+     "texts": 42,
+     "chars_mean": 827,
+     "texts_with_kakunin": 42,
+     "kakunin_per_text": 1.619,
+     "header_lines_per_text": 2.595,
+     "bold_only_lines_per_text": 0.238
+    },
+    "full-v3": {
+     "grok": {
+      "all": {
+       "acc": 0.7279,
+       "misread": 0.2721,
+       "abstain": 0.0,
+       "n": 294
+      },
+      "gap": {
+       "acc": 0.3651,
+       "misread": 0.6349,
+       "abstain": 0.0,
+       "n": 126
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      }
+     },
+     "haiku": {
+      "all": {
+       "acc": 0.7007,
+       "misread": 0.2993,
+       "abstain": 0.0,
+       "n": 294
+      },
+      "gap": {
+       "acc": 0.3016,
+       "misread": 0.6984,
+       "abstain": 0.0,
+       "n": 126
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "gap": {
+        "acc": 0.0952,
+        "misread": 0.9048,
+        "abstain": 0.0,
+        "n": 63
+       },
+       "clear": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       },
+       "other": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       }
+      },
+      "haiku": {
+       "gap": {
+        "acc": 0.6349,
+        "misread": 0.3651,
+        "abstain": 0.0,
+        "n": 63
+       },
+       "clear": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       },
+       "other": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       }
+      }
+     },
+     "texts": 42,
+     "chars_mean": 761,
+     "texts_with_kakunin": 19,
+     "kakunin_per_text": 0.667,
+     "header_lines_per_text": 2.19,
+     "bold_only_lines_per_text": 0.071
+    },
+    "full+u": {
+     "grok": {
+      "all": {
+       "acc": 0.9286,
+       "misread": 0.0714,
+       "abstain": 0.0,
+       "n": 294
+      },
+      "gap": {
+       "acc": 0.8333,
+       "misread": 0.1667,
+       "abstain": 0.0,
+       "n": 126
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      }
+     },
+     "haiku": {
+      "all": {
+       "acc": 0.9252,
+       "misread": 0.0748,
+       "abstain": 0.0,
+       "n": 294
+      },
+      "gap": {
+       "acc": 0.8254,
+       "misread": 0.1746,
+       "abstain": 0.0,
+       "n": 126
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 84
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "gap": {
+        "acc": 0.8571,
+        "misread": 0.1429,
+        "abstain": 0.0,
+        "n": 63
+       },
+       "clear": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       },
+       "other": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       }
+      },
+      "haiku": {
+       "gap": {
+        "acc": 0.8095,
+        "misread": 0.1905,
+        "abstain": 0.0,
+        "n": 63
+       },
+       "clear": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       },
+       "other": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 42
+       }
+      }
+     },
+     "texts": 42,
+     "chars_mean": 797,
+     "texts_with_kakunin": 38,
+     "kakunin_per_text": 1.476,
+     "header_lines_per_text": 2.333,
+     "bold_only_lines_per_text": 0.143
+    },
+    "short-v4": {
+     "grok": {
+      "all": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 14
+      },
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     },
+     "haiku": {
+      "all": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 14
+      },
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "gap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 3
+       },
+       "clear": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 2
+       },
+       "other": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 2
+       }
+      },
+      "haiku": {
+       "gap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 3
+       },
+       "clear": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 2
+       },
+       "other": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 2
+       }
+      }
+     },
+     "texts": 2,
+     "chars_mean": 726,
+     "texts_with_kakunin": 2,
+     "kakunin_per_text": 2.0,
+     "header_lines_per_text": 0.0,
+     "bold_only_lines_per_text": 0.0
+    },
+    "full-v4": {
+     "grok": {
+      "all": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 14
+      },
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     },
+     "haiku": {
+      "all": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 14
+      },
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "gap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 3
+       },
+       "clear": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 2
+       },
+       "other": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 2
+       }
+      },
+      "haiku": {
+       "gap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 3
+       },
+       "clear": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 2
+       },
+       "other": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 2
+       }
+      }
+     },
+     "texts": 2,
+     "chars_mean": 643,
+     "texts_with_kakunin": 2,
+     "kakunin_per_text": 1.0,
+     "header_lines_per_text": 0.0,
+     "bold_only_lines_per_text": 0.0
+    }
+   },
+   "tests": {
+    "grok gap misread short-v4 - short-v3": {
+     "memos": 1,
+     "diff": -1.0,
+     "ci95": [
+      -1.0,
+      -1.0
+     ]
+    },
+    "haiku gap misread short-v4 - short-v3": {
+     "memos": 1,
+     "diff": -1.0,
+     "ci95": [
+      -1.0,
+      -1.0
+     ]
+    },
+    "grok clear acc short-v4 - short-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "grok other acc short-v4 - short-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "grok gap misread full-v4 - full-v3": {
+     "memos": 1,
+     "diff": -0.5,
+     "ci95": [
+      -0.5,
+      -0.5
+     ]
+    },
+    "haiku gap misread full-v4 - full-v3": {
+     "memos": 1,
+     "diff": -0.5,
+     "ci95": [
+      -0.5,
+      -0.5
+     ]
+    },
+    "grok clear acc full-v4 - full-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "grok other acc full-v4 - full-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "grok gap misread short-v4 - short+k15u": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "haiku gap misread short-v4 - short+k15u": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "grok clear acc short-v4 - short+k15u": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "grok other acc short-v4 - short+k15u": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "grok gap misread full-v4 - full+u": {
+     "memos": 1,
+     "diff": -0.5,
+     "ci95": [
+      -0.5,
+      -0.5
+     ]
+    },
+    "haiku gap misread full-v4 - full+u": {
+     "memos": 1,
+     "diff": -0.5,
+     "ci95": [
+      -0.5,
+      -0.5
+     ]
+    },
+    "grok clear acc full-v4 - full+u": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "grok other acc full-v4 - full+u": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "judge_handling": {
+    "short-v3": {
+     "texts": 2,
+     "gap_cells": 6,
+     "clear_cells": 4,
+     "gap_dist": {
+      "invent": 0.5,
+      "keep": 0.5,
+      "flag": 0.0,
+      "omit": 0.0
+     },
+     "clear_dist": {
+      "keep": 1.0,
+      "flip": 0.0,
+      "drop": 0.0,
+      "flag": 0.0,
+      "omit": 0.0
+     },
+     "texts_flagging_a_gap": 0,
+     "texts_flagging_a_clear_date": 0,
+     "extra_flags_total": 0,
+     "extra_flags_per_text": 0.0
+    },
+    "short+k15u": {
+     "texts": 2,
+     "gap_cells": 6,
+     "clear_cells": 4,
+     "gap_dist": {
+      "invent": 0.0,
+      "keep": 0.0,
+      "flag": 1.0,
+      "omit": 0.0
+     },
+     "clear_dist": {
+      "keep": 1.0,
+      "flip": 0.0,
+      "drop": 0.0,
+      "flag": 0.0,
+      "omit": 0.0
+     },
+     "texts_flagging_a_gap": 2,
+     "texts_flagging_a_clear_date": 0,
+     "extra_flags_total": 0,
+     "extra_flags_per_text": 0.0
+    },
+    "short-v4": {
+     "texts": 2,
+     "gap_cells": 6,
+     "clear_cells": 4,
+     "gap_dist": {
+      "invent": 0.0,
+      "keep": 0.0,
+      "flag": 1.0,
+      "omit": 0.0
+     },
+     "clear_dist": {
+      "keep": 1.0,
+      "flip": 0.0,
+      "drop": 0.0,
+      "flag": 0.0,
+      "omit": 0.0
+     },
+     "texts_flagging_a_gap": 2,
+     "texts_flagging_a_clear_date": 0,
+     "extra_flags_total": 2,
+     "extra_flags_per_text": 1.0
+    },
+    "full-v3": {
+     "texts": 2,
+     "gap_cells": 6,
+     "clear_cells": 4,
+     "gap_dist": {
+      "invent": 0.5,
+      "keep": 0.0,
+      "flag": 0.5,
+      "omit": 0.0
+     },
+     "clear_dist": {
+      "keep": 1.0,
+      "flip": 0.0,
+      "drop": 0.0,
+      "flag": 0.0,
+      "omit": 0.0
+     },
+     "texts_flagging_a_gap": 1,
+     "texts_flagging_a_clear_date": 0,
+     "extra_flags_total": 0,
+     "extra_flags_per_text": 0.0
+    },
+    "full+u": {
+     "texts": 2,
+     "gap_cells": 6,
+     "clear_cells": 4,
+     "gap_dist": {
+      "invent": 0.5,
+      "keep": 0.0,
+      "flag": 0.5,
+      "omit": 0.0
+     },
+     "clear_dist": {
+      "keep": 1.0,
+      "flip": 0.0,
+      "drop": 0.0,
+      "flag": 0.0,
+      "omit": 0.0
+     },
+     "texts_flagging_a_gap": 1,
+     "texts_flagging_a_clear_date": 0,
+     "extra_flags_total": 0,
+     "extra_flags_per_text": 0.0
+    },
+    "full-v4": {
+     "texts": 2,
+     "gap_cells": 6,
+     "clear_cells": 4,
+     "gap_dist": {
+      "invent": 0.0,
+      "keep": 0.0,
+      "flag": 1.0,
+      "omit": 0.0
+     },
+     "clear_dist": {
+      "keep": 1.0,
+      "flip": 0.0,
+      "drop": 0.0,
+      "flag": 0.0,
+      "omit": 0.0
+     },
+     "texts_flagging_a_gap": 2,
+     "texts_flagging_a_clear_date": 0,
+     "extra_flags_total": 0,
+     "extra_flags_per_text": 0.0
+    }
+   }
+  },
+  "X1": {
+   "memos": 24,
+   "summary": {
+    "base": {
+     "grok": {
+      "other_gap": {
+       "acc": 0.69,
+       "misread": 0.17,
+       "abstain": 0.14,
+       "n": 100
+      },
+      "deadline": {
+       "acc": 0.3438,
+       "misread": 0.6562,
+       "abstain": 0.0,
+       "n": 32
+      },
+      "nongap": {
+       "acc": 0.9894,
+       "misread": 0.0,
+       "abstain": 0.0106,
+       "n": 188
+      }
+     },
+     "haiku": {
+      "other_gap": {
+       "acc": 0.67,
+       "misread": 0.32,
+       "abstain": 0.01,
+       "n": 100
+      },
+      "deadline": {
+       "acc": 0.3125,
+       "misread": 0.6875,
+       "abstain": 0.0,
+       "n": 32
+      },
+      "nongap": {
+       "acc": 0.9947,
+       "misread": 0.0,
+       "abstain": 0.0053,
+       "n": 188
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "other_gap": {
+        "acc": 0.74,
+        "misread": 0.14,
+        "abstain": 0.12,
+        "n": 50
+       },
+       "deadline": {
+        "acc": 0.375,
+        "misread": 0.625,
+        "abstain": 0.0,
+        "n": 16
+       },
+       "nongap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 94
+       }
+      },
+      "haiku": {
+       "other_gap": {
+        "acc": 0.64,
+        "misread": 0.2,
+        "abstain": 0.16,
+        "n": 50
+       },
+       "deadline": {
+        "acc": 0.3125,
+        "misread": 0.6875,
+        "abstain": 0.0,
+        "n": 16
+       },
+       "nongap": {
+        "acc": 0.9787,
+        "misread": 0.0,
+        "abstain": 0.0213,
+        "n": 94
+       }
+      }
+     },
+     "texts": 48,
+     "chars_mean": 1038,
+     "texts_with_kakunin": 11,
+     "kakunin_per_text": 0.375,
+     "header_lines_per_text": 3.896,
+     "bold_only_lines_per_text": 4.042
+    },
+    "short-v3": {
+     "grok": {
+      "other_gap": {
+       "acc": 0.87,
+       "misread": 0.05,
+       "abstain": 0.08,
+       "n": 100
+      },
+      "deadline": {
+       "acc": 0.5,
+       "misread": 0.5,
+       "abstain": 0.0,
+       "n": 32
+      },
+      "nongap": {
+       "acc": 0.9947,
+       "misread": 0.0,
+       "abstain": 0.0053,
+       "n": 188
+      }
+     },
+     "haiku": {
+      "other_gap": {
+       "acc": 0.88,
+       "misread": 0.12,
+       "abstain": 0.0,
+       "n": 100
+      },
+      "deadline": {
+       "acc": 0.5,
+       "misread": 0.5,
+       "abstain": 0.0,
+       "n": 32
+      },
+      "nongap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 188
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "other_gap": {
+        "acc": 0.88,
+        "misread": 0.02,
+        "abstain": 0.1,
+        "n": 50
+       },
+       "deadline": {
+        "acc": 0.5625,
+        "misread": 0.4375,
+        "abstain": 0.0,
+        "n": 16
+       },
+       "nongap": {
+        "acc": 0.9894,
+        "misread": 0.0,
+        "abstain": 0.0106,
+        "n": 94
+       }
+      },
+      "haiku": {
+       "other_gap": {
+        "acc": 0.86,
+        "misread": 0.08,
+        "abstain": 0.06,
+        "n": 50
+       },
+       "deadline": {
+        "acc": 0.4375,
+        "misread": 0.5625,
+        "abstain": 0.0,
+        "n": 16
+       },
+       "nongap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 94
+       }
+      }
+     },
+     "texts": 48,
+     "chars_mean": 744,
+     "texts_with_kakunin": 45,
+     "kakunin_per_text": 2.229,
+     "header_lines_per_text": 2.979,
+     "bold_only_lines_per_text": 0.167
+    },
+    "full-v3": {
+     "grok": {
+      "other_gap": {
+       "acc": 0.79,
+       "misread": 0.1,
+       "abstain": 0.11,
+       "n": 100
+      },
+      "deadline": {
+       "acc": 0.6562,
+       "misread": 0.3438,
+       "abstain": 0.0,
+       "n": 32
+      },
+      "nongap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 188
+      }
+     },
+     "haiku": {
+      "other_gap": {
+       "acc": 0.85,
+       "misread": 0.14,
+       "abstain": 0.01,
+       "n": 100
+      },
+      "deadline": {
+       "acc": 0.6562,
+       "misread": 0.3438,
+       "abstain": 0.0,
+       "n": 32
+      },
+      "nongap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 188
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "other_gap": {
+        "acc": 0.84,
+        "misread": 0.08,
+        "abstain": 0.08,
+        "n": 50
+       },
+       "deadline": {
+        "acc": 0.6875,
+        "misread": 0.3125,
+        "abstain": 0.0,
+        "n": 16
+       },
+       "nongap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 94
+       }
+      },
+      "haiku": {
+       "other_gap": {
+        "acc": 0.74,
+        "misread": 0.12,
+        "abstain": 0.14,
+        "n": 50
+       },
+       "deadline": {
+        "acc": 0.625,
+        "misread": 0.375,
+        "abstain": 0.0,
+        "n": 16
+       },
+       "nongap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 94
+       }
+      }
+     },
+     "texts": 48,
+     "chars_mean": 704,
+     "texts_with_kakunin": 40,
+     "kakunin_per_text": 1.375,
+     "header_lines_per_text": 2.438,
+     "bold_only_lines_per_text": 0.167
+    },
+    "short-v4": {
+     "grok": {
+      "other_gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "deadline": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 2
+      },
+      "nongap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 8
+      }
+     },
+     "haiku": {
+      "other_gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "deadline": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 2
+      },
+      "nongap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 8
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "other_gap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 2
+       },
+       "deadline": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 1
+       },
+       "nongap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 4
+       }
+      },
+      "haiku": {
+       "other_gap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 2
+       },
+       "deadline": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 1
+       },
+       "nongap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 4
+       }
+      }
+     },
+     "texts": 2,
+     "chars_mean": 624,
+     "texts_with_kakunin": 2,
+     "kakunin_per_text": 1.0,
+     "header_lines_per_text": 0.0,
+     "bold_only_lines_per_text": 0.0
+    },
+    "full-v4": {
+     "grok": {
+      "other_gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "deadline": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 2
+      },
+      "nongap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 8
+      }
+     },
+     "haiku": {
+      "other_gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "deadline": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 2
+      },
+      "nongap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 8
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "other_gap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 2
+       },
+       "deadline": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 1
+       },
+       "nongap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 4
+       }
+      },
+      "haiku": {
+       "other_gap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 2
+       },
+       "deadline": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 1
+       },
+       "nongap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 4
+       }
+      }
+     },
+     "texts": 2,
+     "chars_mean": 555,
+     "texts_with_kakunin": 2,
+     "kakunin_per_text": 1.0,
+     "header_lines_per_text": 0.0,
+     "bold_only_lines_per_text": 0.0
+    }
+   },
+   "tests": {
+    "grok other_gap misread short-v4 - short-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "haiku other_gap misread short-v4 - short-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "grok deadline misread short-v4 - short-v3": {
+     "memos": 1,
+     "diff": -0.5,
+     "ci95": [
+      -0.5,
+      -0.5
+     ]
+    },
+    "grok nongap acc short-v4 - short-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "grok other_gap misread full-v4 - full-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "haiku other_gap misread full-v4 - full-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "grok deadline misread full-v4 - full-v3": {
+     "memos": 1,
+     "diff": -0.5,
+     "ci95": [
+      -0.5,
+      -0.5
+     ]
+    },
+    "grok nongap acc full-v4 - full-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "X8": {
+   "memos": 24,
+   "summary": {
+    "base": {
+     "grok": {
+      "trap": {
+       "acc": 0.7917,
+       "misread": 0.1583,
+       "abstain": 0.05,
+       "n": 120
+      },
+      "nontrap": {
+       "acc": 0.9789,
+       "misread": 0.0,
+       "abstain": 0.0211,
+       "n": 142
+      },
+      "alias": {
+       "acc": 0.6667,
+       "misread": 0.0,
+       "abstain": 0.3333,
+       "n": 12
+      }
+     },
+     "haiku": {
+      "trap": {
+       "acc": 0.7417,
+       "misread": 0.2417,
+       "abstain": 0.0167,
+       "n": 120
+      },
+      "nontrap": {
+       "acc": 0.9859,
+       "misread": 0.0,
+       "abstain": 0.0141,
+       "n": 142
+      },
+      "alias": {
+       "acc": 0.9167,
+       "misread": 0.0,
+       "abstain": 0.0833,
+       "n": 12
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "trap": {
+        "acc": 0.7833,
+        "misread": 0.1667,
+        "abstain": 0.05,
+        "n": 60
+       },
+       "nontrap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 71
+       },
+       "alias": {
+        "acc": 0.6667,
+        "misread": 0.0,
+        "abstain": 0.3333,
+        "n": 6
+       }
+      },
+      "haiku": {
+       "trap": {
+        "acc": 0.8,
+        "misread": 0.15,
+        "abstain": 0.05,
+        "n": 60
+       },
+       "nontrap": {
+        "acc": 0.9577,
+        "misread": 0.0,
+        "abstain": 0.0423,
+        "n": 71
+       },
+       "alias": {
+        "acc": 0.6667,
+        "misread": 0.0,
+        "abstain": 0.3333,
+        "n": 6
+       }
+      }
+     },
+     "texts": 48,
+     "chars_mean": 1325,
+     "texts_with_kakunin": 15,
+     "kakunin_per_text": 0.396,
+     "header_lines_per_text": 4.646,
+     "bold_only_lines_per_text": 3.875
+    },
+    "short-v3": {
+     "grok": {
+      "trap": {
+       "acc": 0.8333,
+       "misread": 0.0917,
+       "abstain": 0.075,
+       "n": 120
+      },
+      "nontrap": {
+       "acc": 0.9859,
+       "misread": 0.0,
+       "abstain": 0.0141,
+       "n": 142
+      },
+      "alias": {
+       "acc": 0.3333,
+       "misread": 0.0,
+       "abstain": 0.6667,
+       "n": 12
+      }
+     },
+     "haiku": {
+      "trap": {
+       "acc": 0.8417,
+       "misread": 0.1,
+       "abstain": 0.0583,
+       "n": 120
+      },
+      "nontrap": {
+       "acc": 0.9859,
+       "misread": 0.0,
+       "abstain": 0.0141,
+       "n": 142
+      },
+      "alias": {
+       "acc": 0.5,
+       "misread": 0.0,
+       "abstain": 0.5,
+       "n": 12
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "trap": {
+        "acc": 0.8833,
+        "misread": 0.05,
+        "abstain": 0.0667,
+        "n": 60
+       },
+       "nontrap": {
+        "acc": 0.9859,
+        "misread": 0.0,
+        "abstain": 0.0141,
+        "n": 71
+       },
+       "alias": {
+        "acc": 0.3333,
+        "misread": 0.0,
+        "abstain": 0.6667,
+        "n": 6
+       }
+      },
+      "haiku": {
+       "trap": {
+        "acc": 0.7833,
+        "misread": 0.1333,
+        "abstain": 0.0833,
+        "n": 60
+       },
+       "nontrap": {
+        "acc": 0.9859,
+        "misread": 0.0,
+        "abstain": 0.0141,
+        "n": 71
+       },
+       "alias": {
+        "acc": 0.3333,
+        "misread": 0.0,
+        "abstain": 0.6667,
+        "n": 6
+       }
+      }
+     },
+     "texts": 48,
+     "chars_mean": 1093,
+     "texts_with_kakunin": 48,
+     "kakunin_per_text": 3.5,
+     "header_lines_per_text": 4.375,
+     "bold_only_lines_per_text": 0.271
+    },
+    "full-v3": {
+     "grok": {
+      "trap": {
+       "acc": 0.8667,
+       "misread": 0.0667,
+       "abstain": 0.0667,
+       "n": 120
+      },
+      "nontrap": {
+       "acc": 0.9859,
+       "misread": 0.0,
+       "abstain": 0.0141,
+       "n": 142
+      },
+      "alias": {
+       "acc": 0.4167,
+       "misread": 0.0,
+       "abstain": 0.5833,
+       "n": 12
+      }
+     },
+     "haiku": {
+      "trap": {
+       "acc": 0.8083,
+       "misread": 0.1333,
+       "abstain": 0.0583,
+       "n": 120
+      },
+      "nontrap": {
+       "acc": 0.9859,
+       "misread": 0.0,
+       "abstain": 0.0141,
+       "n": 142
+      },
+      "alias": {
+       "acc": 0.5833,
+       "misread": 0.0,
+       "abstain": 0.4167,
+       "n": 12
+      }
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "trap": {
+        "acc": 0.9167,
+        "misread": 0.0167,
+        "abstain": 0.0667,
+        "n": 60
+       },
+       "nontrap": {
+        "acc": 0.9859,
+        "misread": 0.0,
+        "abstain": 0.0141,
+        "n": 71
+       },
+       "alias": {
+        "acc": 0.5,
+        "misread": 0.0,
+        "abstain": 0.5,
+        "n": 6
+       }
+      },
+      "haiku": {
+       "trap": {
+        "acc": 0.8167,
+        "misread": 0.1167,
+        "abstain": 0.0667,
+        "n": 60
+       },
+       "nontrap": {
+        "acc": 0.9859,
+        "misread": 0.0,
+        "abstain": 0.0141,
+        "n": 71
+       },
+       "alias": {
+        "acc": 0.3333,
+        "misread": 0.0,
+        "abstain": 0.6667,
+        "n": 6
+       }
+      }
+     },
+     "texts": 48,
+     "chars_mean": 1046,
+     "texts_with_kakunin": 48,
+     "kakunin_per_text": 2.667,
+     "header_lines_per_text": 3.0,
+     "bold_only_lines_per_text": 0.292
+    },
+    "short-v4": {
+     "grok": {
+      "trap": {
+       "acc": 0.6667,
+       "misread": 0.1667,
+       "abstain": 0.1667,
+       "n": 6
+      },
+      "nontrap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "alias": null
+     },
+     "haiku": {
+      "trap": {
+       "acc": 0.8333,
+       "misread": 0.1667,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "nontrap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "alias": null
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "trap": {
+        "acc": 0.6667,
+        "misread": 0.0,
+        "abstain": 0.3333,
+        "n": 3
+       },
+       "nontrap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 3
+       },
+       "alias": null
+      },
+      "haiku": {
+       "trap": {
+        "acc": 0.6667,
+        "misread": 0.3333,
+        "abstain": 0.0,
+        "n": 3
+       },
+       "nontrap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 3
+       },
+       "alias": null
+      }
+     },
+     "texts": 2,
+     "chars_mean": 886,
+     "texts_with_kakunin": 2,
+     "kakunin_per_text": 5.0,
+     "header_lines_per_text": 0.0,
+     "bold_only_lines_per_text": 2.5
+    },
+    "full-v4": {
+     "grok": {
+      "trap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "nontrap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "alias": null
+     },
+     "haiku": {
+      "trap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "nontrap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "alias": null
+     },
+     "grok_by_writer": {
+      "sonnet": {
+       "trap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 3
+       },
+       "nontrap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 3
+       },
+       "alias": null
+      },
+      "haiku": {
+       "trap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 3
+       },
+       "nontrap": {
+        "acc": 1.0,
+        "misread": 0.0,
+        "abstain": 0.0,
+        "n": 3
+       },
+       "alias": null
+      }
+     },
+     "texts": 2,
+     "chars_mean": 925,
+     "texts_with_kakunin": 2,
+     "kakunin_per_text": 2.5,
+     "header_lines_per_text": 0.0,
+     "bold_only_lines_per_text": 0.0
+    }
+   },
+   "tests": {
+    "grok trap misread short-v4 - short-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "haiku trap misread short-v4 - short-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "grok nontrap acc short-v4 - short-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "grok alias acc short-v4 - short-v3": null,
+    "grok trap misread full-v4 - full-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "haiku trap misread full-v4 - full-v3": {
+     "memos": 1,
+     "diff": -0.1667,
+     "ci95": [
+      -0.1667,
+      -0.1667
+     ]
+    },
+    "grok nontrap acc full-v4 - full-v3": {
+     "memos": 1,
+     "diff": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ]
+    },
+    "grok alias acc full-v4 - full-v3": null
+   }
+  }
+ },
+ "prompt_sha256": {
+  "short-v3": "ffe3fb4c9b6c2183313716848205c857e2d24a95668326f6a488bbfcc44f1818",
+  "full-v3": "dbb1b6fbb548888ad6224aacd7c9edd012863907101f394cac49135a99af2fe4",
+  "short-v4": "2a6a997ee7fca4490b0536fe1bbddf76663fe11912fc95a07d2441441a6cea96",
+  "full-v4": "0f11300d1293890f63d6167dcdf1b787f46aa4bb0a04180dac4ac55dd0b3bc24"
+ },
+ "v3_commit": "98db878",
+ "margins": {
+  "X1": 0.08,
+  "X8": 0.1
+ }
+}

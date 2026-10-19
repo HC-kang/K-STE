@@ -1,0 +1,54 @@
+{
+ "full-v4/sonnet": {
+  "gaps": [
+   "flag",
+   "flag"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "short-v3/sonnet": {
+  "gaps": [
+   "keep",
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "full-v3/haiku": {
+  "gaps": [
+   "invent",
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 1
+ },
+ "full-v3/sonnet": {
+  "gaps": [
+   "flag",
+   "invent"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 1
+ }
+}

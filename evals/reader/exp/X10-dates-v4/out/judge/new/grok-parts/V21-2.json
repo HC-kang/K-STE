@@ -1,0 +1,28 @@
+{
+ "short-v4/haiku": {
+  "gaps": [
+   "flag",
+   "flag"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "drop"
+  ],
+  "extra_flags": 1
+ },
+ "full-v4/haiku": {
+  "gaps": [
+   "flag",
+   "flag"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "flag"
+  ],
+  "extra_flags": 1
+ }
+}

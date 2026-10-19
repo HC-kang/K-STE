@@ -1,0 +1,96 @@
+{
+ "lower_bound_after_k_extra_errors": {
+  "memos=24 answers_per_memo=8": [
+   0.0,
+   -0.0156,
+   -0.026,
+   -0.0312,
+   -0.0417,
+   -0.0469
+  ],
+  "memos=21 answers_per_memo=8": [
+   0.0,
+   -0.0179,
+   -0.0298,
+   -0.0357,
+   -0.0476,
+   -0.0536
+  ],
+  "memos=18 answers_per_memo=8": [
+   0.0,
+   -0.0208,
+   -0.0347,
+   -0.0417,
+   -0.0556,
+   -0.0625
+  ]
+ },
+ "pass_rate_noninferiority": {
+  "memos=24 answers_per_memo=8 error=0.0": {
+   "v4_extra=0.0": 1.0,
+   "v4_extra=0.01": 0.64,
+   "v4_extra=0.02": 0.265
+  },
+  "memos=24 answers_per_memo=8 error=0.01": {
+   "v4_extra=0.0": 0.775,
+   "v4_extra=0.01": 0.43,
+   "v4_extra=0.02": 0.17
+  },
+  "memos=24 answers_per_memo=8 error=0.02": {
+   "v4_extra=0.0": 0.54,
+   "v4_extra=0.01": 0.305,
+   "v4_extra=0.02": 0.13
+  },
+  "memos=21 answers_per_memo=8 error=0.0": {
+   "v4_extra=0.0": 1.0,
+   "v4_extra=0.01": 0.71,
+   "v4_extra=0.02": 0.33
+  },
+  "memos=21 answers_per_memo=8 error=0.01": {
+   "v4_extra=0.0": 0.795,
+   "v4_extra=0.01": 0.455,
+   "v4_extra=0.02": 0.21
+  },
+  "memos=21 answers_per_memo=8 error=0.02": {
+   "v4_extra=0.0": 0.545,
+   "v4_extra=0.01": 0.31,
+   "v4_extra=0.02": 0.185
+  }
+ },
+ "regression_margin": {
+  "X1 other_gap misread full-v3 - short-v3": {
+   "memos": 24,
+   "observed": {
+    "memos": 24,
+    "diff": 0.0382,
+    "ci95": [
+     0.0,
+     0.0903
+    ]
+   },
+   "pass_rate_if_no_change": {
+    "margin=0.05": 0.5525,
+    "margin=0.07": 0.7475,
+    "margin=0.08": 0.8175,
+    "margin=0.1": 0.905
+   }
+  },
+  "X8 trap misread full-v3 - short-v3": {
+   "memos": 24,
+   "observed": {
+    "memos": 24,
+    "diff": -0.0017,
+    "ci95": [
+     -0.0556,
+     0.059
+    ]
+   },
+   "pass_rate_if_no_change": {
+    "margin=0.05": 0.4375,
+    "margin=0.07": 0.67,
+    "margin=0.08": 0.73,
+    "margin=0.1": 0.8475
+   }
+  }
+ }
+}

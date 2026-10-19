@@ -1,0 +1,10 @@
+reader	cond	writer	memo	q	kind	gold_letter	codex	haiku	mc	question	gold	response
+grok	base	sonnet	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증 반납일이다.
+grok	base	sonnet	M02	Q1	two_targets	E	오독	맞음	mis	점검 종료 후에도 외부 공유 링크를 사용할 수 없는 대상은 무엇인가?	메모는 이것을 정하지 않았다	자료함(설계자료함·계약자료함)
+grok	clarity	haiku	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증 반납일입니다.
+grok	clarity	sonnet	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증 반납일이다.
+grok	full	haiku	M01	Q1	deadline_vs_date	E	맞음	오독	mis	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증을 반납해야 하는 날입니다.
+grok	full	haiku	M02	Q5	-	B	빠뜨림	오독	ok	점검 시작 전 전 직원에게 요구되는 행동은 무엇인가?	두 서비스에서 열어 둔 파일을 반드시 저장하고 종료한다.	열어 둔 파일 저장 후 종료, 개인 보관 파일 업로드
+grok	short	haiku	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증을 반납하는 날입니다.
+grok	short	sonnet	M01	Q1	deadline_vs_date	E	맞음	오독	mis	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증을 반납해야 하는 날이다.
+haiku	short	haiku	M01	Q1	deadline_vs_date	E	맞음	오독	ok	기존 출입증 반납과 관련해 11/20(금)은 어떤 의미인가?	메모는 이것을 정하지 않았다	기존 출입증을 반납하는 날이다. 장소와 방법은 글에 없다.

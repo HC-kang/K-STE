@@ -1,0 +1,28 @@
+{
+ "short-v3/haiku": {
+  "gaps": [
+   "flag",
+   "keep"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 1
+ },
+ "full-v4/sonnet": {
+  "gaps": [
+   "flag",
+   "keep"
+  ],
+  "clear": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ }
+}

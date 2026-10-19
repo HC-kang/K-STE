@@ -1,0 +1,546 @@
+{
+ "V01": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V01-q0 gap"
+   ],
+   "haiku": [
+    "V01-q0 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 0,
+  "gap_kept_haiku_not_e": 0,
+  "gap_valid": 1,
+  "generated": 9,
+  "kept": 8,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 9
+ },
+ "V02": {
+  "clear_kept": 3,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V02-q3 clear"
+   ],
+   "haiku": [
+    "V02-q0 gap",
+    "V02-q1 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 2,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 9,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V03": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [],
+   "haiku": [
+    "V03-q0 gap",
+    "V03-q1 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 2,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 10,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V04": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [],
+   "haiku": []
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 1,
+  "gap_kept_haiku_not_e": 0,
+  "gap_valid": 1,
+  "generated": 9,
+  "kept": 9,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 9
+ },
+ "V05": {
+  "clear_kept": 3,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V05-q3 clear"
+   ],
+   "haiku": []
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 0,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 9,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V06": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V06-q9 other"
+   ],
+   "haiku": [
+    "V06-q6 other"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 0,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 8,
+  "other_kept": 2,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V07": {
+  "clear_kept": 3,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V07-q3 clear"
+   ],
+   "haiku": [
+    "V07-q0 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 1,
+  "gap_kept_haiku_not_e": 1,
+  "gap_valid": 1,
+  "generated": 9,
+  "kept": 8,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 9
+ },
+ "V08": {
+  "clear_kept": 3,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V08-q4 clear"
+   ],
+   "haiku": [
+    "V08-q0 gap",
+    "V08-q1 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 2,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 9,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V09": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [],
+   "haiku": [
+    "V09-q0 gap",
+    "V09-q1 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 2,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 10,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V10": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V10-q0 gap"
+   ],
+   "haiku": [
+    "V10-q0 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 0,
+  "gap_kept_haiku_not_e": 0,
+  "gap_valid": 1,
+  "generated": 9,
+  "kept": 8,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 9
+ },
+ "V11": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [],
+   "haiku": [
+    "V11-q0 gap",
+    "V11-q1 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 2,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 10,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V12": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [],
+   "haiku": [
+    "V12-q0 gap",
+    "V12-q1 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 2,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 10,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V13": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [],
+   "haiku": [
+    "V13-q0 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 1,
+  "gap_kept_haiku_not_e": 1,
+  "gap_valid": 1,
+  "generated": 9,
+  "kept": 9,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 9
+ },
+ "V14": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [],
+   "haiku": [
+    "V14-q0 gap",
+    "V14-q1 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 2,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 10,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V15": {
+  "clear_kept": 3,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V15-q2 clear"
+   ],
+   "haiku": [
+    "V15-q0 gap",
+    "V15-q1 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 2,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 9,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V16": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [],
+   "haiku": [
+    "V16-q0 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 1,
+  "gap_kept_haiku_not_e": 1,
+  "gap_valid": 1,
+  "generated": 9,
+  "kept": 9,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 9
+ },
+ "V17": {
+  "clear_kept": 3,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V17-q5 clear"
+   ],
+   "haiku": [
+    "V17-q0 gap",
+    "V17-q1 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 2,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 9,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V18": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V18-q0 gap",
+    "V18-q1 gap"
+   ],
+   "haiku": [
+    "V18-q0 gap",
+    "V18-q1 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 0,
+  "gap_kept_haiku_not_e": 0,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 8,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V19": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V19-q0 gap"
+   ],
+   "haiku": [
+    "V19-q0 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 0,
+  "gap_kept_haiku_not_e": 0,
+  "gap_valid": 1,
+  "generated": 9,
+  "kept": 8,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 9
+ },
+ "V20": {
+  "clear_kept": 3,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V20-q4 clear"
+   ],
+   "haiku": [
+    "V20-q4 clear"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 0,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 9,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V21": {
+  "clear_kept": 3,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V21-q5 clear"
+   ],
+   "haiku": [
+    "V21-q0 gap",
+    "V21-q1 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 2,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 9,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V22": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V22-q0 gap"
+   ],
+   "haiku": [
+    "V22-q0 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 0,
+  "gap_kept_haiku_not_e": 0,
+  "gap_valid": 1,
+  "generated": 9,
+  "kept": 8,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 9
+ },
+ "V23": {
+  "clear_kept": 4,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [],
+   "haiku": [
+    "V23-q0 gap",
+    "V23-q1 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 2,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 10,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ },
+ "V24": {
+  "clear_kept": 3,
+  "clear_valid": 4,
+  "dropped_by": {
+   "grok": [
+    "V24-q4 clear"
+   ],
+   "haiku": [
+    "V24-q0 gap",
+    "V24-q1 gap"
+   ]
+  },
+  "e_dup_stripped": 0,
+  "gap_kept": 2,
+  "gap_kept_haiku_not_e": 2,
+  "gap_valid": 2,
+  "generated": 10,
+  "kept": 9,
+  "other_kept": 4,
+  "other_valid": 4,
+  "problems": [],
+  "says_memo": 0,
+  "valid": 10
+ }
+}

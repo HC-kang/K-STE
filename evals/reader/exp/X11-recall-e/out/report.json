@@ -1,0 +1,2256 @@
+{
+ "memos": 24,
+ "memos_missing": [],
+ "ceiling_broken": true,
+ "h1": {
+  "memos": 24,
+  "diff": -0.2257,
+  "ci95": [
+   -0.3368,
+   -0.125
+  ],
+  "ci_excludes_0": true,
+  "supported": true
+ },
+ "grading_reliability_gate": {
+  "kappa": 0.8081,
+  "threshold": 0.6,
+  "low": false
+ },
+ "summary": {
+  "grok": {
+   "base": {
+    "free": {
+     "all": {
+      "acc": 0.7531,
+      "partial": 0.0219,
+      "misread": 0.2,
+      "abstain": 0.025,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.4773,
+      "partial": 0.0303,
+      "misread": 0.4545,
+      "abstain": 0.0379,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 0.9468,
+      "partial": 0.016,
+      "misread": 0.0213,
+      "abstain": 0.016,
+      "n": 188
+     }
+    },
+    "mc": {
+     "all": {
+      "acc": 0.8313,
+      "partial": 0.0,
+      "misread": 0.1187,
+      "abstain": 0.05,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.6061,
+      "partial": 0.0,
+      "misread": 0.2879,
+      "abstain": 0.1061,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 0.9894,
+      "partial": 0.0,
+      "misread": 0.0,
+      "abstain": 0.0106,
+      "n": 188
+     }
+    },
+    "free_haiku_grader_gap": {
+     "acc": 0.5455,
+     "partial": 0.0076,
+     "misread": 0.4015,
+     "abstain": 0.0455,
+     "n": 132
+    },
+    "conservative_gap_misread": 0.3939,
+    "by_writer_gap": {
+     "sonnet": {
+      "free": {
+       "acc": 0.5,
+       "partial": 0.0455,
+       "misread": 0.3939,
+       "abstain": 0.0606,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.6515,
+       "partial": 0.0,
+       "misread": 0.2576,
+       "abstain": 0.0909,
+       "n": 66
+      }
+     },
+     "haiku": {
+      "free": {
+       "acc": 0.4545,
+       "partial": 0.0152,
+       "misread": 0.5152,
+       "abstain": 0.0152,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.5606,
+       "partial": 0.0,
+       "misread": 0.3182,
+       "abstain": 0.1212,
+       "n": 66
+      }
+     }
+    },
+    "over_50_chars": 0
+   },
+   "clarity": {
+    "free": {
+     "all": {
+      "acc": 0.7594,
+      "partial": 0.025,
+      "misread": 0.1969,
+      "abstain": 0.0187,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.4621,
+      "partial": 0.0379,
+      "misread": 0.4621,
+      "abstain": 0.0379,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 0.9681,
+      "partial": 0.016,
+      "misread": 0.0106,
+      "abstain": 0.0053,
+      "n": 188
+     }
+    },
+    "mc": {
+     "all": {
+      "acc": 0.8375,
+      "partial": 0.0,
+      "misread": 0.1094,
+      "abstain": 0.0531,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.6136,
+      "partial": 0.0,
+      "misread": 0.2652,
+      "abstain": 0.1212,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 0.9947,
+      "partial": 0.0,
+      "misread": 0.0,
+      "abstain": 0.0053,
+      "n": 188
+     }
+    },
+    "free_haiku_grader_gap": {
+     "acc": 0.5455,
+     "partial": 0.0,
+     "misread": 0.4091,
+     "abstain": 0.0455,
+     "n": 132
+    },
+    "conservative_gap_misread": 0.3939,
+    "by_writer_gap": {
+     "sonnet": {
+      "free": {
+       "acc": 0.5,
+       "partial": 0.0455,
+       "misread": 0.4242,
+       "abstain": 0.0303,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.6061,
+       "partial": 0.0,
+       "misread": 0.2879,
+       "abstain": 0.1061,
+       "n": 66
+      }
+     },
+     "haiku": {
+      "free": {
+       "acc": 0.4242,
+       "partial": 0.0303,
+       "misread": 0.5,
+       "abstain": 0.0455,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.6212,
+       "partial": 0.0,
+       "misread": 0.2424,
+       "abstain": 0.1364,
+       "n": 66
+      }
+     }
+    },
+    "over_50_chars": 0
+   },
+   "short": {
+    "free": {
+     "all": {
+      "acc": 0.85,
+      "partial": 0.025,
+      "misread": 0.1156,
+      "abstain": 0.0094,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.6515,
+      "partial": 0.0455,
+      "misread": 0.2803,
+      "abstain": 0.0227,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 0.9894,
+      "partial": 0.0106,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 188
+     }
+    },
+    "mc": {
+     "all": {
+      "acc": 0.9062,
+      "partial": 0.0,
+      "misread": 0.0656,
+      "abstain": 0.0281,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.7803,
+      "partial": 0.0,
+      "misread": 0.1591,
+      "abstain": 0.0606,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 0.9947,
+      "partial": 0.0,
+      "misread": 0.0,
+      "abstain": 0.0053,
+      "n": 188
+     }
+    },
+    "free_haiku_grader_gap": {
+     "acc": 0.7424,
+     "partial": 0.0076,
+     "misread": 0.2273,
+     "abstain": 0.0227,
+     "n": 132
+    },
+    "conservative_gap_misread": 0.2045,
+    "by_writer_gap": {
+     "sonnet": {
+      "free": {
+       "acc": 0.6515,
+       "partial": 0.0455,
+       "misread": 0.2727,
+       "abstain": 0.0303,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.803,
+       "partial": 0.0,
+       "misread": 0.1212,
+       "abstain": 0.0758,
+       "n": 66
+      }
+     },
+     "haiku": {
+      "free": {
+       "acc": 0.6515,
+       "partial": 0.0455,
+       "misread": 0.2879,
+       "abstain": 0.0152,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.7576,
+       "partial": 0.0,
+       "misread": 0.197,
+       "abstain": 0.0455,
+       "n": 66
+      }
+     }
+    },
+    "over_50_chars": 0
+   },
+   "full": {
+    "free": {
+     "all": {
+      "acc": 0.8688,
+      "partial": 0.025,
+      "misread": 0.0969,
+      "abstain": 0.0094,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.7045,
+      "partial": 0.0455,
+      "misread": 0.2348,
+      "abstain": 0.0152,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 0.984,
+      "partial": 0.0106,
+      "misread": 0.0,
+      "abstain": 0.0053,
+      "n": 188
+     }
+    },
+    "mc": {
+     "all": {
+      "acc": 0.9,
+      "partial": 0.0,
+      "misread": 0.0656,
+      "abstain": 0.0344,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.7576,
+      "partial": 0.0,
+      "misread": 0.1591,
+      "abstain": 0.0833,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 1.0,
+      "partial": 0.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 188
+     }
+    },
+    "free_haiku_grader_gap": {
+     "acc": 0.803,
+     "partial": 0.0076,
+     "misread": 0.1742,
+     "abstain": 0.0152,
+     "n": 132
+    },
+    "conservative_gap_misread": 0.1591,
+    "by_writer_gap": {
+     "sonnet": {
+      "free": {
+       "acc": 0.7121,
+       "partial": 0.0455,
+       "misread": 0.2273,
+       "abstain": 0.0152,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.803,
+       "partial": 0.0,
+       "misread": 0.1364,
+       "abstain": 0.0606,
+       "n": 66
+      }
+     },
+     "haiku": {
+      "free": {
+       "acc": 0.697,
+       "partial": 0.0455,
+       "misread": 0.2424,
+       "abstain": 0.0152,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.7121,
+       "partial": 0.0,
+       "misread": 0.1818,
+       "abstain": 0.1061,
+       "n": 66
+      }
+     }
+    },
+    "over_50_chars": 0
+   }
+  },
+  "haiku": {
+   "base": {
+    "free": {
+     "all": {
+      "acc": 0.6875,
+      "partial": 0.0219,
+      "misread": 0.2875,
+      "abstain": 0.0031,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.303,
+      "partial": 0.0227,
+      "misread": 0.6742,
+      "abstain": 0.0,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 0.9574,
+      "partial": 0.0213,
+      "misread": 0.016,
+      "abstain": 0.0053,
+      "n": 188
+     }
+    },
+    "mc": {
+     "all": {
+      "acc": 0.825,
+      "partial": 0.0,
+      "misread": 0.1688,
+      "abstain": 0.0063,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.5833,
+      "partial": 0.0,
+      "misread": 0.4091,
+      "abstain": 0.0076,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 0.9947,
+      "partial": 0.0,
+      "misread": 0.0,
+      "abstain": 0.0053,
+      "n": 188
+     }
+    },
+    "free_haiku_grader_gap": {
+     "acc": 0.3561,
+     "partial": 0.0,
+     "misread": 0.6364,
+     "abstain": 0.0076,
+     "n": 132
+    },
+    "conservative_gap_misread": 0.6288,
+    "by_writer_gap": {
+     "sonnet": {
+      "free": {
+       "acc": 0.3182,
+       "partial": 0.0455,
+       "misread": 0.6364,
+       "abstain": 0.0,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.6212,
+       "partial": 0.0,
+       "misread": 0.3788,
+       "abstain": 0.0,
+       "n": 66
+      }
+     },
+     "haiku": {
+      "free": {
+       "acc": 0.2879,
+       "partial": 0.0,
+       "misread": 0.7121,
+       "abstain": 0.0,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.5455,
+       "partial": 0.0,
+       "misread": 0.4394,
+       "abstain": 0.0152,
+       "n": 66
+      }
+     }
+    },
+    "over_50_chars": 0
+   },
+   "clarity": {
+    "free": {
+     "all": {
+      "acc": 0.7188,
+      "partial": 0.0281,
+      "misread": 0.25,
+      "abstain": 0.0031,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.3636,
+      "partial": 0.0379,
+      "misread": 0.5909,
+      "abstain": 0.0076,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 0.9681,
+      "partial": 0.0213,
+      "misread": 0.0106,
+      "abstain": 0.0,
+      "n": 188
+     }
+    },
+    "mc": {
+     "all": {
+      "acc": 0.8438,
+      "partial": 0.0,
+      "misread": 0.1469,
+      "abstain": 0.0094,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.6288,
+      "partial": 0.0,
+      "misread": 0.3485,
+      "abstain": 0.0227,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 0.9947,
+      "partial": 0.0,
+      "misread": 0.0053,
+      "abstain": 0.0,
+      "n": 188
+     }
+    },
+    "free_haiku_grader_gap": {
+     "acc": 0.4015,
+     "partial": 0.0,
+     "misread": 0.5833,
+     "abstain": 0.0152,
+     "n": 132
+    },
+    "conservative_gap_misread": 0.553,
+    "by_writer_gap": {
+     "sonnet": {
+      "free": {
+       "acc": 0.3939,
+       "partial": 0.0152,
+       "misread": 0.5758,
+       "abstain": 0.0152,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.6212,
+       "partial": 0.0,
+       "misread": 0.3485,
+       "abstain": 0.0303,
+       "n": 66
+      }
+     },
+     "haiku": {
+      "free": {
+       "acc": 0.3333,
+       "partial": 0.0606,
+       "misread": 0.6061,
+       "abstain": 0.0,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.6364,
+       "partial": 0.0,
+       "misread": 0.3485,
+       "abstain": 0.0152,
+       "n": 66
+      }
+     }
+    },
+    "over_50_chars": 2
+   },
+   "short": {
+    "free": {
+     "all": {
+      "acc": 0.7875,
+      "partial": 0.0219,
+      "misread": 0.1875,
+      "abstain": 0.0031,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.5,
+      "partial": 0.0379,
+      "misread": 0.4545,
+      "abstain": 0.0076,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 0.9894,
+      "partial": 0.0106,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 188
+     }
+    },
+    "mc": {
+     "all": {
+      "acc": 0.9125,
+      "partial": 0.0,
+      "misread": 0.0875,
+      "abstain": 0.0,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.7879,
+      "partial": 0.0,
+      "misread": 0.2121,
+      "abstain": 0.0,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 1.0,
+      "partial": 0.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 188
+     }
+    },
+    "free_haiku_grader_gap": {
+     "acc": 0.5076,
+     "partial": 0.0,
+     "misread": 0.4621,
+     "abstain": 0.0303,
+     "n": 132
+    },
+    "conservative_gap_misread": 0.4318,
+    "by_writer_gap": {
+     "sonnet": {
+      "free": {
+       "acc": 0.5152,
+       "partial": 0.0455,
+       "misread": 0.4394,
+       "abstain": 0.0,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.8182,
+       "partial": 0.0,
+       "misread": 0.1818,
+       "abstain": 0.0,
+       "n": 66
+      }
+     },
+     "haiku": {
+      "free": {
+       "acc": 0.4848,
+       "partial": 0.0303,
+       "misread": 0.4697,
+       "abstain": 0.0152,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.7576,
+       "partial": 0.0,
+       "misread": 0.2424,
+       "abstain": 0.0,
+       "n": 66
+      }
+     }
+    },
+    "over_50_chars": 0
+   },
+   "full": {
+    "free": {
+     "all": {
+      "acc": 0.8187,
+      "partial": 0.0469,
+      "misread": 0.1313,
+      "abstain": 0.0031,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.5985,
+      "partial": 0.0758,
+      "misread": 0.3182,
+      "abstain": 0.0076,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 0.9734,
+      "partial": 0.0266,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 188
+     }
+    },
+    "mc": {
+     "all": {
+      "acc": 0.9187,
+      "partial": 0.0,
+      "misread": 0.0781,
+      "abstain": 0.0031,
+      "n": 320
+     },
+     "gap": {
+      "acc": 0.803,
+      "partial": 0.0,
+      "misread": 0.1894,
+      "abstain": 0.0076,
+      "n": 132
+     },
+     "nongap": {
+      "acc": 1.0,
+      "partial": 0.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 188
+     }
+    },
+    "free_haiku_grader_gap": {
+     "acc": 0.6667,
+     "partial": 0.0,
+     "misread": 0.3258,
+     "abstain": 0.0076,
+     "n": 132
+    },
+    "conservative_gap_misread": 0.303,
+    "by_writer_gap": {
+     "sonnet": {
+      "free": {
+       "acc": 0.6212,
+       "partial": 0.0758,
+       "misread": 0.2879,
+       "abstain": 0.0152,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.8333,
+       "partial": 0.0,
+       "misread": 0.1667,
+       "abstain": 0.0,
+       "n": 66
+      }
+     },
+     "haiku": {
+      "free": {
+       "acc": 0.5758,
+       "partial": 0.0758,
+       "misread": 0.3485,
+       "abstain": 0.0,
+       "n": 66
+      },
+      "mc": {
+       "acc": 0.7727,
+       "partial": 0.0,
+       "misread": 0.2121,
+       "abstain": 0.0152,
+       "n": 66
+      }
+     }
+    },
+    "over_50_chars": 1
+   }
+  }
+ },
+ "tests": {
+  "free grok gap misread full-base": {
+   "memos": 24,
+   "diff": -0.2257,
+   "ci95": [
+    -0.3368,
+    -0.125
+   ],
+   "ci_excludes_0": true
+  },
+  "free grok gap misread short-base": {
+   "memos": 24,
+   "diff": -0.1806,
+   "ci95": [
+    -0.2708,
+    -0.0972
+   ],
+   "ci_excludes_0": true
+  },
+  "free grok gap misread clarity-base": {
+   "memos": 24,
+   "diff": -0.0069,
+   "ci95": [
+    -0.0729,
+    0.0556
+   ],
+   "ci_excludes_0": false
+  },
+  "free grok gap misread full-clarity": {
+   "memos": 24,
+   "diff": -0.2187,
+   "ci95": [
+    -0.3368,
+    -0.1007
+   ],
+   "ci_excludes_0": true
+  },
+  "free grok nongap acc full-base": {
+   "memos": 24,
+   "diff": 0.0399,
+   "ci95": [
+    0.0052,
+    0.0799
+   ],
+   "ci_excludes_0": true
+  },
+  "free grok nongap acc short-base": {
+   "memos": 24,
+   "diff": 0.0451,
+   "ci95": [
+    0.0156,
+    0.0833
+   ],
+   "ci_excludes_0": true
+  },
+  "free grok nongap acc clarity-base": {
+   "memos": 24,
+   "diff": 0.0243,
+   "ci95": [
+    -0.0052,
+    0.0608
+   ],
+   "ci_excludes_0": false
+  },
+  "free grok nongap acc full-clarity": {
+   "memos": 24,
+   "diff": 0.0156,
+   "ci95": [
+    -0.0104,
+    0.0469
+   ],
+   "ci_excludes_0": false
+  },
+  "free grok gap acc full-base": {
+   "memos": 24,
+   "diff": 0.2326,
+   "ci95": [
+    0.1354,
+    0.3403
+   ],
+   "ci_excludes_0": true
+  },
+  "free grok gap acc short-base": {
+   "memos": 24,
+   "diff": 0.1806,
+   "ci95": [
+    0.1007,
+    0.2674
+   ],
+   "ci_excludes_0": true
+  },
+  "free grok gap acc clarity-base": {
+   "memos": 24,
+   "diff": -0.0035,
+   "ci95": [
+    -0.0729,
+    0.066
+   ],
+   "ci_excludes_0": false
+  },
+  "free grok gap acc full-clarity": {
+   "memos": 24,
+   "diff": 0.2361,
+   "ci95": [
+    0.125,
+    0.3472
+   ],
+   "ci_excludes_0": true
+  },
+  "conservative grok gap misread full-base": {
+   "memos": 24,
+   "diff": -0.2465,
+   "ci95": [
+    -0.3507,
+    -0.1528
+   ],
+   "ci_excludes_0": true
+  },
+  "conservative grok gap misread short-base": {
+   "memos": 24,
+   "diff": -0.2014,
+   "ci95": [
+    -0.2778,
+    -0.1285
+   ],
+   "ci_excludes_0": true
+  },
+  "conservative grok gap misread clarity-base": {
+   "memos": 24,
+   "diff": -0.0174,
+   "ci95": [
+    -0.1007,
+    0.0625
+   ],
+   "ci_excludes_0": false
+  },
+  "conservative grok gap misread full-clarity": {
+   "memos": 24,
+   "diff": -0.2292,
+   "ci95": [
+    -0.3299,
+    -0.1285
+   ],
+   "ci_excludes_0": true
+  },
+  "free_haiku_grader grok gap misread full-base": {
+   "memos": 24,
+   "diff": -0.2396,
+   "ci95": [
+    -0.3437,
+    -0.1423
+   ],
+   "ci_excludes_0": true
+  },
+  "free_haiku_grader grok gap misread short-base": {
+   "memos": 24,
+   "diff": -0.1875,
+   "ci95": [
+    -0.2674,
+    -0.1146
+   ],
+   "ci_excludes_0": true
+  },
+  "free_haiku_grader grok gap misread clarity-base": {
+   "memos": 24,
+   "diff": -0.0104,
+   "ci95": [
+    -0.0972,
+    0.0695
+   ],
+   "ci_excludes_0": false
+  },
+  "free_haiku_grader grok gap misread full-clarity": {
+   "memos": 24,
+   "diff": -0.2292,
+   "ci95": [
+    -0.3299,
+    -0.125
+   ],
+   "ci_excludes_0": true
+  },
+  "mc grok gap misread full-base": {
+   "memos": 24,
+   "diff": -0.1319,
+   "ci95": [
+    -0.2257,
+    -0.0486
+   ],
+   "ci_excludes_0": true
+  },
+  "mc grok gap misread short-base": {
+   "memos": 24,
+   "diff": -0.132,
+   "ci95": [
+    -0.2222,
+    -0.0452
+   ],
+   "ci_excludes_0": true
+  },
+  "mc grok gap misread clarity-base": {
+   "memos": 24,
+   "diff": -0.0278,
+   "ci95": [
+    -0.0833,
+    0.0312
+   ],
+   "ci_excludes_0": false
+  },
+  "mc grok gap misread full-clarity": {
+   "memos": 24,
+   "diff": -0.1042,
+   "ci95": [
+    -0.1979,
+    -0.0243
+   ],
+   "ci_excludes_0": true
+  },
+  "free haiku gap misread full-base": {
+   "memos": 24,
+   "diff": -0.3472,
+   "ci95": [
+    -0.4444,
+    -0.257
+   ],
+   "ci_excludes_0": true
+  },
+  "free haiku gap misread short-base": {
+   "memos": 24,
+   "diff": -0.2153,
+   "ci95": [
+    -0.2882,
+    -0.1423
+   ],
+   "ci_excludes_0": true
+  },
+  "free haiku gap misread clarity-base": {
+   "memos": 24,
+   "diff": -0.0833,
+   "ci95": [
+    -0.1424,
+    -0.0278
+   ],
+   "ci_excludes_0": true
+  },
+  "free haiku gap misread full-clarity": {
+   "memos": 24,
+   "diff": -0.2639,
+   "ci95": [
+    -0.3785,
+    -0.1528
+   ],
+   "ci_excludes_0": true
+  },
+  "free haiku nongap acc full-base": {
+   "memos": 24,
+   "diff": 0.0156,
+   "ci95": [
+    -0.0208,
+    0.0521
+   ],
+   "ci_excludes_0": false
+  },
+  "free haiku nongap acc short-base": {
+   "memos": 24,
+   "diff": 0.0312,
+   "ci95": [
+    0.0104,
+    0.0573
+   ],
+   "ci_excludes_0": true
+  },
+  "free haiku nongap acc clarity-base": {
+   "memos": 24,
+   "diff": 0.0087,
+   "ci95": [
+    -0.0208,
+    0.0365
+   ],
+   "ci_excludes_0": false
+  },
+  "free haiku nongap acc full-clarity": {
+   "memos": 24,
+   "diff": 0.0069,
+   "ci95": [
+    -0.0208,
+    0.0399
+   ],
+   "ci_excludes_0": false
+  },
+  "free haiku gap acc full-base": {
+   "memos": 24,
+   "diff": 0.2917,
+   "ci95": [
+    0.2014,
+    0.3854
+   ],
+   "ci_excludes_0": true
+  },
+  "free haiku gap acc short-base": {
+   "memos": 24,
+   "diff": 0.1944,
+   "ci95": [
+    0.118,
+    0.2708
+   ],
+   "ci_excludes_0": true
+  },
+  "free haiku gap acc clarity-base": {
+   "memos": 24,
+   "diff": 0.059,
+   "ci95": [
+    0.0069,
+    0.1111
+   ],
+   "ci_excludes_0": true
+  },
+  "free haiku gap acc full-clarity": {
+   "memos": 24,
+   "diff": 0.2326,
+   "ci95": [
+    0.1389,
+    0.3403
+   ],
+   "ci_excludes_0": true
+  },
+  "conservative haiku gap misread full-base": {
+   "memos": 24,
+   "diff": -0.309,
+   "ci95": [
+    -0.4236,
+    -0.1979
+   ],
+   "ci_excludes_0": true
+  },
+  "conservative haiku gap misread short-base": {
+   "memos": 24,
+   "diff": -0.184,
+   "ci95": [
+    -0.2674,
+    -0.1007
+   ],
+   "ci_excludes_0": true
+  },
+  "conservative haiku gap misread clarity-base": {
+   "memos": 24,
+   "diff": -0.0729,
+   "ci95": [
+    -0.1354,
+    -0.0104
+   ],
+   "ci_excludes_0": true
+  },
+  "conservative haiku gap misread full-clarity": {
+   "memos": 24,
+   "diff": -0.2361,
+   "ci95": [
+    -0.3611,
+    -0.1181
+   ],
+   "ci_excludes_0": true
+  },
+  "free_haiku_grader haiku gap misread full-base": {
+   "memos": 24,
+   "diff": -0.2917,
+   "ci95": [
+    -0.3958,
+    -0.1875
+   ],
+   "ci_excludes_0": true
+  },
+  "free_haiku_grader haiku gap misread short-base": {
+   "memos": 24,
+   "diff": -0.1632,
+   "ci95": [
+    -0.2465,
+    -0.0799
+   ],
+   "ci_excludes_0": true
+  },
+  "free_haiku_grader haiku gap misread clarity-base": {
+   "memos": 24,
+   "diff": -0.0486,
+   "ci95": [
+    -0.0972,
+    0.0035
+   ],
+   "ci_excludes_0": false
+  },
+  "free_haiku_grader haiku gap misread full-clarity": {
+   "memos": 24,
+   "diff": -0.2431,
+   "ci95": [
+    -0.3611,
+    -0.1319
+   ],
+   "ci_excludes_0": true
+  },
+  "mc haiku gap misread full-base": {
+   "memos": 24,
+   "diff": -0.2222,
+   "ci95": [
+    -0.3021,
+    -0.1389
+   ],
+   "ci_excludes_0": true
+  },
+  "mc haiku gap misread short-base": {
+   "memos": 24,
+   "diff": -0.2049,
+   "ci95": [
+    -0.2986,
+    -0.1181
+   ],
+   "ci_excludes_0": true
+  },
+  "mc haiku gap misread clarity-base": {
+   "memos": 24,
+   "diff": -0.0694,
+   "ci95": [
+    -0.1389,
+    -0.0
+   ],
+   "ci_excludes_0": true
+  },
+  "mc haiku gap misread full-clarity": {
+   "memos": 24,
+   "diff": -0.1528,
+   "ci95": [
+    -0.2535,
+    -0.059
+   ],
+   "ci_excludes_0": true
+  }
+ },
+ "h2": {
+  "grok gap misread free-mc base": {
+   "memos": 24,
+   "diff": 0.1701,
+   "ci95": [
+    0.0937,
+    0.2465
+   ],
+   "ci_excludes_0": true
+  },
+  "grok gap misread free-mc clarity": {
+   "memos": 24,
+   "diff": 0.191,
+   "ci95": [
+    0.125,
+    0.257
+   ],
+   "ci_excludes_0": true
+  },
+  "grok gap misread free-mc short": {
+   "memos": 24,
+   "diff": 0.1215,
+   "ci95": [
+    0.0521,
+    0.1944
+   ],
+   "ci_excludes_0": true
+  },
+  "grok gap misread free-mc full": {
+   "memos": 24,
+   "diff": 0.0764,
+   "ci95": [
+    0.0139,
+    0.1458
+   ],
+   "ci_excludes_0": true
+  },
+  "grok gap misread diff-in-diff (free full-base) - (mc full-base)": {
+   "memos": 24,
+   "diff": -0.0937,
+   "ci95": [
+    -0.184,
+    -0.0069
+   ],
+   "ci_excludes_0": true
+  },
+  "grok gap misread diff-in-diff (free short-base) - (mc short-base)": {
+   "memos": 24,
+   "diff": -0.0486,
+   "ci95": [
+    -0.1389,
+    0.0451
+   ],
+   "ci_excludes_0": false
+  },
+  "grok gap misread diff-in-diff (free clarity-base) - (mc clarity-base)": {
+   "memos": 24,
+   "diff": 0.0208,
+   "ci95": [
+    -0.0625,
+    0.1077
+   ],
+   "ci_excludes_0": false
+  },
+  "grok gap misread diff-in-diff (free full-clarity) - (mc full-clarity)": {
+   "memos": 24,
+   "diff": -0.1146,
+   "ci95": [
+    -0.2014,
+    -0.0243
+   ],
+   "ci_excludes_0": true
+  },
+  "haiku gap misread free-mc base": {
+   "memos": 24,
+   "diff": 0.2569,
+   "ci95": [
+    0.1667,
+    0.3472
+   ],
+   "ci_excludes_0": true
+  },
+  "haiku gap misread free-mc clarity": {
+   "memos": 24,
+   "diff": 0.2431,
+   "ci95": [
+    0.1632,
+    0.3264
+   ],
+   "ci_excludes_0": true
+  },
+  "haiku gap misread free-mc short": {
+   "memos": 24,
+   "diff": 0.2465,
+   "ci95": [
+    0.1667,
+    0.3264
+   ],
+   "ci_excludes_0": true
+  },
+  "haiku gap misread free-mc full": {
+   "memos": 24,
+   "diff": 0.1319,
+   "ci95": [
+    0.0486,
+    0.2153
+   ],
+   "ci_excludes_0": true
+  },
+  "haiku gap misread diff-in-diff (free full-base) - (mc full-base)": {
+   "memos": 24,
+   "diff": -0.125,
+   "ci95": [
+    -0.2049,
+    -0.0486
+   ],
+   "ci_excludes_0": true
+  },
+  "haiku gap misread diff-in-diff (free short-base) - (mc short-base)": {
+   "memos": 24,
+   "diff": -0.0104,
+   "ci95": [
+    -0.0972,
+    0.0764
+   ],
+   "ci_excludes_0": false
+  },
+  "haiku gap misread diff-in-diff (free clarity-base) - (mc clarity-base)": {
+   "memos": 24,
+   "diff": -0.0139,
+   "ci95": [
+    -0.0764,
+    0.0486
+   ],
+   "ci_excludes_0": false
+  },
+  "haiku gap misread diff-in-diff (free full-clarity) - (mc full-clarity)": {
+   "memos": 24,
+   "diff": -0.1111,
+   "ci95": [
+    -0.1771,
+    -0.0417
+   ],
+   "ci_excludes_0": true
+  }
+ },
+ "reliability": {
+  "grok all": {
+   "category": {
+    "n": 1280,
+    "units": 24,
+    "agree": 0.943,
+    "kappa": 0.889,
+    "kappa_ci95": [
+     0.8363,
+     0.9365
+    ],
+    "confusion": {
+     "맞음->맞음": 807,
+     "맞음->빠뜨림": 1,
+     "맞음->오독": 12,
+     "맞음->알 수 없음": 0,
+     "빠뜨림->맞음": 18,
+     "빠뜨림->빠뜨림": 9,
+     "빠뜨림->오독": 2,
+     "빠뜨림->알 수 없음": 2,
+     "오독->맞음": 38,
+     "오독->빠뜨림": 0,
+     "오독->오독": 157,
+     "오독->알 수 없음": 0,
+     "알 수 없음->맞음": 0,
+     "알 수 없음->빠뜨림": 0,
+     "알 수 없음->오독": 0,
+     "알 수 없음->알 수 없음": 234
+    }
+   },
+   "misread": {
+    "n": 1280,
+    "units": 24,
+    "agree": 0.9594,
+    "kappa": 0.8343,
+    "kappa_ci95": [
+     0.764,
+     0.9049
+    ],
+    "both": 157,
+    "codex_only": 38,
+    "haiku_only": 14,
+    "neither": 1071,
+    "positive_agreement": 0.8579
+   }
+  },
+  "grok gap": {
+   "category": {
+    "n": 528,
+    "units": 24,
+    "agree": 0.8769,
+    "kappa": 0.8131,
+    "kappa_ci95": [
+     0.7199,
+     0.9017
+    ],
+    "confusion": {
+     "맞음->맞음": 80,
+     "맞음->빠뜨림": 1,
+     "맞음->오독": 8,
+     "맞음->알 수 없음": 0,
+     "빠뜨림->맞음": 17,
+     "빠뜨림->빠뜨림": 2,
+     "빠뜨림->오독": 0,
+     "빠뜨림->알 수 없음": 2,
+     "오독->맞음": 37,
+     "오독->빠뜨림": 0,
+     "오독->오독": 152,
+     "오독->알 수 없음": 0,
+     "알 수 없음->맞음": 0,
+     "알 수 없음->빠뜨림": 0,
+     "알 수 없음->오독": 0,
+     "알 수 없음->알 수 없음": 229
+    }
+   },
+   "misread": {
+    "n": 528,
+    "units": 24,
+    "agree": 0.9148,
+    "kappa": 0.8081,
+    "kappa_ci95": [
+     0.7066,
+     0.9054
+    ],
+    "both": 152,
+    "codex_only": 37,
+    "haiku_only": 8,
+    "neither": 331,
+    "positive_agreement": 0.8711
+   }
+  },
+  "grok nongap": {
+   "category": {
+    "n": 752,
+    "units": 24,
+    "agree": 0.9894,
+    "kappa": 0.8146,
+    "kappa_ci95": [
+     0.5358,
+     0.9335
+    ],
+    "confusion": {
+     "맞음->맞음": 727,
+     "맞음->빠뜨림": 0,
+     "맞음->오독": 4,
+     "맞음->알 수 없음": 0,
+     "빠뜨림->맞음": 1,
+     "빠뜨림->빠뜨림": 7,
+     "빠뜨림->오독": 2,
+     "빠뜨림->알 수 없음": 0,
+     "오독->맞음": 1,
+     "오독->빠뜨림": 0,
+     "오독->오독": 5,
+     "오독->알 수 없음": 0,
+     "알 수 없음->맞음": 0,
+     "알 수 없음->빠뜨림": 0,
+     "알 수 없음->오독": 0,
+     "알 수 없음->알 수 없음": 5
+    }
+   },
+   "misread": {
+    "n": 752,
+    "units": 24,
+    "agree": 0.9907,
+    "kappa": 0.5839,
+    "kappa_ci95": [
+     -0.004,
+     0.8854
+    ],
+    "both": 5,
+    "codex_only": 1,
+    "haiku_only": 6,
+    "neither": 740,
+    "positive_agreement": 0.5882
+   }
+  },
+  "grok elements": {
+   "n": 1936,
+   "units": 24,
+   "agree": 0.953,
+   "kappa": 0.8799,
+   "kappa_ci95": [
+    0.8124,
+    0.9348
+   ],
+   "confusion": {
+    "있음->있음": 1429,
+    "있음->없음": 4,
+    "있음->어긋남": 8,
+    "없음->있음": 31,
+    "없음->없음": 269,
+    "없음->어긋남": 3,
+    "어긋남->있음": 44,
+    "어긋남->없음": 1,
+    "어긋남->어긋남": 147
+   }
+  },
+  "haiku all": {
+   "category": {
+    "n": 1280,
+    "units": 24,
+    "agree": 0.9406,
+    "kappa": 0.8894,
+    "kappa_ci95": [
+     0.8467,
+     0.9278
+    ],
+    "confusion": {
+     "맞음->맞음": 775,
+     "맞음->빠뜨림": 0,
+     "맞음->오독": 21,
+     "맞음->알 수 없음": 9,
+     "빠뜨림->맞음": 20,
+     "빠뜨림->빠뜨림": 10,
+     "빠뜨림->오독": 5,
+     "빠뜨림->알 수 없음": 3,
+     "오독->맞음": 15,
+     "오독->빠뜨림": 0,
+     "오독->오독": 257,
+     "오독->알 수 없음": 2,
+     "알 수 없음->맞음": 0,
+     "알 수 없음->빠뜨림": 0,
+     "알 수 없음->오독": 1,
+     "알 수 없음->알 수 없음": 162
+    }
+   },
+   "misread": {
+    "n": 1280,
+    "units": 24,
+    "agree": 0.9656,
+    "kappa": 0.8992,
+    "kappa_ci95": [
+     0.8572,
+     0.9382
+    ],
+    "both": 257,
+    "codex_only": 17,
+    "haiku_only": 27,
+    "neither": 979,
+    "positive_agreement": 0.9211
+   }
+  },
+  "haiku gap": {
+   "category": {
+    "n": 528,
+    "units": 24,
+    "agree": 0.8939,
+    "kappa": 0.8286,
+    "kappa_ci95": [
+     0.7457,
+     0.9009
+    ],
+    "confusion": {
+     "맞음->맞음": 57,
+     "맞음->빠뜨림": 0,
+     "맞음->오독": 8,
+     "맞음->알 수 없음": 9,
+     "빠뜨림->맞음": 16,
+     "빠뜨림->빠뜨림": 0,
+     "빠뜨림->오독": 4,
+     "빠뜨림->알 수 없음": 3,
+     "오독->맞음": 14,
+     "오독->빠뜨림": 0,
+     "오독->오독": 253,
+     "오독->알 수 없음": 2,
+     "알 수 없음->맞음": 0,
+     "알 수 없음->빠뜨림": 0,
+     "알 수 없음->오독": 0,
+     "알 수 없음->알 수 없음": 162
+    }
+   },
+   "misread": {
+    "n": 528,
+    "units": 24,
+    "agree": 0.947,
+    "kappa": 0.8939,
+    "kappa_ci95": [
+     0.8372,
+     0.9401
+    ],
+    "both": 253,
+    "codex_only": 16,
+    "haiku_only": 12,
+    "neither": 247,
+    "positive_agreement": 0.9476
+   }
+  },
+  "haiku nongap": {
+   "category": {
+    "n": 752,
+    "units": 24,
+    "agree": 0.9734,
+    "kappa": 0.5907,
+    "kappa_ci95": [
+     0.3028,
+     0.8475
+    ],
+    "confusion": {
+     "맞음->맞음": 718,
+     "맞음->빠뜨림": 0,
+     "맞음->오독": 13,
+     "맞음->알 수 없음": 0,
+     "빠뜨림->맞음": 4,
+     "빠뜨림->빠뜨림": 10,
+     "빠뜨림->오독": 1,
+     "빠뜨림->알 수 없음": 0,
+     "오독->맞음": 1,
+     "오독->빠뜨림": 0,
+     "오독->오독": 4,
+     "오독->알 수 없음": 0,
+     "알 수 없음->맞음": 0,
+     "알 수 없음->빠뜨림": 0,
+     "알 수 없음->오독": 1,
+     "알 수 없음->알 수 없음": 0
+    }
+   },
+   "misread": {
+    "n": 752,
+    "units": 24,
+    "agree": 0.9787,
+    "kappa": 0.3262,
+    "kappa_ci95": [
+     -0.0057,
+     0.7746
+    ],
+    "both": 4,
+    "codex_only": 1,
+    "haiku_only": 15,
+    "neither": 732,
+    "positive_agreement": 0.3333
+   }
+  },
+  "haiku elements": {
+   "n": 1936,
+   "units": 24,
+   "agree": 0.9556,
+   "kappa": 0.8898,
+   "kappa_ci95": [
+    0.8427,
+    0.9306
+   ],
+   "confusion": {
+    "있음->있음": 1418,
+    "있음->없음": 17,
+    "있음->어긋남": 10,
+    "없음->있음": 32,
+    "없음->없음": 188,
+    "없음->어긋남": 6,
+    "어긋남->있음": 18,
+    "어긋남->없음": 3,
+    "어긋남->어긋남": 244
+   }
+  }
+ },
+ "grader_consistency": {
+  "codex": {
+   "맞음 | 어긋남 없음 | 없음 없음": 1625,
+   "빠뜨림 | 어긋남 없음 | 없음 있음": 69,
+   "알 수 없음 | 어긋남 없음 | 없음 있음": 397,
+   "오독 | 어긋남 없음 | 없음 없음": 20,
+   "오독 | 어긋남 없음 | 없음 있음": 14,
+   "오독 | 어긋남 있음 | 없음 없음": 425,
+   "오독 | 어긋남 있음 | 없음 있음": 10
+  },
+  "haiku": {
+   "맞음 | 어긋남 없음 | 없음 없음": 1673,
+   "빠뜨림 | 어긋남 없음 | 없음 있음": 20,
+   "알 수 없음 | 어긋남 없음 | 없음 있음": 412,
+   "오독 | 어긋남 없음 | 없음 없음": 42,
+   "오독 | 어긋남 없음 | 없음 있음": 3,
+   "오독 | 어긋남 있음 | 없음 없음": 404,
+   "오독 | 어긋남 있음 | 없음 있음": 6
+  }
+ },
+ "grok_gap_by_kind": {
+  "deadline_vs_date": {
+   "base": {
+    "free": {
+     "acc": 0.2812,
+     "partial": 0.0,
+     "misread": 0.7188,
+     "abstain": 0.0,
+     "n": 32
+    },
+    "mc": {
+     "acc": 0.3438,
+     "partial": 0.0,
+     "misread": 0.6562,
+     "abstain": 0.0,
+     "n": 32
+    }
+   },
+   "clarity": {
+    "free": {
+     "acc": 0.2812,
+     "partial": 0.0,
+     "misread": 0.7188,
+     "abstain": 0.0,
+     "n": 32
+    },
+    "mc": {
+     "acc": 0.3438,
+     "partial": 0.0,
+     "misread": 0.6562,
+     "abstain": 0.0,
+     "n": 32
+    }
+   },
+   "full": {
+    "free": {
+     "acc": 0.625,
+     "partial": 0.0,
+     "misread": 0.375,
+     "abstain": 0.0,
+     "n": 32
+    },
+    "mc": {
+     "acc": 0.6562,
+     "partial": 0.0,
+     "misread": 0.3438,
+     "abstain": 0.0,
+     "n": 32
+    }
+   },
+   "short": {
+    "free": {
+     "acc": 0.3125,
+     "partial": 0.0,
+     "misread": 0.6875,
+     "abstain": 0.0,
+     "n": 32
+    },
+    "mc": {
+     "acc": 0.5,
+     "partial": 0.0,
+     "misread": 0.5,
+     "abstain": 0.0,
+     "n": 32
+    }
+   }
+  },
+  "no_actor": {
+   "base": {
+    "free": {
+     "acc": 0.6875,
+     "partial": 0.0,
+     "misread": 0.3125,
+     "abstain": 0.0,
+     "n": 32
+    },
+    "mc": {
+     "acc": 0.7188,
+     "partial": 0.0,
+     "misread": 0.2812,
+     "abstain": 0.0,
+     "n": 32
+    }
+   },
+   "clarity": {
+    "free": {
+     "acc": 0.7188,
+     "partial": 0.0,
+     "misread": 0.2812,
+     "abstain": 0.0,
+     "n": 32
+    },
+    "mc": {
+     "acc": 0.7812,
+     "partial": 0.0,
+     "misread": 0.2188,
+     "abstain": 0.0,
+     "n": 32
+    }
+   },
+   "full": {
+    "free": {
+     "acc": 0.8438,
+     "partial": 0.0,
+     "misread": 0.1562,
+     "abstain": 0.0,
+     "n": 32
+    },
+    "mc": {
+     "acc": 0.8438,
+     "partial": 0.0,
+     "misread": 0.1562,
+     "abstain": 0.0,
+     "n": 32
+    }
+   },
+   "short": {
+    "free": {
+     "acc": 0.9375,
+     "partial": 0.0,
+     "misread": 0.0625,
+     "abstain": 0.0,
+     "n": 32
+    },
+    "mc": {
+     "acc": 0.9375,
+     "partial": 0.0,
+     "misread": 0.0625,
+     "abstain": 0.0,
+     "n": 32
+    }
+   }
+  },
+  "two_targets": {
+   "base": {
+    "free": {
+     "acc": 0.6,
+     "partial": 0.0,
+     "misread": 0.4,
+     "abstain": 0.0,
+     "n": 20
+    },
+    "mc": {
+     "acc": 0.7,
+     "partial": 0.0,
+     "misread": 0.3,
+     "abstain": 0.0,
+     "n": 20
+    }
+   },
+   "clarity": {
+    "free": {
+     "acc": 0.5,
+     "partial": 0.0,
+     "misread": 0.5,
+     "abstain": 0.0,
+     "n": 20
+    },
+    "mc": {
+     "acc": 0.75,
+     "partial": 0.0,
+     "misread": 0.25,
+     "abstain": 0.0,
+     "n": 20
+    }
+   },
+   "full": {
+    "free": {
+     "acc": 0.8,
+     "partial": 0.0,
+     "misread": 0.2,
+     "abstain": 0.0,
+     "n": 20
+    },
+    "mc": {
+     "acc": 0.75,
+     "partial": 0.0,
+     "misread": 0.25,
+     "abstain": 0.0,
+     "n": 20
+    }
+   },
+   "short": {
+    "free": {
+     "acc": 0.85,
+     "partial": 0.0,
+     "misread": 0.15,
+     "abstain": 0.0,
+     "n": 20
+    },
+    "mc": {
+     "acc": 0.85,
+     "partial": 0.0,
+     "misread": 0.15,
+     "abstain": 0.0,
+     "n": 20
+    }
+   }
+  },
+  "vague_status": {
+   "base": {
+    "free": {
+     "acc": 0.75,
+     "partial": 0.125,
+     "misread": 0.125,
+     "abstain": 0.0,
+     "n": 16
+    },
+    "mc": {
+     "acc": 0.9375,
+     "partial": 0.0,
+     "misread": 0.0,
+     "abstain": 0.0625,
+     "n": 16
+    }
+   },
+   "clarity": {
+    "free": {
+     "acc": 0.75,
+     "partial": 0.125,
+     "misread": 0.125,
+     "abstain": 0.0,
+     "n": 16
+    },
+    "mc": {
+     "acc": 0.9375,
+     "partial": 0.0,
+     "misread": 0.0,
+     "abstain": 0.0625,
+     "n": 16
+    }
+   },
+   "full": {
+    "free": {
+     "acc": 0.75,
+     "partial": 0.125,
+     "misread": 0.0,
+     "abstain": 0.125,
+     "n": 16
+    },
+    "mc": {
+     "acc": 0.9375,
+     "partial": 0.0,
+     "misread": 0.0,
+     "abstain": 0.0625,
+     "n": 16
+    }
+   },
+   "short": {
+    "free": {
+     "acc": 0.75,
+     "partial": 0.125,
+     "misread": 0.0,
+     "abstain": 0.125,
+     "n": 16
+    },
+    "mc": {
+     "acc": 1.0,
+     "partial": 0.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 16
+    }
+   }
+  },
+  "weak_obligation": {
+   "base": {
+    "free": {
+     "acc": 0.25,
+     "partial": 0.0625,
+     "misread": 0.5312,
+     "abstain": 0.1562,
+     "n": 32
+    },
+    "mc": {
+     "acc": 0.5312,
+     "partial": 0.0,
+     "misread": 0.0625,
+     "abstain": 0.4062,
+     "n": 32
+    }
+   },
+   "clarity": {
+    "free": {
+     "acc": 0.2188,
+     "partial": 0.0938,
+     "misread": 0.5312,
+     "abstain": 0.1562,
+     "n": 32
+    },
+    "mc": {
+     "acc": 0.4688,
+     "partial": 0.0,
+     "misread": 0.0625,
+     "abstain": 0.4688,
+     "n": 32
+    }
+   },
+   "full": {
+    "free": {
+     "acc": 0.5625,
+     "partial": 0.125,
+     "misread": 0.3125,
+     "abstain": 0.0,
+     "n": 32
+    },
+    "mc": {
+     "acc": 0.6875,
+     "partial": 0.0,
+     "misread": 0.0,
+     "abstain": 0.3125,
+     "n": 32
+    }
+   },
+   "short": {
+    "free": {
+     "acc": 0.5312,
+     "partial": 0.125,
+     "misread": 0.3125,
+     "abstain": 0.0312,
+     "n": 32
+    },
+    "mc": {
+     "acc": 0.75,
+     "partial": 0.0,
+     "misread": 0.0,
+     "abstain": 0.25,
+     "n": 32
+    }
+   }
+  }
+ },
+ "grok_gap_mc_vs_free": {
+  "base": {
+   "mc ab -> free ab": 3,
+   "mc ab -> free mis": 9,
+   "mc ab -> free ok": 1,
+   "mc ab -> free part": 1,
+   "mc mis -> free mis": 30,
+   "mc mis -> free ok": 8,
+   "mc ok -> free ab": 2,
+   "mc ok -> free mis": 21,
+   "mc ok -> free ok": 54,
+   "mc ok -> free part": 3
+  },
+  "clarity": {
+   "mc ab -> free ab": 3,
+   "mc ab -> free mis": 8,
+   "mc ab -> free ok": 3,
+   "mc ab -> free part": 2,
+   "mc mis -> free mis": 33,
+   "mc mis -> free ok": 2,
+   "mc ok -> free ab": 2,
+   "mc ok -> free mis": 20,
+   "mc ok -> free ok": 56,
+   "mc ok -> free part": 3
+  },
+  "short": {
+   "mc ab -> free mis": 3,
+   "mc ab -> free ok": 3,
+   "mc ab -> free part": 2,
+   "mc mis -> free mis": 19,
+   "mc mis -> free ok": 2,
+   "mc ok -> free ab": 3,
+   "mc ok -> free mis": 15,
+   "mc ok -> free ok": 81,
+   "mc ok -> free part": 4
+  },
+  "full": {
+   "mc ab -> free ab": 1,
+   "mc ab -> free mis": 4,
+   "mc ab -> free ok": 4,
+   "mc ab -> free part": 2,
+   "mc mis -> free mis": 18,
+   "mc mis -> free ok": 3,
+   "mc ok -> free ab": 1,
+   "mc ok -> free mis": 9,
+   "mc ok -> free ok": 86,
+   "mc ok -> free part": 4
+  }
+ },
+ "exploratory": {
+  "grok_gap_without_weak_obligation": {
+   "summary": {
+    "base": {
+     "free": {
+      "acc": 0.55,
+      "partial": 0.02,
+      "misread": 0.43,
+      "abstain": 0.0,
+      "n": 100
+     },
+     "mc": {
+      "acc": 0.63,
+      "partial": 0.0,
+      "misread": 0.36,
+      "abstain": 0.01,
+      "n": 100
+     }
+    },
+    "clarity": {
+     "free": {
+      "acc": 0.54,
+      "partial": 0.02,
+      "misread": 0.44,
+      "abstain": 0.0,
+      "n": 100
+     },
+     "mc": {
+      "acc": 0.66,
+      "partial": 0.0,
+      "misread": 0.33,
+      "abstain": 0.01,
+      "n": 100
+     }
+    },
+    "short": {
+     "free": {
+      "acc": 0.69,
+      "partial": 0.02,
+      "misread": 0.27,
+      "abstain": 0.02,
+      "n": 100
+     },
+     "mc": {
+      "acc": 0.79,
+      "partial": 0.0,
+      "misread": 0.21,
+      "abstain": 0.0,
+      "n": 100
+     }
+    },
+    "full": {
+     "free": {
+      "acc": 0.75,
+      "partial": 0.02,
+      "misread": 0.21,
+      "abstain": 0.02,
+      "n": 100
+     },
+     "mc": {
+      "acc": 0.78,
+      "partial": 0.0,
+      "misread": 0.21,
+      "abstain": 0.01,
+      "n": 100
+     }
+    }
+   },
+   "tests": {
+    "free full-base": {
+     "memos": 24,
+     "diff": -0.2049,
+     "ci95": [
+      -0.3368,
+      -0.0764
+     ],
+     "ci_excludes_0": true
+    },
+    "free short-base": {
+     "memos": 24,
+     "diff": -0.1528,
+     "ci95": [
+      -0.2639,
+      -0.0451
+     ],
+     "ci_excludes_0": true
+    },
+    "free clarity-base": {
+     "memos": 24,
+     "diff": 0.0035,
+     "ci95": [
+      -0.0729,
+      0.0833
+     ],
+     "ci_excludes_0": false
+    },
+    "free full-clarity": {
+     "memos": 24,
+     "diff": -0.2083,
+     "ci95": [
+      -0.3403,
+      -0.0868
+     ],
+     "ci_excludes_0": true
+    },
+    "mc full-base": {
+     "memos": 24,
+     "diff": -0.1493,
+     "ci95": [
+      -0.2535,
+      -0.0521
+     ],
+     "ci_excludes_0": true
+    },
+    "mc short-base": {
+     "memos": 24,
+     "diff": -0.1528,
+     "ci95": [
+      -0.257,
+      -0.0556
+     ],
+     "ci_excludes_0": true
+    },
+    "mc clarity-base": {
+     "memos": 24,
+     "diff": -0.0382,
+     "ci95": [
+      -0.1111,
+      0.0278
+     ],
+     "ci_excludes_0": false
+    },
+    "mc full-clarity": {
+     "memos": 24,
+     "diff": -0.1111,
+     "ci95": [
+      -0.2118,
+      -0.0208
+     ],
+     "ci_excludes_0": true
+    }
+   },
+   "free-mc": {
+    "base": {
+     "memos": 24,
+     "diff": 0.0556,
+     "ci95": [
+      -0.0556,
+      0.1667
+     ],
+     "ci_excludes_0": false
+    },
+    "clarity": {
+     "memos": 24,
+     "diff": 0.0972,
+     "ci95": [
+      0.0174,
+      0.1875
+     ],
+     "ci_excludes_0": true
+    },
+    "short": {
+     "memos": 24,
+     "diff": 0.0555,
+     "ci95": [
+      -0.0035,
+      0.1215
+     ],
+     "ci_excludes_0": false
+    },
+    "full": {
+     "memos": 24,
+     "diff": 0.0,
+     "ci95": [
+      -0.0451,
+      0.0451
+     ],
+     "ci_excludes_0": false
+    }
+   }
+  },
+  "grok_gap_misread_agreement_by_kind": {
+   "deadline_vs_date": {
+    "haiku_only": 8,
+    "both": 80,
+    "neither": 40
+   },
+   "no_actor": {
+    "neither": 102,
+    "both": 26
+   },
+   "two_targets": {
+    "codex_only": 4,
+    "neither": 55,
+    "both": 21
+   },
+   "vague_status": {
+    "neither": 60,
+    "both": 4
+   },
+   "weak_obligation": {
+    "neither": 74,
+    "both": 21,
+    "codex_only": 33
+   }
+  }
+ }
+}
