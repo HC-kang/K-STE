@@ -1,0 +1,53 @@
+== 출력 수와 판정 오류
+v4 출력 212 /212, 판정 174 판정 오류 0
+cand 출력 212 /212, 판정 174 판정 오류 0
+== 판정 기준 (v4 / 후보 / 차이 / 한계 / 결과)
+(a) S7 글자 기준 탈락 (20회): 8 / 5 / -3.0 / 3 / 충족
+(b) S5-S7 판정 통과 (60회): 48 / 53 / +5.0 / 6 / 충족
+(c) S9 글자 기준 + S14 판정 통과 (40회): 40 / 39 / -1.0 / 4 / 충족
+(d) 스킬 실행, S5 S6 S7 S9 S14 (100회): 100 / 98 / -2.0 / 2 / 충족
+(e1) S10 볼드 가짜 제목 (20회): 2 / 0 / -2.0 / 2 / 충족
+(e2) S13 판정 통과 (20회): 19 / 18 / -1.0 / 2 / 충족
+(f S15) S15 판정 통과 (r1-r3, 6회): 6 / 6 / +0.0 / 1 / 충족
+(f S18) S18 판정 통과 (r1-r3, 6회): 6 / 5 / -1.0 / 1 / 충족
+(f S19) S19 판정 통과 (r1-r3, 6회): 6 / 5 / -1.0 / 1 / 충족
+(f S11-S15) S11-S15 판정 통과 (r1-r3, 30회): 29 / 27 / -2.0 / 2 / 충족
+(g) 첫 문장 결론 S1 S2 S10 (r1-r3, 18회): 18 / 18 / +0.0 / 1 / 충족
+(h haiku) 실행 1회당 결함 haiku (r1-r3): 5.7 / 5.7 / +0.0 / 2.0 / 충족
+(h sonnet) 실행 1회당 결함 sonnet (r1-r3): 0.7 / 1.3 / +0.7 / 2.0 / 충족
+모든 기준 충족
+== 따로 보고하는 지표
+v4 재작성·검수 rewrite.md 읽음 88/100 | genres.md 읽음(모든 출력) 15 | word-swaps.md 읽음(재작성·검수) 26
+v4 새 글 스킬 실행 r1-r3 62/78 | 새 글 모든 회차 80/106 | S8 0/6 | 모든 출력 180/212
+v4 확인 필요 줄 (모든 회차) {'S1': 2, 'S4': 15, 'S5': 5, 'S6': 47, 'S7': 1, 'S9': 4, 'S10': 30, 'S11': 3, 'S14': 45, 'S17': 1} 합 153 | r1-r3 합 59
+v4 S9 없는 ID 출력 0 | S9 K15 인용 출력 14 | S7 판정 실패 중 글자 기준 탈락 8 / 8
+v4 모델별: S7 탈락 {'haiku': 2, 'sonnet': 6} S5-S7 통과 {'haiku': 25, 'sonnet': 23}
+v4 시나리오별 판정 통과 {'S1': '6/6', 'S2': '6/6', 'S5': '17/20', 'S6': '19/20', 'S7': '12/20', 'S10': '19/20', 'S11': '6/6', 'S12': '5/6', 'S13': '19/20', 'S14': '20/20', 'S15': '6/6', 'S16': '5/6', 'S17': '6/6', 'S18': '6/6', 'S19': '6/6'}
+cand 재작성·검수 rewrite.md 읽음 84/100 | genres.md 읽음(모든 출력) 16 | word-swaps.md 읽음(재작성·검수) 29
+cand 새 글 스킬 실행 r1-r3 57/78 | 새 글 모든 회차 75/106 | S8 0/6 | 모든 출력 173/212
+cand 확인 필요 줄 (모든 회차) {'S1': 4, 'S4': 12, 'S5': 5, 'S6': 38, 'S7': 1, 'S9': 9, 'S10': 16, 'S11': 2, 'S12': 1, 'S14': 38, 'S16': 2, 'S18': 2} 합 130 | r1-r3 합 50
+cand S9 없는 ID 출력 0 | S9 K15 인용 출력 8 | S7 판정 실패 중 글자 기준 탈락 5 / 5
+cand 모델별: S7 탈락 {'haiku': 1, 'sonnet': 4} S5-S7 통과 {'haiku': 29, 'sonnet': 24}
+cand 시나리오별 판정 통과 {'S1': '6/6', 'S2': '6/6', 'S5': '19/20', 'S6': '19/20', 'S7': '15/20', 'S10': '20/20', 'S11': '5/6', 'S12': '5/6', 'S13': '18/20', 'S14': '19/20', 'S15': '6/6', 'S16': '3/6', 'S17': '6/6', 'S18': '5/6', 'S19': '5/6'}
+S7 탈락 후보-v4 -15.0% 부트스트랩 95% [-45.0%, +15.0%]
+S5-S7 통과 후보-v4 +8.3% 부트스트랩 95% [-5.0%, +21.7%]
+== S7 탈락과 S5-S7 통과, rewrite.md를 읽었는지에 따라 (읽음 / 안 읽음)
+v4 S7 탈락 2/11 6/9
+v4 S5-S7 통과 44/50 4/10
+cand S7 탈락 2/12 3/8
+cand S5-S7 통과 43/47 10/13
+== S5-S7 밖의 판정 실패 (스킬 실행 여부)
+it25-r1/haiku/agent+short-cand/S12.md no-skill | "운영 배포 전까지 1원 오차가 계속 발생할 수 있습니다" adds a forecast that the facts list does not contain.
+it25-r1/haiku/agent+short-cand/S14.md skill | The output never asks the writer which document "해당 문서" means; it has no "확인 필요" line or equivalent question.
+it25-r1/haiku/agent+short-cand/S16.md no-skill | "개발팀은 2안으로 프론트엔드…를 개발하고 있습니다" names 개발팀 as the actor, but the memo does not say who is developing the screens.
+it25-r1/sonnet/agent+short-cand/S19.md skill | The summary sentence "11월 3일 킥오프 회의로 시작하고, 11월 18일 18:00까지 시연 피드백을 받습니다" presents a start-to-end span whose endpoint is a deadline, without labeling it as 마감 or 기한.
+it25-r2/haiku/agent+short-cand/S11.md no-skill | Item 4 narrows the permission's condition from 장애 대응 (incident response) to "장애 복구 작업 중이면" (recovery work), which changes the exception's scope beyond what the list states.
+it25-r2/haiku/agent+short-cand/S16.md no-skill | "개발팀은 2안으로 프론트엔드 화면을 개발하고 있습니다" names 개발팀 as the actor, but the memo does not say who is developing. / "개발팀은 그중 3건을 고쳤습니다" names 개발팀 as the one who fixed the warnings, but the memo does not say who fi
+it25-r2/haiku/agent+short-v4/S12.md no-skill | "이 37건은 수정 전 코드에서 발생한 것으로 보입니다" states a cause that the fact list does not contain.
+it25-r2/sonnet/agent+short-cand/S16.md skill | "프론트엔드 팀은 2안으로 화면을 개발하고 있습니다" names an actor (프론트엔드 팀) that the memo does not contain; the closing note flags this, but the claim is still in the update.
+it25-r2/sonnet/agent+short-cand/S18.md skill | "모든 직원이 사전 설문을 제출해야 합니다" names a survey audience that the facts never give. The closing note flags this, but the announcement still states it as fact.
+it25-r3/haiku/agent+short-v4/S16.md no-skill | "개발팀은 2안으로 프론트엔드 화면을 개발하고 있습니다" names 개발팀 as the actor, but the memo does not say who is doing the development.
+it25-r5/haiku/agent+short-v4/S10.md skill | 로컬 빌드가 성공한 것은 2.0.0이 문제없다는 근거가 되지 않습니다.
+it25-r6/sonnet/agent+short-cand/S13.md skill | "크게 나빠졌습니다" is a degree word, and neither its sentence nor the sentence right before or after gives the 800 rps numbers (1.9초, 2.3%); those numbers appear only later in the table.
+it25-r7/sonnet/agent+short-cand/S13.md skill | "크게 나빠졌습니다" states a degree conclusion, but neither that sentence nor the next one gives the 800 rps numbers (p99 1.9초, 오류율 2.3%); they appear only in a later paragraph.
+it25-r8/haiku/agent+short-v4/S13.md no-skill | "실제 사용량에 가까운 요청을 보내" says the test traffic resembled real usage, a fact the list does not contain.

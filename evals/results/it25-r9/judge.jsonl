@@ -1,0 +1,24 @@
+{"file": "evals/results/it25-r9/haiku/agent+short-cand/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI에서만 빌드가 실패하는 원인은 `@company/ui` 2.0.0의 `exports` 필드 추가로 보인다."}}
+{"file": "evals/results/it25-r9/haiku/agent+short-cand/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r9/haiku/agent+short-cand/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r9/haiku/agent+short-cand/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r9/haiku/agent+short-cand/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r9/haiku/agent+short-cand/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r9/haiku/agent+short-v4/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "원인은 아직 확정되지 않았다."}}
+{"file": "evals/results/it25-r9/haiku/agent+short-v4/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r9/haiku/agent+short-v4/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r9/haiku/agent+short-v4/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r9/haiku/agent+short-v4/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r9/haiku/agent+short-v4/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r9/sonnet/agent+short-cand/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI 실패의 원인은 `@company/ui` 2.0.0에 추가된 `exports` 필드로 보입니다."}}
+{"file": "evals/results/it25-r9/sonnet/agent+short-cand/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r9/sonnet/agent+short-cand/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r9/sonnet/agent+short-cand/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r9/sonnet/agent+short-cand/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r9/sonnet/agent+short-cand/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r9/sonnet/agent+short-v4/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI 빌드가 실패하는 가장 유력한 원인은 `@company/ui` 2.0.0의 `exports` 필드가 `@company/ui/button` 경로를 열어 주지 않는 것입니다."}}
+{"file": "evals/results/it25-r9/sonnet/agent+short-v4/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r9/sonnet/agent+short-v4/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r9/sonnet/agent+short-v4/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r9/sonnet/agent+short-v4/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r9/sonnet/agent+short-v4/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' can now be read as the check failing rather than the backup failing."]}}

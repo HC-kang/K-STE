@@ -1,0 +1,24 @@
+{"file": "evals/results/it25-r7/haiku/agent+short-cand/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI에서만 실패하는 가장 유력한 원인은 `@company/ui` 2.0.0의 `exports` 필드가 `button` 경로를 1.4.0과 다르게 노출하는 것이다."}}
+{"file": "evals/results/it25-r7/haiku/agent+short-cand/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r7/haiku/agent+short-cand/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r7/haiku/agent+short-cand/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r7/haiku/agent+short-cand/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r7/haiku/agent+short-cand/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r7/haiku/agent+short-v4/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 로컬에 남은 1.4.0과 CI가 새로 설치하는 2.0.0의 버전 차이입니다."}}
+{"file": "evals/results/it25-r7/haiku/agent+short-v4/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r7/haiku/agent+short-v4/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r7/haiku/agent+short-v4/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r7/haiku/agent+short-v4/S6.md", "sid": "S6", "verdict": {"meaning_changed": true, "issues": ["The added subject '이 두 서버는' silently settles what '초기화됩니다' refers to as the servers, while the original can also be read as the memory (cache contents) being reset."]}}
+{"file": "evals/results/it25-r7/haiku/agent+short-v4/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r7/sonnet/agent+short-cand/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "로컬 빌드가 성공하는 이유는 로컬 `node_modules`에 아직 `@company/ui` 1.4.0이 설치돼 있기 때문일 가능성이 가장 큽니다."}}
+{"file": "evals/results/it25-r7/sonnet/agent+short-cand/S13.md", "sid": "S13", "verdict": {"pass": false, "issues": ["\"크게 나빠졌습니다\" states a degree conclusion, but neither that sentence nor the next one gives the 800 rps numbers (p99 1.9초, 오류율 2.3%); they appear only in a later paragraph."]}}
+{"file": "evals/results/it25-r7/sonnet/agent+short-cand/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r7/sonnet/agent+short-cand/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r7/sonnet/agent+short-cand/S6.md", "sid": "S6", "verdict": {"meaning_changed": true, "issues": ["The original's '초기화됩니다' can mean either the servers or their memory are reset, and the output silently resolves it to the servers by repeating '캐시 서버와 API 서버는' as the explicit subject without flagging it."]}}
+{"file": "evals/results/it25-r7/sonnet/agent+short-cand/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The rewrite drops the subject '백업이' from the failure condition, so '실패하면' could refer to the backup or to the verification step."]}}
+{"file": "evals/results/it25-r7/sonnet/agent+short-v4/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "원인은 로컬과 CI가 서로 다른 버전의 `@company/ui`를 쓰는 것으로 보입니다."}}
+{"file": "evals/results/it25-r7/sonnet/agent+short-v4/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r7/sonnet/agent+short-v4/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r7/sonnet/agent+short-v4/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r7/sonnet/agent+short-v4/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r7/sonnet/agent+short-v4/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

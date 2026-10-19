@@ -1,0 +1,56 @@
+{"file": "evals/results/it26-r4/haiku/agent+short-v3/S10.md", "sid": "S10", "verdict": {"conclusion_first": false, "first_sentence": "# 2.0.0 업그레이드 후 CI 빌드 실패 원인 분석"}}
+{"file": "evals/results/it26-r4/haiku/agent+short-v3/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/agent+short-v3/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/agent+short-v3/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/agent+short-v3/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/agent+short-v3/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/agent+short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/agent+short-v4.1/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI 실패의 가장 유력한 원인은 `@company/ui` 2.0.0의 `exports` 필드가 `@company/ui/button` 경로를 허용하지 않는 것입니다."}}
+{"file": "evals/results/it26-r4/haiku/agent+short-v4.1/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/agent+short-v4.1/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/agent+short-v4.1/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/agent+short-v4.1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/agent+short-v4.1/S6.md", "sid": "S6", "verdict": {"meaning_changed": true, "issues": ["The original leaves open whether the servers or their memory are what gets reset ('메모리를 많이 사용하며, ... 초기화됩니다'), but the output adds '두 서버는', which settles it as the servers without flagging it."]}}
+{"file": "evals/results/it26-r4/haiku/agent+short-v4.1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/short-v3/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 로컬과 CI가 서로 다른 버전의 @company/ui를 쓰고 있다는 것이다."}}
+{"file": "evals/results/it26-r4/haiku/short-v3/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/short-v3/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/short-v3/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/short-v3/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The causal link '이에 따라' is dropped, so the backup and validation steps no longer follow explicitly from the integrity risk.", "'작업과 관련하여' (in connection with) becomes '작업으로' (because of), which states that the migration causes the integrity issue when the original only links the two."]}}
+{"file": "evals/results/it26-r4/haiku/short-v3/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The rewrite drops the subject '백업이' from the failure condition, so '실패하면' could mean the check failed instead of the backup failed."]}}
+{"file": "evals/results/it26-r4/haiku/short-v4.1/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 2.0.0에서 추가된 `exports` 필드(패키지가 외부에 공개할 경로 목록)가 `@company/ui/button` 같은 하위 경로 import를 막는 것입니다."}}
+{"file": "evals/results/it26-r4/haiku/short-v4.1/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/short-v4.1/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/short-v4.1/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/short-v4.1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/short-v4.1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/haiku/short-v4.1/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '실패한 경우', so the failure could now be read as the check failing rather than the backup failing."]}}
+{"file": "evals/results/it26-r4/sonnet/agent+short-v3/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 로컬 `node_modules`에 `@company/ui` 1.4.0이 남아 있고 CI는 2.0.0을 설치해서, 2.0.0의 `exports` 필드 때문에 `@company/ui/button` 경로를 찾지 못하는 것입니다."}}
+{"file": "evals/results/it26-r4/sonnet/agent+short-v3/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/agent+short-v3/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/agent+short-v3/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/agent+short-v3/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/agent+short-v3/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/agent+short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/agent+short-v4.1/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "로컬이 `@company/ui` 1.4.0을 쓰고 CI가 2.0.0을 설치해서 생긴 차이로 보입니다."}}
+{"file": "evals/results/it26-r4/sonnet/agent+short-v4.1/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/agent+short-v4.1/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/agent+short-v4.1/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/agent+short-v4.1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/agent+short-v4.1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/agent+short-v4.1/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '실패한 경우', so the reader cannot tell whether the backup or the verification is what failed."]}}
+{"file": "evals/results/it26-r4/sonnet/short-v3/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 로컬이 아직 `@company/ui` 1.4.0을 쓰고 있고, CI만 2.0.0을 설치해서 `@company/ui/button` 경로가 막힌 것입니다."}}
+{"file": "evals/results/it26-r4/sonnet/short-v3/S13.md", "sid": "S13", "verdict": {"pass": false, "issues": ["\"크게 나빠졌습니다\" is a degree word, and neither its own sentence nor the next sentence (the p99 definition) gives the 800 requests-per-second numbers; they appear only in the table two sentences later.", "\"원인인지는 아직 확인하지 않았습니다\" states the investigation status as fact, and the list does not contain it."]}}
+{"file": "evals/results/it26-r4/sonnet/short-v3/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/short-v3/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/short-v3/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/short-v3/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/short-v4.1/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI는 `@company/ui` 2.0.0으로 빌드하고 로컬은 1.4.0으로 빌드하기 때문에 결과가 다르며, 2.0.0의 `exports` 필드에 `@company/ui/button` 경로가 없는 것이 원인일 가능성이 가장 높습니다."}}
+{"file": "evals/results/it26-r4/sonnet/short-v4.1/S13.md", "sid": "S13", "verdict": {"pass": false, "issues": ["\"크게 나빠졌습니다\" is a degree word, and neither its own sentence nor the sentence next to it (the p99 definition) gives the 800-per-second numbers; they appear only in the table further down."]}}
+{"file": "evals/results/it26-r4/sonnet/short-v4.1/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/short-v4.1/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/short-v4.1/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The original says pre-validation in staging is recommended (passive), and the context implies the recommendation is directed at 운영팀; the output says '운영팀은 … 권장합니다', which makes 운영팀 the one giving the recommendation instead of the one receiving it."]}}
+{"file": "evals/results/it26-r4/sonnet/short-v4.1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r4/sonnet/short-v4.1/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' could also be read as the check failing rather than the backup failing."]}}

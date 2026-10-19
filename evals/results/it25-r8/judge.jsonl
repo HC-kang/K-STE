@@ -1,0 +1,24 @@
+{"file": "evals/results/it25-r8/haiku/agent+short-cand/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "로컬과 CI가 서로 다른 버전의 `@company/ui`를 쓰고 있을 가능성이 높습니다."}}
+{"file": "evals/results/it25-r8/haiku/agent+short-cand/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r8/haiku/agent+short-cand/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r8/haiku/agent+short-cand/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r8/haiku/agent+short-cand/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r8/haiku/agent+short-cand/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r8/haiku/agent+short-v4/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "로컬 `node_modules`가 3일 전 설치된 1.4.0 상태로 남아 있어서 로컬 빌드가 통과하고, 2.0.0의 `exports` 필드가 `@company/ui/button` 경로를 허용하지 않아 CI에서만 실패하는 것으로 보입니다."}}
+{"file": "evals/results/it25-r8/haiku/agent+short-v4/S13.md", "sid": "S13", "verdict": {"pass": false, "issues": ["\"실제 사용량에 가까운 요청을 보내\" says the test traffic resembled real usage, a fact the list does not contain."]}}
+{"file": "evals/results/it25-r8/haiku/agent+short-v4/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r8/haiku/agent+short-v4/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r8/haiku/agent+short-v4/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r8/haiku/agent+short-v4/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r8/sonnet/agent+short-cand/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI 빌드가 실패하는 원인은 CI가 `@company/ui` 2.0.0을 설치하고 로컬은 1.4.0을 쓰기 때문일 가능성이 가장 높습니다."}}
+{"file": "evals/results/it25-r8/sonnet/agent+short-cand/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r8/sonnet/agent+short-cand/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r8/sonnet/agent+short-cand/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r8/sonnet/agent+short-cand/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r8/sonnet/agent+short-cand/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r8/sonnet/agent+short-v4/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI 빌드는 `@company/ui` 2.0.0을 설치해서 실패하고, 로컬 빌드는 1.4.0을 계속 써서 성공한 것으로 보입니다."}}
+{"file": "evals/results/it25-r8/sonnet/agent+short-v4/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r8/sonnet/agent+short-v4/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r8/sonnet/agent+short-v4/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r8/sonnet/agent+short-v4/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r8/sonnet/agent+short-v4/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from the failure condition, so '실패하면' could mean the check failed instead of the backup."]}}

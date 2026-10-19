@@ -1,0 +1,56 @@
+{"file": "evals/results/it26-r5/haiku/agent+short-v3/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 로컬과 CI가 서로 다른 `@company/ui` 버전을 쓰고 있다는 점입니다."}}
+{"file": "evals/results/it26-r5/haiku/agent+short-v3/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/agent+short-v3/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/agent+short-v3/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/agent+short-v3/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/agent+short-v3/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/agent+short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/agent+short-v4.1/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 `@company/ui` 2.0.0에 추가된 `exports` 필드입니다."}}
+{"file": "evals/results/it26-r5/haiku/agent+short-v4.1/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/agent+short-v4.1/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/agent+short-v4.1/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The survey row adds an actor that the facts do not state: \"(각자 제출해야 합니다)\". The list only says \"사전 설문은 10월 22일 18:00까지 제출해야 한다\" and does not say who submits it."]}}
+{"file": "evals/results/it26-r5/haiku/agent+short-v4.1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/agent+short-v4.1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/agent+short-v4.1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/short-v3/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI에서만 실패하는 가장 유력한 원인은 `@company/ui` 2.0.0에 추가된 `exports` 필드(패키지 바깥에서 가져올 수 있는 경로를 정하는 설정)가 `@company/ui/button` 같은 하위 경로를 허용하지 않는 것입니다."}}
+{"file": "evals/results/it26-r5/haiku/short-v3/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/short-v3/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/short-v3/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/short-v3/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/short-v3/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/short-v4.1/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 `@company/ui` 2.0.0에 추가된 `exports` 필드입니다."}}
+{"file": "evals/results/it26-r5/haiku/short-v4.1/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/short-v4.1/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/short-v4.1/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/short-v4.1/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The causal link '이에 따라' is dropped, so the output no longer says the backup requirement exists because of the data-integrity risk."]}}
+{"file": "evals/results/it26-r5/haiku/short-v4.1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/haiku/short-v4.1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/agent+short-v3/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "원인은 확인하지 않았지만, 로컬 `node_modules`에 `@company/ui` 1.4.0이 남아 있고 CI에는 2.0.0이 설치돼 있을 가능성이 가장 높습니다."}}
+{"file": "evals/results/it26-r5/sonnet/agent+short-v3/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/agent+short-v3/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/agent+short-v3/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/agent+short-v3/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The original says '운영팀에서는 ... 사전 검증을 수행하는 것이 권장됩니다', a passive form in which the operations team is advised to verify, but '운영팀은 ... 사전 검증하는 것을 권장합니다' makes the operations team the one giving the recommendation, which changes the actor.", "The added '확인 필요' note says '가능하다면' may also apply to the backup, but in the original it clearly applies only to the clause after '하고', and the backup is marked '반드시', so the note casts false doubt on that obligation."]}}
+{"file": "evals/results/it26-r5/sonnet/agent+short-v3/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/agent+short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '실패하면', so it could also mean the check failing rather than the backup failing."]}}
+{"file": "evals/results/it26-r5/sonnet/agent+short-v4.1/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "원인은 로컬이 `@company/ui` 1.4.0을 쓰고 CI가 2.0.0을 쓰기 때문으로 보입니다."}}
+{"file": "evals/results/it26-r5/sonnet/agent+short-v4.1/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/agent+short-v4.1/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/agent+short-v4.1/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/agent+short-v4.1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/agent+short-v4.1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/agent+short-v4.1/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' is dropped from the failure condition, so '실패하면' can now be read as the verification failing rather than the backup failing."]}}
+{"file": "evals/results/it26-r5/sonnet/short-v3/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 로컬이 `@company/ui` 1.4.0을 계속 쓰고, CI는 2.0.0을 설치하는데 2.0.0의 `exports` 필드에 `./button` 경로가 없는 것입니다."}}
+{"file": "evals/results/it26-r5/sonnet/short-v3/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/short-v3/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/short-v3/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/short-v3/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/short-v3/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '실패한 경우에는', so it could now refer to the verification (확인) failing rather than the backup failing."]}}
+{"file": "evals/results/it26-r5/sonnet/short-v4.1/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 로컬이 아직 `@company/ui` 1.4.0을 쓰고 CI만 2.0.0을 설치해서, 2.0.0의 `exports` 필드 때문에 `@company/ui/button` 경로를 찾지 못하는 것입니다."}}
+{"file": "evals/results/it26-r5/sonnet/short-v4.1/S13.md", "sid": "S13", "verdict": {"pass": false, "issues": ["\"크게 나빠졌습니다\" is a degree word, and neither its own sentence nor the next one (\"두 조건 모두 30분 동안 돌렸습니다.\") gives the supporting numbers; 1.9초 and 2.3% appear only in the table further down."]}}
+{"file": "evals/results/it26-r5/sonnet/short-v4.1/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/short-v4.1/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/short-v4.1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/short-v4.1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it26-r5/sonnet/short-v4.1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

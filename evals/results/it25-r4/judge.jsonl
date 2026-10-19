@@ -1,0 +1,24 @@
+{"file": "evals/results/it25-r4/haiku/agent+short-cand/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "원인은 아직 확정할 수 없습니다."}}
+{"file": "evals/results/it25-r4/haiku/agent+short-cand/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r4/haiku/agent+short-cand/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r4/haiku/agent+short-cand/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r4/haiku/agent+short-cand/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r4/haiku/agent+short-cand/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r4/haiku/agent+short-v4/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI 빌드 실패의 가장 유력한 원인은 `@company/ui` 2.0.0에 추가된 `exports` 필드입니다."}}
+{"file": "evals/results/it25-r4/haiku/agent+short-v4/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r4/haiku/agent+short-v4/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r4/haiku/agent+short-v4/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r4/haiku/agent+short-v4/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r4/haiku/agent+short-v4/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r4/sonnet/agent+short-cand/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI 빌드 실패의 가장 유력한 원인은 로컬에 `@company/ui` 2.0.0이 설치되어 있지 않다는 점입니다."}}
+{"file": "evals/results/it25-r4/sonnet/agent+short-cand/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r4/sonnet/agent+short-cand/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r4/sonnet/agent+short-cand/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The original says staging validation is recommended for the operations team to perform, but the output makes the operations team the one who recommends it."]}}
+{"file": "evals/results/it25-r4/sonnet/agent+short-cand/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r4/sonnet/agent+short-cand/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r4/sonnet/agent+short-v4/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "빌드가 CI에서만 실패하는 가장 유력한 원인은 로컬과 CI가 서로 다른 버전의 `@company/ui`를 쓰는 것으로 보입니다."}}
+{"file": "evals/results/it25-r4/sonnet/agent+short-v4/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r4/sonnet/agent+short-v4/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it25-r4/sonnet/agent+short-v4/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r4/sonnet/agent+short-v4/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it25-r4/sonnet/agent+short-v4/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

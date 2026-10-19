@@ -1,0 +1,7 @@
+S5	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+S6	skill=['k-ste']	reads=['references/rewrite.md']
+S7	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+S13	skill=[]	reads=[]
+S10	skill=[]	reads=['/private/var/folders/bc/07p9yr855ysc6cscbpm86tz80000gn/T/tmp.HXx1K2gu59/package.json']
+S15	skill=['k-ste']	reads=['references/genres.md']
+S18	skill=[]	reads=[]
