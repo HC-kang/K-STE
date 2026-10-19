@@ -1,0 +1,92 @@
+{
+ "two_runs_pooled (2 texts per writer and condition, as X14)": {
+  "observed": {
+   "memos": 24,
+   "diff": 0.0347,
+   "ci95": [
+    -0.0069,
+    0.0799
+   ]
+  },
+  "sd_per_memo": 0.1104,
+  "normal_half_width_72": 0.0255,
+  "by_true_diff": {
+   "+0.000": {
+    "verdicts": {
+     "increase": 0.025,
+     "no_meaningful_increase": 0.6,
+     "undecided": 0.375
+    },
+    "median_ci_width": 0.0492
+   },
+   "+0.020": {
+    "verdicts": {
+     "increase": 0.375,
+     "no_meaningful_increase": 0.172,
+     "undecided": 0.453
+    },
+    "median_ci_width": 0.0492
+   },
+   "+0.035": {
+    "verdicts": {
+     "increase": 0.792,
+     "no_meaningful_increase": 0.022,
+     "undecided": 0.185
+    },
+    "median_ci_width": 0.0492
+   },
+   "+0.050": {
+    "verdicts": {
+     "increase": 0.99,
+     "undecided": 0.01
+    },
+    "median_ci_width": 0.0492
+   }
+  }
+ },
+ "x12_same_run (1 text per writer and condition, pessimistic)": {
+  "observed": {
+   "memos": 24,
+   "diff": 0.0226,
+   "ci95": [
+    -0.0312,
+    0.0833
+   ]
+  },
+  "sd_per_memo": 0.1427,
+  "normal_half_width_72": 0.033,
+  "by_true_diff": {
+   "+0.000": {
+    "verdicts": {
+     "increase": 0.025,
+     "no_meaningful_increase": 0.432,
+     "undecided": 0.542
+    },
+    "median_ci_width": 0.0642
+   },
+   "+0.020": {
+    "verdicts": {
+     "increase": 0.247,
+     "no_meaningful_increase": 0.158,
+     "undecided": 0.595
+    },
+    "median_ci_width": 0.0642
+   },
+   "+0.035": {
+    "verdicts": {
+     "increase": 0.623,
+     "no_meaningful_increase": 0.025,
+     "undecided": 0.352
+    },
+    "median_ci_width": 0.0642
+   },
+   "+0.050": {
+    "verdicts": {
+     "increase": 0.897,
+     "undecided": 0.102
+    },
+    "median_ci_width": 0.0642
+   }
+  }
+ }
+}

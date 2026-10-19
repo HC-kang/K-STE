@@ -1,0 +1,12 @@
+{"file": "evals/results/it24-r19/haiku/agent+short-G1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it24-r19/haiku/agent+short-G2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it24-r19/haiku/agent+short-G3/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' is dropped from the failure condition, so '실패하면' could mean the verification failed rather than the backup failed."]}}
+{"file": "evals/results/it24-r19/haiku/agent+short-G4/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '실패하면', so the reader cannot tell whether the backup or the verification step must fail to stop the deployment."]}}
+{"file": "evals/results/it24-r19/haiku/agent+short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it24-r19/haiku/agent+short-v4.1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it24-r19/sonnet/agent+short-G1/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject of '실패하면' is dropped, so it could mean the confirmation failed rather than the backup failed."]}}
+{"file": "evals/results/it24-r19/sonnet/agent+short-G2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it24-r19/sonnet/agent+short-G3/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from the failure condition, so '실패했으면' can now mean that the check (확인) failed rather than that the backup failed."]}}
+{"file": "evals/results/it24-r19/sonnet/agent+short-G4/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우', so '실패하면' could mean the confirmation step failed rather than the backup itself."]}}
+{"file": "evals/results/it24-r19/sonnet/agent+short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it24-r19/sonnet/agent+short-v4.1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

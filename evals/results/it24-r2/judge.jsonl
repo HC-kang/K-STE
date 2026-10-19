@@ -1,0 +1,12 @@
+{"file": "evals/results/it24-r2/haiku/agent+short-G1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it24-r2/haiku/agent+short-G2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it24-r2/haiku/agent+short-G3/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it24-r2/haiku/agent+short-G4/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '실패하면', so the condition could now refer to the verification failing rather than the backup failing."]}}
+{"file": "evals/results/it24-r2/haiku/agent+short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it24-r2/haiku/agent+short-v4.1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it24-r2/sonnet/agent+short-G1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it24-r2/sonnet/agent+short-G2/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '실패하면', so it could now mean the check failing rather than the backup failing."]}}
+{"file": "evals/results/it24-r2/sonnet/agent+short-G3/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패했으면' could mean either the backup or the check failed."]}}
+{"file": "evals/results/it24-r2/sonnet/agent+short-G4/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it24-r2/sonnet/agent+short-v3/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it24-r2/sonnet/agent+short-v4.1/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The rewrite drops the subject '백업이' from the failure clause, so '실패했으면' could mean either the backup failed or the check failed."]}}

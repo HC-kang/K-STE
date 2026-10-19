@@ -1,0 +1,13 @@
+== items
+== filter
+== texts
+text jobs: 32
+== judge
+== analyze
+Traceback (most recent call last):
+  File "/Users/ford/projects/personal/K-STE/evals/reader/exp/X14-referents-v4/run.py", line 975, in <module>
+    STEPS[step](a.pilot)
+  File "/Users/ford/projects/personal/K-STE/evals/reader/exp/X14-referents-v4/run.py", line 795, in cmd_analyze
+    "judge_handling": handling(j1, its), "judge_tests_v4_minus_v3": {**jmet, **kk},
+                                                                               ^^
+NameError: name 'kk' is not defined. Did you mean: 'k'?

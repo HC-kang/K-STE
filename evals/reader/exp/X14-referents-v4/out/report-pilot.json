@@ -1,0 +1,936 @@
+{
+ "verdict": {
+  "i_upper_below_3pp": true,
+  "ii_lower_above_0": false,
+  "label": "no_meaningful_increase"
+ },
+ "primary": {
+  "memos": 4,
+  "diff": -0.1302,
+  "ci95": [
+   -0.2083,
+   -0.0729
+  ]
+ },
+ "questions": {
+  "all": {
+   "memos": 4,
+   "trap": 13,
+   "trap_gold_E": 7,
+   "trap_by_kind": {
+    "deixis": 3,
+    "shared_name": 4,
+    "alias": 2,
+    "abbrev": 4
+   },
+   "nontrap": 12
+  },
+  "x8": {
+   "memos": 2,
+   "trap": 5,
+   "trap_gold_E": 3,
+   "trap_by_kind": {
+    "deixis": 1,
+    "shared_name": 2,
+    "alias": 0,
+    "abbrev": 2
+   },
+   "nontrap": 6
+  },
+  "new": {
+   "memos": 2,
+   "trap": 8,
+   "trap_gold_E": 4,
+   "trap_by_kind": {
+    "deixis": 2,
+    "shared_name": 2,
+    "alias": 2,
+    "abbrev": 2
+   },
+   "nontrap": 6
+  },
+  "balance_dropped": [
+   "M02-q0",
+   "M03-q0",
+   "M04-q3",
+   "M06-q0",
+   "M06-q3",
+   "M07-q0",
+   "M07-q3",
+   "M08-q0",
+   "M08-q3",
+   "M09-q0",
+   "M14-q0",
+   "M15-q0",
+   "M15-q3",
+   "M20-q3",
+   "M21-q3",
+   "M23-q3",
+   "M24-q0"
+  ]
+ },
+ "filter": {
+  "N01": {
+   "dropped_by_grok": [],
+   "generated": 7,
+   "invalid": [],
+   "kept": 7,
+   "problems": [],
+   "trap_kept": 4,
+   "valid": 7
+  },
+  "N02": {
+   "dropped_by_grok": [],
+   "generated": 7,
+   "invalid": [],
+   "kept": 7,
+   "problems": [],
+   "trap_kept": 4,
+   "valid": 7
+  },
+  "N03": {
+   "dropped_by_grok": [],
+   "generated": 7,
+   "invalid": [],
+   "kept": 7,
+   "problems": [],
+   "trap_kept": 4,
+   "valid": 7
+  }
+ },
+ "ceiling_broken_v3": true,
+ "summary": {
+  "full-v3": {
+   "grok": {
+    "all": {
+     "acc": 0.88,
+     "misread": 0.12,
+     "abstain": 0.0,
+     "n": 100
+    },
+    "trap": {
+     "acc": 0.7692,
+     "misread": 0.2308,
+     "abstain": 0.0,
+     "n": 52
+    },
+    "nontrap": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 48
+    },
+    "trap_nonE": {
+     "acc": 0.875,
+     "misread": 0.125,
+     "abstain": 0.0,
+     "n": 24
+    }
+   },
+   "haiku": {
+    "all": {
+     "acc": 0.84,
+     "misread": 0.15,
+     "abstain": 0.01,
+     "n": 100
+    },
+    "trap": {
+     "acc": 0.6923,
+     "misread": 0.2885,
+     "abstain": 0.0192,
+     "n": 52
+    },
+    "nontrap": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 48
+    },
+    "trap_nonE": {
+     "acc": 0.7917,
+     "misread": 0.1667,
+     "abstain": 0.0417,
+     "n": 24
+    }
+   },
+   "grok_trap_by_set": {
+    "all": {
+     "acc": 0.7692,
+     "misread": 0.2308,
+     "abstain": 0.0,
+     "n": 52
+    },
+    "x8": {
+     "acc": 0.8,
+     "misread": 0.2,
+     "abstain": 0.0,
+     "n": 20
+    },
+    "new": {
+     "acc": 0.75,
+     "misread": 0.25,
+     "abstain": 0.0,
+     "n": 32
+    }
+   },
+   "grok_by_kind": {
+    "deixis": {
+     "acc": 0.75,
+     "misread": 0.25,
+     "abstain": 0.0,
+     "n": 12
+    },
+    "shared_name": {
+     "acc": 0.8125,
+     "misread": 0.1875,
+     "abstain": 0.0,
+     "n": 16
+    },
+    "alias": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 8
+    },
+    "abbrev": {
+     "acc": 0.625,
+     "misread": 0.375,
+     "abstain": 0.0,
+     "n": 16
+    }
+   },
+   "grok_trap_by_writer": {
+    "sonnet": {
+     "acc": 0.8846,
+     "misread": 0.1154,
+     "abstain": 0.0,
+     "n": 26
+    },
+    "haiku": {
+     "acc": 0.6538,
+     "misread": 0.3462,
+     "abstain": 0.0,
+     "n": 26
+    }
+   },
+   "texts": 16,
+   "chars_mean": 794,
+   "texts_with_kakunin": 15,
+   "kakunin_per_text": 1.938,
+   "kakunin_date_lines_per_text": 0.0
+  },
+  "full-v4": {
+   "grok": {
+    "all": {
+     "acc": 0.93,
+     "misread": 0.06,
+     "abstain": 0.01,
+     "n": 100
+    },
+    "trap": {
+     "acc": 0.8846,
+     "misread": 0.1154,
+     "abstain": 0.0,
+     "n": 52
+    },
+    "nontrap": {
+     "acc": 0.9792,
+     "misread": 0.0,
+     "abstain": 0.0208,
+     "n": 48
+    },
+    "trap_nonE": {
+     "acc": 0.875,
+     "misread": 0.125,
+     "abstain": 0.0,
+     "n": 24
+    }
+   },
+   "haiku": {
+    "all": {
+     "acc": 0.86,
+     "misread": 0.13,
+     "abstain": 0.01,
+     "n": 100
+    },
+    "trap": {
+     "acc": 0.75,
+     "misread": 0.25,
+     "abstain": 0.0,
+     "n": 52
+    },
+    "nontrap": {
+     "acc": 0.9792,
+     "misread": 0.0,
+     "abstain": 0.0208,
+     "n": 48
+    },
+    "trap_nonE": {
+     "acc": 0.8333,
+     "misread": 0.1667,
+     "abstain": 0.0,
+     "n": 24
+    }
+   },
+   "grok_trap_by_set": {
+    "all": {
+     "acc": 0.8846,
+     "misread": 0.1154,
+     "abstain": 0.0,
+     "n": 52
+    },
+    "x8": {
+     "acc": 0.95,
+     "misread": 0.05,
+     "abstain": 0.0,
+     "n": 20
+    },
+    "new": {
+     "acc": 0.8438,
+     "misread": 0.1562,
+     "abstain": 0.0,
+     "n": 32
+    }
+   },
+   "grok_by_kind": {
+    "deixis": {
+     "acc": 0.9167,
+     "misread": 0.0833,
+     "abstain": 0.0,
+     "n": 12
+    },
+    "shared_name": {
+     "acc": 0.8125,
+     "misread": 0.1875,
+     "abstain": 0.0,
+     "n": 16
+    },
+    "alias": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 8
+    },
+    "abbrev": {
+     "acc": 0.875,
+     "misread": 0.125,
+     "abstain": 0.0,
+     "n": 16
+    }
+   },
+   "grok_trap_by_writer": {
+    "sonnet": {
+     "acc": 0.9615,
+     "misread": 0.0385,
+     "abstain": 0.0,
+     "n": 26
+    },
+    "haiku": {
+     "acc": 0.8077,
+     "misread": 0.1923,
+     "abstain": 0.0,
+     "n": 26
+    }
+   },
+   "texts": 16,
+   "chars_mean": 809,
+   "texts_with_kakunin": 16,
+   "kakunin_per_text": 2.375,
+   "kakunin_date_lines_per_text": 0.188
+  }
+ },
+ "tests": {
+  "grok trap misread v4-v3 (primary)": {
+   "memos": 4,
+   "diff": -0.1302,
+   "ci95": [
+    -0.2083,
+    -0.0729
+   ]
+  },
+  "haiku trap misread v4-v3": {
+   "memos": 4,
+   "diff": -0.0625,
+   "ci95": [
+    -0.1875,
+    0.0625
+   ]
+  },
+  "grok trap misread v4-v3 x8 memos": {
+   "memos": 2,
+   "diff": -0.1667,
+   "ci95": [
+    -0.25,
+    -0.0833
+   ]
+  },
+  "grok trap misread v4-v3 new memos": {
+   "memos": 2,
+   "diff": -0.0938,
+   "ci95": [
+    -0.125,
+    -0.0625
+   ]
+  },
+  "grok trap_nonE misread v4-v3": {
+   "memos": 4,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok nontrap acc v4-v3": {
+   "memos": 4,
+   "diff": -0.0208,
+   "ci95": [
+    -0.0625,
+    0.0
+   ]
+  },
+  "grok alias acc v4-v3": {
+   "memos": 2,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok trap acc v4-v3": {
+   "memos": 4,
+   "diff": 0.1302,
+   "ci95": [
+    0.0729,
+    0.2083
+   ]
+  },
+  "grok deixis misread v4-v3": {
+   "memos": 3,
+   "diff": -0.1667,
+   "ci95": [
+    -0.25,
+    0.0
+   ]
+  },
+  "grok shared_name misread v4-v3": {
+   "memos": 4,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok abbrev misread v4-v3": {
+   "memos": 4,
+   "diff": -0.25,
+   "ci95": [
+    -0.4375,
+    -0.0625
+   ]
+  }
+ },
+ "auxiliary_pooled": {
+  "grok trap misread v4-v3 x8 memos, x8+x10+x12+x14": {
+   "memos": 2,
+   "diff": -0.0833,
+   "ci95": [
+    -0.125,
+    -0.0417
+   ]
+  },
+  "grok trap misread v4-v3 all memos, x8 memos with earlier runs": {
+   "memos": 4,
+   "diff": -0.0885,
+   "ci95": [
+    -0.125,
+    -0.0521
+   ]
+  },
+  "haiku trap misread v4-v3 all memos, x8 memos with earlier runs": {
+   "memos": 4,
+   "diff": -0.0365,
+   "ci95": [
+    -0.1094,
+    0.0729
+   ]
+  },
+  "grok trap misread x14 v3 - x8 run v3 (run-to-run)": {
+   "memos": 2,
+   "diff": 0.1042,
+   "ci95": [
+    0.0833,
+    0.125
+   ]
+  },
+  "grok trap misread x14 v4 - x10 run v4 (run-to-run)": {
+   "memos": 2,
+   "diff": -0.1875,
+   "ci95": [
+    -0.375,
+    0.0
+   ]
+  },
+  "pooled_counts": {
+   "full-v3": {
+    "x8": {
+     "acc": 0.825,
+     "misread": 0.175,
+     "abstain": 0.0,
+     "n": 40
+    },
+    "all": {
+     "acc": 0.7917,
+     "misread": 0.2083,
+     "abstain": 0.0,
+     "n": 72
+    }
+   },
+   "full-v4": {
+    "x8": {
+     "acc": 0.9,
+     "misread": 0.1,
+     "abstain": 0.0,
+     "n": 40
+    },
+    "all": {
+     "acc": 0.875,
+     "misread": 0.125,
+     "abstain": 0.0,
+     "n": 72
+    }
+   }
+  }
+ },
+ "judge_handling": {
+  "full-v3": {
+   "texts": 16,
+   "dist": {
+    "invent": 0.203,
+    "keep": 0.391,
+    "flag": 0.406,
+    "omit": 0.0
+   },
+   "by_kind": {
+    "deixis": {
+     "invent": 4,
+     "keep": 0,
+     "flag": 12,
+     "omit": 0
+    },
+    "shared_name": {
+     "invent": 2,
+     "keep": 12,
+     "flag": 2,
+     "omit": 0
+    },
+    "alias": {
+     "invent": 0,
+     "keep": 10,
+     "flag": 6,
+     "omit": 0
+    },
+    "abbrev": {
+     "invent": 7,
+     "keep": 3,
+     "flag": 6,
+     "omit": 0
+    }
+   },
+   "nonalias_invent": [
+    13,
+    48
+   ],
+   "trap_flags_per_text": 1.625,
+   "nonalias_trap_flags_per_text": 1.25,
+   "extra_flags_per_text": 0.312,
+   "date_flags_per_text": 0.125,
+   "date_flags_above_extra": 0
+  },
+  "full-v4": {
+   "texts": 16,
+   "dist": {
+    "invent": 0.094,
+    "keep": 0.438,
+    "flag": 0.469,
+    "omit": 0.0
+   },
+   "by_kind": {
+    "deixis": {
+     "invent": 2,
+     "keep": 0,
+     "flag": 14,
+     "omit": 0
+    },
+    "shared_name": {
+     "invent": 1,
+     "keep": 11,
+     "flag": 4,
+     "omit": 0
+    },
+    "alias": {
+     "invent": 0,
+     "keep": 10,
+     "flag": 6,
+     "omit": 0
+    },
+    "abbrev": {
+     "invent": 3,
+     "keep": 7,
+     "flag": 6,
+     "omit": 0
+    }
+   },
+   "nonalias_invent": [
+    6,
+    48
+   ],
+   "trap_flags_per_text": 1.875,
+   "nonalias_trap_flags_per_text": 1.5,
+   "extra_flags_per_text": 0.375,
+   "date_flags_per_text": 0.312,
+   "date_flags_above_extra": 0
+  }
+ },
+ "judge_tests_v4_minus_v3": {
+  "nonalias_invent_rate": {
+   "memos": 4,
+   "diff": -0.1458,
+   "ci95": [
+    -0.2083,
+    -0.0833
+   ]
+  },
+  "trap_flags": {
+   "memos": 4,
+   "diff": 0.25,
+   "ci95": [
+    0.0,
+    0.5
+   ]
+  },
+  "nonalias_trap_flags": {
+   "memos": 4,
+   "diff": 0.25,
+   "ci95": [
+    0.0,
+    0.5
+   ]
+  },
+  "extra_flags": {
+   "memos": 4,
+   "diff": 0.0625,
+   "ci95": [
+    -0.25,
+    0.5
+   ]
+  },
+  "date_flags": {
+   "memos": 4,
+   "diff": 0.1875,
+   "ci95": [
+    0.0,
+    0.5625
+   ]
+  },
+  "nondate_extra_flags": {
+   "memos": 4,
+   "diff": -0.125,
+   "ci95": [
+    -0.25,
+    0.0
+   ]
+  },
+  "kakunin_machine": {
+   "memos": 4,
+   "diff": 0.4375,
+   "ci95": [
+    0.25,
+    0.625
+   ]
+  }
+ },
+ "judge_agreement_grok_vs_codex": {
+  "memos": 1,
+  "texts": 8,
+  "trap_cells": 32,
+  "category": 1.0,
+  "flag": 1.0,
+  "invent": 1.0,
+  "extra_flags_exact": 1.0,
+  "date_flags_exact": 1.0,
+  "extra_flags_total": [
+   0,
+   0
+  ],
+  "date_flags_total": [
+   0,
+   0
+  ]
+ },
+ "exploratory": {
+  "grok_trap_by_kind_and_judged_handling": {
+   "full-v3": {
+    "abbrev": {
+     "flag": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 6
+     },
+     "invent": {
+      "acc": 0.1429,
+      "misread": 0.8571,
+      "abstain": 0.0,
+      "n": 7
+     },
+     "keep": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 3
+     }
+    },
+    "alias": {
+     "keep": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "deixis": {
+     "flag": {
+      "acc": 0.8889,
+      "misread": 0.1111,
+      "abstain": 0.0,
+      "n": 9
+     },
+     "invent": {
+      "acc": 0.3333,
+      "misread": 0.6667,
+      "abstain": 0.0,
+      "n": 3
+     }
+    },
+    "shared_name": {
+     "flag": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 2
+     },
+     "invent": {
+      "acc": 0.0,
+      "misread": 1.0,
+      "abstain": 0.0,
+      "n": 2
+     },
+     "keep": {
+      "acc": 0.9167,
+      "misread": 0.0833,
+      "abstain": 0.0,
+      "n": 12
+     }
+    }
+   },
+   "full-v4": {
+    "abbrev": {
+     "flag": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 6
+     },
+     "invent": {
+      "acc": 0.3333,
+      "misread": 0.6667,
+      "abstain": 0.0,
+      "n": 3
+     },
+     "keep": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 7
+     }
+    },
+    "alias": {
+     "keep": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "deixis": {
+     "flag": {
+      "acc": 0.9091,
+      "misread": 0.0909,
+      "abstain": 0.0,
+      "n": 11
+     },
+     "invent": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 1
+     }
+    },
+    "shared_name": {
+     "flag": {
+      "acc": 0.75,
+      "misread": 0.25,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "invent": {
+      "acc": 0.0,
+      "misread": 1.0,
+      "abstain": 0.0,
+      "n": 1
+     },
+     "keep": {
+      "acc": 0.9091,
+      "misread": 0.0909,
+      "abstain": 0.0,
+      "n": 11
+     }
+    }
+   }
+  },
+  "nonalias_handling_by_date_flag": {
+   "full-v3 date_flag=yes": {
+    "texts": 2,
+    "nonalias_invent": [
+     3,
+     6
+    ],
+    "nonalias_flag": [
+     1,
+     6
+    ]
+   },
+   "full-v3 date_flag=no": {
+    "texts": 14,
+    "nonalias_invent": [
+     10,
+     42
+    ],
+    "nonalias_flag": [
+     19,
+     42
+    ]
+   },
+   "full-v4 date_flag=yes": {
+    "texts": 4,
+    "nonalias_invent": [
+     2,
+     12
+    ],
+    "nonalias_flag": [
+     5,
+     12
+    ]
+   },
+   "full-v4 date_flag=no": {
+    "texts": 12,
+    "nonalias_invent": [
+     4,
+     36
+    ],
+    "nonalias_flag": [
+     19,
+     36
+    ]
+   }
+  },
+  "misreads_summary": {
+   "full-v3": {
+    "misreads": 12,
+    "both_option": 3,
+    "by_judged": {
+     "invent": 10,
+     "keep": 1,
+     "flag": 1,
+     "omit": 0,
+     "null": 0
+    },
+    "by_kind": {
+     "deixis": 3,
+     "shared_name": 3,
+     "alias": 0,
+     "abbrev": 6
+    }
+   },
+   "full-v4": {
+    "misreads": 6,
+    "both_option": 3,
+    "by_judged": {
+     "invent": 3,
+     "keep": 1,
+     "flag": 2,
+     "omit": 0,
+     "null": 0
+    },
+    "by_kind": {
+     "deixis": 1,
+     "shared_name": 3,
+     "alias": 0,
+     "abbrev": 2
+    }
+   }
+  }
+ },
+ "write_order": {
+  "texts": 32,
+  "longest_same_condition_run": 3,
+  "full-v3": {
+   "first": "2026-10-19T17:36:05",
+   "last": "2026-10-19T17:41:05"
+  },
+  "full-v4": {
+   "first": "2026-10-19T17:36:19",
+   "last": "2026-10-19T17:41:08"
+  }
+ },
+ "prompt_sha256": {
+  "full-v3": "dbb1b6fbb548888ad6224aacd7c9edd012863907101f394cac49135a99af2fe4",
+  "full-v4": "0f11300d1293890f63d6167dcdf1b787f46aa4bb0a04180dac4ac55dd0b3bc24"
+ },
+ "prompt_now": {
+  "full-v3": {
+   "path": "evals/reader/exp/X10-dates-v4/out/prompts/full-v3.txt",
+   "chars": 5462,
+   "sha256": "dbb1b6fbb548888ad6224aacd7c9edd012863907101f394cac49135a99af2fe4"
+  },
+  "full-v4": {
+   "path": "evals/reader/exp/X10-dates-v4/out/prompts/full-v4.txt",
+   "chars": 5611,
+   "sha256": "0f11300d1293890f63d6167dcdf1b787f46aa4bb0a04180dac4ac55dd0b3bc24"
+  },
+  "working_tree_full": {
+   "chars": 5611,
+   "sha256": "0f11300d1293890f63d6167dcdf1b787f46aa4bb0a04180dac4ac55dd0b3bc24",
+   "equals_full_v4": true
+  }
+ },
+ "prompt_before": {
+  "at": "2026-10-19T17:35:42",
+  "full-v3": {
+   "path": "evals/reader/exp/X10-dates-v4/out/prompts/full-v3.txt",
+   "chars": 5462,
+   "sha256": "dbb1b6fbb548888ad6224aacd7c9edd012863907101f394cac49135a99af2fe4"
+  },
+  "full-v4": {
+   "path": "evals/reader/exp/X10-dates-v4/out/prompts/full-v4.txt",
+   "chars": 5611,
+   "sha256": "0f11300d1293890f63d6167dcdf1b787f46aa4bb0a04180dac4ac55dd0b3bc24"
+  },
+  "working_tree_full": {
+   "chars": 5611,
+   "sha256": "0f11300d1293890f63d6167dcdf1b787f46aa4bb0a04180dac4ac55dd0b3bc24",
+   "equals_full_v4": true
+  }
+ },
+ "prompt_after": null
+}

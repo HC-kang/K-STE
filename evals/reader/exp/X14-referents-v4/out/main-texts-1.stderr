@@ -1,0 +1,9 @@
+== texts
+text jobs: 216
+retry grok 1/3: grok exit 1: Max turns reached
+Error: max turns reached
+
+retry grok 1/3: grok exit 1: Max turns reached
+Error: max turns reached
+
+exit 143

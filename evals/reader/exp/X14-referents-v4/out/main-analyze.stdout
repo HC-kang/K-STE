@@ -1,0 +1,12 @@
+{"verdict": {"i_upper_below_3pp": true, "ii_lower_above_0": false, "label": "no_meaningful_increase"}, "primary": {"memos": 72, "diff": -0.0249, "ci95": [-0.0463, -0.0029]}}
+grok trap misread v4-v3 (primary) {'memos': 72, 'diff': -0.0249, 'ci95': [-0.0463, -0.0029]}
+haiku trap misread v4-v3 {'memos': 72, 'diff': -0.0153, 'ci95': [-0.0362, 0.0043]}
+grok trap misread v4-v3 x8 memos {'memos': 24, 'diff': -0.0182, 'ci95': [-0.0599, 0.02]}
+grok trap misread v4-v3 new memos {'memos': 48, 'diff': -0.0282, 'ci95': [-0.0525, -0.0022]}
+grok trap_nonE misread v4-v3 {'memos': 72, 'diff': -0.0087, 'ci95': [-0.0312, 0.0104]}
+grok nontrap acc v4-v3 {'memos': 72, 'diff': 0.0, 'ci95': [-0.0127, 0.0139]}
+grok alias acc v4-v3 {'memos': 53, 'diff': 0.0283, 'ci95': [-0.0142, 0.0755]}
+grok trap acc v4-v3 {'memos': 72, 'diff': 0.0388, 'ci95': [0.0127, 0.0637]}
+grok deixis misread v4-v3 {'memos': 53, 'diff': 0.0142, 'ci95': [-0.0189, 0.0472]}
+grok shared_name misread v4-v3 {'memos': 72, 'diff': -0.0174, 'ci95': [-0.0451, 0.0104]}
+grok abbrev misread v4-v3 {'memos': 64, 'diff': -0.0938, 'ci95': [-0.1562, -0.0352]}

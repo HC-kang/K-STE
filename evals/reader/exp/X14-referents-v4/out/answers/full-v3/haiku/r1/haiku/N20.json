@@ -1,0 +1,34 @@
+{
+ "answers": [
+  "B",
+  "A",
+  "B",
+  "C",
+  "D",
+  "A"
+ ],
+ "gold": [
+  "B",
+  "A",
+  "E",
+  "C",
+  "D",
+  "A"
+ ],
+ "kind": [
+  "shared_name",
+  "alias",
+  "abbrev",
+  "none",
+  "none",
+  "none"
+ ],
+ "qid": [
+  "N20-q1",
+  "N20-q2",
+  "N20-q3",
+  "N20-q4",
+  "N20-q5",
+  "N20-q6"
+ ]
+}

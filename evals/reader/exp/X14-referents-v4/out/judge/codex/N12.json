@@ -1,0 +1,130 @@
+{
+ "full-v3/haiku/r2": {
+  "traps": [
+   "flag",
+   "keep",
+   "keep",
+   "flag"
+  ],
+  "extra_flags": 4,
+  "date_flags": 1,
+  "quotes": [
+   "확인 필요: \"그때\"가 가리키는 시점.",
+   "리허설 시작 10분 전(13:50)까지 스튜디오에 점검 완료를 통보하고, 통보 내용을 송출 채널 #live-gate에 남긴다.",
+   "은도하가 통합 송출석에서 방송 상태 대시보드(현장에서는 온에어판이라고 부른다)의 경고 내역을 조회하고, 리허설 종료 후 10분 이내에 기록함 /live/check로 내보낸다.",
+   "확인 필요: RC가 출시 후보판(Release Candidate)과 원격 조종기(Remote Control) 중 무엇을 가리키는지."
+  ]
+ },
+ "full-v3/haiku/r1": {
+  "traps": [
+   "flag",
+   "keep",
+   "keep",
+   "flag"
+  ],
+  "extra_flags": 5,
+  "date_flags": 2,
+  "quotes": [
+   "확인 필요: 6번의 \"그때\"가 14시 20분 회선 시험을 가리키는지, 리허설 전체를 가리키는지, 전환 후 중단을 판단하는 시점을 가리키는지 원문에서 구분되지 않는다.",
+   "리허설 시작 10분 전인 11월 19일 13시 50분까지 스튜디오에 점검 완료를 통보해야 한다.",
+   "송출 담당 은도하는 리허설 종료 후 10분 이내에 온에어판의 경고 내역을 기록함 /live/check로 내보내야 한다.",
+   "확인 필요: 4번 \"RC 점검\"이 원격 조종기(Remote Control) 점검인지 출시 후보판(Release Candidate) 점검인지 원문에서 구분되지 않는다."
+  ]
+ },
+ "full-v4/haiku/r2": {
+  "traps": [
+   "flag",
+   "keep",
+   "keep",
+   "flag"
+  ],
+  "extra_flags": 7,
+  "date_flags": 1,
+  "quotes": [
+   "확인 필요: 그때.",
+   "리허설 시작 10분 전까지 스튜디오에 점검 완료를 통보한다.",
+   "리허설 종료 후 10분 이내에 은도하가 방송 상태 대시보드(현장 명칭 온에어판)의 경고 내역을 기록함 /live/check로 내보낸다.",
+   "원격 조종기(Remote Control)와 출시 후보판(Release Candidate)이 모두 RC로 줄여 불리므로 어느 쪽의 점검인지 정해야 한다."
+  ]
+ },
+ "full-v3/sonnet/r2": {
+  "traps": [
+   "flag",
+   "flag",
+   "keep",
+   "flag"
+  ],
+  "extra_flags": 0,
+  "date_flags": 0,
+  "quotes": [
+   "확인 필요: \"그때는 은도하와 진하람이 통합 송출석에 함께 있어야 한다.\"",
+   "통보 대상이 달빛 스튜디오와 별숲 스튜디오 모두인지, 어느 한쪽인지 알 수 없다.",
+   "은도하가 방송 상태 대시보드의 경고 내역을 리허설 종료 후 10분 이내에 기록함 /live/check로 내보낸다.",
+   "RC가 출시 후보판(Release Candidate)인지, 원격 조종기(Remote Control)인지 알 수 없다."
+  ]
+ },
+ "full-v4/haiku/r1": {
+  "traps": [
+   "flag",
+   "keep",
+   "keep",
+   "flag"
+  ],
+  "extra_flags": 1,
+  "date_flags": 0,
+  "quotes": [
+   "확인 필요: 그때.",
+   "리허설 시작 10분 전(13:50)까지 스튜디오에 점검 완료를 통보한다.",
+   "리허설 종료 후 10분 이내에 온에어판의 경고 내역을 기록함 /live/check로 내보낸다.",
+   "출시 후보판(Release Candidate)의 점검 결과인지, 원격 조종기(Remote Control)의 점검 결과인지."
+  ]
+ },
+ "full-v4/sonnet/r2": {
+  "traps": [
+   "flag",
+   "flag",
+   "keep",
+   "flag"
+  ],
+  "extra_flags": 1,
+  "date_flags": 0,
+  "quotes": [
+   "\"그때\"가 리허설을 중단할 때인지, 예비 회선으로 전환할 때인지.",
+   "무엇을 점검하는지, 달빛 스튜디오와 별숲 스튜디오 중 어느 스튜디오에 통보하는지.",
+   "은도하가 방송 상태 대시보드의 경고 내역을 리허설 종료 후 10분 이내에 기록함 /live/check로 내보내야 한다.",
+   "RC가 출시 후보판(Release Candidate)인지 원격 조종기(Remote Control)인지."
+  ]
+ },
+ "full-v3/sonnet/r1": {
+  "traps": [
+   "flag",
+   "keep",
+   "keep",
+   "invent"
+  ],
+  "extra_flags": 0,
+  "date_flags": 0,
+  "quotes": [
+   "확인 필요: \"그때는 은도하와 진하람이 통합 슨출석에 함께 있어야 한다.\"",
+   "리허설 시작 10분 전까지 스튜디오에 점검 완료를 통보한다.",
+   "은도하가 경고 내역을 리허설 종료 후 10분 이내에 기록함 /live/check로 내보낸다.",
+   "출시 후보판(RC) 점검 결과를 리허설 시작 전에 점검표에 반드시 남겨야 한다."
+  ]
+ },
+ "full-v4/sonnet/r1": {
+  "traps": [
+   "flag",
+   "keep",
+   "keep",
+   "flag"
+  ],
+  "extra_flags": 1,
+  "date_flags": 0,
+  "quotes": [
+   "\"그때\"가 회선 전환 시점을 가리키는지, 리허설 중단 시점을 가리키는지 알 수 없다.",
+   "리허설 시작 10분 전까지 스튜디오에 점검 완료를 통보해야 한다.",
+   "은도하가 방송 상태 대시보드의 경고 내역을 리허설 종료 후 10분 이내에 기록함 /live/check로 내보낸다.",
+   "RC가 출시 후보판(Release Candidate)을 가리키는지, 원격 조종기(Remote Control)를 가리키는지 알 수 없다."
+  ]
+ }
+}

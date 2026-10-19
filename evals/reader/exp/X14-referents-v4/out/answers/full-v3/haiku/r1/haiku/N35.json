@@ -1,0 +1,38 @@
+{
+ "answers": [
+  "B",
+  "D",
+  "C",
+  "E",
+  "D",
+  "D",
+  "A"
+ ],
+ "gold": [
+  "E",
+  "D",
+  "C",
+  "E",
+  "D",
+  "D",
+  "A"
+ ],
+ "kind": [
+  "deixis",
+  "shared_name",
+  "alias",
+  "abbrev",
+  "none",
+  "none",
+  "none"
+ ],
+ "qid": [
+  "N35-q0",
+  "N35-q1",
+  "N35-q2",
+  "N35-q3",
+  "N35-q4",
+  "N35-q5",
+  "N35-q6"
+ ]
+}

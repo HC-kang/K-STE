@@ -1,0 +1,98 @@
+== judge
+judge: skip M23, texts missing
+judge: skip M24, texts missing
+judge: skip N03, texts missing
+judge: skip N04, texts missing
+judge: skip N05, texts missing
+judge: skip N06, texts missing
+judge: skip N07, texts missing
+judge: skip N08, texts missing
+judge: skip N09, texts missing
+judge: skip N10, texts missing
+judge: skip N11, texts missing
+judge: skip N12, texts missing
+judge: skip N13, texts missing
+judge: skip N14, texts missing
+judge: skip N15, texts missing
+judge: skip N16, texts missing
+judge: skip N17, texts missing
+judge: skip N18, texts missing
+judge: skip N19, texts missing
+judge: skip N20, texts missing
+judge: skip N21, texts missing
+judge: skip N22, texts missing
+judge: skip N23, texts missing
+judge: skip N24, texts missing
+judge: skip N25, texts missing
+judge: skip N26, texts missing
+judge: skip N27, texts missing
+judge: skip N28, texts missing
+judge: skip N29, texts missing
+judge: skip N30, texts missing
+judge: skip N31, texts missing
+judge: skip N32, texts missing
+judge: skip N33, texts missing
+judge: skip N34, texts missing
+judge: skip N35, texts missing
+judge: skip N36, texts missing
+judge: skip N37, texts missing
+judge: skip N38, texts missing
+judge: skip N39, texts missing
+judge: skip N40, texts missing
+judge: skip N41, texts missing
+judge: skip N42, texts missing
+judge: skip N43, texts missing
+judge: skip N44, texts missing
+judge: skip N45, texts missing
+judge: skip N46, texts missing
+judge: skip N47, texts missing
+judge: skip N48, texts missing
+judge: skip N07, texts missing
+judge: skip N13, texts missing
+judge: skip N19, texts missing
+judge: skip N25, texts missing
+judge: skip N31, texts missing
+judge: skip N37, texts missing
+judge: skip N43, texts missing
+retry judge/grok-parts/M19-1.json 1/3: grok exit 1: Max turns reached
+Error: max turns reached
+
+judge pass rc=0 19:15:25 codex=      24 grok=       5
+== judge
+judge: skip N27, texts missing
+judge: skip N28, texts missing
+judge: skip N29, texts missing
+judge: skip N30, texts missing
+judge: skip N31, texts missing
+judge: skip N32, texts missing
+judge: skip N33, texts missing
+judge: skip N34, texts missing
+judge: skip N35, texts missing
+judge: skip N36, texts missing
+judge: skip N37, texts missing
+judge: skip N38, texts missing
+judge: skip N39, texts missing
+judge: skip N40, texts missing
+judge: skip N41, texts missing
+judge: skip N42, texts missing
+judge: skip N43, texts missing
+judge: skip N44, texts missing
+judge: skip N45, texts missing
+judge: skip N46, texts missing
+judge: skip N47, texts missing
+judge: skip N48, texts missing
+judge: skip N31, texts missing
+judge: skip N37, texts missing
+judge: skip N43, texts missing
+judge pass rc=0 19:53:25 codex=      50 grok=       9
+== judge
+judge: skip N47, texts missing
+judge: skip N48, texts missing
+retry judge/grok-parts/N37-0.json 1/3: grok exit 143: 
+final judge pass start 21:21:23 (GROK=6 CODEX=3)
+== judge
+retry judge/grok-parts/N37-1.json 1/3: grok exit 1: Max turns reached
+Error: max turns reached
+
+judge pass rc=0 21:28:50 codex=      72 grok=      12
+exit loop

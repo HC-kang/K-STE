@@ -1,0 +1,454 @@
+{
+ "N01": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N02": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N03": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N04": {
+  "dropped_by_grok": [
+   "N04-q0 deixis"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "N05": {
+  "dropped_by_grok": [
+   "N05-q0 deixis"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "N06": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N07": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N08": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N09": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N10": {
+  "dropped_by_grok": [
+   "N10-q0 deixis"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "N11": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N12": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N13": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N14": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N15": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N16": {
+  "dropped_by_grok": [
+   "N16-q0 deixis"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "N17": {
+  "dropped_by_grok": [
+   "N17-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "N18": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N19": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N20": {
+  "dropped_by_grok": [
+   "N20-q0 deixis"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "N21": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N22": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N23": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N24": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N25": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N26": {
+  "dropped_by_grok": [
+   "N26-q0 deixis"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "N27": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N28": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N29": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N30": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N31": {
+  "dropped_by_grok": [
+   "N31-q0 deixis"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "N32": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N33": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N34": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N35": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N36": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N37": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N38": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N39": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N40": {
+  "dropped_by_grok": [
+   "N40-q0 deixis"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "N41": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N42": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N43": {
+  "dropped_by_grok": [
+   "N43-q0 deixis"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "N44": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N45": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N46": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N47": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "N48": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ }
+}
