@@ -1,0 +1,1548 @@
+{
+ "main": {
+  "memos": 2,
+  "items_generated": 3,
+  "filter": {
+   "D01": {
+    "clear_kept": 2,
+    "clear_valid": 2,
+    "e_dup_stripped": 0,
+    "gap_kept": 3,
+    "gap_valid": 3,
+    "generated": 7,
+    "kept": 7,
+    "other_kept": 2,
+    "other_valid": 2,
+    "problems": [],
+    "says_memo": 0,
+    "valid": 7
+   },
+   "D02": {
+    "clear_kept": 2,
+    "clear_valid": 2,
+    "e_dup_stripped": 0,
+    "gap_kept": 3,
+    "gap_valid": 3,
+    "generated": 7,
+    "kept": 7,
+    "other_kept": 2,
+    "other_valid": 2,
+    "problems": [],
+    "says_memo": 0,
+    "valid": 7
+   }
+  },
+  "kept_questions": {
+   "gap": 6,
+   "clear": 4,
+   "other": 4
+  },
+  "ceiling_broken": false,
+  "verdict": {
+   "primary_upper_below_0": true,
+   "clear_noninferior_3pp": true,
+   "other_noninferior_3pp": true,
+   "adopt": true
+  },
+  "summary": {
+   "base": {
+    "grok": {
+     "all": {
+      "acc": 0.9643,
+      "misread": 0.0,
+      "abstain": 0.0357,
+      "n": 28
+     },
+     "gap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 12
+     },
+     "clear": {
+      "acc": 0.875,
+      "misread": 0.0,
+      "abstain": 0.125,
+      "n": 8
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.5714,
+      "misread": 0.4286,
+      "abstain": 0.0,
+      "n": 28
+     },
+     "gap": {
+      "acc": 0.0,
+      "misread": 1.0,
+      "abstain": 0.0,
+      "n": 12
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "grok_by_writer": {
+     "sonnet": {
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     },
+     "haiku": {
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 0.75,
+       "misread": 0.0,
+       "abstain": 0.25,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     }
+    },
+    "texts": 4,
+    "chars_mean": 858,
+    "texts_with_kakunin": 1,
+    "kakunin_per_text": 0.25,
+    "system_prompt_chars": 0
+   },
+   "short": {
+    "grok": {
+     "all": {
+      "acc": 0.5714,
+      "misread": 0.4286,
+      "abstain": 0.0,
+      "n": 28
+     },
+     "gap": {
+      "acc": 0.0,
+      "misread": 1.0,
+      "abstain": 0.0,
+      "n": 12
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.5714,
+      "misread": 0.4286,
+      "abstain": 0.0,
+      "n": 28
+     },
+     "gap": {
+      "acc": 0.0,
+      "misread": 1.0,
+      "abstain": 0.0,
+      "n": 12
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "grok_by_writer": {
+     "sonnet": {
+      "gap": {
+       "acc": 0.0,
+       "misread": 1.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     },
+     "haiku": {
+      "gap": {
+       "acc": 0.0,
+       "misread": 1.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     }
+    },
+    "texts": 4,
+    "chars_mean": 633,
+    "texts_with_kakunin": 0,
+    "kakunin_per_text": 0.0,
+    "system_prompt_chars": 1494
+   },
+   "short+k15": {
+    "grok": {
+     "all": {
+      "acc": 0.7857,
+      "misread": 0.1786,
+      "abstain": 0.0357,
+      "n": 28
+     },
+     "gap": {
+      "acc": 0.5833,
+      "misread": 0.4167,
+      "abstain": 0.0,
+      "n": 12
+     },
+     "clear": {
+      "acc": 0.875,
+      "misread": 0.0,
+      "abstain": 0.125,
+      "n": 8
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.7857,
+      "misread": 0.2143,
+      "abstain": 0.0,
+      "n": 28
+     },
+     "gap": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 12
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "grok_by_writer": {
+     "sonnet": {
+      "gap": {
+       "acc": 0.1667,
+       "misread": 0.8333,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 0.75,
+       "misread": 0.0,
+       "abstain": 0.25,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     },
+     "haiku": {
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     }
+    },
+    "texts": 4,
+    "chars_mean": 706,
+    "texts_with_kakunin": 3,
+    "kakunin_per_text": 1.0,
+    "system_prompt_chars": 1609
+   },
+   "short+k15u": {
+    "grok": {
+     "all": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 28
+     },
+     "gap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 12
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "haiku": {
+     "all": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 28
+     },
+     "gap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 12
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "grok_by_writer": {
+     "sonnet": {
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     },
+     "haiku": {
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     }
+    },
+    "texts": 4,
+    "chars_mean": 763,
+    "texts_with_kakunin": 4,
+    "kakunin_per_text": 2.0,
+    "system_prompt_chars": 1673
+   },
+   "full": {
+    "grok": {
+     "all": {
+      "acc": 0.7857,
+      "misread": 0.2143,
+      "abstain": 0.0,
+      "n": 28
+     },
+     "gap": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 12
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.7857,
+      "misread": 0.2143,
+      "abstain": 0.0,
+      "n": 28
+     },
+     "gap": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 12
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "grok_by_writer": {
+     "sonnet": {
+      "gap": {
+       "acc": 0.0,
+       "misread": 1.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     },
+     "haiku": {
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     }
+    },
+    "texts": 4,
+    "chars_mean": 599,
+    "texts_with_kakunin": 2,
+    "kakunin_per_text": 0.5,
+    "system_prompt_chars": 5462
+   },
+   "full+u": {
+    "grok": {
+     "all": {
+      "acc": 0.8929,
+      "misread": 0.1071,
+      "abstain": 0.0,
+      "n": 28
+     },
+     "gap": {
+      "acc": 0.75,
+      "misread": 0.25,
+      "abstain": 0.0,
+      "n": 12
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.8929,
+      "misread": 0.1071,
+      "abstain": 0.0,
+      "n": 28
+     },
+     "gap": {
+      "acc": 0.75,
+      "misread": 0.25,
+      "abstain": 0.0,
+      "n": 12
+     },
+     "clear": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     },
+     "other": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "grok_by_writer": {
+     "sonnet": {
+      "gap": {
+       "acc": 0.5,
+       "misread": 0.5,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     },
+     "haiku": {
+      "gap": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 6
+      },
+      "clear": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      },
+      "other": {
+       "acc": 1.0,
+       "misread": 0.0,
+       "abstain": 0.0,
+       "n": 4
+      }
+     }
+    },
+    "texts": 4,
+    "chars_mean": 616,
+    "texts_with_kakunin": 3,
+    "kakunin_per_text": 0.75,
+    "system_prompt_chars": 5526
+   }
+  },
+  "tests": {
+   "grok gap misread short+k15u - short": {
+    "memos": 2,
+    "diff": -1.0,
+    "ci95": [
+     -1.0,
+     -1.0
+    ]
+   },
+   "haiku gap misread short+k15u - short": {
+    "memos": 2,
+    "diff": -1.0,
+    "ci95": [
+     -1.0,
+     -1.0
+    ]
+   },
+   "grok clear acc short+k15u - short": {
+    "memos": 2,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other acc short+k15u - short": {
+    "memos": 2,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "judged extra_flags per text short+k15u - short": {
+    "memos": 2,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok gap misread short+k15 - short": {
+    "memos": 2,
+    "diff": -0.5833,
+    "ci95": [
+     -0.6667,
+     -0.5
+    ]
+   },
+   "haiku gap misread short+k15 - short": {
+    "memos": 2,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   },
+   "grok clear acc short+k15 - short": {
+    "memos": 2,
+    "diff": -0.125,
+    "ci95": [
+     -0.25,
+     0.0
+    ]
+   },
+   "grok other acc short+k15 - short": {
+    "memos": 2,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "judged extra_flags per text short+k15 - short": {
+    "memos": 2,
+    "diff": 0.25,
+    "ci95": [
+     0.0,
+     0.5
+    ]
+   },
+   "grok gap misread short+k15u - short+k15": {
+    "memos": 2,
+    "diff": -0.4167,
+    "ci95": [
+     -0.5,
+     -0.3333
+    ]
+   },
+   "haiku gap misread short+k15u - short+k15": {
+    "memos": 2,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   },
+   "grok clear acc short+k15u - short+k15": {
+    "memos": 2,
+    "diff": 0.125,
+    "ci95": [
+     0.0,
+     0.25
+    ]
+   },
+   "grok other acc short+k15u - short+k15": {
+    "memos": 2,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "judged extra_flags per text short+k15u - short+k15": {
+    "memos": 2,
+    "diff": -0.25,
+    "ci95": [
+     -0.5,
+     0.0
+    ]
+   },
+   "grok gap misread full+u - full": {
+    "memos": 2,
+    "diff": -0.25,
+    "ci95": [
+     -0.5,
+     0.0
+    ]
+   },
+   "haiku gap misread full+u - full": {
+    "memos": 2,
+    "diff": -0.25,
+    "ci95": [
+     -0.5,
+     0.0
+    ]
+   },
+   "grok clear acc full+u - full": {
+    "memos": 2,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other acc full+u - full": {
+    "memos": 2,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "judged extra_flags per text full+u - full": {
+    "memos": 2,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok gap misread short+k15u - full": {
+    "memos": 2,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   },
+   "haiku gap misread short+k15u - full": {
+    "memos": 2,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   },
+   "grok clear acc short+k15u - full": {
+    "memos": 2,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other acc short+k15u - full": {
+    "memos": 2,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "judged extra_flags per text short+k15u - full": {
+    "memos": 2,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok gap misread short - base": {
+    "memos": 2,
+    "diff": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "haiku gap misread short - base": {
+    "memos": 2,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok clear acc short - base": {
+    "memos": 2,
+    "diff": 0.125,
+    "ci95": [
+     0.0,
+     0.25
+    ]
+   },
+   "grok other acc short - base": {
+    "memos": 2,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "judged extra_flags per text short - base": {
+    "memos": 2,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   }
+  },
+  "judge_handling": {
+   "base": {
+    "texts": 4,
+    "gap_cells": 12,
+    "dist": {
+     "invent": 0.75,
+     "keep": 0.25,
+     "flag": 0.0,
+     "omit": 0.0
+    },
+    "texts_flagging_a_gap": 0,
+    "extra_flags_total": 2,
+    "extra_flags_per_text": 0.5
+   },
+   "short": {
+    "texts": 4,
+    "gap_cells": 12,
+    "dist": {
+     "invent": 0.75,
+     "keep": 0.25,
+     "flag": 0.0,
+     "omit": 0.0
+    },
+    "texts_flagging_a_gap": 0,
+    "extra_flags_total": 0,
+    "extra_flags_per_text": 0.0
+   },
+   "short+k15": {
+    "texts": 4,
+    "gap_cells": 12,
+    "dist": {
+     "invent": 0.5,
+     "keep": 0.0,
+     "flag": 0.5,
+     "omit": 0.0
+    },
+    "texts_flagging_a_gap": 2,
+    "extra_flags_total": 1,
+    "extra_flags_per_text": 0.25
+   },
+   "short+k15u": {
+    "texts": 4,
+    "gap_cells": 12,
+    "dist": {
+     "invent": 0.0,
+     "keep": 0.0,
+     "flag": 1.0,
+     "omit": 0.0
+    },
+    "texts_flagging_a_gap": 4,
+    "extra_flags_total": 0,
+    "extra_flags_per_text": 0.0
+   },
+   "full": {
+    "texts": 4,
+    "gap_cells": 12,
+    "dist": {
+     "invent": 0.5,
+     "keep": 0.0,
+     "flag": 0.5,
+     "omit": 0.0
+    },
+    "texts_flagging_a_gap": 2,
+    "extra_flags_total": 0,
+    "extra_flags_per_text": 0.0
+   },
+   "full+u": {
+    "texts": 4,
+    "gap_cells": 12,
+    "dist": {
+     "invent": 0.25,
+     "keep": 0.0,
+     "flag": 0.75,
+     "omit": 0.0
+    },
+    "texts_flagging_a_gap": 3,
+    "extra_flags_total": 0,
+    "extra_flags_per_text": 0.0
+   }
+  },
+  "judge_agreement": {
+   "memos": 1,
+   "gap_cells": 36,
+   "category_agreement": 0.833,
+   "flag_agreement": 1.0,
+   "extra_flags_exact": 1.0,
+   "extra_flags_total": [
+    2,
+    2
+   ]
+  },
+  "exploratory": {
+   "grok_gap_by_judged_handling": {
+    "flag": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 33
+    },
+    "invent": {
+     "acc": 0.303,
+     "misread": 0.697,
+     "abstain": 0.0,
+     "n": 33
+    },
+    "keep": {
+     "acc": 0.5,
+     "misread": 0.5,
+     "abstain": 0.0,
+     "n": 6
+    }
+   },
+   "grok_wrong_answers": {
+    "base": {
+     "clear": {
+      "E": 1,
+      "other_option": 0
+     },
+     "other": {
+      "E": 0,
+      "other_option": 0
+     }
+    },
+    "short": {
+     "clear": {
+      "E": 0,
+      "other_option": 0
+     },
+     "other": {
+      "E": 0,
+      "other_option": 0
+     }
+    },
+    "short+k15": {
+     "clear": {
+      "E": 1,
+      "other_option": 0
+     },
+     "other": {
+      "E": 0,
+      "other_option": 0
+     }
+    },
+    "short+k15u": {
+     "clear": {
+      "E": 0,
+      "other_option": 0
+     },
+     "other": {
+      "E": 0,
+      "other_option": 0
+     }
+    },
+    "full": {
+     "clear": {
+      "E": 0,
+      "other_option": 0
+     },
+     "other": {
+      "E": 0,
+      "other_option": 0
+     }
+    },
+    "full+u": {
+     "clear": {
+      "E": 0,
+      "other_option": 0
+     },
+     "other": {
+      "E": 0,
+      "other_option": 0
+     }
+    }
+   }
+  }
+ },
+ "replication": {
+  "memos": 16,
+  "summary": {
+   "base": {
+    "grok": {
+     "deadline": {
+      "acc": 0.3438,
+      "misread": 0.6562,
+      "abstain": 0.0,
+      "n": 32
+     },
+     "other_gap": {
+      "acc": 0.7414,
+      "misread": 0.1034,
+      "abstain": 0.1552,
+      "n": 58
+     },
+     "nongap": {
+      "acc": 0.9919,
+      "misread": 0.0,
+      "abstain": 0.0081,
+      "n": 124
+     }
+    },
+    "haiku": {
+     "deadline": {
+      "acc": 0.3125,
+      "misread": 0.6875,
+      "abstain": 0.0,
+      "n": 32
+     },
+     "other_gap": {
+      "acc": 0.7586,
+      "misread": 0.2241,
+      "abstain": 0.0172,
+      "n": 58
+     },
+     "nongap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 124
+     }
+    },
+    "texts": 32,
+    "chars_mean": 1018,
+    "texts_with_kakunin": 10,
+    "kakunin_per_text": 0.531
+   },
+   "short": {
+    "grok": {
+     "deadline": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 32
+     },
+     "other_gap": {
+      "acc": 0.8621,
+      "misread": 0.0345,
+      "abstain": 0.1034,
+      "n": 58
+     },
+     "nongap": {
+      "acc": 0.9919,
+      "misread": 0.0,
+      "abstain": 0.0081,
+      "n": 124
+     }
+    },
+    "haiku": {
+     "deadline": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 32
+     },
+     "other_gap": {
+      "acc": 0.931,
+      "misread": 0.069,
+      "abstain": 0.0,
+      "n": 58
+     },
+     "nongap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 124
+     }
+    },
+    "texts": 32,
+    "chars_mean": 739,
+    "texts_with_kakunin": 32,
+    "kakunin_per_text": 2.531
+   },
+   "full": {
+    "grok": {
+     "deadline": {
+      "acc": 0.6562,
+      "misread": 0.3438,
+      "abstain": 0.0,
+      "n": 32
+     },
+     "other_gap": {
+      "acc": 0.8276,
+      "misread": 0.0517,
+      "abstain": 0.1207,
+      "n": 58
+     },
+     "nongap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 124
+     }
+    },
+    "haiku": {
+     "deadline": {
+      "acc": 0.6562,
+      "misread": 0.3438,
+      "abstain": 0.0,
+      "n": 32
+     },
+     "other_gap": {
+      "acc": 0.8793,
+      "misread": 0.1034,
+      "abstain": 0.0172,
+      "n": 58
+     },
+     "nongap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 124
+     }
+    },
+    "texts": 32,
+    "chars_mean": 703,
+    "texts_with_kakunin": 30,
+    "kakunin_per_text": 1.625
+   },
+   "short+k15": {
+    "grok": {
+     "deadline": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 2
+     },
+     "other_gap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "nongap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "haiku": {
+     "deadline": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 2
+     },
+     "other_gap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "nongap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "texts": 2,
+    "chars_mean": 670,
+    "texts_with_kakunin": 2,
+    "kakunin_per_text": 2.5
+   },
+   "short+k15u": {
+    "grok": {
+     "deadline": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 2
+     },
+     "other_gap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "nongap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "haiku": {
+     "deadline": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 2
+     },
+     "other_gap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "nongap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "texts": 2,
+    "chars_mean": 662,
+    "texts_with_kakunin": 2,
+    "kakunin_per_text": 2.5
+   },
+   "full+u": {
+    "grok": {
+     "deadline": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 2
+     },
+     "other_gap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "nongap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "haiku": {
+     "deadline": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 2
+     },
+     "other_gap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 4
+     },
+     "nongap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 8
+     }
+    },
+    "texts": 2,
+    "chars_mean": 596,
+    "texts_with_kakunin": 2,
+    "kakunin_per_text": 1.5
+   }
+  },
+  "tests": {
+   "grok deadline misread short+k15u - short": {
+    "memos": 1,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   },
+   "haiku deadline misread short+k15u - short": {
+    "memos": 1,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   },
+   "grok nongap acc short+k15u - short": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other_gap misread short+k15u - short (exploratory)": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok deadline misread short+k15 - short": {
+    "memos": 1,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   },
+   "haiku deadline misread short+k15 - short": {
+    "memos": 1,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   },
+   "grok nongap acc short+k15 - short": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other_gap misread short+k15 - short (exploratory)": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok deadline misread short+k15u - short+k15": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "haiku deadline misread short+k15u - short+k15": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok nongap acc short+k15u - short+k15": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other_gap misread short+k15u - short+k15 (exploratory)": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok deadline misread full+u - full": {
+    "memos": 1,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   },
+   "haiku deadline misread full+u - full": {
+    "memos": 1,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   },
+   "grok nongap acc full+u - full": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other_gap misread full+u - full (exploratory)": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok deadline misread short+k15u - full": {
+    "memos": 1,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   },
+   "haiku deadline misread short+k15u - full": {
+    "memos": 1,
+    "diff": -0.5,
+    "ci95": [
+     -0.5,
+     -0.5
+    ]
+   },
+   "grok nongap acc short+k15u - full": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok other_gap misread short+k15u - full (exploratory)": {
+    "memos": 1,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grok deadline misread short - base": {
+    "memos": 16,
+    "diff": -0.1562,
+    "ci95": [
+     -0.375,
+     0.0625
+    ]
+   },
+   "haiku deadline misread short - base": {
+    "memos": 16,
+    "diff": -0.1875,
+    "ci95": [
+     -0.375,
+     0.0
+    ]
+   },
+   "grok nongap acc short - base": {
+    "memos": 16,
+    "diff": 0.0,
+    "ci95": [
+     -0.0234,
+     0.0234
+    ]
+   },
+   "grok other_gap misread short - base (exploratory)": {
+    "memos": 16,
+    "diff": -0.0781,
+    "ci95": [
+     -0.1562,
+     -0.0156
+    ]
+   }
+  }
+ }
+}

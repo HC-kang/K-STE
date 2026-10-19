@@ -1,0 +1,56 @@
+== items
+== filter
+retry grok 1/3: grok exit 1: Max turns reached
+Error: max turns reached
+
+== write
+retry haiku 1/3: claude exit 1: 
+retry haiku 1/3: claude exit 1: 
+retry sonnet 1/3: claude exit 1: 
+retry haiku 1/3: claude exit 1: 
+retry haiku 2/3: claude exit 1: 
+retry haiku 2/3: claude exit 1: 
+retry sonnet 2/3: claude exit 1: 
+retry haiku 2/3: claude exit 1: 
+retry haiku 3/3: claude exit 1: 
+retry sonnet 3/3: claude exit 1: 
+retry haiku 3/3: claude exit 1: 
+retry haiku 3/3: claude exit 1: 
+retry sonnet 1/3: claude exit 1: 
+retry haiku 1/3: claude exit 1: 
+retry sonnet 1/3: claude exit 1: 
+retry sonnet 2/3: claude exit 1: 
+retry haiku 2/3: claude exit 1: 
+retry sonnet 2/3: claude exit 1: 
+retry sonnet 3/3: claude exit 1: 
+retry haiku 3/3: claude exit 1: 
+retry sonnet 3/3: claude exit 1: 
+Traceback (most recent call last):
+  File "/Users/ford/projects/personal/K-STE/evals/reader/exp/X8-referents/run.py", line 556, in <module>
+    if a.cmd == "selftest":
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ford/projects/personal/K-STE/evals/reader/exp/X8-referents/run.py", line 272, in cmd_write
+    R.pmap(one, [(it, c, w) for it in memos(pilot) for c in R.CONDITIONS for w in R.WRITERS],
+  File "/Users/ford/projects/personal/K-STE/evals/reader/reader.py", line 122, in pmap
+    return list(ex.map(fn, xs))
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ford/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ford/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ford/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ford/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/ford/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ford/projects/personal/K-STE/evals/reader/exp/X8-referents/run.py", line 266, in one
+    t = R.call(w, R.memo(it), system=R.system_for(c))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ford/projects/personal/K-STE/evals/reader/reader.py", line 107, in call
+    raise RuntimeError(f"{who} failed {tries} times")
+RuntimeError: haiku failed 3 times

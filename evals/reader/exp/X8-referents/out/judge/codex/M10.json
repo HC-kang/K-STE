@@ -1,0 +1,74 @@
+{
+ "clarity/sonnet": {
+  "traps": [
+   "flag",
+   "keep",
+   "flag",
+   "flag"
+  ],
+  "extra_flags": 2
+ },
+ "full/haiku": {
+  "traps": [
+   "flag",
+   "keep",
+   "keep",
+   "flag"
+  ],
+  "extra_flags": 5
+ },
+ "short/haiku": {
+  "traps": [
+   "flag",
+   "keep",
+   "keep",
+   "flag"
+  ],
+  "extra_flags": 2
+ },
+ "short/sonnet": {
+  "traps": [
+   "flag",
+   "keep",
+   "flag",
+   "flag"
+  ],
+  "extra_flags": 3
+ },
+ "clarity/haiku": {
+  "traps": [
+   "keep",
+   "keep",
+   "keep",
+   "invent"
+  ],
+  "extra_flags": 4
+ },
+ "base/sonnet": {
+  "traps": [
+   "keep",
+   "keep",
+   "keep",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "base/haiku": {
+  "traps": [
+   "flag",
+   "keep",
+   "keep",
+   "invent"
+  ],
+  "extra_flags": 4
+ },
+ "full/sonnet": {
+  "traps": [
+   "flag",
+   "keep",
+   "flag",
+   "keep"
+  ],
+  "extra_flags": 1
+ }
+}

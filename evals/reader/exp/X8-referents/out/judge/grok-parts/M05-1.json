@@ -1,0 +1,38 @@
+{
+ "base/sonnet": {
+  "traps": [
+   "flag",
+   "keep",
+   "invent",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "full/sonnet": {
+  "traps": [
+   "flag",
+   "keep",
+   "invent",
+   "keep"
+  ],
+  "extra_flags": 0
+ },
+ "clarity/sonnet": {
+  "traps": [
+   "flag",
+   "keep",
+   "invent",
+   "keep"
+  ],
+  "extra_flags": 1
+ },
+ "base/haiku": {
+  "traps": [
+   "invent",
+   "keep",
+   "invent",
+   "keep"
+  ],
+  "extra_flags": 0
+ }
+}

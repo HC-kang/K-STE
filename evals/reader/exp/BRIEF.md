@@ -26,6 +26,7 @@ export KSTE_LIMIT_GROK=2 KSTE_LIMIT_CODEX=2 KSTE_LIMIT_CLAUDE=3
 ```
 
 - 여섯 실험이 동시에 실행된다. 동시 호출 수는 위 값보다 크게 하면 안 된다.
+- 2차(X7-X9)에는 세 실험만 동시에 실행된다. 그래서 `KSTE_LIMIT_GROK=4 KSTE_LIMIT_CODEX=3 KSTE_LIMIT_CLAUDE=4`까지 써도 된다.
 - 모든 모델 응답은 파일로 저장하고, 파일이 있으면 다시 호출하지 않게 한다. 중간에 끊겨도 다시 실행하면 이어서 해야 한다.
 - Codex 호출은 한 번에 약 2만 토큰이 든다. 문항 출제와 채점처럼 Claude가 하면 안 되는 일에만 쓰고, 여러 항목을 한 번에 묶는다.
 

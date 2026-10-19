@@ -1,0 +1,1321 @@
+{
+ "questions": {
+  "memos": 24,
+  "kept": 131,
+  "trap": 60,
+  "trap_gold_E": 30,
+  "trap_by_kind": {
+   "deixis": 14,
+   "shared_name": 24,
+   "alias": 6,
+   "abbrev": 16
+  },
+  "nontrap": 71,
+  "balance_dropped": [
+   "M02-q0",
+   "M03-q0",
+   "M04-q3",
+   "M06-q0",
+   "M06-q3",
+   "M07-q0",
+   "M07-q3",
+   "M08-q0",
+   "M08-q3",
+   "M09-q0",
+   "M14-q0",
+   "M15-q0",
+   "M15-q3",
+   "M20-q3",
+   "M21-q3",
+   "M23-q3",
+   "M24-q0"
+  ]
+ },
+ "filter": {
+  "M01": {
+   "dropped_by_grok": [
+    "M01-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M02": {
+   "dropped_by_grok": [
+    "M02-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M03": {
+   "dropped_by_grok": [
+    "M03-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M04": {
+   "dropped_by_grok": [
+    "M04-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M05": {
+   "dropped_by_grok": [
+    "M05-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M06": {
+   "dropped_by_grok": [
+    "M06-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M07": {
+   "dropped_by_grok": [
+    "M07-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M08": {
+   "dropped_by_grok": [],
+   "generated": 7,
+   "invalid": [],
+   "kept": 7,
+   "problems": [],
+   "trap_kept": 4,
+   "valid": 7
+  },
+  "M09": {
+   "dropped_by_grok": [
+    "M09-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M10": {
+   "dropped_by_grok": [
+    "M10-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M11": {
+   "dropped_by_grok": [
+    "M11-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M12": {
+   "dropped_by_grok": [
+    "M12-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M13": {
+   "dropped_by_grok": [],
+   "generated": 7,
+   "invalid": [],
+   "kept": 7,
+   "problems": [],
+   "trap_kept": 4,
+   "valid": 7
+  },
+  "M14": {
+   "dropped_by_grok": [],
+   "generated": 7,
+   "invalid": [],
+   "kept": 7,
+   "problems": [],
+   "trap_kept": 4,
+   "valid": 7
+  },
+  "M15": {
+   "dropped_by_grok": [],
+   "generated": 7,
+   "invalid": [],
+   "kept": 7,
+   "problems": [],
+   "trap_kept": 4,
+   "valid": 7
+  },
+  "M16": {
+   "dropped_by_grok": [
+    "M16-q1 deixis"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M17": {
+   "dropped_by_grok": [],
+   "generated": 7,
+   "invalid": [],
+   "kept": 7,
+   "problems": [],
+   "trap_kept": 4,
+   "valid": 7
+  },
+  "M18": {
+   "dropped_by_grok": [
+    "M18-q0 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M19": {
+   "dropped_by_grok": [
+    "M19-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M20": {
+   "dropped_by_grok": [
+    "M20-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M21": {
+   "dropped_by_grok": [
+    "M21-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M22": {
+   "dropped_by_grok": [
+    "M22-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M23": {
+   "dropped_by_grok": [
+    "M23-q2 alias",
+    "M23-q6 none"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 5,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M24": {
+   "dropped_by_grok": [
+    "M24-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  }
+ },
+ "ceiling_broken": true,
+ "summary": {
+  "base": {
+   "grok": {
+    "all": {
+     "acc": 0.8931,
+     "misread": 0.0725,
+     "abstain": 0.0344,
+     "n": 262
+    },
+    "trap": {
+     "acc": 0.7917,
+     "misread": 0.1583,
+     "abstain": 0.05,
+     "n": 120
+    },
+    "nontrap": {
+     "acc": 0.9789,
+     "misread": 0.0,
+     "abstain": 0.0211,
+     "n": 142
+    },
+    "trap_nonE": {
+     "acc": 0.7833,
+     "misread": 0.1167,
+     "abstain": 0.1,
+     "n": 60
+    }
+   },
+   "haiku": {
+    "all": {
+     "acc": 0.874,
+     "misread": 0.1107,
+     "abstain": 0.0153,
+     "n": 262
+    },
+    "trap": {
+     "acc": 0.7417,
+     "misread": 0.2417,
+     "abstain": 0.0167,
+     "n": 120
+    },
+    "nontrap": {
+     "acc": 0.9859,
+     "misread": 0.0,
+     "abstain": 0.0141,
+     "n": 142
+    },
+    "trap_nonE": {
+     "acc": 0.8,
+     "misread": 0.1667,
+     "abstain": 0.0333,
+     "n": 60
+    }
+   },
+   "grok_by_kind": {
+    "deixis": {
+     "acc": 0.8929,
+     "misread": 0.1071,
+     "abstain": 0.0,
+     "n": 28
+    },
+    "shared_name": {
+     "acc": 0.8125,
+     "misread": 0.1458,
+     "abstain": 0.0417,
+     "n": 48
+    },
+    "alias": {
+     "acc": 0.6667,
+     "misread": 0.0,
+     "abstain": 0.3333,
+     "n": 12
+    },
+    "abbrev": {
+     "acc": 0.7188,
+     "misread": 0.2812,
+     "abstain": 0.0,
+     "n": 32
+    }
+   },
+   "grok_by_writer": {
+    "sonnet": {
+     "all": {
+      "acc": 0.9008,
+      "misread": 0.0763,
+      "abstain": 0.0229,
+      "n": 131
+     },
+     "trap": {
+      "acc": 0.7833,
+      "misread": 0.1667,
+      "abstain": 0.05,
+      "n": 60
+     }
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.8855,
+      "misread": 0.0687,
+      "abstain": 0.0458,
+      "n": 131
+     },
+     "trap": {
+      "acc": 0.8,
+      "misread": 0.15,
+      "abstain": 0.05,
+      "n": 60
+     }
+    }
+   },
+   "texts": 48,
+   "chars_mean": 1325,
+   "texts_with_kakunin": 15,
+   "kakunin_count": 19,
+   "kakunin_per_text": 0.396
+  },
+  "clarity": {
+   "grok": {
+    "all": {
+     "acc": 0.8779,
+     "misread": 0.0878,
+     "abstain": 0.0344,
+     "n": 262
+    },
+    "trap": {
+     "acc": 0.7583,
+     "misread": 0.1917,
+     "abstain": 0.05,
+     "n": 120
+    },
+    "nontrap": {
+     "acc": 0.9789,
+     "misread": 0.0,
+     "abstain": 0.0211,
+     "n": 142
+    },
+    "trap_nonE": {
+     "acc": 0.7,
+     "misread": 0.2,
+     "abstain": 0.1,
+     "n": 60
+    }
+   },
+   "haiku": {
+    "all": {
+     "acc": 0.8588,
+     "misread": 0.126,
+     "abstain": 0.0153,
+     "n": 262
+    },
+    "trap": {
+     "acc": 0.6917,
+     "misread": 0.275,
+     "abstain": 0.0333,
+     "n": 120
+    },
+    "nontrap": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 142
+    },
+    "trap_nonE": {
+     "acc": 0.7167,
+     "misread": 0.2167,
+     "abstain": 0.0667,
+     "n": 60
+    }
+   },
+   "grok_by_kind": {
+    "deixis": {
+     "acc": 0.8929,
+     "misread": 0.1071,
+     "abstain": 0.0,
+     "n": 28
+    },
+    "shared_name": {
+     "acc": 0.7292,
+     "misread": 0.25,
+     "abstain": 0.0208,
+     "n": 48
+    },
+    "alias": {
+     "acc": 0.5833,
+     "misread": 0.0,
+     "abstain": 0.4167,
+     "n": 12
+    },
+    "abbrev": {
+     "acc": 0.75,
+     "misread": 0.25,
+     "abstain": 0.0,
+     "n": 32
+    }
+   },
+   "grok_by_writer": {
+    "sonnet": {
+     "all": {
+      "acc": 0.8931,
+      "misread": 0.0763,
+      "abstain": 0.0305,
+      "n": 131
+     },
+     "trap": {
+      "acc": 0.8,
+      "misread": 0.1667,
+      "abstain": 0.0333,
+      "n": 60
+     }
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.8626,
+      "misread": 0.0992,
+      "abstain": 0.0382,
+      "n": 131
+     },
+     "trap": {
+      "acc": 0.7167,
+      "misread": 0.2167,
+      "abstain": 0.0667,
+      "n": 60
+     }
+    }
+   },
+   "texts": 48,
+   "chars_mean": 1421,
+   "texts_with_kakunin": 31,
+   "kakunin_count": 50,
+   "kakunin_per_text": 1.042
+  },
+  "short": {
+   "grok": {
+    "all": {
+     "acc": 0.916,
+     "misread": 0.042,
+     "abstain": 0.042,
+     "n": 262
+    },
+    "trap": {
+     "acc": 0.8333,
+     "misread": 0.0917,
+     "abstain": 0.075,
+     "n": 120
+    },
+    "nontrap": {
+     "acc": 0.9859,
+     "misread": 0.0,
+     "abstain": 0.0141,
+     "n": 142
+    },
+    "trap_nonE": {
+     "acc": 0.8167,
+     "misread": 0.0333,
+     "abstain": 0.15,
+     "n": 60
+    }
+   },
+   "haiku": {
+    "all": {
+     "acc": 0.9198,
+     "misread": 0.0458,
+     "abstain": 0.0344,
+     "n": 262
+    },
+    "trap": {
+     "acc": 0.8417,
+     "misread": 0.1,
+     "abstain": 0.0583,
+     "n": 120
+    },
+    "nontrap": {
+     "acc": 0.9859,
+     "misread": 0.0,
+     "abstain": 0.0141,
+     "n": 142
+    },
+    "trap_nonE": {
+     "acc": 0.85,
+     "misread": 0.0333,
+     "abstain": 0.1167,
+     "n": 60
+    }
+   },
+   "grok_by_kind": {
+    "deixis": {
+     "acc": 0.9286,
+     "misread": 0.0714,
+     "abstain": 0.0,
+     "n": 28
+    },
+    "shared_name": {
+     "acc": 0.9375,
+     "misread": 0.0417,
+     "abstain": 0.0208,
+     "n": 48
+    },
+    "alias": {
+     "acc": 0.3333,
+     "misread": 0.0,
+     "abstain": 0.6667,
+     "n": 12
+    },
+    "abbrev": {
+     "acc": 0.7812,
+     "misread": 0.2188,
+     "abstain": 0.0,
+     "n": 32
+    }
+   },
+   "grok_by_writer": {
+    "sonnet": {
+     "all": {
+      "acc": 0.9389,
+      "misread": 0.0229,
+      "abstain": 0.0382,
+      "n": 131
+     },
+     "trap": {
+      "acc": 0.8833,
+      "misread": 0.05,
+      "abstain": 0.0667,
+      "n": 60
+     }
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.8931,
+      "misread": 0.0611,
+      "abstain": 0.0458,
+      "n": 131
+     },
+     "trap": {
+      "acc": 0.7833,
+      "misread": 0.1333,
+      "abstain": 0.0833,
+      "n": 60
+     }
+    }
+   },
+   "texts": 48,
+   "chars_mean": 1093,
+   "texts_with_kakunin": 48,
+   "kakunin_count": 168,
+   "kakunin_per_text": 3.5
+  },
+  "full": {
+   "grok": {
+    "all": {
+     "acc": 0.9313,
+     "misread": 0.0305,
+     "abstain": 0.0382,
+     "n": 262
+    },
+    "trap": {
+     "acc": 0.8667,
+     "misread": 0.0667,
+     "abstain": 0.0667,
+     "n": 120
+    },
+    "nontrap": {
+     "acc": 0.9859,
+     "misread": 0.0,
+     "abstain": 0.0141,
+     "n": 142
+    },
+    "trap_nonE": {
+     "acc": 0.8333,
+     "misread": 0.0333,
+     "abstain": 0.1333,
+     "n": 60
+    }
+   },
+   "haiku": {
+    "all": {
+     "acc": 0.9046,
+     "misread": 0.0611,
+     "abstain": 0.0344,
+     "n": 262
+    },
+    "trap": {
+     "acc": 0.8083,
+     "misread": 0.1333,
+     "abstain": 0.0583,
+     "n": 120
+    },
+    "nontrap": {
+     "acc": 0.9859,
+     "misread": 0.0,
+     "abstain": 0.0141,
+     "n": 142
+    },
+    "trap_nonE": {
+     "acc": 0.8167,
+     "misread": 0.0667,
+     "abstain": 0.1167,
+     "n": 60
+    }
+   },
+   "grok_by_kind": {
+    "deixis": {
+     "acc": 0.8929,
+     "misread": 0.1071,
+     "abstain": 0.0,
+     "n": 28
+    },
+    "shared_name": {
+     "acc": 0.9375,
+     "misread": 0.0417,
+     "abstain": 0.0208,
+     "n": 48
+    },
+    "alias": {
+     "acc": 0.4167,
+     "misread": 0.0,
+     "abstain": 0.5833,
+     "n": 12
+    },
+    "abbrev": {
+     "acc": 0.9062,
+     "misread": 0.0938,
+     "abstain": 0.0,
+     "n": 32
+    }
+   },
+   "grok_by_writer": {
+    "sonnet": {
+     "all": {
+      "acc": 0.9542,
+      "misread": 0.0076,
+      "abstain": 0.0382,
+      "n": 131
+     },
+     "trap": {
+      "acc": 0.9167,
+      "misread": 0.0167,
+      "abstain": 0.0667,
+      "n": 60
+     }
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.9084,
+      "misread": 0.0534,
+      "abstain": 0.0382,
+      "n": 131
+     },
+     "trap": {
+      "acc": 0.8167,
+      "misread": 0.1167,
+      "abstain": 0.0667,
+      "n": 60
+     }
+    }
+   },
+   "texts": 48,
+   "chars_mean": 1046,
+   "texts_with_kakunin": 48,
+   "kakunin_count": 128,
+   "kakunin_per_text": 2.667
+  }
+ },
+ "tests": {
+  "grok trap misread full-base": {
+   "memos": 24,
+   "diff": -0.085,
+   "ci95": [
+    -0.177,
+    -0.0
+   ]
+  },
+  "haiku trap misread full-base": {
+   "memos": 24,
+   "diff": -0.083,
+   "ci95": [
+    -0.158,
+    -0.002
+   ]
+  },
+  "grok trap_nonE misread full-base": {
+   "memos": 24,
+   "diff": -0.104,
+   "ci95": [
+    -0.229,
+    0.0
+   ]
+  },
+  "grok alias acc full-base": {
+   "memos": 6,
+   "diff": -0.25,
+   "ci95": [
+    -0.417,
+    -0.083
+   ]
+  },
+  "grok nontrap acc full-base": {
+   "memos": 24,
+   "diff": 0.007,
+   "ci95": [
+    -0.014,
+    0.028
+   ]
+  },
+  "grok trap acc full-base": {
+   "memos": 24,
+   "diff": 0.064,
+   "ci95": [
+    -0.033,
+    0.167
+   ]
+  },
+  "grok trap misread short-base": {
+   "memos": 24,
+   "diff": -0.083,
+   "ci95": [
+    -0.17,
+    -0.01
+   ]
+  },
+  "haiku trap misread short-base": {
+   "memos": 24,
+   "diff": -0.139,
+   "ci95": [
+    -0.215,
+    -0.073
+   ]
+  },
+  "grok trap_nonE misread short-base": {
+   "memos": 24,
+   "diff": -0.104,
+   "ci95": [
+    -0.208,
+    -0.021
+   ]
+  },
+  "grok alias acc short-base": {
+   "memos": 6,
+   "diff": -0.333,
+   "ci95": [
+    -0.5,
+    -0.167
+   ]
+  },
+  "grok nontrap acc short-base": {
+   "memos": 24,
+   "diff": 0.007,
+   "ci95": [
+    -0.021,
+    0.035
+   ]
+  },
+  "grok trap acc short-base": {
+   "memos": 24,
+   "diff": 0.062,
+   "ci95": [
+    -0.028,
+    0.163
+   ]
+  },
+  "grok trap misread clarity-base": {
+   "memos": 24,
+   "diff": 0.038,
+   "ci95": [
+    -0.021,
+    0.101
+   ]
+  },
+  "haiku trap misread clarity-base": {
+   "memos": 24,
+   "diff": 0.05,
+   "ci95": [
+    -0.033,
+    0.142
+   ]
+  },
+  "grok trap_nonE misread clarity-base": {
+   "memos": 24,
+   "diff": 0.094,
+   "ci95": [
+    0.0,
+    0.188
+   ]
+  },
+  "grok alias acc clarity-base": {
+   "memos": 6,
+   "diff": -0.083,
+   "ci95": [
+    -0.25,
+    0.0
+   ]
+  },
+  "grok nontrap acc clarity-base": {
+   "memos": 24,
+   "diff": 0.0,
+   "ci95": [
+    -0.035,
+    0.035
+   ]
+  },
+  "grok trap acc clarity-base": {
+   "memos": 24,
+   "diff": -0.036,
+   "ci95": [
+    -0.101,
+    0.021
+   ]
+  },
+  "grok trap misread full-clarity": {
+   "memos": 24,
+   "diff": -0.123,
+   "ci95": [
+    -0.201,
+    -0.057
+   ]
+  },
+  "haiku trap misread full-clarity": {
+   "memos": 24,
+   "diff": -0.134,
+   "ci95": [
+    -0.208,
+    -0.064
+   ]
+  },
+  "grok trap_nonE misread full-clarity": {
+   "memos": 24,
+   "diff": -0.198,
+   "ci95": [
+    -0.333,
+    -0.083
+   ]
+  },
+  "grok alias acc full-clarity": {
+   "memos": 6,
+   "diff": -0.167,
+   "ci95": [
+    -0.417,
+    0.167
+   ]
+  },
+  "grok nontrap acc full-clarity": {
+   "memos": 24,
+   "diff": 0.007,
+   "ci95": [
+    -0.014,
+    0.028
+   ]
+  },
+  "grok trap acc full-clarity": {
+   "memos": 24,
+   "diff": 0.101,
+   "ci95": [
+    0.017,
+    0.191
+   ]
+  }
+ },
+ "judge_handling": {
+  "base": {
+   "texts": 48,
+   "dist": {
+    "invent": 0.26,
+    "keep": 0.51,
+    "flag": 0.224,
+    "omit": 0.005
+   },
+   "by_kind": {
+    "deixis": {
+     "invent": 16,
+     "keep": 16,
+     "flag": 16,
+     "omit": 0
+    },
+    "shared_name": {
+     "invent": 8,
+     "keep": 33,
+     "flag": 7,
+     "omit": 0
+    },
+    "alias": {
+     "invent": 8,
+     "keep": 25,
+     "flag": 15,
+     "omit": 0
+    },
+    "abbrev": {
+     "invent": 18,
+     "keep": 24,
+     "flag": 5,
+     "omit": 1
+    }
+   },
+   "texts_flagging_a_nonalias_trap": 22,
+   "extra_flags_total": 51,
+   "extra_flags_per_text": 1.062
+  },
+  "clarity": {
+   "texts": 48,
+   "dist": {
+    "invent": 0.24,
+    "keep": 0.349,
+    "flag": 0.411,
+    "omit": 0.0
+   },
+   "by_kind": {
+    "deixis": {
+     "invent": 15,
+     "keep": 5,
+     "flag": 28,
+     "omit": 0
+    },
+    "shared_name": {
+     "invent": 12,
+     "keep": 24,
+     "flag": 12,
+     "omit": 0
+    },
+    "alias": {
+     "invent": 7,
+     "keep": 20,
+     "flag": 21,
+     "omit": 0
+    },
+    "abbrev": {
+     "invent": 12,
+     "keep": 18,
+     "flag": 18,
+     "omit": 0
+    }
+   },
+   "texts_flagging_a_nonalias_trap": 37,
+   "extra_flags_total": 72,
+   "extra_flags_per_text": 1.5
+  },
+  "short": {
+   "texts": 48,
+   "dist": {
+    "invent": 0.104,
+    "keep": 0.255,
+    "flag": 0.641,
+    "omit": 0.0
+   },
+   "by_kind": {
+    "deixis": {
+     "invent": 4,
+     "keep": 2,
+     "flag": 42,
+     "omit": 0
+    },
+    "shared_name": {
+     "invent": 2,
+     "keep": 28,
+     "flag": 18,
+     "omit": 0
+    },
+    "alias": {
+     "invent": 4,
+     "keep": 11,
+     "flag": 33,
+     "omit": 0
+    },
+    "abbrev": {
+     "invent": 10,
+     "keep": 8,
+     "flag": 30,
+     "omit": 0
+    }
+   },
+   "texts_flagging_a_nonalias_trap": 48,
+   "extra_flags_total": 63,
+   "extra_flags_per_text": 1.312
+  },
+  "full": {
+   "texts": 48,
+   "dist": {
+    "invent": 0.115,
+    "keep": 0.396,
+    "flag": 0.49,
+    "omit": 0.0
+   },
+   "by_kind": {
+    "deixis": {
+     "invent": 9,
+     "keep": 4,
+     "flag": 35,
+     "omit": 0
+    },
+    "shared_name": {
+     "invent": 2,
+     "keep": 30,
+     "flag": 16,
+     "omit": 0
+    },
+    "alias": {
+     "invent": 4,
+     "keep": 22,
+     "flag": 22,
+     "omit": 0
+    },
+    "abbrev": {
+     "invent": 7,
+     "keep": 20,
+     "flag": 21,
+     "omit": 0
+    }
+   },
+   "texts_flagging_a_nonalias_trap": 46,
+   "extra_flags_total": 33,
+   "extra_flags_per_text": 0.688
+  }
+ },
+ "judge_agreement": {
+  "memos": 6,
+  "trap_cells": 192,
+  "category_agreement": 0.932,
+  "flag_agreement": 0.958,
+  "extra_flags_exact": 0.917,
+  "extra_flags_total": [
+   35,
+   37
+  ]
+ },
+ "exploratory": {
+  "grok_trap_by_kind_and_judged_handling": {
+   "abbrev": {
+    "flag": {
+     "acc": 0.9423,
+     "misread": 0.0577,
+     "abstain": 0.0,
+     "n": 52
+    },
+    "invent": {
+     "acc": 0.2333,
+     "misread": 0.7667,
+     "abstain": 0.0,
+     "n": 30
+    },
+    "keep": {
+     "acc": 0.9783,
+     "misread": 0.0217,
+     "abstain": 0.0,
+     "n": 46
+    }
+   },
+   "alias": {
+    "flag": {
+     "acc": 0.2,
+     "misread": 0.0,
+     "abstain": 0.8,
+     "n": 20
+    },
+    "invent": {
+     "acc": 0.2,
+     "misread": 0.0,
+     "abstain": 0.8,
+     "n": 5
+    },
+    "keep": {
+     "acc": 0.8261,
+     "misread": 0.0,
+     "abstain": 0.1739,
+     "n": 23
+    }
+   },
+   "deixis": {
+    "flag": {
+     "acc": 0.9747,
+     "misread": 0.0253,
+     "abstain": 0.0,
+     "n": 79
+    },
+    "invent": {
+     "acc": 0.6111,
+     "misread": 0.3889,
+     "abstain": 0.0,
+     "n": 18
+    },
+    "keep": {
+     "acc": 0.8667,
+     "misread": 0.1333,
+     "abstain": 0.0,
+     "n": 15
+    }
+   },
+   "shared_name": {
+    "flag": {
+     "acc": 0.8868,
+     "misread": 0.0189,
+     "abstain": 0.0943,
+     "n": 53
+    },
+    "invent": {
+     "acc": 0.1667,
+     "misread": 0.8333,
+     "abstain": 0.0,
+     "n": 24
+    },
+    "keep": {
+     "acc": 0.9826,
+     "misread": 0.0174,
+     "abstain": 0.0,
+     "n": 115
+    }
+   }
+  },
+  "no_balance_trap": {
+   "base": {
+    "grok": {
+     "acc": 0.7468,
+     "misread": 0.2143,
+     "abstain": 0.039,
+     "n": 154
+    },
+    "haiku": {
+     "acc": 0.6558,
+     "misread": 0.3312,
+     "abstain": 0.013,
+     "n": 154
+    }
+   },
+   "clarity": {
+    "grok": {
+     "acc": 0.7468,
+     "misread": 0.2143,
+     "abstain": 0.039,
+     "n": 154
+    },
+    "haiku": {
+     "acc": 0.6299,
+     "misread": 0.3442,
+     "abstain": 0.026,
+     "n": 154
+    }
+   },
+   "short": {
+    "grok": {
+     "acc": 0.8312,
+     "misread": 0.1104,
+     "abstain": 0.0584,
+     "n": 154
+    },
+    "haiku": {
+     "acc": 0.8247,
+     "misread": 0.1299,
+     "abstain": 0.0455,
+     "n": 154
+    }
+   },
+   "full": {
+    "grok": {
+     "acc": 0.8377,
+     "misread": 0.1104,
+     "abstain": 0.0519,
+     "n": 154
+    },
+    "haiku": {
+     "acc": 0.7662,
+     "misread": 0.1883,
+     "abstain": 0.0455,
+     "n": 154
+    }
+   }
+  },
+  "no_balance_tests": {
+   "grok trap misread full-base": {
+    "memos": 24,
+    "diff": -0.106,
+    "ci95": [
+     -0.175,
+     -0.045
+    ]
+   },
+   "haiku trap misread full-base": {
+    "memos": 24,
+    "diff": -0.148,
+    "ci95": [
+     -0.212,
+     -0.083
+    ]
+   },
+   "grok trap misread short-base": {
+    "memos": 24,
+    "diff": -0.111,
+    "ci95": [
+     -0.196,
+     -0.036
+    ]
+   },
+   "haiku trap misread short-base": {
+    "memos": 24,
+    "diff": -0.212,
+    "ci95": [
+     -0.288,
+     -0.146
+    ]
+   },
+   "grok trap misread clarity-base": {
+    "memos": 24,
+    "diff": 0.005,
+    "ci95": [
+     -0.059,
+     0.066
+    ]
+   },
+   "haiku trap misread clarity-base": {
+    "memos": 24,
+    "diff": 0.017,
+    "ci95": [
+     -0.047,
+     0.085
+    ]
+   },
+   "grok trap misread full-clarity": {
+    "memos": 24,
+    "diff": -0.111,
+    "ci95": [
+     -0.167,
+     -0.059
+    ]
+   },
+   "haiku trap misread full-clarity": {
+    "memos": 24,
+    "diff": -0.165,
+    "ci95": [
+     -0.227,
+     -0.102
+    ]
+   }
+  }
+ }
+}

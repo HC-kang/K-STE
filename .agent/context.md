@@ -109,3 +109,11 @@
 - 운영: Orca 감독 워커는 사용자 지시로 Claude Opus 5.5 xhigh로 띄웠다(`--agent claude --model claude-opus-5-5 --effort xhigh`). Codex 워커는 Codex의 업데이트 안내와 훅 신뢰 확인 화면에서 막혔다(`agent-update-prompt`). 훅 신뢰는 사용자가 정할 일이라 고르지 않았다.
 - 운영: 워커 터미널마다 `CODEX_HOME`이 달라서 `reader.py`가 `KSTE_CODEX_HOME`, `KSTE_CODEX_AUTH`, `KSTE_LIMIT_*`를 받게 했다. 여섯 실험이 동시에 Grok을 쓰면 호출 하나에 1-2분 걸린다. 끝난 실험이 생기면 남은 실험의 상한을 올리게 알린다.
 - 검증: 워커의 `worker_done`을 받으면 `run.py selftest`, `run.py analyze` 재현(본 보고서 파일로 비교), 폴더 밖 변경 여부를 확인한 뒤 release한다. 시험 실행 보고서(`*-pilot.json`)와 본 보고서를 헷갈리지 않는다.
+
+## 2026-10-19 천장 깨기 2차 X7-X9
+
+- 결과: X7(흐린 날짜)과 X8(흐린 대상)도 오독으로 천장을 깼다. 세 실험(X1, X7, X8) 모두 오독은 글쓴이가 지어낸 칸에서 나왔다. X8 full-base -8.5%p(CI -17.7에서 0.0, 경계), clarity는 차이 없음. 종합은 `evals/reader/exp/README.md`다.
+- 발견: 지금의 짧은판과 전체판은 흐린 날짜를 base보다 더 많이 한쪽으로 정했다(X7 오독률 base 38.9%, short 84.9%, full 63.5%). "구분하지 않으면 묻는다"(u)를 더하면 short 0.0%, full 16.7%였다. 하지만 메모가 밝힌 날짜까지 물은 오답 2건으로 비열등 기준을 못 넘었고, 짧은판 1,500자 한도도 넘는다. 프롬프트는 바꾸지 않았다. 바꿀지는 사용자 결정이다.
+- 실수: X9 2부의 실행 조건을 카파 0.6으로 정했다. "틀림"이 1% 안팎이면 일치율 98.8%에서도 카파가 0.33이라서 조건이 사실상 막혀 있었다. 희귀 범주의 채점 신뢰도는 범주가 충분히 나오는 표본에서 재거나, 일치율과 범주별 일치 수를 함께 기준으로 둔다.
+- 운영: 09:00-09:11 네트워크 장애(ENOTFOUND)로 워커 두 명의 본 실행이 "failed 3 times"로 멈췄고, 워커는 입력 대기로 남았다(heartbeat가 끊긴다). 결과 폴더에서 오류 문자열을 검색해 저장된 오류 응답이 없는지 본 뒤, `orchestration send --to dispatch:<id>`로 같은 명령의 재실행을 지시하면 캐시에서 이어 간다. 장애 중 grok CLI는 "unknown model id"를 낸다.
+- 운영: 대기 스크립트는 `check` 결과에 `result`가 없을 때(Orca 응답 실패) 다시 시도해야 한다. 처리한 `worker_done` 묶음은 ack해야 다음 대기가 같은 묶음에서 멈추지 않는다. `worker-release`가 `retained`(`user_takeover`)를 돌려주면 사용자가 그 터미널을 쓴 것이므로 닫지 않는다.

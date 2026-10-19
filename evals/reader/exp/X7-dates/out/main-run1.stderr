@@ -1,0 +1,174 @@
+== items
+== filter
+drop memo D07: no gap question left
+drop memo D11: no gap question left
+retry grok 1/3: Command '['grok', '-p', '\n다음 글을 읽고 질문에 답하라. 글에 쓰인 내용만 근거로 고른다. 글만으로 판단할 수 없으면 E를 고른다.\n\n<글>\n아래 내용으로 모래별디자인 부서별 근태 승인자에게 보낼 사내 메신저 장애 공유 글을 써 줘.\n\n- 묶음 2, 모래별디자인 근태 시스템 ‘하루칸’ 장애, 휴가 승인 완료 건의 상태가 ‘대기’로 표시되는 현상\n- 근태 승인자는 승인 이력에 승인자 이름과 승인 시각이 모두 있는 ‘대기’ 표시 건을 공유문서 ‘근태오류대장’에 반드시 등록\n- 승인 이력이 없는 실제 미승인 건은 근태오류대장 등록 제외, 근태 승인자가 하루칸의 기존 승인 절차 진행\n- 근태오류대장에는 휴가 신청 1건당 1행 작성, 승인 이력 화면 첨부는 신청 1건당 최대 2장\n- 근태 승인자 12/2(수) 부서별 오류 건수 제출, 사내 메신저 ‘근태지원’ 채널\n- 인사운영팀 12/4(금) 휴가 잔여일수 대조표 게시, 공유폴더 ‘근태복구’\n- 근태 승인자 12/8(화) 부서별 수정 요청서 등록, 하루칸 ‘복구접수’ 게시판\n- 업무시스템팀은 12/10(목) 14:00에 하루칸 승인 상태 동기화 시험 시작\n- 근태 승인자는 12/14(월) 16:00까지 부서별 근태오류대장 사본을 공유폴더 ‘근태보관’에 업로드해야 함\n- 휴가 잔여일수 문의는 인사운영팀 은소담, 화면 표시 오류 문의는 업무시스템팀 차루온, 모두 사내 메신저 개인 대화 이용\n</글>\n\nQ1. 근태 승인자는 부서별 오류 건수를 ‘근태지원’ 채널에 언제 제출해야 하는가?\nA. 12/8(화)까지 제출을 끝낸다.\nB. 12/4(금) 당일에 제출한다.\nC. 12/2(수) 당일에 제출한다.\nD. 12/2(수)까지 제출을 끝낸다.\nE. 글만으로는 알 수 없다\n\nQ2. 인사운영팀은 휴가 잔여일수 대조표를 언제 게시해야 하는가?\nA. 12/4(금) 당일에 게시한다.\nB. 12/8(화) 당일에 게시한다.\nC. 12/2(수)까지 게시를 끝낸다.\nD. 12/4(금)까지 게시를 끝낸다.\nE. 글만으로는 알 수 없다\n\nQ3. 근태 승인자는 부서별 수정 요청서를 언제 등록해야 하는가?\nA. 12/8(화) 당일에 등록한다.\nB. 12/8(화)까지 등록을 끝낸다.\nC. 12/2(수) 당일에 등록한다.\nD. 12/4(금)까지 등록을 끝낸다.\nE. 글만으로는 알 수 없다\n\nQ4. 업무시스템팀의 하루칸 승인 상태 동기화 시험 시작 시점은 언제인가?\nA. 12/10(목) 14:00까지 시험을 시작하면 된다.\nB. 12/8(화) 14:00까지 시험을 시작하면 된다.\nC. 12/10(목) 14:00에 시험을 시작한다.\nD. 12/14(월) 16:00에 시험을 시작한다.\nE. 글만으로는 알 수 없다\n\nQ5. 근태 승인자는 부서별 근태오류대장 사본을 언제 업로드해야 하는가?\nA. 12/10(목) 14:00까지 업로드를 끝낸다.\nB. 12/14(월) 16:00까지 업로드를 끝낸다.\nC. 12/8(화) 16:00에 업로드한다.\nD. 12/14(월) 16:00에 업로드한다.\nE. 글만으로는 알 수 없다\n\nQ6. ‘대기’로 표시된 휴가 신청 건에 승인 이력이 전혀 없다면 근태 승인자는 어떻게 해야 하는가?\nA. 근태오류대장에 등록하고 기존 승인 절차도 진행한다.\nB. 근태오류대장에 등록하고 기존 승인 절차는 진행하지 않는다.\nC. 근태오류대장에 등록하지 않고 기존 승인 절차를 진행한다.\nD. 근태오류대장에 등록하지 않고 기존 승인 절차도 진행하지 않는다.\nE. 글만으로는 알 수 없다\n\nQ7. 근태오류대장에 휴가 신청 1건을 기록할 때 정해진 행 수와 화면 첨부 한도는?\nA. 1행 작성, 화면 최대 1장\nB. 2행 작성, 화면 최대 2장\nC. 1행 작성, 화면 최대 2장\nD. 2행 작성, 화면 최대 1장\nE. 글만으로는 알 수 없다\n\n출력은 JSON 한 줄이다. 예: {"Q1": "A", "Q2": "E"}', '-m', 'grok-4.7', '--system-prompt-override', 'You are a careful reader. Follow the user message only.', '--tools', '', '--no-subagents', '--disable-web-search', '--max-turns', '1', '--output-format', 'plain']' timed out after 420 seconds
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D05.json 1/3: grok failed 3 times
+retry grok 1/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D05.json 2/3: grok failed 3 times
+retry grok 1/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D05.json 3/3: grok failed 3 times
+retry grok 1/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D17.json 1/3: grok failed 3 times
+retry grok 1/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D17.json 2/3: grok failed 3 times
+retry grok 1/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D17.json 3/3: grok failed 3 times
+retry grok 1/3: Command '['grok', '-p', '\n다음 글을 읽고 질문에 답하라. 글에 쓰인 내용만 근거로 고른다. 글만으로 판단할 수 없으면 E를 고른다.\n\n<글>\n아래 내용으로 모래창고의 재고 서비스 리뷰어와 물류 검증 담당자에게 공유할 묶음 5의 PR 설명을 써 줘.\n\n- 변경 내용: 재고조정 화면에 차이 수량 필터 추가, 차이 수량 절댓값 기준으로 목록 표시\n- 11/18(수) 물류 검증 담당 한이솔 표본 검증 결과 등록\n- 11/20(금) 개발 담당 문태오 조회 성능 측정\n- 11/24(화) 리뷰어 정라온 변경 코드 검토\n- 11/26(목) 09:30에 교육 담당 오다빈이 창고 관리자 대상 화면 시연 진행\n- 11/30(월)까지 개발 담당 문태오가 운영 가이드 업로드 완료\n- 한이솔은 표본 검증 결과를 재고검증함 INV-73 폴더에 등록 필수, 문태오는 성능 측정 결과를 PR 댓글에 작성하고 운영 가이드를 같은 폴더에 업로드 필수\n- 필터 기본값: 차이 수량 절댓값 6개 이상, 검증 표본은 창고별 상품 45종\n- 시범 적용 대상: 동문창고와 남문창고, 냉동 구역 상품은 필터 적용 제외\n- 정라온은 두 창고의 표본 검증이 모두 통과한 경우에만 병합 승인 가능, 한 창고라도 실패하면 승인 금지\n- 문의처: 재고개발 채널 #stock-change의 문태오, 화면 시연 문의는 같은 채널의 오다빈\n</글>\n\nQ1. 한이솔은 표본 검증 결과를 언제 등록해야 하는가?\nA. 11/24(화)까지 등록을 끝낸다.\nB. 11/20(금) 당일에 등록한다.\nC. 11/18(수)까지 등록을 끝낸다.\nD. 11/18(수) 당일에 등록한다.\nE. 글만으로는 알 수 없다\n\nQ2. 문태오는 조회 성능을 언제 측정해야 하는가?\nA. 11/26(목)부터 매일 측정한다.\nB. 11/18(수) 당일에 측정한다.\nC. 11/20(금) 당일에 측정한다.\nD. 11/20(금)까지 측정을 끝낸다.\nE. 글만으로는 알 수 없다\n\nQ3. 정라온은 변경 코드를 언제 검토해야 하는가?\nA. 11/26(목) 당일에 검토한다.\nB. 11/24(화)까지 검토를 끝낸다.\nC. 11/24(화) 당일에 검토한다.\nD. 11/30(월)까지 검토를 끝낸다.\nE. 글만으로는 알 수 없다\n\nQ4. 오다빈의 창고 관리자 대상 화면 시연 일정은 무엇인가?\nA. 11/26(목) 09:30까지 진행을 끝낸다.\nB. 11/24(화) 09:30에 진행한다.\nC. 11/26(목) 09:30에 진행한다.\nD. 11/30(월) 09:30에 진행한다.\nE. 글만으로는 알 수 없다\n\nQ5. 문태오는 운영 가이드를 언제 업로드해야 하는가?\nA. 11/24(화) 당일에 업로드한다.\nB. 11/30(월)까지 업로드를 끝낸다.\nC. 11/30(월) 당일에 업로드한다.\nD. 11/26(목)까지 업로드를 끝낸다.\nE. 글만으로는 알 수 없다\n\nQ6. 필터 기본값과 창고별 검증 표본 수의 조합은 무엇인가?\nA. 차이 수량 절댓값 45개 이상, 창고별 상품 6종\nB. 차이 수량 절댓값 6개 이상, 창고별 상품 6종\nC. 차이 수량 절댓값 6개 이상, 창고별 상품 45종\nD. 차이 수량 절댓값 45개 이상, 창고별 상품 45종\nE. 글만으로는 알 수 없다\n\nQ7. 문태오는 조회 성능 측정 결과를 어디에 작성해야 하는가?\nA. #stock-change 채널\nB. 재고조정 화면의 상품 목록\nC. PR 댓글\nD. 재고검증함 INV-73 폴더의 운영 가이드\nE. 글만으로는 알 수 없다\n\n출력은 JSON 한 줄이다. 예: {"Q1": "A", "Q2": "E"}', '-m', 'grok-4.7', '--system-prompt-override', 'You are a careful reader. Follow the user message only.', '--tools', '', '--no-subagents', '--disable-web-search', '--max-turns', '1', '--output-format', 'plain']' timed out after 420 seconds
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D14.json 1/3: grok failed 3 times
+retry grok 1/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D14.json 2/3: grok failed 3 times
+retry grok 1/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D14.json 3/3: grok failed 3 times
+retry grok 1/3: Command '['grok', '-p', '\n다음 글을 읽고 질문에 답하라. 글에 쓰인 내용만 근거로 고른다. 글만으로 판단할 수 없으면 E를 고른다.\n\n<글>\n아래 내용으로 별담학습의 학습 플랫폼 리뷰어와 접근성 QA 담당자가 읽을 묶음 5의 PR 설명을 써 줘.\n\n- 변경 내용: 강의 플레이어에 자막 글자 크기 설정 추가, 선택값은 사용자 계정에 저장\n- 12/2(수) 접근성 QA 담당 유시온 키보드 탐색 검증\n- 12/4(금) 디자인 담당 배아린 자막 화면 비교 자료 등록\n- 12/8(화) 리뷰어 강로운 변경 코드 승인\n- 12/10(목) 15:00에 개발 담당 노해솔이 검증 서버 기능 시연 진행\n- 12/15(화)까지 디자인 담당 배아린이 자막 설정 도움말 제출 완료\n- 유시온은 키보드 탐색 검증 결과를 PR 댓글에 작성 필수, 배아린은 비교 자료와 도움말을 화면검증함 CAP-64 폴더에 등록 필수\n- 자막 글자 크기 선택값: 16px, 22px, 28px 세 가지, 기본값 22px\n- 적용 대상: 로그인 사용자의 녹화 강의, 실시간 강의는 기존 자막 설정 유지\n- 강로은은 키보드 탐색 검증 32항목 모두 통과한 경우에만 코드 승인 가능, 실패 항목이 있으면 승인 금지\n- 문의처: 플레이어개발 채널 #caption-pr의 노해솔, 자막 디자인 문의는 같은 채널의 배아린\n</글>\n\nQ1. 유시온은 키보드 탐색을 언제 검증해야 하는가?\nA. 12/4(금)까지 검증을 끝낸다.\nB. 12/8(화) 당일에 검증한다.\nC. 12/2(수) 당일에 검증한다.\nD. 12/2(수)까지 검증을 끝낸다.\nE. 글만으로는 알 수 없다\n\nQ2. 배아린은 자막 화면 비교 자료를 언제 등록해야 하는가?\nA. 12/10(목) 당일에 등록한다.\nB. 12/4(금)까지 등록을 끝낸다.\nC. 12/4(금) 당일에 등록한다.\nD. 12/15(화)까지 등록을 끝낸다.\nE. 글만으로는 알 수 없다\n\nQ3. 강로운의 변경 코드 승인 시점은 어떻게 안내되어 있는가?\nA. 12/8(화) 당일에 승인한다.\nB. 12/4(금) 당일에 승인한다.\nC. 12/10(목)까지 승인을 끝낸다.\nD. 12/8(화)까지 승인을 끝낸다.\nE. 글만으로는 알 수 없다\n\nQ4. 노해솔의 검증 서버 기능 시연 일정은 무엇인가?\nA. 12/8(화) 15:00에 진행한다.\nB. 12/15(화) 15:00에 진행한다.\nC. 12/10(목) 15:00까지 진행을 끝낸다.\nD. 12/10(목) 15:00에 진행한다.\nE. 글만으로는 알 수 없다\n\nQ5. 배아린은 자막 설정 도움말을 언제 제출해야 하는가?\nA. 12/4(금) 당일에 제출한다.\nB. 12/15(화)까지 제출을 끝낸다.\nC. 12/10(목)까지 제출을 끝낸다.\nD. 12/15(화) 당일에 제출한다.\nE. 글만으로는 알 수 없다\n\nQ6. 자막 글자 크기의 기본값은 얼마인가?\nA. 22px\nB. 28px\nC. 16px\nD. 32px\nE. 글만으로는 알 수 없다\n\nQ7. 자막 디자인에 관한 문의는 누구에게 해야 하는가?\nA. #caption-pr의 유시온\nB. #caption-pr의 배아린\nC. #caption-pr의 노해솔\nD. #caption-pr의 강로운\nE. 글만으로는 알 수 없다\n\n출력은 JSON 한 줄이다. 예: {"Q1": "A", "Q2": "E"}', '-m', 'grok-4.7', '--system-prompt-override', 'You are a careful reader. Follow the user message only.', '--tools', '', '--no-subagents', '--disable-web-search', '--max-turns', '1', '--output-format', 'plain']' timed out after 420 seconds
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D15.json 1/3: grok failed 3 times
+retry grok 1/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D15.json 2/3: grok failed 3 times
+retry grok 1/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D15.json 3/3: grok failed 3 times
+retry grok 1/3: Command '['grok', '-p', '\n다음 글을 읽고 질문에 답하라. 글에 쓰인 내용만 근거로 고른다. 글만으로 판단할 수 없으면 E를 고른다.\n\n<글>\n아래 내용으로 다온결물류의 냉장 배송 서비스 이용 매장 담당자에게 보낼 고객 안내 메일을 써 줘.\n\n- 다온결물류 냉장 배송 이용 매장 대상, 보냉 상자 교체 신청 안내\n- 11/3(화) 매장 담당자 교체 수량 등록\n- 11/5(목) 매장 담당자 수령 주소 확인\n- 11/10(화) 매장 담당자 기존 상자 회수 신청\n- 11/12(목) 14:00에 다온결물류 운영팀 온라인 교체 설명회 진행\n- 11/17(화)까지 매장 담당자 파손 상자 사진 제출 필수\n- 수량 등록·주소 확인·회수 신청·사진 제출 장소: 고객 포털 ‘상자 교체’; 설명회 접속 링크도 같은 화면\n- 교체 희망 매장은 수량 등록·주소 확인·회수 신청 모두 필수; 교체 불필요 매장은 세 작업 면제; 설명회 참석 선택\n- 사진 제출 대상은 파손 상자 보유 매장만; 파손 없는 매장은 사진 제출 면제\n- 교체 신청 수량 매장당 최대 24개, 회수 상자 포장 단위 묶음당 6개, 교체 비용 무료\n- 문의: 다온결물류 고객지원 담당 서나림, 고객 포털 ‘상담’ 메뉴\n</글>\n\nQ1. 교체를 희망하는 매장 담당자는 교체 수량을 언제 등록해야 하는가?\nA. 11/10(화)까지 등록을 끝낸다.\nB. 11/3(화) 당일에 등록한다.\nC. 11/3(화)까지 등록을 끝낸다.\nD. 11/5(목) 당일에 등록한다.\nE. 글만으로는 알 수 없다\n\nQ2. 교체를 희망하는 매장 담당자는 수령 주소를 언제 확인해야 하는가?\nA. 11/3(화)까지 확인을 끝낸다.\nB. 11/5(목)까지 확인을 끝낸다.\nC. 11/5(목) 당일에 확인한다.\nD. 11/10(화) 당일에 확인한다.\nE. 글만으로는 알 수 없다\n\nQ3. 교체를 희망하는 매장 담당자는 기존 상자 회수를 언제 신청해야 하는가?\nA. 11/10(화)까지 신청을 끝낸다.\nB. 11/10(화) 당일에 신청한다.\nC. 11/12(목) 당일에 신청한다.\nD. 11/5(목)까지 신청을 끝낸다.\nE. 글만으로는 알 수 없다\n\nQ4. 온라인 교체 설명회에 참석하려는 매장 담당자가 접속할 시점은 언제인가?\nA. 11/10(화) 14:00에 진행되는 설명회에 접속한다.\nB. 11/17(화) 14:00까지 설명회 참석을 끝낸다.\nC. 11/12(목) 14:00에 진행되는 설명회에 접속한다.\nD. 11/12(목) 14:00까지 설명회 참석을 끝낸다.\nE. 글만으로는 알 수 없다\n\nQ5. 파손 상자를 보유한 매장 담당자는 사진을 언제 제출해야 하는가?\nA. 11/10(화) 당일에 제출한다.\nB. 11/12(목)까지 제출을 끝낸다.\nC. 11/17(화)까지 제출을 끝낸다.\nD. 11/17(화) 당일에만 제출한다.\nE. 글만으로는 알 수 없다\n\nQ6. 매장당 교체 신청 최대 수량과 회수 상자의 묶음당 포장 수량은 각각 얼마인가?\nA. 교체 최대 6개, 묶음당 24개\nB. 교체 최대 24개, 묶음당 24개\nC. 교체 최대 6개, 묶음당 6개\nD. 교체 최대 24개, 묶음당 6개\nE. 글만으로는 알 수 없다\n\nQ7. 상자 교체를 신청하지만 파손 상자는 없는 매장이 면제받는 작업은 무엇인가?\nA. 교체 수량 등록\nB. 기존 상자 회수 신청\nC. 수령 주소 확인\nD. 파손 상자 사진 제출\nE. 글만으로는 알 수 없다\n\n출력은 JSON 한 줄이다. 예: {"Q1": "A", "Q2": "E"}', '-m', 'grok-4.7', '--system-prompt-override', 'You are a careful reader. Follow the user message only.', '--tools', '', '--no-subagents', '--disable-web-search', '--max-turns', '1', '--output-format', 'plain']' timed out after 420 seconds
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D16.json 1/3: grok failed 3 times
+retry grok 1/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D16.json 2/3: grok failed 3 times
+retry grok 1/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 2/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry grok 3/3: grok exit 1: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+Error: Couldn't set model 'grok-4.7': Invalid params: "unknown model id". Run 'grok models' to see available models.
+
+retry filter/D16.json 3/3: grok failed 3 times
+Traceback (most recent call last):
+  File "/Users/ford/projects/personal/K-STE/evals/reader/exp/X7-dates/run.py", line 697, in <module>
+    STEPS[step](a.pilot)
+  File "/Users/ford/projects/personal/K-STE/evals/reader/exp/X7-dates/run.py", line 245, in cmd_filter
+    R.pmap(one, sorted((OUT / "items").glob("D*.json")), workers=limit("grok"))
+  File "/Users/ford/projects/personal/K-STE/evals/reader/reader.py", line 122, in pmap
+    return list(ex.map(fn, xs))
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ford/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ford/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ford/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/ford/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/ford/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ford/projects/personal/K-STE/evals/reader/exp/X7-dates/run.py", line 232, in one
+    ans = cached(OUT / "filter" / f"{it['id']}.json", lambda: R.ask("grok", R.memo(it), qs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ford/projects/personal/K-STE/evals/reader/exp/X7-dates/run.py", line 191, in cached
+    raise RuntimeError(f"{f} failed {tries} times")
+RuntimeError: /Users/ford/projects/personal/K-STE/evals/reader/exp/X7-dates/out/filter/D05.json failed 3 times

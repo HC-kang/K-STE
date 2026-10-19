@@ -1,0 +1,34 @@
+{
+ "short+k15u/sonnet": {
+  "gaps": [
+   "flag",
+   "flag",
+   "flag"
+  ],
+  "extra_flags": 0
+ },
+ "short+k15/sonnet": {
+  "gaps": [
+   "invent",
+   "invent",
+   "invent"
+  ],
+  "extra_flags": 2
+ },
+ "short+k15/haiku": {
+  "gaps": [
+   "flag",
+   "invent",
+   "invent"
+  ],
+  "extra_flags": 0
+ },
+ "full/sonnet": {
+  "gaps": [
+   "invent",
+   "invent",
+   "invent"
+  ],
+  "extra_flags": 0
+ }
+}

@@ -1,0 +1,257 @@
+{
+ "M01": {
+  "dropped_by_grok": [
+   "M01-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M02": {
+  "dropped_by_grok": [
+   "M02-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M03": {
+  "dropped_by_grok": [
+   "M03-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M04": {
+  "dropped_by_grok": [
+   "M04-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M05": {
+  "dropped_by_grok": [
+   "M05-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M06": {
+  "dropped_by_grok": [
+   "M06-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M07": {
+  "dropped_by_grok": [
+   "M07-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M08": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "M09": {
+  "dropped_by_grok": [
+   "M09-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M10": {
+  "dropped_by_grok": [
+   "M10-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M11": {
+  "dropped_by_grok": [
+   "M11-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M12": {
+  "dropped_by_grok": [
+   "M12-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M13": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "M14": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "M15": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "M16": {
+  "dropped_by_grok": [
+   "M16-q1 deixis"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M17": {
+  "dropped_by_grok": [],
+  "generated": 7,
+  "invalid": [],
+  "kept": 7,
+  "problems": [],
+  "trap_kept": 4,
+  "valid": 7
+ },
+ "M18": {
+  "dropped_by_grok": [
+   "M18-q0 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M19": {
+  "dropped_by_grok": [
+   "M19-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M20": {
+  "dropped_by_grok": [
+   "M20-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M21": {
+  "dropped_by_grok": [
+   "M21-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M22": {
+  "dropped_by_grok": [
+   "M22-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M23": {
+  "dropped_by_grok": [
+   "M23-q2 alias",
+   "M23-q6 none"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 5,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ },
+ "M24": {
+  "dropped_by_grok": [
+   "M24-q2 alias"
+  ],
+  "generated": 7,
+  "invalid": [],
+  "kept": 6,
+  "problems": [],
+  "trap_kept": 3,
+  "valid": 7
+ }
+}

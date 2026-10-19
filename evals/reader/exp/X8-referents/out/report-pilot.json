@@ -1,0 +1,863 @@
+{
+ "questions": {
+  "memos": 2,
+  "kept": 10,
+  "trap": 4,
+  "trap_gold_E": 2,
+  "trap_by_kind": {
+   "deixis": 1,
+   "shared_name": 2,
+   "alias": 0,
+   "abbrev": 1
+  },
+  "nontrap": 6,
+  "balance_dropped": [
+   "M01-q0",
+   "M01-q3"
+  ]
+ },
+ "filter": {
+  "M01": {
+   "dropped_by_grok": [
+    "M01-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  },
+  "M02": {
+   "dropped_by_grok": [
+    "M02-q2 alias"
+   ],
+   "generated": 7,
+   "invalid": [],
+   "kept": 6,
+   "problems": [],
+   "trap_kept": 3,
+   "valid": 7
+  }
+ },
+ "ceiling_broken": true,
+ "summary": {
+  "base": {
+   "grok": {
+    "all": {
+     "acc": 0.8,
+     "misread": 0.2,
+     "abstain": 0.0,
+     "n": 20
+    },
+    "trap": {
+     "acc": 0.5,
+     "misread": 0.5,
+     "abstain": 0.0,
+     "n": 8
+    },
+    "nontrap": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 12
+    },
+    "trap_nonE": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 4
+    }
+   },
+   "haiku": {
+    "all": {
+     "acc": 0.8,
+     "misread": 0.2,
+     "abstain": 0.0,
+     "n": 20
+    },
+    "trap": {
+     "acc": 0.5,
+     "misread": 0.5,
+     "abstain": 0.0,
+     "n": 8
+    },
+    "nontrap": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 12
+    },
+    "trap_nonE": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 4
+    }
+   },
+   "grok_by_kind": {
+    "deixis": {
+     "acc": 0.0,
+     "misread": 1.0,
+     "abstain": 0.0,
+     "n": 2
+    },
+    "shared_name": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 4
+    },
+    "alias": null,
+    "abbrev": {
+     "acc": 0.0,
+     "misread": 1.0,
+     "abstain": 0.0,
+     "n": 2
+    }
+   },
+   "grok_by_writer": {
+    "sonnet": {
+     "all": {
+      "acc": 0.8,
+      "misread": 0.2,
+      "abstain": 0.0,
+      "n": 10
+     },
+     "trap": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 4
+     }
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.8,
+      "misread": 0.2,
+      "abstain": 0.0,
+      "n": 10
+     },
+     "trap": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 4
+     }
+    }
+   },
+   "texts": 4,
+   "chars_mean": 1051,
+   "texts_with_kakunin": 2,
+   "kakunin_count": 3,
+   "kakunin_per_text": 0.75
+  },
+  "clarity": {
+   "grok": {
+    "all": {
+     "acc": 0.85,
+     "misread": 0.1,
+     "abstain": 0.05,
+     "n": 20
+    },
+    "trap": {
+     "acc": 0.75,
+     "misread": 0.25,
+     "abstain": 0.0,
+     "n": 8
+    },
+    "nontrap": {
+     "acc": 0.9167,
+     "misread": 0.0,
+     "abstain": 0.0833,
+     "n": 12
+    },
+    "trap_nonE": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 4
+    }
+   },
+   "haiku": {
+    "all": {
+     "acc": 0.85,
+     "misread": 0.15,
+     "abstain": 0.0,
+     "n": 20
+    },
+    "trap": {
+     "acc": 0.625,
+     "misread": 0.375,
+     "abstain": 0.0,
+     "n": 8
+    },
+    "nontrap": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 12
+    },
+    "trap_nonE": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 4
+    }
+   },
+   "grok_by_kind": {
+    "deixis": {
+     "acc": 0.5,
+     "misread": 0.5,
+     "abstain": 0.0,
+     "n": 2
+    },
+    "shared_name": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 4
+    },
+    "alias": null,
+    "abbrev": {
+     "acc": 0.5,
+     "misread": 0.5,
+     "abstain": 0.0,
+     "n": 2
+    }
+   },
+   "grok_by_writer": {
+    "sonnet": {
+     "all": {
+      "acc": 0.9,
+      "misread": 0.0,
+      "abstain": 0.1,
+      "n": 10
+     },
+     "trap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 4
+     }
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.8,
+      "misread": 0.2,
+      "abstain": 0.0,
+      "n": 10
+     },
+     "trap": {
+      "acc": 0.5,
+      "misread": 0.5,
+      "abstain": 0.0,
+      "n": 4
+     }
+    }
+   },
+   "texts": 4,
+   "chars_mean": 1126,
+   "texts_with_kakunin": 2,
+   "kakunin_count": 2,
+   "kakunin_per_text": 0.5
+  },
+  "short": {
+   "grok": {
+    "all": {
+     "acc": 0.95,
+     "misread": 0.05,
+     "abstain": 0.0,
+     "n": 20
+    },
+    "trap": {
+     "acc": 0.875,
+     "misread": 0.125,
+     "abstain": 0.0,
+     "n": 8
+    },
+    "nontrap": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 12
+    },
+    "trap_nonE": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 4
+    }
+   },
+   "haiku": {
+    "all": {
+     "acc": 0.9,
+     "misread": 0.1,
+     "abstain": 0.0,
+     "n": 20
+    },
+    "trap": {
+     "acc": 0.75,
+     "misread": 0.25,
+     "abstain": 0.0,
+     "n": 8
+    },
+    "nontrap": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 12
+    },
+    "trap_nonE": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 4
+    }
+   },
+   "grok_by_kind": {
+    "deixis": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 2
+    },
+    "shared_name": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 4
+    },
+    "alias": null,
+    "abbrev": {
+     "acc": 0.5,
+     "misread": 0.5,
+     "abstain": 0.0,
+     "n": 2
+    }
+   },
+   "grok_by_writer": {
+    "sonnet": {
+     "all": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 10
+     },
+     "trap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 4
+     }
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.9,
+      "misread": 0.1,
+      "abstain": 0.0,
+      "n": 10
+     },
+     "trap": {
+      "acc": 0.75,
+      "misread": 0.25,
+      "abstain": 0.0,
+      "n": 4
+     }
+    }
+   },
+   "texts": 4,
+   "chars_mean": 1014,
+   "texts_with_kakunin": 4,
+   "kakunin_count": 12,
+   "kakunin_per_text": 3.0
+  },
+  "full": {
+   "grok": {
+    "all": {
+     "acc": 0.95,
+     "misread": 0.05,
+     "abstain": 0.0,
+     "n": 20
+    },
+    "trap": {
+     "acc": 0.875,
+     "misread": 0.125,
+     "abstain": 0.0,
+     "n": 8
+    },
+    "nontrap": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 12
+    },
+    "trap_nonE": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 4
+    }
+   },
+   "haiku": {
+    "all": {
+     "acc": 0.95,
+     "misread": 0.05,
+     "abstain": 0.0,
+     "n": 20
+    },
+    "trap": {
+     "acc": 0.875,
+     "misread": 0.125,
+     "abstain": 0.0,
+     "n": 8
+    },
+    "nontrap": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 12
+    },
+    "trap_nonE": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 4
+    }
+   },
+   "grok_by_kind": {
+    "deixis": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 2
+    },
+    "shared_name": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 4
+    },
+    "alias": null,
+    "abbrev": {
+     "acc": 0.5,
+     "misread": 0.5,
+     "abstain": 0.0,
+     "n": 2
+    }
+   },
+   "grok_by_writer": {
+    "sonnet": {
+     "all": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 10
+     },
+     "trap": {
+      "acc": 1.0,
+      "misread": 0.0,
+      "abstain": 0.0,
+      "n": 4
+     }
+    },
+    "haiku": {
+     "all": {
+      "acc": 0.9,
+      "misread": 0.1,
+      "abstain": 0.0,
+      "n": 10
+     },
+     "trap": {
+      "acc": 0.75,
+      "misread": 0.25,
+      "abstain": 0.0,
+      "n": 4
+     }
+    }
+   },
+   "texts": 4,
+   "chars_mean": 916,
+   "texts_with_kakunin": 4,
+   "kakunin_count": 12,
+   "kakunin_per_text": 3.0
+  }
+ },
+ "tests": {
+  "grok trap misread full-base": {
+   "memos": 2,
+   "diff": -0.25,
+   "ci95": [
+    -0.5,
+    0.0
+   ]
+  },
+  "haiku trap misread full-base": {
+   "memos": 2,
+   "diff": -0.25,
+   "ci95": [
+    -0.5,
+    0.0
+   ]
+  },
+  "grok trap_nonE misread full-base": {
+   "memos": 2,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok alias acc full-base": null,
+  "grok nontrap acc full-base": {
+   "memos": 2,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok trap acc full-base": {
+   "memos": 2,
+   "diff": 0.25,
+   "ci95": [
+    0.0,
+    0.5
+   ]
+  },
+  "grok trap misread short-base": {
+   "memos": 2,
+   "diff": -0.25,
+   "ci95": [
+    -0.5,
+    0.0
+   ]
+  },
+  "haiku trap misread short-base": {
+   "memos": 2,
+   "diff": -0.167,
+   "ci95": [
+    -0.333,
+    0.0
+   ]
+  },
+  "grok trap_nonE misread short-base": {
+   "memos": 2,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok alias acc short-base": null,
+  "grok nontrap acc short-base": {
+   "memos": 2,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok trap acc short-base": {
+   "memos": 2,
+   "diff": 0.25,
+   "ci95": [
+    0.0,
+    0.5
+   ]
+  },
+  "grok trap misread clarity-base": {
+   "memos": 2,
+   "diff": -0.167,
+   "ci95": [
+    -0.333,
+    0.0
+   ]
+  },
+  "haiku trap misread clarity-base": {
+   "memos": 2,
+   "diff": -0.083,
+   "ci95": [
+    -0.167,
+    0.0
+   ]
+  },
+  "grok trap_nonE misread clarity-base": {
+   "memos": 2,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok alias acc clarity-base": null,
+  "grok nontrap acc clarity-base": {
+   "memos": 2,
+   "diff": -0.083,
+   "ci95": [
+    -0.167,
+    0.0
+   ]
+  },
+  "grok trap acc clarity-base": {
+   "memos": 2,
+   "diff": 0.167,
+   "ci95": [
+    0.0,
+    0.333
+   ]
+  },
+  "grok trap misread full-clarity": {
+   "memos": 2,
+   "diff": -0.083,
+   "ci95": [
+    -0.167,
+    0.0
+   ]
+  },
+  "haiku trap misread full-clarity": {
+   "memos": 2,
+   "diff": -0.167,
+   "ci95": [
+    -0.333,
+    0.0
+   ]
+  },
+  "grok trap_nonE misread full-clarity": {
+   "memos": 2,
+   "diff": 0.0,
+   "ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "grok alias acc full-clarity": null,
+  "grok nontrap acc full-clarity": {
+   "memos": 2,
+   "diff": 0.083,
+   "ci95": [
+    0.0,
+    0.167
+   ]
+  },
+  "grok trap acc full-clarity": {
+   "memos": 2,
+   "diff": 0.083,
+   "ci95": [
+    0.0,
+    0.167
+   ]
+  }
+ },
+ "judge_handling": {
+  "base": {
+   "texts": 4,
+   "dist": {
+    "invent": 0.188,
+    "keep": 0.5,
+    "flag": 0.312,
+    "omit": 0.0
+   },
+   "by_kind": {
+    "deixis": {
+     "invent": 1,
+     "keep": 2,
+     "flag": 1,
+     "omit": 0
+    },
+    "shared_name": {
+     "invent": 0,
+     "keep": 4,
+     "flag": 0,
+     "omit": 0
+    },
+    "alias": {
+     "invent": 0,
+     "keep": 1,
+     "flag": 3,
+     "omit": 0
+    },
+    "abbrev": {
+     "invent": 2,
+     "keep": 1,
+     "flag": 1,
+     "omit": 0
+    }
+   },
+   "texts_flagging_a_nonalias_trap": 2,
+   "extra_flags_total": 0,
+   "extra_flags_per_text": 0.0
+  },
+  "clarity": {
+   "texts": 4,
+   "dist": {
+    "invent": 0.25,
+    "keep": 0.438,
+    "flag": 0.312,
+    "omit": 0.0
+   },
+   "by_kind": {
+    "deixis": {
+     "invent": 2,
+     "keep": 1,
+     "flag": 1,
+     "omit": 0
+    },
+    "shared_name": {
+     "invent": 1,
+     "keep": 3,
+     "flag": 0,
+     "omit": 0
+    },
+    "alias": {
+     "invent": 0,
+     "keep": 2,
+     "flag": 2,
+     "omit": 0
+    },
+    "abbrev": {
+     "invent": 1,
+     "keep": 1,
+     "flag": 2,
+     "omit": 0
+    }
+   },
+   "texts_flagging_a_nonalias_trap": 2,
+   "extra_flags_total": 3,
+   "extra_flags_per_text": 0.75
+  },
+  "short": {
+   "texts": 4,
+   "dist": {
+    "invent": 0.125,
+    "keep": 0.25,
+    "flag": 0.625,
+    "omit": 0.0
+   },
+   "by_kind": {
+    "deixis": {
+     "invent": 0,
+     "keep": 0,
+     "flag": 4,
+     "omit": 0
+    },
+    "shared_name": {
+     "invent": 0,
+     "keep": 4,
+     "flag": 0,
+     "omit": 0
+    },
+    "alias": {
+     "invent": 0,
+     "keep": 0,
+     "flag": 4,
+     "omit": 0
+    },
+    "abbrev": {
+     "invent": 2,
+     "keep": 0,
+     "flag": 2,
+     "omit": 0
+    }
+   },
+   "texts_flagging_a_nonalias_trap": 4,
+   "extra_flags_total": 5,
+   "extra_flags_per_text": 1.25
+  },
+  "full": {
+   "texts": 4,
+   "dist": {
+    "invent": 0.125,
+    "keep": 0.312,
+    "flag": 0.562,
+    "omit": 0.0
+   },
+   "by_kind": {
+    "deixis": {
+     "invent": 1,
+     "keep": 0,
+     "flag": 3,
+     "omit": 0
+    },
+    "shared_name": {
+     "invent": 0,
+     "keep": 4,
+     "flag": 0,
+     "omit": 0
+    },
+    "alias": {
+     "invent": 0,
+     "keep": 0,
+     "flag": 4,
+     "omit": 0
+    },
+    "abbrev": {
+     "invent": 1,
+     "keep": 1,
+     "flag": 2,
+     "omit": 0
+    }
+   },
+   "texts_flagging_a_nonalias_trap": 3,
+   "extra_flags_total": 4,
+   "extra_flags_per_text": 1.0
+  }
+ },
+ "judge_agreement": {
+  "memos": 1,
+  "trap_cells": 32,
+  "category_agreement": 0.969,
+  "flag_agreement": 1.0,
+  "extra_flags_exact": 1.0,
+  "extra_flags_total": [
+   4,
+   4
+  ]
+ },
+ "exploratory": {
+  "grok_trap_by_kind_and_judged_handling": {
+   "abbrev": {
+    "flag": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 3
+    },
+    "invent": {
+     "acc": 0.0,
+     "misread": 1.0,
+     "abstain": 0.0,
+     "n": 5
+    }
+   },
+   "deixis": {
+    "flag": {
+     "acc": 0.8333,
+     "misread": 0.1667,
+     "abstain": 0.0,
+     "n": 6
+    },
+    "invent": {
+     "acc": 0.0,
+     "misread": 1.0,
+     "abstain": 0.0,
+     "n": 2
+    }
+   },
+   "shared_name": {
+    "invent": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 1
+    },
+    "keep": {
+     "acc": 1.0,
+     "misread": 0.0,
+     "abstain": 0.0,
+     "n": 15
+    }
+   }
+  }
+ }
+}
