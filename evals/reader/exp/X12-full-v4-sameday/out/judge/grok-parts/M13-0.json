@@ -1,0 +1,38 @@
+{
+ "v3-x12/sonnet": {
+  "traps": [
+   "flag",
+   "keep",
+   "keep",
+   "flag"
+  ],
+  "extra_flags": 0
+ },
+ "v3-x12/haiku": {
+  "traps": [
+   "flag",
+   "keep",
+   "flag",
+   "keep"
+  ],
+  "extra_flags": 2
+ },
+ "v4-x12/haiku": {
+  "traps": [
+   "flag",
+   "keep",
+   "flag",
+   "flag"
+  ],
+  "extra_flags": 0
+ },
+ "v4-x10/sonnet": {
+  "traps": [
+   "flag",
+   "keep",
+   "keep",
+   "flag"
+  ],
+  "extra_flags": 0
+ }
+}

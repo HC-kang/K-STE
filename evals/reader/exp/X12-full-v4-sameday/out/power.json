@@ -1,0 +1,36 @@
+{
+ "A": {
+  "memos": 24,
+  "x10_observed": {
+   "memos": 24,
+   "diff": 0.0469,
+   "ci95": [
+    -0.0243,
+    0.1163
+   ]
+  },
+  "pass_rate": {
+   "true_diff=0.0": 0.8275,
+   "true_diff=0.02": 0.6825,
+   "true_diff=0.047": 0.3425
+  }
+ },
+ "B": {
+  "memos": 19,
+  "x10_error_rate": 0.0224,
+  "clear_answers_per_condition_x10": 134,
+  "x10_observed": {
+   "memos": 19,
+   "diff": 0.0,
+   "ci95": [
+    -0.0395,
+    0.0395
+   ]
+  },
+  "pass_rate_given_x10_round": {
+   "v4_extra=0.0": 0.67,
+   "v4_extra=0.01": 0.425,
+   "v4_extra=0.02": 0.205
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "at": "2026-10-19T16:11:08",
+ "full-v3": {
+  "path": "evals/reader/exp/X10-dates-v4/out/prompts/full-v3.txt",
+  "chars": 5462,
+  "sha256": "dbb1b6fbb548888ad6224aacd7c9edd012863907101f394cac49135a99af2fe4"
+ },
+ "full-v4": {
+  "path": "evals/reader/exp/X10-dates-v4/out/prompts/full-v4.txt",
+  "chars": 5611,
+  "sha256": "0f11300d1293890f63d6167dcdf1b787f46aa4bb0a04180dac4ac55dd0b3bc24"
+ }
+}

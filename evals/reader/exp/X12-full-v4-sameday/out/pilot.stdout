@@ -1,0 +1,77 @@
+{
+ "at": "2026-10-19T16:11:08",
+ "full-v3": {
+  "path": "evals/reader/exp/X10-dates-v4/out/prompts/full-v3.txt",
+  "chars": 5462,
+  "sha256": "dbb1b6fbb548888ad6224aacd7c9edd012863907101f394cac49135a99af2fe4"
+ },
+ "full-v4": {
+  "path": "evals/reader/exp/X10-dates-v4/out/prompts/full-v4.txt",
+  "chars": 5611,
+  "sha256": "0f11300d1293890f63d6167dcdf1b787f46aa4bb0a04180dac4ac55dd0b3bc24"
+ }
+}
+{
+ "at": "2026-10-19T16:11:08",
+ "full-v3": {
+  "path": "evals/reader/exp/X10-dates-v4/out/prompts/full-v3.txt",
+  "chars": 5462,
+  "sha256": "dbb1b6fbb548888ad6224aacd7c9edd012863907101f394cac49135a99af2fe4"
+ },
+ "full-v4": {
+  "path": "evals/reader/exp/X10-dates-v4/out/prompts/full-v4.txt",
+  "chars": 5611,
+  "sha256": "0f11300d1293890f63d6167dcdf1b787f46aa4bb0a04180dac4ac55dd0b3bc24"
+ }
+}
+{
+ "A_x8_trap_upper_below_10pp": true,
+ "B_clear_lower_above_minus_3pp": true,
+ "C_gap_upper_below_0_confirmatory": true,
+ "adopt": true
+}
+p1 grok trap misread v4-x12 - v3-x12 {'memos': 2, 'diff': -0.125, 'ci95': [-0.25, 0.0]}
+p1 haiku trap misread v4-x12 - v3-x12 {'memos': 2, 'diff': -0.0833, 'ci95': [-0.1667, 0.0]}
+p1 grok nontrap acc v4-x12 - v3-x12 {'memos': 2, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p1 grok alias acc v4-x12 - v3-x12 None
+p1 grok trap misread v3-x12 - v3-x8 {'memos': 2, 'diff': 0.125, 'ci95': [0.0, 0.25]}
+p1 haiku trap misread v3-x12 - v3-x8 {'memos': 2, 'diff': 0.125, 'ci95': [0.0, 0.25]}
+p1 grok nontrap acc v3-x12 - v3-x8 {'memos': 2, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p1 grok alias acc v3-x12 - v3-x8 None
+p1 grok trap misread v4-x12 - v4-x10 {'memos': 2, 'diff': -0.125, 'ci95': [-0.25, 0.0]}
+p1 haiku trap misread v4-x12 - v4-x10 {'memos': 2, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p1 grok nontrap acc v4-x12 - v4-x10 {'memos': 2, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p1 grok alias acc v4-x12 - v4-x10 None
+p1 grok trap misread v4-x10 - v3-x8 {'memos': 2, 'diff': 0.125, 'ci95': [0.0, 0.25]}
+p1 haiku trap misread v4-x10 - v3-x8 {'memos': 2, 'diff': 0.0417, 'ci95': [-0.1667, 0.25]}
+p1 grok nontrap acc v4-x10 - v3-x8 {'memos': 2, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p1 grok alias acc v4-x10 - v3-x8 None
+p1 grok trap misread v4 both runs - v3 both runs {'memos': 2, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p1 haiku trap misread v4 both runs - v3 both runs {'memos': 2, 'diff': -0.0208, 'ci95': [-0.1667, 0.125]}
+p1 grok nontrap acc v4 both runs - v3 both runs {'memos': 2, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p1 grok alias acc v4 both runs - v3 both runs None
+p2 grok gap misread v4 both runs - v3 both runs {'memos': 1, 'diff': -0.75, 'ci95': [-0.75, -0.75]}
+p2 haiku gap misread v4 both runs - v3 both runs {'memos': 1, 'diff': -0.75, 'ci95': [-0.75, -0.75]}
+p2 grok clear acc v4 both runs - v3 both runs {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 haiku clear acc v4 both runs - v3 both runs {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 grok other acc v4 both runs - v3 both runs {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 grok gap misread v4-x12 - v3-x12 {'memos': 1, 'diff': -0.75, 'ci95': [-0.75, -0.75]}
+p2 haiku gap misread v4-x12 - v3-x12 {'memos': 1, 'diff': -0.75, 'ci95': [-0.75, -0.75]}
+p2 grok clear acc v4-x12 - v3-x12 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 haiku clear acc v4-x12 - v3-x12 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 grok other acc v4-x12 - v3-x12 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 grok gap misread v4-x10 - v3-x10 {'memos': 1, 'diff': -0.75, 'ci95': [-0.75, -0.75]}
+p2 haiku gap misread v4-x10 - v3-x10 {'memos': 1, 'diff': -0.75, 'ci95': [-0.75, -0.75]}
+p2 grok clear acc v4-x10 - v3-x10 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 haiku clear acc v4-x10 - v3-x10 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 grok other acc v4-x10 - v3-x10 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 grok gap misread v3-x12 - v3-x10 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 haiku gap misread v3-x12 - v3-x10 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 grok clear acc v3-x12 - v3-x10 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 haiku clear acc v3-x12 - v3-x10 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 grok other acc v3-x12 - v3-x10 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 grok gap misread v4-x12 - v4-x10 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 haiku gap misread v4-x12 - v4-x10 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 grok clear acc v4-x12 - v4-x10 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 haiku clear acc v4-x12 - v4-x10 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
+p2 grok other acc v4-x12 - v4-x10 {'memos': 1, 'diff': 0.0, 'ci95': [0.0, 0.0]}
