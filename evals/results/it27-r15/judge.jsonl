@@ -1,0 +1,4 @@
+{"file": "evals/results/it27-r15/haiku/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r15/haiku/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r15/sonnet/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r15/sonnet/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}

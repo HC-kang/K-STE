@@ -1,0 +1,40 @@
+{"file": "evals/results/it27-r4/haiku/agent+short-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/agent+short-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/agent+short-B/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"PR #881 머지와 스테이징 배포는 완료됐습니다\" uses 완료 without naming the merge target (main) in the same sentence, though the facts state it."]}}
+{"file": "evals/results/it27-r4/haiku/agent+short-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/agent+short-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/agent+short-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/agent+short-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/full-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["'백업이 실패한 경우에는' became '실패하면', which drops the subject '백업', so the sentence could mean the check failed rather than the backup failed."]}}
+{"file": "evals/results/it27-r4/haiku/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/full-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from the condition, so '실패하면' can now be read as the check failing rather than the backup failing."]}}
+{"file": "evals/results/it27-r4/sonnet/agent+short-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/agent+short-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/agent+short-B/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["The closing note \"오늘이 10/20인데\" states today's date, which is not in the fact list, so it adds an outside fact."]}}
+{"file": "evals/results/it27-r4/sonnet/agent+short-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/agent+short-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The original says pre-verification on staging is recommended (to the operations team), but the rewrite '운영팀은 … 권장합니다' makes the operations team the one giving the recommendation, which changes the actor."]}}
+{"file": "evals/results/it27-r4/sonnet/agent+short-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/agent+short-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/full-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["Dropping the subject '백업이' from '백업이 실패한 경우에는' leaves '실패하면' open to reading as the check failing rather than the backup failing."]}}
+{"file": "evals/results/it27-r4/sonnet/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/full-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r4/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' could now mean the check failed rather than the backup failed."]}}

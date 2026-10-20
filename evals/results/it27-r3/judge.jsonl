@@ -1,0 +1,120 @@
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "Redis를 도입하면 4대 서버가 같은 상품 목록을 함께 읽으므로, 서버마다 다른 가격이 보이는 문제가 없어집니다."}}
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "CI에서만 빌드가 실패하는 가장 유력한 원인은 CI가 `@company/ui` 2.0.0을 설치하는데, 2.0.0의 `exports` 필드가 `@company/ui/button` 경로를 공개하지 않거나 다른 경로로 바꿨기 때문으로 보입니다."}}
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"스테이징 검증까지 마쳤습니다\" uses a vague completion phrase, and that sentence does not say that 이수진(QA) passed all 14 staging test cases."]}}
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API의 p95 응답 시간이 300ms에서 2.1초로 늘어났습니다."}}
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "Redis를 도입하면 서버 4대가 같은 상품 목록을 함께 봅니다."}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "현재 가장 유력한 원인은 `@company/ui` 2.0.0의 `exports` 필드가 `button` 하위 경로를 다르게 정의했기 때문이다."}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["The appended note adds facts that are not in the list: \"오늘(10/20) 오전이라 이미 지난 시각입니다\" asserts today's date and that 10:00 has already passed."]}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API 응답이 느려지고 결제 실패가 늘었습니다."}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/agent+short-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-A/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "Redis를 도입하면 서버 4대가 같은 상품 목록을 보게 되므로, 지금처럼 서버마다 내용이 달라지는 문제는 없어집니다."}}
+{"file": "evals/results/it27-r3/haiku/full-A/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 `@company/ui` 2.0.0의 `exports` 필드가 `@company/ui/button` 경로를 공개하지 않는 것으로 보입니다."}}
+{"file": "evals/results/it27-r3/haiku/full-A/S11.md", "sid": "S11", "verdict": {"pass": false, "issues": ["The intro sentence \"운영 환경 API 키에는 아래 규칙을 예외 없이 적용한다\" extends the no-exception condition to all rules below; the list gives it only to the 90-day rule, and it conflicts with the incident-response permission and the recommendation."]}}
+{"file": "evals/results/it27-r3/haiku/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-A/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-A/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-A/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-A/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["\"2026년 10월 21일은 수요일이 아니라 토요일입니다\" adds a claim the memo does not contain, and the claim is wrong: 2026-10-21 is a Wednesday, so the memo's \"10/21(수)\" is correct."]}}
+{"file": "evals/results/it27-r3/haiku/full-A/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-A/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-A/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-A/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "결제 API 응답 지연과 결제 실패율 증가가 발생해 원인을 조사하고 있습니다."}}
+{"file": "evals/results/it27-r3/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' is dropped from the failure condition, so '실패하면' can also be read as 'if the check fails' instead of 'if the backup fails'."]}}
+{"file": "evals/results/it27-r3/haiku/full-B/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "Redis를 도입하면 4대 서버가 같은 캐시를 함께 쓰므로, 서버마다 상품 정보가 다르게 보이는 문제는 없어집니다."}}
+{"file": "evals/results/it27-r3/haiku/full-B/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "현재 사실만으로는 원인을 하나로 확정할 수 없습니다."}}
+{"file": "evals/results/it27-r3/haiku/full-B/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-B/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-B/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-B/S15.md", "sid": "S15", "verdict": {"pass": false, "issues": ["\"session_timeout 값을 30분에서 60분으로 바꾼다\" adds the old and new values to the task, but the list says only \"session_timeout 값을 바꾼다\"."]}}
+{"file": "evals/results/it27-r3/haiku/full-B/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["The opening sentence \"프론트엔드 화면 개발이 진행 중입니다\" uses the vague word 진행 and does not state that 4 of 7 screens are finished, as the memo gives."]}}
+{"file": "evals/results/it27-r3/haiku/full-B/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-B/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-B/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-B/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "결제 API 장애의 원인을 조사하고 있습니다."}}
+{"file": "evals/results/it27-r3/haiku/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The original says pre-validation in staging is recommended to the operations team (passive 권장됩니다), but the output makes the operations team the one who recommends it (운영팀은 ... 권장합니다), which changes the actor.", "In the original, 이에 따라 covers both the backup obligation and the staging recommendation, but the output splits the recommendation into its own sentence and drops that causal link."]}}
+{"file": "evals/results/it27-r3/haiku/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from the failure condition, so '실패하면' could now refer to the verification failing instead of the backup failing."]}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "Redis를 도입하면 서버 4대가 캐시(자주 쓰는 데이터를 빨리 꺼내 쓰려고 임시로 저장해 둔 곳) 하나를 같이 쓰므로, 서버마다 캐시 내용이 달라지는 문제가 없어질 것으로 보입니다."}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 CI와 로컬이 서로 다른 버전의 `@company/ui`를 쓰는 것입니다."}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["\"개발팀이 2안으로 프론트엔드 화면을 개발하고 있습니다\" names 개발팀 as the actor, but the memo names no actor. The 확인 필요 note flags this, but the sentence still states it as fact."]}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "14:02 KST부터 결제 API p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "Redis를 도입하면 서버 4대가 같은 상품 목록 캐시를 함께 보게 되어, 서버마다 캐시 내용이 달라지는 문제가 없어집니다."}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "원인은 CI와 로컬이 서로 다른 버전의 `@company/ui`를 쓰고 있기 때문으로 보입니다."}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The original says staging pre-validation is recommended to the operations team, but the output makes the operations team the one who recommends it, which changes the actor.", "In the original, '이에 따라' covers both the backup obligation and the staging recommendation, but the output's '그래서' links only to the backup, so the causal link to the staging recommendation is lost."]}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/agent+short-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "Redis를 도입하면 서버 4대가 같은 상품 목록을 읽게 됩니다."}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "로컬은 `@company/ui` 1.4.0을 그대로 쓰고 CI는 2.0.0을 설치해서, 2.0.0의 `exports` 필드가 `@company/ui/button` 경로를 막았을 가능성이 가장 높습니다."}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "로컬 캐시는 서버마다 따로 갖고, Redis 캐시는 서버 4대가 하나를 같이 쓴다는 점이 다릅니다."}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 `@company/ui` 2.0.0에 추가된 `exports` 필드(패키지가 외부에 공개하는 파일 경로를 정하는 `package.json` 항목)이고, 로컬은 아직 1.4.0이 설치된 상태라 실패가 재현되지 않는 것으로 보입니다."}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S13.md", "sid": "S13", "verdict": {"pass": false, "issues": ["The phrase \"크게 나빠졌습니다\" is a degree word, and the sentence after it gives only the target and the 500 req/s results; the 800 req/s numbers (1.9초, 2.3%) first appear two sentences later."]}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r3/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["Dropping the subject '백업이' from '실패한 경우' lets the condition be read as the verification failing rather than the backup failing, so the reader can no longer tell which failure requires stopping the deployment."]}}

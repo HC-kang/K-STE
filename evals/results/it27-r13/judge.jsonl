@@ -1,0 +1,4 @@
+{"file": "evals/results/it27-r13/haiku/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r13/haiku/full-B/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"스테이징 검증을 마쳤습니다\" uses a vague completion phrase where the facts give the exact result (QA 이수진 passed all 14 staging test cases), and that sentence does not state it.", "\"운영 배포 전까지는 이 버그가 운영에 그대로 남아 있습니다\" states a claim the fact list does not contain; it is inferred, not given."]}}
+{"file": "evals/results/it27-r13/sonnet/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r13/sonnet/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}

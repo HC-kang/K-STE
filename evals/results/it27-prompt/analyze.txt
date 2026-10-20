@@ -1,0 +1,229 @@
+== 출력 수와 판정
+full-A 본 실행 출력 184/184, 판정(모든 회차) 180, 판정 오류 0
+full-B 본 실행 출력 184/184, 판정(모든 회차) 180, 판정 오류 0
+agent+short-A 본 실행 출력 184/184, 판정(모든 회차) 160, 판정 오류 0
+agent+short-B 본 실행 출력 184/184, 판정(모든 회차) 160, 판정 오류 0
+== 판정 기준 (A / B / 한계 / 결과, 확인 실행이 있으면 합친 A / B / 한계 / 결과)
+full (a) S7 글자 기준 탈락: 16/20 / 12/20 / 3 충족 
+full (b) S5-S7 판정 통과: 40/60 / 40/60 / 6 충족 
+full (c S12) S12 판정 통과: 19/20 / 16/20 / 2 불충족 | 합친 33/40 / 32/40 / 4 충족
+full (c S16) S16 판정 통과: 16/20 / 17/20 / 2 충족 
+full (f) S11 S13 S14 S15 S17 S18 S19 판정 통과 합: 41/42 / 40/42 / 3 충족 
+full (g) 첫 문장 결론 S1 S2 S10: 18/18 / 18/18 / 1 충족 
+full (h haiku) 실행 1회당 결함 haiku: 3.3 / 2.7 / 2.0 충족 
+full (h sonnet) 실행 1회당 결함 sonnet: 2.3 / 1.7 / 2.0 충족 
+full -> 모든 기준 충족(확인 실행 반영)
+agent+short (a) S7 글자 기준 탈락: 7/20 / 3/20 / 3 충족 
+agent+short (b) S5-S7 판정 통과: 52/60 / 51/60 / 6 충족 
+agent+short (c S12) S12 판정 통과: 12/20 / 10/20 / 2 충족 
+agent+short (c S16) S16 판정 통과: 19/20 / 18/20 / 2 충족 
+agent+short (f) S11 S13 S14 S15 S17 S18 S19 판정 통과 합: 42/42 / 42/42 / 3 충족 
+agent+short (g) 첫 문장 결론 S1 S2 S10: 18/18 / 18/18 / 1 충족 
+agent+short (h haiku) 실행 1회당 결함 haiku: 3.0 / 3.3 / 2.0 충족 
+agent+short (h sonnet) 실행 1회당 결함 sonnet: 3.0 / 4.7 / 2.0 충족 
+agent+short -> 모든 기준 충족(확인 실행 반영)
+== 시나리오별 판정 통과 (A / B, 모든 회차)
+full {'S1': '6/6 6/6', 'S2': '6/6 6/6', 'S5': '16/20 14/20', 'S6': '19/20 18/20', 'S7': '5/20 8/20', 'S10': '6/6 6/6', 'S11': '5/6 6/6', 'S12': '33/40 32/40', 'S13': '6/6 5/6', 'S14': '6/6 6/6', 'S15': '6/6 5/6', 'S16': '16/20 17/20', 'S17': '6/6 6/6', 'S18': '6/6 6/6', 'S19': '6/6 6/6'}
+full S7 탈락 모델별 {'A': {'haiku': 8, 'sonnet': 8}, 'B': {'haiku': 7, 'sonnet': 5}} | S7 탈락 중 판정기 실패 {'A': '15/16', 'B': '12/12'}
+agent+short {'S1': '6/6 6/6', 'S2': '6/6 6/6', 'S5': '18/20 14/20', 'S6': '20/20 18/20', 'S7': '14/20 19/20', 'S10': '6/6 6/6', 'S11': '6/6 6/6', 'S12': '12/20 10/20', 'S13': '6/6 6/6', 'S14': '6/6 6/6', 'S15': '6/6 6/6', 'S16': '19/20 18/20', 'S17': '6/6 6/6', 'S18': '6/6 6/6', 'S19': '6/6 6/6'}
+agent+short S7 탈락 모델별 {'A': {'haiku': 3, 'sonnet': 4}, 'B': {'haiku': 1, 'sonnet': 2}} | S7 탈락 중 판정기 실패 {'A': '6/7', 'B': '1/3'}
+== 문장 길이와 헤지 (S8 제외, 본 실행 출력)
+full-A 출력 178 max_eojeol 평균 13.69 max>25 출력 3 | 문장 1088 >20어절 13 >25어절 3 | 헤지 일치 46 헤지 2개 이상 문장 11
+   헤지 2개 이상: it27-r1/haiku/full-A/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r1/sonnet/full-A/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블에서 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r3/haiku/full-A/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 문제가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r3/sonnet/full-A/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블에서 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r4/sonnet/full-A/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블에서 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r5/haiku/full-A/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r6/sonnet/full-A/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블에 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r7/haiku/full-A/S5.md | 이번 마이그레이션에서는 일부 레거시 테이블에 데이터 정합성 문제가 생길 가능성이 있는 것으로 판단됩니다.
+   헤지 2개 이상: it27-r8/sonnet/full-A/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블에서 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r9/haiku/full-A/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r9/sonnet/full-A/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블에 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+full-B 출력 178 max_eojeol 평균 13.70 max>25 출력 3 | 문장 1133 >20어절 13 >25어절 4 | 헤지 일치 59 헤지 2개 이상 문장 20
+   헤지 2개 이상: it27-r1/haiku/full-B/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r1/sonnet/full-B/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블의 경우 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r2/haiku/full-B/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r2/sonnet/full-B/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블에서 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r3/haiku/full-B/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블에는 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r3/sonnet/full-B/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블에서 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r4/sonnet/full-B/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블에서 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r5/haiku/full-B/S5.md | 이번 마이그레이션 작업과 관련해 일부 레거시 테이블에서 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r5/sonnet/full-B/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블의 경우 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r6/haiku/full-B/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r6/sonnet/full-B/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블에 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r7/haiku/full-B/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r7/sonnet/full-B/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r8/haiku/full-B/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r8/sonnet/full-B/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블에는 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r9/haiku/full-B/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 판단됩니다.
+   헤지 2개 이상: it27-r9/sonnet/full-B/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블의 경우 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r10/haiku/full-B/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r1/sonnet/full-B/S10.md | 가장 가능성이 높은 원인은 CI와 로컬이 서로 다른 버전의 CODE로 빌드하는 것으로 보입니다.
+   헤지 2개 이상: it27-r2/sonnet/full-B/S10.md | CI 실패는 CODE 2.0.0에 추가된 CODE 필드 때문으로 보이며, 로컬 빌드는 아직 1.4.0을 쓰고 있어서 성공하는 것으로 보입니다.
+agent+short-A 출력 178 max_eojeol 평균 12.88 max>25 출력 0 | 문장 1234 >20어절 4 >25어절 0 | 헤지 일치 57 헤지 2개 이상 문장 15
+   헤지 2개 이상: it27-r1/haiku/agent+short-A/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 판단됩니다.
+   헤지 2개 이상: it27-r2/sonnet/agent+short-A/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r3/haiku/agent+short-A/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r4/sonnet/agent+short-A/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r5/sonnet/agent+short-A/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r6/sonnet/agent+short-A/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블에 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r7/haiku/agent+short-A/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r7/sonnet/agent+short-A/S5.md | 이번 마이그레이션에서 일부 레거시 테이블에 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r8/sonnet/agent+short-A/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r9/haiku/agent+short-A/S5.md | 이번 마이그레이션에서 일부 레거시 테이블은 데이터 정합성 문제가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r9/sonnet/agent+short-A/S5.md | 이번 마이그레이션에서 일부 레거시 테이블에 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r10/haiku/agent+short-A/S5.md | 이번 마이그레이션에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 판단됩니다.
+   헤지 2개 이상: it27-r10/sonnet/agent+short-A/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블에 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r1/haiku/agent+short-A/S10.md | 로컬 CODE에는 1.4.0이 남아 있을 가능성이 높고, CI는 2.0.0을 새로 설치하므로 CODE 경로가 막히는 것으로 보입니다.
+   헤지 2개 이상: it27-r3/haiku/agent+short-A/S10.md | 로컬은 3일 전에 설치한 1.4.0을 그대로 쓰고 있을 가능성이 높아서 빌드가 성공하는 것으로 보입니다.
+agent+short-B 출력 178 max_eojeol 평균 12.65 max>25 출력 0 | 문장 1301 >20어절 4 >25어절 0 | 헤지 일치 54 헤지 2개 이상 문장 14
+   헤지 2개 이상: it27-r1/haiku/agent+short-B/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블은 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r1/sonnet/agent+short-B/S5.md | 이번 마이그레이션에서 일부 레거시 테이블에 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r2/haiku/agent+short-B/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r3/sonnet/agent+short-B/S5.md | 이번 마이그레이션에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r4/haiku/agent+short-B/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r4/sonnet/agent+short-B/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블에 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r5/haiku/agent+short-B/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 판단됩니다.
+   헤지 2개 이상: it27-r5/sonnet/agent+short-B/S5.md | 이번 마이그레이션 작업과 관련해 일부 레거시 테이블은 데이터 정합성 이슈가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r6/haiku/agent+short-B/S5.md | 이번 마이그레이션 작업과 관련해 일부 레거시 테이블에서 데이터 정합성 문제가 생길 가능성이 있는 것으로 판단됩니다.
+   헤지 2개 이상: it27-r6/sonnet/agent+short-B/S5.md | 이번 마이그레이션에서 일부 레거시 테이블은 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r7/sonnet/agent+short-B/S5.md | 이번 마이그레이션 작업과 관련하여 일부 레거시 테이블에서 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r8/haiku/agent+short-B/S5.md | 일부 레거시 테이블에서는 데이터 정합성 문제가 생길 가능성이 있는 것으로 판단됩니다.
+   헤지 2개 이상: it27-r8/sonnet/agent+short-B/S5.md | 이번 마이그레이션에서 일부 레거시 테이블에 데이터 정합성 문제가 생길 가능성이 있는 것으로 보입니다.
+   헤지 2개 이상: it27-r10/haiku/agent+short-B/S5.md | 이번 마이그레이션 작업에서 일부 레거시 테이블의 경우 데이터 정합성 이슈가 발생할 가능성이 있는 것으로 보입니다.
+== S12와 S16의 완료 동사 문장 (본 실행, 각 20회)
+full-A S12: 완료 동사 문장 2, 그 문장이나 다음 문장에 결과 수치 1, 수치 없음 1
+   수치 없음: it27-r2/haiku/full-A/S12.md | 팀장님, 할인 금액 1원 단위 반올림 버그 수정은 main에 머지했고 스테이징 배포와 QA 테스트를 마쳤습니다.
+full-A S16: 완료 동사 문장 19, 그 문장이나 다음 문장에 결과 수치 19, 수치 없음 0
+full-B S12: 완료 동사 문장 5, 그 문장이나 다음 문장에 결과 수치 0, 수치 없음 5
+   수치 없음: it27-r2/haiku/full-B/S12.md | PR #881(할인 금액 1원 단위 반올림 버그)은 main에 머지했고, 스테이징 배포와 테스트까지 끝났습니다.
+   수치 없음: it27-r2/sonnet/full-B/S12.md | PR #881(할인 금액 1원 단위 반올림 버그)을 main에 머지했고, 스테이징 배포와 QA 테스트까지 끝냈습니다.
+   수치 없음: it27-r3/haiku/full-B/S12.md | PR #881(할인 금액 1원 단위 반올림 버그)을 main에 머지했고 스테이징 배포와 테스트를 마쳤습니다.
+   수치 없음: it27-r5/haiku/full-B/S12.md | 할인 금액 1원 단위 반올림 버그 수정(PR #881)은 main에 머지했고 스테이징 배포와 테스트를 마쳤습니다.
+   수치 없음: it27-r9/haiku/full-B/S12.md | PR #881(할인 금액 1원 단위 반올림 버그)을 main에 머지했고, 스테이징 배포와 테스트까지 마쳤습니다.
+full-B S16: 완료 동사 문장 21, 그 문장이나 다음 문장에 결과 수치 21, 수치 없음 0
+agent+short-A S12: 완료 동사 문장 5, 그 문장이나 다음 문장에 결과 수치 0, 수치 없음 5
+   수치 없음: it27-r1/sonnet/agent+short-A/S12.md | PR #881을 main에 머지했고, 스테이징 배포와 QA 테스트까지 끝났습니다.
+   수치 없음: it27-r2/haiku/agent+short-A/S12.md | PR #881(할인 금액 1원 단위 반올림 버그)은 main에 머지했고, 스테이징 검증까지 끝났습니다.
+   수치 없음: it27-r3/haiku/agent+short-A/S12.md | 할인 금액 1원 단위 반올림 버그를 고치는 PR #881은 main에 머지했고, 스테이징 검증까지 마쳤습니다.
+   수치 없음: it27-r7/sonnet/agent+short-A/S12.md | PR #881(할인 금액 1원 단위 반올림 버그)을 main에 머지했고, 스테이징 테스트까지 마쳤습니다.
+   수치 없음: it27-r9/haiku/agent+short-A/S12.md | PR #881을 main에 머지했고, 스테이징 배포와 QA 테스트까지 끝났습니다.
+agent+short-A S16: 완료 동사 문장 20, 그 문장이나 다음 문장에 결과 수치 20, 수치 없음 0
+agent+short-B S12: 완료 동사 문장 5, 그 문장이나 다음 문장에 결과 수치 0, 수치 없음 5
+   수치 없음: it27-r1/haiku/agent+short-B/S12.md | PR #881(할인 금액 1원 단위 반올림 버그)을 main에 머지했고 스테이징 배포까지 끝났습니다.
+   수치 없음: it27-r1/sonnet/agent+short-B/S12.md | PR #881(할인 금액 1원 단위 반올림 버그)을 main에 머지했고, 스테이징 배포와 QA 테스트까지 마쳤습니다.
+   수치 없음: it27-r6/sonnet/agent+short-B/S12.md | PR #881(할인 금액 1원 단위 반올림 버그)을 main에 머지했고, 스테이징 배포까지 마쳤습니다.
+   수치 없음: it27-r7/sonnet/agent+short-B/S12.md | PR #881(할인 금액 1원 단위 반올림 버그)을 main에 머지했고, 스테이징 배포도 끝냈습니다.
+   수치 없음: it27-r8/sonnet/agent+short-B/S12.md | PR #881(할인 금액 1원 단위 반올림 버그)을 main에 머지했고, 스테이징 배포와 QA 테스트까지 끝났습니다.
+agent+short-B S16: 완료 동사 문장 21, 그 문장이나 다음 문장에 결과 수치 21, 수치 없음 0
+== 스킬, references, 확인 필요 (본 실행)
+full-A 확인 필요 줄 75 {'S1': 1, 'S10': 6, 'S11': 1, 'S12': 3, 'S14': 8, 'S4': 2, 'S5': 5, 'S6': 44, 'S7': 1, 'S9': 4}
+full-B 확인 필요 줄 72 {'S10': 2, 'S11': 1, 'S12': 4, 'S14': 11, 'S4': 5, 'S5': 4, 'S6': 43, 'S7': 1, 'S9': 1}
+agent+short-A 확인 필요 줄 96 {'S1': 5, 'S10': 10, 'S11': 2, 'S12': 8, 'S14': 10, 'S15': 1, 'S16': 2, 'S4': 10, 'S5': 1, 'S6': 43, 'S7': 1, 'S9': 3} | 스킬 재작성·검수 71/72 모든 출력 166/184 | rewrite.md 읽음(재작성·검수) 61/72 | word-swaps.md 읽음(모든 출력) 25
+agent+short-B 확인 필요 줄 100 {'S1': 5, 'S10': 10, 'S11': 3, 'S12': 6, 'S14': 13, 'S16': 3, 'S4': 10, 'S5': 2, 'S6': 42, 'S7': 2, 'S9': 4} | 스킬 재작성·검수 72/72 모든 출력 163/184 | rewrite.md 읽음(재작성·검수) 64/72 | word-swaps.md 읽음(모든 출력) 27
+스킬 미실행 출력: ['it27-r1/haiku/agent+short-A/S12.md', 'it27-r1/haiku/agent+short-A/S15.md', 'it27-r1/haiku/agent+short-A/S2.md', 'it27-r1/haiku/agent+short-A/S3.md', 'it27-r1/haiku/agent+short-A/S4.md', 'it27-r1/haiku/agent+short-B/S10.md', 'it27-r1/haiku/agent+short-B/S15.md', 'it27-r1/haiku/agent+short-B/S4.md', 'it27-r2/haiku/agent+short-A/S10.md', 'it27-r2/haiku/agent+short-A/S12.md', 'it27-r2/haiku/agent+short-A/S19.md', 'it27-r2/haiku/agent+short-A/S3.md', 'it27-r2/haiku/agent+short-B/S15.md', 'it27-r2/haiku/agent+short-B/S17.md', 'it27-r2/haiku/agent+short-B/S19.md', 'it27-r2/haiku/agent+short-B/S3.md', 'it27-r3/haiku/agent+short-A/S19.md', 'it27-r3/haiku/agent+short-B/S10.md', 'it27-r3/haiku/agent+short-B/S12.md', 'it27-r3/haiku/agent+short-B/S15.md', 'it27-r3/haiku/agent+short-B/S18.md', 'it27-r3/haiku/agent+short-B/S19.md', 'it27-r6/haiku/agent+short-B/S12.md', 'it27-r6/haiku/agent+short-B/S16.md', 'it27-r7/haiku/agent+short-B/S12.md', 'it27-r8/haiku/agent+short-A/S12.md', 'it27-r8/haiku/agent+short-A/S7.md']
+== 판정기가 실패로 본 출력 (모든 회차)
+it27-r2/haiku/agent+short-A/S12.md no-skill | "스테이징 검증까지 끝났습니다" uses a vague completion word; the facts say 이수진(QA) passed all 14 staging test cases, and that sentence does not state it. / "오늘이 10/20인데" states today's date and claims the schedule is earlier than the 15:10 staging deploy, but the fact list
+it27-r2/haiku/agent+short-A/S7.md skill | The subject '백업이' is dropped from the failure condition, so '실패하면' could mean the backup failed or the check failed.
+it27-r3/haiku/agent+short-A/S12.md skill | "스테이징 검증까지 마쳤습니다" uses a vague completion phrase, and that sentence does not say that 이수진(QA) passed all 14 staging test cases.
+it27-r5/haiku/agent+short-A/S5.md skill | The scope marker '이번 마이그레이션 작업과 관련하여' is missing, so the output no longer says the data integrity risk concerns this specific migration.
+it27-r5/haiku/agent+short-A/S7.md skill | The rewrite drops the subject '백업이' from the failure clause, so '실패하면' could also mean the verification failed rather than the backup failed.
+it27-r6/haiku/agent+short-A/S12.md skill | The message adds a date that is not in the list: "메모 기준 날짜가 오늘(10/20)과 같아서". The note built on it ("운영 배포 예정 시각(10:00)이 스테이징 배포 시각(15:10)보다 앞섭니다") sits inside the Slack message, not apart from it.
+it27-r7/haiku/agent+short-A/S12.md skill | The note "10:00은 이미 지난 시각입니다" asserts a current time that neither the facts nor the context support, and "10/21이 맞는지" proposes a date the list does not contain.
+it27-r7/haiku/agent+short-A/S5.md skill | In the original, '이에 따라' (and the 운영팀 topic) governs both the mandatory backup and the recommended staging check, but the output attaches '그래서' and 운영팀 only to the backup sentence, so the recommendation loses its explicit causal link and actor.
+it27-r8/haiku/agent+short-A/S12.md no-skill | "오늘(10/20) 오전이라 이미 지났습니다" adds a claim that is not in the list: the facts give no current date or time, so the message cannot assert that the 10/20 10:00 deployment time has passed. / "운영에는 아직 이 수정을 배포하지 않은 상태입니다" sits right after the 37 wrong orders and impli
+it27-r9/haiku/agent+short-A/S12.md skill | "운영 배포 전까지는 같은 오류가 계속 생길 수 있는 것으로 보입니다" adds a prediction that the facts do not contain. / "QA 테스트까지 끝났습니다" uses a vague completion word and omits the result in the facts (all 14 test cases passed on staging).
+it27-r1/haiku/agent+short-B/S5.md skill | Splitting the sentence takes the staging pre-verification recommendation out of the scope of '이에 따라' (now '그래서'), so the causal link between the integrity risk and that recommendation is no longer stated. / The new standalone sentence '가능하다면 스테이징 환경에서 사전 검증을 하
+it27-r2/haiku/agent+short-B/S6.md skill | The original leaves unclear whether the servers or their memory are reset on restart, but the output adds '이 서버들은' and resolves it to the servers without flagging it.
+it27-r3/haiku/agent+short-B/S12.md no-skill | The appended note adds facts that are not in the list: "오늘(10/20) 오전이라 이미 지난 시각입니다" asserts today's date and that 10:00 has already passed.
+it27-r4/haiku/agent+short-B/S12.md skill | "PR #881 머지와 스테이징 배포는 완료됐습니다" uses 완료 without naming the merge target (main) in the same sentence, though the facts state it.
+it27-r5/haiku/agent+short-B/S12.md skill | "운영 배포 예정일 "10/20 10:00"은 오늘 날짜와 같습니다" adds today's date, which the list does not contain. / "운영 배포 시각이 이미 지난 시각입니다" adds an inference that the list does not contain, because the list does not say that the deploy is late or that the schedule conflicts.
+it27-r6/haiku/agent+short-B/S16.md no-skill | "개발팀은 2안으로 프론트엔드 화면을 만들고 있습니다" names 개발팀 as the actor, but the memo does not say who is doing the frontend work.
+it27-r7/haiku/agent+short-B/S12.md no-skill | "다만 이 37건이 1원 단위 반올림 버그 때문인지는 아직 확인하지 않았습니다" states a fact the list does not contain: the list does not say whether the cause of the 37 orders was checked.
+it27-r8/haiku/agent+short-B/S12.md skill | "이 수정은 아직 운영에 반영되지 않았습니다" uses the vague word 반영 when the facts give the exact action (운영 배포), and that sentence does not say 배포.
+it27-r8/haiku/agent+short-B/S5.md skill | The scope marker '이번 마이그레이션 작업과 관련하여' is missing, so the integrity risk is no longer explicitly tied to this specific migration.
+it27-r9/haiku/agent+short-B/S6.md skill | In the original, '초기화됩니다' can refer to either the servers or the memory, but the output inserts '이 두 서버는' as the subject without flagging it, which silently picks the servers reading.
+it27-r1/haiku/full-A/S16.md | "프론트엔드 개발을 진행하고 있습니다" uses the vague word 진행, and the sentence does not state the memo's progress of 4 of 7 screens.
+it27-r1/haiku/full-A/S6.md | The original leaves the subject of '초기화됩니다' open (the two servers or their memory), and the rewrite silently resolves it to '두 서버는' without flagging it for confirmation.
+it27-r1/haiku/full-A/S7.md | The subject '백업이' is dropped from the failure condition, so '실패하면' could also be read as the check (확인) failing instead of the backup failing.
+it27-r2/haiku/full-A/S12.md | The opening sentence says "QA 테스트를 마쳤습니다" but does not state the result from the facts (all 14 staging test cases passed), so it reads like the vague "QA 확인 완료".
+it27-r2/haiku/full-A/S7.md | Dropping '백업이' from '백업이 실패한 경우' makes '실패하면' ambiguous, because it can now refer to the check (확인) failing rather than the backup failing.
+it27-r3/haiku/full-A/S11.md | The intro sentence "운영 환경 API 키에는 아래 규칙을 예외 없이 적용한다" extends the no-exception condition to all rules below; the list gives it only to the 90-day rule, and it conflicts with the incident-response permission and the recommendation.
+it27-r3/haiku/full-A/S16.md | "2026년 10월 21일은 수요일이 아니라 토요일입니다" adds a claim the memo does not contain, and the claim is wrong: 2026-10-21 is a Wednesday, so the memo's "10/21(수)" is correct.
+it27-r3/haiku/full-A/S7.md | The subject '백업이' is dropped from the failure condition, so '실패하면' can also be read as 'if the check fails' instead of 'if the backup fails'.
+it27-r4/haiku/full-A/S7.md | '백업이 실패한 경우에는' became '실패하면', which drops the subject '백업', so the sentence could mean the check failed rather than the backup failed.
+it27-r6/haiku/full-A/S7.md | The subject '백업이' is dropped from the failure condition, so '실패하면' could mean the backup failed or the check failed.
+it27-r7/haiku/full-A/S16.md | The opening sentence '결제 화면은 시안 2안으로 진행 중입니다' uses the vague word '진행' and does not state the exact action or result from the memo (adoption of option 2, 4 of 7 screens developed).
+it27-r7/haiku/full-A/S5.md | The causal link '이에 따라' is dropped, so the output no longer says the backup duty and the staging-check recommendation follow from the possible data integrity issue.
+it27-r7/haiku/full-A/S7.md | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' could now mean the verification failed rather than the backup itself.
+it27-r8/haiku/full-A/S5.md | '마이그레이션 작업과 관련하여' became '마이그레이션 작업으로', which adds a causal link: the rewrite says the migration causes the issues, while the original only links them.
+it27-r9/haiku/full-A/S5.md | The causal link '이에 따라' is dropped, so the output no longer says the backup and validation requirements follow from the data-integrity risk.
+it27-r9/haiku/full-A/S7.md | The subject '백업이' was dropped from '실패한 경우', so the condition could be read as the check failing rather than the backup failing.
+it27-r10/haiku/full-A/S16.md | "시안 2안으로 개발을 진행하고 있습니다" uses the vague word 진행 without stating the memo's exact progress (화면 7개 중 4개 완료) in that sentence.
+it27-r11/haiku/full-A/S12.md | "운영 배포 전까지는 같은 문제가 계속 생길 수 있습니다" is a forecast that the facts do not contain. / "확인 필요: 운영 배포 예정일 \"10/20 10:00\"은 오늘 날짜이고 ... 이미 지난 시각이므로" adds today's date, that 10:00 has passed, and an instruction to the user, none of which are in the facts, and it sits in
+it27-r17/haiku/full-A/S12.md | "운영에는 아직 이 수정이 반영되지 않았습니다" uses the vague word 반영 where the facts give the exact action (운영 배포 아직 안 함), and the sentence does not say 배포.
+it27-r18/haiku/full-A/S12.md | "운영에는 수정이 아직 반영되지 않았으므로" uses the vague word 반영 where the facts give the exact action, 운영 배포 안 함. / "배포 전까지는 같은 오류가 발생할 수 있습니다" adds a prediction that the fact list does not contain.
+it27-r1/haiku/full-B/S12.md | "배포 시점을 앞당길지 팀장님의 판단을 부탁드립니다" adds a request to move the deployment earlier, and the facts contain no such plan or request.
+it27-r1/haiku/full-B/S7.md | The subject '백업이' is dropped from the failure condition, so '실패하면' could be read as the check failing instead of the backup failing.
+it27-r2/haiku/full-B/S16.md | The lead sentence "결제 화면은 시안 2안으로 진행하고 있습니다" uses the vague word "진행" and does not say that the action is front-end development or that 4 of 7 screens are finished, as the memo states.
+it27-r2/haiku/full-B/S5.md | The original applies '이에 따라' to both the mandatory backup and the staging-validation recommendation, but the output attaches '따라서' only to the backup sentence, so the causal link to the recommendation is lost. / The separate recommendation sentence no longer n
+it27-r2/haiku/full-B/S7.md | The subject '백업이' was dropped from '실패하면', so the failure could now be read as the check failing rather than the backup failing.
+it27-r3/haiku/full-B/S15.md | "session_timeout 값을 30분에서 60분으로 바꾼다" adds the old and new values to the task, but the list says only "session_timeout 값을 바꾼다".
+it27-r3/haiku/full-B/S16.md | The opening sentence "프론트엔드 화면 개발이 진행 중입니다" uses the vague word 진행 and does not state that 4 of 7 screens are finished, as the memo gives.
+it27-r3/haiku/full-B/S5.md | The original says pre-validation in staging is recommended to the operations team (passive 권장됩니다), but the output makes the operations team the one who recommends it (운영팀은 ... 권장합니다), which changes the actor. / In the original, 이에 따라 covers both the backup obl
+it27-r3/haiku/full-B/S7.md | The subject '백업이' was dropped from the failure condition, so '실패하면' could now refer to the verification failing instead of the backup failing.
+it27-r4/haiku/full-B/S7.md | The subject '백업이' was dropped from the condition, so '실패하면' can now be read as the check failing rather than the backup failing.
+it27-r5/haiku/full-B/S16.md | The sentence "프론트엔드 개발이 진행 중입니다" uses the vague word 진행 and does not state the memo's exact progress (화면 7개 중 4개).
+it27-r5/haiku/full-B/S5.md | Splitting the sentence detaches the staging-validation recommendation from '이에 따라' and from the actor '운영팀', so the reader can no longer tell that the recommendation follows from the integrity risk or that the 운영팀 performs it.
+it27-r5/haiku/full-B/S7.md | The subject '백업이' was dropped from '실패한 경우', so it could now mean the check failed instead of the backup failing.
+it27-r6/haiku/full-B/S12.md | The note's phrase "오늘이 10/20이고" states today's date, but the fact list does not contain it.
+it27-r8/haiku/full-B/S7.md | '백업이 실패한 경우에는'이 '실패하면'으로 줄어 주어 '백업이'가 빠졌으므로, 백업 실패인지 확인 절차 실패인지 구별할 수 없습니다.
+it27-r9/haiku/full-B/S12.md | "스테이징 배포와 테스트까지 마쳤습니다" says the testing finished but not that all 14 of 14 test cases passed, which the facts state. / "운영에는 아직 이 수정이 배포되지 않은 상태입니다" sits next to the 37 orders and implies they were caused by the missing fix, a causal link the facts do not stat
+it27-r9/haiku/full-B/S6.md | The original leaves open whether the servers or their memory is reset ('메모리를 많이 사용하며, 배포 후 재시작하면 초기화됩니다'); restating '캐시 서버와 API 서버는' as the subject of '초기화된다' silently settles it as the servers, without flagging it for confirmation.
+it27-r9/haiku/full-B/S7.md | The subject '백업이' was dropped from the failure clause, so '실패한 경우' can now mean either the backup failed or the check failed, while the original halts deployment only when the backup fails.
+it27-r11/haiku/full-B/S12.md | "스테이징 배포와 QA를 마쳤습니다" uses a vague completion word for QA without saying that 이수진(QA) passed all 14 of 14 staging test cases, so the reader cannot tell whether QA passed.
+it27-r13/haiku/full-B/S12.md | "스테이징 검증을 마쳤습니다" uses a vague completion phrase where the facts give the exact result (QA 이수진 passed all 14 staging test cases), and that sentence does not state it. / "운영 배포 전까지는 이 버그가 운영에 그대로 남아 있습니다" states a claim the fact list does not contain; it is infe
+it27-r19/haiku/full-B/S12.md | "오늘이 10/20이고 ... 오늘 10:00이라면 이미 지난 시각입니다" adds a date and a possible scheduling error that the facts do not contain. / "스테이징 배포와 QA 테스트를 마쳤습니다" says the QA tests were finished but not that all 14 test cases passed.
+it27-r1/sonnet/agent+short-A/S12.md skill | The note "오늘이 10월 20일이고" states today's date, which the fact list does not contain, and uses it to conclude the production deploy time has already passed.
+it27-r2/sonnet/agent+short-A/S12.md skill | The phrase "오늘이 10월 20일인데 운영 배포 예정 시각(10월 20일 10:00)이 스테이징 배포 시각(15:10)보다 앞섭니다" adds today's date and a schedule conflict, neither of which is in the list.
+it27-r3/sonnet/agent+short-A/S16.md skill | "개발팀이 2안으로 프론트엔드 화면을 개발하고 있습니다" names 개발팀 as the actor, but the memo names no actor. The 확인 필요 note flags this, but the sentence still states it as fact.
+it27-r5/sonnet/agent+short-A/S7.md skill | The subject '백업이' was dropped from the failure condition, so '실패하면' could refer to the check (확인) instead of the backup.
+it27-r7/sonnet/agent+short-A/S7.md skill | The subject '백업이' was dropped from the failure condition, so '실패하면' can now be read as the check (확인) failing instead of the backup failing.
+it27-r9/sonnet/agent+short-A/S7.md skill | The subject '백업이' is dropped from the failure condition, so '실패했으면' could mean the verification failed rather than the backup itself failing.
+it27-r10/sonnet/agent+short-A/S7.md skill | The subject '백업이' is dropped from '실패한 경우에는', so '실패' could now mean a failed check instead of a failed backup.
+it27-r1/sonnet/agent+short-B/S5.md skill | '운영팀이 가능하면 … 하는 것을 권장합니다' can now be read as the operations team giving the recommendation, while the original says the operations team is the one advised to do the staging verification. / The original's '이에 따라' links the possible integrity issue to both the m
+it27-r3/sonnet/agent+short-B/S5.md skill | The original says staging pre-validation is recommended to the operations team, but the output makes the operations team the one who recommends it, which changes the actor. / In the original, '이에 따라' covers both the backup obligation and the staging recommenda
+it27-r4/sonnet/agent+short-B/S12.md skill | The closing note "오늘이 10/20인데" states today's date, which is not in the fact list, so it adds an outside fact.
+it27-r4/sonnet/agent+short-B/S5.md skill | The original says pre-verification on staging is recommended (to the operations team), but the rewrite '운영팀은 … 권장합니다' makes the operations team the one giving the recommendation, which changes the actor.
+it27-r5/sonnet/agent+short-B/S7.md skill | The subject '백업이' was dropped from '실패하면', so it may read as the verification failing, not the backup failing.
+it27-r7/sonnet/agent+short-B/S12.md skill | "오늘이 10/20인데 ... 운영 배포 예정 시각 10:00이 이미 지났습니다" states today's date and claims the schedule is wrong, and neither fact is in the list. / "예정일이 10/21인지, 시각이 다른지" suggests other dates and times that the list does not contain.
+it27-r8/sonnet/agent+short-B/S12.md skill | "QA 테스트까지 끝났습니다" says only that testing ended, although the facts give the result (all 14 test cases passed on staging), and this sentence does not state it.
+it27-r8/sonnet/agent+short-B/S16.md skill | "개발팀이 2안으로 프론트엔드 화면을 개발하고 있습니다" names 개발팀 as the actor, but the memo does not say who is doing the development.
+it27-r9/sonnet/agent+short-B/S12.md skill | "오늘이 10/20이고 ... 10:00이 이미 지났습니다" states today's date and concludes the 10:00 slot has passed; neither appears in the facts list, which gives no current date.
+it27-r10/sonnet/agent+short-B/S12.md skill | "오늘이 10/20인데" and "10/20 10:00은 이미 지난 시각입니다" add today's date and the claim that the plan time has passed, neither of which is in the list.
+it27-r10/sonnet/agent+short-B/S5.md skill | The original says pre-validation in staging 'is recommended' without saying who recommends it, but the output makes the operations team the one who recommends it, when the team is the one receiving the recommendation.
+it27-r1/sonnet/full-A/S7.md | The subject '백업이' was dropped from the failure condition, so '실패하면' could mean either the backup failing or the verification check failing.
+it27-r2/sonnet/full-A/S7.md | The subject '백업이' is dropped from '백업이 실패한 경우에는', so '실패하면' could also be read as the verification step failing rather than the backup failing.
+it27-r4/sonnet/full-A/S7.md | Dropping the subject '백업이' from '백업이 실패한 경우에는' leaves '실패하면' open to reading as the check failing rather than the backup failing.
+it27-r5/sonnet/full-A/S7.md | Dropping the subject '백업이' from '백업이 실패한 경우' lets '실패하면' be read as the check failing instead of the backup failing.
+it27-r6/sonnet/full-A/S7.md | The subject '백업이' is dropped from the failure condition, so '실패하면' could also mean the check failed, not the backup.
+it27-r7/sonnet/full-A/S5.md | Splitting the sentence detaches the staging-verification recommendation from '이에 따라', so the stated cause (the data integrity risk) no longer clearly applies to it. / Splitting the sentence drops '운영팀' as the actor for the staging verification, so it is no lon
+it27-r7/sonnet/full-A/S7.md | Dropping the subject '백업이' from '실패한 경우' lets the failure refer to either the backup or the check (확인), where the original says only that the backup failed.
+it27-r8/sonnet/full-A/S7.md | The subject '백업이' was dropped from the failure clause, so '실패하면' could mean the backup failed or the verification step failed.
+it27-r9/sonnet/full-A/S7.md | Dropping the subject '백업이' from '백업이 실패한 경우' makes '실패한 경우' ambiguous: it could mean the backup failed or the verification failed, while the original says only the backup.
+it27-r11/sonnet/full-A/S12.md | The '확인 필요' line adds a date and a plan that the notes do not contain: '날짜가 10/21 등 다른 날인지' and '오늘 10:00에 이미 예정되어 있었는지'. / The '확인 필요' line adds an inference that the notes do not state: '오늘이 10/20이면 이미 지난 시각이므로'.
+it27-r14/sonnet/full-A/S12.md | "오늘이 10/20이고 스테이징 배포가 15:10이어서 이미 지난 시각입니다" states today's date, which the fact list does not contain, and uses it to claim the planned time has already passed.
+it27-r19/sonnet/full-A/S12.md | "스테이징 배포와 QA 테스트까지 마쳤습니다" uses 마쳤습니다, a synonym of 완료, for the QA test, and the sentence omits the exact result (14 of 14 test cases passed on staging), which is the same pattern as "QA 확인 완료".
+it27-r1/sonnet/full-B/S5.md | The original says pre-verification in staging is recommended for the operations team, but the output says the operations team recommends it, so the team changes from the one advised to the one advising.
+it27-r1/sonnet/full-B/S7.md | The subject '백업이' is dropped from the condition, so '실패하면' could mean the backup failed or the check (확인) failed.
+it27-r2/sonnet/full-B/S12.md | "오늘이 10/20이고" states today's date, which the notes do not contain. / "10:00이 이미 지났을 수 있습니다" adds a timing conflict that the notes do not contain. / "알려주시면 반영하겠습니다" adds a plan the notes do not contain, and "반영" does not say what will change or where. / "QA 테스트
+it27-r2/sonnet/full-B/S5.md | '운영팀이 가능하다면 ... 하는 것을 권장합니다' changes the passive '권장됩니다' to active voice, so it can now read as the operations team giving the recommendation instead of receiving it.
+it27-r3/sonnet/full-B/S13.md | The phrase "크게 나빠졌습니다" is a degree word, and the sentence after it gives only the target and the 500 req/s results; the 800 req/s numbers (1.9초, 2.3%) first appear two sentences later.
+it27-r3/sonnet/full-B/S7.md | Dropping the subject '백업이' from '실패한 경우' lets the condition be read as the verification failing rather than the backup failing, so the reader can no longer tell which failure requires stopping the deployment.
+it27-r4/sonnet/full-B/S7.md | The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' could now mean the check failed rather than the backup failed.
+it27-r5/sonnet/full-B/S7.md | The subject '백업이' was dropped from '실패하면', so it is unclear whether the backup or the check fails.
+it27-r6/sonnet/full-B/S6.md | The first confirmation note describes one reading as 'QA 담당자 한 명' (a single QA person), which adds a number the original does not contain.
+it27-r6/sonnet/full-B/S7.md | The output drops the subject '백업이' from '백업이 실패한 경우', so '실패한 경우' could refer to either the backup or the verification step.
+it27-r9/sonnet/full-B/S5.md | In the original, '이에 따라' covers both the required backup and the staging-verification recommendation, but after the sentence split it covers only the backup, so the recommendation loses its explicit causal link to the data-integrity risk.
+it27-r20/sonnet/full-B/S12.md | The appended note "오늘이 10/20인데" states today's date, which the fact list does not contain. / The appended note "다른 날짜(예: 다음 달 20일)일 수 있습니다" adds a guessed alternative date that is not in the fact list.

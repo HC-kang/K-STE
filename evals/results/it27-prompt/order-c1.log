@@ -1,0 +1,92 @@
+09:44:14 start r11 full haiku S12 A
+09:44:14 start r11 full haiku S12 B
+09:44:14 start r11 full sonnet S12 A
+09:44:14 start r11 full sonnet S12 B
+09:44:14 start r12 full sonnet S12 B
+09:44:14 start r12 full sonnet S12 A
+09:44:22 end r12 full sonnet S12 B
+09:44:22 start r12 full haiku S12 B
+09:44:23 end r12 full sonnet S12 A
+09:44:23 start r12 full haiku S12 A
+09:44:24 end r11 full sonnet S12 B
+09:44:24 start r13 full haiku S12 A
+09:44:27 end r11 full sonnet S12 A
+09:44:27 start r13 full haiku S12 B
+09:44:27 end r11 full haiku S12 A
+09:44:27 start r13 full sonnet S12 A
+09:44:29 end r11 full haiku S12 B
+09:44:29 start r13 full sonnet S12 B
+09:44:33 end r12 full haiku S12 B
+09:44:33 start r14 full sonnet S12 B
+09:44:34 end r12 full haiku S12 A
+09:44:34 start r14 full sonnet S12 A
+09:44:36 end r13 full haiku S12 B
+09:44:36 start r14 full haiku S12 B
+09:44:37 end r13 full sonnet S12 A
+09:44:37 start r14 full haiku S12 A
+09:44:37 end r13 full sonnet S12 B
+09:44:37 start r15 full haiku S12 A
+09:44:39 end r13 full haiku S12 A
+09:44:39 start r15 full haiku S12 B
+09:44:45 end r14 full sonnet S12 B
+09:44:45 start r15 full sonnet S12 A
+09:44:46 end r14 full sonnet S12 A
+09:44:46 start r15 full sonnet S12 B
+09:44:46 end r14 full haiku S12 A
+09:44:46 start r16 full sonnet S12 B
+09:44:47 end r15 full haiku S12 A
+09:44:47 start r16 full sonnet S12 A
+09:44:48 end r14 full haiku S12 B
+09:44:48 start r16 full haiku S12 B
+09:44:52 end r15 full sonnet S12 A
+09:44:52 start r16 full haiku S12 A
+09:44:53 end r15 full sonnet S12 B
+09:44:53 start r17 full haiku S12 A
+09:44:54 end r15 full haiku S12 B
+09:44:54 start r17 full haiku S12 B
+09:44:54 end r16 full sonnet S12 B
+09:44:54 start r17 full sonnet S12 A
+09:44:55 end r16 full sonnet S12 A
+09:44:55 start r17 full sonnet S12 B
+09:44:59 end r16 full haiku S12 B
+09:44:59 start r18 full sonnet S12 B
+09:45:02 end r17 full sonnet S12 A
+09:45:02 start r18 full sonnet S12 A
+09:45:04 end r17 full sonnet S12 B
+09:45:04 start r18 full haiku S12 B
+09:45:05 end r17 full haiku S12 A
+09:45:05 start r18 full haiku S12 A
+09:45:06 end r16 full haiku S12 A
+09:45:06 start r19 full haiku S12 A
+09:45:09 end r17 full haiku S12 B
+09:45:09 start r19 full haiku S12 B
+09:45:10 end r18 full sonnet S12 B
+09:45:10 start r19 full sonnet S12 A
+09:45:10 end r18 full sonnet S12 A
+09:45:10 start r19 full sonnet S12 B
+09:45:14 end r19 full haiku S12 A
+09:45:14 start r20 full sonnet S12 B
+09:45:15 end r18 full haiku S12 B
+09:45:15 start r20 full sonnet S12 A
+09:45:16 end r18 full haiku S12 A
+09:45:16 start r20 full haiku S12 B
+09:45:18 end r19 full sonnet S12 A
+09:45:18 start r20 full haiku S12 A
+09:45:19 end r19 full sonnet S12 B
+09:45:21 end r19 full haiku S12 B
+09:45:24 end r20 full sonnet S12 A
+09:45:26 end r20 full haiku S12 B
+09:45:28 end r20 full sonnet S12 B
+09:45:31 end r20 full haiku S12 A
+09:45:31 judge start
+09:45:41 judged r11
+09:45:52 judged r12
+09:46:02 judged r13
+09:46:09 judged r14
+09:46:18 judged r15
+09:46:24 judged r16
+09:46:31 judged r17
+09:46:40 judged r18
+09:46:51 judged r19
+09:47:02 judged r20
+09:47:02 judge end

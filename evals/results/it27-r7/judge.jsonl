@@ -1,0 +1,40 @@
+{"file": "evals/results/it27-r7/haiku/agent+short-A/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["The note \"10:00은 이미 지난 시각입니다\" asserts a current time that neither the facts nor the context support, and \"10/21이 맞는지\" proposes a date the list does not contain."]}}
+{"file": "evals/results/it27-r7/haiku/agent+short-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r7/haiku/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["In the original, '이에 따라' (and the 운영팀 topic) governs both the mandatory backup and the recommended staging check, but the output attaches '그래서' and 운영팀 only to the backup sentence, so the recommendation loses its explicit causal link and actor."]}}
+{"file": "evals/results/it27-r7/haiku/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/haiku/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/haiku/agent+short-B/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"다만 이 37건이 1원 단위 반올림 버그 때문인지는 아직 확인하지 않았습니다\" states a fact the list does not contain: the list does not say whether the cause of the 37 orders was checked."]}}
+{"file": "evals/results/it27-r7/haiku/agent+short-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r7/haiku/agent+short-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/haiku/agent+short-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/haiku/agent+short-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/haiku/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r7/haiku/full-A/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["The opening sentence '결제 화면은 시안 2안으로 진행 중입니다' uses the vague word '진행' and does not state the exact action or result from the memo (adoption of option 2, 4 of 7 screens developed)."]}}
+{"file": "evals/results/it27-r7/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The causal link '이에 따라' is dropped, so the output no longer says the backup duty and the staging-check recommendation follow from the possible data integrity issue."]}}
+{"file": "evals/results/it27-r7/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' could now mean the verification failed rather than the backup itself."]}}
+{"file": "evals/results/it27-r7/haiku/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r7/haiku/full-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r7/haiku/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/haiku/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/agent+short-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/agent+short-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from the failure condition, so '실패하면' can now be read as the check (확인) failing instead of the backup failing."]}}
+{"file": "evals/results/it27-r7/sonnet/agent+short-B/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"오늘이 10/20인데 ... 운영 배포 예정 시각 10:00이 이미 지났습니다\" states today's date and claims the schedule is wrong, and neither fact is in the list.", "\"예정일이 10/21인지, 시각이 다른지\" suggests other dates and times that the list does not contain."]}}
+{"file": "evals/results/it27-r7/sonnet/agent+short-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/agent+short-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/agent+short-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/agent+short-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/full-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["Splitting the sentence detaches the staging-verification recommendation from '이에 따라', so the stated cause (the data integrity risk) no longer clearly applies to it.", "Splitting the sentence drops '운영팀' as the actor for the staging verification, so it is no longer clear who should do it."]}}
+{"file": "evals/results/it27-r7/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["Dropping the subject '백업이' from '실패한 경우' lets the failure refer to either the backup or the check (확인), where the original says only that the backup failed."]}}
+{"file": "evals/results/it27-r7/sonnet/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/full-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r7/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

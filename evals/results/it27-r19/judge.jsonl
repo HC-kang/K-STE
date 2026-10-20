@@ -1,0 +1,4 @@
+{"file": "evals/results/it27-r19/haiku/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r19/haiku/full-B/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"오늘이 10/20이고 ... 오늘 10:00이라면 이미 지난 시각입니다\" adds a date and a possible scheduling error that the facts do not contain.", "\"스테이징 배포와 QA 테스트를 마쳤습니다\" says the QA tests were finished but not that all 14 test cases passed."]}}
+{"file": "evals/results/it27-r19/sonnet/full-A/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"스테이징 배포와 QA 테스트까지 마쳤습니다\" uses 마쳤습니다, a synonym of 완료, for the QA test, and the sentence omits the exact result (14 of 14 test cases passed on staging), which is the same pattern as \"QA 확인 완료\"."]}}
+{"file": "evals/results/it27-r19/sonnet/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}

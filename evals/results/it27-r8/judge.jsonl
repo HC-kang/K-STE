@@ -1,0 +1,40 @@
+{"file": "evals/results/it27-r8/haiku/agent+short-A/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"오늘(10/20) 오전이라 이미 지났습니다\" adds a claim that is not in the list: the facts give no current date or time, so the message cannot assert that the 10/20 10:00 deployment time has passed.", "\"운영에는 아직 이 수정을 배포하지 않은 상태입니다\" sits right after the 37 wrong orders and implies they were caused by bug #881 not being deployed, but the list states no such cause."]}}
+{"file": "evals/results/it27-r8/haiku/agent+short-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/agent+short-B/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"이 수정은 아직 운영에 반영되지 않았습니다\" uses the vague word 반영 when the facts give the exact action (운영 배포), and that sentence does not say 배포."]}}
+{"file": "evals/results/it27-r8/haiku/agent+short-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/agent+short-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The scope marker '이번 마이그레이션 작업과 관련하여' is missing, so the integrity risk is no longer explicitly tied to this specific migration."]}}
+{"file": "evals/results/it27-r8/haiku/agent+short-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/agent+short-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/full-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["'마이그레이션 작업과 관련하여' became '마이그레이션 작업으로', which adds a causal link: the rewrite says the migration causes the issues, while the original only links them."]}}
+{"file": "evals/results/it27-r8/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/full-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["'백업이 실패한 경우에는'이 '실패하면'으로 줄어 주어 '백업이'가 빠졌으므로, 백업 실패인지 확인 절차 실패인지 구별할 수 없습니다."]}}
+{"file": "evals/results/it27-r8/sonnet/agent+short-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/agent+short-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/agent+short-B/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"QA 테스트까지 끝났습니다\" says only that testing ended, although the facts give the result (all 14 test cases passed on staging), and this sentence does not state it."]}}
+{"file": "evals/results/it27-r8/sonnet/agent+short-B/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["\"개발팀이 2안으로 프론트엔드 화면을 개발하고 있습니다\" names 개발팀 as the actor, but the memo does not say who is doing the development."]}}
+{"file": "evals/results/it27-r8/sonnet/agent+short-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/agent+short-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/agent+short-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/full-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from the failure clause, so '실패하면' could mean the backup failed or the verification step failed."]}}
+{"file": "evals/results/it27-r8/sonnet/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/full-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it27-r8/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

@@ -1,0 +1,4 @@
+{"file": "evals/results/it27-r18/haiku/full-A/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"운영에는 수정이 아직 반영되지 않았으므로\" uses the vague word 반영 where the facts give the exact action, 운영 배포 안 함.", "\"배포 전까지는 같은 오류가 발생할 수 있습니다\" adds a prediction that the fact list does not contain."]}}
+{"file": "evals/results/it27-r18/haiku/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r18/sonnet/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r18/sonnet/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}

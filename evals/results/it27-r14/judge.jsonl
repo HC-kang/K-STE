@@ -1,0 +1,4 @@
+{"file": "evals/results/it27-r14/haiku/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r14/haiku/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it27-r14/sonnet/full-A/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"오늘이 10/20이고 스테이징 배포가 15:10이어서 이미 지난 시각입니다\" states today's date, which the fact list does not contain, and uses it to claim the planned time has already passed."]}}
+{"file": "evals/results/it27-r14/sonnet/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
