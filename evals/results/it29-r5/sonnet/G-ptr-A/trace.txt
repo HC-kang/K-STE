@@ -1,0 +1,1 @@
+S23	skill=['k-ste']	reads=['/private/var/folders/bc/07p9yr855ysc6cscbpm86tz80000gn/T/tmp.kH9W9ps4Gw/docs/glossary.md', 'references/genres.md']

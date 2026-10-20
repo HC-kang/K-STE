@@ -1,0 +1,48 @@
+{"file": "evals/results/it29-r12/haiku/agent+short-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/agent+short-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/agent+short-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/agent+short-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/agent+short-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' no longer clearly says what failed (the backup or the check)."]}}
+{"file": "evals/results/it29-r12/haiku/agent+short-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/agent+short-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/agent+short-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/agent+short-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/full-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The original sentence puts both the mandatory backup and the recommended staging validation under '이에 따라', but the rewrite splits them and attaches '따라서' only to the backup, so the recommendation loses its stated cause.", "The original applies the actor '운영팀' to both clauses, but the rewrite's staging-validation sentence has no subject, so the reader can't tell who should do the validation."]}}
+{"file": "evals/results/it29-r12/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우', so '실패하면' can also read as the verification failing, not the backup failing."]}}
+{"file": "evals/results/it29-r12/haiku/full-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/full-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/full-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/full-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' is dropped from the failure condition, so '실패하면' could mean the check failed, not the backup."]}}
+{"file": "evals/results/it29-r12/haiku/full-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": true, "issues": ["The output adds a new instruction to export the order data after the check; the original only says to check before exporting.", "The output puts the export before the failure condition, so 내보내기를 멈춰야 can now mean stopping an export that has already started, which the original does not say."]}}
+{"file": "evals/results/it29-r12/haiku/full-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/haiku/full-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": true, "issues": ["The confirmation note's reading (2) is not a valid parse of the original, because 관리자 권한이 있는 comes before 팀원 and cannot apply only to QA 담당자; it adds a reading that the original does not support.", "The confirmation note leaves out the real second reading: team members with admin rights plus all QA staff regardless of admin rights."]}}
+{"file": "evals/results/it29-r12/haiku/full-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/agent+short-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/agent+short-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/agent+short-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/agent+short-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/agent+short-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/agent+short-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/agent+short-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/agent+short-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/agent+short-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/full-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The second clause drops the subject '백업' (백업이 실패한 경우 → 실패하면), so the condition could now mean 'if the check fails' instead of 'if the backup failed'."]}}
+{"file": "evals/results/it29-r12/sonnet/full-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/full-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/full-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/full-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/full-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/full-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/full-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r12/sonnet/full-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

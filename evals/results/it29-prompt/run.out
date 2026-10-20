@@ -1,0 +1,3 @@
+evals/results/it29-prompt/run.sh: line 98: 93495 Terminated: 15          ( while sleep 300; do
+    beat "generating$X: $(grep -c ' end ' $P/order$X.log 2>/dev/null)/$N jobs";
+done )

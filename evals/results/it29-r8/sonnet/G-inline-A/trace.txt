@@ -1,0 +1,1 @@
+S23	skill=['k-ste']	reads=[]

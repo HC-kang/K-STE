@@ -1,0 +1,8 @@
+S5	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+S7	skill=['k-ste']	reads=[]
+S6	skill=['k-ste']	reads=['references/rewrite.md']
+S20	skill=['k-ste']	reads=['references/rewrite.md']
+S14	skill=['k-ste']	reads=['references/rewrite.md']
+S9	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+S21	skill=['k-ste']	reads=[]
+S22	skill=['k-ste']	reads=[]

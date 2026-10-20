@@ -1,0 +1,48 @@
+{"file": "evals/results/it29-r16/haiku/agent+short-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": true, "issues": ["The original leaves open what gets reset by '초기화됩니다' (the servers or their memory), and the output adds '두 서버는' as the subject, which silently settles it as the servers."]}}
+{"file": "evals/results/it29-r16/haiku/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/agent+short-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/agent+short-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/agent+short-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/agent+short-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The rewrite drops the subject '백업이' from the failure condition, so '실패하면' could be read as the check failing rather than the backup failing."]}}
+{"file": "evals/results/it29-r16/haiku/agent+short-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/agent+short-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["In the original, the staging pre-check is recommended to the operations team, but the output makes the operations team the one who recommends it, so the actor changed."]}}
+{"file": "evals/results/it29-r16/haiku/agent+short-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/agent+short-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/full-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/full-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": true, "issues": ["The subject '정산이' is dropped from '정산이 실패한 경우', so '실패하면' could refer to either the settlement or the check (점검)."]}}
+{"file": "evals/results/it29-r16/haiku/full-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The original's hedge '것으로 판단되며' (it is judged that) is dropped, so an assessment of possible integrity issues now reads as a stated fact that the possibility exists."]}}
+{"file": "evals/results/it29-r16/haiku/full-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/full-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '실패하면', so it is unclear whether the backup or the check failed."]}}
+{"file": "evals/results/it29-r16/haiku/full-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/full-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/full-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/haiku/full-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우', so '실패하면' could refer to the backup or to the check."]}}
+{"file": "evals/results/it29-r16/sonnet/agent+short-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": true, "issues": ["The subject '정산이' is dropped from the failure clause, so '실패하면' can also be read as the check (점검) failing rather than the settlement failing."]}}
+{"file": "evals/results/it29-r16/sonnet/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The original does not clearly say who should do the staging pre-validation, because '운영팀에서는' may cover only the backup clause, but the output makes 운영팀 the actor without flagging it."]}}
+{"file": "evals/results/it29-r16/sonnet/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/agent+short-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/agent+short-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The output makes 운영팀 the one who gives the recommendation ('운영팀은 … 권장합니다'), but in the original 운영팀 is at most the party receiving it; the confirmation note asks about the recipient, not the recommender, so it does not cover this new reading."]}}
+{"file": "evals/results/it29-r16/sonnet/agent+short-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/agent+short-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/agent+short-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/agent+short-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/agent+short-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/agent+short-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The output drops the subject '백업이' from the failure condition, so '실패하면' can also be read as the check itself failing, not only the backup failing."]}}
+{"file": "evals/results/it29-r16/sonnet/full-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' can now be read as the check failing instead of the backup failing."]}}
+{"file": "evals/results/it29-r16/sonnet/full-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/full-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/full-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/full-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/full-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/full-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/full-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r16/sonnet/full-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

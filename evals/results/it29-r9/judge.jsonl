@@ -1,0 +1,60 @@
+{"file": "evals/results/it29-r9/haiku/agent+short-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/agent+short-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/agent+short-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": true, "issues": ["The original leaves open what 초기화됩니다 refers to (the servers or the memory just mentioned), but splitting the sentence and repeating '캐시 서버와 API 서버는' resolves it to the servers without flagging it."]}}
+{"file": "evals/results/it29-r9/haiku/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/agent+short-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/agent+short-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/agent+short-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/agent+short-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/agent+short-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/agent+short-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/agent+short-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/agent+short-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/base-A/S21.md", "sid": "S21", "verdict": {"pass": false, "issues": ["\"만 19세 이상의 구성원만 만들 수 있다\" extends the age limit from interns to all members, which the facts do not state."]}}
+{"file": "evals/results/it29-r9/haiku/base-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/full-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/full-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/full-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/full-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/full-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/full-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/full-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from the failure condition, so '실패하면' could refer to the backup or to the check itself."]}}
+{"file": "evals/results/it29-r9/haiku/full-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/full-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/full-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/haiku/full-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/agent+short-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/agent+short-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/agent+short-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/agent+short-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/agent+short-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/agent+short-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/agent+short-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/agent+short-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/agent+short-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/agent+short-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/agent+short-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/base-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/base-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/full-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/full-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/full-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from the failure condition, so '실패하면' can also be read as the confirmation step failing, not only the backup failing."]}}
+{"file": "evals/results/it29-r9/sonnet/full-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/full-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["'운영팀이 … 사전 검증을 하는 것을 권장합니다' makes the ops team read as the one giving the recommendation, while the original '사전 검증을 수행하는 것이 권장됩니다' recommends that the ops team do the validation."]}}
+{"file": "evals/results/it29-r9/sonnet/full-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/full-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/full-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/full-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/full-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r9/sonnet/full-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

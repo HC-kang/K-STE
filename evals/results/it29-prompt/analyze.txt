@@ -1,0 +1,463 @@
+== 출력 수와 판정 수
+full-A: 출력 296, 판정 272, 판정 오류 0
+full-C1: 출력 256, 판정 232, 판정 오류 0
+full-C2: 출력 256, 판정 232, 판정 오류 0
+agent+short-A: 출력 212, 판정 206, 판정 오류 0
+agent+short-C1: 출력 172, 판정 166, 판정 오류 0
+agent+short-C2: 출력 172, 판정 166, 판정 오류 0
+base-A: 출력 40, 판정 40, 판정 오류 0
+묶음 2 출력 100
+== (P) full S7 탈락 r1-r20 (단측 Fisher, Holm 보정)
+C1: A 29/40, C1 16/40, p 0.0032, Holm 보정 p 0.0032 -> 충족
+C2: A 29/40, C2 10/40, p 0.0000, Holm 보정 p 0.0000 -> 충족
+== 회귀 기준 (A / 후보 / 결과, 확인 실행이 있으면 합친 A / 후보 / 결과)
+(a) agent+short S7 탈락, 한계 6: C1 6/40 / 11/40 충족
+(a) agent+short S7 탈락, 한계 6: C2 6/40 / 5/40 충족
+(b full) full S5-S7 판정 통과, 한계 12: C1 91/120 / 96/120 충족
+(b full) full S5-S7 판정 통과, 한계 12: C2 91/120 / 102/120 충족
+(b agent+short) agent+short S5-S7 판정 통과, 한계 12: C1 106/120 / 105/120 충족
+(b agent+short) agent+short S5-S7 판정 통과, 한계 12: C2 106/120 / 110/120 충족
+(c full) full S20 탈락, 한계 6: C1 13/40 / 6/40 충족
+(c full) full S20 탈락, 한계 6: C2 13/40 / 5/40 충족
+(c agent+short) agent+short S20 탈락, 한계 6: C1 2/40 / 1/40 충족
+(c agent+short) agent+short S20 탈락, 한계 6: C2 2/40 / 3/40 충족
+(d) full S11-S19 판정 통과 합, 한계 5: C1 52/54 / 50/54 충족
+(d) full S11-S19 판정 통과 합, 한계 5: C2 52/54 / 50/54 충족
+(e) full 첫 문장 결론 S1 S2 S10, 한계 3: C1 17/18 / 18/18 충족
+(e) full 첫 문장 결론 S1 S2 S10, 한계 3: C2 17/18 / 18/18 충족
+(f full) full S9+S14 통과 합, 한계 3: C1 12/12 / 12/12 충족
+(f full) full S9+S14 통과 합, 한계 3: C2 12/12 / 12/12 충족
+(f agent+short) agent+short S9+S14 통과 합, 한계 3: C1 12/12 / 12/12 충족
+(f agent+short) agent+short S9+S14 통과 합, 한계 3: C2 12/12 / 12/12 충족
+S7 탈락 합(full + agent+short, r1-r20): {'A': 35, 'C1': 27, 'C2': 15}
+배포 후보: C2 | (P)와 회귀 기준을 모두 만족한 후보: ['C1', 'C2'] | 회귀 기준 최종: {'C1': True, 'C2': True}
+== 묶음 1 시나리오별 (구성마다, 모든 회차)
+full-A: S5 판정 통과 34/40; S6 판정 통과 39/40; S7 판정 통과 18/40; S20 판정 통과 27/40; S7 탈락 r1-r20 29/40 (haiku 15, sonnet 14); S7 탈락 모든 회차 29/40 (haiku 15, sonnet 14); S20 탈락 r1-r20 13/40 (haiku 12, sonnet 1); S20 탈락 모든 회차 13/40 (haiku 12, sonnet 1)
+full-C1: S5 판정 통과 35/40; S6 판정 통과 36/40; S7 판정 통과 25/40; S20 판정 통과 34/40; S7 탈락 r1-r20 16/40 (haiku 15, sonnet 1); S7 탈락 모든 회차 16/40 (haiku 15, sonnet 1); S20 탈락 r1-r20 6/40 (haiku 6, sonnet 0); S20 탈락 모든 회차 6/40 (haiku 6, sonnet 0)
+full-C2: S5 판정 통과 34/40; S6 판정 통과 37/40; S7 판정 통과 31/40; S20 판정 통과 34/40; S7 탈락 r1-r20 10/40 (haiku 10, sonnet 0); S7 탈락 모든 회차 10/40 (haiku 10, sonnet 0); S20 탈락 r1-r20 5/40 (haiku 5, sonnet 0); S20 탈락 모든 회차 5/40 (haiku 5, sonnet 0)
+agent+short-A: S5 판정 통과 37/40; S6 판정 통과 33/40; S7 판정 통과 36/40; S20 판정 통과 38/40; S7 탈락 r1-r20 6/40 (haiku 3, sonnet 3); S7 탈락 모든 회차 6/40 (haiku 3, sonnet 3); S20 탈락 r1-r20 2/40 (haiku 1, sonnet 1); S20 탈락 모든 회차 2/40 (haiku 1, sonnet 1)
+agent+short-C1: S5 판정 통과 38/40; S6 판정 통과 36/40; S7 판정 통과 31/40; S20 판정 통과 38/40; S7 탈락 r1-r20 11/40 (haiku 9, sonnet 2); S7 탈락 모든 회차 11/40 (haiku 9, sonnet 2); S20 탈락 r1-r20 1/40 (haiku 1, sonnet 0); S20 탈락 모든 회차 1/40 (haiku 1, sonnet 0)
+agent+short-C2: S5 판정 통과 36/40; S6 판정 통과 39/40; S7 판정 통과 35/40; S20 판정 통과 37/40; S7 탈락 r1-r20 5/40 (haiku 4, sonnet 1); S7 탈락 모든 회차 5/40 (haiku 4, sonnet 1); S20 탈락 r1-r20 3/40 (haiku 3, sonnet 0); S20 탈락 모든 회차 3/40 (haiku 3, sonnet 0)
+-- r1-r3 시나리오별 판정 통과(full)
+full-A {'S1': '6/6', 'S2': '5/6', 'S9': '6/6', 'S10': '6/6', 'S14': '6/6', 'S11': '6/6', 'S12': '5/6', 'S13': '6/6', 'S15': '6/6', 'S16': '5/6', 'S17': '6/6', 'S18': '6/6', 'S19': '6/6'}
+   agent+short-A {'S9': '6/6', 'S14': '6/6'}
+full-C1 {'S1': '6/6', 'S2': '6/6', 'S9': '6/6', 'S10': '6/6', 'S14': '6/6', 'S11': '6/6', 'S12': '4/6', 'S13': '6/6', 'S15': '5/6', 'S16': '6/6', 'S17': '6/6', 'S18': '5/6', 'S19': '6/6'}
+   agent+short-C1 {'S9': '6/6', 'S14': '6/6'}
+full-C2 {'S1': '6/6', 'S2': '6/6', 'S9': '6/6', 'S10': '6/6', 'S14': '6/6', 'S11': '5/6', 'S12': '5/6', 'S13': '6/6', 'S15': '6/6', 'S16': '5/6', 'S17': '6/6', 'S18': '5/6', 'S19': '6/6'}
+   agent+short-C2 {'S9': '6/6', 'S14': '6/6'}
+== 설명 줄을 건너뛴 S7, S20 출력
+it29-r5/haiku/agent+short-A/S20.md | 재작성 결과는 원문과 같습니다. 줄일 군말과 중복이 없고, 남은 말은 모두 조사, 조건, 한정어, 의무 표현이라 지우면 의미가 바뀝니다.
+it29-r6/haiku/agent+short-A/S20.md | 이 문장에는 군말이나 중복이 없습니다. 더 줄이면 "모두", "정상적으로", "경우에는" 같은 조건과 한정어가 빠지므로 원문을 그대로 둡니다.
+it29-r5/haiku/agent+short-C1/S20.md | 원문이 이미 짧아서 줄일 군말과 중복이 없습니다. 조건, 범위 표지(모두), 한정어(정상적으로), 의무 표현(해야 합니다)을 지우면 의미가 바뀌므로 원문을 그대로 둡니다.
+== 판정기와 글자 기준이 다른 S7, S20 출력 (글자 기준 탈락인데 판정 통과 / 글자 기준 통과인데 판정 실패)
+full-A S7: 탈락인데 통과 7, 통과인데 실패 0
+   탈락인데 통과: it29-r1/haiku/full-A/S7.md | 배포 전 운영 DB 백업이 정상적으로 완료되었는지 확인하고, 실패하면 배포를 중단해야 합니다.
+   탈락인데 통과: it29-r3/sonnet/full-A/S7.md | 배포를 시작하기 전에 운영 DB 백업이 정상적으로 완료되었는지 확인하고, 실패한 경우에는 배포를 중단해야 합니다.
+   탈락인데 통과: it29-r4/haiku/full-A/S7.md | 배포 전 운영 DB 백업이 정상적으로 완료됐는지 확인하고, 실패하면 배포를 중단해야 합니다.
+   탈락인데 통과: it29-r5/sonnet/full-A/S7.md | 배포를 시작하기 전에 운영 DB 백업이 정상적으로 완료되었는지 확인하고, 실패한 경우에는 배포를 중단해야 합니다.
+   탈락인데 통과: it29-r14/haiku/full-A/S7.md | 배포 전 운영 DB 백업이 정상적으로 완료되었는지 확인하고, 실패하면 배포를 중단해야 합니다.
+   탈락인데 통과: it29-r19/haiku/full-A/S7.md | 배포 전 운영 DB 백업이 정상적으로 완료되었는지 확인하고, 실패하면 배포를 중단해야 합니다.
+   탈락인데 통과: it29-r20/sonnet/full-A/S7.md | 배포 시작 전에 운영 DB 백업이 정상적으로 완료되었는지 확인하고, 실패하면 배포를 중단해야 합니다.
+full-A S20: 탈락인데 통과 0, 통과인데 실패 0
+full-C1 S7: 탈락인데 통과 1, 통과인데 실패 0
+   탈락인데 통과: it29-r17/haiku/full-C1/S7.md | 배포 전 운영 DB 백업이 정상적으로 완료됐는지 확인하고, 실패하면 배포를 중단해야 합니다.
+full-C1 S20: 탈락인데 통과 0, 통과인데 실패 0
+full-C2 S7: 탈락인데 통과 1, 통과인데 실패 0
+   탈락인데 통과: it29-r1/haiku/full-C2/S7.md | 배포 전 운영 DB 백업이 정상적으로 완료되었는지 확인하고, 실패하면 배포를 중단해야 합니다.
+full-C2 S20: 탈락인데 통과 0, 통과인데 실패 1
+   통과인데 실패: it29-r12/haiku/full-C2/S20.md | The output adds a new instruction to export the order data after the check; the original only says to check before exporting. / The output puts the export before the failure condition, so 내보내기를 멈춰야 can now mean stopping an export that has already sta
+agent+short-A S7: 탈락인데 통과 2, 통과인데 실패 0
+   탈락인데 통과: it29-r1/sonnet/agent+short-A/S7.md | 배포를 시작하기 전에 운영 DB의 백업이 정상적으로 완료되었는지 확인하고, 실패한 경우에는 배포를 중단해야 합니다.
+   탈락인데 통과: it29-r5/haiku/agent+short-A/S7.md | 배포 전에 운영 DB 백업이 정상적으로 완료됐는지 확인하고, 실패하면 배포를 중단해야 합니다.
+agent+short-A S20: 탈락인데 통과 0, 통과인데 실패 0
+agent+short-C1 S7: 탈락인데 통과 2, 통과인데 실패 0
+   탈락인데 통과: it29-r2/sonnet/agent+short-C1/S7.md | 배포를 시작하기 전에 운영 DB의 백업이 정상적으로 완료되었는지 확인하고, 실패한 경우에는 배포를 중단해야 합니다.
+   탈락인데 통과: it29-r9/haiku/agent+short-C1/S7.md | 배포 전에 운영 DB의 백업이 정상적으로 완료됐는지 확인하고, 실패하면 배포를 중단해야 합니다.
+agent+short-C1 S20: 탈락인데 통과 0, 통과인데 실패 1
+   통과인데 실패: it29-r6/haiku/agent+short-C1/S20.md | The original requires a check before any export happens, but the output adds an instruction to export the order data right after the check, which the original does not state. / The output's order (check, export, then stop if settlement fails) suggest
+agent+short-C2 S7: 탈락인데 통과 1, 통과인데 실패 1
+   통과인데 실패: it29-r2/sonnet/agent+short-C2/S7.md | The rewrite drops the manner qualifier '정상적으로', so the check becomes only whether the backup finished, not whether it finished correctly; the confirmation note asks about this but leaves the qualifier out of the sentence, and the flag exception cover
+   탈락인데 통과: it29-r16/haiku/agent+short-C2/S7.md | 배포 전에 운영 DB 백업이 정상적으로 완료됐는지 확인하고, 실패하면 배포를 중단해야 합니다.
+agent+short-C2 S20: 탈락인데 통과 0, 통과인데 실패 0
+== agent+short S7, S20: 스킬 실행 수와 rewrite.md를 읽은 수 (r1-r20)
+agent+short-A S7: 스킬 38/40, rewrite.md 27/40
+agent+short-A S20: 스킬 36/40, rewrite.md 27/40
+agent+short-A S5: 스킬 40/40, rewrite.md 38/40
+agent+short-A S6: 스킬 39/40, rewrite.md 39/40
+agent+short-A S9: 스킬 6/6, rewrite.md 6/6
+agent+short-A S14: 스킬 6/6, rewrite.md 6/6
+agent+short-C1 S7: 스킬 39/40, rewrite.md 27/40
+agent+short-C1 S20: 스킬 38/40, rewrite.md 33/40
+agent+short-C1 S5: 스킬 40/40, rewrite.md 37/40
+agent+short-C1 S6: 스킬 40/40, rewrite.md 35/40
+agent+short-C1 S9: 스킬 6/6, rewrite.md 6/6
+agent+short-C1 S14: 스킬 6/6, rewrite.md 6/6
+agent+short-C2 S7: 스킬 39/40, rewrite.md 26/40
+agent+short-C2 S20: 스킬 40/40, rewrite.md 32/40
+agent+short-C2 S5: 스킬 40/40, rewrite.md 34/40
+agent+short-C2 S6: 스킬 39/40, rewrite.md 37/40
+agent+short-C2 S9: 스킬 6/6, rewrite.md 6/6
+agent+short-C2 S14: 스킬 6/6, rewrite.md 5/6
+== 원리 문장이나 예를 옮긴 출력 (정규식 이미지 빌드|중복이 아니|조건절, 모든 출력)
+full-A: 0/296
+full-C1: 0/256
+full-C2: 0/256
+agent+short-A: 0/212
+agent+short-C1: 0/172
+agent+short-C2: 0/172
+== S5 판정기 실패 종류 (첫 이유, r1-r20)
+full-A: 실패 6 {'이에 따라': 3, '권장 주체': 2, '기타': 1}
+full-C1: 실패 5 {'관련하여': 1, '권장 주체': 1, '이에 따라': 2, '기타': 1}
+full-C2: 실패 6 {'권장 주체': 2, '이에 따라': 3, '기타': 1}
+agent+short-A: 실패 3 {'권장 주체': 1, '이에 따라': 1, '기타': 1}
+agent+short-C1: 실패 2 {'관련하여': 1, '권장 주체': 1}
+agent+short-C2: 실패 4 {'권장 주체': 3, '이에 따라': 1}
+== 따로 보고: 첫 문장 결론(S1 S2 S10, r1-r3), 실행 1회당 결함(score.py, full S1-S10, r1-r3), S12 날짜 문장
+full-A 첫 문장 결론 17/18 | 결함 haiku 3.33 sonnet 1.33 | S12 날짜 문장이 있는 출력 0/6
+full-C1 첫 문장 결론 18/18 | 결함 haiku 3.67 sonnet 1.67 | S12 날짜 문장이 있는 출력 2/6
+full-C2 첫 문장 결론 18/18 | 결함 haiku 4.67 sonnet 1.67 | S12 날짜 문장이 있는 출력 0/6
+== 묶음 2: S23 (실패 = 용어집 줄을 뺀 본문에 금지어, 정확 95% 신뢰구간)
+G-sys-base: 실패 0/20 (0.0%-16.8%), haiku 0 sonnet 0, 용어집 줄이 있는 출력 0
+G-sys-full: 실패 1/20 (0.1%-24.9%), haiku 1 sonnet 0, 용어집 줄이 있는 출력 0
+    it29-r8/haiku/G-sys-full-A/S23.md | # 테넌트별 요금제 정보 캐시 적용 및 정산 배치 조회 횟수 감소
+    it29-r8/haiku/G-sys-full-A/S23.md | 이 PR은 정산 배치가 테넌트마다 요금제 테이블을 조회하던 문제를 고친다. 테넌트별 요금제 정보를 Redis에 캐시하여, 테넌트 1,200개 기준 요금제 테이블 조회 횟수가 1,200번에서 1번으로 줄었다.
+    it29-r8/haiku/G-sys-full-A/S23.md | - 테넌트별 요금제 정보를 Redis에 캐시한다. 캐시 TTL은 10분이다.
+    it29-r8/haiku/G-sys-full-A/S23.md | - 정산 배치가 테넌트마다 요금제 테이블을 조회하던 문제를 고쳤다. 테넌트 1,200개 기준 조회 횟수는 1,200번에서 1번으로 줄었다.
+    it29-r8/haiku/G-sys-full-A/S23.md | - 스테이징 환경에서 정산 배치를 한 번 실행하고, 결과를 이전 실행 결과와 비교했다. 1,200개 테넌트의 결과가 모두 같았다.
+G-inline: 실패 0/20 (0.0%-16.8%), haiku 0 sonnet 0, 용어집 줄이 있는 출력 3, 읽은 회 0, 스킬 12, 읽은 회의 실패 0/0, 읽지 않은 회의 실패 0/20
+    [용어집 줄] it29-r4/haiku/G-inline-A/S23.md | 팀 용어집에 맞춰 "테넌트"는 "고객사"로, "릴리스"는 "배포"로, "정산 잡"은 "정산 배치"로, "클라이언트"는 "고객사"로 바꿨습니다. 메모에 고객사 3곳의 이름이 없어서 확인 필요로 남겼습니다.
+    [용어집 줄] it29-r6/haiku/G-inline-A/S23.md | 팀 용어집에 맞춰 "테넌트"는 "고객사", "릴리스"는 "배포", "정산 잡"은 "정산 배치"로 바꿨습니다.
+    [용어집 줄] it29-r9/haiku/G-inline-A/S23.md | - "테넌트"와 "클라이언트"는 팀 용어집에 따라 "고객사"로 바꿨다. "릴리스"는 "배포"로, "정산 잡"은 "정산 배치"로 바꿨다.
+G-ptr: 실패 7/20 (15.4%-59.2%), haiku 6 sonnet 1, 용어집 줄이 있는 출력 3, 읽은 회 14, 스킬 17, 읽은 회의 실패 1/14, 읽지 않은 회의 실패 6/6
+    it29-r1/haiku/G-ptr-A/S23.md | 정산 잡의 요금제 조회를 테넌트마다 하지 않고 한 번으로 줄이도록 Redis 캐시를 도입했다.
+    it29-r1/haiku/G-ptr-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하던 문제를 고쳤다. 테넌트별 요금제 정보를 Redis에 캐시하도록 바꿨다. 캐시의 유효 시간(TTL)은 10분이다.
+    it29-r1/haiku/G-ptr-A/S23.md | 테넌트 1,200개 기준으로 요금제 테이블 조회가 1,200번에서 1번으로 줄었다.
+    it29-r1/haiku/G-ptr-A/S23.md | 스테이징에서 정산 잡을 한 번 실행했다. 결과가 이전과 같은지 비교했고, 1,200개 테넌트의 결과가 모두 같았다.
+    it29-r1/haiku/G-ptr-A/S23.md | 릴리스는 목요일 예정이다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r2/haiku/G-ptr-A/S23.md | 이 PR은 테넌트별 요금제 정보를 Redis에 캐시하여 정산 잡이 테넌트마다 요금제 테이블을 조회하던 문제를 고친다.
+    it29-r2/haiku/G-ptr-A/S23.md | - 테넌트별 요금제 정보를 Redis에 캐시한다. 캐시 유효 시간(TTL)은 10분이다.
+    it29-r2/haiku/G-ptr-A/S23.md | - 테넌트 1,200개 기준으로 요금제 테이블 조회 1,200번이 1번으로 줄어든다.
+    it29-r2/haiku/G-ptr-A/S23.md | - 스테이징에서 정산 잡을 한 번 실행하여 결과가 이전과 같은지 비교한다.
+    it29-r2/haiku/G-ptr-A/S23.md | - 1,200개 테넌트 모두 결과가 이전과 같다.
+    it29-r2/haiku/G-ptr-A/S23.md | - 릴리스는 목요일 예정이다.
+    it29-r2/haiku/G-ptr-A/S23.md | - 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r2/sonnet/G-ptr-A/S23.md | 테넌트별 요금제 정보를 Redis에 캐시하도록 바꾸고, 정산 배치가 고객사마다 요금제 테이블을 조회하던 문제를 고쳤다.
+    [용어집 줄] it29-r2/sonnet/G-ptr-A/S23.md | 용어집(`docs/glossary.md`)에 따라 "테넌트"와 "클라이언트"는 "고객사"로, "릴리스"는 "배포"로, "정산 잡"은 "정산 배치"로 바꿨습니다. 첫 문장의 "테넌트별"은 메모 표현이 그대로 남았으니, 붙여 넣기 전에 "고객사별"로 고치십시오.
+    it29-r3/haiku/G-ptr-A/S23.md | 테넌트별 요금제 정보를 Redis에 캐시한다. 캐시 유효 시간(TTL)은 10분이다.
+    it29-r3/haiku/G-ptr-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하던 문제를 고친다. 테넌트 1,200개 기준으로 조회 1,200번이 1번으로 줄어든다.
+    it29-r3/haiku/G-ptr-A/S23.md | 스테이징에서 정산 잡을 한 번 실행해 결과를 이전 결과와 비교했다. 1,200개 테넌트의 결과가 모두 같았다.
+    it29-r3/haiku/G-ptr-A/S23.md | 릴리스는 목요일 예정이다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    [용어집 줄] it29-r4/haiku/G-ptr-A/S23.md | 팀 용어집에 따라 "테넌트"와 "클라이언트"는 "고객사"로, "릴리스"는 "배포"로, "정산 잡"은 "정산 배치"로 바꿨습니다.
+    it29-r6/haiku/G-ptr-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회했다.
+    it29-r6/haiku/G-ptr-A/S23.md | - 테넌트별 요금제 정보를 Redis에 캐시한다.
+    it29-r6/haiku/G-ptr-A/S23.md | - 테넌트 1,200개 기준으로 요금제 테이블 조회가 1,200번에서 1번으로 줄었다.
+    it29-r6/haiku/G-ptr-A/S23.md | - 스테이징에서 정산 잡을 1회 실행하고 결과를 이전 결과와 비교했다.
+    it29-r6/haiku/G-ptr-A/S23.md | - 1,200개 테넌트의 결과가 모두 이전과 같았다.
+    it29-r6/haiku/G-ptr-A/S23.md | ## 릴리스 전 할 일
+    it29-r6/haiku/G-ptr-A/S23.md | **릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.**
+    it29-r6/haiku/G-ptr-A/S23.md | 릴리스는 목요일이다.
+    it29-r8/haiku/G-ptr-A/S23.md | 테넌트별 요금제 정보를 Redis에 캐시한다. 캐시 유효 시간(TTL)은 10분이다.
+    it29-r8/haiku/G-ptr-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하고 있었다. 이 변경으로 테넌트 1,200개 기준 조회 횟수가 1,200번에서 1번으로 줄었다.
+    it29-r8/haiku/G-ptr-A/S23.md | 스테이징에서 정산 잡을 한 번 실행하고 결과를 이전 결과와 비교했다. 1,200개 테넌트의 결과가 모두 같았다.
+    it29-r8/haiku/G-ptr-A/S23.md | 릴리스 예정일은 목요일이다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r9/haiku/G-ptr-A/S23.md | 요금제 정보를 Redis에 캐시해 정산 잡이 테넌트마다 요금제 테이블을 조회하지 않도록 한다.
+    it29-r9/haiku/G-ptr-A/S23.md | - 테넌트별 요금제 정보를 Redis에 캐시한다. 캐시의 TTL은 10분이다.
+    it29-r9/haiku/G-ptr-A/S23.md | - 정산 잡이 테넌트마다 요금제 테이블을 조회하던 문제를 고친다. 테넌트 1,200개 기준으로 조회 횟수가 1,200번에서 1번으로 줄어든다.
+    it29-r9/haiku/G-ptr-A/S23.md | - 스테이징에서 정산 잡을 한 번 실행하고 결과를 이전 결과와 비교했다.
+    it29-r9/haiku/G-ptr-A/S23.md | - 1,200개 테넌트의 결과가 모두 이전과 같다.
+    it29-r9/haiku/G-ptr-A/S23.md | ## 릴리스 전 할 일
+    it29-r9/haiku/G-ptr-A/S23.md | - 릴리스 예정은 목요일이다.
+    it29-r9/haiku/G-ptr-A/S23.md | - 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    [용어집 줄] it29-r9/sonnet/G-ptr-A/S23.md | 확인 필요: "1,200개"는 고객사 수로 옮겼다. 메모의 "클라이언트 3곳"은 용어집에 따라 "고객사 3곳"으로 옮겼으니, 같은 대상인지 확인해 주십시오.
+G-file: 실패 20/20 (83.2%-100.0%), haiku 10 sonnet 10, 용어집 줄이 있는 출력 0, 읽은 회 0, 스킬 11, 읽은 회의 실패 0/0, 읽지 않은 회의 실패 20/20
+    it29-r1/haiku/G-file-A/S23.md | 이 PR은 테넌트별 요금제 정보를 Redis에 캐시하여 정산 잡의 요금제 테이블 조회 횟수를 줄인다.
+    it29-r1/haiku/G-file-A/S23.md | 테넌트별 요금제 정보를 Redis에 캐시한다. 캐시 유지 시간(TTL)은 10분으로 설정한다.
+    it29-r1/haiku/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하던 문제를 고친다. 테넌트 1,200개 기준으로 조회 횟수가 1,200번에서 1번으로 줄어든다.
+    it29-r1/haiku/G-file-A/S23.md | 스테이징 환경에서 정산 잡을 한 번 실행하고 결과를 이전 결과와 비교했다. 1,200개 테넌트의 결과가 모두 같았다.
+    it29-r1/haiku/G-file-A/S23.md | ## 릴리스 일정
+    it29-r1/haiku/G-file-A/S23.md | 릴리스는 목요일에 예정되어 있다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r1/sonnet/G-file-A/S23.md | 테넌트별 요금제 정보를 Redis에 캐시하도록 바꿨다. 캐시 TTL은 10분이다.
+    it29-r1/sonnet/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회했다. 이 변경으로 테넌트 1,200개 기준 요금제 테이블 조회가 1,200번에서 1번으로 줄어든다.
+    it29-r1/sonnet/G-file-A/S23.md | - 스테이징에서 정산 잡을 한 번 실행했다.
+    it29-r1/sonnet/G-file-A/S23.md | - 테넌트 1,200개 모두 결과가 이전과 같았다.
+    it29-r1/sonnet/G-file-A/S23.md | - 릴리스는 목요일로 예정돼 있다.
+    it29-r1/sonnet/G-file-A/S23.md | - 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r10/haiku/G-file-A/S23.md | ## 테넌트별 요금제 정보를 Redis에 캐시
+    it29-r10/haiku/G-file-A/S23.md | - 테넌트별 요금제 정보를 Redis에 캐시한다.
+    it29-r10/haiku/G-file-A/S23.md | - 정산 잡이 테넌트마다 요금제 테이블을 조회하던 문제를 고친다.
+    it29-r10/haiku/G-file-A/S23.md | - 테넌트 1,200개 기준으로 요금제 테이블 조회가 1,200번에서 1번으로 줄었다.
+    it29-r10/haiku/G-file-A/S23.md | - 스테이징에서 정산 잡을 한 번 실행했다.
+    it29-r10/haiku/G-file-A/S23.md | - 테넌트 1,200개의 결과가 모두 이전과 같았다.
+    it29-r10/haiku/G-file-A/S23.md | ### 릴리스
+    it29-r10/haiku/G-file-A/S23.md | - 릴리스 일정은 목요일이다.
+    it29-r10/haiku/G-file-A/S23.md | - 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r10/sonnet/G-file-A/S23.md | 테넌트별 요금제 정보를 Redis에 캐시하도록 바꿨다. 캐시의 TTL은 10분이다.
+    it29-r10/sonnet/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하고 있었다. 테넌트가 1,200개이면 조회가 1,200번 일어났다. 이번 변경으로 조회가 1번으로 줄었다.
+    it29-r10/sonnet/G-file-A/S23.md | - 스테이징에서 정산 잡을 한 번 실행했다.
+    it29-r10/sonnet/G-file-A/S23.md | - 테넌트 1,200개의 결과가 모두 이전과 같았다.
+    it29-r10/sonnet/G-file-A/S23.md | ## 릴리스
+    it29-r10/sonnet/G-file-A/S23.md | - 릴리스는 목요일에 할 예정이다.
+    it29-r10/sonnet/G-file-A/S23.md | - 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r2/haiku/G-file-A/S23.md | 테넌트별 요금제 정보를 Redis에 캐시한다. 캐시 TTL은 10분이다.
+    it29-r2/haiku/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하던 문제를 고친다. 테넌트 1,200개 기준으로 조회 횟수가 1,200번에서 1번으로 줄어든다.
+    it29-r2/haiku/G-file-A/S23.md | 스테이징에서 정산 잡을 한 번 실행해 결과가 이전과 같은지 비교했다. 1,200개 테넌트의 결과가 모두 같았다.
+    it29-r2/haiku/G-file-A/S23.md | 릴리스는 목요일에 예정되어 있다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r2/sonnet/G-file-A/S23.md | 정산 잡이 테넌트별 요금제 정보를 Redis 캐시에서 읽도록 바꿨다. 캐시의 TTL은 10분이다.
+    it29-r2/sonnet/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회했다. 그래서 테넌트 1,200개 기준으로 요금제 테이블 조회가 1,200번 일어났다. 이 변경 후에는 같은 기준에서 조회가 1번으로 줄어든다.
+    it29-r2/sonnet/G-file-A/S23.md | - 스테이징에서 정산 잡을 한 번 실행했다.
+    it29-r2/sonnet/G-file-A/S23.md | - 테넌트 1,200개 모두 결과가 이전과 같았다.
+    it29-r2/sonnet/G-file-A/S23.md | ## 릴리스
+    it29-r2/sonnet/G-file-A/S23.md | - 릴리스는 목요일에 할 예정이다.
+    it29-r2/sonnet/G-file-A/S23.md | - 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r3/haiku/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하던 문제를 고친다.
+    it29-r3/haiku/G-file-A/S23.md | - 테넌트별 요금제 정보를 Redis에 캐시한다. 캐시의 TTL은 10분이다.
+    it29-r3/haiku/G-file-A/S23.md | 이 변경으로 테넌트 1,200개 기준 요금제 테이블 조회가 1,200번에서 1번으로 줄어든다.
+    it29-r3/haiku/G-file-A/S23.md | 스테이징에서 정산 잡을 한 번 실행하여 결과가 이전과 같은지 비교했다. 1,200개 테넌트의 결과가 모두 같았다.
+    it29-r3/haiku/G-file-A/S23.md | 릴리스는 목요일 예정이다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r3/sonnet/G-file-A/S23.md | 테넌트별 요금제 정보를 Redis에 캐시하도록 바꿨다. TTL은 10분이다.
+    it29-r3/sonnet/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하고 있었다. 이 PR로 테넌트 1,200개 기준 조회가 1,200번에서 1번으로 줄었다.
+    it29-r3/sonnet/G-file-A/S23.md | 스테이징에서 정산 잡을 한 번 실행해서 결과를 이전 결과와 비교했다. 테넌트 1,200개의 결과가 모두 이전과 같았다.
+    it29-r3/sonnet/G-file-A/S23.md | ## 릴리스
+    it29-r3/sonnet/G-file-A/S23.md | 릴리스는 목요일에 할 예정이다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r4/haiku/G-file-A/S23.md | 테넌트별 요금제 정보를 Redis에 캐시한다. 캐시의 TTL은 10분이다.
+    it29-r4/haiku/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하던 문제를 고친다. 테넌트 1,200개 기준으로 조회 횟수가 1,200번에서 1번으로 줄어든다.
+    it29-r4/haiku/G-file-A/S23.md | 스테이징에서 정산 잡을 한 번 실행하고 결과를 이전과 비교했다. 테넌트 1,200개의 결과가 모두 같았다.
+    it29-r4/haiku/G-file-A/S23.md | ## 릴리스
+    it29-r4/haiku/G-file-A/S23.md | 릴리스는 목요일 예정이다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r4/sonnet/G-file-A/S23.md | 정산 잡이 테넌트별 요금제 정보를 Redis에 캐시하도록 바꿨다. TTL은 10분이다.
+    it29-r4/sonnet/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하던 문제를 고쳤다. 테넌트 1,200개 기준으로 조회가 1,200번에서 1번으로 줄었다.
+    it29-r4/sonnet/G-file-A/S23.md | - 스테이징에서 정산 잡을 한 번 실행했다.
+    it29-r4/sonnet/G-file-A/S23.md | - 테넌트 1,200개 모두 결과가 이전과 같았다.
+    it29-r4/sonnet/G-file-A/S23.md | ## 릴리스
+    it29-r4/sonnet/G-file-A/S23.md | - 릴리스는 목요일에 할 예정이다.
+    it29-r4/sonnet/G-file-A/S23.md | - 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r5/haiku/G-file-A/S23.md | 테넌트별 요금제 정보를 Redis에 캐시하도록 바꿨다. 정산 잡이 요금제를 조회하는 방식을 이 캐시를 쓰는 방식으로 바꾸었다.
+    it29-r5/haiku/G-file-A/S23.md | 정산 잡은 테넌트마다 요금제 테이블을 조회하고 있었다. 그래서 테넌트 1,200개 기준으로 조회가 1,200번 일어났다. 이번 변경으로 같은 조회가 1번으로 줄었다. 캐시 유효 시간(TTL)은 10분으로 설정했다.
+    it29-r5/haiku/G-file-A/S23.md | 스테이징에서 정산 잡을 한 번 실행하고 결과를 이전 결과와 비교했다. 1,200개 테넌트의 결과가 모두 이전과 같았다.
+    it29-r5/haiku/G-file-A/S23.md | 릴리스는 목요일로 예정되어 있다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r5/sonnet/G-file-A/S23.md | 테넌트별 요금제 정보를 Redis에 캐시하도록 바꿨다.
+    it29-r5/sonnet/G-file-A/S23.md | - 테넌트별 요금제 정보를 Redis에 캐시한다.
+    it29-r5/sonnet/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하고 있었다. 이 문제를 고쳤다. 테넌트 1,200개 기준으로 조회가 1,200번에서 1번으로 줄었다.
+    it29-r5/sonnet/G-file-A/S23.md | 스테이징에서 정산 잡을 한 번 실행해서 결과가 이전과 같은지 비교했다. 테넌트 1,200개 모두 결과가 같았다.
+    it29-r5/sonnet/G-file-A/S23.md | - 릴리스는 목요일에 할 예정이다.
+    it29-r5/sonnet/G-file-A/S23.md | - 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r6/haiku/G-file-A/S23.md | 이 PR은 테넌트별 요금제 정보를 Redis에 캐시하여 정산 잡이 요금제 테이블을 조회하는 횟수를 줄인다. 캐시 유효 시간(TTL)은 10분이다.
+    it29-r6/haiku/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하던 문제를 수정한다. 테넌트 1,200개 기준으로 조회 횟수가 1,200번에서 1번으로 줄어든다.
+    it29-r6/haiku/G-file-A/S23.md | 스테이징 환경에서 정산 잡을 한 번 실행하고 결과를 이전 결과와 비교했다. 1,200개 테넌트의 결과가 모두 같았다.
+    it29-r6/haiku/G-file-A/S23.md | 릴리스는 목요일 예정이다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r6/sonnet/G-file-A/S23.md | 정산 잡이 요금제 테이블을 조회할 때 쓰도록 테넌트별 요금제 정보를 Redis에 캐시했다. 캐시의 TTL은 10분이다.
+    it29-r6/sonnet/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회했다. 이 변경으로 테넌트 1,200개 기준 조회가 1,200번에서 1번으로 줄어든다.
+    it29-r6/sonnet/G-file-A/S23.md | - 스테이징에서 정산 잡을 한 번 실행했다.
+    it29-r6/sonnet/G-file-A/S23.md | - 1,200개 테넌트의 결과가 모두 이전과 같았다.
+    it29-r6/sonnet/G-file-A/S23.md | 릴리스는 목요일에 할 예정이다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r6/sonnet/G-file-A/S23.md | 확인 필요: "릴리스 전에 안내 메일을 보내야 한다"의 담당자가 메모에 없다.
+    it29-r7/haiku/G-file-A/S23.md | 테넌트별 요금제 정보를 Redis에 캐시한다. 캐시의 TTL은 10분이다.
+    it29-r7/haiku/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하던 문제를 고친다. 테넌트 1,200개 기준으로 조회 1,200번이 1번으로 줄어든다.
+    it29-r7/haiku/G-file-A/S23.md | 스테이징 환경에서 정산 잡을 한 번 실행하고 결과를 이전 결과와 비교했다. 1,200개 테넌트의 결과가 모두 같았다.
+    it29-r7/haiku/G-file-A/S23.md | ## 릴리스 전 할 일
+    it29-r7/haiku/G-file-A/S23.md | 릴리스 예정일은 목요일이다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r7/sonnet/G-file-A/S23.md | 테넌트별 요금제 정보를 Redis에 캐시하도록 바꿨다. 캐시의 TTL은 10분이다.
+    it29-r7/sonnet/G-file-A/S23.md | 이전에는 정산 잡이 테넌트마다 요금제 테이블을 조회했다. 이 변경으로 테넌트 1,200개 기준 조회 횟수가 1,200번에서 1번으로 줄어든다.
+    it29-r7/sonnet/G-file-A/S23.md | 스테이징에서 정산 잡을 한 번 실행했고, 결과를 이전 결과와 비교했다. 1,200개 테넌트의 결과가 모두 이전과 같았다.
+    it29-r7/sonnet/G-file-A/S23.md | 릴리스는 목요일에 할 예정이다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r8/haiku/G-file-A/S23.md | 이 PR은 테넌트별 요금제 정보를 Redis에 캐시하여 정산 잡의 요금제 테이블 조회 횟수를 줄인다.
+    it29-r8/haiku/G-file-A/S23.md | - 테넌트별 요금제 정보를 Redis에 캐시한다. 캐시의 유효 시간(TTL)은 10분이다.
+    it29-r8/haiku/G-file-A/S23.md | - 정산 잡이 테넌트마다 요금제 테이블을 조회하던 문제를 고친다. 테넌트 1,200개 기준으로 조회 횟수가 1,200번에서 1번으로 줄어든다.
+    it29-r8/haiku/G-file-A/S23.md | 스테이징에서 정산 잡을 한 번 실행했다. 실행 결과를 이전 결과와 비교했다. 1,200개 테넌트의 결과가 모두 같았다.
+    it29-r8/haiku/G-file-A/S23.md | 릴리스는 목요일 예정이다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r8/sonnet/G-file-A/S23.md | 테넌트별 요금제 정보를 Redis에 캐시하도록 바꿨다. 캐시 TTL은 10분이다.
+    it29-r8/sonnet/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하고 있었다. 이제 정산 잡은 테넌트 1,200개 기준으로 요금제 테이블을 1번 조회한다. 이전에는 1,200번 조회했다.
+    it29-r8/sonnet/G-file-A/S23.md | - 스테이징에서 정산 잡을 한 번 실행했다.
+    it29-r8/sonnet/G-file-A/S23.md | - 테넌트 1,200개 모두 결과가 같았다.
+    it29-r8/sonnet/G-file-A/S23.md | - 릴리스는 목요일에 할 예정이다.
+    it29-r8/sonnet/G-file-A/S23.md | - 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r9/haiku/G-file-A/S23.md | 요금제 정보를 테넌트별로 Redis에 캐시한다. 캐시의 TTL은 10분이다.
+    it29-r9/haiku/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회하던 문제를 고친다. 테넌트 1,200개 기준으로 조회 1,200번이 1번으로 줄어든다.
+    it29-r9/haiku/G-file-A/S23.md | 스테이징에서 정산 잡을 한 번 실행하여 결과가 이전과 같은지 비교했다. 1,200개 테넌트의 결과가 모두 같았다.
+    it29-r9/haiku/G-file-A/S23.md | 릴리스는 목요일 예정이다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r9/sonnet/G-file-A/S23.md | 정산 잡이 테넌트별 요금제 정보를 Redis에서 읽도록 바꿨다. 요금제 정보는 Redis에 테넌트별로 캐시하고, TTL은 10분이다.
+    it29-r9/sonnet/G-file-A/S23.md | 정산 잡이 테넌트마다 요금제 테이블을 조회했다. 테넌트 1,200개 기준으로 조회가 1,200번 일어났다. 이 PR 이후에는 같은 기준에서 조회가 1번으로 줄어든다.
+    it29-r9/sonnet/G-file-A/S23.md | 스테이징에서 정산 잡을 한 번 실행했고, 결과를 이전 결과와 비교했다. 테넌트 1,200개 모두 결과가 이전과 같았다.
+    it29-r9/sonnet/G-file-A/S23.md | 릴리스는 목요일에 할 예정이다. 릴리스 전에 클라이언트 3곳에 안내 메일을 보내야 한다.
+    it29-r9/sonnet/G-file-A/S23.md | 확인 필요: "클라이언트 3곳에 안내 메일을 보내야 함". 메일을 보낼 담당자와 메일에 담을 내용이 메모에 없다.
+양측 Fisher G-inline 대 G-ptr: p = 0.0083
+양측 Fisher G-ptr 대 G-file: p = 0.0000
+== 묶음 3: S21, S22 실패 (판정기 pass false, 정확 95% 신뢰구간)
+S21 base: 실패 10/20 (27.2%-72.8%), '확인 필요'가 있는 출력 0
+S21 full: 실패 0/20 (0.0%-16.8%), '확인 필요'가 있는 출력 0
+S21 agent+short: 실패 0/20 (0.0%-16.8%), '확인 필요'가 있는 출력 4, 스킬 10
+S22 base: 실패 6/20 (11.9%-54.3%), '확인 필요'가 있는 출력 2
+S22 full: 실패 1/20 (0.1%-24.9%), '확인 필요'가 있는 출력 15
+S22 agent+short: 실패 1/20 (0.1%-24.9%), '확인 필요'가 있는 출력 19, 스킬 13
+== 판정기가 실패로 본 출력 (모든 회차)
+it29-r10/haiku/agent+short-A/S20.md [S20 탈락] [스킬 O] | The subject '정산이' was dropped from '정산이 실패한 경우', so '실패한 경우' could now mean the check (점검) failed rather than the settlement.
+it29-r16/sonnet/agent+short-A/S20.md [S20 탈락] [스킬 O] | The subject '정산이' is dropped from the failure clause, so '실패하면' can also be read as the check (점검) failing rather than the settlement failing.
+it29-r6/haiku/agent+short-A/S22.md [스킬 X] | The confirmation item "11월 정산이 2026년 11월을 가리키는지" adds the year "2026년", which is not in the facts.
+it29-r1/sonnet/agent+short-A/S5.md [스킬 O] | The original says staging pre-validation is recommended to the operations team (they are the ones who should do it), but the output makes the operations team the one who recommends it, which changes the actor's role.
+it29-r11/haiku/agent+short-A/S5.md [스킬 O] | The causal link '이에 따라' is dropped, so the output no longer says that the backup obligation and the staging recommendation follow from the possible data-integrity issue.
+it29-r16/sonnet/agent+short-A/S5.md [스킬 O] | The original does not clearly say who should do the staging pre-validation, because '운영팀에서는' may cover only the backup clause, but the output makes 운영팀 the actor without flagging it.
+it29-r1/haiku/agent+short-A/S6.md [스킬 O] | The first confirmation note describes the ambiguity wrongly: the original allows '관리자 권한' to cover both 팀원 and QA 담당자, or only 팀원, but the note offers 'only QA 담당자' as the alternative, a reading the original does not support and one that can mislead the reader into a wrong resolution.
+it29-r3/sonnet/agent+short-A/S6.md [스킬 O] | The original leaves it open whether '초기화됩니다' refers to the servers or their memory, and the output silently settles on the servers by repeating '캐시 서버와 API 서버는' as the subject.
+it29-r6/sonnet/agent+short-A/S6.md [스킬 O] | The original leaves the subject of '초기화됩니다' open (the servers, or their memory/data), and the output silently fixes it as '두 서버' without flagging it for confirmation.
+it29-r7/haiku/agent+short-A/S6.md [스킬 O] | The original leaves open whether the servers or their memory is reset on restart, and the added subject '두 서버는' silently resolves this to the servers.
+it29-r9/haiku/agent+short-A/S6.md [스킬 O] | The original leaves open what 초기화됩니다 refers to (the servers or the memory just mentioned), but splitting the sentence and repeating '캐시 서버와 API 서버는' resolves it to the servers without flagging it.
+it29-r16/haiku/agent+short-A/S6.md [스킬 O] | The original leaves open what gets reset by '초기화됩니다' (the servers or their memory), and the output adds '두 서버는' as the subject, which silently settles it as the servers.
+it29-r20/haiku/agent+short-A/S6.md [스킬 O] | The original leaves open whether '초기화됩니다' applies to the servers or to the memory they use, and the output silently resolves this by restating '캐시 서버와 API 서버는' as the subject without flagging it.
+it29-r4/sonnet/agent+short-A/S7.md [S7 탈락] [스킬 O] | The subject '백업이' was dropped from the failure condition, so '실패하면' can also be read as the verification failing rather than the backup failing.
+it29-r6/haiku/agent+short-A/S7.md [S7 탈락] [스킬 X] | The subject '백업이' was dropped from the failure condition, so '실패하면' after '확인하고' can be read as the check failing instead of the backup failing.
+it29-r13/haiku/agent+short-A/S7.md [S7 탈락] [스킬 O] | The subject '백업이' was dropped from '실패한 경우', so the failure could now mean the verification (확인) failing instead of the backup failing.
+it29-r17/sonnet/agent+short-A/S7.md [S7 탈락] [스킬 O] | The subject of '실패하면' was dropped, so it can now be read as the verification failing rather than the backup failing, which the original stated explicitly as '백업이 실패한 경우'.
+it29-r6/haiku/agent+short-C1/S20.md [스킬 O] | The original requires a check before any export happens, but the output adds an instruction to export the order data right after the check, which the original does not state. / The output's order (check, export, then stop if settlement fails) suggests the export may already run before the failure condition stops it, while the original requires stopping the export before it starts.
+it29-r17/haiku/agent+short-C1/S20.md [S20 탈락] [스킬 X] | The subject '정산이' was dropped from '정산이 실패한 경우', so '실패한' could now refer to the check (점검) instead of the settlement.
+it29-r10/haiku/agent+short-C1/S5.md [스킬 O] | The scope marker '이번 마이그레이션 작업과 관련하여' is missing, so the output no longer says the integrity risk relates to this migration.
+it29-r16/sonnet/agent+short-C1/S5.md [스킬 O] | The output makes 운영팀 the one who gives the recommendation ('운영팀은 … 권장합니다'), but in the original 운영팀 is at most the party receiving it; the confirmation note asks about the recipient, not the recommender, so it does not cover this new reading.
+it29-r4/haiku/agent+short-C1/S6.md [스킬 O] | The original leaves unclear what '초기화됩니다' applies to: the two servers or their memory. The output silently resolves it to the servers by adding '두 서버는' and does not flag it for confirmation.
+it29-r4/sonnet/agent+short-C1/S6.md [스킬 O] | In the original, what '초기화됩니다' refers to is ambiguous: it could be the servers or the memory they use. By repeating '캐시 서버와 API 서버는' as the subject, the output silently resolves it to the servers and does not flag this for confirmation.
+it29-r13/haiku/agent+short-C1/S6.md [스킬 O] | The original leaves open whether '초기화됩니다' refers to the servers or to their memory, and the output silently picks 'the servers' ('캐시 서버와 API 서버가 초기화됩니다') without flagging it for confirmation.
+it29-r20/sonnet/agent+short-C1/S6.md [스킬 O] | In the original, '초기화됩니다' can apply to the servers or to the memory, but the output repeats '캐시 서버와 API 서버는' as the subject without flagging it, which silently picks the servers reading.
+it29-r1/haiku/agent+short-C1/S7.md [S7 탈락] [스킬 O] | The subject '백업이' was dropped from the failure condition, so '실패하면' can now be read as the check failing instead of only the backup failing.
+it29-r2/haiku/agent+short-C1/S7.md [S7 탈락] [스킬 O] | Dropping the subject 백업이 from 백업이 실패한 경우 lets 실패한 경우 also read as the check (확인) failing, not only the backup failing.
+it29-r4/haiku/agent+short-C1/S7.md [S7 탈락] [스킬 O] | The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' could mean either the backup or the check failed.
+it29-r8/haiku/agent+short-C1/S7.md [S7 탈락] [스킬 O] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' can now refer to either the backup failing or the verification step failing.
+it29-r11/haiku/agent+short-C1/S7.md [S7 탈락] [스킬 O] | '백업이 실패한 경우에는' became '실패하면', which drops the subject '백업이', so it is unclear whether the backup or the check failed.
+it29-r12/haiku/agent+short-C1/S7.md [S7 탈락] [스킬 O] | The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' no longer clearly says what failed (the backup or the check).
+it29-r14/sonnet/agent+short-C1/S7.md [S7 탈락] [스킬 O] | Dropping the explicit subject '백업이' from '백업이 실패한 경우' leaves '실패한 경우' open to two readings: the backup failed, or the verification step ('확인') failed.
+it29-r15/haiku/agent+short-C1/S7.md [S7 탈락] [스킬 O] | '백업이 실패한 경우에는' became '실패하면', which drops the subject '백업', so it is unclear whether the backup or the check is what fails.
+it29-r16/haiku/agent+short-C1/S7.md [S7 탈락] [스킬 O] | The rewrite drops the subject '백업이' from the failure condition, so '실패하면' could be read as the check failing rather than the backup failing.
+it29-r13/haiku/agent+short-C2/S20.md [S20 탈락] [스킬 O] | The subject '정산이' was dropped from '실패하면', so it is unclear whether the settlement failed or the check failed.
+it29-r14/haiku/agent+short-C2/S20.md [S20 탈락] [스킬 O] | The subject '정산이' was dropped from '정산이 실패한 경우', so '실패한 경우' can now be read as the check (점검) failing instead of the settlement failing.
+it29-r18/haiku/agent+short-C2/S20.md [S20 탈락] [스킬 O] | The subject '정산이' was dropped from '정산이 실패한 경우', so '실패하면' can now be read as the check (점검) failing rather than the settlement (정산) failing.
+it29-r3/sonnet/agent+short-C2/S5.md [스킬 O] | '운영팀이 가능하면 스테이징 환경에서 미리 검증하는 것을 권장합니다' most naturally reads as the operations team being the one who recommends, while in the original the operations team is the one who should do the staging verification.
+it29-r6/haiku/agent+short-C2/S5.md [스킬 O] | The causal link '이에 따라' is dropped, so the output no longer states that the backup obligation follows from the data integrity risk.
+it29-r16/haiku/agent+short-C2/S5.md [스킬 O] | In the original, the staging pre-check is recommended to the operations team, but the output makes the operations team the one who recommends it, so the actor changed.
+it29-r20/haiku/agent+short-C2/S5.md [스킬 O] | The output turns 운영팀 into the party that recommends staging validation ('운영팀은 ... 권장합니다'), but in the original 운영팀 is the party the validation is recommended to, so the actor's role changed.
+it29-r10/haiku/agent+short-C2/S6.md [스킬 O] | In the original, '초기화됩니다' can apply to the servers or to the memory (cached data), but the output adds '두 서버는' and silently fixes the subject as the servers without a confirmation flag.
+it29-r2/sonnet/agent+short-C2/S7.md [스킬 O] | The rewrite drops the manner qualifier '정상적으로', so the check becomes only whether the backup finished, not whether it finished correctly; the confirmation note asks about this but leaves the qualifier out of the sentence, and the flag exception covers only two-way readings (rule 5), not missing qualifiers (rule 2).
+it29-r3/haiku/agent+short-C2/S7.md [S7 탈락] [스킬 O] | The subject '백업이' was dropped from '실패하면', so it can now be read as the check failing rather than the backup failing.
+it29-r5/haiku/agent+short-C2/S7.md [S7 탈락] [스킬 O] | Dropping the subject '백업이' from '백업이 실패한 경우' lets '실패한 경우' be read as the verification (확인) failing, not only the backup failing, so the condition for stopping the deployment is no longer clear.
+it29-r15/haiku/agent+short-C2/S7.md [S7 탈락] [스킬 O] | '백업이 실패한 경우에는' became '실패하면', which drops the subject '백업', so the reader can't tell whether the backup or the check failed.
+it29-r16/sonnet/agent+short-C2/S7.md [S7 탈락] [스킬 O] | The output drops the subject '백업이' from the failure condition, so '실패하면' can also be read as the check itself failing, not only the backup failing.
+it29-r1/haiku/base-A/S21.md | '기간이 지난 링크는 다시 열리지 않으므로, 필요하면 새 링크를 만들어야 한다' adds a fact and a step that are not in the list. / '잠금이 풀리기 전에는 올바른 비밀번호를 입력해도 로그인할 수 없다' adds a fact that is not in the list. / '외부 공유 링크: 사내 계정이 없는 사람도 파일에 접근할 수 있도록 만든 링크' adds a definition that is not in the list. / '게시물: 사내 위키에 작성해 파일을 첨부하는 단위' adds a definition that is not in the list. / '자동으로 닫힌다' adds an automatic-closing detail that is not in t
+it29-r2/haiku/base-A/S21.md | "잠금 시간이 지난 뒤 다시 로그인할 수 있습니다" adds an unlock step that the facts do not contain.
+it29-r3/haiku/base-A/S21.md | "72시간 이후에도 공유가 필요하면 새 링크를 만들어야 합니다" adds a step that the facts do not contain. / "잠금 시간이 지나면 다시 로그인할 수 있습니다" adds a permission that the facts do not contain.
+it29-r3/sonnet/base-A/S21.md | "72시간이 지난 뒤에도 공유가 필요하면 링크를 새로 만들어야 합니다" adds a step that the facts do not contain, and the closing note admits it was inferred.
+it29-r6/sonnet/base-A/S21.md | The summary row "비밀번호 연속 오류 허용 횟수 | 5회 (초과 시 30분간 계정 잠금)" sets the lock after more than 5 wrong passwords (the 6th), but the account must lock at the 5th, and "허용 횟수 5회" wrongly means 5 failures are allowed without a lock.
+it29-r7/sonnet/base-A/S21.md | The sentence "72시간이 지난 뒤에도 공유가 필요하면 링크를 새로 만들어야 합니다." adds a step that is not in the facts.
+it29-r8/haiku/base-A/S21.md | "사내 위키에 파일을 업로드하거나 외부 공유 링크를 만드는 모든 구성원에게 적용합니다" adds a scope fact that the list does not contain. / "잠금이 풀리기 전까지는 로그인할 수 없습니다" adds a statement that the list does not contain. / "규정에 관한 질문은 담당 부서에 문의해 주세요" adds a step and a department that the list does not contain.
+it29-r8/sonnet/base-A/S21.md | The summary table row "비밀번호 연속 오류 허용 횟수 | 5회 (초과 시 30분간 계정 잠금)" puts the lock after more than 5 wrong passwords (the 6th), but the facts lock the account at the 5th.
+it29-r9/haiku/base-A/S21.md | "만 19세 이상의 구성원만 만들 수 있다" extends the age limit from interns to all members, which the facts do not state.
+it29-r10/sonnet/base-A/S21.md | "72시간이 지난 뒤에도 공유가 필요하면 링크를 새로 만들어야 합니다" adds a step that the facts do not contain.
+it29-r2/haiku/base-A/S22.md | The confirmation list adds a time boundary, "23:59 마감 여부", that the facts do not contain.
+it29-r3/sonnet/base-A/S22.md | "50만 원 이하는 별도 승인 없이 처리합니다" adds a rule that is not in the fact list, and the note admitting it was added does not remove it from the document.
+it29-r4/haiku/base-A/S22.md | The heading "청약철회(전액 환불) 기준" introduces the legal concept "청약철회", which the fact list does not contain.
+it29-r6/sonnet/base-A/S22.md | The note says '"50만 원" 정확히 일치할 때의 처리'가 없다고 하지만, the facts fix this case (exactly 50만 원 needs no approval), so the note turns a fixed boundary into an undecided one.
+it29-r7/haiku/base-A/S22.md | The output adds a step that the facts do not contain: "승인 전에는 고객에게 환불 확정을 안내하지 않습니다." / The output adds a fact that the facts do not contain: "이 기준은 상담원 개인이 판단하는 사항이 아니며, 운영 담당자가 관리합니다."
+it29-r10/haiku/base-A/S22.md | "환불 금액 50만 원의 포함 여부(50만 원 정각은 승인 대상인지)" treats a fixed boundary as open: the facts say exactly 50만 원 needs no approval, but the output makes it uncertain whether 50만 원 needs approval.
+it29-r3/haiku/full-A/S12.md | "스테이징 배포와 QA까지 마쳤습니다" uses a vague completion word for QA in a sentence that does not state the fact that all 14 staging test cases passed. / "배포 전까지 같은 오류가 생길 수 있습니다" is a consequence that the fact list does not contain.
+it29-r2/haiku/full-A/S16.md | The opening sentence uses the vague status phrase "프론트엔드 개발을 진행하고 있습니다" without the memo's result that 4 of 7 screens are done.
+it29-r1/haiku/full-A/S2.md | [장애 공유] 결제 API 응답 지연 및 결제 실패율 증가
+it29-r1/haiku/full-A/S20.md [S20 탈락] | The subject '정산이' was dropped from '정산이 실패한 경우', so '실패한 경우' could now mean either the settlement or the check (점검) failed.
+it29-r3/sonnet/full-A/S20.md [S20 탈락] | The subject '정산이' was dropped from '정산이 실패한 경우에는', so '실패하면' could also be read as the check (점검) failing rather than the settlement.
+it29-r5/haiku/full-A/S20.md [S20 탈락] | The subject '정산이' was dropped from '정산이 실패한 경우', so '실패한 경우' can now refer to the 점검 failing rather than the 정산 failing.
+it29-r6/haiku/full-A/S20.md [S20 탈락] | The subject '정산이' was dropped from the failure condition, so '실패하면' could mean the check failed rather than the settlement failed.
+it29-r7/haiku/full-A/S20.md [S20 탈락] | The subject '정산이' was dropped from '정산이 실패한 경우에는', so '실패하면' could mean the settlement failed or the check (점검) failed.
+it29-r8/haiku/full-A/S20.md [S20 탈락] | '정산이 실패한 경우에는' became '실패하면', which drops the subject '정산', so the failure could now be read as a failure of the check (점검) instead of the settlement.
+it29-r11/haiku/full-A/S20.md [S20 탈락] | The rewrite drops the subject '정산이' from '정산이 실패한 경우', so '실패하면' could mean either the settlement or the check failed.
+it29-r13/haiku/full-A/S20.md [S20 탈락] | The subject '정산이' was dropped from '실패하면', so '실패하면' can now be read as the check (점검) failing rather than the settlement failing.
+it29-r15/haiku/full-A/S20.md [S20 탈락] | Dropping the subject '정산이' from '정산이 실패한 경우에는' makes '실패하면' ambiguous: it can now mean that the check (점검) failed, not that settlement (정산) failed.
+it29-r17/haiku/full-A/S20.md [S20 탈락] | The subject '정산이' was dropped from the failure condition, so '실패하면' could refer to either the check (점검) or the settlement (정산).
+it29-r18/haiku/full-A/S20.md [S20 탈락] | The subject '정산이' was dropped from '정산이 실패한 경우에는', so '실패하면' could now mean the check (점검) failed rather than the settlement (정산) failed.
+it29-r19/haiku/full-A/S20.md [S20 탈락] | Dropping the subject '정산이' from '정산이 실패한 경우' leaves '실패한 경우' unclear, since it can now mean that the check (점검) failed instead of the settlement.
+it29-r20/haiku/full-A/S20.md [S20 탈락] | The subject '정산이' was dropped from '정산이 실패한 경우에는', so '실패하면' could now refer to the check (점검) failing instead of the settlement failing.
+it29-r1/haiku/full-A/S22.md | The note '확인 필요: 20명이 되면. 대기 고객이 정확히 20명일 때만 적용하는 경우와 20명 이상일 때 적용하는 경우' treats the fixed 20-customer boundary as open and adds an alternative reading ('정확히 20명일 때만') that the facts do not contain.
+it29-r2/haiku/full-A/S5.md | The original links the possible data integrity issue to the backup and staging requirements with '이에 따라', but the rewrite splits them into separate sentences with no connector, so the causal link is lost.
+it29-r4/haiku/full-A/S5.md | The causal link '이에 따라' is dropped, so the required backup no longer reads as a response to the possible data integrity issue.
+it29-r12/haiku/full-A/S5.md | The original sentence puts both the mandatory backup and the recommended staging validation under '이에 따라', but the rewrite splits them and attaches '따라서' only to the backup, so the recommendation loses its stated cause. / The original applies the actor '운영팀' to both clauses, but the rewrite's staging-validation sentence has no subject, so the reader can't tell who should do the validation.
+it29-r14/haiku/full-A/S5.md | The original passive '운영팀에서는 … 사전 검증을 수행하는 것이 권장됩니다' makes the operations team the party that should do the validation. The active '운영팀은 … 하는 것을 권장합니다' can be read as the operations team making the recommendation, so the actor is changed or made ambiguous.
+it29-r17/sonnet/full-A/S5.md | '운영팀이 가능하다면 ... 권장합니다' can be read as the operations team giving the recommendation, while the original recommends pre-validation to the operations team, so the actor is changed or made ambiguous. / In the original, '이에 따라' links the integrity risk to both the backup obligation and the staging recommendation, but the output joins the recommendation with '또한' and weakens that causal link.
+it29-r20/haiku/full-A/S5.md | The appended '확인 필요' note questions whether a separate full backup is still required, but the original's '전체 백업 대신' already says the 30-day backup is an allowed substitute, so the note weakens a clear statement and adds an action the original does not contain.
+it29-r6/haiku/full-A/S6.md | The original leaves open whether the servers or their memory is reset on restart; adding '두 서버는' silently fixes the subject as both servers, and this reading is not flagged for confirmation.
+it29-r1/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' could now be read as the check failing rather than the backup failing.
+it29-r2/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' can now be read as the check (확인) failing rather than the backup failing.
+it29-r3/haiku/full-A/S7.md [S7 탈락] | Dropping the subject '백업이' from '백업이 실패한 경우에는' leaves '실패하면' open to two readings: the backup failed, or the verification step failed.
+it29-r5/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' is dropped from the failure condition, so '실패하면' could refer to the backup or to the check, while the original explicitly says the backup failed.
+it29-r6/haiku/full-A/S7.md [S7 탈락] | The subject of '백업이 실패한 경우' was dropped to just '실패하면', so it is unclear whether the backup or the check failed.
+it29-r7/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패하면', so it can now be read as the check failing instead of the backup failing.
+it29-r7/sonnet/full-A/S7.md [S7 탈락] | '백업이 실패한 경우' became '실패하면', which drops the subject '백업', so the sentence can also be read as 'if the check fails' instead of 'if the backup fails'.
+it29-r8/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우에는' (now '실패하면'), so the text no longer clearly says whether the backup or the verification step must fail before the deployment stops.
+it29-r8/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' can now be read as either the backup failing or the verification (확인) failing.
+it29-r9/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' can also be read as the confirmation step failing, not only the backup failing.
+it29-r11/haiku/full-A/S7.md [S7 탈락] | '백업이 실패한 경우' became '실패하면', which drops the subject '백업이', so the condition can also read as the check failing rather than the backup failing.
+it29-r11/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' is dropped from '실패하면', so it is no longer explicit that a failed backup triggers the halt; a reader could take it as a failed check instead.
+it29-r12/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패하면' can also read as the verification failing, not the backup failing.
+it29-r12/sonnet/full-A/S7.md [S7 탈락] | The second clause drops the subject '백업' (백업이 실패한 경우 → 실패하면), so the condition could now mean 'if the check fails' instead of 'if the backup failed'.
+it29-r13/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패하면', so it can now be read as the check failing (확인 실패), not the backup failing.
+it29-r14/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패하면', so it could now mean the check failed instead of the backup failed.
+it29-r15/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' is dropped from the failure condition, so '실패하면' could mean the confirmation step failed instead of the backup itself.
+it29-r16/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' can now be read as the check failing instead of the backup failing.
+it29-r17/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' can be read as the verification failing instead of the backup failing.
+it29-r18/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패한 경우', so '실패하면' could mean the check failed instead of the backup failed.
+it29-r19/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' is dropped from '실패한 경우', so '실패' can now be read as the verification failing rather than the backup failing.
+it29-r20/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' is dropped from the failure clause, so '실패하면' can now mean that the verification failed instead of the backup.
+it29-r1/haiku/full-C1/S12.md | "오늘이 10/20이고 ... 같은 날 10:00은 이미 지난 시각입니다" states today's date and that the deploy time has already passed, and the facts list contains neither.
+it29-r3/haiku/full-C1/S12.md | The appended note "오늘이 10/20이고" states a fact (today's date) that the facts list does not contain, and the note casts doubt on "10/20 10:00", which the facts give as the plan.
+it29-r1/haiku/full-C1/S15.md | "이에 따라" points back to the decisions, but the sentence before it holds two decisions (인증 서버 60분, 결제 서버 30분 유지), so the reader cannot tell which one it refers to.
+it29-r2/haiku/full-C1/S18.md | "보안 교육 사전 설문 제출" ties the survey to the security training, but the list only says "사전 설문" and never links it to the training.
+it29-r2/haiku/full-C1/S20.md [S20 탈락] | The subject '정산이' was dropped from '정산이 실패한 경우에는', so '실패하면' could mean the settlement failed or the check (점검) failed.
+it29-r10/haiku/full-C1/S20.md [S20 탈락] | The subject '정산이' was dropped from '정산이 실패한 경우', so '실패하면' could now refer to the check (점검) failing rather than the settlement failing.
+it29-r13/haiku/full-C1/S20.md [S20 탈락] | '정산이 실패한 경우에는' became '실패하면', which drops the subject '정산', so the reader cannot tell whether the settlement, the check, or something else failed.
+it29-r14/haiku/full-C1/S20.md [S20 탈락] | The subject '정산이' was dropped from '실패하면', so it can now mean either that the settlement failed or that the check failed.
+it29-r16/haiku/full-C1/S20.md [S20 탈락] | The subject '정산이' is dropped from '정산이 실패한 경우', so '실패하면' could refer to either the settlement or the check (점검).
+it29-r18/haiku/full-C1/S20.md [S20 탈락] | The subject '정산이' was dropped from '정산이 실패한 경우에는', so '실패하면' could mean either the settlement or the check failed.
+it29-r3/haiku/full-C1/S5.md | The scope marker '이번 마이그레이션 작업과 관련하여' is missing, so the output no longer says the integrity risk comes from this migration, and the rewrite now refers to any migration rather than this specific one.
+it29-r9/sonnet/full-C1/S5.md | '운영팀이 … 사전 검증을 하는 것을 권장합니다' makes the ops team read as the one giving the recommendation, while the original '사전 검증을 수행하는 것이 권장됩니다' recommends that the ops team do the validation.
+it29-r14/haiku/full-C1/S5.md | The causal link '이에 따라' is dropped, so the output no longer says the backup and staging check follow from the data-integrity risk.
+it29-r16/haiku/full-C1/S5.md | The original's hedge '것으로 판단되며' (it is judged that) is dropped, so an assessment of possible integrity issues now reads as a stated fact that the possibility exists.
+it29-r18/haiku/full-C1/S5.md | The causal link '이에 따라' is gone: the original says the backup duty follows from the data integrity risk, but the output states the backup as a separate, unconnected rule.
+it29-r10/haiku/full-C1/S6.md | The original '초기화됩니다' can mean either the servers or their memory are reset, and the output resolves it to the servers ('두 서버는') without flagging it for confirmation.
+it29-r13/haiku/full-C1/S6.md | The second confirmation note gives a wrong alternative reading: it says the admin requirement might apply only to QA staff, but the original's actual ambiguity is whether it applies only to 팀원 (leaving QA staff unrestricted), and the note leaves that reading out.
+it29-r14/haiku/full-C1/S6.md | The second confirmation note's reading (2) adds a claim the original does not contain: that QA staff follow a different standard, which contradicts the original's statement that QA staff must also notify. / The second note misstates the real ambiguity, which is whether 관리자 권한이 있는 applies only to 팀원 or also to QA 담당자, so neither listed reading covers the case where only QA staff with admin rights m
+it29-r19/haiku/full-C1/S6.md | The original leaves the subject of '초기화됩니다' open (the servers or their memory), but the added subject '이 서버들은' resolves it to the servers without flagging it for confirmation.
+it29-r2/haiku/full-C1/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패하면' can now be read as the check (확인) failing rather than the backup failing.
+it29-r3/haiku/full-C1/S7.md [S7 탈락] | The subject '백업이' is dropped from the failure condition, so '실패하면' could mean the check failed rather than the backup failed.
+it29-r5/haiku/full-C1/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패한 경우', so '실패하면' can now be read as the check failing rather than the backup failing.
+it29-r7/haiku/full-C1/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패한 경우', so '실패하면' can be read as either the backup failing or the check failing.
+it29-r8/haiku/full-C1/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' could mean the check failed instead of the backup failed.
+it29-r9/haiku/full-C1/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' could refer to the backup or to the check itself.
+it29-r10/haiku/full-C1/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' could also be read as the verification ('확인') failing, not only the backup failing.
+it29-r11/haiku/full-C1/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' can now be read as the verification failing rather than the backup failing.
+it29-r12/haiku/full-C1/S7.md [S7 탈락] | The subject '백업이' is dropped from the failure condition, so '실패하면' could mean the check failed, not the backup.
+it29-r14/haiku/full-C1/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' can also be read as the check failing, not only the backup failing.
+it29-r15/haiku/full-C1/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패하면' can now be read as the check failing rather than the backup failing.
+it29-r16/haiku/full-C1/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패하면', so it is unclear whether the backup or the check failed.
+it29-r18/haiku/full-C1/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패한 경우' can now be read as the check failing rather than the backup failing.
+it29-r19/haiku/full-C1/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패하면', so the clause could now mean the check fails rather than the backup.
+it29-r20/sonnet/full-C1/S7.md [S7 탈락] | The rewrite drops the subject '백업이' from the failure clause. '실패했으면' could then mean that the check (확인) failed, not only that the backup failed.
+it29-r1/haiku/full-C2/S11.md | The recommendation "운영 환경 API 키 교체는 평일 업무 시간(10:00-18:00)에 하는 것을 권장한다" adds the qualifier "운영 환경", which narrows a recommendation the list gives for all key rotation and so introduces a scope restriction the list does not contain.
+it29-r3/haiku/full-C2/S12.md | "이 수정은 아직 운영에 반영되지 않았습니다" uses the vague word 반영 where the facts give the exact action (운영 배포), and this sentence does not name it.
+it29-r2/haiku/full-C2/S16.md | The opening sentence "2안으로 프론트엔드 개발을 진행하고 있습니다" uses the vague word "진행" but does not state the memo's progress of 4 of 7 screens.
+it29-r2/haiku/full-C2/S18.md | "보안 교육 사전 설문 제출" ties the survey to the security training, but the fact list only says "사전 설문" and never links it to the training.
+it29-r1/haiku/full-C2/S20.md [S20 탈락] | The subject '정산이' was dropped from '정산이 실패한 경우', so '실패하면' could now refer to the check (점검) failing rather than the settlement (정산) failing.
+it29-r10/haiku/full-C2/S20.md [S20 탈락] | The rewrite drops the subject '정산이' from '정산이 실패한 경우', so '실패하면' could also mean the check itself failed, not the settlement.
+it29-r12/haiku/full-C2/S20.md | The output adds a new instruction to export the order data after the check; the original only says to check before exporting. / The output puts the export before the failure condition, so 내보내기를 멈춰야 can now mean stopping an export that has already started, which the original does not say.
+it29-r15/haiku/full-C2/S20.md [S20 탈락] | The subject '정산이' was dropped from '정산이 실패한 경우에는', so '실패하면' could mean the check failed rather than the settlement failed.
+it29-r17/haiku/full-C2/S20.md [S20 탈락] | The subject '정산이' was dropped from '정산이 실패한 경우에는', so '실패하면' can now be read as the check (점검) failing instead of the settlement (정산) failing.
+it29-r19/haiku/full-C2/S20.md [S20 탈락] | The subject '정산이' was dropped from '정산이 실패한 경우에는', so '실패하면' could mean either the check (점검) or the settlement (정산) failed.
+it29-r1/haiku/full-C2/S5.md | The original says pre-validation in staging is recommended (passive, recommender unstated, aimed at the 운영팀), but the output '운영팀은 ... 하는 것을 권장합니다' makes the 운영팀 the one who recommends, so the actor changed.
+it29-r5/haiku/full-C2/S5.md | Splitting the sentence detaches the staging-validation recommendation from '이에 따라' and from '운영팀에서는', so the causal link and the actor for that recommendation are no longer explicit.
+it29-r6/haiku/full-C2/S5.md | The causal link '이에 따라' is dropped, so the output no longer says that the backup duty and the pre-validation recommendation follow from the possible data integrity issue. / The pre-validation recommendation now stands in its own sentence without '운영팀', so the reader can no longer tell for certain that it applies to the operations team.
+it29-r7/sonnet/full-C2/S5.md | In the original, '이에 따라' covers both the backup obligation and the staging verification recommendation, but the output splits the sentence and joins the recommendation with '또한', so the recommendation loses its stated cause (the data integrity risk).
+it29-r15/haiku/full-C2/S5.md | The output turns 운영팀 from the party the staging pre-validation is recommended to into the party that recommends it (운영팀은 ... 권장합니다), which changes the actor's role.
+it29-r17/sonnet/full-C2/S5.md | The original's passive '권장됩니다' becomes active '권장합니다' under the topic '운영팀은', so the operations team now reads as the one making the recommendation, not the one receiving it.
+it29-r7/haiku/full-C2/S6.md | The original leaves open what is initialized on restart (the servers or the memory they use), and the rewrite's new subject '두 서버는' silently resolves this to the servers without flagging it. / '두 서버' suggests there are exactly two servers, but the original names only the server types ('캐시 서버와 API 서버'), not how many servers exist.
+it29-r12/haiku/full-C2/S6.md | The confirmation note's reading (2) is not a valid parse of the original, because 관리자 권한이 있는 comes before 팀원 and cannot apply only to QA 담당자; it adds a reading that the original does not support. / The confirmation note leaves out the real second reading: team members with admin rights plus all QA staff regardless of admin rights.
+it29-r14/haiku/full-C2/S6.md | Moving '배포 전에' to the front of the sentence silently settles '배포 전 공지 채널' as 'notify the 공지 채널 before deployment', but the original can also name a dedicated '배포 전 공지 채널', and the output does not flag this.
+it29-r3/haiku/full-C2/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패하면', so it can also read as the check failing rather than the backup failing.
+it29-r4/haiku/full-C2/S7.md [S7 탈락] | The subject '백업이' is dropped from the failure condition, so '실패하면' could mean the verification failed rather than the backup failed.
+it29-r5/haiku/full-C2/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' could be read as the check failing instead of the backup failing.
+it29-r6/haiku/full-C2/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' can now be read as the check failing rather than the backup failing.
+it29-r7/haiku/full-C2/S7.md [S7 탈락] | The subject '백업이' is dropped from the failure condition, so '실패하면' could mean either the backup failed or the check failed.
+it29-r8/haiku/full-C2/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' could mean the check failed rather than the backup failed.
+it29-r13/haiku/full-C2/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure clause, so '실패하면' could refer to the check failing rather than the backup failing.
+it29-r16/haiku/full-C2/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패하면' could refer to the backup or to the check.
+it29-r17/haiku/full-C2/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' can now be read as the check failing instead of the backup failing.

@@ -1,0 +1,60 @@
+{"file": "evals/results/it29-r5/haiku/agent+short-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/agent+short-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/agent+short-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/agent+short-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/agent+short-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/agent+short-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/agent+short-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/agent+short-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/agent+short-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/agent+short-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/agent+short-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["Dropping the subject '백업이' from '백업이 실패한 경우' lets '실패한 경우' be read as the verification (확인) failing, not only the backup failing, so the condition for stopping the deployment is no longer clear."]}}
+{"file": "evals/results/it29-r5/haiku/base-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/base-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/full-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": true, "issues": ["The subject '정산이' was dropped from '정산이 실패한 경우', so '실패한 경우' can now refer to the 점검 failing rather than the 정산 failing."]}}
+{"file": "evals/results/it29-r5/haiku/full-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/full-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' is dropped from the failure condition, so '실패하면' could refer to the backup or to the check, while the original explicitly says the backup failed."]}}
+{"file": "evals/results/it29-r5/haiku/full-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/full-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/full-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/full-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '실패한 경우', so '실패하면' can now be read as the check failing rather than the backup failing."]}}
+{"file": "evals/results/it29-r5/haiku/full-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/full-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["Splitting the sentence detaches the staging-validation recommendation from '이에 따라' and from '운영팀에서는', so the causal link and the actor for that recommendation are no longer explicit."]}}
+{"file": "evals/results/it29-r5/haiku/full-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/haiku/full-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' could be read as the check failing instead of the backup failing."]}}
+{"file": "evals/results/it29-r5/sonnet/agent+short-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/agent+short-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/agent+short-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/agent+short-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/agent+short-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/agent+short-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/agent+short-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/agent+short-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/agent+short-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/agent+short-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/agent+short-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/base-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/base-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/full-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/full-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/full-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/full-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/full-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/full-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/full-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/full-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/full-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/full-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r5/sonnet/full-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

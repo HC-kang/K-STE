@@ -1,0 +1,60 @@
+{"file": "evals/results/it29-r6/haiku/agent+short-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/agent+short-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/agent+short-A/S22.md", "sid": "S22", "verdict": {"pass": false, "issues": ["The confirmation item \"11월 정산이 2026년 11월을 가리키는지\" adds the year \"2026년\", which is not in the facts."]}}
+{"file": "evals/results/it29-r6/haiku/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from the failure condition, so '실패하면' after '확인하고' can be read as the check failing instead of the backup failing."]}}
+{"file": "evals/results/it29-r6/haiku/agent+short-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": true, "issues": ["The original requires a check before any export happens, but the output adds an instruction to export the order data right after the check, which the original does not state.", "The output's order (check, export, then stop if settlement fails) suggests the export may already run before the failure condition stops it, while the original requires stopping the export before it starts."]}}
+{"file": "evals/results/it29-r6/haiku/agent+short-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/agent+short-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/agent+short-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/agent+short-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/agent+short-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The causal link '이에 따라' is dropped, so the output no longer states that the backup obligation follows from the data integrity risk."]}}
+{"file": "evals/results/it29-r6/haiku/agent+short-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/agent+short-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/base-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/base-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/full-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": true, "issues": ["The subject '정산이' was dropped from the failure condition, so '실패하면' could mean the check failed rather than the settlement failed."]}}
+{"file": "evals/results/it29-r6/haiku/full-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/full-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": true, "issues": ["The original leaves open whether the servers or their memory is reset on restart; adding '두 서버는' silently fixes the subject as both servers, and this reading is not flagged for confirmation."]}}
+{"file": "evals/results/it29-r6/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject of '백업이 실패한 경우' was dropped to just '실패하면', so it is unclear whether the backup or the check failed."]}}
+{"file": "evals/results/it29-r6/haiku/full-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/full-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/full-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/full-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/full-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/full-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The causal link '이에 따라' is dropped, so the output no longer says that the backup duty and the pre-validation recommendation follow from the possible data integrity issue.", "The pre-validation recommendation now stands in its own sentence without '운영팀', so the reader can no longer tell for certain that it applies to the operations team."]}}
+{"file": "evals/results/it29-r6/haiku/full-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/haiku/full-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from the failure condition, so '실패하면' can now be read as the check failing rather than the backup failing."]}}
+{"file": "evals/results/it29-r6/sonnet/agent+short-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/agent+short-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/agent+short-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/agent+short-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/agent+short-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": true, "issues": ["The original leaves the subject of '초기화됩니다' open (the servers, or their memory/data), and the output silently fixes it as '두 서버' without flagging it for confirmation."]}}
+{"file": "evals/results/it29-r6/sonnet/agent+short-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/agent+short-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/agent+short-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/agent+short-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/agent+short-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/agent+short-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/agent+short-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/agent+short-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/agent+short-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/base-A/S21.md", "sid": "S21", "verdict": {"pass": false, "issues": ["The summary row \"비밀번호 연속 오류 허용 횟수 | 5회 (초과 시 30분간 계정 잠금)\" sets the lock after more than 5 wrong passwords (the 6th), but the account must lock at the 5th, and \"허용 횟수 5회\" wrongly means 5 failures are allowed without a lock."]}}
+{"file": "evals/results/it29-r6/sonnet/base-A/S22.md", "sid": "S22", "verdict": {"pass": false, "issues": ["The note says '\"50만 원\" 정확히 일치할 때의 처리'가 없다고 하지만, the facts fix this case (exactly 50만 원 needs no approval), so the note turns a fixed boundary into an undecided one."]}}
+{"file": "evals/results/it29-r6/sonnet/full-A/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/full-A/S21.md", "sid": "S21", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/full-A/S22.md", "sid": "S22", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/full-C1/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/full-C1/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/full-C1/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/full-C1/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/full-C2/S20.md", "sid": "S20", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/full-C2/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/full-C2/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it29-r6/sonnet/full-C2/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
