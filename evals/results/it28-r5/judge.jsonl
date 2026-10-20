@@ -1,0 +1,60 @@
+{"file": "evals/results/it28-r5/haiku/full-A/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "Redis를 도입하면 서버 4대가 같은 캐시를 함께 쓰므로, 서버마다 상품 목록이 달라지는 문제는 없어집니다."}}
+{"file": "evals/results/it28-r5/haiku/full-A/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 유력한 원인은 `@company/ui` 2.0.0에 추가된 `exports` 필드가 `button` 하위 경로를 허용하지 않거나 다른 경로로 바꿨기 때문입니다."}}
+{"file": "evals/results/it28-r5/haiku/full-A/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-A/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-A/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-A/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-A/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-A/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-A/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-A/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API 응답이 지연되고 결제 실패가 늘었습니다."}}
+{"file": "evals/results/it28-r5/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The causal link '이에 따라' is removed, so the output no longer says that the backup duty and the staging check follow from the integrity risk."]}}
+{"file": "evals/results/it28-r5/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' can now refer to either the backup or the check failing."]}}
+{"file": "evals/results/it28-r5/haiku/full-B/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "로컬 캐시는 각 서버 안에 따로 두는 임시 저장 공간이고, Redis는 서버 4대가 함께 쓰는 별도의 캐시 서버입니다."}}
+{"file": "evals/results/it28-r5/haiku/full-B/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "가장 가능성이 높은 원인은 `@company/ui` 2.0.0에 새로 추가된 `exports` 필드입니다."}}
+{"file": "evals/results/it28-r5/haiku/full-B/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-B/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-B/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-B/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-B/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-B/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-B/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-B/S2.md", "sid": "S2", "verdict": {"conclusion_first": false, "first_sentence": "결제 API 응답 시간과 결제 실패율이 늘어 현재 상태를 공유합니다."}}
+{"file": "evals/results/it28-r5/haiku/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r5/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "로컬 캐시는 서버마다 자기 메모리에 따로 저장하는 방식이고, Redis 캐시는 서버 4대가 같이 쓰는 캐시 서버 1대에 저장하는 방식입니다."}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "원인은 로컬과 CI가 서로 다른 버전의 `@company/ui`를 쓰기 때문일 가능성이 높습니다."}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "결제 API p95 응답 시간이 10월 14일 14:02 KST부터 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S1.md", "sid": "S1", "verdict": {"conclusion_first": true, "first_sentence": "캐시(자주 쓰는 데이터를 미리 저장해 두고 빨리 꺼내 쓰는 곳)는 지금 서버마다 따로 있고, Redis를 도입하면 서버 4대가 캐시 서버 1대를 같이 쓰게 됩니다."}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S10.md", "sid": "S10", "verdict": {"conclusion_first": true, "first_sentence": "로컬 빌드는 성공하고 CI(코드가 바뀔 때마다 자동으로 빌드를 돌리는 환경)에서만 실패하는 이유는, 두 환경이 서로 다른 버전의 `@company/ui`를 쓰기 때문으로 보입니다."}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S11.md", "sid": "S11", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S14.md", "sid": "S14", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S19.md", "sid": "S19", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S2.md", "sid": "S2", "verdict": {"conclusion_first": true, "first_sentence": "10월 14일 14:02 KST부터 결제 API p95 응답 시간이 300ms에서 2.1초로 늘었습니다."}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r5/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' can be read as a failed verification rather than a failed backup."]}}

@@ -1,0 +1,12 @@
+{"file": "evals/results/it28-r10/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r10/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r10/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '실패하면', so the condition can now be read as 'if the check fails' rather than only 'if the backup fails'."]}}
+{"file": "evals/results/it28-r10/haiku/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r10/haiku/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r10/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject of '실패하면' (백업) is dropped, so the reader cannot tell whether the backup or the check itself failed."]}}
+{"file": "evals/results/it28-r10/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r10/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r10/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r10/sonnet/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r10/sonnet/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r10/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '실패한 경우', so the reader can no longer tell whether the backup or the verification is what failed."]}}

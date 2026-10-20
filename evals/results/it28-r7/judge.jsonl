@@ -1,0 +1,12 @@
+{"file": "evals/results/it28-r7/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The causal link '이에 따라' is dropped, so the output no longer says the backup duty and staging check follow from the possible data integrity issue."]}}
+{"file": "evals/results/it28-r7/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r7/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우', so '실패하면' could mean the backup failing or the check failing."]}}
+{"file": "evals/results/it28-r7/haiku/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r7/haiku/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": true, "issues": ["The original allows '초기화됩니다' to refer to either the servers or their memory, and the rewrite silently resolves it to the servers by adding '이 두 서버는'."]}}
+{"file": "evals/results/it28-r7/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' can now be read as the check failing rather than the backup failing."]}}
+{"file": "evals/results/it28-r7/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r7/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r7/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["'백업이 실패한 경우' was shortened to '실패하면', which drops the subject '백업이', so the sentence can also read as the check (확인) failing instead of the backup failing."]}}
+{"file": "evals/results/it28-r7/sonnet/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r7/sonnet/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r7/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

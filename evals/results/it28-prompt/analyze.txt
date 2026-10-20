@@ -1,0 +1,169 @@
+== 출력 수와 판정
+full-A 본 실행 출력 312/216(모델 하나) 또는 /312(모델 둘), 모든 회차 출력 352, 판정(모든 회차) 304, 판정 오류 0
+full-B 본 실행 출력 312/216(모델 하나) 또는 /312(모델 둘), 모든 회차 출력 352, 판정(모든 회차) 304, 판정 오류 0
+== 판정 기준 (A / B / 한계 / 결과, 확인 실행이 있으면 합친 A / B / 한계 / 결과). 괄호는 출력 수
+(A) S5 권장 주체 변경(글자 기준): 3 (40) / 4 (40) / 4 충족 
+(B) S5-S7 판정 통과: 92 (120) / 87 (120) / 12 충족 
+(C) S7 글자 기준 탈락: 21 (40) / 28 (40) / 6 불충족 | 합친 45 (80) / 52 (80) / 12 충족
+(D) S11-S19 판정 통과 합: 101 (108) / 101 (108) / 7 충족 
+(E) 25어절을 넘는 문장(S8 제외): 1 (300) / 5 (300) / 5 충족 
+(F) 새 글의 헤지 2개 이상 문장: 1 (156) / 3 (156) / 3 충족 
+-> 모든 기준 충족(확인 실행 반영)
+== (A) 판정기 이유로 센 권장 주체 변경 (S5 실패 가운데 이유 하나라도 권장 주체를 말한 출력, 첫 이유가 권장 주체인 출력)
+full-A 본 실행: 이유 하나라도 1, 첫 이유 1, S5 실패 10
+full-A 모든 회차: 이유 하나라도 1, 첫 이유 1, S5 실패 10
+full-B 본 실행: 이유 하나라도 3, 첫 이유 3, S5 실패 5
+full-B 모든 회차: 이유 하나라도 3, 첫 이유 3, S5 실패 5
+== (A) 글자 기준 권장 주체 변경 출력의 문장 (모든 회차)
+full-A it28-r7/sonnet/full-A/S5.md | 판정 통과 | 가능하면 운영팀이 스테이징 환경에서 사전 검증을 하는 것을 권장합니다.
+full-A it28-r8/sonnet/full-A/S5.md | 판정 통과 | "이번 마이그레이션 작업과 관련하여 일부 레거시 테이블에서 데이터 정합성 이슈가 생길 수 있는 것으로 보이며, 이에 따라 운영팀은 마이그레이션을 하기 전에 반드시 백업을 해야 하고, 가능하면 스테이징 환경에서 사전 검증을 하는 것을 권장합니다.
+full-A it28-r15/sonnet/full-A/S5.md | 판정 실패 | 또 운영팀은 가능하다면 스테이징 환경에서 사전 검증을 하는 것을 권장합니다.
+full-B it28-r1/sonnet/full-B/S5.md | 판정 실패 | 운영팀은 가능하다면 스테이징 환경에서 사전 검증을 하는 것을 권장합니다.
+full-B it28-r9/sonnet/full-B/S5.md | 판정 실패 | 또한 운영팀이 가능하다면 스테이징 환경에서 사전 검증을 하는 것을 권장합니다.
+full-B it28-r11/sonnet/full-B/S5.md | 판정 통과 | 또한 가능하다면 운영팀이 스테이징 환경에서 사전 검증을 하는 것을 권장합니다.
+full-B it28-r13/sonnet/full-B/S5.md | 판정 실패 | 운영팀이 가능하다면 스테이징 환경에서 사전 검증을 하는 것을 권장합니다.
+== S5 판정기 실패 종류 (첫 이유, 본 실행 / 모든 회차)
+full-A {'이에 따라': 8, '기타': 1, '권장 주체': 1} | {'이에 따라': 8, '기타': 1, '권장 주체': 1}
+full-B {'권장 주체': 3, '이에 따라': 2} | {'권장 주체': 3, '이에 따라': 2}
+== 시나리오별 판정 통과 (A / B, 모든 회차)
+{'S1': '11/12 12/12', 'S2': '12/12 11/12', 'S5': '30/40 35/40', 'S6': '40/40 38/40', 'S7': '42/80 38/80', 'S10': '12/12 12/12', 'S11': '11/12 10/12', 'S12': '11/12 11/12', 'S13': '12/12 11/12', 'S14': '12/12 11/12', 'S15': '11/12 12/12', 'S16': '10/12 10/12', 'S17': '12/12 12/12', 'S18': '10/12 12/12', 'S19': '12/12 12/12'}
+S7 탈락 모델별 {'A': {'haiku': 31, 'sonnet': 14}, 'B': {'haiku': 27, 'sonnet': 25}} | S7 탈락 중 판정기 실패 {'A': '38/45', 'B': '42/52'}
+== 따로 보고: 첫 문장 결론(S1 S2 S10, r1-r6), 실행 1회당 결함(score.py, S1-S10, r1-r6)
+full-A 첫 문장 결론 35/36 | 결함 haiku 4.17 sonnet 2.50
+   haiku 시나리오별 결함 합(r1-r6) {'S1': 0, 'S2': 0, 'S3': 1, 'S4': 6, 'S5': 9, 'S6': 6, 'S7': 0, 'S8': 0, 'S9': 1, 'S10': 2}
+   sonnet 시나리오별 결함 합(r1-r6) {'S1': 0, 'S2': 0, 'S3': 0, 'S4': 6, 'S5': 1, 'S6': 6, 'S7': 0, 'S8': 0, 'S9': 0, 'S10': 2}
+full-B 첫 문장 결론 35/36 | 결함 haiku 3.50 sonnet 2.17
+   haiku 시나리오별 결함 합(r1-r6) {'S1': 2, 'S2': 0, 'S3': 2, 'S4': 4, 'S5': 3, 'S6': 3, 'S7': 0, 'S8': 0, 'S9': 1, 'S10': 6}
+   sonnet 시나리오별 결함 합(r1-r6) {'S1': 0, 'S2': 0, 'S3': 0, 'S4': 4, 'S5': 1, 'S6': 8, 'S7': 0, 'S8': 0, 'S9': 0, 'S10': 0}
+== 따로 보고: 문장 길이와 헤지 (S8 제외, 본 실행 출력)
+full-A 출력 300 max_eojeol 평균 13.46 max>25 출력 1 | 문장 1875 >20어절 14 >25어절 1 | 헤지 일치 88 헤지 2개 이상 문장 22 (S5 21, 새 글 1)
+   25어절 초과(33): it28-r8/sonnet/full-A/S5.md | "이번 마이그레이션 작업과 관련하여 일부 레거시 테이블에서 데이터 정합성 이슈가 생길 수 있는 것으로 보이며, 이에 따라 운영팀은 마이그레이션을 하기 전에 반드시 백업을 해야 하고, 가능하면 스테이징 환경에서 사전 검증을 하는 것을 권장합니다.
+   헤지 2개 이상: it28-r5/haiku/full-A/S10.md | 로컬 빌드가 성공한 이유는 3일 전에 설치한 node_modules가 여전히 1.4.0을 쓰고 있을 가능성이 높기 때문으로 보입니다(추론).
+full-B 출력 300 max_eojeol 평균 13.88 max>25 출력 5 | 문장 1916 >20어절 27 >25어절 5 | 헤지 일치 108 헤지 2개 이상 문장 30 (S5 27, 새 글 3)
+   25어절 초과(26): it28-r11/sonnet/full-B/S6.md | 관리자 권한이 QA 담당자에게도 걸려 관리자 권한이 있는 사람만 알려야 하는 것일 수 있고, 관리자 권한이 있는 팀원과 QA 담당자 전원이 알려야 하는 것일 수 있습니다.
+   25어절 초과(27): it28-r13/sonnet/full-B/S6.md | 관리자 권한이 있는 팀원과 관리자 권한이 있는 QA 담당자만 알려야 하는 경우와, 관리자 권한이 있는 팀원과 관리자 권한 여부와 상관없이 모든 QA 담당자가 알려야 하는 경우로 읽힙니다.
+   25어절 초과(29): it28-r1/haiku/full-B/S1.md | 로컬 캐시는 각 서버가 자기 메모리(서버가 작업할 때 쓰는 임시 저장 공간)에 상품 목록의 임시 사본을 두는 방식이고, Redis는 서버 4대가 함께 쓰는 별도의 캐시 서버 1대를 두는 방식입니다.
+   25어절 초과(27): it28-r2/sonnet/full-B/S1.md | 로컬 캐시는 API 서버(요청을 받아 응답하는 서버) 한 대마다 따로 갖는 캐시(자주 쓰는 데이터를 미리 저장해 두는 곳)이고, Redis 캐시는 서버 4대가 함께 쓰는 캐시 서버 1대입니다.
+   25어절 초과(27): it28-r4/sonnet/full-B/S10.md | 로컬과 CI가 서로 다른 버전의 CODE를 쓰고 있을 것으로 보이며, CI가 쓰는 2.0.0의 CODE 필드(패키지가 외부에 공개할 파일 경로를 제한하는 설정)에 CODE 경로가 없어서 실패한 것으로 추정합니다.
+   헤지 2개 이상: it28-r1/haiku/full-B/S10.md | 업그레이드 후 CI 캐시 키(CODE 해시)가 바뀌었을 가능성이 높으므로, CI는 새로 설치하면서 2.0.0을 받았을 것으로 보입니다.
+   헤지 2개 이상: it28-r2/sonnet/full-B/S10.md | CI 빌드 실패의 가장 유력한 원인은 CODE 2.0.0에 추가된 CODE 필드로 보이며, 로컬 빌드는 2.0.0이 아닌 1.4.0 기준으로 성공했을 것으로 보입니다.
+   헤지 2개 이상: it28-r4/sonnet/full-B/S10.md | 로컬과 CI가 서로 다른 버전의 CODE를 쓰고 있을 것으로 보이며, CI가 쓰는 2.0.0의 CODE 필드(패키지가 외부에 공개할 파일 경로를 제한하는 설정)에 CODE 경로가 없어서 실패한 것으로 추정합니다.
+== 따로 보고: S12 날짜 문장 (27차 정규식, 출력 수와 문장 수)
+full-A 본 실행: 출력 0/12, 문장 0
+full-A 모든 회차: 출력 0/12, 문장 0
+full-B 본 실행: 출력 1/12, 문장 1
+full-B 모든 회차: 출력 1/12, 문장 1
+== 판정기가 실패로 본 출력 (모든 회차)
+it28-r1/haiku/full-A/S1.md | 로컬 캐시는 각 API 서버(고객 요청을 처리하는 서버)가 자기 메모리에 상품 목록을 5분 동안 보관해 두고 꺼내 쓰는 방식입니다.
+it28-r1/haiku/full-A/S11.md | "교체 시기는 업무 시간 기준으로 정한다." adds a rule that is not in the list, and its plain-description form makes the business-hours recommendation read as a requirement.
+it28-r2/haiku/full-A/S12.md | "스테이징 배포와 QA 테스트까지 진행했습니다" uses the vague word 진행 for QA and does not state the result from the facts, which is that all 14 test cases passed.
+it28-r1/haiku/full-A/S15.md | "이에 따라 세 가지 할 일을 정했다"의 "이에"가 결정 1과 결정 2 중 어느 쪽을, 또는 둘 다를 가리키는지 알 수 없다.
+it28-r1/haiku/full-A/S16.md | "결제 화면은 2안으로 진행하고 있으며" uses the vague word 진행 and does not state what happened, although the memo says 박서윤 adopted option 2 of 3 and the front-end screens are being built on it.
+it28-r6/haiku/full-A/S16.md | The first sentence, "프론트엔드 개발을 진행하고 있습니다", uses the vague word 진행 and does not state the memo's progress of 4 of 7 screens.
+it28-r1/haiku/full-A/S18.md | "보안 교육 사전 설문" links the survey to the security training, but the list only says "사전 설문" and does not say what it precedes.
+it28-r3/sonnet/full-A/S18.md | The summary span "10월 22일부터 30일 사이에" uses two deadlines (survey 10월 22일 18:00, password 10월 30일) as its endpoints without labeling them as deadlines (마감, 기한), so readers could take them as the dates the events happen.
+it28-r1/haiku/full-A/S5.md | The causal link '이에 따라' is removed, so the backup and staging-validation instructions no longer follow from the data-integrity risk.
+it28-r3/haiku/full-A/S5.md | The causal link '이에 따라' is dropped, so the output no longer says that the backup obligation and the staging recommendation follow from the data-integrity risk.
+it28-r4/haiku/full-A/S5.md | Splitting the sentence removes the link from '이에 따라' to the staging-verification recommendation, so the recommendation no longer explicitly follows from the integrity risk. / The recommendation sentence drops '운영팀', which the original can read as also governing the verification clause, so the reader
+it28-r5/haiku/full-A/S5.md | The causal link '이에 따라' is removed, so the output no longer says that the backup duty and the staging check follow from the integrity risk.
+it28-r6/haiku/full-A/S5.md | The connective '이에 따라' is dropped, so the output no longer says that the backup and the staging check follow from the possible data integrity issue.
+it28-r7/haiku/full-A/S5.md | The causal link '이에 따라' is dropped, so the output no longer says the backup duty and staging check follow from the possible data integrity issue.
+it28-r12/haiku/full-A/S5.md | The particle 도 in '백업하는 것도 허용됩니다' is dropped, so the 30-day backup no longer reads as one allowed alternative alongside the full backup.
+it28-r14/haiku/full-A/S5.md | The causal link '이에 따라' is gone: the original makes the backup obligation and the staging recommendation a consequence of the integrity risk, but the output gives them as separate, unconnected statements.
+it28-r15/sonnet/full-A/S5.md | The original says staging pre-validation is recommended for the operations team to perform, but the rewrite makes the operations team the one who recommends it.
+it28-r19/haiku/full-A/S5.md | The original's '이에 따라' covers both the mandatory backup and the staging verification recommendation, but after the sentence split '이 때문에' covers only the backup, so the staging recommendation loses its causal link to the data integrity risk. / The original makes 운영팀 the actor for the staging verific
+it28-r4/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' could now mean either the backup failing or the verification failing.
+it28-r5/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' can now refer to either the backup or the check failing.
+it28-r6/sonnet/full-A/S7.md [S7 탈락] | Dropping the subject '백업이' from '백업이 실패한 경우' lets the condition be read as the check failing, not only the backup failing, so the stated subject is no longer certain.
+it28-r7/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패하면' could mean the backup failing or the check failing.
+it28-r7/sonnet/full-A/S7.md [S7 탈락] | '백업이 실패한 경우' was shortened to '실패하면', which drops the subject '백업이', so the sentence can also read as the check (확인) failing instead of the backup failing.
+it28-r10/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패하면', so the condition can now be read as 'if the check fails' rather than only 'if the backup fails'.
+it28-r11/haiku/full-A/S7.md [S7 탈락] | '백업이 실패한 경우에는' was shortened to '실패하면', which drops the subject '백업', so '실패' can now be read as the check failing rather than the backup failing.
+it28-r12/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' could also mean that the check itself failed, not only that the backup failed.
+it28-r13/haiku/full-A/S7.md [S7 탈락] | '백업이 실패한 경우에는' became '실패하면', dropping the subject '백업'. '실패' can now be read as the check (확인) failing rather than the backup failing.
+it28-r13/sonnet/full-A/S7.md [S7 탈락] | Dropping the subject '백업이' from '백업이 실패한 경우' to '실패하면' leaves it unclear whether the backup or the check failing triggers stopping the deployment.
+it28-r14/haiku/full-A/S7.md [S7 탈락] | The subject of '실패하면' (백업) was dropped, so it could now mean the check failed, not the backup.
+it28-r15/haiku/full-A/S7.md [S7 탈락] | '백업이 실패한 경우' was shortened to '실패하면', which drops the stated subject, so the failure could now refer to the backup or to the check.
+it28-r16/haiku/full-A/S7.md [S7 탈락] | Dropping the subject '백업이' from '백업이 실패한 경우에는' lets '실패하면' read as the check failing, not only the backup failing.
+it28-r16/sonnet/full-A/S7.md [S7 탈락] | Dropping the subject 백업 from '백업이 실패한 경우' leaves '실패하면' open to mean either the backup failed or the check (확인) failed.
+it28-r18/haiku/full-A/S7.md [S7 탈락] | The subject of '실패하면' is dropped ('백업이' is gone), so it can be read as the check failing rather than the backup failing.
+it28-r18/sonnet/full-A/S7.md [S7 탈락] | The second clause drops the stated subject '백업이', so '실패한 경우' could now mean either the backup failing or the check itself failing.
+it28-r19/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' could refer to the check failing rather than the backup failing.
+it28-r20/haiku/full-A/S7.md [S7 탈락] | The rewrite drops the subject '백업이' from the failure condition, so '실패하면' can now also mean that the check itself failed, not only that the backup failed.
+it28-r21/haiku/full-A/S7.md [S7 탈락] | '백업이 실패한 경우' was shortened to '실패하면', which drops the subject, so the reader cannot tell whether the backup failing or the check failing stops the deployment.
+it28-r22/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패하면', so it could also mean the check fails, not only the backup.
+it28-r23/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' could mean the backup failing or the check ('확인') failing.
+it28-r23/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' could now refer to a failed check instead of a failed backup.
+it28-r25/haiku/full-A/S7.md [S7 탈락] | The rewrite drops the subject '백업이' from '백업이 실패한 경우에는', so '실패하면' can now be read as the check failing instead of the backup failing.
+it28-r29/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' could now mean the check failed, not that the backup failed.
+it28-r30/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' is dropped from '실패하면', so the failure could mean either the backup or the verification check, which the original states unambiguously as the backup.
+it28-r31/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' could mean either the backup failing or the verification failing.
+it28-r31/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' could now mean that the check failed rather than that the backup failed.
+it28-r32/haiku/full-A/S7.md [S7 탈락] | '백업이 실패한 경우에는' was shortened to '실패하면', which drops the subject '백업', so it could mean the check failed rather than the backup.
+it28-r32/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' can now refer to the backup or to the verification step ('확인').
+it28-r33/haiku/full-A/S7.md [S7 탈락] | Dropping the subject '백업이' from '백업이 실패한 경우에는' leaves '실패하면' attached to '확인하고', so it can be read as 'if the check fails' rather than only 'if the backup fails'.
+it28-r34/sonnet/full-A/S7.md [S7 탈락] | The subject of '실패하면' is dropped; the original says the backup failing ('백업이 실패한 경우'), but now it could also mean the check failing.
+it28-r35/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' can now be read as the check failing rather than the backup failing.
+it28-r36/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패하면', so the reader cannot tell for certain whether the backup or the check is the thing that fails.
+it28-r37/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' could now mean the check failed instead of the backup failing.
+it28-r38/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' can now be read as the check failing rather than the backup failing.
+it28-r38/sonnet/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패하면', so it is unclear whether the backup, the check, or the deployment failed.
+it28-r40/haiku/full-A/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' can mean either that the backup failed or that the check failed.
+it28-r40/sonnet/full-A/S7.md [S7 탈락] | The rewrite drops the subject '백업이' from the failure condition, so '실패하면' could mean either the backup or the check failed.
+it28-r2/haiku/full-B/S11.md | Procedure step 1 "Vault 웹 화면에서 새 키를 발급한다." turns the capability ("키를 직접 발급하는 기능이 있다") into an instruction. / The "교체 절차" section adds a rotation procedure that the list does not contain: issuing new keys through the Vault web screen as a required step.
+it28-r6/haiku/full-B/S11.md | "운영 환경 API 키에는 이 지침의 모든 규칙을 적용해야 한다" adds a scope requirement that the list does not contain, and it makes the recommendation and the permission read as obligations.
+it28-r1/haiku/full-B/S12.md | "이 37건의 원인은 아직 분석하지 않았습니다" adds a claim about cause analysis that the facts do not contain. / "이 시각은 이미 지났습니다" and the "확인 필요" note add an inference that the facts do not contain, because the list never gives today's date.
+it28-r4/sonnet/full-B/S13.md | "크게 나빠졌습니다" has no 800 requests-per-second numbers (1.9초, 2.3%) in the same or adjacent sentence; they appear only in the later table.
+it28-r6/haiku/full-B/S14.md | The output has no "확인 필요" line or question asking the writer which document "해당 문서" means.
+it28-r1/sonnet/full-B/S16.md | "개발팀은 2안으로 프론트엔드 화면을 개발 중입니다" names 개발팀 as the actor, but the memo does not say who is doing the development.
+it28-r3/haiku/full-B/S16.md | The opening sentence "2안으로 프론트엔드 개발을 진행하고 있습니다" uses the vague word 진행 without the result the memo gives (4 of 7 screens done).
+it28-r5/haiku/full-B/S2.md | 결제 API 응답 시간과 결제 실패율이 늘어 현재 상태를 공유합니다.
+it28-r1/sonnet/full-B/S5.md | The original recommends that 운영팀 run staging pre-verification, but the output's '운영팀은 ... 권장합니다' makes 운영팀 the one who recommends it, so the actor changes.
+it28-r4/haiku/full-B/S5.md | The causal link '이에 따라' is removed, so the output no longer says that the backup and verification requirements follow from the possible data integrity issue.
+it28-r9/sonnet/full-B/S5.md | '운영팀이 가능하다면 … 권장합니다' can read as the operations team giving the recommendation, while in the original the recommendation is addressed to the operations team and the recommender is not stated.
+it28-r13/sonnet/full-B/S5.md | In '운영팀이 가능하다면 … 권장합니다' the 운영팀 can now be read as the one who recommends, not the one who should do the staging check. / In the original, '이에 따라' links both the backup duty and the staging recommendation to the integrity risk, but the output's separate recommendation sentence drops that causal link
+it28-r17/haiku/full-B/S5.md | The causal link '이에 따라' is dropped, so the output no longer says the backup and verification are required because of the data-integrity risk. / Splitting the sentence detaches '운영팀' from the staging-verification recommendation, so it is no longer clear who the recommendation applies to.
+it28-r7/haiku/full-B/S6.md | The original allows '초기화됩니다' to refer to either the servers or their memory, and the rewrite silently resolves it to the servers by adding '이 두 서버는'.
+it28-r12/haiku/full-B/S6.md | The original leaves unclear what is reset on restart, the servers or their memory, and the output silently picks the servers by adding '이 두 서버는' without flagging it.
+it28-r1/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' could also mean the check itself failed, not only that the backup failed.
+it28-r3/sonnet/full-B/S7.md [S7 탈락] | Dropping the subject '백업이' from '실패한 경우' leaves it unclear whether the backup or the verification step failed, while the original names the backup.
+it28-r4/haiku/full-B/S7.md [S7 탈락] | '백업이 실패한 경우' was shortened to '실패한 경우', which drops the stated subject; the phrase can now be read as the verification failing, not only the backup failing.
+it28-r5/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' can be read as a failed verification rather than a failed backup.
+it28-r6/haiku/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' can now be read as the check failing rather than the backup failing.
+it28-r6/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' is dropped from '백업이 실패한 경우에는', so '실패한 경우' can also be read as the check failing, not only the backup failing.
+it28-r7/haiku/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' can now be read as the check failing rather than the backup failing.
+it28-r8/haiku/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' can now also mean that the check failed, not only that the backup failed.
+it28-r8/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패했으면' can be read as the backup failing or as the verification failing.
+it28-r9/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' is dropped from the failure condition, so '실패했으면' could mean the check failed instead of the backup failed.
+it28-r10/haiku/full-B/S7.md [S7 탈락] | The subject of '실패하면' (백업) is dropped, so the reader cannot tell whether the backup or the check itself failed.
+it28-r10/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패한 경우', so the reader can no longer tell whether the backup or the verification is what failed.
+it28-r11/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' could refer to the backup or to the verification step.
+it28-r12/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패하면' no longer states what fails and could be read as the confirmation step failing.
+it28-r13/haiku/full-B/S7.md [S7 탈락] | The rewrite drops the subject '백업이' from the failure condition, so '실패하면' can now be read as the verification failing rather than the backup failing.
+it28-r13/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' can now be read as the verification (확인) failing rather than the backup failing.
+it28-r14/haiku/full-B/S7.md [S7 탈락] | The rewrite drops the subject '백업이' from the failure condition, so '실패하면' could refer to the backup or to the verification step.
+it28-r14/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패하면' can also mean that the check itself failed, not only that the backup failed.
+it28-r15/haiku/full-B/S7.md [S7 탈락] | The rewrite drops the subject '백업이' from '백업이 실패한 경우에는'. '실패하면' can now refer to the verification step (확인) failing, not only the backup failing.
+it28-r15/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' is dropped from '실패한 경우', so it is unclear whether the backup or the check failed.
+it28-r16/haiku/full-B/S7.md [S7 탈락] | The output drops the subject '백업이' from '백업이 실패한 경우', so '실패하면' could mean the check failed rather than the backup failed.
+it28-r17/haiku/full-B/S7.md [S7 탈락] | The subject '백업이' is dropped from '실패하면', so it is no longer explicit that a backup failure triggers the halt; it could also be read as the check (확인) failing.
+it28-r19/haiku/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' can also be read as the confirmation failing rather than the backup failing.
+it28-r19/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패하면' could now mean the check failed instead of the backup failed.
+it28-r20/haiku/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패하면' could also mean the check failed rather than the backup itself.
+it28-r20/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' could refer to the backup failing or to the check (확인) failing.
+it28-r21/haiku/full-B/S7.md [S7 탈락] | The subject '백업이' is dropped from '실패한 경우', so '실패하면' could also mean that the check itself failed, not only that the backup failed.
+it28-r21/sonnet/full-B/S7.md [S7 탈락] | The subject 백업 was dropped from '백업이 실패한 경우에는', so '실패하면' could mean either the backup failing or the check failing.
+it28-r22/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' can now be read as the check failing instead of the backup failing.
+it28-r27/haiku/full-B/S7.md [S7 탈락] | The subject '백업이' is dropped from the failure condition, so '실패하면' could now refer to the verification failing rather than the backup failing.
+it28-r28/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from '백업이 실패한 경우에는', so '실패하면' could refer to either the backup or the check.
+it28-r29/haiku/full-B/S7.md [S7 탈락] | Dropping the subject '백업이' from '실패한 경우' leaves '실패하면' open to mean either the backup failed or the check failed, while the original says it is the backup that failed.
+it28-r30/haiku/full-B/S7.md [S7 탈락] | The subject '백업이' is dropped from '백업이 실패한 경우', so '실패하면' after '확인하고' can be read as the check failing instead of the backup failing.
+it28-r30/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패했으면' could now mean either the backup or the check failed.
+it28-r33/haiku/full-B/S7.md [S7 탈락] | The rewrite drops the subject '백업이' from '백업이 실패한 경우에는', so '실패하면' could mean either a failed backup or a failed check.
+it28-r34/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' is dropped from '실패한 경우', so the failure could now refer to the backup or to the verification step.
+it28-r35/haiku/full-B/S7.md [S7 탈락] | '백업이 실패한 경우' became '실패하면', which drops the subject '백업이', so it is unclear whether the backup or the check failed.
+it28-r35/sonnet/full-B/S7.md [S7 탈락] | Dropping the subject '백업이' from '백업이 실패한 경우' leaves '실패한 경우' unclear: it can now mean the backup failed or the backup check failed.
+it28-r36/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from the failure condition, so '실패했으면' can now be read as the check failing rather than the backup failing.
+it28-r38/haiku/full-B/S7.md [S7 탈락] | Dropping the subject '백업이' from '백업이 실패한 경우에는' leaves '실패하면' open to reading as the check failing, not the backup failing.
+it28-r38/sonnet/full-B/S7.md [S7 탈락] | The subject '백업이' was dropped from '실패했으면', so the failure could also be read as a failure of the check (확인) itself, not of the backup.
+it28-r39/haiku/full-B/S7.md [S7 탈락] | '백업이 실패한 경우' was shortened to '실패하면', which drops the stated subject '백업이', so the condition can also be read as the check failing rather than the backup failing.

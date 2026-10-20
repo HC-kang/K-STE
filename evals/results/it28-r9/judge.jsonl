@@ -1,0 +1,12 @@
+{"file": "evals/results/it28-r9/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r9/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r9/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r9/haiku/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r9/haiku/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r9/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r9/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r9/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r9/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r9/sonnet/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["'운영팀이 가능하다면 … 권장합니다' can read as the operations team giving the recommendation, while in the original the recommendation is addressed to the operations team and the recommender is not stated."]}}
+{"file": "evals/results/it28-r9/sonnet/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r9/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' is dropped from the failure condition, so '실패했으면' could mean the check failed instead of the backup failed."]}}

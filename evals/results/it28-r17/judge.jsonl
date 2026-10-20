@@ -1,0 +1,12 @@
+{"file": "evals/results/it28-r17/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r17/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r17/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r17/haiku/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The causal link '이에 따라' is dropped, so the output no longer says the backup and verification are required because of the data-integrity risk.", "Splitting the sentence detaches '운영팀' from the staging-verification recommendation, so it is no longer clear who the recommendation applies to."]}}
+{"file": "evals/results/it28-r17/haiku/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r17/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' is dropped from '실패하면', so it is no longer explicit that a backup failure triggers the halt; it could also be read as the check (확인) failing."]}}
+{"file": "evals/results/it28-r17/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r17/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r17/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r17/sonnet/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r17/sonnet/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r17/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

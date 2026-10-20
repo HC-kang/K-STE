@@ -1,0 +1,12 @@
+{"file": "evals/results/it28-r15/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r15/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r15/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["'백업이 실패한 경우' was shortened to '실패하면', which drops the stated subject, so the failure could now refer to the backup or to the check."]}}
+{"file": "evals/results/it28-r15/haiku/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r15/haiku/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r15/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The rewrite drops the subject '백업이' from '백업이 실패한 경우에는'. '실패하면' can now refer to the verification step (확인) failing, not only the backup failing."]}}
+{"file": "evals/results/it28-r15/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["The original says staging pre-validation is recommended for the operations team to perform, but the rewrite makes the operations team the one who recommends it."]}}
+{"file": "evals/results/it28-r15/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r15/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r15/sonnet/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r15/sonnet/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r15/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' is dropped from '실패한 경우', so it is unclear whether the backup or the check failed."]}}

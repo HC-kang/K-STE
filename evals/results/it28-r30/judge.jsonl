@@ -1,0 +1,4 @@
+{"file": "evals/results/it28-r30/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r30/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' is dropped from '백업이 실패한 경우', so '실패하면' after '확인하고' can be read as the check failing instead of the backup failing."]}}
+{"file": "evals/results/it28-r30/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' is dropped from '실패하면', so the failure could mean either the backup or the verification check, which the original states unambiguously as the backup."]}}
+{"file": "evals/results/it28-r30/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from the failure condition, so '실패했으면' could now mean either the backup or the check failed."]}}

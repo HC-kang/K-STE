@@ -1,0 +1,4 @@
+{"file": "evals/results/it28-r36/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '실패하면', so the reader cannot tell for certain whether the backup or the check is the thing that fails."]}}
+{"file": "evals/results/it28-r36/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r36/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r36/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from the failure condition, so '실패했으면' can now be read as the check failing rather than the backup failing."]}}

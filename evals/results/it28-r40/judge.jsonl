@@ -1,0 +1,4 @@
+{"file": "evals/results/it28-r40/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from the failure condition, so '실패하면' can mean either that the backup failed or that the check failed."]}}
+{"file": "evals/results/it28-r40/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r40/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The rewrite drops the subject '백업이' from the failure condition, so '실패하면' could mean either the backup or the check failed."]}}
+{"file": "evals/results/it28-r40/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

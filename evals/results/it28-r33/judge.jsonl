@@ -1,0 +1,4 @@
+{"file": "evals/results/it28-r33/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["Dropping the subject '백업이' from '백업이 실패한 경우에는' leaves '실패하면' attached to '확인하고', so it can be read as 'if the check fails' rather than only 'if the backup fails'."]}}
+{"file": "evals/results/it28-r33/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The rewrite drops the subject '백업이' from '백업이 실패한 경우에는', so '실패하면' could mean either a failed backup or a failed check."]}}
+{"file": "evals/results/it28-r33/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r33/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

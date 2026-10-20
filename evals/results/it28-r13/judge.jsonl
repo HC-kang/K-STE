@@ -1,0 +1,12 @@
+{"file": "evals/results/it28-r13/haiku/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r13/haiku/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r13/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["'백업이 실패한 경우에는' became '실패하면', dropping the subject '백업'. '실패' can now be read as the check (확인) failing rather than the backup failing."]}}
+{"file": "evals/results/it28-r13/haiku/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r13/haiku/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r13/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The rewrite drops the subject '백업이' from the failure condition, so '실패하면' can now be read as the verification failing rather than the backup failing."]}}
+{"file": "evals/results/it28-r13/sonnet/full-A/S5.md", "sid": "S5", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r13/sonnet/full-A/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r13/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["Dropping the subject '백업이' from '백업이 실패한 경우' to '실패하면' leaves it unclear whether the backup or the check failing triggers stopping the deployment."]}}
+{"file": "evals/results/it28-r13/sonnet/full-B/S5.md", "sid": "S5", "verdict": {"meaning_changed": true, "issues": ["In '운영팀이 가능하다면 … 권장합니다' the 운영팀 can now be read as the one who recommends, not the one who should do the staging check.", "In the original, '이에 따라' links both the backup duty and the staging recommendation to the integrity risk, but the output's separate recommendation sentence drops that causal link."]}}
+{"file": "evals/results/it28-r13/sonnet/full-B/S6.md", "sid": "S6", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r13/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' can now be read as the verification (확인) failing rather than the backup failing."]}}

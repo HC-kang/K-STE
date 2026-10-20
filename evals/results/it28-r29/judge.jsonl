@@ -1,0 +1,4 @@
+{"file": "evals/results/it28-r29/haiku/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}
+{"file": "evals/results/it28-r29/haiku/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["Dropping the subject '백업이' from '실패한 경우' leaves '실패하면' open to mean either the backup failed or the check failed, while the original says it is the backup that failed."]}}
+{"file": "evals/results/it28-r29/sonnet/full-A/S7.md", "sid": "S7", "verdict": {"meaning_changed": true, "issues": ["The subject '백업이' was dropped from '백업이 실패한 경우', so '실패한 경우' could now mean the check failed, not that the backup failed."]}}
+{"file": "evals/results/it28-r29/sonnet/full-B/S7.md", "sid": "S7", "verdict": {"meaning_changed": false, "issues": []}}

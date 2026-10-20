@@ -1,0 +1,183 @@
+11:05:52 start r21 haiku S7 A
+11:05:52 start r21 haiku S7 B
+11:05:52 start r21 sonnet S7 A
+11:05:52 start r21 sonnet S7 B
+11:05:52 start r22 sonnet S7 B
+11:05:52 start r22 sonnet S7 A
+11:05:58 end r21 sonnet S7 B
+11:05:58 start r22 haiku S7 B
+11:05:58 end r21 haiku S7 A
+11:05:58 end r21 haiku S7 B
+11:05:58 start r22 haiku S7 A
+11:05:58 start r23 haiku S7 A
+11:05:58 end r22 sonnet S7 B
+11:05:58 start r23 haiku S7 B
+11:05:59 end r22 sonnet S7 A
+11:05:59 start r23 sonnet S7 A
+11:06:00 end r21 sonnet S7 A
+11:06:00 start r23 sonnet S7 B
+11:06:04 end r22 haiku S7 B
+11:06:04 start r24 sonnet S7 B
+11:06:04 end r22 haiku S7 A
+11:06:04 start r24 sonnet S7 A
+11:06:04 end r23 haiku S7 B
+11:06:04 start r24 haiku S7 B
+11:06:05 end r23 haiku S7 A
+11:06:05 start r24 haiku S7 A
+11:06:06 end r23 sonnet S7 A
+11:06:06 start r25 haiku S7 A
+11:06:08 end r23 sonnet S7 B
+11:06:08 start r25 haiku S7 B
+11:06:10 end r24 haiku S7 B
+11:06:10 start r25 sonnet S7 A
+11:06:11 end r24 sonnet S7 B
+11:06:11 start r25 sonnet S7 B
+11:06:11 end r24 sonnet S7 A
+11:06:11 start r26 sonnet S7 B
+11:06:11 end r24 haiku S7 A
+11:06:11 start r26 sonnet S7 A
+11:06:12 end r25 haiku S7 A
+11:06:12 start r26 haiku S7 B
+11:06:14 end r25 haiku S7 B
+11:06:14 start r26 haiku S7 A
+11:06:17 end r25 sonnet S7 B
+11:06:17 start r27 haiku S7 A
+11:06:17 end r26 sonnet S7 B
+11:06:17 start r27 haiku S7 B
+11:06:18 end r25 sonnet S7 A
+11:06:18 start r27 sonnet S7 A
+11:06:19 end r26 sonnet S7 A
+11:06:19 start r27 sonnet S7 B
+11:06:20 end r26 haiku S7 B
+11:06:20 start r28 sonnet S7 B
+11:06:20 end r26 haiku S7 A
+11:06:20 start r28 sonnet S7 A
+11:06:23 end r27 haiku S7 B
+11:06:23 start r28 haiku S7 B
+11:06:23 end r27 haiku S7 A
+11:06:23 start r28 haiku S7 A
+11:06:25 end r27 sonnet S7 B
+11:06:25 start r29 haiku S7 A
+11:06:26 end r28 sonnet S7 B
+11:06:26 start r29 haiku S7 B
+11:06:26 end r27 sonnet S7 A
+11:06:26 start r29 sonnet S7 A
+11:06:27 end r28 sonnet S7 A
+11:06:27 start r29 sonnet S7 B
+11:06:31 end r28 haiku S7 B
+11:06:31 start r30 sonnet S7 B
+11:06:31 end r28 haiku S7 A
+11:06:32 start r30 sonnet S7 A
+11:06:32 end r29 sonnet S7 A
+11:06:32 start r30 haiku S7 B
+11:06:32 end r29 haiku S7 B
+11:06:32 start r30 haiku S7 A
+11:06:32 end r29 haiku S7 A
+11:06:32 start r31 haiku S7 A
+11:06:33 end r29 sonnet S7 B
+11:06:33 start r31 haiku S7 B
+11:06:36 end r30 sonnet S7 B
+11:06:36 start r31 sonnet S7 A
+11:06:38 end r30 haiku S7 A
+11:06:38 start r31 sonnet S7 B
+11:06:38 end r31 haiku S7 A
+11:06:38 start r32 sonnet S7 B
+11:06:38 end r30 sonnet S7 A
+11:06:38 start r32 sonnet S7 A
+11:06:39 end r31 haiku S7 B
+11:06:39 start r32 haiku S7 B
+11:06:40 end r30 haiku S7 B
+11:06:40 start r32 haiku S7 A
+11:06:43 end r31 sonnet S7 A
+11:06:43 start r33 haiku S7 A
+11:06:43 end r31 sonnet S7 B
+11:06:43 start r33 haiku S7 B
+11:06:44 end r32 sonnet S7 B
+11:06:44 start r33 sonnet S7 A
+11:06:45 end r32 sonnet S7 A
+11:06:45 start r33 sonnet S7 B
+11:06:45 end r32 haiku S7 B
+11:06:46 start r34 sonnet S7 B
+11:06:47 end r32 haiku S7 A
+11:06:47 start r34 sonnet S7 A
+11:06:50 end r33 haiku S7 B
+11:06:50 start r34 haiku S7 B
+11:06:50 end r33 haiku S7 A
+11:06:50 start r34 haiku S7 A
+11:06:50 end r33 sonnet S7 B
+11:06:50 start r35 haiku S7 A
+11:06:51 end r33 sonnet S7 A
+11:06:51 start r35 haiku S7 B
+11:06:52 end r34 sonnet S7 B
+11:06:52 start r35 sonnet S7 A
+11:06:55 end r34 sonnet S7 A
+11:06:55 start r35 sonnet S7 B
+11:06:56 end r34 haiku S7 B
+11:06:56 start r36 sonnet S7 B
+11:06:56 end r34 haiku S7 A
+11:06:56 start r36 sonnet S7 A
+11:06:57 end r35 haiku S7 A
+11:06:57 start r36 haiku S7 B
+11:06:58 end r35 haiku S7 B
+11:06:58 start r36 haiku S7 A
+11:06:58 end r35 sonnet S7 A
+11:06:58 start r37 haiku S7 A
+11:07:01 end r35 sonnet S7 B
+11:07:01 start r37 haiku S7 B
+11:07:02 end r36 sonnet S7 B
+11:07:02 start r37 sonnet S7 A
+11:07:02 end r36 sonnet S7 A
+11:07:02 start r37 sonnet S7 B
+11:07:04 end r37 haiku S7 A
+11:07:04 start r38 sonnet S7 B
+11:07:05 end r36 haiku S7 A
+11:07:05 start r38 sonnet S7 A
+11:07:05 end r36 haiku S7 B
+11:07:05 start r38 haiku S7 B
+11:07:08 end r37 sonnet S7 A
+11:07:08 start r38 haiku S7 A
+11:07:09 end r37 sonnet S7 B
+11:07:09 start r39 haiku S7 A
+11:07:09 end r37 haiku S7 B
+11:07:09 start r39 haiku S7 B
+11:07:10 end r38 sonnet S7 B
+11:07:10 start r39 sonnet S7 A
+11:07:10 end r38 haiku S7 B
+11:07:10 start r39 sonnet S7 B
+11:07:11 end r38 sonnet S7 A
+11:07:11 start r40 sonnet S7 B
+11:07:15 end r39 haiku S7 B
+11:07:15 start r40 sonnet S7 A
+11:07:15 end r39 haiku S7 A
+11:07:15 start r40 haiku S7 B
+11:07:15 end r38 haiku S7 A
+11:07:15 start r40 haiku S7 A
+11:07:16 end r39 sonnet S7 A
+11:07:16 end r39 sonnet S7 B
+11:07:17 end r40 sonnet S7 B
+11:07:21 end r40 sonnet S7 A
+11:07:21 end r40 haiku S7 B
+11:07:22 end r40 haiku S7 A
+11:07:23 judge start
+11:07:34 judged r21
+11:07:44 judged r22
+11:07:55 judged r23
+11:08:05 judged r24
+11:08:18 judged r25
+11:08:26 judged r26
+11:08:38 judged r27
+11:08:47 judged r28
+11:09:00 judged r29
+11:09:11 judged r30
+11:09:24 judged r31
+11:09:36 judged r32
+11:09:46 judged r33
+11:09:57 judged r34
+11:10:07 judged r35
+11:10:18 judged r36
+11:10:27 judged r37
+11:10:41 judged r38
+11:10:52 judged r39
+11:11:01 judged r40
+11:11:01 judge end
+11:11:01 rejudge end
