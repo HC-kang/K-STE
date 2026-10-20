@@ -191,8 +191,44 @@ A failure is any of these:
 3. A fact, place, time, or step appears that the list does not contain.
 """ + TAIL
 
+BOUNDS = """You audit a Korean policy document written from a list of facts. Check only number and time boundaries.
+
+The facts fix every boundary:
+- A file of exactly 25MB may be uploaded. A file over 25MB is blocked.
+- A post may have exactly 10 files. An 11th file is not allowed.
+- An intern aged exactly 만 19세 may create an external sharing link. An intern under 만 19세 may not.
+- The account locks at the 5th consecutive wrong password.
+- A link closes once 72 hours have passed since it was created.
+
+A failure is any of these:
+1. A boundary is stated so it differs from the facts at the boundary value.
+   For example "25MB 이상" for blocked files, "25MB 미만만", "10개 미만", "만 19세 이하", "5회를 넘으면", "5회 초과".
+   An equivalent form is fine (for example "25MB 이하", "25MB 초과", "최대 10개", "만 19세 미만", "5회 이상").
+2. A fact, number, exception, or step appears that the list does not contain.
+3. An obligation or permission changes (for example a block becomes a recommendation).
+""" + TAIL
+
+BOUNDS2 = """You audit a Korean guide written from a list of facts. Check only number and date boundaries.
+
+The facts leave two boundaries open:
+- Whether the 7-day window ("가입한 뒤 7일 안에") counts the signup day, and whether day 7 is included.
+- Whether a request received on 10월 31일 itself goes to the 11월 settlement ("10월 31일 이후").
+The facts fix two boundaries:
+- A refund over 50만 원 needs team lead approval. Exactly 50만 원 does not.
+- Extra staff are assigned when 20 customers are waiting.
+
+A failure is any of these:
+1. The output decides an open boundary. For example "가입일 포함 7일", "가입 다음 날부터 7일", "8일째부터",
+   "11월 1일부터 들어온 신청", "10월 31일부터 들어온 신청", "10월 31일 당일 포함", "10월 31일 다음 날부터".
+   Keeping the original wording ("7일 안에", "7일 이내", "10월 31일 이후") is fine. Asking for confirmation is fine.
+2. A fixed boundary changes at the boundary value. For example "50만 원 이상", "20명을 넘으면", "20명 초과".
+   An equivalent form is fine (for example "50만 원 초과", "20명 이상").
+3. A fact, number, exception, or step appears that the list does not contain.
+""" + TAIL
+
 CHECKS = {"S5": MEANING, "S6": MEANING, "S7": MEANING, "S1": CONCLUSION, "S2": CONCLUSION, "S10": CONCLUSION,
-          "S11": NORMATIVE, "S12": VAGUE, "S13": JUDGMENT, "S14": FLAG, "S15": REFERENCE, "S16": HELDOUT, "S17": COMPLETION, "S18": DATES, "S19": DATES2}
+          "S11": NORMATIVE, "S12": VAGUE, "S13": JUDGMENT, "S14": FLAG, "S15": REFERENCE, "S16": HELDOUT, "S17": COMPLETION, "S18": DATES, "S19": DATES2,
+          "S20": MEANING, "S21": BOUNDS, "S22": BOUNDS2}
 
 
 def judge(path, model):
