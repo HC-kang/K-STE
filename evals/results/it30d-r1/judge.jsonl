@@ -1,0 +1,48 @@
+{"file": "evals/results/it30d-r1/haiku/agent+short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/agent+short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/agent+short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/agent+short/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/agent+short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/agent+short/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/base/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"11/3(월)\" adds a weekday the notes do not give, and it is wrong because 2026-11-03 is a Tuesday.", "\"수정 사항이 운영에 반영되기 전까지\" uses the vague word 반영 where the exact action is production deployment.", "\"같은 문제가 계속 발생할 수 있습니다\" adds a forecast that is not in the notes.", "\"배포 일정을 앞당길지 검토 부탁드립니다. 필요하면 바로 준비하겠습니다\" adds a request and a plan that are not in the notes."]}}
+{"file": "evals/results/it30d-r1/haiku/base/S13.md", "sid": "S13", "verdict": {"pass": false, "issues": ["The title phrase \"800건에서 DB 병목 확인\" states the bottleneck cause as fact, but the facts only say DB CPU reached 95%.", "\"응답 지연과 오류가 크게 늘었고\" uses 크게 without the 1.9초 or 2.3% figures in that sentence or the ones beside it.", "\"현재 서비스는 초당 500건까지 안정적으로 처리할 수 있습니다\" uses 안정적으로 without the 280ms/0.04% figures or the criterion in that sentence or the ones beside it.", "\"같은 조건(초당 800건, 30분)으로 재테스트\" adds test conditions for November 5 that the facts do not contain.", "\"초당 500건 테스트도 함께 진행해 기준 충족 여부를 다시 확인합니다\" adds a plan that the facts do not contain.", "\"DB 증설 결과를 확인한 뒤 일정과 목표치를 판단하는 것이 좋습니다\" adds a recommendation that the facts do not contain."]}}
+{"file": "evals/results/it30d-r1/haiku/base/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/base/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["\"디자인팀과 색상 조정 방향을 확인하고 싶습니다\" adds a plan to coordinate color changes with the design team, which is not in the memo.", "\"남은 화면과 대비율 이슈도 함께 확인할 수 있도록 준비하겠습니다\" adds a plan to cover the remaining screens and the contrast item at the QA, which is not in the memo.", "\"대비율 이슈\" mentions the remaining warning with the vague word 이슈 and without its measured value 3.9:1 or its criterion 4.5:1."]}}
+{"file": "evals/results/it30d-r1/haiku/base/S17.md", "sid": "S17", "verdict": {"pass": false, "issues": ["\"11/5(수)\" adds a weekday that is not in the memo, and 2026-11-05 is a Thursday, not a Wednesday."]}}
+{"file": "evals/results/it30d-r1/haiku/base/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The closing line \"문의 사항은 IT팀으로 연락해 주시기 바랍니다\" adds a contact step that is not in the fact list.", "The weekdays \"11월 5일(수)\", \"11월 6일(목)\", \"11월 9일(일)\" and \"11월 13일(목)\" are not in the fact list, and they are wrong for 2026 (Thu, Fri, Mon, Fri).", "\"보안 교육 사전 설문\" ties the survey to the training, but the facts only say \"사전 설문\"."]}}
+{"file": "evals/results/it30d-r1/haiku/full/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/full/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/full/S15.md", "sid": "S15", "verdict": {"pass": false, "issues": ["할 일 1의 \"설정 파일 auth.yaml\"에는 목록에 있는 \"인증 서버 설정 파일\"이라는 소속 정보가 빠져 있어, 어느 서버의 설정 파일인지 드러나지 않는다.", "할 일 1의 \"60분에 맞게 바꿔야 한다\"는 목록에 없는 내용이다. 목록의 할 일 1은 session_timeout 값을 바꾼다고만 하고 목표 값은 적지 않았다."]}}
+{"file": "evals/results/it30d-r1/haiku/full/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/full/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/full/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/short/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"운영에는 이 수정이 아직 반영되지 않았습니다\" uses the vague word 반영 and does not say that the missing action is the production deploy (운영 배포), even though the facts state it."]}}
+{"file": "evals/results/it30d-r1/haiku/short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/short/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["\"개발팀은 2안으로 프론트엔드 화면을 개발하고 있으며\" names 개발팀 as the actor, but the memo does not say who is doing the development."]}}
+{"file": "evals/results/it30d-r1/haiku/short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/haiku/short/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/agent+short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/agent+short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/agent+short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/agent+short/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/agent+short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/agent+short/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/base/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["'11/3(월)' adds a weekday the facts don't give, and 11/3/2026 is actually a Tuesday.", "'운영 배포 전까지는 같은 현상이 계속 발생할 수 있습니다' is a claim the facts don't contain.", "'일정 앞당김이나 이미 발생한 37건 처리 방안이 필요하면 말씀해 주세요' adds options the facts don't contain, and '처리' is vague about what would be done to the 37 orders."]}}
+{"file": "evals/results/it30d-r1/sonnet/base/S13.md", "sid": "S13", "verdict": {"pass": false, "issues": ["The phrase '기준을 크게 넘었고' makes a degree judgment, but neither that sentence nor the ones beside it gives the 800 RPS numbers (1.9초, 2.3%).", "The phrase '응답 시간과 오류율이 크게 나빴습니다' makes a degree judgment, but neither that sentence nor the ones beside it gives the p99 or error-rate numbers (1.9초, 2.3%).", "The phrase '같은 시점에' says DB CPU and the response-time and error-rate degradation happened at the same time, which the facts do not state."]}}
+{"file": "evals/results/it30d-r1/sonnet/base/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/base/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["The heading \"결제 화면 리뉴얼\" calls the project a renewal, which the memo never says.", "\"디자인팀에서 버튼 색상 조정안을 검토해 주시면 감사하겠습니다\" adds a request and a plan that are not in the memo.", "\"QA 전까지 대비율 이슈를 해결할 수 있도록 협의 부탁드립니다\" adds a plan and deadline that are not in the memo.", "\"대비율 이슈\" refers to the remaining warning without its measured value (3.9:1) or its criterion (4.5:1)."]}}
+{"file": "evals/results/it30d-r1/sonnet/base/S17.md", "sid": "S17", "verdict": {"pass": false, "issues": ["\"11/5(수)\" adds a weekday the memo does not give, and 11/5/2026 is actually a Thursday.", "\"특이사항은 없으며\" is an evaluative claim the memo does not contain.", "\"진행 중 이슈가 생기면 바로 공유드리겠습니다\" states a plan the memo does not contain."]}}
+{"file": "evals/results/it30d-r1/sonnet/base/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The weekday labels in '11/5(수)', '11/6(목)', '11/9(일)', '11/13(목)' are not in the fact list, so they are added facts.", "The added weekdays are also wrong for 2026 despite the note '올해(2026년) 달력 기준': 11월 5일 is 목, 6일 is 금, 9일 is 월, and 13일 is 금, so readers could act on the wrong day."]}}
+{"file": "evals/results/it30d-r1/sonnet/full/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/full/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/full/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/full/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/full/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/full/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/short/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r1/sonnet/short/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}

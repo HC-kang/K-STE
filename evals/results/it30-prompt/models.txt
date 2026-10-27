@@ -1,0 +1,4 @@
+haiku claude-haiku-5-5
+sonnet claude-sonnet-5-5
+opus claude-opus-5-5
+2.1.311 (Claude Code)

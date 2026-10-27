@@ -1,0 +1,456 @@
+done: evals/results/it30-r1/haiku/base
+done: evals/results/it30-r1/sonnet/full
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/haiku/full
+S1	skill=['k-ste']	reads=[]
+done: evals/results/it30-r1/haiku/base
+S1	skill=['k-ste']	reads=[]
+done: evals/results/it30-r1/haiku/full
+done: evals/results/it30-r1/sonnet/base
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/sonnet/full
+S2	skill=['k-ste']	reads=['references/genres.md']
+done: evals/results/it30-r1/sonnet/base
+done: evals/results/it30-r1/haiku/base
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/sonnet/base
+done: evals/results/it30-r1/haiku/full
+S2	skill=['k-ste']	reads=['references/genres.md']
+S3	skill=['k-ste']	reads=['references/genres.md']
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/sonnet/full
+done: evals/results/it30-r1/haiku/base
+S3	skill=['k-ste']	reads=['references/genres.md']
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/haiku/full
+done: evals/results/it30-r1/sonnet/base
+S4	skill=['k-ste']	reads=[]
+done: evals/results/it30-r1/haiku/short
+S4	skill=['k-ste']	reads=['references/genres.md']
+done: evals/results/it30-r1/haiku/full
+done: evals/results/it30-r1/haiku/base
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/sonnet/full
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/sonnet/base
+done: evals/results/it30-r1/sonnet/full
+done: evals/results/it30-r1/haiku/base
+S5	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+done: evals/results/it30-r1/haiku/full
+S5	skill=['k-ste']	reads=['references/rewrite.md']
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/sonnet/base
+S6	skill=['k-ste']	reads=['references/rewrite.md']
+S7	skill=['k-ste']	reads=['references/rewrite.md']
+done: evals/results/it30-r1/sonnet/full
+S6	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+done: evals/results/it30-r1/haiku/base
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/sonnet/base
+done: evals/results/it30-r1/haiku/full
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/sonnet/full
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/haiku/base
+done: evals/results/it30-r1/haiku/full
+S7	skill=['k-ste']	reads=['references/rewrite.md']
+S8	skill=[]	reads=[]
+done: evals/results/it30-r1/sonnet/short
+S8	skill=[]	reads=[]
+done: evals/results/it30-r1/sonnet/base
+done: evals/results/it30-r1/sonnet/full
+done: evals/results/it30-r1/haiku/base
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/haiku/full
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/sonnet/full
+done: evals/results/it30-r1/sonnet/base
+done: evals/results/it30-r1/haiku/full
+S9	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+S9	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+S10	skill=['k-ste']	reads=[]
+done: evals/results/it30-r1/haiku/base
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/sonnet/full
+S10	skill=['k-ste']	reads=[]
+done: evals/results/it30-r1/sonnet/base
+S11	skill=['k-ste']	reads=[]
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/haiku/base
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/haiku/full
+done: evals/results/it30-r1/haiku/base
+S11	skill=['k-ste']	reads=[]
+done: evals/results/it30-r1/sonnet/base
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/sonnet/full
+done: evals/results/it30-r1/sonnet/base
+done: evals/results/it30-r1/haiku/short
+S12	skill=['k-ste']	reads=[]
+done: evals/results/it30-r1/sonnet/full
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/haiku/full
+S12	skill=['k-ste']	reads=[]
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/haiku/full
+done: evals/results/it30-r1/haiku/base
+done: evals/results/it30-r1/haiku/full
+done: evals/results/it30-r1/sonnet/full
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/sonnet/base
+S13	skill=[]	reads=[]
+done: evals/results/it30-r1/haiku/base
+S13	skill=['k-ste']	reads=[]
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/sonnet/full
+S14	skill=['k-ste']	reads=['references/rewrite.md']
+done: evals/results/it30-r1/sonnet/base
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/haiku/base
+S14	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+done: evals/results/it30-r1/sonnet/base
+done: evals/results/it30-r1/haiku/short
+S15	skill=['k-ste']	reads=['references/genres.md']
+S15	skill=[]	reads=[]
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/haiku/full
+done: evals/results/it30-r1/sonnet/full
+done: evals/results/it30-r1/haiku/base
+done: evals/results/it30-r1/sonnet/base
+done: evals/results/it30-r1/haiku/full
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/sonnet/short
+S16	skill=['k-ste']	reads=['references/genres.md']
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/sonnet/full
+done: evals/results/it30-r1/haiku/full
+done: evals/results/it30-r1/haiku/base
+S17	skill=['k-ste']	reads=[]
+done: evals/results/it30-r1/sonnet/base
+S16	skill=['k-ste']	reads=[]
+done: evals/results/it30-r1/sonnet/full
+done: evals/results/it30-r1/sonnet/short
+S17	skill=['k-ste']	reads=[]
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/haiku/full
+done: evals/results/it30-r1/haiku/base
+done: evals/results/it30-r1/sonnet/full
+S18	skill=['k-ste']	reads=[]
+done: evals/results/it30-r1/sonnet/base
+done: evals/results/it30-r1/haiku/base
+S18	skill=['k-ste']	reads=[]
+S19	skill=[]	reads=[]
+done: evals/results/it30-r1/haiku/short
+done: evals/results/it30-r1/sonnet/base
+done: evals/results/it30-r1/sonnet/short
+done: evals/results/it30-r1/haiku/full
+done: evals/results/it30-r1/sonnet/full
+done: evals/results/it30-r1/sonnet/short
+S19	skill=['k-ste']	reads=[]
+done: evals/results/it30-r2/sonnet/full
+done: evals/results/it30-r2/sonnet/base
+S1	skill=['k-ste']	reads=[]
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/haiku/full
+done: evals/results/it30-r2/sonnet/base
+done: evals/results/it30-r2/haiku/short
+S2	skill=['k-ste']	reads=['references/genres.md']
+done: evals/results/it30-r2/haiku/base
+S2	skill=['k-ste']	reads=['references/genres.md']
+done: evals/results/it30-r2/sonnet/full
+S1	skill=[]	reads=[]
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/haiku/short
+done: evals/results/it30-r2/haiku/full
+done: evals/results/it30-r2/sonnet/base
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/sonnet/full
+S3	skill=['k-ste']	reads=['references/genres.md']
+done: evals/results/it30-r2/haiku/full
+done: evals/results/it30-r2/haiku/short
+done: evals/results/it30-r2/sonnet/short
+S3	skill=['k-ste']	reads=[]
+done: evals/results/it30-r2/sonnet/base
+done: evals/results/it30-r2/sonnet/full
+S4	skill=['k-ste']	reads=[]
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/haiku/short
+done: evals/results/it30-r2/haiku/full
+S4	skill=[]	reads=[]
+done: evals/results/it30-r2/sonnet/full
+S5	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+done: evals/results/it30-r2/sonnet/base
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/haiku/short
+S5	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+done: evals/results/it30-r2/haiku/full
+S6	skill=['k-ste']	reads=['references/rewrite.md']
+done: evals/results/it30-r2/sonnet/base
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/sonnet/full
+S6	skill=['k-ste']	reads=['references/rewrite.md']
+done: evals/results/it30-r2/haiku/short
+done: evals/results/it30-r2/sonnet/base
+done: evals/results/it30-r2/haiku/full
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/haiku/short
+done: evals/results/it30-r2/sonnet/full
+done: evals/results/it30-r2/haiku/full
+S7	skill=['k-ste']	reads=['references/rewrite.md']
+done: evals/results/it30-r2/sonnet/short
+S8	skill=[]	reads=[]
+done: evals/results/it30-r2/sonnet/full
+S7	skill=['k-ste']	reads=['references/rewrite.md']
+done: evals/results/it30-r2/sonnet/base
+done: evals/results/it30-r2/haiku/short
+done: evals/results/it30-r2/haiku/full
+S8	skill=[]	reads=[]
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/sonnet/base
+done: evals/results/it30-r2/sonnet/short
+S9	skill=['k-ste']	reads=['references/rewrite.md']
+done: evals/results/it30-r2/haiku/full
+done: evals/results/it30-r2/sonnet/full
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/haiku/short
+S9	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+done: evals/results/it30-r2/sonnet/base
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/sonnet/full
+S10	skill=['k-ste']	reads=[]
+done: evals/results/it30-r2/haiku/full
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/sonnet/base
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/haiku/short
+done: evals/results/it30-r2/haiku/base
+S11	skill=['k-ste']	reads=[]
+done: evals/results/it30-r2/sonnet/full
+done: evals/results/it30-r2/haiku/short
+done: evals/results/it30-r2/haiku/full
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/sonnet/full
+S12	skill=['k-ste']	reads=[]
+done: evals/results/it30-r2/sonnet/base
+S11	skill=['k-ste']	reads=[]
+done: evals/results/it30-r2/haiku/short
+done: evals/results/it30-r2/haiku/full
+done: evals/results/it30-r2/haiku/base
+S10	skill=[]	reads=[]
+done: evals/results/it30-r2/sonnet/full
+S12	skill=['k-ste']	reads=[]
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/sonnet/base
+done: evals/results/it30-r2/haiku/full
+S13	skill=['k-ste']	reads=[]
+S14	skill=['k-ste']	reads=['references/rewrite.md']
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/sonnet/base
+done: evals/results/it30-r2/sonnet/full
+done: evals/results/it30-r2/haiku/short
+S13	skill=['k-ste']	reads=[]
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/sonnet/base
+done: evals/results/it30-r2/haiku/short
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/haiku/full
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/sonnet/full
+S14	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+S15	skill=['k-ste']	reads=['references/genres.md']
+done: evals/results/it30-r2/haiku/short
+S15	skill=[]	reads=[]
+done: evals/results/it30-r2/haiku/full
+done: evals/results/it30-r2/sonnet/full
+done: evals/results/it30-r2/sonnet/base
+done: evals/results/it30-r2/sonnet/short
+S16	skill=['k-ste']	reads=[]
+done: evals/results/it30-r2/haiku/full
+done: evals/results/it30-r2/haiku/short
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/sonnet/full
+done: evals/results/it30-r2/sonnet/base
+S17	skill=['k-ste']	reads=[]
+S16	skill=[]	reads=[]
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/haiku/full
+done: evals/results/it30-r2/haiku/short
+done: evals/results/it30-r2/sonnet/base
+S17	skill=['k-ste']	reads=[]
+S18	skill=['k-ste']	reads=[]
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/sonnet/full
+done: evals/results/it30-r2/haiku/short
+done: evals/results/it30-r2/sonnet/short
+done: evals/results/it30-r2/sonnet/base
+S18	skill=[]	reads=[]
+done: evals/results/it30-r2/sonnet/full
+done: evals/results/it30-r2/haiku/base
+done: evals/results/it30-r2/haiku/short
+done: evals/results/it30-r2/haiku/full
+S19	skill=['k-ste']	reads=[]
+done: evals/results/it30-r2/haiku/full
+S19	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/haiku/full
+done: evals/results/it30-r3/haiku/short
+S1	skill=['k-ste']	reads=[]
+S1	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/haiku/full
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/haiku/short
+S2	skill=['k-ste']	reads=['references/genres.md']
+done: evals/results/it30-r3/sonnet/full
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/sonnet/full
+S2	skill=['k-ste']	reads=['references/genres.md']
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/haiku/full
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/sonnet/full
+S3	skill=['k-ste']	reads=['references/genres.md']
+S3	skill=[]	reads=[]
+done: evals/results/it30-r3/haiku/full
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/sonnet/full
+done: evals/results/it30-r3/haiku/short
+S4	skill=['k-ste']	reads=['references/genres.md']
+S4	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/haiku/full
+S5	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+S5	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/sonnet/full
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/haiku/full
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/sonnet/full
+done: evals/results/it30-r3/haiku/full
+S6	skill=['k-ste']	reads=['references/rewrite.md']
+S7	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/sonnet/full
+done: evals/results/it30-r3/haiku/full
+S8	skill=[]	reads=[]
+S7	skill=['k-ste']	reads=['references/rewrite.md']
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/sonnet/full
+S6	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+S8	skill=[]	reads=[]
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/haiku/full
+done: evals/results/it30-r3/sonnet/short
+S9	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+S9	skill=['k-ste']	reads=['references/rewrite.md', 'references/word-swaps.md']
+done: evals/results/it30-r3/sonnet/full
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/haiku/full
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/haiku/short
+S10	skill=[]	reads=[]
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/sonnet/full
+S10	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/haiku/full
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/sonnet/short
+S11	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/sonnet/base
+S11	skill=['k-ste']	reads=['references/genres.md']
+done: evals/results/it30-r3/sonnet/full
+done: evals/results/it30-r3/haiku/full
+done: evals/results/it30-r3/haiku/base
+S12	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/sonnet/base
+S12	skill=[]	reads=[]
+done: evals/results/it30-r3/sonnet/full
+done: evals/results/it30-r3/sonnet/short
+S13	skill=[]	reads=[]
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/haiku/full
+done: evals/results/it30-r3/haiku/base
+S13	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/sonnet/full
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/haiku/full
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/sonnet/full
+S14	skill=['k-ste']	reads=['references/rewrite.md']
+S14	skill=['k-ste']	reads=['references/rewrite.md']
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/haiku/full
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/sonnet/base
+S15	skill=['k-ste']	reads=['references/genres.md']
+done: evals/results/it30-r3/sonnet/full
+S15	skill=['k-ste']	reads=['references/genres.md']
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/haiku/full
+S16	skill=[]	reads=[]
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/sonnet/full
+S16	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/haiku/base
+S17	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/haiku/full
+S17	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/sonnet/full
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/haiku/full
+done: evals/results/it30-r3/sonnet/base
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/sonnet/short
+done: evals/results/it30-r3/sonnet/full
+S18	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/haiku/short
+done: evals/results/it30-r3/haiku/base
+done: evals/results/it30-r3/haiku/full
+S18	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/sonnet/short
+S19	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/sonnet/base
+S19	skill=['k-ste']	reads=[]
+done: evals/results/it30-r3/sonnet/full

@@ -1,0 +1,48 @@
+{"file": "evals/results/it30d-r3/haiku/agent+short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/agent+short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/agent+short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/agent+short/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/agent+short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/agent+short/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/base/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"11/3(월)\" adds a weekday that is not in the facts, and it is wrong: 2026-11-03 is a Tuesday.", "\"현재 운영에서 계속 발생 중인 문제라\" claims the problem is ongoing, but the facts only give 37 orders in the past 24 hours.", "\"11/3 배포까지 기다릴지 앞당길지 결정이 필요합니다\" adds a decision request that the facts do not contain.", "\"틀린 주문 37건에 대한 보정(환불/추가 정산) 방안도 같이 검토가 필요할 것 같습니다\" adds a remediation plan that the facts do not contain.", "\"배포 일정 앞당김 가능 여부를 확인해서 따로 공유드리겠습니다\" adds a follow-up plan that the facts do not contain."]}}
+{"file": "evals/results/it30d-r3/haiku/base/S13.md", "sid": "S13", "verdict": {"pass": false, "issues": ["'재테스트에서는 초당 800건 구간의 p99, 오류율, DB CPU를 중점적으로 확인합니다' adds a test plan that is not in the facts.", "'같은 조건으로 재테스트합니다' adds test conditions that are not in the facts.", "'DB CPU가 포화된 상태에서' states saturation, but neither that sentence nor the ones before and after give the 95% figure."]}}
+{"file": "evals/results/it30d-r3/haiku/base/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/base/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["\"디자인팀과 색상 조정 방향을 함께 확인하겠습니다\" adds a plan and actor that the memo does not contain.", "\"남은 화면 개발과 대비율 이슈는 QA 전에 정리해 두겠습니다\" adds a commitment and deadline that the memo does not contain, and \"정리\" does not say what will be done."]}}
+{"file": "evals/results/it30d-r3/haiku/base/S17.md", "sid": "S17", "verdict": {"pass": false, "issues": ["\"11/5(수)\" adds a weekday that is not in the memo, and 2026-11-05 is actually a Thursday.", "\"정상 운영됨\" claims normal operation, but the memo only says the service did not stop."]}}
+{"file": "evals/results/it30d-r3/haiku/base/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The table adds weekdays that are not in the facts, \"11월 5일 (수)\", \"11월 6일 (목)\", \"11월 9일 (일)\" and \"11월 13일 (목)\", and they are also wrong for 2026, where 11월 5일 is a Thursday.", "The closing line \"문의 사항은 IT팀으로 연락 바랍니다\" adds a contact step that the facts do not contain."]}}
+{"file": "evals/results/it30d-r3/haiku/full/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/full/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/full/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/full/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/full/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/full/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/short/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/short/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/haiku/short/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/agent+short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/agent+short/S13.md", "sid": "S13", "verdict": {"pass": false, "issues": ["The phrase \"p99는 전체 요청 중 가장 느린 1%를 제외했을 때의 최대 응답 시간입니다\" defines p99, and the fact list does not contain that definition."]}}
+{"file": "evals/results/it30d-r3/sonnet/agent+short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/agent+short/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["\"개발팀은 2안으로 프론트엔드 화면을 개발하고 있습니다\" names 개발팀 as the actor, but the memo doesn't say who is doing the frontend work."]}}
+{"file": "evals/results/it30d-r3/sonnet/agent+short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/agent+short/S18.md", "sid": "S18", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/base/S12.md", "sid": "S12", "verdict": {"pass": false, "issues": ["\"11/3(월)\" adds a weekday the notes don't give, and it is wrong: 2026-11-03 is a Tuesday, not a Monday.", "\"운영 배포 전까지 같은 현상이 계속 발생할 수 있습니다\" states a prediction the notes don't contain.", "\"해당 주문의 정정 필요 여부는 확인 후 말씀 부탁드립니다\" adds a request and follow-up plan the notes don't contain, and \"확인\" doesn't say who checks what."]}}
+{"file": "evals/results/it30d-r3/sonnet/base/S13.md", "sid": "S13", "verdict": {"pass": false, "issues": ["The summary's \"기준을 크게 넘어섰고\" uses 크게 with no supporting number in that sentence or the sentences before and after it.", "\"응답 시간과 오류율이 크게 나빠졌습니다\" uses 크게 without the p99 or error-rate figures in that sentence or the sentences before and after it.", "\"같은 시점에\" asserts that the DB CPU spike and the degradation happened at the same time, which the facts do not state.", "\"같은 조건으로 재테스트하고, 800건에서 개선되는지 확인\" adds plan details the facts do not contain."]}}
+{"file": "evals/results/it30d-r3/sonnet/base/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/base/S16.md", "sid": "S16", "verdict": {"pass": false, "issues": ["\"디자인팀에서 버튼 글자색 또는 배경색 조정안을 확인해 주시면 감사하겠습니다\" adds a request and a fix approach that are not in the memo.", "\"QA 전까지 남은 화면 개발과 대비율 이슈를 마무리할 수 있도록 하겠습니다\" adds a deadline commitment that is not in the memo, and uses the vague word \"마무리\"."]}}
+{"file": "evals/results/it30d-r3/sonnet/base/S17.md", "sid": "S17", "verdict": {"pass": false, "issues": ["The title '고객 테이블 이관 완료 보고' uses a completion word, but neither it nor the next sentence ('오늘 진행한 데이터 이관 결과 공유드립니다') states the result of 120만 행 중 120만 행.", "'11/5(수)' adds a weekday the memo does not contain, and 2026-11-05 is actually a Thursday.", "'특이사항은 없었고' is an evaluative claim the memo does not contain, and it stands in for the stated facts.", "'주문 테이블 이관 진행 시에도 결과 공유드리겠습니다' adds a plan the memo does not contain."]}}
+{"file": "evals/results/it30d-r3/sonnet/base/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The weekdays \"(수)\", \"(목)\", \"(일)\", \"(금)\" are not in the facts list, and most are wrong for 2026 (11월 5일 is 목, 6일 is 금, 9일 is 월); only \"11월 13일(금)\" is correct.", "The table row \"사전 설문 제출 | 전 직원\" names who must submit the survey, which the facts never state."]}}
+{"file": "evals/results/it30d-r3/sonnet/full/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/full/S13.md", "sid": "S13", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/full/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/full/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/full/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/full/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["\"보안 교육 사전 설문\" ties the survey to the security training, which the fact list does not state (it only says \"사전 설문\")."]}}
+{"file": "evals/results/it30d-r3/sonnet/short/S12.md", "sid": "S12", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/short/S13.md", "sid": "S13", "verdict": {"pass": false, "issues": ["\"초당 800건에서는 응답 시간과 오류율이 모두 나빠졌습니다\" uses the evaluative \"나빠졌습니다\", but neither that sentence nor the next one gives the 800-request numbers (1.9초, 2.3%); they appear only later in the table."]}}
+{"file": "evals/results/it30d-r3/sonnet/short/S15.md", "sid": "S15", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/short/S16.md", "sid": "S16", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/short/S17.md", "sid": "S17", "verdict": {"pass": true, "issues": []}}
+{"file": "evals/results/it30d-r3/sonnet/short/S18.md", "sid": "S18", "verdict": {"pass": false, "issues": ["The summary span \"11월 5일부터 13일까지\" uses two deadlines (the survey deadline on 11월 5일 and the password-change deadline on 11월 13일) as its endpoints without labeling them as deadlines, so readers could take them as scheduled dates."]}}
